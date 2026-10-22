@@ -1,0 +1,121 @@
+#include "core/math/vector2.h"
+#include "core/math/projection.h"
+#include "core/math/transform_3d.h"
+#include "thirdparty/streamline/include/sl.h"
+#include <cmath>
+#include <cstdio>
+#include <stdexcept>
+#include <string>
+
+#undef ERR_FAIL_MSG
+#define ERR_FAIL_MSG(m_message) throw std::runtime_error("Production constants block returned failure")
+
+void _err_print_error(const char *, const char *, int, const char *message, bool, ErrorHandlerType) { throw std::runtime_error(message); }
+
+static sl::Constants captured;
+static int calls = 0;
+struct TestFrameToken : sl::FrameToken {
+    operator uint32_t() const override { return 1; }
+};
+static TestFrameToken token;
+static sl::Result capture(const sl::Constants &value, const sl::FrameToken &, const sl::ViewportHandle &) {
+    captured = value;
+    ++calls;
+    return sl::Result::eOk;
+}
+struct StreamlineContext {
+    PFun_slSetConstants *slSetConstants = capture;
+    sl::FrameToken *last_token = &token;
+    static StreamlineContext &get() { static StreamlineContext instance; return instance; }
+};
+struct Parameters {
+    Projection cam_projection;
+    Projection reprojection;
+    Transform3D cam_transform;
+    float z_near = 0.1f, z_far = 1000, fovy = 0;
+    bool reverse_depth = true, reset_accumulation = false;
+    Vector2 jitter;
+};
+struct TestContext {
+    sl::Constants constants;
+    struct Options { uint32_t outputWidth = 1, outputHeight = 1; } currentDlssOptions;
+    sl::ViewportHandle viewport { 0 };
+};
+@HELPERS@
+
+static void run_constants(const Parameters &p_params, TestContext *context) {
+@CONSTANTS@
+}
+static void set_fov_from_renderer(Parameters &params) {
+    struct SceneData { Projection cam_projection; } scene { params.cam_projection };
+    struct RenderData { SceneData *scene_data; } data { &scene };
+    RenderData *p_render_data = &data;
+@FOV@
+}
+static bool close(double a, double b) { return std::abs(a - b) < 2e-5; }
+static bool close3(sl::float3 a, const Vector3 &b) { return close(a.x,b.x) && close(a.y,b.y) && close(a.z,b.z); }
+static Vector3 unpack(sl::float3 v) { return Vector3(v.x, v.y, v.z); }
+static int check_fov() {
+    int failures = 0;
+    struct Case { const char *name; uint32_t width, height; } cases[] = {
+        { "1:1", 1080, 1080 }, { "16:9", 1920, 1080 }, { "21:9", 2520, 1080 }, { "9:16", 1080, 1920 }
+    };
+    for (bool keep_width : { true, false }) {
+        for (const auto &test : cases) {
+            double aspect = double(test.width)/test.height;
+            double expected = keep_width ? 2 * std::atan(std::tan(M_PI/4) / aspect) : M_PI/4 * 2;
+            Parameters params;
+            params.cam_projection.set_perspective(90, aspect, 0.1, 1000, keep_width);
+            set_fov_from_renderer(params);
+            TestContext context;
+            context.currentDlssOptions = { test.width, test.height };
+            int old_calls = calls;
+            run_constants(params, &context);
+            double matrix_fovy = 2 * std::atan(1.0 / params.cam_projection[1][1]);
+            bool ok = calls == old_calls + 1 && close(captured.cameraFOV, expected) && close(captured.cameraFOV, matrix_fovy) && close(captured.cameraAspectRatio, aspect);
+            std::printf("%s %s %s captured cameraFOV=%.9f rad (%.6f deg), expected=%.9f rad, aspect=%.6f\n", ok ? "PASS" : "FAIL", keep_width ? "KEEP_WIDTH H=90" : "KEEP_HEIGHT V=90", test.name, captured.cameraFOV, double(captured.cameraFOV)*180/M_PI, expected, captured.cameraAspectRatio);
+            failures += !ok;
+        }
+    }
+    return failures;
+}
+static Vector3 rotate_independent(Vector3 v, Vector3 axis, double angle) {
+    // Rodrigues formula evaluated independently in double precision.
+    const double x=axis.x, y=axis.y, z=axis.z, c=std::cos(angle), s=std::sin(angle);
+    const double dot=x*v.x+y*v.y+z*v.z;
+    return Vector3(v.x*c+(y*v.z-z*v.y)*s+x*dot*(1-c), v.y*c+(z*v.x-x*v.z)*s+y*dot*(1-c), v.z*c+(x*v.y-y*v.x)*s+z*dot*(1-c));
+}
+static int check_basis() {
+    int failures = 0;
+    struct Case { const char *name; Vector3 axis; double angle; Vector3 translation; } cases[] = {
+        { "identity", Vector3(0,1,0), 0, Vector3() },
+        { "yaw +90", Vector3(0,1,0), M_PI/2, Vector3() },
+        { "pitch +90", Vector3(1,0,0), M_PI/2, Vector3() },
+        { "roll +90", Vector3(0,0,1), M_PI/2, Vector3() },
+        { "arbitrary axis + translation", Vector3(1/std::sqrt(14.0),2/std::sqrt(14.0),3/std::sqrt(14.0)), 0.73, Vector3(3,-7,11) },
+    };
+    for (const auto &test : cases) {
+        Parameters params;
+        params.cam_transform.basis.set_axis_angle(test.axis, test.angle);
+        params.cam_transform.origin = test.translation;
+        TestContext context;
+        int old_calls = calls;
+        run_constants(params, &context);
+        auto fwd=rotate_independent(Vector3(0,0,-1), test.axis, test.angle);
+        auto up=rotate_independent(Vector3(0,1,0), test.axis, test.angle);
+        auto right=rotate_independent(Vector3(1,0,0), test.axis, test.angle);
+        auto F=unpack(captured.cameraFwd), U=unpack(captured.cameraUp), R=unpack(captured.cameraRight);
+        bool ok=calls == old_calls+1 && close3(captured.cameraFwd,fwd) && close3(captured.cameraUp,up) && close3(captured.cameraRight,right) && close3(captured.cameraPos,test.translation)
+            && close(F.length_squared(),1) && close(U.length_squared(),1) && close(R.length_squared(),1)
+            && close(F.dot(U),0) && close(F.dot(R),0) && close(U.dot(R),0)
+            && close3(sl::float3(R.cross(U).x,R.cross(U).y,R.cross(U).z),-F);
+        std::printf("%s %s captured F=(%.6f,%.6f,%.6f) U=(%.6f,%.6f,%.6f) R=(%.6f,%.6f,%.6f) P=(%.6f,%.6f,%.6f)\n", ok ? "PASS" : "FAIL",test.name,F.x,F.y,F.z,U.x,U.y,U.z,R.x,R.y,R.z,captured.cameraPos.x,captured.cameraPos.y,captured.cameraPos.z);
+        failures += !ok;
+    }
+    return failures;
+}
+int main(int argc,char **argv) {
+    int failures=argc>1 && std::string(argv[1])=="fov" ? check_fov() : check_basis();
+    std::printf("Result: %d failures, %d captured slSetConstants calls\n",failures,calls);
+    return failures ? 1 : 0;
+}

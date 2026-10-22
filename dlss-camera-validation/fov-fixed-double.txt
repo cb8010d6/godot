@@ -1,0 +1,11 @@
+Repository: /workspace/godot-fov
+Mode: fov; real_t: double; CPU source-extraction harness with mock SDK capture
+PASS KEEP_WIDTH H=90 1:1 captured cameraFOV=1.570796371 rad (90.000003 deg), expected=1.570796327 rad, aspect=1.000000
+PASS KEEP_WIDTH H=90 16:9 captured cameraFOV=1.024778962 rad (58.715509 deg), expected=1.024778921 rad, aspect=1.777778
+PASS KEEP_WIDTH H=90 21:9 captured cameraFOV=0.809783578 rad (46.397181 deg), expected=0.809783573 rad, aspect=2.333333
+PASS KEEP_WIDTH H=90 9:16 captured cameraFOV=2.116813660 rad (121.284489 deg), expected=2.116813733 rad, aspect=0.562500
+PASS KEEP_HEIGHT V=90 1:1 captured cameraFOV=1.570796371 rad (90.000003 deg), expected=1.570796327 rad, aspect=1.000000
+PASS KEEP_HEIGHT V=90 16:9 captured cameraFOV=1.570796371 rad (90.000003 deg), expected=1.570796327 rad, aspect=1.777778
+PASS KEEP_HEIGHT V=90 21:9 captured cameraFOV=1.570796371 rad (90.000003 deg), expected=1.570796327 rad, aspect=2.333333
+PASS KEEP_HEIGHT V=90 9:16 captured cameraFOV=1.570796371 rad (90.000003 deg), expected=1.570796327 rad, aspect=0.562500
+Result: 0 failures, 8 captured slSetConstants calls
