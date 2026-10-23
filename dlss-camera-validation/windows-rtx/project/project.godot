@@ -1,0 +1,20 @@
+config_version=5
+
+[application]
+config/name="DLSS camera PR runtime validation"
+run/main_scene="res://main.tscn"
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=810
+window/vsync/vsync_mode=0
+
+[rendering]
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.windows="forward_plus"
+streamline/reflex_mode=1
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[physics]
+2d/physics_engine="Dummy"
+3d/physics_engine="Dummy"

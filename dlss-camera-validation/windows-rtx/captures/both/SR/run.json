@@ -1,0 +1,49 @@
+{
+  "variant": "both",
+  "mode": "SR",
+  "suite": "full",
+  "command": [
+    "<workspace>\\validation\\bin\\both.exe",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--audio-driver",
+    "Dummy",
+    "--disable-crash-handler",
+    "--verbose",
+    "--",
+    "--mode",
+    "SR",
+    "--output",
+    "<workspace>\\validation\\captures\\both\\SR",
+    "--suite",
+    "full"
+  ],
+  "exe_sha256": "e13c33529942b79eb761cb656dd9d289f96e19abf7ffb86cfe3039adcacc6835",
+  "started_unix": 1792688287.5441754,
+  "exit_code": 0,
+  "loaded_sdk_modules": [
+    {
+      "name": "sl.interposer.dll",
+      "sha256": "c2397e96e35c1e78c0b351b0d2b070c6529ccc990f4cc73f04722db24dc2acce"
+    },
+    {
+      "name": "nvngx_dlss.dll",
+      "sha256": "22c4660249da5b352cde0ce4d95178c3761223dd6ac096d0b88e5c03d7a5cdd1"
+    },
+    {
+      "name": "nvngx_deepdvc.dll",
+      "sha256": "60ac1e9f32ab31a8dcda3e875fd3dc2d3bcffeca3c6ca33551d6dc6871dbfd1b"
+    },
+    {
+      "name": "nvngx_dlssd.dll",
+      "sha256": "4d53f6114edc61bd41fc293008aa818ab092bb8286830e61c98453da92d936d0"
+    },
+    {
+      "name": "sl.dlss_g.dll",
+      "sha256": "e07fd38310805e34265929d1999f33ed5566cf30176c082ca84ef63992f6c7d7"
+    }
+  ],
+  "elapsed_seconds": 15.544776678085327
+}

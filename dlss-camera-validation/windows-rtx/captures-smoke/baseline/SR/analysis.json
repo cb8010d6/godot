@@ -1,0 +1,98 @@
+{
+  "variant": "baseline",
+  "mode": "SR",
+  "exit_code": 0,
+  "metadata": {
+    "api": "1.4.341",
+    "capabilities": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    },
+    "driver": "vulkan",
+    "engine": {
+      "build": "custom_build",
+      "hash": "135dff3887a3d2ccf45cafbd9bdffa7b718e1e76",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "dev",
+      "string": "4.8-dev (custom_build)",
+      "timestamp": 1784890195
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "mode": "SR",
+    "renderer": "forward_plus"
+  },
+  "runtime_errors": [
+    "ERROR: Could not load global script cache."
+  ],
+  "malformed_records": [],
+  "constant_records": 93,
+  "sdk_failures": [],
+  "cases": [
+    {
+      "id": "fov_width_16x9",
+      "samples": 8,
+      "expected_fov": 1.0247789206214755,
+      "actual_fov": 2.11748075485229,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": false,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_yaw90",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52961111068726,
+      "expected_forward": [
+        -1.0,
+        0.0,
+        -6.123233995736766e-17
+      ],
+      "actual_forward": [
+        1.0,
+        0.0,
+        4.37113882867379e-08
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": false,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": false,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    }
+  ],
+  "runtime_complete": false
+}

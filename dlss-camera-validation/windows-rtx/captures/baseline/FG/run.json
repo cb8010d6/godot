@@ -1,0 +1,45 @@
+{
+  "variant": "baseline",
+  "mode": "FG",
+  "suite": "full",
+  "command": [
+    "<workspace>\\validation\\bin\\baseline.exe",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--audio-driver",
+    "Dummy",
+    "--disable-crash-handler",
+    "--verbose",
+    "--",
+    "--mode",
+    "FG",
+    "--output",
+    "<workspace>\\validation\\captures\\baseline\\FG",
+    "--suite",
+    "full"
+  ],
+  "exe_sha256": "3b45fc9acd22fc71fa39fbca660de797fbbf2696e590dcc952d2c38eb1813b75",
+  "started_unix": 1792688423.2628748,
+  "exit_code": 0,
+  "loaded_sdk_modules": [
+    {
+      "name": "sl.interposer.dll",
+      "sha256": "c2397e96e35c1e78c0b351b0d2b070c6529ccc990f4cc73f04722db24dc2acce"
+    },
+    {
+      "name": "nvngx_dlssg.dll",
+      "sha256": "5685c065e6c048f673d70f5dda5b23570c8570642e4e284216f59c2e85583016"
+    },
+    {
+      "name": "nvngx_deepdvc.dll",
+      "sha256": "60ac1e9f32ab31a8dcda3e875fd3dc2d3bcffeca3c6ca33551d6dc6871dbfd1b"
+    },
+    {
+      "name": "nvngx_dlssd.dll",
+      "sha256": "4d53f6114edc61bd41fc293008aa818ab092bb8286830e61c98453da92d936d0"
+    }
+  ],
+  "elapsed_seconds": 68.55413484573364
+}

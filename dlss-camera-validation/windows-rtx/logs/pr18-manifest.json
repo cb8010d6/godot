@@ -1,0 +1,15 @@
+{
+  "variant": "pr18",
+  "base": "135dff3887a3d2ccf45cafbd9bdffa7b718e1e76",
+  "pr17": "2ccecd2d10d2304e442dc8fb94a6878cd61d08be",
+  "pr18": "0b50d914deb01928f4985b555e4765f8fa16b43b",
+  "instrumented": true,
+  "production_sha256": {
+    "servers/rendering/renderer_rd/effects/dlss.cpp": "56cf96fd3f01d497bcd7881c4b835f7d4c9a902b33003eb4c7ed69b2a526fd63",
+    "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp": "9fe4f73b4760859295736dab5b0d472e5d160215d98f28ee092277de6381d459"
+  },
+  "built_source_sha256": {
+    "servers/rendering/renderer_rd/effects/dlss.cpp": "faa8cb2517c319c0ea206679c691ed69f707af28abd883e500f1980545fa7f41",
+    "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp": "9fe4f73b4760859295736dab5b0d472e5d160215d98f28ee092277de6381d459"
+  }
+}

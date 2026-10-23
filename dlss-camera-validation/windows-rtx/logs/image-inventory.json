@@ -1,0 +1,4034 @@
+[
+  {
+    "path": "captures/baseline/DLAA/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.44932484918105,
+      72.68370350279326,
+      67.26026471421478
+    ],
+    "entropy": 8.376551096021172,
+    "sha256": "a5da2ac173a059f7a5c0fa30fa8de3d9092e182506fdbae9dfb88e9cbc72d6c4"
+  },
+  {
+    "path": "captures/baseline/DLAA/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/baseline/DLAA/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.97993442524293,
+      55.54792768488924,
+      78.0102063932263
+    ],
+    "entropy": 8.536456181567551,
+    "sha256": "b777e346bdd701c57ca837dd238ba9ce16c290b41bba0f47970da1b309ca9bbf"
+  },
+  {
+    "path": "captures/baseline/DLAA/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.62521112733961,
+      29.28511422922896,
+      76.65116203100288
+    ],
+    "entropy": 8.180598419579251,
+    "sha256": "c0d70463b5603be852336a7613256275f18661099a48f58715767e4d2e59cd8c"
+  },
+  {
+    "path": "captures/baseline/DLAA/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.20351336032196,
+      73.47627935078782,
+      40.7006922430641
+    ],
+    "entropy": 8.001849938356946,
+    "sha256": "e6310801943e745cf1a87aca51e66810d5cb2b68e80bb35d160bf0d2b72b1f57"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.17695064764616,
+      78.85972395199875,
+      42.536866962286226
+    ],
+    "entropy": 7.996086374841031,
+    "sha256": "4274d1ce5950ab86399edd9f6878cd24e6b50d2e1d32c3755de7f6d963d14542"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.56421142104299,
+      22.678479836855466,
+      43.85250332501147
+    ],
+    "entropy": 7.292440666063615,
+    "sha256": "f4008cd67273c19381035783c71c004f948ffe7bbdcc7d4fc5c4269fe4193478"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.751017446126859,
+      20.240235842660034,
+      40.10874045801399
+    ],
+    "entropy": 6.978619406199535,
+    "sha256": "829ae79b1efab6dcf0081ac97ebcfc63e3838dd3daa59942d2cdf65f54d911de"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.174471589581463,
+      19.51560970175759,
+      39.842144896686094
+    ],
+    "entropy": 6.907654454674669,
+    "sha256": "eb5aac5049167612570f21e8b2ddc95099b18c97ceca5476439defb5eaba6ab8"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.64306735401638,
+      29.294698377919712,
+      76.66306263821258
+    ],
+    "entropy": 8.176297817849168,
+    "sha256": "dc462daff24cefcc9dc3db0ad48cddb041b532a6dcecd520f69eaab3b5bb74d9"
+  },
+  {
+    "path": "captures/baseline/DLAA/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.45461039521145,
+      72.68853046666806,
+      67.25676999092754
+    ],
+    "entropy": 8.375978736355648,
+    "sha256": "115a37d7ced69211a55256df06fa54ef2794aca9906b86f424ee2e0c106e1fe2"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.24183776121552,
+      78.82588191644557,
+      44.51214674491819
+    ],
+    "entropy": 8.080109597348008,
+    "sha256": "5f6807aec56557ae79ea5d5932b5b6b1fcc8fad8939b52ee580600f4b7744181"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.27358605636597,
+      78.5180681276296,
+      45.41222494054062
+    ],
+    "entropy": 8.077617399077376,
+    "sha256": "69bd360e7b2455cdcaafe83aad75da4a48db74700cdf5f3df845e05ba55a0e43"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.7058383473022,
+      78.10117338972289,
+      45.88232214426702
+    ],
+    "entropy": 8.08693610008882,
+    "sha256": "88b7975add71ffd0c66eb109fb53e3d6de540f2ea675359bc16dae0083904b2b"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.811504341525094,
+      77.77762184807793,
+      45.87922499472914
+    ],
+    "entropy": 8.062563136748894,
+    "sha256": "d3c89902cf93e0ac4b377d0bf76796de434ba12bf6d74111f09f363bfea28478"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.79844721660557,
+      77.60032291783455,
+      45.67172583159587
+    ],
+    "entropy": 8.0273596552117,
+    "sha256": "98f16787aad806d0bbfa5fafd0000998440a09a2d5df7a14198aeded02aa6ef0"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.1558757768522,
+      78.09907722363799,
+      45.25287020839624
+    ],
+    "entropy": 8.04266877476744,
+    "sha256": "a2d4acbf29cf41702e213977d53f189fc70acc79a560a71db364b2b855d0e0e3"
+  },
+  {
+    "path": "captures/baseline/DLAA/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.42590561910356,
+      78.66475078601385,
+      44.85955748457436
+    ],
+    "entropy": 8.07537122169439,
+    "sha256": "f7efe17d65cd26d4a8fcb9558fff7b76fcdbaecb07a99d3ef981116086f06890"
+  },
+  {
+    "path": "captures/baseline/FG/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33065525248564,
+      72.57745205235031,
+      67.16195267857381
+    ],
+    "entropy": 8.388611000164412,
+    "sha256": "9e81de0e67b3664b5546e43b0dd29365ced6d10a087c791bb59233c2158b9bbf"
+  },
+  {
+    "path": "captures/baseline/FG/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.10148986000524,
+      78.87776106543593,
+      43.40544697588466
+    ],
+    "entropy": 8.080666124878013,
+    "sha256": "56d54cb5e6ae682447f972df65a477c9ffa628d8e4ad12eff683e1e487beb2e9"
+  },
+  {
+    "path": "captures/baseline/FG/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.83530808149477,
+      55.49609531178336,
+      77.91861175290308
+    ],
+    "entropy": 8.545803335738016,
+    "sha256": "b60e901bf3b44773f1f6b58bf792a48c3c6773f08a51aff7dec42f7f9dc52345"
+  },
+  {
+    "path": "captures/baseline/FG/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.53128117148863,
+      29.30062651538249,
+      76.48856592542131
+    ],
+    "entropy": 8.190933976383015,
+    "sha256": "43ad4e07f322ead16460f2eb54baffbd0179511ebadd6d756c4e73bc61e17cac"
+  },
+  {
+    "path": "captures/baseline/FG/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.1689415153521,
+      73.38871017278737,
+      40.65252872194847
+    ],
+    "entropy": 8.013623396988539,
+    "sha256": "af5c5533d6e6e427edee58924a3ead2846cbfdc2cf86ce9f9b7595edef54d293"
+  },
+  {
+    "path": "captures/baseline/FG/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11425619382766,
+      78.88597557061024,
+      43.40549530855074
+    ],
+    "entropy": 8.081075592920484,
+    "sha256": "8be4c301aa71022085d47766ab75728f4d83f7e49faf3344eacb1b775d275a53"
+  },
+  {
+    "path": "captures/baseline/FG/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.16773893953115,
+      78.77938119066229,
+      42.5779664904587
+    ],
+    "entropy": 8.011556131175139,
+    "sha256": "2f6c77e34986c9d824c38ba058c1353f554f17a0d7441448cf4cbd1832ace525"
+  },
+  {
+    "path": "captures/baseline/FG/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52967503871799,
+      22.694914595150102,
+      43.95672271207324
+    ],
+    "entropy": 7.311830283233328,
+    "sha256": "bdeb4c9ddd2cbb1473837c73ca06a6f3eb464dde23ac5c65e403e09a8c125d62"
+  },
+  {
+    "path": "captures/baseline/FG/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.11062353238373,
+      20.999639549127263,
+      41.53810638231718
+    ],
+    "entropy": 7.474283902933884,
+    "sha256": "03a8c5d25a4db7f05b85a6f0692783a5a2c6d00fb65d5da188cbbf3014ce5a97"
+  },
+  {
+    "path": "captures/baseline/FG/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.743052969588884,
+      20.268713228774054,
+      40.26984952976282
+    ],
+    "entropy": 6.99342647153586,
+    "sha256": "535523e613b54c0335ca2f1ce430e911c233ffff88765cd0fb0c93dcb6cb4274"
+  },
+  {
+    "path": "captures/baseline/FG/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.176508515887768,
+      19.51739460467057,
+      39.902714637080095
+    ],
+    "entropy": 6.922196936624804,
+    "sha256": "f6eb6271be9c36aebb0d485463ad4c97981705e0824695a6d6e00177a91f5de8"
+  },
+  {
+    "path": "captures/baseline/FG/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50805975545083,
+      29.27572771594924,
+      76.4430389269336
+    ],
+    "entropy": 8.186934575325271,
+    "sha256": "1c3bc4e3b9ba047b68780908a4e6e285e80bf3ce327df3acc609726af9bd03a6"
+  },
+  {
+    "path": "captures/baseline/FG/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.10573776365606,
+      20.995755833212666,
+      41.65361408538181
+    ],
+    "entropy": 7.475398455833186,
+    "sha256": "44b43aa46984fcd579c3961b2908db09b2b3cbec08f951ebc5c6255d4c3e001c"
+  },
+  {
+    "path": "captures/baseline/FG/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33301589854148,
+      72.57528318792255,
+      67.17071177154384
+    ],
+    "entropy": 8.388681281372545,
+    "sha256": "1e458bf5a765e0575c5afed4ce7b5fa101ceb57cbede4444f389e3edcc27da69"
+  },
+  {
+    "path": "captures/baseline/FG/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.17224334658355,
+      78.66582518987637,
+      44.526971116923804
+    ],
+    "entropy": 8.098073117329188,
+    "sha256": "66174fa4aaa9aa2eeedb8ae1e781d2277baf89ee983e19ab7b22395000c783d9"
+  },
+  {
+    "path": "captures/baseline/FG/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.1726704466694,
+      78.36368131675214,
+      45.500262464122045
+    ],
+    "entropy": 8.094081159149313,
+    "sha256": "dc7890af35dc90b9ae2da1c896a2f3831f810ef2c1420d8075571963d80f58c1"
+  },
+  {
+    "path": "captures/baseline/FG/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.59286710426749,
+      77.956107369127,
+      45.991119249863644
+    ],
+    "entropy": 8.104782706448782,
+    "sha256": "8a7bacb19377b3bac8cf8994eb4ffcccca37f7926ca0c60ac853e5b28c1d9827"
+  },
+  {
+    "path": "captures/baseline/FG/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.70467804508996,
+      77.64426672973384,
+      45.957540151370395
+    ],
+    "entropy": 8.076807260955846,
+    "sha256": "998e311930619ea647e030bbd4c45ae4f8ccd3874d18f68715e55c8e409cb293"
+  },
+  {
+    "path": "captures/baseline/FG/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.73433094811786,
+      77.44784865217414,
+      45.71365119789884
+    ],
+    "entropy": 8.044220445153352,
+    "sha256": "9ef949b2ac4959ce2b786327f16e06987c715c48f5bace7561d31c9f4382a830"
+  },
+  {
+    "path": "captures/baseline/FG/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.068368580641625,
+      77.95161635189888,
+      45.333691633422646
+    ],
+    "entropy": 8.05802310630158,
+    "sha256": "68ea437cf025f0f9726954c3b7813a508b9e70d262e5c7a59e5ee6fcf2ac225b"
+  },
+  {
+    "path": "captures/baseline/FG/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.31560775415282,
+      78.53286345623374,
+      44.753951730622994
+    ],
+    "entropy": 8.090355479262351,
+    "sha256": "17898762d0a6a411bdced90448e4adc96eef33e1ac8e74a6a3de3d2ead291e6b"
+  },
+  {
+    "path": "captures/baseline/RR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.02645086430831,
+      53.24768039626612,
+      51.69230001823475
+    ],
+    "entropy": 8.435313583632585,
+    "sha256": "a419d2f8c8d3c519c4c13aa8641f074aae3f2a5d2156c98c6902dcca68d39505"
+  },
+  {
+    "path": "captures/baseline/RR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/baseline/RR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      69.7066331152782,
+      50.49893173844935,
+      66.85739230602576
+    ],
+    "entropy": 8.343808217623161,
+    "sha256": "886a9294c81dc7f9453ed6715c238d860ff06374fc9e3c9398b275e526fde984"
+  },
+  {
+    "path": "captures/baseline/RR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      68.96965065234764,
+      29.866022883827295,
+      63.07698166198494
+    ],
+    "entropy": 8.410131195767269,
+    "sha256": "06183410f6801121db651b6e911ba814c3ef61c1d2d0dada460b295c8592dde3"
+  },
+  {
+    "path": "captures/baseline/RR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      40.809273365264914,
+      54.01583369225871,
+      31.73776342854466
+    ],
+    "entropy": 7.899887229049732,
+    "sha256": "294a12c54aa59625aa19494d6cec1a0be35a68e9a78e51cafb8212afd8bd123b"
+  },
+  {
+    "path": "captures/baseline/RR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/baseline/RR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      36.47538930582092,
+      56.54793850916952,
+      33.118127109838454
+    ],
+    "entropy": 7.9209740604404395,
+    "sha256": "10f5fbc87c67520d1cc146d6814dece439de5197d2732718fc145d60075c7f7f"
+  },
+  {
+    "path": "captures/baseline/RR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      37.936832975195266,
+      30.43038520294549,
+      36.81317098471343
+    ],
+    "entropy": 8.066247185666928,
+    "sha256": "ec3cdf59dad5eb7e181abae6e77ad6a71b385189fc70aaf57e06381e19ee2aec"
+  },
+  {
+    "path": "captures/baseline/RR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.436387252451524,
+      29.93310936943402,
+      34.58097640130318
+    ],
+    "entropy": 8.1460807606101,
+    "sha256": "7b0ac8e55f7b1e9b1df74d1d200592343a08daa3006b434a3e4328e285574b89"
+  },
+  {
+    "path": "captures/baseline/RR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      19.25023650731156,
+      23.01911374333979,
+      34.61920351365908
+    ],
+    "entropy": 7.7061343522349715,
+    "sha256": "9104fb0a9fd1597cbad89f82725c7f109bf9a76c4898d70ef7e2fed4a8c8d015"
+  },
+  {
+    "path": "captures/baseline/RR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      14.36542281013441,
+      19.534938225648947,
+      34.49731958251905
+    ],
+    "entropy": 7.5790569201309355,
+    "sha256": "caf43b5acc970615acf9f4dd9a8324e16a81591a335ba6c020e1c9b9cd7b4ce1"
+  },
+  {
+    "path": "captures/baseline/RR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      68.99796124224318,
+      29.951524706309048,
+      63.02828133325757
+    ],
+    "entropy": 8.412408598852483,
+    "sha256": "dca15c81baf0c7c81ee8ad18e6080818df3f22a52d2d31dd1f22f6a6c413cb5d"
+  },
+  {
+    "path": "captures/baseline/RR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.424128320708505,
+      29.89759951120468,
+      34.56406410958401
+    ],
+    "entropy": 8.142107201853078,
+    "sha256": "e2c6664d3f2f93ad3d3948f22fe93eb3f8c094073a880562214c112b895ab213"
+  },
+  {
+    "path": "captures/baseline/RR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.01806808612042,
+      53.23828410844621,
+      51.689095685978636
+    ],
+    "entropy": 8.435000973838097,
+    "sha256": "8563e1e3d9cefafd7bee992739ebdb274c576a4c1b56cc7e8e909f56d6640362"
+  },
+  {
+    "path": "captures/baseline/RR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.488104733210925,
+      57.48937830558457,
+      34.47503689935701
+    ],
+    "entropy": 8.095777901681949,
+    "sha256": "e127d2a3ffd4c2eaae9dec050d046c638eb5082883e71a15b59456a65629b2b2"
+  },
+  {
+    "path": "captures/baseline/RR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.07675371889545,
+      57.09157351139644,
+      35.36309229063497
+    ],
+    "entropy": 8.190320437617233,
+    "sha256": "366a6616b5616390e5c5cec91f4a09f25a11bd446ea127374fc636fc99d84282"
+  },
+  {
+    "path": "captures/baseline/RR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.71510562397316,
+      56.663522042590564,
+      35.99138930697316
+    ],
+    "entropy": 8.249571738765695,
+    "sha256": "185fe6f893f48b5bb8cbca9c1701f7a81b3cb2e3288636e1953caba95d663c4d"
+  },
+  {
+    "path": "captures/baseline/RR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.36604019878186,
+      56.09721516792071,
+      35.92057556028583
+    ],
+    "entropy": 8.243949295304766,
+    "sha256": "0be0f41ec3c7d3aaace38e7209b8210a0353effb21a8b2344671291dd39fe8da"
+  },
+  {
+    "path": "captures/baseline/RR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.6582870516736,
+      56.042451402500156,
+      35.72271072541665
+    ],
+    "entropy": 8.198446574229031,
+    "sha256": "8e45961f8b8d996bfe6d6c90dac30ec84bd52468a95f3fe9b36d0ff46b3e65de"
+  },
+  {
+    "path": "captures/baseline/RR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.2826664910201,
+      56.49842726425961,
+      35.469717779792454
+    ],
+    "entropy": 8.19272285449066,
+    "sha256": "6edfbbc7165801e74a3f9ff181f5edc84a52c48d7f80cc6231b19f4feda80b6b"
+  },
+  {
+    "path": "captures/baseline/RR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.82465226771487,
+      57.04027883373929,
+      35.09829635764868
+    ],
+    "entropy": 8.195486052798806,
+    "sha256": "abc8ff846a8c2e6cb5786c7e7200a1653fe3eb5ca35e6470bb48dda1f22afbd2"
+  },
+  {
+    "path": "captures/baseline/SR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33008125036146,
+      72.5736776829622,
+      67.18216367487805
+    ],
+    "entropy": 8.38932711159572,
+    "sha256": "e0a28d83f6987a2c5cd1b474037032a3fb6c530ad12c5e0eea38aa163e521d79"
+  },
+  {
+    "path": "captures/baseline/SR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/baseline/SR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.830580437049,
+      55.47076855535165,
+      77.91497041142928
+    ],
+    "entropy": 8.543152734990038,
+    "sha256": "f996d552be36318e46b4598a578c8514668c66ab384285dd6d8e8d357a31acfd"
+  },
+  {
+    "path": "captures/baseline/SR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.51387343329442,
+      29.274004806677084,
+      76.4658445353845
+    ],
+    "entropy": 8.191012250217264,
+    "sha256": "e91e01d22709f59415b9f8c9e2e6d67d1fdb54a8ccca6560810e3ff1df719e0a"
+  },
+  {
+    "path": "captures/baseline/SR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.13885172266877,
+      73.35738529014127,
+      40.59305116840731
+    ],
+    "entropy": 8.011402633154466,
+    "sha256": "152490377ad1eecd2d625696a362852fe61310453d0ae168e74018c225c9219e"
+  },
+  {
+    "path": "captures/baseline/SR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/baseline/SR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.13590881568348,
+      78.76095421684488,
+      42.581018822058944
+    ],
+    "entropy": 8.010117164354018,
+    "sha256": "8f879cb2b6471ca1c50d3333f1aa72fd86757d59949aa22433cdfcc492955caf"
+  },
+  {
+    "path": "captures/baseline/SR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52090723903619,
+      22.676201801681604,
+      43.96936510380939
+    ],
+    "entropy": 7.311165126537555,
+    "sha256": "b067b75db16255548d08e84df10f14cd573e8f1aa003af156cddfc433242ac41"
+  },
+  {
+    "path": "captures/baseline/SR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.082372270242985,
+      20.968389458045582,
+      41.59563174971712
+    ],
+    "entropy": 7.473085475701235,
+    "sha256": "7b7b8ce975d009ad070a91efba27450013d60342a73c62a9b5f2992e06388e49"
+  },
+  {
+    "path": "captures/baseline/SR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.708881239248969,
+      20.248966173122902,
+      40.2382654435388
+    ],
+    "entropy": 6.989652834327761,
+    "sha256": "d9a9c7a057ecd2da06848e2689b4f1b1a37688de298057f3ffb9bcd87dbaa1d4"
+  },
+  {
+    "path": "captures/baseline/SR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.168889978413269,
+      19.505274398036686,
+      39.91541047132704
+    ],
+    "entropy": 6.9203868301008535,
+    "sha256": "56e02cf8bb825675c12c371f79ffd851601bd6c1ed9ccb386d2c7edded701064"
+  },
+  {
+    "path": "captures/baseline/SR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50883227828038,
+      29.270786473241763,
+      76.4276369877996
+    ],
+    "entropy": 8.186246415593255,
+    "sha256": "e166e6fddb88a8cef4d833b8253d7026e67142693c369c543f73e2746871eee7"
+  },
+  {
+    "path": "captures/baseline/SR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.091579992279094,
+      20.96549547128779,
+      41.575960678240165
+    ],
+    "entropy": 7.472067137402125,
+    "sha256": "ff0bb55b1fcc8207d7312e435df790fba8d1d1a687992e22c8994c1f02e53774"
+  },
+  {
+    "path": "captures/baseline/SR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33259771479537,
+      72.57617196954897,
+      67.18061321262503
+    ],
+    "entropy": 8.38882000562763,
+    "sha256": "dbbce2dde0a24b784dc8d6d2a476e97a432e01d97249b7aca0a610b763a7786c"
+  },
+  {
+    "path": "captures/baseline/SR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.19698692474444,
+      78.69816337241514,
+      44.63192907268354
+    ],
+    "entropy": 8.098944998259093,
+    "sha256": "151357d933cd78e7b9c3bf6d5d2a9916765f700a2af9f514be66ec9d7b256e56"
+  },
+  {
+    "path": "captures/baseline/SR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.191962136520274,
+      78.37416657232671,
+      45.595225713823396
+    ],
+    "entropy": 8.095057143307534,
+    "sha256": "103e6c431903bf48b7a0537e880a5d10bd693b0b19ef51e07ac7c0d51e168ece"
+  },
+  {
+    "path": "captures/baseline/SR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.604622369953425,
+      77.96560614556616,
+      46.25983305717889
+    ],
+    "entropy": 8.105707359188495,
+    "sha256": "58c9878e476b18f6affb5b20893d5738145f7e3e70175ac5b6d9fed71978e8c9"
+  },
+  {
+    "path": "captures/baseline/SR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.72019768089374,
+      77.66124024594562,
+      45.882574687206294
+    ],
+    "entropy": 8.076772403381822,
+    "sha256": "37bf6eb90db617f87c0e6521615d6a654f2dc6a42c2c5597ab3d19e12a762bb3"
+  },
+  {
+    "path": "captures/baseline/SR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.738084182530045,
+      77.45442206799085,
+      45.70169307616885
+    ],
+    "entropy": 8.04198148698445,
+    "sha256": "55ba6bd256c2ab20ef959436206d20c24637e8016d185f5a2c32071056e6420d"
+  },
+  {
+    "path": "captures/baseline/SR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.07515341621239,
+      77.96383896701767,
+      45.22829428430358
+    ],
+    "entropy": 8.056955408393078,
+    "sha256": "4721b88d1258ebe9d19aebda221cd5ca58766e567c66fcb903d7901a90599ebc"
+  },
+  {
+    "path": "captures/baseline/SR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.32776471167004,
+      78.54462867345492,
+      44.722226183929415
+    ],
+    "entropy": 8.089919870108943,
+    "sha256": "2b6f23668ab968bc3b492465c19f08b979aa079303c03141aa4b005b2111731a"
+  },
+  {
+    "path": "captures/both/DLAA/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.44932484918105,
+      72.68370350279326,
+      67.26026471421478
+    ],
+    "entropy": 8.376551096021172,
+    "sha256": "a5da2ac173a059f7a5c0fa30fa8de3d9092e182506fdbae9dfb88e9cbc72d6c4"
+  },
+  {
+    "path": "captures/both/DLAA/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/both/DLAA/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.97993442524293,
+      55.54792768488924,
+      78.0102063932263
+    ],
+    "entropy": 8.536456181567551,
+    "sha256": "b777e346bdd701c57ca837dd238ba9ce16c290b41bba0f47970da1b309ca9bbf"
+  },
+  {
+    "path": "captures/both/DLAA/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.62521112733961,
+      29.28511422922896,
+      76.65116203100288
+    ],
+    "entropy": 8.180598419579251,
+    "sha256": "c0d70463b5603be852336a7613256275f18661099a48f58715767e4d2e59cd8c"
+  },
+  {
+    "path": "captures/both/DLAA/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.20351336032196,
+      73.47627935078782,
+      40.7006922430641
+    ],
+    "entropy": 8.001849938356946,
+    "sha256": "e6310801943e745cf1a87aca51e66810d5cb2b68e80bb35d160bf0d2b72b1f57"
+  },
+  {
+    "path": "captures/both/DLAA/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/both/DLAA/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.17695064764616,
+      78.85972395199875,
+      42.536866962286226
+    ],
+    "entropy": 7.996086374841031,
+    "sha256": "4274d1ce5950ab86399edd9f6878cd24e6b50d2e1d32c3755de7f6d963d14542"
+  },
+  {
+    "path": "captures/both/DLAA/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.56421142104299,
+      22.678479836855466,
+      43.85250332501147
+    ],
+    "entropy": 7.292440666063615,
+    "sha256": "f4008cd67273c19381035783c71c004f948ffe7bbdcc7d4fc5c4269fe4193478"
+  },
+  {
+    "path": "captures/both/DLAA/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/both/DLAA/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.751017446126859,
+      20.240235842660034,
+      40.10874045801399
+    ],
+    "entropy": 6.978619406199535,
+    "sha256": "829ae79b1efab6dcf0081ac97ebcfc63e3838dd3daa59942d2cdf65f54d911de"
+  },
+  {
+    "path": "captures/both/DLAA/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.174471589581463,
+      19.51560970175759,
+      39.842144896686094
+    ],
+    "entropy": 6.907654454674669,
+    "sha256": "eb5aac5049167612570f21e8b2ddc95099b18c97ceca5476439defb5eaba6ab8"
+  },
+  {
+    "path": "captures/both/DLAA/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.64306735401638,
+      29.294698377919712,
+      76.66306263821258
+    ],
+    "entropy": 8.176297817849168,
+    "sha256": "dc462daff24cefcc9dc3db0ad48cddb041b532a6dcecd520f69eaab3b5bb74d9"
+  },
+  {
+    "path": "captures/both/DLAA/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/both/DLAA/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.45461039521145,
+      72.68853046666806,
+      67.25676999092754
+    ],
+    "entropy": 8.375978736355648,
+    "sha256": "115a37d7ced69211a55256df06fa54ef2794aca9906b86f424ee2e0c106e1fe2"
+  },
+  {
+    "path": "captures/both/DLAA/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.24183776121552,
+      78.82588191644557,
+      44.51214674491819
+    ],
+    "entropy": 8.080109597348008,
+    "sha256": "5f6807aec56557ae79ea5d5932b5b6b1fcc8fad8939b52ee580600f4b7744181"
+  },
+  {
+    "path": "captures/both/DLAA/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.27358605636597,
+      78.5180681276296,
+      45.41222494054062
+    ],
+    "entropy": 8.077617399077376,
+    "sha256": "69bd360e7b2455cdcaafe83aad75da4a48db74700cdf5f3df845e05ba55a0e43"
+  },
+  {
+    "path": "captures/both/DLAA/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.7058383473022,
+      78.10117338972289,
+      45.88232214426702
+    ],
+    "entropy": 8.08693610008882,
+    "sha256": "88b7975add71ffd0c66eb109fb53e3d6de540f2ea675359bc16dae0083904b2b"
+  },
+  {
+    "path": "captures/both/DLAA/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.811504341525094,
+      77.77762184807793,
+      45.87922499472914
+    ],
+    "entropy": 8.062563136748894,
+    "sha256": "d3c89902cf93e0ac4b377d0bf76796de434ba12bf6d74111f09f363bfea28478"
+  },
+  {
+    "path": "captures/both/DLAA/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.79844721660557,
+      77.60032291783455,
+      45.67172583159587
+    ],
+    "entropy": 8.0273596552117,
+    "sha256": "98f16787aad806d0bbfa5fafd0000998440a09a2d5df7a14198aeded02aa6ef0"
+  },
+  {
+    "path": "captures/both/DLAA/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.1558757768522,
+      78.09907722363799,
+      45.25287020839624
+    ],
+    "entropy": 8.04266877476744,
+    "sha256": "a2d4acbf29cf41702e213977d53f189fc70acc79a560a71db364b2b855d0e0e3"
+  },
+  {
+    "path": "captures/both/DLAA/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.42590561910356,
+      78.66475078601385,
+      44.85955748457436
+    ],
+    "entropy": 8.07537122169439,
+    "sha256": "f7efe17d65cd26d4a8fcb9558fff7b76fcdbaecb07a99d3ef981116086f06890"
+  },
+  {
+    "path": "captures/both/FG/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33071513448638,
+      72.57749062297958,
+      67.16194346206586
+    ],
+    "entropy": 8.38862230542265,
+    "sha256": "904bf97da8ddf20726e395349471dab08ec339b4c743f871cae1c4b13327797d"
+  },
+  {
+    "path": "captures/both/FG/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.10150374163175,
+      78.87776284573914,
+      43.40546770131154
+    ],
+    "entropy": 8.080674317916097,
+    "sha256": "0650af6d6af73b8d3c5305cc608350ca4fb67069a652a8f11d71d18a6df5b6d2"
+  },
+  {
+    "path": "captures/both/FG/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.83528126345021,
+      55.49610616877878,
+      77.91864015812632
+    ],
+    "entropy": 8.545816789923256,
+    "sha256": "de41af9522362f2e41990e80038bca5122173525c8b517a8b2b5479d37a15e74"
+  },
+  {
+    "path": "captures/both/FG/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.5312622069029,
+      29.300619535863916,
+      76.48855001953105
+    ],
+    "entropy": 8.190930615834962,
+    "sha256": "5d39cc4eb2b86ea4989ed1172fe5d215f21a6ea70b27e005a6ef6cf3c60a60ee"
+  },
+  {
+    "path": "captures/both/FG/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.168928484067465,
+      73.3886561356922,
+      40.652607513228325
+    ],
+    "entropy": 8.01363299426189,
+    "sha256": "0eaec214e7999d2c43c3ac84b2a11c9a2f0f9be67708a0a278e9298cb9d94e2a"
+  },
+  {
+    "path": "captures/both/FG/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11425619382766,
+      78.88597557061024,
+      43.40549530855074
+    ],
+    "entropy": 8.081075592920484,
+    "sha256": "8be4c301aa71022085d47766ab75728f4d83f7e49faf3344eacb1b775d275a53"
+  },
+  {
+    "path": "captures/both/FG/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.16773893953115,
+      78.77938119066229,
+      42.5779664904587
+    ],
+    "entropy": 8.011556131175139,
+    "sha256": "2f6c77e34986c9d824c38ba058c1353f554f17a0d7441448cf4cbd1832ace525"
+  },
+  {
+    "path": "captures/both/FG/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52967503871799,
+      22.694914595150102,
+      43.95672271207324
+    ],
+    "entropy": 7.311830283233328,
+    "sha256": "bdeb4c9ddd2cbb1473837c73ca06a6f3eb464dde23ac5c65e403e09a8c125d62"
+  },
+  {
+    "path": "captures/both/FG/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.11062353238373,
+      20.999639549127263,
+      41.53810638231718
+    ],
+    "entropy": 7.474283902933884,
+    "sha256": "03a8c5d25a4db7f05b85a6f0692783a5a2c6d00fb65d5da188cbbf3014ce5a97"
+  },
+  {
+    "path": "captures/both/FG/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.743052969588884,
+      20.268713228774054,
+      40.26984952976282
+    ],
+    "entropy": 6.99342647153586,
+    "sha256": "535523e613b54c0335ca2f1ce430e911c233ffff88765cd0fb0c93dcb6cb4274"
+  },
+  {
+    "path": "captures/both/FG/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.176508515887768,
+      19.51739460467057,
+      39.902714637080095
+    ],
+    "entropy": 6.922196936624804,
+    "sha256": "f6eb6271be9c36aebb0d485463ad4c97981705e0824695a6d6e00177a91f5de8"
+  },
+  {
+    "path": "captures/both/FG/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50801179445492,
+      29.275706887545073,
+      76.44307306504702
+    ],
+    "entropy": 8.186962917306124,
+    "sha256": "dd2eeea2773272fca687a8bc9690579aeda7db5b60bec300bb31cdfa480007ba"
+  },
+  {
+    "path": "captures/both/FG/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.10573776365606,
+      20.995755833212666,
+      41.65361408538181
+    ],
+    "entropy": 7.475398455833186,
+    "sha256": "44b43aa46984fcd579c3961b2908db09b2b3cbec08f951ebc5c6255d4c3e001c"
+  },
+  {
+    "path": "captures/both/FG/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33308769356444,
+      72.57534301549474,
+      67.17072391300854
+    ],
+    "entropy": 8.388687240511477,
+    "sha256": "87f7fe373a07b8eb88325c7d54653ca8c80311e81817c14d86c68b71cb307589"
+  },
+  {
+    "path": "captures/both/FG/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.17249409788666,
+      78.66581147356669,
+      44.526891297992165
+    ],
+    "entropy": 8.098100531932754,
+    "sha256": "20f4e4ecdf44df87c238b9c6675791c3efba10a4bc3b58ee2cef5aa2ce166e36"
+  },
+  {
+    "path": "captures/both/FG/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.172550116451724,
+      78.3636150857178,
+      45.500230651395455
+    ],
+    "entropy": 8.094081230733812,
+    "sha256": "8345b2e097a52f0720c49dd0de0a8e71c2b5083178ce748eeadd642b99218abc"
+  },
+  {
+    "path": "captures/both/FG/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.592886096383054,
+      77.95613976755662,
+      45.99110258011862
+    ],
+    "entropy": 8.10480089634488,
+    "sha256": "49adbc21acfa649ea2b205a66cd47a0ee7e08fb8992adf4bd7e2c3bdd8ddfa4c"
+  },
+  {
+    "path": "captures/both/FG/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.70480364893956,
+      77.64418161365712,
+      45.957554022117414
+    ],
+    "entropy": 8.0767902154967,
+    "sha256": "c42bcbf274665159a54ba452c089f467af57e317ebb65f969365ce0392ee82eb"
+  },
+  {
+    "path": "captures/both/FG/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.73425040473343,
+      77.44776413180637,
+      45.71382637433286
+    ],
+    "entropy": 8.044260952037819,
+    "sha256": "4dabce6f785ea5a0dd1fe412b652fdc804578f3da76773c6c23ee15027f6fc5a"
+  },
+  {
+    "path": "captures/both/FG/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.06836111774351,
+      77.95169008426166,
+      45.333717494625816
+    ],
+    "entropy": 8.058008214776029,
+    "sha256": "8c8a551533a593d4555afbd6db8d13f7bcae0502cd2aa656aad02897fdd747c6"
+  },
+  {
+    "path": "captures/both/FG/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.31536356926586,
+      78.53287191117764,
+      44.75387958187227
+    ],
+    "entropy": 8.090341456232517,
+    "sha256": "50771417c4569eafaaad4a67966238eb4a6c3d56c6479f3d304f6e6d35da5ca6"
+  },
+  {
+    "path": "captures/both/RR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.02645086430831,
+      53.24768039626612,
+      51.69230001823475
+    ],
+    "entropy": 8.435313583632585,
+    "sha256": "a419d2f8c8d3c519c4c13aa8641f074aae3f2a5d2156c98c6902dcca68d39505"
+  },
+  {
+    "path": "captures/both/RR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/both/RR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      69.7066331152782,
+      50.49893173844935,
+      66.85739230602576
+    ],
+    "entropy": 8.343808217623161,
+    "sha256": "886a9294c81dc7f9453ed6715c238d860ff06374fc9e3c9398b275e526fde984"
+  },
+  {
+    "path": "captures/both/RR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      68.96965065234764,
+      29.866022883827295,
+      63.07698166198494
+    ],
+    "entropy": 8.410131195767269,
+    "sha256": "06183410f6801121db651b6e911ba814c3ef61c1d2d0dada460b295c8592dde3"
+  },
+  {
+    "path": "captures/both/RR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      40.809273365264914,
+      54.01583369225871,
+      31.73776342854466
+    ],
+    "entropy": 7.899887229049732,
+    "sha256": "294a12c54aa59625aa19494d6cec1a0be35a68e9a78e51cafb8212afd8bd123b"
+  },
+  {
+    "path": "captures/both/RR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/both/RR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      36.47538930582092,
+      56.54793850916952,
+      33.118127109838454
+    ],
+    "entropy": 7.9209740604404395,
+    "sha256": "10f5fbc87c67520d1cc146d6814dece439de5197d2732718fc145d60075c7f7f"
+  },
+  {
+    "path": "captures/both/RR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      37.936832975195266,
+      30.43038520294549,
+      36.81317098471343
+    ],
+    "entropy": 8.066247185666928,
+    "sha256": "ec3cdf59dad5eb7e181abae6e77ad6a71b385189fc70aaf57e06381e19ee2aec"
+  },
+  {
+    "path": "captures/both/RR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.436387252451524,
+      29.93310936943402,
+      34.58097640130318
+    ],
+    "entropy": 8.1460807606101,
+    "sha256": "7b0ac8e55f7b1e9b1df74d1d200592343a08daa3006b434a3e4328e285574b89"
+  },
+  {
+    "path": "captures/both/RR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      19.25023650731156,
+      23.01911374333979,
+      34.61920351365908
+    ],
+    "entropy": 7.7061343522349715,
+    "sha256": "9104fb0a9fd1597cbad89f82725c7f109bf9a76c4898d70ef7e2fed4a8c8d015"
+  },
+  {
+    "path": "captures/both/RR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      14.36542281013441,
+      19.534938225648947,
+      34.49731958251905
+    ],
+    "entropy": 7.5790569201309355,
+    "sha256": "caf43b5acc970615acf9f4dd9a8324e16a81591a335ba6c020e1c9b9cd7b4ce1"
+  },
+  {
+    "path": "captures/both/RR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      68.99796124224318,
+      29.951524706309048,
+      63.02828133325757
+    ],
+    "entropy": 8.412408598852483,
+    "sha256": "dca15c81baf0c7c81ee8ad18e6080818df3f22a52d2d31dd1f22f6a6c413cb5d"
+  },
+  {
+    "path": "captures/both/RR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.424128320708505,
+      29.89759951120468,
+      34.56406410958401
+    ],
+    "entropy": 8.142107201853078,
+    "sha256": "e2c6664d3f2f93ad3d3948f22fe93eb3f8c094073a880562214c112b895ab213"
+  },
+  {
+    "path": "captures/both/RR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.01806808612042,
+      53.23828410844621,
+      51.689095685978636
+    ],
+    "entropy": 8.435000973838097,
+    "sha256": "8563e1e3d9cefafd7bee992739ebdb274c576a4c1b56cc7e8e909f56d6640362"
+  },
+  {
+    "path": "captures/both/RR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.488104733210925,
+      57.48937830558457,
+      34.47503689935701
+    ],
+    "entropy": 8.095777901681949,
+    "sha256": "e127d2a3ffd4c2eaae9dec050d046c638eb5082883e71a15b59456a65629b2b2"
+  },
+  {
+    "path": "captures/both/RR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.07675371889545,
+      57.09157351139644,
+      35.36309229063497
+    ],
+    "entropy": 8.190320437617233,
+    "sha256": "366a6616b5616390e5c5cec91f4a09f25a11bd446ea127374fc636fc99d84282"
+  },
+  {
+    "path": "captures/both/RR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.71510562397316,
+      56.663522042590564,
+      35.99138930697316
+    ],
+    "entropy": 8.249571738765695,
+    "sha256": "185fe6f893f48b5bb8cbca9c1701f7a81b3cb2e3288636e1953caba95d663c4d"
+  },
+  {
+    "path": "captures/both/RR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.36604019878186,
+      56.09721516792071,
+      35.92057556028583
+    ],
+    "entropy": 8.243949295304766,
+    "sha256": "0be0f41ec3c7d3aaace38e7209b8210a0353effb21a8b2344671291dd39fe8da"
+  },
+  {
+    "path": "captures/both/RR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.6582870516736,
+      56.042451402500156,
+      35.72271072541665
+    ],
+    "entropy": 8.198446574229031,
+    "sha256": "8e45961f8b8d996bfe6d6c90dac30ec84bd52468a95f3fe9b36d0ff46b3e65de"
+  },
+  {
+    "path": "captures/both/RR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.2826664910201,
+      56.49842726425961,
+      35.469717779792454
+    ],
+    "entropy": 8.19272285449066,
+    "sha256": "6edfbbc7165801e74a3f9ff181f5edc84a52c48d7f80cc6231b19f4feda80b6b"
+  },
+  {
+    "path": "captures/both/RR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.82465226771487,
+      57.04027883373929,
+      35.09829635764868
+    ],
+    "entropy": 8.195486052798806,
+    "sha256": "abc8ff846a8c2e6cb5786c7e7200a1653fe3eb5ca35e6470bb48dda1f22afbd2"
+  },
+  {
+    "path": "captures/both/SR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33008125036146,
+      72.5736776829622,
+      67.18216367487805
+    ],
+    "entropy": 8.38932711159572,
+    "sha256": "e0a28d83f6987a2c5cd1b474037032a3fb6c530ad12c5e0eea38aa163e521d79"
+  },
+  {
+    "path": "captures/both/SR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/both/SR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.830580437049,
+      55.47076855535165,
+      77.91497041142928
+    ],
+    "entropy": 8.543152734990038,
+    "sha256": "f996d552be36318e46b4598a578c8514668c66ab384285dd6d8e8d357a31acfd"
+  },
+  {
+    "path": "captures/both/SR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.51387343329442,
+      29.274004806677084,
+      76.4658445353845
+    ],
+    "entropy": 8.191012250217264,
+    "sha256": "e91e01d22709f59415b9f8c9e2e6d67d1fdb54a8ccca6560810e3ff1df719e0a"
+  },
+  {
+    "path": "captures/both/SR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.13885172266877,
+      73.35738529014127,
+      40.59305116840731
+    ],
+    "entropy": 8.011402633154466,
+    "sha256": "152490377ad1eecd2d625696a362852fe61310453d0ae168e74018c225c9219e"
+  },
+  {
+    "path": "captures/both/SR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/both/SR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.13590881568348,
+      78.76095421684488,
+      42.581018822058944
+    ],
+    "entropy": 8.010117164354018,
+    "sha256": "8f879cb2b6471ca1c50d3333f1aa72fd86757d59949aa22433cdfcc492955caf"
+  },
+  {
+    "path": "captures/both/SR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52090723903619,
+      22.676201801681604,
+      43.96936510380939
+    ],
+    "entropy": 7.311165126537555,
+    "sha256": "b067b75db16255548d08e84df10f14cd573e8f1aa003af156cddfc433242ac41"
+  },
+  {
+    "path": "captures/both/SR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.082372270242985,
+      20.968389458045582,
+      41.59563174971712
+    ],
+    "entropy": 7.473085475701235,
+    "sha256": "7b7b8ce975d009ad070a91efba27450013d60342a73c62a9b5f2992e06388e49"
+  },
+  {
+    "path": "captures/both/SR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.708881239248969,
+      20.248966173122902,
+      40.2382654435388
+    ],
+    "entropy": 6.989652834327761,
+    "sha256": "d9a9c7a057ecd2da06848e2689b4f1b1a37688de298057f3ffb9bcd87dbaa1d4"
+  },
+  {
+    "path": "captures/both/SR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.168889978413269,
+      19.505274398036686,
+      39.91541047132704
+    ],
+    "entropy": 6.9203868301008535,
+    "sha256": "56e02cf8bb825675c12c371f79ffd851601bd6c1ed9ccb386d2c7edded701064"
+  },
+  {
+    "path": "captures/both/SR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50883227828038,
+      29.270786473241763,
+      76.4276369877996
+    ],
+    "entropy": 8.186246415593255,
+    "sha256": "e166e6fddb88a8cef4d833b8253d7026e67142693c369c543f73e2746871eee7"
+  },
+  {
+    "path": "captures/both/SR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.091579992279094,
+      20.96549547128779,
+      41.575960678240165
+    ],
+    "entropy": 7.472067137402125,
+    "sha256": "ff0bb55b1fcc8207d7312e435df790fba8d1d1a687992e22c8994c1f02e53774"
+  },
+  {
+    "path": "captures/both/SR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33259771479537,
+      72.57617196954897,
+      67.18061321262503
+    ],
+    "entropy": 8.38882000562763,
+    "sha256": "dbbce2dde0a24b784dc8d6d2a476e97a432e01d97249b7aca0a610b763a7786c"
+  },
+  {
+    "path": "captures/both/SR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.19698692474444,
+      78.69816337241514,
+      44.63192907268354
+    ],
+    "entropy": 8.098944998259093,
+    "sha256": "151357d933cd78e7b9c3bf6d5d2a9916765f700a2af9f514be66ec9d7b256e56"
+  },
+  {
+    "path": "captures/both/SR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.191962136520274,
+      78.37416657232671,
+      45.595225713823396
+    ],
+    "entropy": 8.095057143307534,
+    "sha256": "103e6c431903bf48b7a0537e880a5d10bd693b0b19ef51e07ac7c0d51e168ece"
+  },
+  {
+    "path": "captures/both/SR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.604622369953425,
+      77.96560614556616,
+      46.25983305717889
+    ],
+    "entropy": 8.105707359188495,
+    "sha256": "58c9878e476b18f6affb5b20893d5738145f7e3e70175ac5b6d9fed71978e8c9"
+  },
+  {
+    "path": "captures/both/SR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.72019768089374,
+      77.66124024594562,
+      45.882574687206294
+    ],
+    "entropy": 8.076772403381822,
+    "sha256": "37bf6eb90db617f87c0e6521615d6a654f2dc6a42c2c5597ab3d19e12a762bb3"
+  },
+  {
+    "path": "captures/both/SR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.738084182530045,
+      77.45442206799085,
+      45.70169307616885
+    ],
+    "entropy": 8.04198148698445,
+    "sha256": "55ba6bd256c2ab20ef959436206d20c24637e8016d185f5a2c32071056e6420d"
+  },
+  {
+    "path": "captures/both/SR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.07515341621239,
+      77.96383896701767,
+      45.22829428430358
+    ],
+    "entropy": 8.056955408393078,
+    "sha256": "4721b88d1258ebe9d19aebda221cd5ca58766e567c66fcb903d7901a90599ebc"
+  },
+  {
+    "path": "captures/both/SR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.32776471167004,
+      78.54462867345492,
+      44.722226183929415
+    ],
+    "entropy": 8.089919870108943,
+    "sha256": "2b6f23668ab968bc3b492465c19f08b979aa079303c03141aa4b005b2111731a"
+  },
+  {
+    "path": "captures/pr17/DLAA/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.44932484918105,
+      72.68370350279326,
+      67.26026471421478
+    ],
+    "entropy": 8.376551096021172,
+    "sha256": "a5da2ac173a059f7a5c0fa30fa8de3d9092e182506fdbae9dfb88e9cbc72d6c4"
+  },
+  {
+    "path": "captures/pr17/DLAA/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/pr17/DLAA/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.97993442524293,
+      55.54792768488924,
+      78.0102063932263
+    ],
+    "entropy": 8.536456181567551,
+    "sha256": "b777e346bdd701c57ca837dd238ba9ce16c290b41bba0f47970da1b309ca9bbf"
+  },
+  {
+    "path": "captures/pr17/DLAA/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.62521112733961,
+      29.28511422922896,
+      76.65116203100288
+    ],
+    "entropy": 8.180598419579251,
+    "sha256": "c0d70463b5603be852336a7613256275f18661099a48f58715767e4d2e59cd8c"
+  },
+  {
+    "path": "captures/pr17/DLAA/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.20351336032196,
+      73.47627935078782,
+      40.7006922430641
+    ],
+    "entropy": 8.001849938356946,
+    "sha256": "e6310801943e745cf1a87aca51e66810d5cb2b68e80bb35d160bf0d2b72b1f57"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.17695064764616,
+      78.85972395199875,
+      42.536866962286226
+    ],
+    "entropy": 7.996086374841031,
+    "sha256": "4274d1ce5950ab86399edd9f6878cd24e6b50d2e1d32c3755de7f6d963d14542"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.56421142104299,
+      22.678479836855466,
+      43.85250332501147
+    ],
+    "entropy": 7.292440666063615,
+    "sha256": "f4008cd67273c19381035783c71c004f948ffe7bbdcc7d4fc5c4269fe4193478"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.751017446126859,
+      20.240235842660034,
+      40.10874045801399
+    ],
+    "entropy": 6.978619406199535,
+    "sha256": "829ae79b1efab6dcf0081ac97ebcfc63e3838dd3daa59942d2cdf65f54d911de"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.174471589581463,
+      19.51560970175759,
+      39.842144896686094
+    ],
+    "entropy": 6.907654454674669,
+    "sha256": "eb5aac5049167612570f21e8b2ddc95099b18c97ceca5476439defb5eaba6ab8"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.64306735401638,
+      29.294698377919712,
+      76.66306263821258
+    ],
+    "entropy": 8.176297817849168,
+    "sha256": "dc462daff24cefcc9dc3db0ad48cddb041b532a6dcecd520f69eaab3b5bb74d9"
+  },
+  {
+    "path": "captures/pr17/DLAA/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.45461039521145,
+      72.68853046666806,
+      67.25676999092754
+    ],
+    "entropy": 8.375978736355648,
+    "sha256": "115a37d7ced69211a55256df06fa54ef2794aca9906b86f424ee2e0c106e1fe2"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.24183776121552,
+      78.82588191644557,
+      44.51214674491819
+    ],
+    "entropy": 8.080109597348008,
+    "sha256": "5f6807aec56557ae79ea5d5932b5b6b1fcc8fad8939b52ee580600f4b7744181"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.27358605636597,
+      78.5180681276296,
+      45.41222494054062
+    ],
+    "entropy": 8.077617399077376,
+    "sha256": "69bd360e7b2455cdcaafe83aad75da4a48db74700cdf5f3df845e05ba55a0e43"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.7058383473022,
+      78.10117338972289,
+      45.88232214426702
+    ],
+    "entropy": 8.08693610008882,
+    "sha256": "88b7975add71ffd0c66eb109fb53e3d6de540f2ea675359bc16dae0083904b2b"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.811504341525094,
+      77.77762184807793,
+      45.87922499472914
+    ],
+    "entropy": 8.062563136748894,
+    "sha256": "d3c89902cf93e0ac4b377d0bf76796de434ba12bf6d74111f09f363bfea28478"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.79844721660557,
+      77.60032291783455,
+      45.67172583159587
+    ],
+    "entropy": 8.0273596552117,
+    "sha256": "98f16787aad806d0bbfa5fafd0000998440a09a2d5df7a14198aeded02aa6ef0"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.1558757768522,
+      78.09907722363799,
+      45.25287020839624
+    ],
+    "entropy": 8.04266877476744,
+    "sha256": "a2d4acbf29cf41702e213977d53f189fc70acc79a560a71db364b2b855d0e0e3"
+  },
+  {
+    "path": "captures/pr17/DLAA/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.42590561910356,
+      78.66475078601385,
+      44.85955748457436
+    ],
+    "entropy": 8.07537122169439,
+    "sha256": "f7efe17d65cd26d4a8fcb9558fff7b76fcdbaecb07a99d3ef981116086f06890"
+  },
+  {
+    "path": "captures/pr17/FG/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33071513448638,
+      72.57749062297958,
+      67.16194346206586
+    ],
+    "entropy": 8.38862230542265,
+    "sha256": "904bf97da8ddf20726e395349471dab08ec339b4c743f871cae1c4b13327797d"
+  },
+  {
+    "path": "captures/pr17/FG/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.10150374163175,
+      78.87776284573914,
+      43.40546770131154
+    ],
+    "entropy": 8.080674317916097,
+    "sha256": "0650af6d6af73b8d3c5305cc608350ca4fb67069a652a8f11d71d18a6df5b6d2"
+  },
+  {
+    "path": "captures/pr17/FG/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.83528126345021,
+      55.49610616877878,
+      77.91864015812632
+    ],
+    "entropy": 8.545816789923256,
+    "sha256": "de41af9522362f2e41990e80038bca5122173525c8b517a8b2b5479d37a15e74"
+  },
+  {
+    "path": "captures/pr17/FG/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.5312622069029,
+      29.300619535863916,
+      76.48855001953105
+    ],
+    "entropy": 8.190930615834962,
+    "sha256": "5d39cc4eb2b86ea4989ed1172fe5d215f21a6ea70b27e005a6ef6cf3c60a60ee"
+  },
+  {
+    "path": "captures/pr17/FG/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.168928484067465,
+      73.3886561356922,
+      40.652607513228325
+    ],
+    "entropy": 8.01363299426189,
+    "sha256": "0eaec214e7999d2c43c3ac84b2a11c9a2f0f9be67708a0a278e9298cb9d94e2a"
+  },
+  {
+    "path": "captures/pr17/FG/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11425619382766,
+      78.88597557061024,
+      43.40549530855074
+    ],
+    "entropy": 8.081075592920484,
+    "sha256": "8be4c301aa71022085d47766ab75728f4d83f7e49faf3344eacb1b775d275a53"
+  },
+  {
+    "path": "captures/pr17/FG/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.16773893953115,
+      78.77938119066229,
+      42.5779664904587
+    ],
+    "entropy": 8.011556131175139,
+    "sha256": "2f6c77e34986c9d824c38ba058c1353f554f17a0d7441448cf4cbd1832ace525"
+  },
+  {
+    "path": "captures/pr17/FG/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52967503871799,
+      22.694914595150102,
+      43.95672271207324
+    ],
+    "entropy": 7.311830283233328,
+    "sha256": "bdeb4c9ddd2cbb1473837c73ca06a6f3eb464dde23ac5c65e403e09a8c125d62"
+  },
+  {
+    "path": "captures/pr17/FG/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.11062353238373,
+      20.999639549127263,
+      41.53810638231718
+    ],
+    "entropy": 7.474283902933884,
+    "sha256": "03a8c5d25a4db7f05b85a6f0692783a5a2c6d00fb65d5da188cbbf3014ce5a97"
+  },
+  {
+    "path": "captures/pr17/FG/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.743052969588884,
+      20.268713228774054,
+      40.26984952976282
+    ],
+    "entropy": 6.99342647153586,
+    "sha256": "535523e613b54c0335ca2f1ce430e911c233ffff88765cd0fb0c93dcb6cb4274"
+  },
+  {
+    "path": "captures/pr17/FG/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.176508515887768,
+      19.51739460467057,
+      39.902714637080095
+    ],
+    "entropy": 6.922196936624804,
+    "sha256": "f6eb6271be9c36aebb0d485463ad4c97981705e0824695a6d6e00177a91f5de8"
+  },
+  {
+    "path": "captures/pr17/FG/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50801179445492,
+      29.275706887545073,
+      76.44307306504702
+    ],
+    "entropy": 8.186962917306124,
+    "sha256": "dd2eeea2773272fca687a8bc9690579aeda7db5b60bec300bb31cdfa480007ba"
+  },
+  {
+    "path": "captures/pr17/FG/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.10573776365606,
+      20.995755833212666,
+      41.65361408538181
+    ],
+    "entropy": 7.475398455833186,
+    "sha256": "44b43aa46984fcd579c3961b2908db09b2b3cbec08f951ebc5c6255d4c3e001c"
+  },
+  {
+    "path": "captures/pr17/FG/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33308769356444,
+      72.57534301549474,
+      67.17072391300854
+    ],
+    "entropy": 8.388687240511477,
+    "sha256": "87f7fe373a07b8eb88325c7d54653ca8c80311e81817c14d86c68b71cb307589"
+  },
+  {
+    "path": "captures/pr17/FG/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.17249409788666,
+      78.66581147356669,
+      44.526891297992165
+    ],
+    "entropy": 8.098100531932754,
+    "sha256": "20f4e4ecdf44df87c238b9c6675791c3efba10a4bc3b58ee2cef5aa2ce166e36"
+  },
+  {
+    "path": "captures/pr17/FG/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.172550116451724,
+      78.3636150857178,
+      45.500230651395455
+    ],
+    "entropy": 8.094081230733812,
+    "sha256": "8345b2e097a52f0720c49dd0de0a8e71c2b5083178ce748eeadd642b99218abc"
+  },
+  {
+    "path": "captures/pr17/FG/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.592886096383054,
+      77.95613976755662,
+      45.99110258011862
+    ],
+    "entropy": 8.10480089634488,
+    "sha256": "49adbc21acfa649ea2b205a66cd47a0ee7e08fb8992adf4bd7e2c3bdd8ddfa4c"
+  },
+  {
+    "path": "captures/pr17/FG/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.70480364893956,
+      77.64418161365712,
+      45.957554022117414
+    ],
+    "entropy": 8.0767902154967,
+    "sha256": "c42bcbf274665159a54ba452c089f467af57e317ebb65f969365ce0392ee82eb"
+  },
+  {
+    "path": "captures/pr17/FG/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.73425040473343,
+      77.44776413180637,
+      45.71382637433286
+    ],
+    "entropy": 8.044260952037819,
+    "sha256": "4dabce6f785ea5a0dd1fe412b652fdc804578f3da76773c6c23ee15027f6fc5a"
+  },
+  {
+    "path": "captures/pr17/FG/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.06836111774351,
+      77.95169008426166,
+      45.333717494625816
+    ],
+    "entropy": 8.058008214776029,
+    "sha256": "8c8a551533a593d4555afbd6db8d13f7bcae0502cd2aa656aad02897fdd747c6"
+  },
+  {
+    "path": "captures/pr17/FG/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.31536356926586,
+      78.53287191117764,
+      44.75387958187227
+    ],
+    "entropy": 8.090341456232517,
+    "sha256": "50771417c4569eafaaad4a67966238eb4a6c3d56c6479f3d304f6e6d35da5ca6"
+  },
+  {
+    "path": "captures/pr17/RR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.02645086430831,
+      53.24768039626612,
+      51.69230001823475
+    ],
+    "entropy": 8.435313583632585,
+    "sha256": "a419d2f8c8d3c519c4c13aa8641f074aae3f2a5d2156c98c6902dcca68d39505"
+  },
+  {
+    "path": "captures/pr17/RR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/pr17/RR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      69.7066331152782,
+      50.49893173844935,
+      66.85739230602576
+    ],
+    "entropy": 8.343808217623161,
+    "sha256": "886a9294c81dc7f9453ed6715c238d860ff06374fc9e3c9398b275e526fde984"
+  },
+  {
+    "path": "captures/pr17/RR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      68.96965065234764,
+      29.866022883827295,
+      63.07698166198494
+    ],
+    "entropy": 8.410131195767269,
+    "sha256": "06183410f6801121db651b6e911ba814c3ef61c1d2d0dada460b295c8592dde3"
+  },
+  {
+    "path": "captures/pr17/RR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      40.809273365264914,
+      54.01583369225871,
+      31.73776342854466
+    ],
+    "entropy": 7.899887229049732,
+    "sha256": "294a12c54aa59625aa19494d6cec1a0be35a68e9a78e51cafb8212afd8bd123b"
+  },
+  {
+    "path": "captures/pr17/RR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/pr17/RR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      36.47538930582092,
+      56.54793850916952,
+      33.118127109838454
+    ],
+    "entropy": 7.9209740604404395,
+    "sha256": "10f5fbc87c67520d1cc146d6814dece439de5197d2732718fc145d60075c7f7f"
+  },
+  {
+    "path": "captures/pr17/RR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      37.936832975195266,
+      30.43038520294549,
+      36.81317098471343
+    ],
+    "entropy": 8.066247185666928,
+    "sha256": "ec3cdf59dad5eb7e181abae6e77ad6a71b385189fc70aaf57e06381e19ee2aec"
+  },
+  {
+    "path": "captures/pr17/RR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.436387252451524,
+      29.93310936943402,
+      34.58097640130318
+    ],
+    "entropy": 8.1460807606101,
+    "sha256": "7b0ac8e55f7b1e9b1df74d1d200592343a08daa3006b434a3e4328e285574b89"
+  },
+  {
+    "path": "captures/pr17/RR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      19.25023650731156,
+      23.01911374333979,
+      34.61920351365908
+    ],
+    "entropy": 7.7061343522349715,
+    "sha256": "9104fb0a9fd1597cbad89f82725c7f109bf9a76c4898d70ef7e2fed4a8c8d015"
+  },
+  {
+    "path": "captures/pr17/RR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      14.36542281013441,
+      19.534938225648947,
+      34.49731958251905
+    ],
+    "entropy": 7.5790569201309355,
+    "sha256": "caf43b5acc970615acf9f4dd9a8324e16a81591a335ba6c020e1c9b9cd7b4ce1"
+  },
+  {
+    "path": "captures/pr17/RR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      68.99796124224318,
+      29.951524706309048,
+      63.02828133325757
+    ],
+    "entropy": 8.412408598852483,
+    "sha256": "dca15c81baf0c7c81ee8ad18e6080818df3f22a52d2d31dd1f22f6a6c413cb5d"
+  },
+  {
+    "path": "captures/pr17/RR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.424128320708505,
+      29.89759951120468,
+      34.56406410958401
+    ],
+    "entropy": 8.142107201853078,
+    "sha256": "e2c6664d3f2f93ad3d3948f22fe93eb3f8c094073a880562214c112b895ab213"
+  },
+  {
+    "path": "captures/pr17/RR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.01806808612042,
+      53.23828410844621,
+      51.689095685978636
+    ],
+    "entropy": 8.435000973838097,
+    "sha256": "8563e1e3d9cefafd7bee992739ebdb274c576a4c1b56cc7e8e909f56d6640362"
+  },
+  {
+    "path": "captures/pr17/RR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.488104733210925,
+      57.48937830558457,
+      34.47503689935701
+    ],
+    "entropy": 8.095777901681949,
+    "sha256": "e127d2a3ffd4c2eaae9dec050d046c638eb5082883e71a15b59456a65629b2b2"
+  },
+  {
+    "path": "captures/pr17/RR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.07675371889545,
+      57.09157351139644,
+      35.36309229063497
+    ],
+    "entropy": 8.190320437617233,
+    "sha256": "366a6616b5616390e5c5cec91f4a09f25a11bd446ea127374fc636fc99d84282"
+  },
+  {
+    "path": "captures/pr17/RR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.71510562397316,
+      56.663522042590564,
+      35.99138930697316
+    ],
+    "entropy": 8.249571738765695,
+    "sha256": "185fe6f893f48b5bb8cbca9c1701f7a81b3cb2e3288636e1953caba95d663c4d"
+  },
+  {
+    "path": "captures/pr17/RR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.36604019878186,
+      56.09721516792071,
+      35.92057556028583
+    ],
+    "entropy": 8.243949295304766,
+    "sha256": "0be0f41ec3c7d3aaace38e7209b8210a0353effb21a8b2344671291dd39fe8da"
+  },
+  {
+    "path": "captures/pr17/RR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.6582870516736,
+      56.042451402500156,
+      35.72271072541665
+    ],
+    "entropy": 8.198446574229031,
+    "sha256": "8e45961f8b8d996bfe6d6c90dac30ec84bd52468a95f3fe9b36d0ff46b3e65de"
+  },
+  {
+    "path": "captures/pr17/RR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.2826664910201,
+      56.49842726425961,
+      35.469717779792454
+    ],
+    "entropy": 8.19272285449066,
+    "sha256": "6edfbbc7165801e74a3f9ff181f5edc84a52c48d7f80cc6231b19f4feda80b6b"
+  },
+  {
+    "path": "captures/pr17/RR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.82465226771487,
+      57.04027883373929,
+      35.09829635764868
+    ],
+    "entropy": 8.195486052798806,
+    "sha256": "abc8ff846a8c2e6cb5786c7e7200a1653fe3eb5ca35e6470bb48dda1f22afbd2"
+  },
+  {
+    "path": "captures/pr17/SR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33008125036146,
+      72.5736776829622,
+      67.18216367487805
+    ],
+    "entropy": 8.38932711159572,
+    "sha256": "e0a28d83f6987a2c5cd1b474037032a3fb6c530ad12c5e0eea38aa163e521d79"
+  },
+  {
+    "path": "captures/pr17/SR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/pr17/SR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.830580437049,
+      55.47076855535165,
+      77.91497041142928
+    ],
+    "entropy": 8.543152734990038,
+    "sha256": "f996d552be36318e46b4598a578c8514668c66ab384285dd6d8e8d357a31acfd"
+  },
+  {
+    "path": "captures/pr17/SR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.51387343329442,
+      29.274004806677084,
+      76.4658445353845
+    ],
+    "entropy": 8.191012250217264,
+    "sha256": "e91e01d22709f59415b9f8c9e2e6d67d1fdb54a8ccca6560810e3ff1df719e0a"
+  },
+  {
+    "path": "captures/pr17/SR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.13885172266877,
+      73.35738529014127,
+      40.59305116840731
+    ],
+    "entropy": 8.011402633154466,
+    "sha256": "152490377ad1eecd2d625696a362852fe61310453d0ae168e74018c225c9219e"
+  },
+  {
+    "path": "captures/pr17/SR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/pr17/SR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.13590881568348,
+      78.76095421684488,
+      42.581018822058944
+    ],
+    "entropy": 8.010117164354018,
+    "sha256": "8f879cb2b6471ca1c50d3333f1aa72fd86757d59949aa22433cdfcc492955caf"
+  },
+  {
+    "path": "captures/pr17/SR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52090723903619,
+      22.676201801681604,
+      43.96936510380939
+    ],
+    "entropy": 7.311165126537555,
+    "sha256": "b067b75db16255548d08e84df10f14cd573e8f1aa003af156cddfc433242ac41"
+  },
+  {
+    "path": "captures/pr17/SR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.082372270242985,
+      20.968389458045582,
+      41.59563174971712
+    ],
+    "entropy": 7.473085475701235,
+    "sha256": "7b7b8ce975d009ad070a91efba27450013d60342a73c62a9b5f2992e06388e49"
+  },
+  {
+    "path": "captures/pr17/SR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.708881239248969,
+      20.248966173122902,
+      40.2382654435388
+    ],
+    "entropy": 6.989652834327761,
+    "sha256": "d9a9c7a057ecd2da06848e2689b4f1b1a37688de298057f3ffb9bcd87dbaa1d4"
+  },
+  {
+    "path": "captures/pr17/SR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.168889978413269,
+      19.505274398036686,
+      39.91541047132704
+    ],
+    "entropy": 6.9203868301008535,
+    "sha256": "56e02cf8bb825675c12c371f79ffd851601bd6c1ed9ccb386d2c7edded701064"
+  },
+  {
+    "path": "captures/pr17/SR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50883227828038,
+      29.270786473241763,
+      76.4276369877996
+    ],
+    "entropy": 8.186246415593255,
+    "sha256": "e166e6fddb88a8cef4d833b8253d7026e67142693c369c543f73e2746871eee7"
+  },
+  {
+    "path": "captures/pr17/SR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.091579992279094,
+      20.96549547128779,
+      41.575960678240165
+    ],
+    "entropy": 7.472067137402125,
+    "sha256": "ff0bb55b1fcc8207d7312e435df790fba8d1d1a687992e22c8994c1f02e53774"
+  },
+  {
+    "path": "captures/pr17/SR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33259771479537,
+      72.57617196954897,
+      67.18061321262503
+    ],
+    "entropy": 8.38882000562763,
+    "sha256": "dbbce2dde0a24b784dc8d6d2a476e97a432e01d97249b7aca0a610b763a7786c"
+  },
+  {
+    "path": "captures/pr17/SR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.19698692474444,
+      78.69816337241514,
+      44.63192907268354
+    ],
+    "entropy": 8.098944998259093,
+    "sha256": "151357d933cd78e7b9c3bf6d5d2a9916765f700a2af9f514be66ec9d7b256e56"
+  },
+  {
+    "path": "captures/pr17/SR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.191962136520274,
+      78.37416657232671,
+      45.595225713823396
+    ],
+    "entropy": 8.095057143307534,
+    "sha256": "103e6c431903bf48b7a0537e880a5d10bd693b0b19ef51e07ac7c0d51e168ece"
+  },
+  {
+    "path": "captures/pr17/SR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.604622369953425,
+      77.96560614556616,
+      46.25983305717889
+    ],
+    "entropy": 8.105707359188495,
+    "sha256": "58c9878e476b18f6affb5b20893d5738145f7e3e70175ac5b6d9fed71978e8c9"
+  },
+  {
+    "path": "captures/pr17/SR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.72019768089374,
+      77.66124024594562,
+      45.882574687206294
+    ],
+    "entropy": 8.076772403381822,
+    "sha256": "37bf6eb90db617f87c0e6521615d6a654f2dc6a42c2c5597ab3d19e12a762bb3"
+  },
+  {
+    "path": "captures/pr17/SR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.738084182530045,
+      77.45442206799085,
+      45.70169307616885
+    ],
+    "entropy": 8.04198148698445,
+    "sha256": "55ba6bd256c2ab20ef959436206d20c24637e8016d185f5a2c32071056e6420d"
+  },
+  {
+    "path": "captures/pr17/SR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.07515341621239,
+      77.96383896701767,
+      45.22829428430358
+    ],
+    "entropy": 8.056955408393078,
+    "sha256": "4721b88d1258ebe9d19aebda221cd5ca58766e567c66fcb903d7901a90599ebc"
+  },
+  {
+    "path": "captures/pr17/SR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.32776471167004,
+      78.54462867345492,
+      44.722226183929415
+    ],
+    "entropy": 8.089919870108943,
+    "sha256": "2b6f23668ab968bc3b492465c19f08b979aa079303c03141aa4b005b2111731a"
+  },
+  {
+    "path": "captures/pr18/DLAA/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.44932484918105,
+      72.68370350279326,
+      67.26026471421478
+    ],
+    "entropy": 8.376551096021172,
+    "sha256": "a5da2ac173a059f7a5c0fa30fa8de3d9092e182506fdbae9dfb88e9cbc72d6c4"
+  },
+  {
+    "path": "captures/pr18/DLAA/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/pr18/DLAA/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.97993442524293,
+      55.54792768488924,
+      78.0102063932263
+    ],
+    "entropy": 8.536456181567551,
+    "sha256": "b777e346bdd701c57ca837dd238ba9ce16c290b41bba0f47970da1b309ca9bbf"
+  },
+  {
+    "path": "captures/pr18/DLAA/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.62521112733961,
+      29.28511422922896,
+      76.65116203100288
+    ],
+    "entropy": 8.180598419579251,
+    "sha256": "c0d70463b5603be852336a7613256275f18661099a48f58715767e4d2e59cd8c"
+  },
+  {
+    "path": "captures/pr18/DLAA/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.20351336032196,
+      73.47627935078782,
+      40.7006922430641
+    ],
+    "entropy": 8.001849938356946,
+    "sha256": "e6310801943e745cf1a87aca51e66810d5cb2b68e80bb35d160bf0d2b72b1f57"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11678281859926,
+      78.93472623484263,
+      43.42171466701458
+    ],
+    "entropy": 8.066440021945708,
+    "sha256": "a95a19c3c7283ea56728227a2a7b98f181daed49fe07e58fc76b9015d7099a36"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.17695064764616,
+      78.85972395199875,
+      42.536866962286226
+    ],
+    "entropy": 7.996086374841031,
+    "sha256": "4274d1ce5950ab86399edd9f6878cd24e6b50d2e1d32c3755de7f6d963d14542"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.56421142104299,
+      22.678479836855466,
+      43.85250332501147
+    ],
+    "entropy": 7.292440666063615,
+    "sha256": "f4008cd67273c19381035783c71c004f948ffe7bbdcc7d4fc5c4269fe4193478"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.751017446126859,
+      20.240235842660034,
+      40.10874045801399
+    ],
+    "entropy": 6.978619406199535,
+    "sha256": "829ae79b1efab6dcf0081ac97ebcfc63e3838dd3daa59942d2cdf65f54d911de"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.174471589581463,
+      19.51560970175759,
+      39.842144896686094
+    ],
+    "entropy": 6.907654454674669,
+    "sha256": "eb5aac5049167612570f21e8b2ddc95099b18c97ceca5476439defb5eaba6ab8"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.64306735401638,
+      29.294698377919712,
+      76.66306263821258
+    ],
+    "entropy": 8.176297817849168,
+    "sha256": "dc462daff24cefcc9dc3db0ad48cddb041b532a6dcecd520f69eaab3b5bb74d9"
+  },
+  {
+    "path": "captures/pr18/DLAA/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.162235859497045,
+      20.990870621666247,
+      41.44721685505142
+    ],
+    "entropy": 7.4554518122314075,
+    "sha256": "a30c085ef6dcef83187ced845a8c39c0cfeb0e28d86a5273564e9b664ca1e33d"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.45461039521145,
+      72.68853046666806,
+      67.25676999092754
+    ],
+    "entropy": 8.375978736355648,
+    "sha256": "115a37d7ced69211a55256df06fa54ef2794aca9906b86f424ee2e0c106e1fe2"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.24183776121552,
+      78.82588191644557,
+      44.51214674491819
+    ],
+    "entropy": 8.080109597348008,
+    "sha256": "5f6807aec56557ae79ea5d5932b5b6b1fcc8fad8939b52ee580600f4b7744181"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.27358605636597,
+      78.5180681276296,
+      45.41222494054062
+    ],
+    "entropy": 8.077617399077376,
+    "sha256": "69bd360e7b2455cdcaafe83aad75da4a48db74700cdf5f3df845e05ba55a0e43"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.7058383473022,
+      78.10117338972289,
+      45.88232214426702
+    ],
+    "entropy": 8.08693610008882,
+    "sha256": "88b7975add71ffd0c66eb109fb53e3d6de540f2ea675359bc16dae0083904b2b"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.811504341525094,
+      77.77762184807793,
+      45.87922499472914
+    ],
+    "entropy": 8.062563136748894,
+    "sha256": "d3c89902cf93e0ac4b377d0bf76796de434ba12bf6d74111f09f363bfea28478"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.79844721660557,
+      77.60032291783455,
+      45.67172583159587
+    ],
+    "entropy": 8.0273596552117,
+    "sha256": "98f16787aad806d0bbfa5fafd0000998440a09a2d5df7a14198aeded02aa6ef0"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.1558757768522,
+      78.09907722363799,
+      45.25287020839624
+    ],
+    "entropy": 8.04266877476744,
+    "sha256": "a2d4acbf29cf41702e213977d53f189fc70acc79a560a71db364b2b855d0e0e3"
+  },
+  {
+    "path": "captures/pr18/DLAA/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.42590561910356,
+      78.66475078601385,
+      44.85955748457436
+    ],
+    "entropy": 8.07537122169439,
+    "sha256": "f7efe17d65cd26d4a8fcb9558fff7b76fcdbaecb07a99d3ef981116086f06890"
+  },
+  {
+    "path": "captures/pr18/FG/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33071513448638,
+      72.57749062297958,
+      67.16194346206586
+    ],
+    "entropy": 8.38862230542265,
+    "sha256": "904bf97da8ddf20726e395349471dab08ec339b4c743f871cae1c4b13327797d"
+  },
+  {
+    "path": "captures/pr18/FG/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.10150374163175,
+      78.87776284573914,
+      43.40546770131154
+    ],
+    "entropy": 8.080674317916097,
+    "sha256": "0650af6d6af73b8d3c5305cc608350ca4fb67069a652a8f11d71d18a6df5b6d2"
+  },
+  {
+    "path": "captures/pr18/FG/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.83528126345021,
+      55.49610616877878,
+      77.91864015812632
+    ],
+    "entropy": 8.545816789923256,
+    "sha256": "de41af9522362f2e41990e80038bca5122173525c8b517a8b2b5479d37a15e74"
+  },
+  {
+    "path": "captures/pr18/FG/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.5312622069029,
+      29.300619535863916,
+      76.48855001953105
+    ],
+    "entropy": 8.190930615834962,
+    "sha256": "5d39cc4eb2b86ea4989ed1172fe5d215f21a6ea70b27e005a6ef6cf3c60a60ee"
+  },
+  {
+    "path": "captures/pr18/FG/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.168928484067465,
+      73.3886561356922,
+      40.652607513228325
+    ],
+    "entropy": 8.01363299426189,
+    "sha256": "0eaec214e7999d2c43c3ac84b2a11c9a2f0f9be67708a0a278e9298cb9d94e2a"
+  },
+  {
+    "path": "captures/pr18/FG/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.11425619382766,
+      78.88597557061024,
+      43.40549530855074
+    ],
+    "entropy": 8.081075592920484,
+    "sha256": "8be4c301aa71022085d47766ab75728f4d83f7e49faf3344eacb1b775d275a53"
+  },
+  {
+    "path": "captures/pr18/FG/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.16773893953115,
+      78.77938119066229,
+      42.5779664904587
+    ],
+    "entropy": 8.011556131175139,
+    "sha256": "2f6c77e34986c9d824c38ba058c1353f554f17a0d7441448cf4cbd1832ace525"
+  },
+  {
+    "path": "captures/pr18/FG/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52967503871799,
+      22.694914595150102,
+      43.95672271207324
+    ],
+    "entropy": 7.311830283233328,
+    "sha256": "bdeb4c9ddd2cbb1473837c73ca06a6f3eb464dde23ac5c65e403e09a8c125d62"
+  },
+  {
+    "path": "captures/pr18/FG/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.11062353238373,
+      20.999639549127263,
+      41.53810638231718
+    ],
+    "entropy": 7.474283902933884,
+    "sha256": "03a8c5d25a4db7f05b85a6f0692783a5a2c6d00fb65d5da188cbbf3014ce5a97"
+  },
+  {
+    "path": "captures/pr18/FG/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.743052969588884,
+      20.268713228774054,
+      40.26984952976282
+    ],
+    "entropy": 6.99342647153586,
+    "sha256": "535523e613b54c0335ca2f1ce430e911c233ffff88765cd0fb0c93dcb6cb4274"
+  },
+  {
+    "path": "captures/pr18/FG/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.176508515887768,
+      19.51739460467057,
+      39.902714637080095
+    ],
+    "entropy": 6.922196936624804,
+    "sha256": "f6eb6271be9c36aebb0d485463ad4c97981705e0824695a6d6e00177a91f5de8"
+  },
+  {
+    "path": "captures/pr18/FG/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50801179445492,
+      29.275706887545073,
+      76.44307306504702
+    ],
+    "entropy": 8.186962917306124,
+    "sha256": "dd2eeea2773272fca687a8bc9690579aeda7db5b60bec300bb31cdfa480007ba"
+  },
+  {
+    "path": "captures/pr18/FG/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.10573776365606,
+      20.995755833212666,
+      41.65361408538181
+    ],
+    "entropy": 7.475398455833186,
+    "sha256": "44b43aa46984fcd579c3961b2908db09b2b3cbec08f951ebc5c6255d4c3e001c"
+  },
+  {
+    "path": "captures/pr18/FG/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33308769356444,
+      72.57534301549474,
+      67.17072391300854
+    ],
+    "entropy": 8.388687240511477,
+    "sha256": "87f7fe373a07b8eb88325c7d54653ca8c80311e81817c14d86c68b71cb307589"
+  },
+  {
+    "path": "captures/pr18/FG/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.17249409788666,
+      78.66581147356669,
+      44.526891297992165
+    ],
+    "entropy": 8.098100531932754,
+    "sha256": "20f4e4ecdf44df87c238b9c6675791c3efba10a4bc3b58ee2cef5aa2ce166e36"
+  },
+  {
+    "path": "captures/pr18/FG/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.172550116451724,
+      78.3636150857178,
+      45.500230651395455
+    ],
+    "entropy": 8.094081230733812,
+    "sha256": "8345b2e097a52f0720c49dd0de0a8e71c2b5083178ce748eeadd642b99218abc"
+  },
+  {
+    "path": "captures/pr18/FG/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.592886096383054,
+      77.95613976755662,
+      45.99110258011862
+    ],
+    "entropy": 8.10480089634488,
+    "sha256": "49adbc21acfa649ea2b205a66cd47a0ee7e08fb8992adf4bd7e2c3bdd8ddfa4c"
+  },
+  {
+    "path": "captures/pr18/FG/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.70480364893956,
+      77.64418161365712,
+      45.957554022117414
+    ],
+    "entropy": 8.0767902154967,
+    "sha256": "c42bcbf274665159a54ba452c089f467af57e317ebb65f969365ce0392ee82eb"
+  },
+  {
+    "path": "captures/pr18/FG/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.73425040473343,
+      77.44776413180637,
+      45.71382637433286
+    ],
+    "entropy": 8.044260952037819,
+    "sha256": "4dabce6f785ea5a0dd1fe412b652fdc804578f3da76773c6c23ee15027f6fc5a"
+  },
+  {
+    "path": "captures/pr18/FG/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.06836111774351,
+      77.95169008426166,
+      45.333717494625816
+    ],
+    "entropy": 8.058008214776029,
+    "sha256": "8c8a551533a593d4555afbd6db8d13f7bcae0502cd2aa656aad02897fdd747c6"
+  },
+  {
+    "path": "captures/pr18/FG/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.31536356926586,
+      78.53287191117764,
+      44.75387958187227
+    ],
+    "entropy": 8.090341456232517,
+    "sha256": "50771417c4569eafaaad4a67966238eb4a6c3d56c6479f3d304f6e6d35da5ca6"
+  },
+  {
+    "path": "captures/pr18/RR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.02645086430831,
+      53.24768039626612,
+      51.69230001823475
+    ],
+    "entropy": 8.435313583632585,
+    "sha256": "a419d2f8c8d3c519c4c13aa8641f074aae3f2a5d2156c98c6902dcca68d39505"
+  },
+  {
+    "path": "captures/pr18/RR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/pr18/RR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      69.7066331152782,
+      50.49893173844935,
+      66.85739230602576
+    ],
+    "entropy": 8.343808217623161,
+    "sha256": "886a9294c81dc7f9453ed6715c238d860ff06374fc9e3c9398b275e526fde984"
+  },
+  {
+    "path": "captures/pr18/RR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      68.96965065234764,
+      29.866022883827295,
+      63.07698166198494
+    ],
+    "entropy": 8.410131195767269,
+    "sha256": "06183410f6801121db651b6e911ba814c3ef61c1d2d0dada460b295c8592dde3"
+  },
+  {
+    "path": "captures/pr18/RR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      40.809273365264914,
+      54.01583369225871,
+      31.73776342854466
+    ],
+    "entropy": 7.899887229049732,
+    "sha256": "294a12c54aa59625aa19494d6cec1a0be35a68e9a78e51cafb8212afd8bd123b"
+  },
+  {
+    "path": "captures/pr18/RR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      39.51360520578528,
+      57.74347814297019,
+      33.667845044639336
+    ],
+    "entropy": 8.034410330355598,
+    "sha256": "941ec8b1ced0791e2456b66e09d527a810e7396a04289a72318204581e4b79d6"
+  },
+  {
+    "path": "captures/pr18/RR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      36.47538930582092,
+      56.54793850916952,
+      33.118127109838454
+    ],
+    "entropy": 7.9209740604404395,
+    "sha256": "10f5fbc87c67520d1cc146d6814dece439de5197d2732718fc145d60075c7f7f"
+  },
+  {
+    "path": "captures/pr18/RR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      37.936832975195266,
+      30.43038520294549,
+      36.81317098471343
+    ],
+    "entropy": 8.066247185666928,
+    "sha256": "ec3cdf59dad5eb7e181abae6e77ad6a71b385189fc70aaf57e06381e19ee2aec"
+  },
+  {
+    "path": "captures/pr18/RR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.436387252451524,
+      29.93310936943402,
+      34.58097640130318
+    ],
+    "entropy": 8.1460807606101,
+    "sha256": "7b0ac8e55f7b1e9b1df74d1d200592343a08daa3006b434a3e4328e285574b89"
+  },
+  {
+    "path": "captures/pr18/RR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      19.25023650731156,
+      23.01911374333979,
+      34.61920351365908
+    ],
+    "entropy": 7.7061343522349715,
+    "sha256": "9104fb0a9fd1597cbad89f82725c7f109bf9a76c4898d70ef7e2fed4a8c8d015"
+  },
+  {
+    "path": "captures/pr18/RR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      14.36542281013441,
+      19.534938225648947,
+      34.49731958251905
+    ],
+    "entropy": 7.5790569201309355,
+    "sha256": "caf43b5acc970615acf9f4dd9a8324e16a81591a335ba6c020e1c9b9cd7b4ce1"
+  },
+  {
+    "path": "captures/pr18/RR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      68.99796124224318,
+      29.951524706309048,
+      63.02828133325757
+    ],
+    "entropy": 8.412408598852483,
+    "sha256": "dca15c81baf0c7c81ee8ad18e6080818df3f22a52d2d31dd1f22f6a6c413cb5d"
+  },
+  {
+    "path": "captures/pr18/RR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      42.424128320708505,
+      29.89759951120468,
+      34.56406410958401
+    ],
+    "entropy": 8.142107201853078,
+    "sha256": "e2c6664d3f2f93ad3d3948f22fe93eb3f8c094073a880562214c112b895ab213"
+  },
+  {
+    "path": "captures/pr18/RR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      61.01806808612042,
+      53.23828410844621,
+      51.689095685978636
+    ],
+    "entropy": 8.435000973838097,
+    "sha256": "8563e1e3d9cefafd7bee992739ebdb274c576a4c1b56cc7e8e909f56d6640362"
+  },
+  {
+    "path": "captures/pr18/RR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.488104733210925,
+      57.48937830558457,
+      34.47503689935701
+    ],
+    "entropy": 8.095777901681949,
+    "sha256": "e127d2a3ffd4c2eaae9dec050d046c638eb5082883e71a15b59456a65629b2b2"
+  },
+  {
+    "path": "captures/pr18/RR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.07675371889545,
+      57.09157351139644,
+      35.36309229063497
+    ],
+    "entropy": 8.190320437617233,
+    "sha256": "366a6616b5616390e5c5cec91f4a09f25a11bd446ea127374fc636fc99d84282"
+  },
+  {
+    "path": "captures/pr18/RR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.71510562397316,
+      56.663522042590564,
+      35.99138930697316
+    ],
+    "entropy": 8.249571738765695,
+    "sha256": "185fe6f893f48b5bb8cbca9c1701f7a81b3cb2e3288636e1953caba95d663c4d"
+  },
+  {
+    "path": "captures/pr18/RR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.36604019878186,
+      56.09721516792071,
+      35.92057556028583
+    ],
+    "entropy": 8.243949295304766,
+    "sha256": "0be0f41ec3c7d3aaace38e7209b8210a0353effb21a8b2344671291dd39fe8da"
+  },
+  {
+    "path": "captures/pr18/RR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.6582870516736,
+      56.042451402500156,
+      35.72271072541665
+    ],
+    "entropy": 8.198446574229031,
+    "sha256": "8e45961f8b8d996bfe6d6c90dac30ec84bd52468a95f3fe9b36d0ff46b3e65de"
+  },
+  {
+    "path": "captures/pr18/RR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      42.2826664910201,
+      56.49842726425961,
+      35.469717779792454
+    ],
+    "entropy": 8.19272285449066,
+    "sha256": "6edfbbc7165801e74a3f9ff181f5edc84a52c48d7f80cc6231b19f4feda80b6b"
+  },
+  {
+    "path": "captures/pr18/RR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      41.82465226771487,
+      57.04027883373929,
+      35.09829635764868
+    ],
+    "entropy": 8.195486052798806,
+    "sha256": "abc8ff846a8c2e6cb5786c7e7200a1653fe3eb5ca35e6470bb48dda1f22afbd2"
+  },
+  {
+    "path": "captures/pr18/SR/basis_axis123.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33008125036146,
+      72.5736776829622,
+      67.18216367487805
+    ],
+    "entropy": 8.38932711159572,
+    "sha256": "e0a28d83f6987a2c5cd1b474037032a3fb6c530ad12c5e0eea38aa163e521d79"
+  },
+  {
+    "path": "captures/pr18/SR/basis_identity.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/pr18/SR/basis_pitch90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      82.830580437049,
+      55.47076855535165,
+      77.91497041142928
+    ],
+    "entropy": 8.543152734990038,
+    "sha256": "f996d552be36318e46b4598a578c8514668c66ab384285dd6d8e8d357a31acfd"
+  },
+  {
+    "path": "captures/pr18/SR/basis_roll90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      89.51387343329442,
+      29.274004806677084,
+      76.4658445353845
+    ],
+    "entropy": 8.191012250217264,
+    "sha256": "e91e01d22709f59415b9f8c9e2e6d67d1fdb54a8ccca6560810e3ff1df719e0a"
+  },
+  {
+    "path": "captures/pr18/SR/basis_yaw90.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.13885172266877,
+      73.35738529014127,
+      40.59305116840731
+    ],
+    "entropy": 8.011402633154466,
+    "sha256": "152490377ad1eecd2d625696a362852fe61310453d0ae168e74018c225c9219e"
+  },
+  {
+    "path": "captures/pr18/SR/fov_height_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      43.082721875355986,
+      78.86816157110968,
+      43.41389628859896
+    ],
+    "entropy": 8.081308647318194,
+    "sha256": "d4de69de436c3a1697eb3e15f2bee640679172792afcbdc65bb816e2631a8011"
+  },
+  {
+    "path": "captures/pr18/SR/fov_height_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      38.13590881568348,
+      78.76095421684488,
+      42.581018822058944
+    ],
+    "entropy": 8.010117164354018,
+    "sha256": "8f879cb2b6471ca1c50d3333f1aa72fd86757d59949aa22433cdfcc492955caf"
+  },
+  {
+    "path": "captures/pr18/SR/fov_height_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      35.52090723903619,
+      22.676201801681604,
+      43.96936510380939
+    ],
+    "entropy": 7.311165126537555,
+    "sha256": "b067b75db16255548d08e84df10f14cd573e8f1aa003af156cddfc433242ac41"
+  },
+  {
+    "path": "captures/pr18/SR/fov_height_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.082372270242985,
+      20.968389458045582,
+      41.59563174971712
+    ],
+    "entropy": 7.473085475701235,
+    "sha256": "7b7b8ce975d009ad070a91efba27450013d60342a73c62a9b5f2992e06388e49"
+  },
+  {
+    "path": "captures/pr18/SR/fov_width_16x9.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      8.708881239248969,
+      20.248966173122902,
+      40.2382654435388
+    ],
+    "entropy": 6.989652834327761,
+    "sha256": "d9a9c7a057ecd2da06848e2689b4f1b1a37688de298057f3ffb9bcd87dbaa1d4"
+  },
+  {
+    "path": "captures/pr18/SR/fov_width_21x9.png",
+    "width": 1680,
+    "height": 720,
+    "stddev": [
+      8.168889978413269,
+      19.505274398036686,
+      39.91541047132704
+    ],
+    "entropy": 6.9203868301008535,
+    "sha256": "56e02cf8bb825675c12c371f79ffd851601bd6c1ed9ccb386d2c7edded701064"
+  },
+  {
+    "path": "captures/pr18/SR/fov_width_9x16.png",
+    "width": 810,
+    "height": 1440,
+    "stddev": [
+      89.50883227828038,
+      29.270786473241763,
+      76.4276369877996
+    ],
+    "entropy": 8.186246415593255,
+    "sha256": "e166e6fddb88a8cef4d833b8253d7026e67142693c369c543f73e2746871eee7"
+  },
+  {
+    "path": "captures/pr18/SR/fov_width_square.png",
+    "width": 720,
+    "height": 720,
+    "stddev": [
+      46.091579992279094,
+      20.96549547128779,
+      41.575960678240165
+    ],
+    "entropy": 7.472067137402125,
+    "sha256": "ff0bb55b1fcc8207d7312e435df790fba8d1d1a687992e22c8994c1f02e53774"
+  },
+  {
+    "path": "captures/pr18/SR/motion_000.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      71.33259771479537,
+      72.57617196954897,
+      67.18061321262503
+    ],
+    "entropy": 8.38882000562763,
+    "sha256": "dbbce2dde0a24b784dc8d6d2a476e97a432e01d97249b7aca0a610b763a7786c"
+  },
+  {
+    "path": "captures/pr18/SR/motion_015.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.19698692474444,
+      78.69816337241514,
+      44.63192907268354
+    ],
+    "entropy": 8.098944998259093,
+    "sha256": "151357d933cd78e7b9c3bf6d5d2a9916765f700a2af9f514be66ec9d7b256e56"
+  },
+  {
+    "path": "captures/pr18/SR/motion_030.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.191962136520274,
+      78.37416657232671,
+      45.595225713823396
+    ],
+    "entropy": 8.095057143307534,
+    "sha256": "103e6c431903bf48b7a0537e880a5d10bd693b0b19ef51e07ac7c0d51e168ece"
+  },
+  {
+    "path": "captures/pr18/SR/motion_045.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.604622369953425,
+      77.96560614556616,
+      46.25983305717889
+    ],
+    "entropy": 8.105707359188495,
+    "sha256": "58c9878e476b18f6affb5b20893d5738145f7e3e70175ac5b6d9fed71978e8c9"
+  },
+  {
+    "path": "captures/pr18/SR/motion_060.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      46.72019768089374,
+      77.66124024594562,
+      45.882574687206294
+    ],
+    "entropy": 8.076772403381822,
+    "sha256": "37bf6eb90db617f87c0e6521615d6a654f2dc6a42c2c5597ab3d19e12a762bb3"
+  },
+  {
+    "path": "captures/pr18/SR/motion_075.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.738084182530045,
+      77.45442206799085,
+      45.70169307616885
+    ],
+    "entropy": 8.04198148698445,
+    "sha256": "55ba6bd256c2ab20ef959436206d20c24637e8016d185f5a2c32071056e6420d"
+  },
+  {
+    "path": "captures/pr18/SR/motion_090.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      45.07515341621239,
+      77.96383896701767,
+      45.22829428430358
+    ],
+    "entropy": 8.056955408393078,
+    "sha256": "4721b88d1258ebe9d19aebda221cd5ca58766e567c66fcb903d7901a90599ebc"
+  },
+  {
+    "path": "captures/pr18/SR/motion_105.png",
+    "width": 1440,
+    "height": 810,
+    "stddev": [
+      44.32776471167004,
+      78.54462867345492,
+      44.722226183929415
+    ],
+    "entropy": 8.089919870108943,
+    "sha256": "2b6f23668ab968bc3b492465c19f08b979aa079303c03141aa4b005b2111731a"
+  }
+]

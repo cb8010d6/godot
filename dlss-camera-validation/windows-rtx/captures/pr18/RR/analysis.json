@@ -1,0 +1,436 @@
+{
+  "variant": "pr18",
+  "mode": "RR",
+  "exit_code": 0,
+  "metadata": {
+    "api": "1.4.341",
+    "capabilities": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    },
+    "driver": "vulkan",
+    "engine": {
+      "build": "custom_build",
+      "hash": "135dff3887a3d2ccf45cafbd9bdffa7b718e1e76",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "dev",
+      "string": "4.8-dev (custom_build)",
+      "timestamp": 1784890195
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "mode": "RR",
+    "renderer": "forward_plus"
+  },
+  "runtime_errors": [],
+  "malformed_records": [],
+  "constant_records": 709,
+  "sdk_failures": [],
+  "cases": [
+    {
+      "id": "fov_width_square",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 1.57079637050629,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": true,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_width_16x9",
+      "samples": 8,
+      "expected_fov": 1.0247789206214755,
+      "actual_fov": 2.11681365966797,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_width_21x9",
+      "samples": 8,
+      "expected_fov": 0.8097835725701668,
+      "actual_fov": 2.33180904388428,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_width_9x16",
+      "samples": 8,
+      "expected_fov": 2.1168137329683177,
+      "actual_fov": 1.02477896213531,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_height_square",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 1.57079637050629,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": true,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_height_16x9",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_height_21x9",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.77829480171204,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "fov_height_9x16",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 0.612879276275635,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_identity",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        0,
+        0,
+        -1
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_yaw90",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        -1.0,
+        0.0,
+        -6.123233995736766e-17
+      ],
+      "actual_forward": [
+        -1.0,
+        0.0,
+        4.37113882867379e-08
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_pitch90",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        0.0,
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "actual_forward": [
+        0.0,
+        1.0,
+        4.37113882867379e-08
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_roll90",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "actual_forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    },
+    {
+      "id": "basis_axis123",
+      "samples": 8,
+      "expected_fov": 1.5707963267948966,
+      "actual_fov": 2.52871322631836,
+      "expected_forward": [
+        -0.41106229890136037,
+        0.06901743642114648,
+        -0.9089908579803109
+      ],
+      "actual_forward": [
+        -0.411062300205231,
+        0.0690174698829651,
+        -0.908990859985352
+      ],
+      "reference_projection_ok": true,
+      "reference_basis_ok": true,
+      "fov_ok": false,
+      "basis_ok": true,
+      "basis_geometry_ok": true,
+      "position_ok": true,
+      "aspect_ok": true,
+      "sdk_constants_ok": true,
+      "sdk_evaluate_ok": true,
+      "selected_mode_ok": true,
+      "rr_active": true,
+      "fg_active": false,
+      "fg_state_samples": [],
+      "screenshot_ok": true
+    }
+  ],
+  "existing_verbose_diagnostics": {
+    "count": 1492,
+    "unique": [
+      "Image (binding: 0, index 0) needs to have the same texture format as the uniform (expected: R32G32B32A32_Sfloat, actual: R16G16B16A16_Sfloat).",
+      "Image (binding: 11, index 0) needs to have the same texture format as the uniform (expected: R16G16B16A16_Sfloat, actual: R8G8B8A8_Snorm).",
+      "OpTypeForwardPointer is not supported yet."
+    ]
+  },
+  "runtime_complete": true
+}

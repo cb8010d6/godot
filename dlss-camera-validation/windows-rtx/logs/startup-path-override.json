@@ -1,0 +1,32 @@
+{
+  "variant": "baseline",
+  "mode": "SR",
+  "suite": "smoke",
+  "command": [
+    "<workspace>\\validation\\bin\\baseline.exe",
+    "--path",
+    "<workspace>\\validation\\project",
+    "--script",
+    "validate.gd",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--audio-driver",
+    "Dummy",
+    "--disable-crash-handler",
+    "--verbose",
+    "--",
+    "--mode",
+    "SR",
+    "--output",
+    "<workspace>\\validation\\captures\\baseline\\SR",
+    "--suite",
+    "smoke"
+  ],
+  "exe_sha256": "3b45fc9acd22fc71fa39fbca660de797fbbf2696e590dcc952d2c38eb1813b75",
+  "started_unix": 1792687406.0458078,
+  "exit_code": 1,
+  "loaded_sdk_modules": [],
+  "elapsed_seconds": 0.6230454444885254
+}

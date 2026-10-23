@@ -1,0 +1,13 @@
+{
+  "runs": 16,
+  "cases": 208,
+  "stable_samples": 1664,
+  "sdk_constant_calls": 15504,
+  "required_failures": [],
+  "fg_active_cases": {
+    "baseline": 13,
+    "pr17": 13,
+    "pr18": 13,
+    "both": 13
+  }
+}

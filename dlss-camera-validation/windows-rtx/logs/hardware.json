@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23",
+  "os": {
+    "Caption": "Microsoft Windows 10 Pro",
+    "Version": "10.0.19045",
+    "BuildNumber": "19045"
+  },
+  "cpu": {
+    "Name": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics     ",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "gpu": [
+    {
+      "Name": "Parsec Virtual Display Adapter",
+      "DriverVersion": "0.45.0.0"
+    },
+    {
+      "Name": "Todesk Virtual Display Adapter",
+      "DriverVersion": "16.44.2.509"
+    },
+    {
+      "Name": "AMD Radeon 780M Graphics",
+      "DriverVersion": "32.0.31019.2002"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "DriverVersion": "32.0.16.1088"
+    }
+  ],
+  "hardware_scheduler": 2
+}

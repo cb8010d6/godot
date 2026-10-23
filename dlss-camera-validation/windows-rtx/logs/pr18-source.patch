@@ -1,0 +1,131 @@
+diff --git a/servers/rendering/renderer_rd/effects/dlss.cpp b/servers/rendering/renderer_rd/effects/dlss.cpp
+index de6aeba1cb..70523d3dea 100644
+--- a/servers/rendering/renderer_rd/effects/dlss.cpp
++++ b/servers/rendering/renderer_rd/effects/dlss.cpp
+@@ -44,6 +44,22 @@ using namespace RendererRD;
+ 
+ #ifdef ENABLE_DLSS
+ 
++// [DLSS-VALIDATION] Local capture only. Calls the real SDK without changing arguments.
++#include "core/config/engine.h"
++#include "core/io/json.h"
++#include "core/os/os.h"
++static Array dlss_validation_vector(const sl::float3 &p_vector) {
++	Array a;
++	a.push_back(p_vector.x);
++	a.push_back(p_vector.y);
++	a.push_back(p_vector.z);
++	return a;
++}
++
++#endif
++
++#ifdef ENABLE_DLSS
++
+ // Texture layout/state constants (avoid including Vulkan/D3D12 headers here).
+ static constexpr uint64_t DLSS_VK_IMAGE_LAYOUT_SHADER_READ_ONLY = 5;
+ static constexpr uint64_t DLSS_D3D12_RESOURCE_STATE_NON_PIXEL_SR = 0x40;
+@@ -297,6 +313,9 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
+ 
+ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params) {
+ 	DLSSContextInner *context = (DLSSContextInner *)p_params.context;
++	static const bool dlss_validation_capture = OS::get_singleton()->has_environment("GODOT_DLSS_CAPTURE");
++	static int64_t dlss_validation_counter = 0;
++	const int64_t dlss_validation_seq = ++dlss_validation_counter;
+ 
+ 	void *nativeCmdlist = RD::get_singleton()->get_device_driver()->command_buffer_get_native_handle(cmdid);
+ 
+@@ -425,9 +444,9 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 		context->constants.prevClipToClip = sl_convert_matrix(p_params.reprojection.inverse()); // inverted reprojection matrix
+ 
+ 		context->constants.cameraPos = sl_convert_vector(p_params.cam_transform.get_origin());
+-		context->constants.cameraFwd = sl_convert_vector(-p_params.cam_transform.get_basis().rows[2]);
+-		context->constants.cameraUp = sl_convert_vector(p_params.cam_transform.get_basis().rows[1]);
+-		context->constants.cameraRight = sl_convert_vector(p_params.cam_transform.get_basis().rows[0]);
++		context->constants.cameraFwd = sl_convert_vector(-p_params.cam_transform.get_basis().get_column(2));
++		context->constants.cameraUp = sl_convert_vector(p_params.cam_transform.get_basis().get_column(1));
++		context->constants.cameraRight = sl_convert_vector(p_params.cam_transform.get_basis().get_column(0));
+ 
+ 		context->constants.cameraNear = p_params.z_near;
+ 		context->constants.cameraFar = p_params.z_far;
+@@ -444,6 +463,28 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 		context->constants.orthographicProjection = sl::Boolean::eFalse;
+ 		context->constants.reset = p_params.reset_accumulation ? sl::Boolean::eTrue : sl::Boolean::eFalse;
+ 		sl::Result result = StreamlineContext::get().slSetConstants(context->constants, *StreamlineContext::get().last_token, context->viewport);
++		if (dlss_validation_capture) {
++			Dictionary capture;
++			capture["stage"] = "constants";
++			capture["seq"] = dlss_validation_seq;
++			capture["frame"] = Engine::get_singleton()->get_frames_drawn();
++			capture["viewport"] = (int)(unsigned int)context->viewport;
++			capture["api"] = RD::get_singleton()->get_device_api_name();
++			capture["width"] = context->currentDlssOptions.outputWidth;
++			capture["height"] = context->currentDlssOptions.outputHeight;
++			capture["mode"] = (int)context->currentDlssOptions.mode;
++			capture["rr"] = use_dlss_rr;
++			capture["fg_requested"] = p_params.dlss_g;
++			capture["fov"] = context->constants.cameraFOV;
++			capture["aspect"] = context->constants.cameraAspectRatio;
++			capture["position"] = dlss_validation_vector(context->constants.cameraPos);
++			capture["forward"] = dlss_validation_vector(context->constants.cameraFwd);
++			capture["up"] = dlss_validation_vector(context->constants.cameraUp);
++			capture["right"] = dlss_validation_vector(context->constants.cameraRight);
++			capture["result"] = (int)result;
++			print_line("[DLSS-VALIDATION] " + JSON::stringify(capture));
++		}
++
+ 		if (result != sl::Result::eOk) {
+ 			ERR_FAIL_MSG("Failed to call streamline slSetConstants. Result: " + String(StreamlineContext::result_to_string(result)));
+ 		}
+@@ -516,18 +557,51 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 		if (use_dlss_rr && StreamlineContext::get().streamline_capabilities.dlss_rr_available) {
+ 			// Use DLSS Ray Reconstruction
+ 			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
++		if (dlss_validation_capture) {
++			Dictionary capture;
++			capture["stage"] = "evaluate";
++			capture["seq"] = dlss_validation_seq;
++			capture["rr"] = use_dlss_rr;
++			capture["result"] = (int)result;
++			print_line("[DLSS-VALIDATION] " + JSON::stringify(capture));
++		}
++
+ 			if (result != sl::Result::eOk) {
+ 				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for DLSS Ray Reconstruction. Result: " + String(StreamlineContext::result_to_string(result)));
+ 			}
+ 		} else if (StreamlineContext::get().streamline_capabilities.dlss_available) {
+ 			// Use regular DLSS
+ 			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
++		if (dlss_validation_capture) {
++			Dictionary capture;
++			capture["stage"] = "evaluate";
++			capture["seq"] = dlss_validation_seq;
++			capture["rr"] = use_dlss_rr;
++			capture["result"] = (int)result;
++			print_line("[DLSS-VALIDATION] " + JSON::stringify(capture));
++		}
++
+ 			if (result != sl::Result::eOk) {
+ 				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for DLSS Super Resolution. Result: " + String(StreamlineContext::result_to_string(result)));
+ 			}
+ 		}
+ 	}
+ 
++
++	if (dlss_validation_capture && p_params.dlss_g && StreamlineContext::get().slDLSSGGetState != nullptr) {
++		sl::DLSSGState state;
++		sl::Result state_result = StreamlineContext::get().slDLSSGGetState(context->viewport, state, nullptr);
++		Dictionary capture;
++		capture["stage"] = "fg_state";
++		capture["seq"] = dlss_validation_seq;
++		capture["result"] = (int)state_result;
++		capture["status"] = (int)state.status;
++		capture["presented"] = state.numFramesActuallyPresented;
++		capture["min_dimension"] = state.minWidthOrHeight;
++		capture["max_generated"] = state.numFramesToGenerateMax;
++		print_line("[DLSS-VALIDATION] " + JSON::stringify(capture));
++	}
++
+ 	// NIS support
+ 	// **********
+ 	if (p_params.sharpness > 0.0f && StreamlineContext::get().slNISSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.nis_available) {

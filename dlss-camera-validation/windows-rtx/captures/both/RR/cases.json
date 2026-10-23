@@ -1,0 +1,457 @@
+[
+  {
+    "end_frame": 47,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 720,
+    "id": "fov_width_square",
+    "keep_aspect": 0,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 39,
+    "warmup_frames": 40,
+    "width": 720,
+    "window_focused": true
+  },
+  {
+    "end_frame": 95,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.02477897155957,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "fov_width_16x9",
+    "keep_aspect": 0,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.77777767181396,
+    "screenshot_result": 0,
+    "start_frame": 87,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 143,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 0.809783523242188,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 720,
+    "id": "fov_width_21x9",
+    "keep_aspect": 0,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 2.33333349227905,
+    "screenshot_result": 0,
+    "start_frame": 135,
+    "warmup_frames": 40,
+    "width": 1680,
+    "window_focused": true
+  },
+  {
+    "end_frame": 191,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 2.11681373296832,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 1440,
+    "id": "fov_width_9x16",
+    "keep_aspect": 0,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 0.5625,
+    "screenshot_result": 0,
+    "start_frame": 183,
+    "warmup_frames": 40,
+    "width": 810,
+    "window_focused": true
+  },
+  {
+    "end_frame": 239,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 720,
+    "id": "fov_height_square",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 231,
+    "warmup_frames": 40,
+    "width": 720,
+    "window_focused": true
+  },
+  {
+    "end_frame": 287,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "fov_height_16x9",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 279,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 335,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 720,
+    "id": "fov_height_21x9",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 327,
+    "warmup_frames": 40,
+    "width": 1680,
+    "window_focused": true
+  },
+  {
+    "end_frame": 383,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 1440,
+    "id": "fov_height_9x16",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 375,
+    "warmup_frames": 40,
+    "width": 810,
+    "window_focused": true
+  },
+  {
+    "end_frame": 431,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "basis_identity",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 423,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 479,
+    "expected_forward": [
+      -1.0,
+      0.0,
+      4.37113882867379e-08
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      -4.37113882867379e-08,
+      0.0,
+      -1.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "basis_yaw90",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 471,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 527,
+    "expected_forward": [
+      0.0,
+      1.0,
+      4.37113882867379e-08
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      -4.37113882867379e-08,
+      1.0
+    ],
+    "height": 810,
+    "id": "basis_pitch90",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 519,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 575,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      -4.37113882867379e-08,
+      1.0,
+      0.0
+    ],
+    "expected_up": [
+      -1.0,
+      -4.37113882867379e-08,
+      0.0
+    ],
+    "height": 810,
+    "id": "basis_roll90",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 567,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 623,
+    "expected_forward": [
+      -0.411062300205231,
+      0.0690174698829651,
+      -0.908990859985352
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      0.763376235961914,
+      0.571088850498199,
+      -0.301851332187653
+    ],
+    "expected_up": [
+      -0.498281568288803,
+      0.817981779575348,
+      0.287439405918121
+    ],
+    "height": 810,
+    "id": "basis_axis123",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "RR",
+    "projection_y_scale": 1.0,
+    "screenshot_result": 0,
+    "start_frame": 615,
+    "warmup_frames": 40,
+    "width": 1440,
+    "window_focused": true
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "end_frame": 127,
+    "expected_forward": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "expected_fov": 1.02477897155957,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "fov_width_16x9",
+    "keep_aspect": 0,
+    "max_fps": 0,
+    "mode": "FG",
+    "projection_y_scale": 1.77777767181396,
+    "reflex_limit_us": 16666.7,
+    "screenshot_result": 0,
+    "start_frame": 119,
+    "warmup_frames": 120,
+    "width": 1440,
+    "window_focused": true
+  },
+  {
+    "end_frame": 255,
+    "expected_forward": [
+      -1.0,
+      0.0,
+      4.37113882867379e-08
+    ],
+    "expected_fov": 1.5707963267949,
+    "expected_position": [
+      3.0,
+      -7.0,
+      11.0
+    ],
+    "expected_right": [
+      -4.37113882867379e-08,
+      0.0,
+      -1.0
+    ],
+    "expected_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "height": 810,
+    "id": "basis_yaw90",
+    "keep_aspect": 1,
+    "max_fps": 0,
+    "mode": "FG",
+    "projection_y_scale": 1.0,
+    "reflex_limit_us": 16666.7,
+    "screenshot_result": 0,
+    "start_frame": 247,
+    "warmup_frames": 120,
+    "width": 1440,
+    "window_focused": true
+  }
+]
