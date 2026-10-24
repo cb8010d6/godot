@@ -1,5 +1,15 @@
 # Update log
 
+## 2026-10-24 (pinned engine synchronization)
+
+* **Added**: [4.8 beta 1 synchronization](/project/godot-4.8-beta1-sync.md)
+  and [sandbox socket test failure](/mistakes/sandbox-sockets-in-native-tests.md).
+* **Updated**: source sync log and fork ownership for the stricter upstream
+  validator; retained rendering, PhysX and native/managed ABI extensions.
+* **Validation**: the combined integration worktree passed the native engine
+  suite and headless API checks. Windows/GPU smoke remains a separate gate;
+  the subsequent SDK commit records the combined upgrade guide.
+
 ## 2026-10-12 (dark places)
 
 * **Updated**: DDGI.md step 30: no flicker or blotches in dark places;

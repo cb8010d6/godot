@@ -63,6 +63,7 @@ Update this table after every sync.
 | 2026-10-07 | `e7b12e7492` | `135dff3887` | `2de7ea521f` (Flow builds pipelines on first use) | `4624c40df5` |
 | 2026-10-08 | `e7b12e7492` (no change) | `135dff3887` (no change) | `5681d7519a` (Flow on Linux, MIT license) | on `dev`, see log |
 | 2026-10-08 | `65e8d16951` | `135dff3887` (no change) | `5681d7519a` (no change) | `4495b586dd` |
+| 2026-10-24 | `4d10419cac` (4.8 beta 1, pinned) | `135dff3887` (no change) | `5681d7519a` (no change) | Merge pinned 4.8 beta 1; see branch history |
 
 ### History layout
 
@@ -170,8 +171,11 @@ pin, patches or presets change.
 - Run SCons from PowerShell or cmd. From Git Bash it can't find the D3D12 and
   AccessKit dependencies and stops at configure.
 - Close any running editor from `bin\` first, or the link fails with `Access is denied`.
-- Not built yet: .NET/C#
-  (`module_mono_enabled=yes` + `modules/mono/build_scripts/build_assemblies.py`).
+- .NET/C# requires SDK 10+ satisfying `modules/mono/global.json`;
+  `devtools\build\build.ps1 -Mono` builds native glue and managed assemblies.
+- The pinned 4.8 beta 1 build uses `-VersionStatus beta1` (or
+  `GODOT_VERSION_STATUS=beta1` for direct SCons). Keep upstream `version.py`
+  unchanged. The flag applies to both editors and all export templates.
 
 ## Versioning
 

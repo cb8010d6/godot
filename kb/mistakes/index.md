@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Sandbox socket denial looked like an engine regression](/mistakes/sandbox-sockets-in-native-tests.md) - fix execution permissions before changing or excluding a network test
+
 Mistakes agents made in this project: what went wrong, why, and the rule
 that prevents it. Read these before testing or measuring. Add one whenever
 something goes wrong: a false claim, a wasted rebuild, a test that
