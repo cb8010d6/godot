@@ -92,6 +92,8 @@ public:
 private:
 	void _upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params);
 	static void _upscale_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata);
+	void _sharpen_internal(RDD::CommandBufferID p_command_buffer, DLSSContext *p_context);
+	static void _sharpen_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata);
 };
 
 } // namespace RendererRD

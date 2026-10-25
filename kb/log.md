@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-26 (NIS stabilization candidate)
+
+* **Reproduced**: the six real Vulkan controls at the unchanged native base;
+  NIS format/alias diagnostics stay distinct from platform, device, depth and
+  FG present/synchronization failures. Original evidence branches remain.
+* **Implemented, pending GPU validation**: [separate NIS resources](/tooling/nis-separated-resources.md),
+  RGBA32F shader output, conversion to existing renderer precision, explicit
+  graph ordering and native-cache invalidation on context destruction.
+
 ## 2026-10-25 (D3D12 diagnostic control correction)
 
 * **Corrected**: the legacy-control work order retains D3D12/DXGI loader

@@ -38,6 +38,7 @@
 #include "core/string/print_string.h"
 #include "drivers/streamline/streamline_context.h"
 #include "drivers/streamline/streamline_dlss_presets.h"
+#include "servers/rendering/renderer_rd/effects/copy_effects.h"
 #include "servers/rendering/renderer_rd/storage_rd/material_storage.h"
 #include "servers/rendering/renderer_rd/uniform_set_cache_rd.h"
 #endif
@@ -66,6 +67,9 @@ public:
 	bool constants_set = false;
 	sl::DLSSMode last_logged_sr_mode = sl::DLSSMode::eCount;
 	char last_logged_sr_preset = '\0';
+	RID nis_input;
+	RID nis_output;
+	bool nis_initialized = false;
 
 	DLSSContextInner();
 	virtual ~DLSSContextInner();
@@ -156,6 +160,20 @@ static Vector<unsigned int> g_dlss_freeViewportIndices;
 static unsigned int g_dlss_viewportIndex = 1;
 
 DLSSContextInner::~DLSSContextInner() {
+	if (nis_initialized && StreamlineContext::get().slFreeResources != nullptr) {
+		// The NIS plugin clears its cached native-resource descriptions. Its
+		// kernels and coefficient textures remain owned by the plugin.
+		sl::Result result = StreamlineContext::get().slFreeResources(sl::kFeatureNIS, viewport);
+		if (result != sl::Result::eOk) {
+			ERR_PRINT("Failed to free Streamline NIS viewport resources. Result: " + String(StreamlineContext::result_to_string(result)));
+		}
+	}
+	if (nis_input.is_valid()) {
+		RD::get_singleton()->free_rid(nis_input);
+	}
+	if (nis_output.is_valid()) {
+		RD::get_singleton()->free_rid(nis_output);
+	}
 	g_dlss_freeViewportIndices.push_back((unsigned int)viewport);
 }
 
@@ -241,6 +259,29 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 
 	context->last_parameters = p_params;
 	context->last_effect = this;
+	const bool use_nis = p_params.sharpness > 0.0f && StreamlineContext::get().slNISSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.nis_available;
+	if (use_nis) {
+		if (context->nis_input.is_null()) {
+			RD::TextureFormat format = RD::get_singleton()->texture_get_format(p_params.output);
+			ERR_FAIL_COND_MSG(format.format != RD::DATA_FORMAT_R16G16B16A16_SFLOAT, "NIS conversion requires an RGBA16F renderer output.");
+			format.usage_bits = RD::TEXTURE_USAGE_SAMPLING_BIT | RD::TEXTURE_USAGE_STORAGE_BIT | RD::TEXTURE_USAGE_CAN_COPY_FROM_BIT | RD::TEXTURE_USAGE_CAN_COPY_TO_BIT;
+			RID input = RD::get_singleton()->texture_create(format, RD::TextureView());
+			ERR_FAIL_COND(input.is_null());
+			// Streamline's Vulkan NIS shader declares an Rgba32f storage image.
+			// Keep its output separate from the renderer's RGBA16F destination.
+			format.format = RD::DATA_FORMAT_R32G32B32A32_SFLOAT;
+			RID output = RD::get_singleton()->texture_create(format, RD::TextureView());
+			if (output.is_null()) {
+				RD::get_singleton()->free_rid(input);
+				ERR_FAIL_MSG("Failed to allocate the NIS RGBA32F output.");
+			}
+			context->nis_input = input;
+			context->nis_output = output;
+			RD::get_singleton()->set_resource_name(context->nis_input, "DLSS NIS input");
+			RD::get_singleton()->set_resource_name(context->nis_output, "NIS RGBA32F output");
+		}
+		context->last_parameters.output = context->nis_input;
+	}
 
 	// Decode mvecs
 	{
@@ -284,7 +325,7 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 	RD::CallbackResource res[8]; // Increased for DLSS-RR buffers
 	int num_resources = 0;
 	res[num_resources++].rid = p_params.color;
-	res[num_resources++].rid = p_params.output;
+	res[num_resources++].rid = context->last_parameters.output;
 	res[num_resources++].rid = p_params.depth;
 	res[num_resources++].rid = p_params.velocity;
 
@@ -307,7 +348,7 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 	for (int i = 0; i < num_resources; i++) {
 		// The external evaluator writes the output. Later consumers must depend
 		// on this callback, rather than reading the preceding frame's texture.
-		if (res[i].rid == p_params.output) {
+		if (res[i].rid == context->last_parameters.output) {
 			// Vulkan evaluation can also clear/copy this image, while D3D12
 			// requires the explicit UAV state rather than GENERAL/COMMON.
 			res[i].usage = context->is_d3d12 ? RD::CALLBACK_RESOURCE_USAGE_STORAGE_IMAGE_READ_WRITE : RD::CALLBACK_RESOURCE_USAGE_GENERAL;
@@ -316,48 +357,61 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 		}
 	}
 	RD::get_singleton()->driver_callback_add((RDD::DriverCallback)DLSSEffect::_upscale_internal_graph_callback, p_params.context, VectorView<RD::CallbackResource>(res, num_resources));
+	if (use_nis) {
+		// A separate graph command orders DLSS's writes before NIS reads.
+		// Neither tagged NIS resource is aliased or overwritten before present.
+		RD::CallbackResource nis_resources[2];
+		nis_resources[0].rid = context->nis_input;
+		nis_resources[0].usage = RD::CALLBACK_RESOURCE_USAGE_TEXTURE_SAMPLE;
+		nis_resources[1].rid = context->nis_output;
+		nis_resources[1].usage = RD::CALLBACK_RESOURCE_USAGE_STORAGE_IMAGE_READ_WRITE;
+		RD::get_singleton()->driver_callback_add((RDD::DriverCallback)DLSSEffect::_sharpen_internal_graph_callback, p_params.context, VectorView<RD::CallbackResource>(nis_resources, 2));
+		// Convert with a shader, not a format-incompatible image copy. The
+		// renderer and its later consumers retain their original precision.
+		CopyEffects::get_singleton()->copy_to_rect(context->nis_output, p_params.output, Rect2i(Point2i(), Size2i(context->currentDlssOptions.outputWidth, context->currentDlssOptions.outputHeight)));
+	}
+}
+
+static sl::Resource sl_texture_resource(RID textureRID, bool p_is_d3d12, bool p_storage) {
+	RD::TextureFormat texture_format = RD::get_singleton()->texture_get_format(textureRID);
+	uint64_t texture_image = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE, textureRID);
+	uint64_t texture_view = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_VIEW, textureRID);
+	uint64_t texture_device_memory = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_DEVICE_MEMORY, textureRID);
+	uint64_t texture_state = DLSS_VK_IMAGE_LAYOUT_SHADER_READ_ONLY;
+	if (p_is_d3d12) {
+		texture_state = DLSS_D3D12_RESOURCE_STATE_NON_PIXEL_SR;
+	}
+	if (p_storage) {
+		texture_state = p_is_d3d12 ? DLSS_D3D12_RESOURCE_STATE_UNORDERED_ACCESS : DLSS_VK_IMAGE_LAYOUT_GENERAL;
+	}
+	uint64_t texture_vkformat = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_DATA_FORMAT, textureRID);
+	uint64_t texture_usage_flags = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_USAGE_FLAGS, textureRID);
+	sl::Resource destinationResource;
+	if (p_is_d3d12) {
+		destinationResource = sl::Resource(sl::ResourceType::eTex2d,
+				(void *)texture_view, texture_state);
+	} else {
+		destinationResource = sl::Resource(sl::ResourceType::eTex2d,
+				(void *)texture_image, (void *)texture_device_memory, (void *)texture_view, texture_state);
+	}
+	destinationResource.width = texture_format.width;
+	destinationResource.height = texture_format.height;
+	destinationResource.nativeFormat = texture_vkformat;
+	destinationResource.arrayLayers = texture_format.array_layers;
+	destinationResource.flags = 0;
+	destinationResource.mipLevels = texture_format.mipmaps;
+	destinationResource.usage = texture_usage_flags;
+	return destinationResource;
 }
 
 void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params) {
 	DLSSContextInner *context = (DLSSContextInner *)p_params.context;
-
 	void *nativeCmdlist = RD::get_singleton()->get_device_driver()->command_buffer_get_native_handle(cmdid);
-
-	// Helper function for tagging resources.
 	auto assignResource = [context, &p_params](sl::Resource *resources, sl::ResourceTag *resourceTags, int &numResources, RID textureRID, sl::BufferType bufferType, sl::ResourceLifecycle lifecycle) {
 		if (!textureRID.is_valid() || textureRID.is_null()) {
 			return;
 		}
-
-		RD::TextureFormat texture_format = RD::get_singleton()->texture_get_format(textureRID);
-		uint64_t texture_image = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE, textureRID);
-		uint64_t texture_view = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_VIEW, textureRID);
-		uint64_t texture_device_memory = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_DEVICE_MEMORY, textureRID);
-		uint64_t texture_state = DLSS_VK_IMAGE_LAYOUT_SHADER_READ_ONLY;
-		if (context->is_d3d12) {
-			texture_state = DLSS_D3D12_RESOURCE_STATE_NON_PIXEL_SR;
-		}
-		// NIS tags the same output image as both its input and output.
-		if (textureRID == p_params.output) {
-			texture_state = context->is_d3d12 ? DLSS_D3D12_RESOURCE_STATE_UNORDERED_ACCESS : DLSS_VK_IMAGE_LAYOUT_GENERAL;
-		}
-		uint64_t texture_vkformat = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_DATA_FORMAT, textureRID);
-		uint64_t texture_usage_flags = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_USAGE_FLAGS, textureRID);
-		auto &destinationResource = resources[numResources];
-		if (context->is_d3d12) {
-			destinationResource = sl::Resource(sl::ResourceType::eTex2d,
-					(void *)texture_view, texture_state);
-		} else {
-			destinationResource = sl::Resource(sl::ResourceType::eTex2d,
-					(void *)texture_image, (void *)texture_device_memory, (void *)texture_view, texture_state);
-		}
-		destinationResource.width = texture_format.width;
-		destinationResource.height = texture_format.height;
-		destinationResource.nativeFormat = texture_vkformat;
-		destinationResource.arrayLayers = texture_format.array_layers;
-		destinationResource.flags = 0;
-		destinationResource.mipLevels = texture_format.mipmaps;
-		destinationResource.usage = texture_usage_flags;
+		resources[numResources] = sl_texture_resource(textureRID, context->is_d3d12, textureRID == p_params.output);
 
 		resourceTags[numResources] = sl::ResourceTag(resources + numResources, bufferType, lifecycle, nullptr);
 		++numResources;
@@ -550,38 +604,49 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 			}
 		}
 	}
+}
 
-	// NIS support
-	// **********
-	if (p_params.sharpness > 0.0f && StreamlineContext::get().slNISSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.nis_available) {
-		{ // Set NIS settings
-			sl::NISOptions options;
-			options.hdrMode = sl::NISHDR::eNone;
-			options.mode = sl::NISMode::eSharpen;
-			options.sharpness = p_params.sharpness;
-			StreamlineContext::get().slNISSetOptions(context->viewport, options);
+void DLSSEffect::_sharpen_internal(RDD::CommandBufferID p_command_buffer, DLSSContext *p_context) {
+	DLSSContextInner *context = static_cast<DLSSContextInner *>(p_context);
+	const bool log_evaluation = !context->nis_initialized;
+	void *nativeCmdlist = RD::get_singleton()->get_device_driver()->command_buffer_get_native_handle(p_command_buffer);
+	{ // Set NIS settings
+		sl::NISOptions options;
+		options.hdrMode = sl::NISHDR::eNone;
+		options.mode = sl::NISMode::eSharpen;
+		options.sharpness = context->last_parameters.sharpness;
+		sl::Result result = StreamlineContext::get().slNISSetOptions(context->viewport, options);
+		ERR_FAIL_COND_MSG(result != sl::Result::eOk, "Failed to set Streamline NIS options. Result: " + String(StreamlineContext::result_to_string(result)));
+		context->nis_initialized = true;
+	}
+
+	{ // Tag NIS buffers
+		sl::Resource resources[2] = {
+			sl_texture_resource(context->nis_input, context->is_d3d12, false),
+			sl_texture_resource(context->nis_output, context->is_d3d12, true),
+		};
+		sl::ResourceTag resourceTags[2] = {
+			sl::ResourceTag(&resources[0], sl::kBufferTypeScalingInputColor, sl::ResourceLifecycle::eValidUntilPresent, nullptr),
+			sl::ResourceTag(&resources[1], sl::kBufferTypeScalingOutputColor, sl::ResourceLifecycle::eValidUntilPresent, nullptr),
+		};
+
+		sl::Result result = StreamlineContext::get().slSetTag(context->viewport, resourceTags, 2, nativeCmdlist);
+		if (result != sl::Result::eOk) {
+			ERR_FAIL_MSG("Failed to call streamline slSetTag for NIS. Result: " + String(StreamlineContext::result_to_string(result)));
 		}
+	}
 
-		{ // Tag NIS buffers
-			sl::Resource resources[3];
-			sl::ResourceTag resourceTags[3];
-			int numResources = 0;
-
-			assignResource(resources, resourceTags, numResources, p_params.output, sl::kBufferTypeScalingInputColor, sl::ResourceLifecycle::eOnlyValidNow);
-			assignResource(resources, resourceTags, numResources, p_params.output, sl::kBufferTypeScalingOutputColor, sl::ResourceLifecycle::eValidUntilPresent);
-
-			sl::Result result = StreamlineContext::get().slSetTag(context->viewport, resourceTags, numResources, nativeCmdlist);
-			if (result != sl::Result::eOk) {
-				ERR_FAIL_MSG("Failed to call streamline slSetTag for NIS. Result: " + String(StreamlineContext::result_to_string(result)));
-			}
+	{ // Evaluate NIS
+		const sl::BaseStructure *inputs[] = { &context->viewport };
+		sl::Result result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureNIS, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
+		if (result != sl::Result::eOk) {
+			ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for NIS. Result: " + String(StreamlineContext::result_to_string(result)));
 		}
-
-		{ // Evaluate NIS
-			const sl::BaseStructure *inputs[] = { &context->viewport };
-			sl::Result result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureNIS, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
-			if (result != sl::Result::eOk) {
-				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for NIS. Result: " + String(StreamlineContext::result_to_string(result)));
-			}
+		if (log_evaluation) {
+			print_verbose(vformat("NIS sharpen: input_format=%d output_format=%d same_resource=%s result=%s",
+					static_cast<int>(RD::get_singleton()->texture_get_format(context->nis_input).format),
+					static_cast<int>(RD::get_singleton()->texture_get_format(context->nis_output).format),
+					context->nis_input == context->nis_output ? "true" : "false", StreamlineContext::result_to_string(result)));
 		}
 	}
 }
@@ -589,6 +654,11 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 void RendererRD::DLSSEffect::_upscale_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata) {
 	DLSSContextInner *self = (DLSSContextInner *)p_userdata;
 	self->last_effect->_upscale_internal(p_command_buffer, self->last_parameters);
+}
+
+void DLSSEffect::_sharpen_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata) {
+	DLSSContextInner *context = static_cast<DLSSContextInner *>(p_userdata);
+	context->last_effect->_sharpen_internal(p_command_buffer, context);
 }
 
 bool DLSSEffect::is_ready(DLSSContext *p_context) {
@@ -613,4 +683,6 @@ bool DLSSEffect::is_ready(DLSSContext *p_context) {
 }
 void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params) {}
 void DLSSEffect::_upscale_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata) {}
+void DLSSEffect::_sharpen_internal(RDD::CommandBufferID p_command_buffer, DLSSContext *p_context) {}
+void DLSSEffect::_sharpen_internal_graph_callback(RenderingDeviceDriver *p_driver, RDD::CommandBufferID p_command_buffer, void *p_userdata) {}
 #endif
