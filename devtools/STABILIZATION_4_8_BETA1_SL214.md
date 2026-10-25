@@ -79,8 +79,6 @@ runtime module provenance or generated-frame correctness. Correct the fixture
 to explicitly load/require its probe and repeat those dependent checks.
 Lifecycle/performance testing is still pending. The initial records remain.
 
-## Acceptance boundary
-
 ## Win32 surface candidate
 
 The no-SL control reports `VUID-VkWin32SurfaceCreateInfoKHR-hinstance-01307`.
@@ -89,6 +87,26 @@ forwarded it as a Vulkan instance handle. When that optional instance is null,
 use `GWLP_HINSTANCE` from the actual owned window. Preserve a supplied instance
 and report a real failure if no valid window module can be obtained. This is
 independent of Streamline or NIS. Real no-SL/SL and launcher regressions follow.
+
+The first window-class-only fallback failed Vulkan startup (b8d791fa87),
+and its D3D12 fallback rows remain failures. The revised implementation
+92dd424cf0 uses the current application module when the class also has null
+ownership. The real no-SL Vulkan control is now VUID/SYNC clean; nine runs
+use their requested backends and contain native-probe samples. Foreground
+presented-two/eOk has 239/261 samples in each Vulkan FG-requested case;
+this is activation/state evidence, not generated-frame visual acceptance.
+FG still reports 20 sync diagnostics. The platform and NIS corrections do
+not make the other SDK/present errors pass.
+
+## Streamline Vulkan device requirement candidate
+
+SL2.14 calls vkCreatePrivateDataSlot but did not enable privateData in this
+integration. Its low-latency device extension also lacked a present-id
+dependency. When the SL loader is active, query supported privateData and
+presentId, enable their supported feature structures and request the optional
+present-id extension (private-data extension only before core 1.3). The
+existing core-1.2 promoted-feature handling remains. Missing runtimes do not
+request these additional features. Real strict checks follow.
 
 ## Acceptance boundary
 

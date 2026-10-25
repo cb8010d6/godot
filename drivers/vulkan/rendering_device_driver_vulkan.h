@@ -169,6 +169,9 @@ class RenderingDeviceDriverVulkan : public RenderingDeviceDriver {
 	bool buffer_device_address_support = false;
 	bool vulkan_memory_model_support = false;
 	bool vulkan_memory_model_device_scope_support = false;
+	bool streamline_device_features = false;
+	VkPhysicalDevicePrivateDataFeatures streamline_private_data = {};
+	VkPhysicalDevicePresentIdFeaturesKHR streamline_present_id = {};
 	AccelerationStructureCapabilities acceleration_structure_capabilities;
 	bool ray_query_support = false;
 	RaytracingCapabilities raytracing_capabilities;

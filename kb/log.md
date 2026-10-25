@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (surface verified, Vulkan device requirements candidate)
+
+* **Measured at 92dd424cf0**: no-SL Vulkan has no VUID/SYNC errors; all nine
+  runs use their requested backends and require native state capture. FG
+  activation samples do not erase its remaining sync/threading failures.
+* **Implemented, pending GPU checks**: supported [SL device features](/tooling/streamline-vulkan-device-requirements.md),
+  privateData and present-id dependencies, preserving the promoted chain.
+
 ## 2026-10-26 (surface fallback correction)
 
 * **Failed and retained**: b8d791fa87's window-class handle can also be null,

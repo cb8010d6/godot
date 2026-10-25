@@ -40,6 +40,7 @@
 
 #if defined(STREAMLINE_ENABLED)
 #include "drivers/streamline/streamline.h"
+#include "drivers/streamline/streamline_context.h"
 #endif
 
 #include "drivers/aftermath/aftermath.h"
@@ -607,6 +608,18 @@ Error RenderingDeviceDriverVulkan::_initialize_device_extensions() {
 	}
 	_register_requested_device_extension(VK_KHR_SYNCHRONIZATION_2_EXTENSION_NAME, false);
 
+#ifdef STREAMLINE_ENABLED
+	streamline_device_features = StreamlineContext::get().slInit != nullptr;
+	if (streamline_device_features) {
+		// The SL low-latency path can request VK_NV_low_latency2. Its present-id
+		// dependency and feature must also be enabled by the host.
+		_register_requested_device_extension(VK_KHR_PRESENT_ID_EXTENSION_NAME, false);
+		if (physical_device_properties.apiVersion < VK_API_VERSION_1_3) {
+			_register_requested_device_extension(VK_EXT_PRIVATE_DATA_EXTENSION_NAME, false);
+		}
+	}
+#endif
+
 	// We don't actually use this extension, but some runtime components on some platforms
 	// can and will fill the validation layers with useless info otherwise if not enabled.
 	_register_requested_device_extension(VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME, false);
@@ -1056,6 +1069,18 @@ Error RenderingDeviceDriverVulkan::_check_device_capabilities() {
 		}
 
 		VkPhysicalDeviceFeatures2 device_features_2 = {};
+		if (streamline_device_features) {
+			if (physical_device_properties.apiVersion >= VK_API_VERSION_1_3 || enabled_device_extension_names.has(VK_EXT_PRIVATE_DATA_EXTENSION_NAME)) {
+				streamline_private_data.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRIVATE_DATA_FEATURES;
+				streamline_private_data.pNext = next_features;
+				next_features = &streamline_private_data;
+			}
+			if (enabled_device_extension_names.has(VK_KHR_PRESENT_ID_EXTENSION_NAME)) {
+				streamline_present_id.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_ID_FEATURES_KHR;
+				streamline_present_id.pNext = next_features;
+				next_features = &streamline_present_id;
+			}
+		}
 		device_features_2.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2;
 		device_features_2.pNext = next_features;
 		functions.GetPhysicalDeviceFeatures2(physical_device, &device_features_2);
@@ -1404,6 +1429,19 @@ Error RenderingDeviceDriverVulkan::_initialize_device(const LocalVector<VkDevice
 
 	const bool enable_1_2_features = physical_device_properties.apiVersion >= VK_API_VERSION_1_2;
 	void *create_info_next = nullptr;
+	// Query results are reused only after replacing their old query-chain
+	// links. These 1.3/extension features do not duplicate the 1.2 aggregate.
+	if (streamline_private_data.privateData) {
+		streamline_private_data.pNext = create_info_next;
+		create_info_next = &streamline_private_data;
+	}
+	if (streamline_present_id.presentId) {
+		streamline_present_id.pNext = create_info_next;
+		create_info_next = &streamline_present_id;
+	}
+	if (streamline_device_features) {
+		print_verbose(vformat("Streamline Vulkan device features: privateData=%d presentId=%d", streamline_private_data.privateData, streamline_present_id.presentId));
+	}
 	// Vulkan 1.2 uses the aggregate feature struct below. Its promoted feature
 	// structs must not also appear in pNext (VUID-VkDeviceCreateInfo-pNext-02830).
 	VkPhysicalDeviceShaderFloat16Int8FeaturesKHR shader_features = {};

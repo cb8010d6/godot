@@ -24,3 +24,10 @@ to D3D12 with exit zero. Those rows are failed Vulkan controls, not successes.
 The revised fallback uses the current application module when both the
 optional supplied instance and GWLP_HINSTANCE are null. Rebuild and repeat
 the requested backend checks; preserve the first failure logs.
+
+At 92dd424cf0 the corrected standard editor build passed (79.422 s), all
+nine short runs used their requested Vulkan/D3D12 backends, and the no-SL
+Vulkan run had no VUID or sync messages. Native-probe state samples are now
+required. Other SDK/FG diagnostics remain; this result covers the surface
+parameter fix rather than full Vulkan acceptance. Console/export/lifecycle
+coverage remains part of the final regression.
