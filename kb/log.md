@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (Windows test process lifetime)
+
+* **Measured**: delayed NGX updater/console children caused about 11 GiB of
+  pressure during repeated launches. Exact test-orphan cleanup and native
+  job lifetime regression recovered memory without changing drivers/caches.
+  [Process finding](/mistakes/ngx-updater-process-accumulation.md).
+
 ## 2026-10-25 (external callback pipeline stages)
 
 * **Found**: callback stage masks were empty, so a GENERAL access declaration

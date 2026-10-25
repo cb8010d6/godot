@@ -106,6 +106,14 @@ python devtools/test/upgrade_smoke.py --export-editor bin/<built-editor> --templ
 python devtools/test/test_csharp_smoke.py --godot bin/<built-mono-editor> --dotnet dotnet
 ```
 
+The Windows `smoke.ps1` runner contains native tests in a Job Object and closes
+remaining test descendants after each run. It also checks for accumulated NGX
+updaters before and after a launch. This avoids repeated GPU tests leaving driver
+update processes resident. It does not change driver settings or manage unrelated
+processes. `python devtools/test/run_native.py --timeout 300 <native-engine> ...`
+provides the same lifetime guard for a separate native test; arbitrary application
+launchers are outside its tested scope.
+
 The headless smoke checks existing API/serialized enums, the non-Windows
 Streamline stub, and DDGI scene/resource round trips. Add `--require-physx`,
 `--require-blast`, `--require-flow`, and `--require-mono` to require modules
