@@ -1,5 +1,7 @@
 # Tooling
 
+* [DLSS input rounding](/tooling/dlss-ultra-performance-input-rounding.md) - reconcile one-pixel input differences before viewport allocation
+
 * [DLSS runtime indicator evidence](/tooling/dlss-runtime-indicator-evidence.md) - distinguish requested presets, actual presets and NVIDIA App overrides
 
 * [D3D12 PIX protocol compatibility](/tooling/d3d12-pix-protocol-compatibility.md) - retain labels while diagnosing old debug-layer marker rejection

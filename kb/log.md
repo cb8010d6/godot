@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (DLSS input rounding)
+
+* **Measured SDK boundary**: both backends require 853x480 for Ultra at
+  2560x1440, whereas viewport float/ceil produced 854x480. Reconcile only
+  otherwise-invalid inputs within one pixel, before viewport size and jitter.
+* [Sizing regression](/tooling/dlss-ultra-performance-input-rounding.md):
+  real MSVC CPU checks pass 35/35. Patched-engine GPU verification pending.
+
 ## 2026-10-26 (D3D12 strict controls and resolved SR preset evidence)
 
 * **Measured at 1000baebda**: six real D3D12 debug rendering controls now have

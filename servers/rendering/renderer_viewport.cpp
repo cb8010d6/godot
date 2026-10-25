@@ -53,6 +53,7 @@
 
 #ifdef STREAMLINE_ENABLED
 #include "drivers/streamline/streamline_context.h"
+#include "drivers/streamline/streamline_dlss_sizing.h"
 #endif
 
 static Transform2D _canvas_get_transform(RendererViewport::Viewport *p_viewport, RendererCanvasCull::Canvas *p_canvas, RendererViewport::Viewport::CanvasData *p_canvas_data, const Vector2 &p_vp_size) {
@@ -291,6 +292,37 @@ void RendererViewport::_configure_3d_render_buffers(Viewport *p_viewport) {
 					render_height = target_height;
 					break;
 			}
+
+#ifdef STREAMLINE_ENABLED
+			if (scaling_3d_mode == RSE::VIEWPORT_SCALING_3D_MODE_DLSS && StreamlineContext::get().slDLSSGetOptimalSettings != nullptr) {
+				// The SDK can require a fixed integer input size (for example, Ultra
+				// Performance at 2560 x 1440 accepts 853 x 480, while ceil gives 854).
+				// Reconcile rounding before both jitter and buffer sizes are committed.
+				const sl::DLSSMode modes[] = { sl::DLSSMode::eDLAA, sl::DLSSMode::eMaxQuality, sl::DLSSMode::eBalanced, sl::DLSSMode::eMaxPerformance, sl::DLSSMode::eUltraPerformance };
+				StreamlineDLSSSizing::ModeBounds bounds[sizeof(modes) / sizeof(modes[0])];
+				for (size_t i = 0; i < sizeof(modes) / sizeof(modes[0]); i++) {
+					sl::DLSSOptions options{};
+					options.mode = modes[i];
+					options.outputWidth = target_width;
+					options.outputHeight = target_height;
+					sl::DLSSOptimalSettings settings{};
+					const sl::Result result = StreamlineContext::get().slDLSSGetOptimalSettings(options, settings);
+					bounds[i] = {
+						{ settings.renderWidthMin, settings.renderHeightMin },
+						{ settings.renderWidthMax, settings.renderHeightMax },
+						{ settings.optimalRenderWidth, settings.optimalRenderHeight },
+						result == sl::Result::eOk,
+					};
+				}
+				const StreamlineDLSSSizing::RenderSize desired = { static_cast<uint32_t>(render_width), static_cast<uint32_t>(render_height) };
+				const StreamlineDLSSSizing::RenderSize selected = StreamlineDLSSSizing::reconcile_render_size(desired, bounds, sizeof(bounds) / sizeof(bounds[0]));
+				if (selected.width != desired.width || selected.height != desired.height) {
+					print_verbose(vformat("DLSS render size adjusted to SDK bounds: requested=%dx%d selected=%dx%d output=%dx%d", desired.width, desired.height, selected.width, selected.height, target_width, target_height));
+					render_width = static_cast<int>(selected.width);
+					render_height = static_cast<int>(selected.height);
+				}
+			}
+#endif
 
 			uint32_t jitter_phase_count = 0;
 			if (scaling_type == RSE::VIEWPORT_SCALING_3D_TYPE_TEMPORAL) {
