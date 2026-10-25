@@ -90,7 +90,14 @@ struct VersatileResourceTemplate {
 class RenderingDeviceDriver : public RenderingDeviceCommons {
 	GDSOFTCLASS(RenderingDeviceDriver, RenderingDeviceCommons);
 
+protected:
+	bool is_main_device = false;
+
 public:
+	// Set by RenderingDevice before initialization. Local devices must not
+	// register with or overwrite process-wide graphics integrations.
+	void set_is_main_device(bool p_is_main_device) { is_main_device = p_is_main_device; }
+
 	struct ID {
 		uint64_t id = 0;
 		_ALWAYS_INLINE_ ID() = default;

@@ -160,6 +160,9 @@
 
 #include "drivers/aftermath/aftermath.h"
 #include "drivers/streamline/streamline.h"
+#ifdef STREAMLINE_ENABLED
+#include "drivers/streamline/streamline_context.h"
+#endif
 
 /* Static members */
 
@@ -361,6 +364,21 @@ void finalize_display() {
 	}
 	memdelete(rendering_server);
 	rendering_server = nullptr;
+#ifdef STREAMLINE_ENABLED
+	// The rendering thread and its feature contexts are gone, but the main
+	// swapchain and native device still exist. Host frame fences do not cover
+	// the SDK's asynchronous pacer; shut it down before DisplayServer frees them.
+	StreamlineContext &sl_context = StreamlineContext::get();
+#ifdef RD_ENABLED
+	if (sl_context.sdk_initialized) {
+		if (RenderingDevice *rd = RenderingDevice::get_singleton()) {
+			rd->make_current();
+			rd->_flush_and_stall_for_all_frames();
+		}
+	}
+#endif
+	sl_context.shutdown();
+#endif
 	memdelete(display_server);
 	display_server = nullptr;
 	memdelete(accessibility_server);

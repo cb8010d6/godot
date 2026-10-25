@@ -102,6 +102,9 @@ void Streamline::emit_marker(StreamlineMarkerType marker) {
 			sl_context.initialize(marker == StreamlineMarkerType::STREAMLINE_MARKER_INITIALIZE_D3D12);
 			return;
 		case StreamlineMarkerType::STREAMLINE_MARKER_AFTER_DEVICE_CREATION:
+			if (!sl_context.sdk_initialized) {
+				return;
+			}
 			sl_context.load_functions_post_init();
 			sl_context.frame_generation_device_live = true;
 
@@ -126,18 +129,14 @@ void Streamline::emit_marker(StreamlineMarkerType marker) {
 			update_project_settings();
 			return;
 		case StreamlineMarkerType::STREAMLINE_MARKER_BEFORE_DEVICE_DESTROY:
-			sl_context.frame_generation_device_live = false;
-			sl_context.frame_generation_allowed = false;
-			sl_context.frame_generation_reason = StreamlineFGPolicy::Reason::UNAVAILABLE;
-			sl_context.dlssg_viewport = sl::ViewportHandle(-1);
-			sl_context.publish_frame_generation_status();
-			if (sl_context.slShutdown) {
-				sl_context.slShutdown();
-				sl_context.slShutdown = nullptr;
-			}
+			sl_context.shutdown();
 			return;
 		default:
 			break;
+	}
+
+	if (!sl_context.sdk_initialized) {
+		return;
 	}
 
 	if (!sl_context.is_game || !sl_context.streamline_capabilities.reflex_available) {

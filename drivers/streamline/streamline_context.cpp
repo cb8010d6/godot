@@ -64,6 +64,7 @@
 #include "core/config/engine.h"
 #include "core/config/project_settings.h"
 #include "core/os/os.h"
+#include "core/string/print_string.h"
 
 #include <algorithm>
 
@@ -358,6 +359,70 @@ const char *StreamlineContext::result_to_string(sl::Result result) {
 	}
 }
 
+void StreamlineContext::shutdown() {
+	// Consume the entry point before calling the SDK so repeated terminal
+	// cleanup paths cannot shut the process-wide SDK down twice.
+	PFun_slShutdown *shutdown_function = slShutdown;
+	const bool was_initialized = sdk_initialized;
+	slShutdown = nullptr;
+	sdk_initialized = false;
+
+	sl::Result result = sl::Result::eOk;
+	if (was_initialized) {
+		result = shutdown_function ? shutdown_function() : sl::Result::eErrorMissingOrInvalidAPI;
+	}
+
+	// Plugins may have unloaded. Preserve the interposer module and slInit
+	// sentinel, but never retain callable plugin pointers or a frame token.
+	// initialize() remains terminal after shutdown; process reinitialization
+	// is not introduced by this cleanup change.
+	slIsFeatureSupported = nullptr;
+	slGetFeatureFunction = nullptr;
+	slGetNewFrameToken = nullptr;
+	slAllocateResources = nullptr;
+	slFreeResources = nullptr;
+	slEvaluateFeature = nullptr;
+	slSetTag = nullptr;
+	slSetConstants = nullptr;
+	slSetFeatureLoaded = nullptr;
+	slSetD3DDevice = nullptr;
+	slReflexGetState = nullptr;
+	slReflexSetOptions = nullptr;
+	slReflexSleep = nullptr;
+	slPCLSetMarker = nullptr;
+	slPCLSetOptions = nullptr;
+	slDLSSGetOptimalSettings = nullptr;
+	slDLSSGetState = nullptr;
+	slDLSSSetOptions = nullptr;
+	slDLSSDGetOptimalSettings = nullptr;
+	slDLSSDGetState = nullptr;
+	slDLSSDSetOptions = nullptr;
+	slDLSSGGetState = nullptr;
+	slDLSSGSetOptions = nullptr;
+	slNISSetOptions = nullptr;
+	func_D3D12GetInterface = nullptr;
+	func_D3D12CreateDevice = nullptr;
+	func_DXGIGetDebugInterface1 = nullptr;
+	func_CreateDXGIFactory = nullptr;
+	func_CreateDXGIFactory1 = nullptr;
+	func_CreateDXGIFactory2 = nullptr;
+	last_token = nullptr;
+	streamline_capabilities = {};
+	is_game = false;
+	frame_generation_device_live = false;
+	frame_generation_allowed = false;
+	frame_generation_reason = StreamlineFGPolicy::Reason::UNAVAILABLE;
+	frame_generation_rendered_views = 0;
+	frame_generation_requested_views = 0;
+	dlssg_viewport = sl::ViewportHandle(-1);
+	publish_frame_generation_status();
+	if (result != sl::Result::eOk) {
+		ERR_PRINT("Failed to shut down Streamline. Result: " + String(result_to_string(result)));
+	} else if (was_initialized) {
+		print_verbose("Streamline SDK shutdown completed before native graphics teardown.");
+	}
+}
+
 void StreamlineContext::initialize(bool d3d12) {
 	StreamlineContext::get().is_game = true;
 	if (Engine::get_singleton()->is_editor_hint() || Engine::get_singleton()->is_project_manager_hint()) {
@@ -411,6 +476,7 @@ void StreamlineContext::initialize(bool d3d12) {
 	}
 	sl::Result result = StreamlineContext::get().slInit(pref, sl::kSDKVersion);
 	ERR_FAIL_COND_MSG(result != sl::Result::eOk, StreamlineContext::result_to_string(result));
+	StreamlineContext::get().sdk_initialized = true;
 }
 
 #endif

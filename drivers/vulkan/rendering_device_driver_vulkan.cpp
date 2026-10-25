@@ -609,7 +609,7 @@ Error RenderingDeviceDriverVulkan::_initialize_device_extensions() {
 	_register_requested_device_extension(VK_KHR_SYNCHRONIZATION_2_EXTENSION_NAME, false);
 
 #ifdef STREAMLINE_ENABLED
-	streamline_device_features = StreamlineContext::get().slInit != nullptr;
+	streamline_device_features = is_main_device && StreamlineContext::get().sdk_initialized;
 	if (streamline_device_features) {
 		// The SL low-latency path can request VK_NV_low_latency2. Its present-id
 		// dependency and feature must also be enabled by the host.
@@ -2019,7 +2019,7 @@ Error RenderingDeviceDriverVulkan::initialize(uint32_t p_device_index, uint32_t 
 	ERR_FAIL_COND_V_MSG(err != OK, err, "Couldn't initialize Vulkan device capabilities. This may be caused by an incompatible or outdated graphics driver.");
 
 #ifdef STREAMLINE_ENABLED
-	if (Streamline::get_singleton()) {
+	if (is_main_device && Streamline::get_singleton()) {
 		Streamline::get_singleton()->set_internal_parameter("vulkan_physical_device", (void *)physical_device);
 	}
 #endif
@@ -2066,7 +2066,7 @@ Error RenderingDeviceDriverVulkan::initialize(uint32_t p_device_index, uint32_t 
 #endif
 
 #if defined(STREAMLINE_ENABLED)
-	if (Streamline::get_singleton()) {
+	if (is_main_device && Streamline::get_singleton()) {
 		Streamline::get_singleton()->emit_marker(STREAMLINE_MARKER_AFTER_DEVICE_CREATION);
 	}
 #endif
@@ -7839,11 +7839,6 @@ RenderingDeviceDriverVulkan::RenderingDeviceDriverVulkan(RenderingContextDriverV
 }
 
 RenderingDeviceDriverVulkan::~RenderingDeviceDriverVulkan() {
-#if defined(STREAMLINE_ENABLED)
-	if (Streamline::get_singleton()) {
-		Streamline::get_singleton()->emit_marker(STREAMLINE_MARKER_BEFORE_DEVICE_DESTROY);
-	}
-#endif
 	Aftermath::get_singleton()->emit_marker(AFTERMATH_MARKER_BEFORE_DEVICE_DESTROY);
 
 #if defined(DEBUG_ENABLED) || defined(DEV_ENABLED)

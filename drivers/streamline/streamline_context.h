@@ -38,6 +38,9 @@
 #include <atomic>
 class StreamlineContext {
 public:
+	// Successful SDK initialization, distinct from loading its entry points.
+	bool sdk_initialized = false;
+
 	// Interposer
 	PFun_slInit *slInit = nullptr;
 	PFun_slShutdown *slShutdown = nullptr;
@@ -110,6 +113,8 @@ public:
 	uint64_t get_frame_generation_status_snapshot() const { return frame_generation_snapshot.load(std::memory_order_acquire); }
 
 	static void initialize(bool d3d12);
+	// Terminal only: call after host rendering is drained, before native teardown.
+	void shutdown();
 
 	static StreamlineContext &get();
 

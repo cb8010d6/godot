@@ -8720,6 +8720,7 @@ Error RenderingDevice::initialize(RenderingContextDriver *p_context, DisplayServ
 
 	context = p_context;
 	driver = context->driver_create();
+	driver->set_is_main_device(is_main_instance);
 
 	print_verbose("Devices:");
 	int32_t device_index = Engine::get_singleton()->get_gpu_index();
@@ -8778,7 +8779,7 @@ Error RenderingDevice::initialize(RenderingContextDriver *p_context, DisplayServ
 		// Output our device version.
 		String streamline_enabled = "";
 #ifdef STREAMLINE_ENABLED
-		streamline_enabled = (StreamlineContext::get().slInit != nullptr ? " - Streamline" : "");
+		streamline_enabled = (StreamlineContext::get().sdk_initialized ? " - Streamline" : "");
 #endif
 		Engine::get_singleton()->print_header(vformat("%s %s - %s%s - Using Device #%d: %s - %s", get_device_api_name(), get_device_api_version(), rendering_method, streamline_enabled, device_index, _get_device_vendor_name(device), device.name));
 	}
@@ -9273,6 +9274,14 @@ void RenderingDevice::finalize() {
 	// Wait for transfer workers to finish.
 	_submit_transfer_workers();
 	_wait_for_transfer_workers();
+
+#ifdef STREAMLINE_ENABLED
+	// Fallback for a failed main-device setup before finalize_display runs.
+	// Local device destruction must never shut down the process-wide SDK.
+	if (is_main_instance) {
+		StreamlineContext::get().shutdown();
+	}
+#endif
 
 	// Delete everything the graph has created.
 	draw_graph.finalize();

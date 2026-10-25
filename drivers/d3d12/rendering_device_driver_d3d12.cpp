@@ -6284,9 +6284,6 @@ RenderingDeviceDriverD3D12::~RenderingDeviceDriverD3D12() {
 		}
 	}
 
-	if (Streamline::get_singleton()) {
-		Streamline::get_singleton()->emit_marker(STREAMLINE_MARKER_BEFORE_DEVICE_DESTROY);
-	}
 	Aftermath::get_singleton()->emit_marker(AFTERMATH_MARKER_BEFORE_DEVICE_DESTROY);
 
 	if (D3D12Hooks::get_singleton() != nullptr) {
@@ -6356,7 +6353,7 @@ Error RenderingDeviceDriverD3D12::_initialize_device() {
 		PFN_D3D12_CREATE_DEVICE d3d_D3D12CreateDevice = (PFN_D3D12_CREATE_DEVICE)(void *)GetProcAddress(context_driver->lib_d3d12, "D3D12CreateDevice");
 		ERR_FAIL_NULL_V(d3d_D3D12CreateDevice, ERR_CANT_CREATE);
 
-		if (Streamline::get_singleton()->get_internal_parameter(STREAMLINE_INTERNAL_PARAMETER_FUNC_D3D12CreateDevice)) {
+		if (is_main_device && Streamline::get_singleton() && Streamline::get_singleton()->get_internal_parameter(STREAMLINE_INTERNAL_PARAMETER_FUNC_D3D12CreateDevice)) {
 			d3d_D3D12CreateDevice = (PFN_D3D12_CREATE_DEVICE)Streamline::get_singleton()->get_internal_parameter(STREAMLINE_INTERNAL_PARAMETER_FUNC_D3D12CreateDevice);
 		}
 
@@ -6767,7 +6764,9 @@ Error RenderingDeviceDriverD3D12::initialize(uint32_t p_device_index, uint32_t p
 	HRESULT res = adapter->GetDesc(&adapter_desc);
 	ERR_FAIL_COND_V(!SUCCEEDED(res), ERR_CANT_CREATE);
 
-	Streamline::get_singleton()->set_internal_parameter("d3d12_adapter_luid", (void *)&adapter_desc.AdapterLuid);
+	if (is_main_device && Streamline::get_singleton()) {
+		Streamline::get_singleton()->set_internal_parameter("d3d12_adapter_luid", (void *)&adapter_desc.AdapterLuid);
+	}
 
 	// Set the pipeline cache ID based on the adapter information.
 	pipeline_cache_id = String::hex_encode_buffer((uint8_t *)&adapter_desc.AdapterLuid, sizeof(LUID));
@@ -6776,7 +6775,9 @@ Error RenderingDeviceDriverD3D12::initialize(uint32_t p_device_index, uint32_t p
 	Error err = _initialize_device();
 	ERR_FAIL_COND_V(err != OK, ERR_CANT_CREATE);
 
-	Streamline::get_singleton()->set_internal_parameter("d3d12_device", (void *)device.Get());
+	if (is_main_device && Streamline::get_singleton()) {
+		Streamline::get_singleton()->set_internal_parameter("d3d12_device", (void *)device.Get());
+	}
 
 	Aftermath::get_singleton()->emit_marker(AFTERMATH_MARKER_INITIALIZE_D3D12);
 	AftermathContext::get().initialize_d3d12((void *)device.Get());
@@ -6796,7 +6797,9 @@ Error RenderingDeviceDriverD3D12::initialize(uint32_t p_device_index, uint32_t p
 	err = _initialize_command_signatures();
 	ERR_FAIL_COND_V(err != OK, ERR_CANT_CREATE);
 
-	Streamline::get_singleton()->emit_marker(STREAMLINE_MARKER_AFTER_DEVICE_CREATION);
+	if (is_main_device && Streamline::get_singleton()) {
+		Streamline::get_singleton()->emit_marker(STREAMLINE_MARKER_AFTER_DEVICE_CREATION);
+	}
 
 	return OK;
 }

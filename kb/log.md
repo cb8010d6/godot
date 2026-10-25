@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (Streamline device ownership and terminal shutdown)
+
+* Both real backends reproduced `0xC0000005` after a local RD destructor
+  closed the main SDK; D3D12 also tried to register the local device globally.
+* [Ownership and teardown](/tooling/streamline-terminal-shutdown.md): use
+  explicit main-device ownership and terminate the SDK before native display
+  destruction. New rendered local-device regression; rebuild/GPU results pending.
+
 ## 2026-10-26 (DLSS input rounding)
 
 * **Measured SDK boundary**: both backends require 853x480 for Ultra at

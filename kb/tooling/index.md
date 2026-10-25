@@ -1,5 +1,7 @@
 # Tooling
 
+* [Streamline device ownership and shutdown](/tooling/streamline-terminal-shutdown.md) - local devices preserve the main SDK and terminal cleanup precedes native teardown
+
 * [DLSS input rounding](/tooling/dlss-ultra-performance-input-rounding.md) - reconcile one-pixel input differences before viewport allocation
 
 * [DLSS runtime indicator evidence](/tooling/dlss-runtime-indicator-evidence.md) - distinguish requested presets, actual presets and NVIDIA App overrides
