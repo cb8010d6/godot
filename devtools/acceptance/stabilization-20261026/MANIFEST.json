@@ -1,0 +1,2516 @@
+{
+  "schema_version": 1,
+  "scope": "Curated existing evidence; not a new native/GPU acceptance run",
+  "text_policy": "All public text redacted with explicit placeholders; source private files untouched",
+  "png_policy": "Original PNG bytes unchanged; original and public SHA256 must match",
+  "not_included": [
+    "SDK binaries",
+    "executable/shared/static libraries",
+    "archives",
+    "res caches",
+    "private keys",
+    "Hub stdout/stderr"
+  ],
+  "files": [
+    {
+      "file": "evidence/source-environment.json",
+      "kind": "derived_json",
+      "bytes": 4553,
+      "sha256": "27f61f3d19e5858ba9080647e883e4d2a3e96b4eea36cb6f653ea3ae8e594bbc",
+      "sources": [
+        {
+          "origin": "<LEGACY_ACCEPTANCE_ROOT>/machine.json",
+          "bytes": 692,
+          "sha256": "1d3c595de7d00b554f00f655504f77d1b9837e2707428ebaf4252e41e3d79b87"
+        },
+        {
+          "origin": "<LEGACY_ACCEPTANCE_ROOT>/intake-audit.json",
+          "bytes": 15631,
+          "sha256": "b7a135430611e57bd0ae459897baeb589881043effd81932ef6f75086f080adb"
+        },
+        {
+          "origin": "<SOURCE_ROOT>/thirdparty/streamline/README.godot",
+          "bytes": 948,
+          "sha256": "2f39c639dd4c669fc20f7543ef865e38426bbdeeb72e55d6a90228c409083cf6"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-exports-c1fc0252a9-20261025T204313Z-c8540654-dotnet-version.log",
+          "bytes": 10,
+          "sha256": "6d5ab2a4ef35ceec908f01287257f530b0c0d68f0e84326df2ebcea641f9134b"
+        },
+        {
+          "origin": "<LEGACY_ACCEPTANCE_ROOT>/REPORT.md",
+          "bytes": 30228,
+          "sha256": "2e46bee1fb570db7fffae94436c6bfc503433ab21f1d6931f1c4c29341a75f65"
+        },
+        {
+          "origin": "<SOURCE_ROOT>/devtools/UPGRADE_4_8_BETA1.md",
+          "bytes": 16737,
+          "sha256": "09e381fbb9174123ce9f87e955d87c84da9e4e3185d9e01c3ffe9f6da7e18953"
+        }
+      ]
+    },
+    {
+      "file": "evidence/builds-cpu.json",
+      "kind": "derived_json",
+      "bytes": 12291,
+      "sha256": "8c14896ad3dd505561f6564f11ec503cd6264899672b8d75e5f0803ff4eb769c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-d37.json",
+          "bytes": 1071,
+          "sha256": "04eca9c8c4506c141f38e5b7e5ec01ff8a4b9b051c83b47eaf6104b0358ff42f"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-c1fc.json",
+          "bytes": 1074,
+          "sha256": "a8164db07d9798fcef43c036ac2904673f4312b5bb733fb48c26f84ad296157e"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/build-doc-cache-editor.json",
+          "bytes": 1057,
+          "sha256": "6f895f4829cdbbc0f75437801954eab2dd494c295800f686e3c369ad5feb45cf"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-unittests-d37.json",
+          "bytes": 1224,
+          "sha256": "67c21d68100bad9bf80fecfe5448c2586397a91800f3bf844a7599a541d325a9"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-sizing-d37.json",
+          "bytes": 970,
+          "sha256": "254bf8ba9d4d926c21b7bec046b9312d3acd1d1844697d2d3d3a25d6123014a1"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-api-presets-d37.json",
+          "bytes": 968,
+          "sha256": "4748ae04650053948d32d1c234b1aed2175def1a0288d10f8c89c85d4b19e493"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-d37.json",
+          "bytes": 1440,
+          "sha256": "7ab0743f21cee79104405393a8451d2fad6749eb9cc94e026712250de2bcf855"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-c1.json",
+          "bytes": 1463,
+          "sha256": "d96cf7f8cee93de61712580d83d569afdeb8ed3113ca8d155dee6444c93d7cb0"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-standard.json",
+          "bytes": 966,
+          "sha256": "4d838188fef907afaadc40085a8a00e854945bb14978619e20474f97e6cf9b1d"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-mono.json",
+          "bytes": 976,
+          "sha256": "788a4c61575a50ea719fea2db750fb3cfdb27b071327f3d98a614adab17b05df"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-standard.json",
+          "bytes": 1036,
+          "sha256": "29e1707435231285efa3360453b37d24cb134da4bf39d55f4d383d52c4c8f03b"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-mono.json",
+          "bytes": 1046,
+          "sha256": "30438ea059ce1d26ce9004488999e19f92b11498e80d51d676a0e553a6997430"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/managed-api-d37.json",
+          "bytes": 1693,
+          "sha256": "ce1f2513b7f7e1d22e798b2338e9133733f540aeea23e8d3156f782cbff2821e"
+        }
+      ]
+    },
+    {
+      "file": "evidence/strict-summary.json",
+      "kind": "derived_json",
+      "bytes": 30016,
+      "sha256": "e37e97de6d07443ba6734fe419cf4960775ecf15e7c64b5c2ebe24c179d03ee7",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-strict-matrix.json",
+          "bytes": 164469,
+          "sha256": "39519ebdf36700e9c96d59a6454390c24a88cc857953a4e79d82d74b4f631f3e"
+        }
+      ]
+    },
+    {
+      "file": "evidence/model-summary.json",
+      "kind": "derived_json",
+      "bytes": 10760,
+      "sha256": "ab5d20e2801b0d4541744d347cb1d5d78cfbf25fd8aae2d56bf91848722a9c88",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-model-matrix.json",
+          "bytes": 12531,
+          "sha256": "d9fb5bf45b70d03ea30e5ab787b3b302eb14a411ea695df2e7eccde55a4b093c"
+        }
+      ]
+    },
+    {
+      "file": "evidence/lifecycle-summary.json",
+      "kind": "derived_json",
+      "bytes": 11835,
+      "sha256": "553102c7262bf2d81200ec5383c483763853e54df0b8317e840674d3fb701913",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-lifecycle-matrix.json",
+          "bytes": 23909,
+          "sha256": "91c6681b0f13c7fcdf573c80e09704314d007c8d4a9820ce82a5456bffabe519"
+        }
+      ]
+    },
+    {
+      "file": "evidence/physics-summary.json",
+      "kind": "derived_json",
+      "bytes": 5523,
+      "sha256": "9d055e55b9a06f4b5395704c6f08a8cc6fade6ec6d54d2dcb40ab8d107bca117",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/physics-d37-matrix.json",
+          "bytes": 5109,
+          "sha256": "996f330796ac8d2d36492cacf0880ff115010869613cf1cd2da501edc2510eff"
+        }
+      ]
+    },
+    {
+      "file": "evidence/remaining-render-summary.json",
+      "kind": "derived_json",
+      "bytes": 2482,
+      "sha256": "0daee26b255efc3d75d8db7ad16bd68d383cc5a3c35eb03ce03207d2bc30f1ef",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/remaining-render-d37-matrix.json",
+          "bytes": 2110,
+          "sha256": "38230e1972c40f95560e887f94abc14f9120c89dd80d7521d39c65c20054f71c"
+        }
+      ]
+    },
+    {
+      "file": "evidence/local-device-summary.json",
+      "kind": "derived_json",
+      "bytes": 2732,
+      "sha256": "31607ae1b65d836cfbab25486fd528389b64f0db9d8623cfd634ffe737444242",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/local-rd-after-d37-matrix.json",
+          "bytes": 2411,
+          "sha256": "d5e1137523b25a2ee947a977b1eaedd9c4f3706f0e615e49b67a9b6f5fbce9c8"
+        }
+      ]
+    },
+    {
+      "file": "evidence/optimal-settings.json",
+      "kind": "derived_json",
+      "bytes": 816,
+      "sha256": "f45236d1e2f062ccc933c6634630cf5b1b1b3399712b97bcb8fac2f0cf2089e0",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/cross-backend-comparison.json",
+          "bytes": 507,
+          "sha256": "6adcab61b770ba22fe48894db10b03103d6a4f825ba9addf5123068b094bf367"
+        }
+      ]
+    },
+    {
+      "file": "evidence/reflex-summary.json",
+      "kind": "derived_json",
+      "bytes": 73051,
+      "sha256": "681cfc67ee628cbf4b234d0628904e0fc845b2cc251f2732f4f11ffa6898707c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/reflex-report-summary.json",
+          "bytes": 70830,
+          "sha256": "a90d67c600175f9fef24b0667a811dd9922bf89a9818f43b2bac7d5bc8cf378a"
+        }
+      ]
+    },
+    {
+      "file": "evidence/overrides-readonly.json",
+      "kind": "derived_json",
+      "bytes": 1480,
+      "sha256": "e85b66891759a3de5a27485bf0102d0d9c8e157f0ae40be93a56aeb532687ad3",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/overrides-after-user-app-setting.json",
+          "bytes": 1146,
+          "sha256": "be30f140218294afe57b93c11a67b1862b680b47e565b90d6b991684b6798d33"
+        }
+      ]
+    },
+    {
+      "file": "evidence/indicator-original-state.json",
+      "kind": "derived_json",
+      "bytes": 372,
+      "sha256": "274b2e7e5b8cdef57f104739b3fedb2d4c27bc43cff99f399604e5a1c0d23f25",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/dlss-indicator-backup.json",
+          "bytes": 98,
+          "sha256": "f40d3bc4e00b30ed8cb2a96bbf221918fe1ef319f40a65883789996293ee9277"
+        }
+      ]
+    },
+    {
+      "file": "evidence/exports-c1-summary.json",
+      "kind": "derived_json",
+      "bytes": 100374,
+      "sha256": "47e49e19e6ffee8e2e636902fc203d68a98bd952d894d5e61bd326951feeb214",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-exports-c1fc0252a9-20261025T204313Z-c8540654/matrix.json",
+          "bytes": 256074,
+          "sha256": "c56e7ed3d7309780f9d514c0d9c1299101ea91440066a2f5a8893e4d72aee088"
+        }
+      ]
+    },
+    {
+      "file": "evidence/packages-c1.json",
+      "kind": "derived_json",
+      "bytes": 2393,
+      "sha256": "ff4662d6337220f8a51dc5c8c11f1cf2639c291599890273321ed497888a2e7b",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-c1fc0252a9-matrix.json",
+          "bytes": 891,
+          "sha256": "27acda8736467fda384afc3aec4b071473d0db52898430ec32479af817a259a4"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-c1fc0252a9-inventory.json",
+          "bytes": 819,
+          "sha256": "49e641c7d5f7106b6b8ffaa031925dcd304191e3e162086904ad5dd3f769a82b"
+        }
+      ]
+    },
+    {
+      "file": "evidence/packages-d37-history.json",
+      "kind": "derived_json",
+      "bytes": 2392,
+      "sha256": "2d2798a28e878f8dca5a23fc8ffd686a046bd152edc215a8a33fdeb58a25a834",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-matrix.json",
+          "bytes": 890,
+          "sha256": "fcf98c28d86c3bd7bf772f639856a497b931f5b55632c61934bd83a02e2bda7b"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-inventory.json",
+          "bytes": 819,
+          "sha256": "404fce41bb81538247301d5ba189f8564565e8828df4c4941dbed6f19fff95c0"
+        }
+      ]
+    },
+    {
+      "file": "evidence/game-matrices-summary.json",
+      "kind": "derived_json",
+      "bytes": 122992,
+      "sha256": "31b66441c75de8731b838a177e15cd235fee65487d777da6e08a9160299a717a",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-d37b63e72b-20261025T195444Z-573ba3/matrix.json",
+          "bytes": 234210,
+          "sha256": "a2e27620e2ffec1e84117ad853b8ed364c5141fd1fc48be2e814ff9f8a8d6050"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/matrix.json",
+          "bytes": 239795,
+          "sha256": "e8f18e1955a1f4bf24d450543e8365c80518466f1f9faec1e558e668cded3a0d"
+        }
+      ]
+    },
+    {
+      "file": "evidence/import-controls-summary.json",
+      "kind": "derived_json",
+      "bytes": 27049,
+      "sha256": "496252cbdfb1eefbf7217bf294e81b1d0071ae65ecff1ba36518afcdc43f804d",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix.json",
+          "bytes": 6154,
+          "sha256": "e45f4f36f496bef2dac16973416837765eedf20098b182d0d485303fdda6b27a"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-warm1.json",
+          "bytes": 6285,
+          "sha256": "41aedcae1bc344c5ba59ff4b600ec6b6018f004ad3715254294938694409bea3"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000.json",
+          "bytes": 3404,
+          "sha256": "9d60e568534cb1a51c20daef44493e5c4e35d764e2c90978c70ab31426841f2d"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000-candidate.json",
+          "bytes": 3708,
+          "sha256": "684b7516ac01c09bfa88edc80ea3bbfc6e0d33f323718b1169535122e18e9179"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-d37-import.json",
+          "bytes": 1977,
+          "sha256": "00069fd9893d0dd98deec9277fd53aaec041fb563ca30e3f30bb936720285799"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-c1-import.json",
+          "bytes": 1964,
+          "sha256": "c865ecb44f38673c223b88767698c02778717f5e30e9f448884795d9838edd3a"
+        }
+      ]
+    },
+    {
+      "file": "evidence/launcher-game-process.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 1106,
+      "sha256": "26ae97a855d671b6672365832b85ca55ee757b317ca1d20ff40a2415e18091c4",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/launcher-c1-raw/game-process.json",
+          "bytes": 1157,
+          "sha256": "8fb40fd7ebe5e0b75a2be845d37d7024fa987967b5a26b5be929c9f594868ab2"
+        }
+      ]
+    },
+    {
+      "file": "evidence/launcher-before-handle-fix-game-process.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 1063,
+      "sha256": "1f97f7a02def75fd6f7e7dce5ba187997e5de05f97551c493a5fc6b321c53053",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/launcher-before-process-handle-fix/game-process.json",
+          "bytes": 1110,
+          "sha256": "a9dda5b8a491022d526517a7c5da6a8a528cf86e2f1ca23dc1e85f980f5c9585"
+        }
+      ]
+    },
+    {
+      "file": "evidence/desktop-nvidia-shortcut.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 879,
+      "sha256": "96ae88e052f0b3fac5809ad4b8e4218c90b4f40ded5df7885c432d7c940b44a8",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/desktop-nvidia-shortcut.json",
+          "bytes": 889,
+          "sha256": "44b1b0caf5eab0ef43d1197512d98bc71d54e22294b2558955b6d3487a31e0df"
+        }
+      ]
+    },
+    {
+      "file": "evidence/partial-runtime-c1-summary.json",
+      "kind": "derived_json",
+      "bytes": 6046,
+      "sha256": "050bf3d69c8d583d915d8966bff557d99ce4c109b81e1deb872468fc76f61a3c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-runtime-c1-matrix.json",
+          "bytes": 1345,
+          "sha256": "2fb1e151aea46e0f3f609c2f2bdbc36e5b3e3f7c6b836a65b2137884ff4511f7"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-vulkan.json",
+          "bytes": 1755,
+          "sha256": "9c12204432d4603e0b4ba6093b9bb480ad6238b62fe18c77578c9d0e96de96f4"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-d3d12.json",
+          "bytes": 1752,
+          "sha256": "77101c3865cc1341bbe1ec4a2fb023647ac463c929a0e2756f50542858b946df"
+        }
+      ]
+    },
+    {
+      "file": "evidence/regina-c1-export-records.json",
+      "kind": "derived_json",
+      "bytes": 19269,
+      "sha256": "74aef7a7b87d94c9a80f072617516b25e6ca80002c072fc0dae31e34832b0733",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-import.json",
+          "bytes": 1747,
+          "sha256": "3874de95ac305b7801f6b0e4a7e2f5656282d57defd8a682f5af7169c90ff062"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-release.json",
+          "bytes": 1858,
+          "sha256": "1a3f8c9507ece3f2fde896a605db41c2e9207930d7bcc3d0824cd9e6662f48a2"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-d3d12-skate2.json",
+          "bytes": 2256,
+          "sha256": "53159a0a3ec86bac70092b76fca18d475413637ad4224e666d17f5c9646d3351"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/template-install.json",
+          "bytes": 6897,
+          "sha256": "d4c4de0aeb15e0f157ab0ecd08893a0d7e3efb63da4dd380c79658805240a886"
+        },
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/runtime-inventory.json",
+          "bytes": 3848,
+          "sha256": "9cc669d4235105205a947e6ad890c4e23a59f55c682e443c448790ecdc8ce71c"
+        }
+      ]
+    },
+    {
+      "file": "evidence/regina-c1-natural-exit-matrix.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 4179,
+      "sha256": "ff25de7c64930fc088b066fdc3647f7f4f5bc88238353188d99675c25b136c0c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/natural-exit-matrix.json",
+          "bytes": 4293,
+          "sha256": "f8448fddd87b0503dc50e232bf6d5fe8cbc1a4c6c667894dae802e6579fe5240"
+        }
+      ]
+    },
+    {
+      "file": "evidence/regina-c1-natural-d3d12-process.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 2161,
+      "sha256": "e58671868daa01ae61c8f1c91f431be1dabb87a9175cb247f06ecd038b16d813",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-natural-d3d12-skate2.json",
+          "bytes": 2217,
+          "sha256": "a924db57a68a0b5956f1c547a8d2d0ccd8eb9e5b4e0bfe357ef26aa0f50300b0"
+        }
+      ]
+    },
+    {
+      "file": "evidence/regina-c1-natural-vulkan-process.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 2263,
+      "sha256": "9d62be456553db4a2fc3fc4af16a4f3d5b2d3eb523cdd93e03f549773dd34153",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-natural-vulkan-basketball4.json",
+          "bytes": 2327,
+          "sha256": "d2a055959cb2b911daa4e00a4be25af62086fb125e212b2e9c0f3b23e389220f"
+        }
+      ]
+    },
+    {
+      "file": "evidence/regina-c1-intermediate-guard-matrix.json",
+      "kind": "sanitized_json_copy",
+      "bytes": 4095,
+      "sha256": "d0c0f6a8b05c507ca6da5c73cf23701a6ab6c453f4ce72bbfef5b8570a8fbcf2",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/production-matrix.json",
+          "bytes": 4213,
+          "sha256": "448f485efc3b3e831151c847c3a471852254530ea5034856ff4b773117640819"
+        }
+      ]
+    },
+    {
+      "file": "logs/c1-six-build.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 101727,
+      "sha256": "f976b82c9b8482cd99f5407d6969ef843a3c8a5e6ab4943b265f42c44ebd84e4",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/full-release-c1fc.log",
+          "bytes": 103301,
+          "sha256": "45f14db8613ac4fd4ed86165381df9bd63783b8937c309759021470f330c0a0b"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-cpu-unittests.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 4621,
+      "sha256": "d910b906692a45104b0070b0029e9db15936302af45aa4e02c377276cdd4c239",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-unittests-d37.log",
+          "bytes": 4651,
+          "sha256": "cca743d784d8d5bdcc3c88647d04a8398f272655dc708fe2dc19f89de15920c9"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-cpu-api-presets.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 574,
+      "sha256": "b632249bda70ba8002d78d4c583e77867e305c9ce155a80aaca9c8adc61dff53",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-api-presets-d37.log",
+          "bytes": 584,
+          "sha256": "cf74b4231ece6ac151238814f0385735356b09a1a6583b820c5ed56886027a66"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-cpu-sizing.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 336,
+      "sha256": "c3a2d2dfeb5bbd236fe65cedfc2bb877736b5794f567468a3d403a13dc151bc5",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-sizing-d37.log",
+          "bytes": 342,
+          "sha256": "10efde319fbf2650a6f1b93de7f73fcdb9d59199abdb64d6b48fa535109752ca"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-source-generators.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 471,
+      "sha256": "c4cee7b945a6e6d2e97f0d37ef28f31a8283aa690a0d794a731e4ae25044e8cb",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/source-generators-d37.log",
+          "bytes": 478,
+          "sha256": "10a4eaa1a86cd282781ada866daf93be5d2b963585ed31dbfae24c64ae1869f2"
+        }
+      ]
+    },
+    {
+      "file": "logs/c1-source-generators.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 471,
+      "sha256": "b3f5ebd62b879918fe89b2ac0a31a7a6a8f9657adc7be05a8579b44f8190b92d",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/source-generators-c1.log",
+          "bytes": 478,
+          "sha256": "e23d6a375fd87df48a4e2799d220d3fc208f71ea2b09481b9f0793b1dad0d640"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-smoke-standard.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 482,
+      "sha256": "9afa7fe7e5f652d07a277470cfc9266ddb3f4fbaf4413e9bbaa777708992a72c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-d37-standard.log",
+          "bytes": 485,
+          "sha256": "ae260b4f98b3df7141ad59d63871545e76acf79a2464356eb7edd99b2eed99dc"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-smoke-mono.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 483,
+      "sha256": "9ba14dd81f0d747cf91166cd5a59a4bf7dde6f8af5f75cbc518df29c045b0745",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-d37-mono.log",
+          "bytes": 486,
+          "sha256": "17a8d20b1d9b03f2c23c3c86851eb6c469e356a21251d3b885f78028c4545bce"
+        }
+      ]
+    },
+    {
+      "file": "logs/c1-smoke-standard.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 482,
+      "sha256": "6a4189edf9ebfd5d60a94d95e1d62f06eac8e0c8f860461987e662b653242be6",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-c1-standard.log",
+          "bytes": 485,
+          "sha256": "e7cd62d78bb0c7a0adb71355cbc4dea9bda861a0cfc0b9201946aebcefe8dd6a"
+        }
+      ]
+    },
+    {
+      "file": "logs/c1-smoke-mono.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 483,
+      "sha256": "2ea6456ce65d6e05ef7d492b27bddf400175c9d8ee19ccd0c40c2075a2eb592a",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-c1-mono.log",
+          "bytes": 486,
+          "sha256": "0e8a8fcfbfc46b43b4994d5c6a7ff982982ceeb33d94d4b6f308d00238a853fb"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-vulkan-sr.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 33365,
+      "sha256": "a5cc7ee0f5dc1b026ce646d8d73fa0dd76978f9005bebcd6017b2b470aea4ec1",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-quality-Recommended-0-motion.log",
+          "bytes": 33618,
+          "sha256": "36ec41470c55b2d668cebb721d9c9aad5becf9e2db54ec0001a8e43c59521f3b"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-vulkan-fg.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 89838,
+      "sha256": "a0f94fb0fbd4b5be656ff4c6449311504788cdff8d09d7bfade9ee62aa0c0713",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0-motion.log",
+          "bytes": 90574,
+          "sha256": "65dfcab12d5a9374326036c6304b0e8424267bcd16c9531524af8b4bd5d1180e"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-vulkan-fg-nis.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 90739,
+      "sha256": "d754719e5b7ad87e6248ccecb52d02f61b331128cc15d5761a9e554af6c1ac3c",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0.2-motion.log",
+          "bytes": 91484,
+          "sha256": "623dfab8a96c7135ed779e7a722bd9fefbeca71fbfd8aaea81491812d05ba13e"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-vulkan-sdk210.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 19662,
+      "sha256": "b54027fe5907a3b9dc0ccc0a61a584d4529d618c7be62fc34e048c0415ccbbfa",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk210-quality-Recommended-0-motion.log",
+          "bytes": 19842,
+          "sha256": "6efe5dc756f3b8f5fe790691ce5455b81ba311bb4be06bf7e0cf4d85ce5a7049"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-d3d12-fg.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 16374,
+      "sha256": "bd09cd54fe69226eea2fb35c2935b9a4b01becf57024e46e5662441226993916",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion.log",
+          "bytes": 16522,
+          "sha256": "f3f1ce397592eb92409fc359307c4b61a71315f165bb8e600356855405248d7d"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-strict-d3d12-fg.early.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 725301,
+      "sha256": "6ad96fcb300f76944ddacbd31a31ad8ff6e7b7ed1a2e5f1bb6c838e9c9f109e3",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion.early.log",
+          "bytes": 736171,
+          "sha256": "04f0ccf35d0e9f11106e60b764215b3384a5f91c4c13a48dcbb9fb42f7c49c4b"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-rr-complex.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 38467,
+      "sha256": "e8d86dca765e5e35073f0cc5accd5baa70bdcd2155dd701e7d37be8a401f2f8f",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-d37-vulkan.log",
+          "bytes": 38793,
+          "sha256": "172f604c8b8096b81da133e55c0ea06cfe500813186eabf530ea303512cb62ed"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-import-before.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 1147,
+      "sha256": "770800d8a0be94f97d324c995df209cbd33badb6c4950230958a4a105eda3b85",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-d37-import.log",
+          "bytes": 1165,
+          "sha256": "b6f3cfb168c7dbdda79b42a33fdcbbe18a773ff2d870f8cbb96b3ba422b8f0db"
+        }
+      ]
+    },
+    {
+      "file": "logs/c1-import-after.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 2449,
+      "sha256": "d011dd0baadd68134903b1d5ab7d4acb5bd746b439a07bd87442c245290fe930",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-c1-import.log",
+          "bytes": 2445,
+          "sha256": "3fed793841d6ef0e3dba141ff4f60bc0f2b115d1538b76398d7236255f240281"
+        }
+      ]
+    },
+    {
+      "file": "logs/stale-cache-empty-before.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 30687,
+      "sha256": "bd139fbd556fe284c110dc0129ba50bacddb4947d274f22d2b70e9e0a15e05cc",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/d37-empty-stale1000.log",
+          "bytes": 31213,
+          "sha256": "764e20c76850a09ff9bfef2849d2917d661a33ecabba605d335408d95f0fe61a"
+        }
+      ]
+    },
+    {
+      "file": "logs/stale-cache-empty-after.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 30684,
+      "sha256": "045d5fdfb754bdc9421f0856989877afc1c8fec79f6340c38f5643c7df260b9b",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/d37-empty-stale1000-candidate.log",
+          "bytes": 31211,
+          "sha256": "6b5acc5c38ee3eb7794ed3efbe89cb1dad6f925f67002b9fe2aae77c0f656f3c"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-physx-gpu-volume.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 3372,
+      "sha256": "40f19f54a175771c95f935136acc274f21ba0fda2d9b76d10a509e79ad39c4fd",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-physx-gpu-volume.log",
+          "bytes": 3382,
+          "sha256": "701e9ffe4cdc74d1c39fba2b2e2a9cd99cf7c500e1c0eed98f9f06c89fbbf2e3"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-flow-readback.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 28267,
+      "sha256": "91a7bca21fef3945a96eb0819a779e0d62a5b383757b04af7dc29163a732044a",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-flow-readback-vulkan.log",
+          "bytes": 28507,
+          "sha256": "525961bfb26c037ba806a0c013572991664cbad5d7f38354920203d286bc1d98"
+        }
+      ]
+    },
+    {
+      "file": "logs/d37-flow-render.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 16906,
+      "sha256": "84323db4372e0773a62d6b3578dd16cb03df39f70c89b3f3913338ff4db29d75",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-flow-render-vulkan.log",
+          "bytes": 17071,
+          "sha256": "aec83a1a158c83aee3108c7f7059f93dfbf44129dd4b7e89c98f14a310d5c42b"
+        }
+      ]
+    },
+    {
+      "file": "logs/overrides-readonly.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 2635,
+      "sha256": "a4b8672ac6640508d4704ade4ba8fb94cd186696f40fdd6314352464d0f13c79",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/overrides-after-user-app-setting.log",
+          "bytes": 2636,
+          "sha256": "2e571e8848559a49ba0b89c522914845e0ed7e30773ac6055171da35ed78ef48"
+        }
+      ]
+    },
+    {
+      "file": "logs/regina-c1-cold-import.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 125373,
+      "sha256": "d60696c121549b01b04037af70a49ed349b47c01c5083bbc7e7d4c06039571f9",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-import.log",
+          "bytes": 127160,
+          "sha256": "6ea94ccbdf58b6981e50dd8db2a1a3b4cfbeedb081a269c3777e82ac3bf09482"
+        }
+      ]
+    },
+    {
+      "file": "logs/regina-c1-release-export.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 148495,
+      "sha256": "03a9b4f9759ce64b7a4bb49fb4dfbb2b2381a7b7f3fdb00b8914b4e915c15313",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-release.log",
+          "bytes": 149662,
+          "sha256": "362ba2282f4201d2ea43f42fae269b2a1f56d34e1cffd8f96393292817f3705e"
+        }
+      ]
+    },
+    {
+      "file": "logs/regina-c1-initial-script-attempt.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 149420,
+      "sha256": "19d03139f870d754002076ccf8531836f187f110e014f5425e419838d4c8c138",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-d3d12-skate2.log",
+          "bytes": 150271,
+          "sha256": "fbd2baef8e5484f6ebddabdf6a931be547a4c3552f843a74c8ab538d9f6d64f9"
+        }
+      ]
+    },
+    {
+      "file": "logs/regina-c1-natural-d3d12.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 149328,
+      "sha256": "c19e98cda45112cad376acfcd75b0053c6ba7fbb55353280055eb10106f0c739",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-natural-d3d12-skate2.log",
+          "bytes": 150177,
+          "sha256": "ca9ecd6604fa6f080b173c726440ea5fc5fd9d99e29083e557d99554581f9975"
+        }
+      ]
+    },
+    {
+      "file": "logs/regina-c1-natural-vulkan.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 115619,
+      "sha256": "effa871f6b273c037934b0e67f2ffcf44d1cd6c582d87057a936823c7ad47892",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-natural-vulkan-basketball4.log",
+          "bytes": 116337,
+          "sha256": "00b453c54b967264852ccb960ff0cf4c7bd025a42dfcf0de906b7e142574b3cd"
+        }
+      ]
+    },
+    {
+      "file": "logs/partial-c1-vulkan.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 27251,
+      "sha256": "74a5406a98ba99de65ca86810d03211cf809cc00b9672b758672ffdaa67cf081",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/partial-c1-vulkan.log",
+          "bytes": 27506,
+          "sha256": "dc0f96ece07100f2c5afa2868127c0c16a0275d06d140baf4b5d47aa46515012"
+        }
+      ]
+    },
+    {
+      "file": "logs/partial-c1-d3d12.log",
+      "kind": "complete_log_with_text_redaction",
+      "bytes": 25953,
+      "sha256": "dd295d8b84d74d424606077f6a590f0ac872f4f9d855560860be4ca2be5d2c2f",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/partial-c1-d3d12.log",
+          "bytes": 26190,
+          "sha256": "0fed52c0b140e46c86ec261cbf7375b1379233c6c5980efe9ba3f03e9d64cbad"
+        }
+      ]
+    },
+    {
+      "file": "images/sdk214-vulkan-ultra-L.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 989044,
+      "sha256": "f40886379c31e09d26b2e9ccd706d1651d76326b724dcb34fc68c79c963325aa",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-vulkan-sdk214-ultra_performance-L-0-indicator/static.png",
+          "bytes": 989044,
+          "sha256": "f40886379c31e09d26b2e9ccd706d1651d76326b724dcb34fc68c79c963325aa"
+        }
+      ],
+      "png": {
+        "width": 2560,
+        "height": 1440,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/sdk214-d3d12-quality-M.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 1071696,
+      "sha256": "8964e3de2da2b0a2627edd6080bc10c2d524d10874a01ea88808e7fd919b5f45",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-d3d12-sdk214-quality-M-0-indicator/static.png",
+          "bytes": 1071696,
+          "sha256": "8964e3de2da2b0a2627edd6080bc10c2d524d10874a01ea88808e7fd919b5f45"
+        }
+      ],
+      "png": {
+        "width": 2560,
+        "height": 1440,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/sdk214-vulkan-balanced-K.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 19919,
+      "sha256": "316c20f8db041c53725ef160054d31c310dd32a9aea39d9746ca86e92155e2bd",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-vulkan-sdk214-balanced-Recommended-0-indicator/static.png",
+          "bytes": 19919,
+          "sha256": "316c20f8db041c53725ef160054d31c310dd32a9aea39d9746ca86e92155e2bd"
+        }
+      ],
+      "png": {
+        "width": 2560,
+        "height": 1440,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/rr-glass.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 288056,
+      "sha256": "bd29bebfed9b96d6b8a9b4a7d6eff1b4f21b438ea906d121ba39a4fc30432e0e",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/rr-complex-d37/glass_rr1_frame319.png",
+          "bytes": 288056,
+          "sha256": "bd29bebfed9b96d6b8a9b4a7d6eff1b4f21b438ea906d121ba39a4fc30432e0e"
+        }
+      ],
+      "png": {
+        "width": 960,
+        "height": 540,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/rr-guide-31.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 107603,
+      "sha256": "d6f730c172c5d733b530b01d9d62992e4d5970120e7e2741f9e79b0f9b4480e8",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/rr-complex-d37/guide_31.png",
+          "bytes": 107603,
+          "sha256": "d6f730c172c5d733b530b01d9d62992e4d5970120e7e2741f9e79b0f9b4480e8"
+        }
+      ],
+      "png": {
+        "width": 960,
+        "height": 540,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/game-c1-four-players.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 1681415,
+      "sha256": "5453d8e10952fcafa71dc3098ba88938ddc458844ab56e4e9856376caa34979b",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/vulkan-basketball4-quality-fg-request/capture/frame.png",
+          "bytes": 1681415,
+          "sha256": "5453d8e10952fcafa71dc3098ba88938ddc458844ab56e4e9856376caa34979b"
+        }
+      ],
+      "png": {
+        "width": 1600,
+        "height": 900,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/game-c1-pt-rr.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 1511068,
+      "sha256": "56e84ec302bfb9622ec25ff90823787b6861686f7e4e39d291c5714c125dafc5",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/vulkan-skate1-pt-rr/capture/frame.png",
+          "bytes": 1511068,
+          "sha256": "56e84ec302bfb9622ec25ff90823787b6861686f7e4e39d291c5714c125dafc5"
+        }
+      ],
+      "png": {
+        "width": 1600,
+        "height": 900,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "images/regina-c1-production-four-players.png",
+      "kind": "original_png_bytes_unchanged",
+      "bytes": 1358983,
+      "sha256": "505f828ddaa441753403ef2f23d368c5abf70207663554df364a72b17c271de6",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/production-natural-vulkan/capture/frame_2.png",
+          "bytes": 1358983,
+          "sha256": "505f828ddaa441753403ef2f23d368c5abf70207663554df364a72b17c271de6"
+        }
+      ],
+      "png": {
+        "width": 1600,
+        "height": 900,
+        "chunk_types": [
+          "IHDR",
+          "sRGB",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "all_chunk_crcs_valid": true,
+        "text_metadata_chunks": 0
+      }
+    },
+    {
+      "file": "REFLEX_METHODS.md",
+      "kind": "sanitized_method_note",
+      "bytes": 11681,
+      "sha256": "47f8a1642b6e5fde31a6b6c923778786ae64c1f91de85fb9580c75f97c7d4b34",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/reflex-readonly-conclusion.md",
+          "bytes": 11589,
+          "sha256": "e7c6c957000235c210af33ab1a17056d95e9cd88fc7b40a4a63cdb1d60541ba1"
+        }
+      ]
+    },
+    {
+      "file": "REPORT.md",
+      "kind": "public_report_derived_from_private_report",
+      "bytes": 23039,
+      "sha256": "286a259cfea9f47c8d372ff34a2b06d82e3ed78b08156de76122d267bd383fe7",
+      "sources": [
+        {
+          "origin": "<PRIVATE_ACCEPTANCE_ROOT>/REPORT.md",
+          "bytes": 23502,
+          "sha256": "e6aecaecc632d124a7ccfe93c15067a777177662f997c0d70a45d2f3ffa9e37b"
+        }
+      ]
+    },
+    {
+      "file": "README.md",
+      "kind": "curation_and_redaction_note",
+      "bytes": 3067,
+      "sha256": "565de894a42c4b518e2368e4c3d2f8def79160c652fe932ed1421225ff5301d6",
+      "sources": []
+    }
+  ],
+  "raw_inputs": [
+    {
+      "origin": "<LEGACY_ACCEPTANCE_ROOT>/machine.json",
+      "bytes": 692,
+      "sha256": "1d3c595de7d00b554f00f655504f77d1b9837e2707428ebaf4252e41e3d79b87"
+    },
+    {
+      "origin": "<LEGACY_ACCEPTANCE_ROOT>/intake-audit.json",
+      "bytes": 15631,
+      "sha256": "b7a135430611e57bd0ae459897baeb589881043effd81932ef6f75086f080adb"
+    },
+    {
+      "origin": "<SOURCE_ROOT>/thirdparty/streamline/README.godot",
+      "bytes": 948,
+      "sha256": "2f39c639dd4c669fc20f7543ef865e38426bbdeeb72e55d6a90228c409083cf6"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-exports-c1fc0252a9-20261025T204313Z-c8540654-dotnet-version.log",
+      "bytes": 10,
+      "sha256": "6d5ab2a4ef35ceec908f01287257f530b0c0d68f0e84326df2ebcea641f9134b"
+    },
+    {
+      "origin": "<LEGACY_ACCEPTANCE_ROOT>/REPORT.md",
+      "bytes": 30228,
+      "sha256": "2e46bee1fb570db7fffae94436c6bfc503433ab21f1d6931f1c4c29341a75f65"
+    },
+    {
+      "origin": "<SOURCE_ROOT>/devtools/UPGRADE_4_8_BETA1.md",
+      "bytes": 16737,
+      "sha256": "09e381fbb9174123ce9f87e955d87c84da9e4e3185d9e01c3ffe9f6da7e18953"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-d37.json",
+      "bytes": 1071,
+      "sha256": "04eca9c8c4506c141f38e5b7e5ec01ff8a4b9b051c83b47eaf6104b0358ff42f"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-c1fc.json",
+      "bytes": 1074,
+      "sha256": "a8164db07d9798fcef43c036ac2904673f4312b5bb733fb48c26f84ad296157e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/build-doc-cache-editor.json",
+      "bytes": 1057,
+      "sha256": "6f895f4829cdbbc0f75437801954eab2dd494c295800f686e3c369ad5feb45cf"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-unittests-d37.json",
+      "bytes": 1224,
+      "sha256": "67c21d68100bad9bf80fecfe5448c2586397a91800f3bf844a7599a541d325a9"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-sizing-d37.json",
+      "bytes": 970,
+      "sha256": "254bf8ba9d4d926c21b7bec046b9312d3acd1d1844697d2d3d3a25d6123014a1"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-api-presets-d37.json",
+      "bytes": 968,
+      "sha256": "4748ae04650053948d32d1c234b1aed2175def1a0288d10f8c89c85d4b19e493"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-d37.json",
+      "bytes": 1440,
+      "sha256": "7ab0743f21cee79104405393a8451d2fad6749eb9cc94e026712250de2bcf855"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-c1.json",
+      "bytes": 1463,
+      "sha256": "d96cf7f8cee93de61712580d83d569afdeb8ed3113ca8d155dee6444c93d7cb0"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-standard.json",
+      "bytes": 966,
+      "sha256": "4d838188fef907afaadc40085a8a00e854945bb14978619e20474f97e6cf9b1d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-mono.json",
+      "bytes": 976,
+      "sha256": "788a4c61575a50ea719fea2db750fb3cfdb27b071327f3d98a614adab17b05df"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-standard.json",
+      "bytes": 1036,
+      "sha256": "29e1707435231285efa3360453b37d24cb134da4bf39d55f4d383d52c4c8f03b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-mono.json",
+      "bytes": 1046,
+      "sha256": "30438ea059ce1d26ce9004488999e19f92b11498e80d51d676a0e553a6997430"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/managed-api-d37.json",
+      "bytes": 1693,
+      "sha256": "ce1f2513b7f7e1d22e798b2338e9133733f540aeea23e8d3156f782cbff2821e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-strict-matrix.json",
+      "bytes": 164469,
+      "sha256": "39519ebdf36700e9c96d59a6454390c24a88cc857953a4e79d82d74b4f631f3e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-model-matrix.json",
+      "bytes": 12531,
+      "sha256": "d9fb5bf45b70d03ea30e5ab787b3b302eb14a411ea695df2e7eccde55a4b093c"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-lifecycle-matrix.json",
+      "bytes": 23909,
+      "sha256": "91c6681b0f13c7fcdf573c80e09704314d007c8d4a9820ce82a5456bffabe519"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/physics-d37-matrix.json",
+      "bytes": 5109,
+      "sha256": "996f330796ac8d2d36492cacf0880ff115010869613cf1cd2da501edc2510eff"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/remaining-render-d37-matrix.json",
+      "bytes": 2110,
+      "sha256": "38230e1972c40f95560e887f94abc14f9120c89dd80d7521d39c65c20054f71c"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/local-rd-after-d37-matrix.json",
+      "bytes": 2411,
+      "sha256": "d5e1137523b25a2ee947a977b1eaedd9c4f3706f0e615e49b67a9b6f5fbce9c8"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/cross-backend-comparison.json",
+      "bytes": 507,
+      "sha256": "6adcab61b770ba22fe48894db10b03103d6a4f825ba9addf5123068b094bf367"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/reflex-report-summary.json",
+      "bytes": 70830,
+      "sha256": "a90d67c600175f9fef24b0667a811dd9922bf89a9818f43b2bac7d5bc8cf378a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/overrides-after-user-app-setting.json",
+      "bytes": 1146,
+      "sha256": "be30f140218294afe57b93c11a67b1862b680b47e565b90d6b991684b6798d33"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/dlss-indicator-backup.json",
+      "bytes": 98,
+      "sha256": "f40d3bc4e00b30ed8cb2a96bbf221918fe1ef319f40a65883789996293ee9277"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-exports-c1fc0252a9-20261025T204313Z-c8540654/matrix.json",
+      "bytes": 256074,
+      "sha256": "c56e7ed3d7309780f9d514c0d9c1299101ea91440066a2f5a8893e4d72aee088"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-c1fc0252a9-matrix.json",
+      "bytes": 891,
+      "sha256": "27acda8736467fda384afc3aec4b071473d0db52898430ec32479af817a259a4"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-c1fc0252a9-inventory.json",
+      "bytes": 819,
+      "sha256": "49e641c7d5f7106b6b8ffaa031925dcd304191e3e162086904ad5dd3f769a82b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-matrix.json",
+      "bytes": 890,
+      "sha256": "fcf98c28d86c3bd7bf772f639856a497b931f5b55632c61934bd83a02e2bda7b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-inventory.json",
+      "bytes": 819,
+      "sha256": "404fce41bb81538247301d5ba189f8564565e8828df4c4941dbed6f19fff95c0"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-d37b63e72b-20261025T195444Z-573ba3/matrix.json",
+      "bytes": 234210,
+      "sha256": "a2e27620e2ffec1e84117ad853b8ed364c5141fd1fc48be2e814ff9f8a8d6050"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/matrix.json",
+      "bytes": 239795,
+      "sha256": "e8f18e1955a1f4bf24d450543e8365c80518466f1f9faec1e558e668cded3a0d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix.json",
+      "bytes": 6154,
+      "sha256": "e45f4f36f496bef2dac16973416837765eedf20098b182d0d485303fdda6b27a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-warm1.json",
+      "bytes": 6285,
+      "sha256": "41aedcae1bc344c5ba59ff4b600ec6b6018f004ad3715254294938694409bea3"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000.json",
+      "bytes": 3404,
+      "sha256": "9d60e568534cb1a51c20daef44493e5c4e35d764e2c90978c70ab31426841f2d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000-candidate.json",
+      "bytes": 3708,
+      "sha256": "684b7516ac01c09bfa88edc80ea3bbfc6e0d33f323718b1169535122e18e9179"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-d37-import.json",
+      "bytes": 1977,
+      "sha256": "00069fd9893d0dd98deec9277fd53aaec041fb563ca30e3f30bb936720285799"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-c1-import.json",
+      "bytes": 1964,
+      "sha256": "c865ecb44f38673c223b88767698c02778717f5e30e9f448884795d9838edd3a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/launcher-c1-raw/game-process.json",
+      "bytes": 1157,
+      "sha256": "8fb40fd7ebe5e0b75a2be845d37d7024fa987967b5a26b5be929c9f594868ab2"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/launcher-before-process-handle-fix/game-process.json",
+      "bytes": 1110,
+      "sha256": "a9dda5b8a491022d526517a7c5da6a8a528cf86e2f1ca23dc1e85f980f5c9585"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/desktop-nvidia-shortcut.json",
+      "bytes": 889,
+      "sha256": "44b1b0caf5eab0ef43d1197512d98bc71d54e22294b2558955b6d3487a31e0df"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-runtime-c1-matrix.json",
+      "bytes": 1345,
+      "sha256": "2fb1e151aea46e0f3f609c2f2bdbc36e5b3e3f7c6b836a65b2137884ff4511f7"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-vulkan.json",
+      "bytes": 1755,
+      "sha256": "9c12204432d4603e0b4ba6093b9bb480ad6238b62fe18c77578c9d0e96de96f4"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-d3d12.json",
+      "bytes": 1752,
+      "sha256": "77101c3865cc1341bbe1ec4a2fb023647ac463c929a0e2756f50542858b946df"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-import.json",
+      "bytes": 1747,
+      "sha256": "3874de95ac305b7801f6b0e4a7e2f5656282d57defd8a682f5af7169c90ff062"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-release.json",
+      "bytes": 1858,
+      "sha256": "1a3f8c9507ece3f2fde896a605db41c2e9207930d7bcc3d0824cd9e6662f48a2"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-01-d3d12-skate2.json",
+      "bytes": 2256,
+      "sha256": "53159a0a3ec86bac70092b76fca18d475413637ad4224e666d17f5c9646d3351"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/template-install.json",
+      "bytes": 6897,
+      "sha256": "d4c4de0aeb15e0f157ab0ecd08893a0d7e3efb63da4dd380c79658805240a886"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/runtime-inventory.json",
+      "bytes": 3848,
+      "sha256": "9cc669d4235105205a947e6ad890c4e23a59f55c682e443c448790ecdc8ce71c"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/natural-exit-matrix.json",
+      "bytes": 4293,
+      "sha256": "f8448fddd87b0503dc50e232bf6d5fe8cbc1a4c6c667894dae802e6579fe5240"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-natural-d3d12-skate2.json",
+      "bytes": 2217,
+      "sha256": "a924db57a68a0b5956f1c547a8d2d0ccd8eb9e5b4e0bfe357ef26aa0f50300b0"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-c1-natural-vulkan-basketball4.json",
+      "bytes": 2327,
+      "sha256": "d2a055959cb2b911daa4e00a4be25af62086fb125e212b2e9c0f3b23e389220f"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/production-matrix.json",
+      "bytes": 4213,
+      "sha256": "448f485efc3b3e831151c847c3a471852254530ea5034856ff4b773117640819"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/full-release-c1fc.log",
+      "bytes": 103301,
+      "sha256": "45f14db8613ac4fd4ed86165381df9bd63783b8937c309759021470f330c0a0b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-unittests-d37.log",
+      "bytes": 4651,
+      "sha256": "cca743d784d8d5bdcc3c88647d04a8398f272655dc708fe2dc19f89de15920c9"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-api-presets-d37.log",
+      "bytes": 584,
+      "sha256": "cf74b4231ece6ac151238814f0385735356b09a1a6583b820c5ed56886027a66"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/cpu-sizing-d37.log",
+      "bytes": 342,
+      "sha256": "10efde319fbf2650a6f1b93de7f73fcdb9d59199abdb64d6b48fa535109752ca"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/source-generators-d37.log",
+      "bytes": 478,
+      "sha256": "10a4eaa1a86cd282781ada866daf93be5d2b963585ed31dbfae24c64ae1869f2"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/source-generators-c1.log",
+      "bytes": 478,
+      "sha256": "e23d6a375fd87df48a4e2799d220d3fc208f71ea2b09481b9f0793b1dad0d640"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-d37-standard.log",
+      "bytes": 485,
+      "sha256": "ae260b4f98b3df7141ad59d63871545e76acf79a2464356eb7edd99b2eed99dc"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-d37-mono.log",
+      "bytes": 486,
+      "sha256": "17a8d20b1d9b03f2c23c3c86851eb6c469e356a21251d3b885f78028c4545bce"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-c1-standard.log",
+      "bytes": 485,
+      "sha256": "e7cd62d78bb0c7a0adb71355cbc4dea9bda861a0cfc0b9201946aebcefe8dd6a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/repo-smoke-c1-mono.log",
+      "bytes": 486,
+      "sha256": "0e8a8fcfbfc46b43b4994d5c6a7ff982982ceeb33d94d4b6f308d00238a853fb"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-quality-Recommended-0-motion.log",
+      "bytes": 33618,
+      "sha256": "36ec41470c55b2d668cebb721d9c9aad5becf9e2db54ec0001a8e43c59521f3b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0-motion.log",
+      "bytes": 90574,
+      "sha256": "65dfcab12d5a9374326036c6304b0e8424267bcd16c9531524af8b4bd5d1180e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0.2-motion.log",
+      "bytes": 91484,
+      "sha256": "623dfab8a96c7135ed779e7a722bd9fefbeca71fbfd8aaea81491812d05ba13e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-vulkan-sdk210-quality-Recommended-0-motion.log",
+      "bytes": 19842,
+      "sha256": "6efe5dc756f3b8f5fe790691ce5455b81ba311bb4be06bf7e0cf4d85ce5a7049"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion.log",
+      "bytes": 16522,
+      "sha256": "f3f1ce397592eb92409fc359307c4b61a71315f165bb8e600356855405248d7d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion.early.log",
+      "bytes": 736171,
+      "sha256": "04f0ccf35d0e9f11106e60b764215b3384a5f91c4c13a48dcbb9fb42f7c49c4b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-d37-vulkan.log",
+      "bytes": 38793,
+      "sha256": "172f604c8b8096b81da133e55c0ea06cfe500813186eabf530ea303512cb62ed"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-d37-import.log",
+      "bytes": 1165,
+      "sha256": "b6f3cfb168c7dbdda79b42a33fdcbbe18a773ff2d870f8cbb96b3ba422b8f0db"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/rr-complex-c1-import.log",
+      "bytes": 2445,
+      "sha256": "3fed793841d6ef0e3dba141ff4f60bc0f2b115d1538b76398d7236255f240281"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/d37-empty-stale1000.log",
+      "bytes": 31213,
+      "sha256": "764e20c76850a09ff9bfef2849d2917d661a33ecabba605d335408d95f0fe61a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/d37-empty-stale1000-candidate.log",
+      "bytes": 31211,
+      "sha256": "6b5acc5c38ee3eb7794ed3efbe89cb1dad6f925f67002b9fe2aae77c0f656f3c"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-physx-gpu-volume.log",
+      "bytes": 3382,
+      "sha256": "701e9ffe4cdc74d1c39fba2b2e2a9cd99cf7c500e1c0eed98f9f06c89fbbf2e3"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-flow-readback-vulkan.log",
+      "bytes": 28507,
+      "sha256": "525961bfb26c037ba806a0c013572991664cbad5d7f38354920203d286bc1d98"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/native-d37-flow-render-vulkan.log",
+      "bytes": 17071,
+      "sha256": "aec83a1a158c83aee3108c7f7059f93dfbf44129dd4b7e89c98f14a310d5c42b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/overrides-after-user-app-setting.log",
+      "bytes": 2636,
+      "sha256": "2e571e8848559a49ba0b89c522914845e0ed7e30773ac6055171da35ed78ef48"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-import.log",
+      "bytes": 127160,
+      "sha256": "6ea94ccbdf58b6981e50dd8db2a1a3b4cfbeedb081a269c3777e82ac3bf09482"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-release.log",
+      "bytes": 149662,
+      "sha256": "362ba2282f4201d2ea43f42fae269b2a1f56d34e1cffd8f96393292817f3705e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-01-d3d12-skate2.log",
+      "bytes": 150271,
+      "sha256": "fbd2baef8e5484f6ebddabdf6a931be547a4c3552f843a74c8ab538d9f6d64f9"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-natural-d3d12-skate2.log",
+      "bytes": 150177,
+      "sha256": "ca9ecd6604fa6f080b173c726440ea5fc5fd9d99e29083e557d99554581f9975"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/regina-c1-natural-vulkan-basketball4.log",
+      "bytes": 116337,
+      "sha256": "00b453c54b967264852ccb960ff0cf4c7bd025a42dfcf0de906b7e142574b3cd"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/partial-c1-vulkan.log",
+      "bytes": 27506,
+      "sha256": "dc0f96ece07100f2c5afa2868127c0c16a0275d06d140baf4b5d47aa46515012"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/logs/partial-c1-d3d12.log",
+      "bytes": 26190,
+      "sha256": "0fed52c0b140e46c86ec261cbf7375b1379233c6c5980efe9ba3f03e9d64cbad"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-vulkan-sdk214-ultra_performance-L-0-indicator/static.png",
+      "bytes": 989044,
+      "sha256": "f40886379c31e09d26b2e9ccd706d1651d76326b724dcb34fc68c79c963325aa"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-d3d12-sdk214-quality-M-0-indicator/static.png",
+      "bytes": 1071696,
+      "sha256": "8964e3de2da2b0a2627edd6080bc10c2d524d10874a01ea88808e7fd919b5f45"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/final-d37b63e72b-model-vulkan-sdk214-balanced-Recommended-0-indicator/static.png",
+      "bytes": 19919,
+      "sha256": "316c20f8db041c53725ef160054d31c310dd32a9aea39d9746ca86e92155e2bd"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/rr-complex-d37/glass_rr1_frame319.png",
+      "bytes": 288056,
+      "sha256": "bd29bebfed9b96d6b8a9b4a7d6eff1b4f21b438ea906d121ba39a4fc30432e0e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/gpu/rr-complex-d37/guide_31.png",
+      "bytes": 107603,
+      "sha256": "d6f730c172c5d733b530b01d9d62992e4d5970120e7e2741f9e79b0f9b4480e8"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/vulkan-basketball4-quality-fg-request/capture/frame.png",
+      "bytes": 1681415,
+      "sha256": "5453d8e10952fcafa71dc3098ba88938ddc458844ab56e4e9856376caa34979b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/vulkan-skate1-pt-rr/capture/frame.png",
+      "bytes": 1511068,
+      "sha256": "56e84ec302bfb9622ec25ff90823787b6861686f7e4e39d291c5714c125dafc5"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/regina-export-c1fc0252a9-01/production-natural-vulkan/capture/frame_2.png",
+      "bytes": 1358983,
+      "sha256": "505f828ddaa441753403ef2f23d368c5abf70207663554df364a72b17c271de6"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/reflex-readonly-conclusion.md",
+      "bytes": 11589,
+      "sha256": "e7c6c957000235c210af33ab1a17056d95e9cd88fc7b40a4a63cdb1d60541ba1"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/REPORT.md",
+      "bytes": 23502,
+      "sha256": "e6aecaecc632d124a7ccfe93c15067a777177662f997c0d70a45d2f3ffa9e37b"
+    }
+  ],
+  "checks": {
+    "issue_count": 0,
+    "issues": [],
+    "file_count": 69,
+    "png_count": 8,
+    "png_hashes_equal": true
+  },
+  "manifest_self_hash": "Excluded to avoid self-reference"
+}

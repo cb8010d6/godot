@@ -1,0 +1,178 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.RtxUpgradeGpuAcceptance.0'.
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Discrete
+  #2: Microsoft Microsoft Basic Render Driver - Supported, CPU
+  #3: AMD AMD Radeon 780M Graphics - Supported, Discrete
+  #4: AMD AMD Radeon 780M Graphics - Supported, Discrete
+- Shader:
+  model: 6.5
+- D3D12 Variable Rate Shading supported:
+  Draw call
+  Primitive
+  Screen-space image (tile size: 16)
+- D3D12 multiview supported:
+  max view count: 4
+- Relaxed casting not supported
+- D3D12 16-bit ops supported: yes
+- Depth bounds test supported
+D3D12: Device does NOT support GPU UPLOAD heap. ReBAR must be enabled for this feature. Regular UPLOAD heaps will be used as fallback.
+D3D12 12_0 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: b4449329f28f64c3e7b0ff6665c05bb826b362a53692a8b8ce0a5698cf3f611f
+Shader 'SkeletonShaderRD' (group 0) SHA256: 2a1d268a247814faa3eeff650e09e37b26ad7a829fa37b76f53db12515a303ad
+Shader 'SortShaderRD' (group 0) SHA256: 37038ec1428b47cf286e9ffdabe21c95d6bd36ea3b446b7ef6b928e47c629be4
+Shader 'ParticlesShaderRD' (group 0) SHA256: 6cbb1472853723a496b84b99fc7af04cc45579c8306fae4ebb6f1bcb3a865c0e
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: 08ec8f4188f64f97e8c5c573e4bc99893b8fdc71be9a52fd4937e88c65927f63
+Shader 'CanvasShaderRD' (group 0) SHA256: 5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: baf4776419e4a0663d23e746af65bc032ce82952600195d6aaf25a28f1bdeba5
+Shader 'TexBlitShaderRD' (group 0) SHA256: d339352e8adfb5a433f6921ae835505e17eaa513c8a9a9746b7a0ca61c7ac507
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: c342deba7992d47804b82659a30c1d67201c1faa85ea339101b94bcdf8f1aed5
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: fc0317540b0b8938773bfad6726b724879596baea791ad4649a2411af623c12c
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: 93ee3cc2fd07b2b5c61e573bf7398ba69bbaeebc5fcf66f9711377bab99ccdeb
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: d127a40fe7be151edb04be86e1b16bbdc92564f10fd410804c53307a27d01ddd
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: f9bc78e21271641f4ccbde45a75c0a08bf2ee4c4062d34aa679a0466f28e8089
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: ec688ac880883f5a67bb852edce7163a0b2d21fbd47829abb7cb2871b4724875
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 9bd698448282f3b019798cf1b4462780b9f9f85ec076a3d1ecc9930ab89d50c9
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: 3266769773e527ac2f1755e7b71d38db2fccfa94b3e4b70c274095ab3f84ce5a
+Shader 'TaaResolveShaderRD' (group 0) SHA256: 387158cd0757939c530f609228d89b85885aad261ffaee67d975169a067eb1c0
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: b4a68f3634b5d31bcccfe75cd413c7cc977997942e8fa98d0709a6be62e6c7eb
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: 4e3b7c4936d89bd03ed8e4f9db4b298a4f5c404abcc047d09d656548f4a30102
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: ae3ce70ee6fd292039ba34cc6dda841d0d957d47bfebd045d3571a1d52226f6b
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: 20fca582d7e338d81615e79a7a2471a1c4a87fb7269b6dbdd56af22ffebbc9dd
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: 0d0e37fc87a165377680f62237f95ff10060196282b4f4b3a09dc4f82b9dae11
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: 3ba1b9b73e1b71666f2e9871ba1be2e04e1a038709a8835e83f3287b76c7d3f3
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: 89975588b0f2969c30bfd652e8307c102261da36859f5239263eee749e208918
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: 5a710d5c99d6c66a5d208028ef2e9e5842ce3a55730f64e28b15981679640ded
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: 285693bface231c6fcd2aa0c26fb5250f952c06d6fbb05c9a8d76f39c183ac80
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: 6ec85bca686bdad5c4031cddd1b4ebfbc0ccf56654122a3151374e3f9cf79d70
+Shader 'SsilShaderRD' (group 0) SHA256: e02294930d03056945e67301fb0f86de5f88f401d66ce51273a368b59ea10c1f
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 6037bcaf731abedd1a881ac01b09ed99d576e2df4b563c9370b5187fe3f8526d
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 5aecb49c4a6481b2d900d5316f435671693b7efa3604e91b6b8022714a1fa810
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: 540c8ecd236550ed67c9fdf5a6625d1cf0b9ebe84381f683d61d652a71c09e24
+Shader 'SsaoShaderRD' (group 0) SHA256: 6cbf599bcc504c932992e391e1491e06531d2e935a20e156aa60f5d522fd7964
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: 41b95808a0deb6a6b1ac7a1cc2efdea21af23f0279160a6f81e17ac945df4745
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 99df4e562db1a93e6e40a1cb390569d6b76638be814b78bec17505f5f7b25068
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: 26f4a0b6610110ee529927917ded91de9eb6ebd656434077d712cb06bca8ee41
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: d9f374211878640c42a6d60fe7045cf65546ca4a1e9e326dea9d73bbc9a1ce8d
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: 28ef64f94cc3646c01d83d2348b403397c7144bd5ccb629f3cfa9dcddee8dc16
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: 10b771f63eff3c32d4f92a528d4ba0c312a4eed7029a72b1a665b2f923a54c1d
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: a9a5836c650b3862beb3da2e9970fca5e551b76fbf02cd044793ab82bc697e6f
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: 88acd9129e794df2101ef0712d625d278977203f53d97c6227c4cd65d473c6c0
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: 96569b06152e33520fa149dd21427a74f46d30026173087b341fd42bbedc570e
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 4af73ecf79b535439c4541c301dc90c59416a770467a6f1adf509824e112f9ce
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: f0197353b5b3e52424e31b5646c2f8ffeb8170ba5e95a891c508f1da2d934805
+Shader 'SkyShaderRD' (group 0) SHA256: 5c7a5722257d51f342637c6b96d4916640644d5ce2c0010c0b3df8b901f5220e
+Shader 'VoxelGiShaderRD' (group 0) SHA256: eab9e298883e09ee8e9b13b93de40d5c1302fe6bc4c470ca8641719511a488ea
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: 3050bcbe6c81e8174c2856f5c104a1fd02ea6812326cd9d738ee699c9d60be16
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: f31cf80b5f62c0a585ab055afcef2e762a8f0a0257a21ebe390aa92ec6d26210
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: 85aca4dd83c177c63a4ad7fb8affc0574014a40a2d9a7d8c8fa5abc39de414fa
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: ac32e72420a87bd3b39fcc8c2ebb5f242e4961a0fba2e9fe38857baf7544b2a3
+Shader 'GiShaderRD' (group 0) SHA256: 3247fc91133db1257c13b64062ab56a1503b099545c3928666b8879411850e2b
+Shader 'GiShaderRD' (group 1) SHA256: d04ee2d10184cf38aafb5cc1e5cd01a65afa98a59a4eaa938c2ce9236db3b5f0
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: 7307206f26e8d0b0582b5558d158d3da0c656d15f42ad81e6e888607ce6a984a
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: 3e8edee0ad3ba5f6ed83c9f19adf2571a5ffc99b78324b70bf300517109cf6b6
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 038920b4b387b90980f19744b12f4e79a2731b6ff36bf53bb8ff875f5e334ceb
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 73422c10d708d598d5a1dd016992c757ae232d53ee64856beb32ffa412545173
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: fe122cd8a1cf01062f737673bfa25628cde0d5c7e7c1a3bf7a424cad746f9ff8
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: a5fe1d87c6e38f50aed6864491f051f3f8e5bc407df2b2da772546414849b98c
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 8281dfea6bfe65875e092e7724873fefd35231f3826c22d57f947a4242b6679d
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: 1d3d43942d11ffe3540dda29f9f3fbd8e616fc53801b2d654e57d1e17159f8a9
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: 0bcd66a110c3409a289ecc2bd592003a49008de5622a95310ccf7a67ab596255
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: a2d35000c8df6fb1e3e34f70273c333846373f8cbd184bf38925c4b80f6830dd
+Shader 'BokehDofShaderRD' (group 0) SHA256: ec915698551077c85cb64216f7bcb0faf6e16d39df67c35365bb5334eff62c1f
+Shader 'CopyShaderRD' (group 0) SHA256: c3d688fd8c178b946abba6f53a67531a49fae547cec59e23436a97b24305f385
+Shader 'CopyToFbShaderRD' (group 0) SHA256: 04db489a70aec87ae35a5d7a4194a4a1233bc0df794c2c4c00b864c193089bb2
+Shader 'CubeToDpShaderRD' (group 0) SHA256: 9e86d24145fc257b31283741652f95c1d54510788b782ac3ac552969894b3faa
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: 57f9950c45907eed0c561e55071e35187bed09fd84d28d939d22d59675781e44
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: b5c60fe8c6ee60cb47467815facfd60475a508e463cd4dc071b2b78c22fa78a6
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: e79859be4de53fde618dca9a64b702906583b3b8861f89c524fd1e28d0ea769c
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: f808bb30c7fa44fd9a3cc1b8fabc95fc240479c9844d9f1884a2be4e6bf973ab
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: 225c303891226b47610f13d0c1f53831603cee3bf098b024d389cbd19fe8fbc5
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: e803772354a601c1f0f50590ed17350ea79fa4f79797acd4bb4356a5e4245b27
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: b0eddf08f49685fe3cf728a046fa65591896d98f63729eae8d86f2a469a84d4a
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 43cc5a6db9ab272876b63da5f93f9f3ff8f3442a65ab3193e3e5928b7dc97348
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: b93cc03299a4350423dc5b116b68e4aa5b7594b9cd6c4c1209d1d9a7eb8b856c
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 973f7fa7b0aa9d80421dfe675d484114f62d87431cdb29a6d0975794702b2fe7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 2b4dbe79b6297c574625d6439985261875ef1050db8cc935277299ffffed1fa8
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: b371ed0f13a926717ba395ec1b977e2ead2ddcee4ba044cbd9cdb3b45f4ece5e
+Shader 'TonemapShaderRD' (group 0) SHA256: 5a0b349bd25f386038189a0d9347f2c05f705b525e3cd18865840f0b61a1f8b9
+Shader 'VrsShaderRD' (group 0) SHA256: a885aeecb577697b93d0f50c85eef3b2cc7577aac38a8318af791fcaf7e8827f
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: dbe677e57fe3c625a0a7e3170710c4034254743676e380af4687114d99f94cb7
+Shader 'ResolveShaderRD' (group 0) SHA256: 4f4a998acd1a6d5a2f2df57d91484040c1105ce210c5a23b4f8cbce09dc12389
+Shader 'BlitShaderRD' (group 0) SHA256: 9ffd05d12761953f2c18e766047e6f08b27cbf12a6a6e23e2121838a5ec7dd1c
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 984715307
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+GPU_ACCEPTANCE_METADATA {"api":"12_0","capabilities":{"0":true,"1":true,"2":true,"3":true,"4":true,"5":true},"driver":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792955558},"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","mode":"fg","process_id":16108,"renderer":"forward_plus","requested_rr_preset":"?","requested_sr_preset":"Recommended","suite":"motion"}
+GPU_ACCEPTANCE_NATIVE_PROBE_LOADED
+GPU_ACCEPTANCE_WAITING_FOR_OS_FOREGROUND
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+GPU_ACCEPTANCE_OS_FOREGROUND_CONFIRMED
+DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+WARNING: Enabling DLSS-G on viewport: 1
+   at: RendererRD::DLSSEffect::_upscale_internal (servers\rendering\renderer_rd\effects\dlss.cpp:580)
+GPU_ACCEPTANCE_FINISHED actual_viewport_captures=49
+WARNING: Force disabling DLSS-G on viewport: 1
+   at: StreamlineContext::dlssg_disable (drivers\streamline\streamline_context.cpp:185)
+   GDScript backtrace (most recent call first):
+       [0] _set_mode (res://main.gd:86)
+       [1] _run (res://main.gd:262)
+       [2] _frames (res://main.gd:62)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

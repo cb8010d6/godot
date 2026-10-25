@@ -1,0 +1,623 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix.json",
+      "bytes": 6154,
+      "sha256": "e45f4f36f496bef2dac16973416837765eedf20098b182d0d485303fdda6b27a"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-warm1.json",
+      "bytes": 6285,
+      "sha256": "41aedcae1bc344c5ba59ff4b600ec6b6018f004ad3715254294938694409bea3"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000.json",
+      "bytes": 3404,
+      "sha256": "9d60e568534cb1a51c20daef44493e5c4e35d764e2c90978c70ab31426841f2d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/import-controls/matrix-stale1000-candidate.json",
+      "bytes": 3708,
+      "sha256": "684b7516ac01c09bfa88edc80ea3bbfc6e0d33f323718b1169535122e18e9179"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-d37-import.json",
+      "bytes": 1977,
+      "sha256": "00069fd9893d0dd98deec9277fd53aaec041fb563ca30e3f30bb936720285799"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/rr-complex-c1-import.json",
+      "bytes": 1964,
+      "sha256": "c865ecb44f38673c223b88767698c02778717f5e30e9f448884795d9838edd3a"
+    }
+  ],
+  "data": {
+    "agent-ultra/import-controls/matrix.json": [
+      {
+        "label": "d37-empty",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": false,
+        "probe_sha256": null,
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 5.719,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d37-probe",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 5.812,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "1000-probe",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\prod-1000baebda-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe",
+          "--import"
+        ],
+        "binary_sha256": "279f5958ad1f1e903807e4d48d5d8d2a453b88f7a4e524277bd72b1f3a40164d",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 6.562,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.1000baebd (2026-10-25 17:19:39 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d040-probe",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\editor-d040fbbe7d-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe",
+          "--import"
+        ],
+        "binary_sha256": "d3a4a23af9b941a7e2da5cc29d0b3ab792669989ac76041eccdfe26df1d39999",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 6.078,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d040fbbe7 (2026-10-25 18:43:41 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      }
+    ],
+    "agent-ultra/import-controls/matrix-warm1.json": [
+      {
+        "label": "d37-empty",
+        "cache_run": "warm1",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": false,
+        "probe_sha256": null,
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty-warm1.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 3.109,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d37-probe",
+        "cache_run": "warm1",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe-warm1.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 3.14,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "1000-probe",
+        "cache_run": "warm1",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\prod-1000baebda-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe",
+          "--import"
+        ],
+        "binary_sha256": "279f5958ad1f1e903807e4d48d5d8d2a453b88f7a4e524277bd72b1f3a40164d",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe-warm1.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 3.219,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.1000baebd (2026-10-25 17:19:39 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d040-probe",
+        "cache_run": "warm1",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\editor-d040fbbe7d-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe",
+          "--import"
+        ],
+        "binary_sha256": "d3a4a23af9b941a7e2da5cc29d0b3ab792669989ac76041eccdfe26df1d39999",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d040-probe-warm1.log",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 3.032,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d040fbbe7 (2026-10-25 18:43:41 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      }
+    ],
+    "agent-ultra/import-controls/matrix-stale1000.json": [
+      {
+        "label": "d37-empty",
+        "cache_run": "stale1000",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": false,
+        "probe_sha256": null,
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty-stale1000.log",
+        "exit_code": 3221225477,
+        "descendants_closed": [],
+        "seconds": 4.328,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [
+          "ERROR: Parameter \"singleton\" is null.",
+          "   at: EditorNode::is_cmdline_mode (editor\\editor_node.cpp:6769)"
+        ],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d37-probe",
+        "cache_run": "stale1000",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe",
+          "--import"
+        ],
+        "binary_sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe-stale1000.log",
+        "exit_code": 3221225477,
+        "descendants_closed": [],
+        "seconds": 4.344,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org",
+        "errors": [
+          "ERROR: Parameter \"singleton\" is null.",
+          "   at: EditorNode::is_cmdline_mode (editor\\editor_node.cpp:6769)"
+        ],
+        "gpu_or_cuda_startup_lines": []
+      }
+    ],
+    "agent-ultra/import-controls/matrix-stale1000-candidate.json": [
+      {
+        "label": "d37-empty",
+        "cache_run": "stale1000-candidate",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty",
+          "--import"
+        ],
+        "binary_sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": false,
+        "probe_sha256": null,
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-empty-stale1000-candidate.log",
+        "stale_doc_cache_source": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\local\\Godot\\editor_doc_cache-4.8.res",
+        "stale_doc_cache_input_sha256": "9cf9f5745dcfd12664451722b3d6caae15e36afd9f27bf248d0e9b2edb4e1030",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 4.406,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.c1fc0252a (2026-10-25 20:23:01 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      },
+      {
+        "label": "d37-probe",
+        "cache_run": "stale1000-candidate",
+        "command": [
+          "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+          "--headless",
+          "--verbose",
+          "--editor",
+          "--rendering-driver",
+          "dummy",
+          "--rendering-method",
+          "dummy",
+          "--path",
+          "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe",
+          "--import"
+        ],
+        "binary_sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20",
+        "explicit_dummy_renderer": true,
+        "with_native_probe": true,
+        "probe_sha256": "8caf2abf4e854615efa0d89e6e0f881f256bfe43bc78e74124df6d67a4b801af",
+        "cache_environment": {
+          "LOCALAPPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\local",
+          "APPDATA": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\roaming",
+          "TEMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp",
+          "TMP": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe\\isolated-cache\\tmp"
+        },
+        "log": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\d37-probe-stale1000-candidate.log",
+        "stale_doc_cache_source": "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\import-controls\\1000-probe\\isolated-cache\\local\\Godot\\editor_doc_cache-4.8.res",
+        "stale_doc_cache_input_sha256": "9cf9f5745dcfd12664451722b3d6caae15e36afd9f27bf248d0e9b2edb4e1030",
+        "exit_code": 0,
+        "descendants_closed": [],
+        "seconds": 4.359,
+        "engine_banner": "Godot Engine v4.8.beta1.custom_build.c1fc0252a (2026-10-25 20:23:01 UTC) - https://godotengine.org",
+        "errors": [],
+        "gpu_or_cuda_startup_lines": []
+      }
+    ],
+    "rr-complex-d37-import.json": {
+      "command": [
+        "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<WORKSPACE>\\acceptance-20261025\\pt-fixture",
+        "--import"
+      ],
+      "cwd": "<WORKSPACE>\\source",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+          "bytes": 161794560,
+          "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+        }
+      ],
+      "environment": {
+        "GODOT_VERSION_STATUS": "beta1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_RG_REORDER": null,
+        "GODOT_RG_FULL_BARRIERS": null,
+        "LOCALAPPDATA": "<WORKSPACE>\\toolchains\\cache\\local",
+        "TEMP": "<WORKSPACE>\\toolchains\\cache\\tmp",
+        "NUGET_PACKAGES": "<WORKSPACE>\\toolchains\\cache\\nuget",
+        "DOTNET_ROOT": "<WORKSPACE>\\toolchains\\dotnet10",
+        "CUDA_PATH": "<WORKSPACE>\\toolchains\\cuda12.8"
+      },
+      "started_utc": "2026-10-25T20:09:44.236220+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\rr-complex-d37-import.log",
+      "ngx_updaters_before": [],
+      "test_job_assigned": true,
+      "pid": 34944,
+      "exit_code": 3221225477,
+      "test_job_descendants_closed": [
+        14856,
+        39112,
+        38020,
+        39712,
+        48964,
+        47024,
+        36580,
+        17896,
+        20656,
+        36632,
+        23376,
+        43856,
+        37224,
+        43092,
+        14252,
+        33472,
+        36972,
+        49672,
+        33124,
+        20948,
+        33480,
+        40732,
+        9488,
+        21784,
+        43040,
+        33708,
+        47396,
+        40212,
+        18152,
+        39012,
+        38308,
+        40688,
+        44552,
+        45268,
+        43452,
+        21980,
+        39840,
+        42912,
+        39068,
+        41468
+      ],
+      "ngx_updaters_after": [],
+      "duration_seconds": 6.281,
+      "finished_utc": "2026-10-25T20:09:50.309744+00:00"
+    },
+    "rr-complex-c1-import.json": {
+      "command": [
+        "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<WORKSPACE>\\acceptance-20261025\\pt-fixture",
+        "--import"
+      ],
+      "cwd": "<WORKSPACE>\\source",
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": "",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+          "bytes": 161794560,
+          "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+        }
+      ],
+      "environment": {
+        "GODOT_VERSION_STATUS": "beta1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_RG_REORDER": null,
+        "GODOT_RG_FULL_BARRIERS": null,
+        "LOCALAPPDATA": "<WORKSPACE>\\toolchains\\cache\\local",
+        "TEMP": "<WORKSPACE>\\toolchains\\cache\\tmp",
+        "NUGET_PACKAGES": "<WORKSPACE>\\toolchains\\cache\\nuget",
+        "DOTNET_ROOT": "<WORKSPACE>\\toolchains\\dotnet10",
+        "CUDA_PATH": "<WORKSPACE>\\toolchains\\cuda12.8"
+      },
+      "started_utc": "2026-10-25T20:26:17.456712+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\rr-complex-c1-import.log",
+      "ngx_updaters_before": [],
+      "test_job_assigned": true,
+      "pid": 24672,
+      "exit_code": 0,
+      "test_job_descendants_closed": [
+        29344,
+        44880,
+        42316,
+        3792,
+        3272,
+        49396,
+        32688,
+        42748,
+        2020,
+        40828,
+        43468,
+        46344,
+        42772,
+        14928,
+        27408,
+        44680,
+        35832,
+        32256,
+        7824,
+        30288,
+        20696,
+        49236,
+        17464,
+        33892,
+        42492,
+        41196,
+        6412,
+        26272,
+        39344,
+        22384,
+        26908,
+        43424,
+        14232,
+        3228,
+        48324,
+        48180,
+        34216,
+        29056,
+        30056,
+        46576
+      ],
+      "ngx_updaters_after": [],
+      "duration_seconds": 6.344,
+      "finished_utc": "2026-10-25T20:26:23.601858+00:00"
+    }
+  }
+}

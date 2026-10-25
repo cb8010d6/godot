@@ -1,0 +1,40 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+PhysX: CPU dispatcher using 4 worker threads (of 16) [GPU path].
+PhysX 5.10.0 initialized [GPU].
+CORE API HASH: 984715307
+EDITOR API HASH: 3714769106
+Loading resource: res://soft_body_gpu_test.gd remapped: res://soft_body_gpu_test.gd
+Completed load for: 'res://soft_body_gpu_test.gd' remapped 'res://soft_body_gpu_test.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+[sbgpu] engine=PhysX solver=PGS
+PhysX: SoftBody3D -> GPU PxDeformableVolume.
+WARNING: PhysX: GPU soft bodies (PxDeformableVolume) resolve soft-vs-soft contact reliably only under the TGS solver. On PGS the contact is soft and transient -- a pile settles but slowly compacts as bodies sink through each other. Set physics/physx_3d/simulation/solver_type = TGS for firm soft-vs-soft stacking. Soft-vs-rigid is unaffected.
+   at: GodotPhysXSoftBody3D::_try_build_gpu (modules\godot_physx\objects\godot_physx_soft_body_3d.cpp:292)
+PhysX: SoftBody3D -> GPU PxDeformableVolume.
+PhysX: SoftBody3D -> GPU PxDeformableVolume.
+PhysX: SoftBody3D -> GPU PxDeformableVolume.
+[sbgpu] PASS  (fell to y=0.70, deformed to h=1.41, punched +12.3 m; pin held at y=4.29; soft-vs-soft: n/a (PGS))
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

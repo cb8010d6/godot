@@ -1,5 +1,17 @@
 # Update log
 
+## 2026-10-26 (measured Windows RTX acceptance)
+
+* [Acceptance snapshot](/tooling/windows-rtx-acceptance-20261026.md) links the
+  C1 six-target build, smoke, installed-template exports and real game results
+  to the curated evidence bundle. The d37 strict matrix remains separate:
+  seven clean controls and six Streamline Vulkan failures, not an RC.
+* Scoped Git attributes preserve the evidence's recorded bytes through staging;
+  captured logs retain diagnostic whitespace instead of being reformatted.
+* [Controller verdict versus process exit](/mistakes/acceptance-controller-vs-game-exit.md)
+  records failed external-script, wall-clock and mutable-input attempts without
+  overwriting their original verdicts. Final production-entry reruns passed.
+
 ## 2026-10-26 (stale editor documentation cache shutdown)
 
 * An actual older editor cache reproduces an access violation during headless

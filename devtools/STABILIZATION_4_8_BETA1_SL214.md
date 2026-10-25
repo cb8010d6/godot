@@ -177,3 +177,33 @@ rules remain. RTX50, MFG 3X-6X, Dynamic MFG and newer Godot betas are outside
 this work. AI assistance covers implementation, diagnostics and reports;
 no synthetic GPU evidence or generated pass records are accepted. No RC,
 external PR, tag or release is authorized by these local engineering steps.
+
+## 2026-10-26 measured acceptance update
+
+The [curated acceptance report](acceptance/stabilization-20261026/REPORT.md)
+records measured rendering head `d37b63e72b` separately from final editor-cache
+guard head `c1fc0252a9`. Both six-target Windows builds passed. C1 also passed
+the frozen 17-case game matrix, four installed-template exports and actual
+game launches, four package checks, and the stale documentation-cache import
+regression controls. The independent launcher receipt preserves actual
+process exit codes and owned-child cleanup; it is not a hand-written success
+record. C1 SourceGenerators passed all 43 tests and both repository smoke runs
+passed their four checks. Regina's isolated full cold import/release export
+and production PCK natural exits on D3D12 and Vulkan also passed; intermediate
+script/exit-guard attempts remain separately recorded.
+The independent NVIDIA shortcut was created and read back with a frozen C1
+binary hash. Partial-runtime controls with only the signed interposer render
+and exit, while retaining expected `eErrorNoPlugins` diagnostics; these are
+fallback checks, not error-free or strict-validation passes.
+
+All six d37 D3D12 strict controls are clean; six Streamline Vulkan strict
+controls still fail with the documented SDK/pacer layout, semaphore, sync and
+threading diagnostics. Functional model/lifecycle captures do not establish
+strict cleanliness, generated-frame image quality or physical input latency.
+This is not an RC claim. Earlier failures and rejected hypotheses above remain
+historical evidence, including the removed R32F depth experiment.
+
+The bundle contains redacted text, derived values with source hashes, and
+byte-identical representative PNGs. It excludes private SDK binaries and Hub
+startup stdout. See its [curation and privacy notes](acceptance/stabilization-20261026/README.md)
+and [manifest](acceptance/stabilization-20261026/MANIFEST.json) before publication.

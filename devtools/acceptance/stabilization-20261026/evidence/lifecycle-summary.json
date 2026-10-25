@@ -1,0 +1,140 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-lifecycle-matrix.json",
+      "bytes": 23909,
+      "sha256": "91c6681b0f13c7fcdf573c80e09704314d007c8d4a9820ce82a5456bffabe519"
+    }
+  ],
+  "data": [
+    {
+      "label": "final-d37b63e72b-lifecycle-d3d12-sdk214-fg-Recommended-0.2-lifecycle",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "fg",
+      "preset_requested": "Recommended",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 3372,
+      "foreground_presented_two_samples": 772,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false
+    },
+    {
+      "label": "final-d37b63e72b-lifecycle-d3d12-sdk214-fg-Recommended-0.2-scene_restart",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "fg",
+      "preset_requested": "Recommended",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 639,
+      "foreground_presented_two_samples": 570,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false
+    },
+    {
+      "label": "final-d37b63e72b-lifecycle-vulkan-sdk214-fg-Recommended-0.2-lifecycle",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "fg",
+      "preset_requested": "Recommended",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 3372,
+      "foreground_presented_two_samples": 772,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false
+    },
+    {
+      "label": "final-d37b63e72b-lifecycle-vulkan-sdk214-fg-Recommended-0.2-scene_restart",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "fg",
+      "preset_requested": "Recommended",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+        "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 639,
+      "foreground_presented_two_samples": 569,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false
+    }
+  ]
+}

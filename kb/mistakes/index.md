@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Controller verdict versus game exit](/mistakes/acceptance-controller-vs-game-exit.md) - require production capture/exit evidence and freeze matrix inputs
+
 * [VUID names without message context](/mistakes/vuid-name-without-message-context.md) - classify actual resources and commands before implementing an adapter
 
 * [Optional native probe in a fresh fixture](/mistakes/optional-native-probe-in-fresh-fixture.md) - load and require the extension before accepting runtime/FG state evidence

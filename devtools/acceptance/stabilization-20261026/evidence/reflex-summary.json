@@ -1,0 +1,1929 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/reflex-report-summary.json",
+      "bytes": 70830,
+      "sha256": "a90d67c600175f9fef24b0667a811dd9922bf89a9818f43b2bac7d5bc8cf378a"
+    }
+  ],
+  "data": [
+    {
+      "case": "final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "5a7126c5d177cd9801c37b189773afacc4a87aa267556c2dd1269e2384134c6e",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 12,
+        "any_nonzero_timestamp_rows": 249,
+        "positive_frame_id_and_all_eight_timestamps_rows": 249,
+        "unique_positive_report_frame_ids": 248,
+        "report_frame_id_min": 3,
+        "report_frame_id_max": 251,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 12,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 3.0,
+            "gpu_end": 1792956497477812.0,
+            "gpu_start": 1792956497476080.0,
+            "low_latency_available": true,
+            "present_end": 1792956497403902.0,
+            "present_start": 1792956497403048.0,
+            "render_submit_end": 1792956497400973.0,
+            "render_submit_start": 1792956497399990.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956497399984.0,
+            "simulation_start": 1792956497399861.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 251.0,
+            "gpu_end": 1792956504754339.0,
+            "gpu_start": 1792956504754207.0,
+            "low_latency_available": true,
+            "present_end": 1792956504741037.0,
+            "present_start": 1792956504740537.0,
+            "render_submit_end": 1792956504739838.0,
+            "render_submit_start": 1792956504739626.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956504739621.0,
+            "simulation_start": 1792956504739535.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 0,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 12,
+          "any_nonzero_timestamp_rows": 237,
+          "positive_frame_id_and_all_eight_timestamps_rows": 237,
+          "unique_positive_report_frame_ids": 236,
+          "report_frame_id_min": 3,
+          "report_frame_id_max": 239,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 12,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 3.0,
+              "gpu_end": 1792956497477812.0,
+              "gpu_start": 1792956497476080.0,
+              "low_latency_available": true,
+              "present_end": 1792956497403902.0,
+              "present_start": 1792956497403048.0,
+              "render_submit_end": 1792956497400973.0,
+              "render_submit_start": 1792956497399990.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956497399984.0,
+              "simulation_start": 1792956497399861.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 239.0,
+              "gpu_end": 1792956504354585.0,
+              "gpu_start": 1792956504320602.0,
+              "low_latency_available": true,
+              "present_end": 1792956504316356.0,
+              "present_start": 1792956504316012.0,
+              "render_submit_end": 1792956504314612.0,
+              "render_submit_start": 1792956504314344.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956504314338.0,
+              "simulation_start": 1792956504314212.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 240,
+          "report_frame_id_max": 251,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 240.0,
+              "gpu_end": 1792956504388284.0,
+              "gpu_start": 1792956504354671.0,
+              "low_latency_available": true,
+              "present_end": 1792956504349742.0,
+              "present_start": 1792956504349382.0,
+              "render_submit_end": 1792956504347877.0,
+              "render_submit_start": 1792956504347573.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956504347567.0,
+              "simulation_start": 1792956504347414.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 251.0,
+              "gpu_end": 1792956504754339.0,
+              "gpu_start": 1792956504754207.0,
+              "low_latency_available": true,
+              "present_end": 1792956504741037.0,
+              "present_start": 1792956504740537.0,
+              "render_submit_end": 1792956504739838.0,
+              "render_submit_start": 1792956504739626.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956504739621.0,
+              "simulation_start": 1792956504739535.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0.2-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-d37b63e72b-strict-vulkan-sdk214-fg-Recommended-0.2-motion\\sdk-state.json",
+      "input_sha256": "983025aac533d5d322a228d7fac978120cf95da87e366aeb73e130d4ba74018b",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 12,
+        "any_nonzero_timestamp_rows": 249,
+        "positive_frame_id_and_all_eight_timestamps_rows": 249,
+        "unique_positive_report_frame_ids": 248,
+        "report_frame_id_min": 3,
+        "report_frame_id_max": 251,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 12,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 3.0,
+            "gpu_end": 1792956513208725.0,
+            "gpu_start": 1792956513206966.0,
+            "low_latency_available": true,
+            "present_end": 1792956513117831.0,
+            "present_start": 1792956513117147.0,
+            "render_submit_end": 1792956513113888.0,
+            "render_submit_start": 1792956513113581.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956513113575.0,
+            "simulation_start": 1792956513113431.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 251.0,
+            "gpu_end": 1792956520491632.0,
+            "gpu_start": 1792956520491504.0,
+            "low_latency_available": true,
+            "present_end": 1792956520478670.0,
+            "present_start": 1792956520478168.0,
+            "render_submit_end": 1792956520477464.0,
+            "render_submit_start": 1792956520477253.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956520477247.0,
+            "simulation_start": 1792956520477164.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 0,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 12,
+          "any_nonzero_timestamp_rows": 237,
+          "positive_frame_id_and_all_eight_timestamps_rows": 237,
+          "unique_positive_report_frame_ids": 236,
+          "report_frame_id_min": 3,
+          "report_frame_id_max": 239,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 12,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 3.0,
+              "gpu_end": 1792956513208725.0,
+              "gpu_start": 1792956513206966.0,
+              "low_latency_available": true,
+              "present_end": 1792956513117831.0,
+              "present_start": 1792956513117147.0,
+              "render_submit_end": 1792956513113888.0,
+              "render_submit_start": 1792956513113581.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956513113575.0,
+              "simulation_start": 1792956513113431.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 239.0,
+              "gpu_end": 1792956520077152.0,
+              "gpu_start": 1792956520043832.0,
+              "low_latency_available": true,
+              "present_end": 1792956520040631.0,
+              "present_start": 1792956520040333.0,
+              "render_submit_end": 1792956520038790.0,
+              "render_submit_start": 1792956520038522.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956520038514.0,
+              "simulation_start": 1792956520038204.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 240,
+          "report_frame_id_max": 251,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 240.0,
+              "gpu_end": 1792956520110541.0,
+              "gpu_start": 1792956520077226.0,
+              "low_latency_available": true,
+              "present_end": 1792956520074406.0,
+              "present_start": 1792956520074106.0,
+              "render_submit_end": 1792956520072421.0,
+              "render_submit_start": 1792956520072115.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956520072109.0,
+              "simulation_start": 1792956520071972.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 251.0,
+              "gpu_end": 1792956520491632.0,
+              "gpu_start": 1792956520491504.0,
+              "low_latency_available": true,
+              "present_end": 1792956520478670.0,
+              "present_start": 1792956520478168.0,
+              "render_submit_end": 1792956520477464.0,
+              "render_submit_start": 1792956520477253.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956520477247.0,
+              "simulation_start": 1792956520477164.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-d37b63e72b-strict-d3d12-sdk214-fg-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "b6b13fdc72e9c321a047c10d5e19a17330e78dd502b8d36d20f380ebdaeccd76",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 79,
+        "any_nonzero_timestamp_rows": 182,
+        "positive_frame_id_and_all_eight_timestamps_rows": 162,
+        "unique_positive_report_frame_ids": 151,
+        "report_frame_id_min": 77,
+        "report_frame_id_max": 247,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 20
+        },
+        "first_complete": {
+          "engine_frame": 79,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 77.0,
+            "gpu_end": 1792956821391956.0,
+            "gpu_start": 1792956821351800.0,
+            "low_latency_available": true,
+            "present_end": 1792956821382902.0,
+            "present_start": 1792956821382895.0,
+            "render_submit_end": 1792956821379510.0,
+            "render_submit_start": 1792956821379321.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956821379314.0,
+            "simulation_start": 1792956821379145.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 247.0,
+            "gpu_end": 1792956827099878.0,
+            "gpu_start": 1792956827058250.0,
+            "low_latency_available": true,
+            "present_end": 1792956827086795.0,
+            "present_start": 1792956827086788.0,
+            "render_submit_end": 1792956827083280.0,
+            "render_submit_start": 1792956827083068.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956827083061.0,
+            "simulation_start": 1792956827082877.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 162,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 79,
+          "any_nonzero_timestamp_rows": 170,
+          "positive_frame_id_and_all_eight_timestamps_rows": 150,
+          "unique_positive_report_frame_ids": 150,
+          "report_frame_id_min": 77,
+          "report_frame_id_max": 246,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 20
+          },
+          "first_complete": {
+            "engine_frame": 79,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 77.0,
+              "gpu_end": 1792956821391956.0,
+              "gpu_start": 1792956821351800.0,
+              "low_latency_available": true,
+              "present_end": 1792956821382902.0,
+              "present_start": 1792956821382895.0,
+              "render_submit_end": 1792956821379510.0,
+              "render_submit_start": 1792956821379321.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956821379314.0,
+              "simulation_start": 1792956821379145.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 246.0,
+              "gpu_end": 1792956827067329.0,
+              "gpu_start": 1792956827025173.0,
+              "low_latency_available": true,
+              "present_end": 1792956827054078.0,
+              "present_start": 1792956827054070.0,
+              "render_submit_end": 1792956827050367.0,
+              "render_submit_start": 1792956827050141.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956827050133.0,
+              "simulation_start": 1792956827049909.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 150,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 1,
+          "report_frame_id_min": 247,
+          "report_frame_id_max": 247,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 247.0,
+              "gpu_end": 1792956827099878.0,
+              "gpu_start": 1792956827058250.0,
+              "low_latency_available": true,
+              "present_end": 1792956827086795.0,
+              "present_start": 1792956827086788.0,
+              "render_submit_end": 1792956827083280.0,
+              "render_submit_start": 1792956827083068.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956827083061.0,
+              "simulation_start": 1792956827082877.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 247.0,
+              "gpu_end": 1792956827099878.0,
+              "gpu_start": 1792956827058250.0,
+              "low_latency_available": true,
+              "present_end": 1792956827086795.0,
+              "present_start": 1792956827086788.0,
+              "render_submit_end": 1792956827083280.0,
+              "render_submit_start": 1792956827083068.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956827083061.0,
+              "simulation_start": 1792956827082877.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 12,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-strict-vulkan-sdk214-fg-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-strict-vulkan-sdk214-fg-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "eb1a24019062db51e9cb52c5df9cc3f14ffea87db92aa091d730cb4801ebc5f7",
+      "checkout_sha": "036c6c7023ab293699e25b95c775cb332f95406b",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 12,
+        "any_nonzero_timestamp_rows": 249,
+        "positive_frame_id_and_all_eight_timestamps_rows": 249,
+        "unique_positive_report_frame_ids": 248,
+        "report_frame_id_min": 3,
+        "report_frame_id_max": 251,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 12,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 3.0,
+            "gpu_end": 1792953270454385.0,
+            "gpu_start": 1792953270452682.0,
+            "low_latency_available": true,
+            "present_end": 1792953270375064.0,
+            "present_start": 1792953270374157.0,
+            "render_submit_end": 1792953270372029.0,
+            "render_submit_start": 1792953270371408.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953270371402.0,
+            "simulation_start": 1792953270371246.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 251.0,
+            "gpu_end": 1792953277739121.0,
+            "gpu_start": 1792953277738973.0,
+            "low_latency_available": true,
+            "present_end": 1792953277728164.0,
+            "present_start": 1792953277727509.0,
+            "render_submit_end": 1792953277726396.0,
+            "render_submit_start": 1792953277726072.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953277726064.0,
+            "simulation_start": 1792953277725936.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 0,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 12,
+          "any_nonzero_timestamp_rows": 237,
+          "positive_frame_id_and_all_eight_timestamps_rows": 237,
+          "unique_positive_report_frame_ids": 236,
+          "report_frame_id_min": 3,
+          "report_frame_id_max": 239,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 12,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 3.0,
+              "gpu_end": 1792953270454385.0,
+              "gpu_start": 1792953270452682.0,
+              "low_latency_available": true,
+              "present_end": 1792953270375064.0,
+              "present_start": 1792953270374157.0,
+              "render_submit_end": 1792953270372029.0,
+              "render_submit_start": 1792953270371408.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953270371402.0,
+              "simulation_start": 1792953270371246.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 239.0,
+              "gpu_end": 1792953277319973.0,
+              "gpu_start": 1792953277285772.0,
+              "low_latency_available": true,
+              "present_end": 1792953277282965.0,
+              "present_start": 1792953277282639.0,
+              "render_submit_end": 1792953277280463.0,
+              "render_submit_start": 1792953277279986.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953277279978.0,
+              "simulation_start": 1792953277279823.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 240,
+          "report_frame_id_max": 251,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 240.0,
+              "gpu_end": 1792953277353573.0,
+              "gpu_start": 1792953277320069.0,
+              "low_latency_available": true,
+              "present_end": 1792953277315294.0,
+              "present_start": 1792953277315002.0,
+              "render_submit_end": 1792953277313443.0,
+              "render_submit_start": 1792953277313142.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953277313136.0,
+              "simulation_start": 1792953277312996.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 251.0,
+              "gpu_end": 1792953277739121.0,
+              "gpu_start": 1792953277738973.0,
+              "low_latency_available": true,
+              "present_end": 1792953277728164.0,
+              "present_start": 1792953277727509.0,
+              "render_submit_end": 1792953277726396.0,
+              "render_submit_start": 1792953277726072.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953277726064.0,
+              "simulation_start": 1792953277725936.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-strict-vulkan-sdk214-fg-Recommended-0.2-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-strict-vulkan-sdk214-fg-Recommended-0.2-motion\\sdk-state.json",
+      "input_sha256": "2e086ab90687b4fce3d938d278470ddbf12da2414b5df720dfcc8f9270658347",
+      "checkout_sha": "036c6c7023ab293699e25b95c775cb332f95406b",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 12,
+        "any_nonzero_timestamp_rows": 249,
+        "positive_frame_id_and_all_eight_timestamps_rows": 249,
+        "unique_positive_report_frame_ids": 248,
+        "report_frame_id_min": 3,
+        "report_frame_id_max": 251,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 12,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 3.0,
+            "gpu_end": 1792953286116143.0,
+            "gpu_start": 1792953286114369.0,
+            "low_latency_available": true,
+            "present_end": 1792953286031501.0,
+            "present_start": 1792953286030517.0,
+            "render_submit_end": 1792953286028144.0,
+            "render_submit_start": 1792953286027335.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953286027328.0,
+            "simulation_start": 1792953286027162.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 251.0,
+            "gpu_end": 1792953293371061.0,
+            "gpu_start": 1792953293370924.0,
+            "low_latency_available": true,
+            "present_end": 1792953293357950.0,
+            "present_start": 1792953293357461.0,
+            "render_submit_end": 1792953293356729.0,
+            "render_submit_start": 1792953293356546.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953293356540.0,
+            "simulation_start": 1792953293356488.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 0,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 12,
+          "any_nonzero_timestamp_rows": 237,
+          "positive_frame_id_and_all_eight_timestamps_rows": 237,
+          "unique_positive_report_frame_ids": 236,
+          "report_frame_id_min": 3,
+          "report_frame_id_max": 239,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 12,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 3.0,
+              "gpu_end": 1792953286116143.0,
+              "gpu_start": 1792953286114369.0,
+              "low_latency_available": true,
+              "present_end": 1792953286031501.0,
+              "present_start": 1792953286030517.0,
+              "render_submit_end": 1792953286028144.0,
+              "render_submit_start": 1792953286027335.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953286027328.0,
+              "simulation_start": 1792953286027162.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 239.0,
+              "gpu_end": 1792953292969194.0,
+              "gpu_start": 1792953292935756.0,
+              "low_latency_available": true,
+              "present_end": 1792953292931106.0,
+              "present_start": 1792953292930807.0,
+              "render_submit_end": 1792953292929265.0,
+              "render_submit_start": 1792953292928986.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953292928980.0,
+              "simulation_start": 1792953292928838.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 240,
+          "report_frame_id_max": 251,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 240.0,
+              "gpu_end": 1792953293001183.0,
+              "gpu_start": 1792953292969310.0,
+              "low_latency_available": true,
+              "present_end": 1792953292964918.0,
+              "present_start": 1792953292964608.0,
+              "render_submit_end": 1792953292962523.0,
+              "render_submit_start": 1792953292962198.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953292962190.0,
+              "simulation_start": 1792953292962016.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 251.0,
+              "gpu_end": 1792953293371061.0,
+              "gpu_start": 1792953293370924.0,
+              "low_latency_available": true,
+              "present_end": 1792953293357950.0,
+              "present_start": 1792953293357461.0,
+              "render_submit_end": 1792953293356729.0,
+              "render_submit_start": 1792953293356546.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953293356540.0,
+              "simulation_start": 1792953293356488.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-strict-d3d12-sdk214-fg-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-strict-d3d12-sdk214-fg-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "350e14e6424a8159a6018f2773046eb6a25d0951350404480ef3fa384ea0fc4d",
+      "checkout_sha": "036c6c7023ab293699e25b95c775cb332f95406b",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 261,
+        "result_counts": {
+          "0.0": 261
+        },
+        "low_latency_available_rows": 261,
+        "report_available_rows": 261,
+        "all_exported_times_zero_rows": 79,
+        "any_nonzero_timestamp_rows": 182,
+        "positive_frame_id_and_all_eight_timestamps_rows": 156,
+        "unique_positive_report_frame_ids": 145,
+        "report_frame_id_min": 77,
+        "report_frame_id_max": 247,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 26
+        },
+        "first_complete": {
+          "engine_frame": 79,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 77.0,
+            "gpu_end": 1792953588108128.0,
+            "gpu_start": 1792953588067950.0,
+            "low_latency_available": true,
+            "present_end": 1792953588097719.0,
+            "present_start": 1792953588097713.0,
+            "render_submit_end": 1792953588094831.0,
+            "render_submit_start": 1792953588094630.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953588094623.0,
+            "simulation_start": 1792953588094463.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 260,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 247.0,
+            "gpu_end": 1792953593814332.0,
+            "gpu_start": 1792953593772538.0,
+            "low_latency_available": true,
+            "present_end": 1792953593801750.0,
+            "present_start": 1792953593801743.0,
+            "render_submit_end": 1792953593798759.0,
+            "render_submit_start": 1792953593798532.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792953593798524.0,
+            "simulation_start": 1792953593798008.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 1,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 156,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 249,
+          "result_counts": {
+            "0.0": 249
+          },
+          "low_latency_available_rows": 249,
+          "report_available_rows": 249,
+          "all_exported_times_zero_rows": 79,
+          "any_nonzero_timestamp_rows": 170,
+          "positive_frame_id_and_all_eight_timestamps_rows": 144,
+          "unique_positive_report_frame_ids": 144,
+          "report_frame_id_min": 77,
+          "report_frame_id_max": 246,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 26
+          },
+          "first_complete": {
+            "engine_frame": 79,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 77.0,
+              "gpu_end": 1792953588108128.0,
+              "gpu_start": 1792953588067950.0,
+              "low_latency_available": true,
+              "present_end": 1792953588097719.0,
+              "present_start": 1792953588097713.0,
+              "render_submit_end": 1792953588094831.0,
+              "render_submit_start": 1792953588094630.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953588094623.0,
+              "simulation_start": 1792953588094463.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 248,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 246.0,
+              "gpu_end": 1792953593781003.0,
+              "gpu_start": 1792953593739863.0,
+              "low_latency_available": true,
+              "present_end": 1792953593768471.0,
+              "present_start": 1792953593768464.0,
+              "render_submit_end": 1792953593765003.0,
+              "render_submit_start": 1792953593764744.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953593764739.0,
+              "simulation_start": 1792953593764624.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 1,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 144,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 1,
+          "report_frame_id_min": 247,
+          "report_frame_id_max": 247,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 249,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 247.0,
+              "gpu_end": 1792953593814332.0,
+              "gpu_start": 1792953593772538.0,
+              "low_latency_available": true,
+              "present_end": 1792953593801750.0,
+              "present_start": 1792953593801743.0,
+              "render_submit_end": 1792953593798759.0,
+              "render_submit_start": 1792953593798532.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953593798524.0,
+              "simulation_start": 1792953593798008.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 260,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 247.0,
+              "gpu_end": 1792953593814332.0,
+              "gpu_start": 1792953593772538.0,
+              "low_latency_available": true,
+              "present_end": 1792953593801750.0,
+              "present_start": 1792953593801743.0,
+              "render_submit_end": 1792953593798759.0,
+              "render_submit_start": 1792953593798532.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792953593798524.0,
+              "simulation_start": 1792953593798008.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 12,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "prod-pix1-debug-fg-sl214",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\prod-pix1-debug-fg-sl214\\sdk-state.json",
+      "input_sha256": "1327922ed315fc11367e99937c728031653bec400b9ea06e32f8bc0f968bd887",
+      "checkout_sha": "1000baebdaccc35a6dfb9511c7fe9209cdc8295b",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 260,
+        "result_counts": {
+          "0.0": 260
+        },
+        "low_latency_available_rows": 260,
+        "report_available_rows": 260,
+        "all_exported_times_zero_rows": 88,
+        "any_nonzero_timestamp_rows": 172,
+        "positive_frame_id_and_all_eight_timestamps_rows": 166,
+        "unique_positive_report_frame_ids": 147,
+        "report_frame_id_min": 87,
+        "report_frame_id_max": 246,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 6
+        },
+        "first_complete": {
+          "engine_frame": 88,
+          "requested_mode": "fg",
+          "reflex": {
+            "frame_id": 87.0,
+            "gpu_end": 1792950678318514.0,
+            "gpu_start": 1792950678317544.0,
+            "low_latency_available": true,
+            "present_end": 1792950678317496.0,
+            "present_start": 1792950678317490.0,
+            "render_submit_end": 1792950678314551.0,
+            "render_submit_start": 1792950678314350.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792950678314343.0,
+            "simulation_start": 1792950678314231.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 259,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 246.0,
+            "gpu_end": 1792950682001746.0,
+            "gpu_start": 1792950681959626.0,
+            "low_latency_available": true,
+            "present_end": 1792950681988843.0,
+            "present_start": 1792950681988835.0,
+            "render_submit_end": 1792950681985569.0,
+            "render_submit_start": 1792950681985343.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792950681985337.0,
+            "simulation_start": 1792950681985269.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 152,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "fg": {
+          "rows": 248,
+          "result_counts": {
+            "0.0": 248
+          },
+          "low_latency_available_rows": 248,
+          "report_available_rows": 248,
+          "all_exported_times_zero_rows": 88,
+          "any_nonzero_timestamp_rows": 160,
+          "positive_frame_id_and_all_eight_timestamps_rows": 154,
+          "unique_positive_report_frame_ids": 146,
+          "report_frame_id_min": 87,
+          "report_frame_id_max": 245,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 6
+          },
+          "first_complete": {
+            "engine_frame": 88,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 87.0,
+              "gpu_end": 1792950678318514.0,
+              "gpu_start": 1792950678317544.0,
+              "low_latency_available": true,
+              "present_end": 1792950678317496.0,
+              "present_start": 1792950678317490.0,
+              "render_submit_end": 1792950678314551.0,
+              "render_submit_start": 1792950678314350.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792950678314343.0,
+              "simulation_start": 1792950678314231.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 247,
+            "requested_mode": "fg",
+            "reflex": {
+              "frame_id": 245.0,
+              "gpu_end": 1792950681967815.0,
+              "gpu_start": 1792950681925733.0,
+              "low_latency_available": true,
+              "present_end": 1792950681954985.0,
+              "present_start": 1792950681954979.0,
+              "render_submit_end": 1792950681951785.0,
+              "render_submit_start": 1792950681951540.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792950681951529.0,
+              "simulation_start": 1792950681951209.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 140,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 1,
+          "report_frame_id_min": 246,
+          "report_frame_id_max": 246,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 248,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 246.0,
+              "gpu_end": 1792950682001746.0,
+              "gpu_start": 1792950681959626.0,
+              "low_latency_available": true,
+              "present_end": 1792950681988843.0,
+              "present_start": 1792950681988835.0,
+              "render_submit_end": 1792950681985569.0,
+              "render_submit_start": 1792950681985343.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792950681985337.0,
+              "simulation_start": 1792950681985269.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 259,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 246.0,
+              "gpu_end": 1792950682001746.0,
+              "gpu_start": 1792950681959626.0,
+              "low_latency_available": true,
+              "present_end": 1792950681988843.0,
+              "present_start": 1792950681988835.0,
+              "render_submit_end": 1792950681985569.0,
+              "render_submit_start": 1792950681985343.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792950681985337.0,
+              "simulation_start": 1792950681985269.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 12,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-d37b63e72b-strict-vulkan-sdk214-quality-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-d37b63e72b-strict-vulkan-sdk214-quality-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "c78564273bc1d1b913b60594a19f227d28c905049f6608e12886309c83af9815",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 160,
+        "result_counts": {
+          "0.0": 160
+        },
+        "low_latency_available_rows": 160,
+        "report_available_rows": 160,
+        "all_exported_times_zero_rows": 12,
+        "any_nonzero_timestamp_rows": 148,
+        "positive_frame_id_and_all_eight_timestamps_rows": 148,
+        "unique_positive_report_frame_ids": 147,
+        "report_frame_id_min": 3,
+        "report_frame_id_max": 150,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 12,
+          "requested_mode": "quality",
+          "reflex": {
+            "frame_id": 3.0,
+            "gpu_end": 1792956475627287.0,
+            "gpu_start": 1792956475625563.0,
+            "low_latency_available": true,
+            "present_end": 1792956475550806.0,
+            "present_start": 1792956475550056.0,
+            "render_submit_end": 1792956475548361.0,
+            "render_submit_start": 1792956475547652.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956475547645.0,
+            "simulation_start": 1792956475547582.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 159,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 150.0,
+            "gpu_end": 1792956478198882.0,
+            "gpu_start": 1792956478198765.0,
+            "low_latency_available": true,
+            "present_end": 1792956478182737.0,
+            "present_start": 1792956478182042.0,
+            "render_submit_end": 1792956478181246.0,
+            "render_submit_start": 1792956478180962.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956478180956.0,
+            "simulation_start": 1792956478180827.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 0,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 139,
+          "report_frame_id_max": 150,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 148,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 139.0,
+              "gpu_end": 1792956477995511.0,
+              "gpu_start": 1792956477976251.0,
+              "low_latency_available": true,
+              "present_end": 1792956477973871.0,
+              "present_start": 1792956477973054.0,
+              "render_submit_end": 1792956477971133.0,
+              "render_submit_start": 1792956477970768.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956477970760.0,
+              "simulation_start": 1792956477970615.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 159,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 150.0,
+              "gpu_end": 1792956478198882.0,
+              "gpu_start": 1792956478198765.0,
+              "low_latency_available": true,
+              "present_end": 1792956478182737.0,
+              "present_start": 1792956478182042.0,
+              "render_submit_end": 1792956478181246.0,
+              "render_submit_start": 1792956478180962.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956478180956.0,
+              "simulation_start": 1792956478180827.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "quality": {
+          "rows": 148,
+          "result_counts": {
+            "0.0": 148
+          },
+          "low_latency_available_rows": 148,
+          "report_available_rows": 148,
+          "all_exported_times_zero_rows": 12,
+          "any_nonzero_timestamp_rows": 136,
+          "positive_frame_id_and_all_eight_timestamps_rows": 136,
+          "unique_positive_report_frame_ids": 135,
+          "report_frame_id_min": 3,
+          "report_frame_id_max": 138,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 12,
+            "requested_mode": "quality",
+            "reflex": {
+              "frame_id": 3.0,
+              "gpu_end": 1792956475627287.0,
+              "gpu_start": 1792956475625563.0,
+              "low_latency_available": true,
+              "present_end": 1792956475550806.0,
+              "present_start": 1792956475550056.0,
+              "render_submit_end": 1792956475548361.0,
+              "render_submit_start": 1792956475547652.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956475547645.0,
+              "simulation_start": 1792956475547582.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 147,
+            "requested_mode": "quality",
+            "reflex": {
+              "frame_id": 138.0,
+              "gpu_end": 1792956477975345.0,
+              "gpu_start": 1792956477951730.0,
+              "low_latency_available": true,
+              "present_end": 1792956477949204.0,
+              "present_start": 1792956477948461.0,
+              "render_submit_end": 1792956477946830.0,
+              "render_submit_start": 1792956477946537.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956477946531.0,
+              "simulation_start": 1792956477946428.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 0,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    },
+    {
+      "case": "final-d37b63e72b-strict-d3d12-sdk214-quality-Recommended-0-motion",
+      "input": "<WORKSPACE>\\stabilization-20261026\\gpu\\final-d37b63e72b-strict-d3d12-sdk214-quality-Recommended-0-motion\\sdk-state.json",
+      "input_sha256": "7d14aaaffa33c6925a732005525fd765a228e339227b75dd1e4f8130926505d0",
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "receipt_exit_code": 0,
+      "all_samples": {
+        "rows": 160,
+        "result_counts": {
+          "0.0": 160
+        },
+        "low_latency_available_rows": 160,
+        "report_available_rows": 160,
+        "all_exported_times_zero_rows": 80,
+        "any_nonzero_timestamp_rows": 80,
+        "positive_frame_id_and_all_eight_timestamps_rows": 80,
+        "unique_positive_report_frame_ids": 80,
+        "report_frame_id_min": 77,
+        "report_frame_id_max": 157,
+        "zero_fields_in_positive_frame_id_reports": {
+          "simulation_start": 0,
+          "simulation_end": 0,
+          "render_submit_start": 0,
+          "render_submit_end": 0,
+          "present_start": 0,
+          "present_end": 0,
+          "gpu_start": 0,
+          "gpu_end": 0
+        },
+        "first_complete": {
+          "engine_frame": 80,
+          "requested_mode": "quality",
+          "reflex": {
+            "frame_id": 77.0,
+            "gpu_end": 1792956634350142.0,
+            "gpu_start": 1792956634334819.0,
+            "low_latency_available": true,
+            "present_end": 1792956634346545.0,
+            "present_start": 1792956634346539.0,
+            "render_submit_end": 1792956634343785.0,
+            "render_submit_start": 1792956634343594.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956634343586.0,
+            "simulation_start": 1792956634343411.0
+          }
+        },
+        "last_complete": {
+          "engine_frame": 159,
+          "requested_mode": "native",
+          "reflex": {
+            "frame_id": 157.0,
+            "gpu_end": 1792956636129008.0,
+            "gpu_start": 1792956636128240.0,
+            "low_latency_available": true,
+            "present_end": 1792956636127471.0,
+            "present_start": 1792956636127461.0,
+            "render_submit_end": 1792956636125136.0,
+            "render_submit_start": 1792956636124960.0,
+            "report_available": true,
+            "result": 0.0,
+            "simulation_end": 1792956636124953.0,
+            "simulation_start": 1792956636124793.0
+          }
+        },
+        "reversed_timestamp_pairs": {
+          "simulation_start -> simulation_end": 0,
+          "render_submit_start -> render_submit_end": 0,
+          "present_start -> present_end": 0,
+          "gpu_start -> gpu_end": 0
+        },
+        "gpu_start_before_simulation_start_rows": 72,
+        "report_frame_id_regressions_in_positive_samples": 0
+      },
+      "by_requested_mode": {
+        "native": {
+          "rows": 12,
+          "result_counts": {
+            "0.0": 12
+          },
+          "low_latency_available_rows": 12,
+          "report_available_rows": 12,
+          "all_exported_times_zero_rows": 0,
+          "any_nonzero_timestamp_rows": 12,
+          "positive_frame_id_and_all_eight_timestamps_rows": 12,
+          "unique_positive_report_frame_ids": 12,
+          "report_frame_id_min": 146,
+          "report_frame_id_max": 157,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 148,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 146.0,
+              "gpu_end": 1792956635926401.0,
+              "gpu_start": 1792956635899751.0,
+              "low_latency_available": true,
+              "present_end": 1792956635920510.0,
+              "present_start": 1792956635920504.0,
+              "render_submit_end": 1792956635917534.0,
+              "render_submit_start": 1792956635917326.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956635917321.0,
+              "simulation_start": 1792956635917224.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 159,
+            "requested_mode": "native",
+            "reflex": {
+              "frame_id": 157.0,
+              "gpu_end": 1792956636129008.0,
+              "gpu_start": 1792956636128240.0,
+              "low_latency_available": true,
+              "present_end": 1792956636127471.0,
+              "present_start": 1792956636127461.0,
+              "render_submit_end": 1792956636125136.0,
+              "render_submit_start": 1792956636124960.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956636124953.0,
+              "simulation_start": 1792956636124793.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 4,
+          "report_frame_id_regressions_in_positive_samples": 0
+        },
+        "quality": {
+          "rows": 148,
+          "result_counts": {
+            "0.0": 148
+          },
+          "low_latency_available_rows": 148,
+          "report_available_rows": 148,
+          "all_exported_times_zero_rows": 80,
+          "any_nonzero_timestamp_rows": 68,
+          "positive_frame_id_and_all_eight_timestamps_rows": 68,
+          "unique_positive_report_frame_ids": 68,
+          "report_frame_id_min": 77,
+          "report_frame_id_max": 144,
+          "zero_fields_in_positive_frame_id_reports": {
+            "simulation_start": 0,
+            "simulation_end": 0,
+            "render_submit_start": 0,
+            "render_submit_end": 0,
+            "present_start": 0,
+            "present_end": 0,
+            "gpu_start": 0,
+            "gpu_end": 0
+          },
+          "first_complete": {
+            "engine_frame": 80,
+            "requested_mode": "quality",
+            "reflex": {
+              "frame_id": 77.0,
+              "gpu_end": 1792956634350142.0,
+              "gpu_start": 1792956634334819.0,
+              "low_latency_available": true,
+              "present_end": 1792956634346545.0,
+              "present_start": 1792956634346539.0,
+              "render_submit_end": 1792956634343785.0,
+              "render_submit_start": 1792956634343594.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956634343586.0,
+              "simulation_start": 1792956634343411.0
+            }
+          },
+          "last_complete": {
+            "engine_frame": 147,
+            "requested_mode": "quality",
+            "reflex": {
+              "frame_id": 144.0,
+              "gpu_end": 1792956635872291.0,
+              "gpu_start": 1792956635845458.0,
+              "low_latency_available": true,
+              "present_end": 1792956635866317.0,
+              "present_start": 1792956635866309.0,
+              "render_submit_end": 1792956635863228.0,
+              "render_submit_start": 1792956635863035.0,
+              "report_available": true,
+              "result": 0.0,
+              "simulation_end": 1792956635863030.0,
+              "simulation_start": 1792956635862926.0
+            }
+          },
+          "reversed_timestamp_pairs": {
+            "simulation_start -> simulation_end": 0,
+            "render_submit_start -> render_submit_end": 0,
+            "present_start -> present_end": 0,
+            "gpu_start -> gpu_end": 0
+          },
+          "gpu_start_before_simulation_start_rows": 68,
+          "report_frame_id_regressions_in_positive_samples": 0
+        }
+      }
+    }
+  ]
+}

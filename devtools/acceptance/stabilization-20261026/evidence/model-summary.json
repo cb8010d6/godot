@@ -1,0 +1,246 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/final-d37b63e72b-model-matrix.json",
+      "bytes": 12531,
+      "sha256": "d9fb5bf45b70d03ea30e5ab787b3b302eb14a411ea695df2e7eccde55a4b093c"
+    }
+  ],
+  "data": [
+    {
+      "label": "final-d37b63e72b-model-vulkan-sdk214-ultra_performance-L-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "ultra_performance",
+      "preset_requested": "L",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=4 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [
+        "DLSS render size adjusted to SDK bounds: requested=854x480 selected=853x480 output=2560x1440"
+      ],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-vulkan-sdk214-quality-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "quality",
+      "preset_requested": "M",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-vulkan-sdk214-balanced-Recommended-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "balanced",
+      "preset_requested": "Recommended",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-vulkan-sdk214-performance-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "performance",
+      "preset_requested": "M",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-vulkan-sdk214-dlaa-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "vulkan",
+      "mode": "dlaa",
+      "preset_requested": "M",
+      "diagnostics": {
+        "Loader Message": 1
+      },
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-d3d12-sdk214-ultra_performance-L-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "ultra_performance",
+      "preset_requested": "L",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=4 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [
+        "DLSS render size adjusted to SDK bounds: requested=854x480 selected=853x480 output=2560x1440"
+      ],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-d3d12-sdk214-quality-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "quality",
+      "preset_requested": "M",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-d3d12-sdk214-balanced-Recommended-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "balanced",
+      "preset_requested": "Recommended",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-d3d12-sdk214-performance-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "performance",
+      "preset_requested": "M",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    },
+    {
+      "label": "final-d37b63e72b-model-d3d12-sdk214-dlaa-M-0-indicator",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "engine_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "backend": "d3d12",
+      "mode": "dlaa",
+      "preset_requested": "M",
+      "diagnostics": {},
+      "sdk_request_log": [
+        "DLSS SR requested options: viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+      ],
+      "size_adjustments": [],
+      "engine_errors": [],
+      "d3d_errors": [],
+      "sdk_samples": 112,
+      "foreground_presented_two_samples": 0,
+      "scene_passed": true,
+      "strict_clean": null,
+      "validation_requested": false,
+      "scope_note": "Real rendered model/SDK-option check without validation layers; empty diagnostics are not strict-validation evidence. Raw command, image and log unchanged."
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-d37.json",
+      "bytes": 1071,
+      "sha256": "04eca9c8c4506c141f38e5b7e5ec01ff8a4b9b051c83b47eaf6104b0358ff42f"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/full-release-c1fc.json",
+      "bytes": 1074,
+      "sha256": "a8164db07d9798fcef43c036ac2904673f4312b5bb733fb48c26f84ad296157e"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/build-doc-cache-editor.json",
+      "bytes": 1057,
+      "sha256": "6f895f4829cdbbc0f75437801954eab2dd494c295800f686e3c369ad5feb45cf"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-unittests-d37.json",
+      "bytes": 1224,
+      "sha256": "67c21d68100bad9bf80fecfe5448c2586397a91800f3bf844a7599a541d325a9"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-sizing-d37.json",
+      "bytes": 970,
+      "sha256": "254bf8ba9d4d926c21b7bec046b9312d3acd1d1844697d2d3d3a25d6123014a1"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/cpu-api-presets-d37.json",
+      "bytes": 968,
+      "sha256": "4748ae04650053948d32d1c234b1aed2175def1a0288d10f8c89c85d4b19e493"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-d37.json",
+      "bytes": 1440,
+      "sha256": "7ab0743f21cee79104405393a8451d2fad6749eb9cc94e026712250de2bcf855"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/source-generators-c1.json",
+      "bytes": 1463,
+      "sha256": "d96cf7f8cee93de61712580d83d569afdeb8ed3113ca8d155dee6444c93d7cb0"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-standard.json",
+      "bytes": 966,
+      "sha256": "4d838188fef907afaadc40085a8a00e854945bb14978619e20474f97e6cf9b1d"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-d37-mono.json",
+      "bytes": 976,
+      "sha256": "788a4c61575a50ea719fea2db750fb3cfdb27b071327f3d98a614adab17b05df"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-standard.json",
+      "bytes": 1036,
+      "sha256": "29e1707435231285efa3360453b37d24cb134da4bf39d55f4d383d52c4c8f03b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/repo-smoke-c1-mono.json",
+      "bytes": 1046,
+      "sha256": "30438ea059ce1d26ce9004488999e19f92b11498e80d51d676a0e553a6997430"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/managed-api-d37.json",
+      "bytes": 1693,
+      "sha256": "ce1f2513b7f7e1d22e798b2338e9133733f540aeea23e8d3156f782cbff2821e"
+    }
+  ],
+  "data": {
+    "full-release-d37.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/build/build.ps1",
+        "-Target",
+        "release",
+        "-KeepGoing",
+        "-Jobs",
+        "4",
+        "-VersionStatus",
+        "beta1"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 382.0,
+      "started_utc": "2026-10-25T19:19:00.071676+00:00",
+      "finished_utc": "2026-10-25T19:25:21.998521+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\full-release-d37.log"
+    },
+    "full-release-c1fc.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/build/build.ps1",
+        "-Target",
+        "release",
+        "-KeepGoing",
+        "-Jobs",
+        "4",
+        "-VersionStatus",
+        "beta1"
+      ],
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 527.406,
+      "started_utc": "2026-10-25T20:27:25.676342+00:00",
+      "finished_utc": "2026-10-25T20:36:13.019407+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\full-release-c1fc.log"
+    },
+    "build-doc-cache-editor.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/build/build.ps1",
+        "-Target",
+        "editor",
+        "-Jobs",
+        "4",
+        "-VersionStatus",
+        "beta1"
+      ],
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 83.828,
+      "started_utc": "2026-10-25T20:23:25.274954+00:00",
+      "finished_utc": "2026-10-25T20:24:49.036142+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\build-doc-cache-editor.log"
+    },
+    "cpu-unittests-d37.json": {
+      "command": [
+        "<WORKSPACE>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/test",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "bytes": 274424,
+          "sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14"
+        }
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.5,
+      "started_utc": "2026-10-25T19:35:14.002432+00:00",
+      "finished_utc": "2026-10-25T19:35:14.427932+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\cpu-unittests-d37.log"
+    },
+    "cpu-sizing-d37.json": {
+      "command": [
+        "cmd",
+        "/c",
+        "<WORKSPACE>\\stabilization-20261026\\agent-ultra\\test-cpu.cmd"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 1.735,
+      "started_utc": "2026-10-25T19:35:02.326932+00:00",
+      "finished_utc": "2026-10-25T19:35:03.983932+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\cpu-sizing-d37.log"
+    },
+    "cpu-api-presets-d37.json": {
+      "command": [
+        "cmd",
+        "/c",
+        "<WORKSPACE>\\stabilization-20261026\\compile_checks.cmd"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 2.594,
+      "started_utc": "2026-10-25T19:34:54.174932+00:00",
+      "finished_utc": "2026-10-25T19:34:56.698932+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\cpu-api-presets-d37.log"
+    },
+    "source-generators-d37.json": {
+      "command": [
+        "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe",
+        "test",
+        "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Tests/Godot.SourceGenerators.Tests.csproj",
+        "--configuration",
+        "Release",
+        "--no-build",
+        "--no-restore",
+        "--logger",
+        "trx",
+        "--results-directory",
+        "<WORKSPACE>\\stabilization-20261026\\sourcegen-d37"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe",
+          "bytes": 167208,
+          "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+        }
+      ],
+      "exit_code": 0,
+      "duration_seconds": 11.484,
+      "started_utc": "2026-10-25T19:35:20.015934+00:00",
+      "finished_utc": "2026-10-25T19:35:31.416447+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\source-generators-d37.log"
+    },
+    "source-generators-c1.json": {
+      "command": [
+        "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe",
+        "test",
+        "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Tests/Godot.SourceGenerators.Tests.csproj",
+        "--configuration",
+        "Release",
+        "--no-build",
+        "--no-restore",
+        "--logger",
+        "trx",
+        "--results-directory",
+        "<WORKSPACE>\\stabilization-20261026\\sourcegen-c1"
+      ],
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": "?? devtools/acceptance/\n",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe",
+          "bytes": 167208,
+          "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+        }
+      ],
+      "exit_code": 0,
+      "duration_seconds": 16.719,
+      "started_utc": "2026-10-25T21:03:28.446753+00:00",
+      "finished_utc": "2026-10-25T21:03:45.089225+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\source-generators-c1.log"
+    },
+    "repo-smoke-d37-standard.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/test/smoke.ps1"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 28.032,
+      "started_utc": "2026-10-25T19:52:41.744811+00:00",
+      "finished_utc": "2026-10-25T19:53:09.703965+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\repo-smoke-d37-standard.log"
+    },
+    "repo-smoke-d37-mono.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/test/smoke.ps1",
+        "-Mono"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 24.172,
+      "started_utc": "2026-10-25T19:53:10.092563+00:00",
+      "finished_utc": "2026-10-25T19:53:34.189891+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\repo-smoke-d37-mono.log"
+    },
+    "repo-smoke-c1-standard.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/test/smoke.ps1"
+      ],
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": " M devtools/STABILIZATION_4_8_BETA1_SL214.md\n?? devtools/acceptance/\n",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 29.172,
+      "started_utc": "2026-10-25T21:05:17.798832+00:00",
+      "finished_utc": "2026-10-25T21:05:46.907148+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\repo-smoke-c1-standard.log"
+    },
+    "repo-smoke-c1-mono.json": {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "devtools/test/smoke.ps1",
+        "-Mono"
+      ],
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": " M devtools/STABILIZATION_4_8_BETA1_SL214.md\n?? devtools/acceptance/\n",
+      "command_input_binaries": [],
+      "exit_code": 0,
+      "duration_seconds": 24.234,
+      "started_utc": "2026-10-25T21:05:47.307913+00:00",
+      "finished_utc": "2026-10-25T21:06:11.461985+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\repo-smoke-c1-mono.log"
+    },
+    "managed-api-d37.json": {
+      "command": [
+        "<WORKSPACE>\\.venv\\Scripts\\python.exe",
+        "devtools/test/test_csharp_smoke.py",
+        "--godot",
+        "<WORKSPACE>\\source\\bin\\godot.windows.editor.x86_64.mono.exe",
+        "--dotnet",
+        "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe"
+      ],
+      "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "worktree_status": "",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "bytes": 274424,
+          "sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14"
+        },
+        {
+          "file": "<WORKSPACE>\\source\\bin\\godot.windows.editor.x86_64.mono.exe",
+          "bytes": 162364416,
+          "sha256": "3a344c27ef5a26e22154933f20f994556630be70f934128b8db16d4525513dea"
+        },
+        {
+          "file": "<WORKSPACE>\\toolchains\\dotnet10\\dotnet.exe",
+          "bytes": 167208,
+          "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+        }
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.64,
+      "started_utc": "2026-10-25T20:09:38.458606+00:00",
+      "finished_utc": "2026-10-25T20:09:43.846719+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\managed-api-d37.log"
+    }
+  }
+}

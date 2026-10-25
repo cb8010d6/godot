@@ -1,0 +1,6 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.42
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+test_streamline_dlss_sizing.cpp
+PASS: 35 CPU sizing checks (no SDK runtime or GPU execution)

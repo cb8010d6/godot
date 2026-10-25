@@ -1,0 +1,15 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/dlss-indicator-backup.json",
+      "bytes": 98,
+      "sha256": "f40d3bc4e00b30ed8cb2a96bbf221918fe1ef319f40a65883789996293ee9277"
+    }
+  ],
+  "data": {
+    "value_present": false,
+    "value": null,
+    "saved_utc": "2026-10-25T17:22:07.4394622Z"
+  }
+}

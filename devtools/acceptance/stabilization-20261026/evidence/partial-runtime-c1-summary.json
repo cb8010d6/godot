@@ -1,0 +1,157 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-runtime-c1-matrix.json",
+      "bytes": 1345,
+      "sha256": "2fb1e151aea46e0f3f609c2f2bdbc36e5b3e3f7c6b836a65b2137884ff4511f7"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-vulkan.json",
+      "bytes": 1755,
+      "sha256": "9c12204432d4603e0b4ba6093b9bb480ad6238b62fe18c77578c9d0e96de96f4"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/partial-c1-d3d12.json",
+      "bytes": 1752,
+      "sha256": "77101c3865cc1341bbe1ec4a2fb023647ac463c929a0e2756f50542858b946df"
+    }
+  ],
+  "data": {
+    "partial-runtime-c1-matrix.json": [
+      {
+        "label": "partial-c1-vulkan",
+        "source_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+        "checks": {
+          "exit_zero": true,
+          "correct_engine": true,
+          "correct_backend": true,
+          "dlss_not_advertised": true,
+          "scene_completed": true,
+          "actual_capture": true,
+          "ngx_after_empty": true
+        },
+        "startup_and_fallback_verified": true,
+        "all_error_lines": [
+          "ERROR: sl::eErrorNoPlugins"
+        ],
+        "scope": "Only signed sl.interposer.dll present; plugins/NGX DLLs deliberately absent. Expected SDK initialization diagnostics are retained; not a strict graphics-validation pass."
+      },
+      {
+        "label": "partial-c1-d3d12",
+        "source_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+        "checks": {
+          "exit_zero": true,
+          "correct_engine": true,
+          "correct_backend": true,
+          "dlss_not_advertised": true,
+          "scene_completed": true,
+          "actual_capture": true,
+          "ngx_after_empty": true
+        },
+        "startup_and_fallback_verified": true,
+        "all_error_lines": [
+          "ERROR: sl::eErrorNoPlugins",
+          "ERROR: sl::eErrorNoPlugins"
+        ],
+        "scope": "Only signed sl.interposer.dll present; plugins/NGX DLLs deliberately absent. Expected SDK initialization diagnostics are retained; not a strict graphics-validation pass."
+      }
+    ],
+    "partial-c1-vulkan.json": {
+      "command": [
+        "<WORKSPACE>\\stabilization-20261026\\builds\\partial-c1fc0252a9\\godot.windows.editor.x86_64.exe",
+        "--verbose",
+        "--rendering-driver",
+        "vulkan",
+        "--path",
+        "<WORKSPACE>\\stabilization-20261026\\gpu-fixture",
+        "--",
+        "--mode=quality",
+        "--expect-no-sdk",
+        "--sharpness=0",
+        "--suite=indicator",
+        "--warmup=40",
+        "--output=<WORKSPACE>\\stabilization-20261026\\gpu\\partial-c1-vulkan"
+      ],
+      "cwd": "<WORKSPACE>\\source",
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": " M devtools/STABILIZATION_4_8_BETA1_SL214.md\n?? devtools/acceptance/\n",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\stabilization-20261026\\builds\\partial-c1fc0252a9\\godot.windows.editor.x86_64.exe",
+          "bytes": 161794560,
+          "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+        }
+      ],
+      "environment": {
+        "GODOT_VERSION_STATUS": "beta1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_RG_REORDER": null,
+        "GODOT_RG_FULL_BARRIERS": null,
+        "LOCALAPPDATA": "<WORKSPACE>\\toolchains\\cache\\local",
+        "TEMP": "<WORKSPACE>\\toolchains\\cache\\tmp",
+        "NUGET_PACKAGES": "<WORKSPACE>\\toolchains\\cache\\nuget",
+        "DOTNET_ROOT": "<WORKSPACE>\\toolchains\\dotnet10",
+        "CUDA_PATH": "<WORKSPACE>\\toolchains\\cuda12.8"
+      },
+      "started_utc": "2026-10-25T21:06:45.957447+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\partial-c1-vulkan.log",
+      "ngx_updaters_before": [],
+      "test_job_assigned": true,
+      "pid": 49496,
+      "exit_code": 0,
+      "test_job_descendants_closed": [],
+      "ngx_updaters_after": [],
+      "duration_seconds": 4.047,
+      "finished_utc": "2026-10-25T21:06:49.785918+00:00"
+    },
+    "partial-c1-d3d12.json": {
+      "command": [
+        "<WORKSPACE>\\stabilization-20261026\\builds\\partial-c1fc0252a9\\godot.windows.editor.x86_64.exe",
+        "--verbose",
+        "--rendering-driver",
+        "d3d12",
+        "--path",
+        "<WORKSPACE>\\stabilization-20261026\\gpu-fixture",
+        "--",
+        "--mode=quality",
+        "--expect-no-sdk",
+        "--sharpness=0",
+        "--suite=indicator",
+        "--warmup=40",
+        "--output=<WORKSPACE>\\stabilization-20261026\\gpu\\partial-c1-d3d12"
+      ],
+      "cwd": "<WORKSPACE>\\source",
+      "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+      "worktree_status": " M devtools/STABILIZATION_4_8_BETA1_SL214.md\n?? devtools/acceptance/\n",
+      "command_input_binaries": [
+        {
+          "file": "<WORKSPACE>\\stabilization-20261026\\builds\\partial-c1fc0252a9\\godot.windows.editor.x86_64.exe",
+          "bytes": 161794560,
+          "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+        }
+      ],
+      "environment": {
+        "GODOT_VERSION_STATUS": "beta1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_RG_REORDER": null,
+        "GODOT_RG_FULL_BARRIERS": null,
+        "LOCALAPPDATA": "<WORKSPACE>\\toolchains\\cache\\local",
+        "TEMP": "<WORKSPACE>\\toolchains\\cache\\tmp",
+        "NUGET_PACKAGES": "<WORKSPACE>\\toolchains\\cache\\nuget",
+        "DOTNET_ROOT": "<WORKSPACE>\\toolchains\\dotnet10",
+        "CUDA_PATH": "<WORKSPACE>\\toolchains\\cuda12.8"
+      },
+      "started_utc": "2026-10-25T21:06:50.206314+00:00",
+      "log": "<WORKSPACE>\\stabilization-20261026\\logs\\partial-c1-d3d12.log",
+      "ngx_updaters_before": [],
+      "test_job_assigned": true,
+      "pid": 34964,
+      "exit_code": 0,
+      "test_job_descendants_closed": [],
+      "ngx_updaters_after": [],
+      "duration_seconds": 4.047,
+      "finished_utc": "2026-10-25T21:06:54.025300+00:00"
+    }
+  }
+}

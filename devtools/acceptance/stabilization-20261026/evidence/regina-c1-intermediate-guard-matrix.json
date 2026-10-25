@@ -1,0 +1,132 @@
+[
+  {
+    "label": "regina-c1-production-d3d12-skate2",
+    "source_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+    "command": [
+      "<WORKSPACE>\\stabilization-20261026\\regina-export-c1fc0252a9-01\\game\\RTXAcceptance.exe",
+      "--verbose",
+      "--rendering-method",
+      "forward_plus",
+      "--rendering-driver",
+      "d3d12",
+      "--resolution",
+      "1600x900",
+      "--fixed-fps",
+      "60",
+      "--quit-after",
+      "1200",
+      "--",
+      "--game=skate",
+      "--demo=2",
+      "--map=0",
+      "--at=1,4,8",
+      "--shots=<WORKSPACE>\\stabilization-20261026\\regina-export-c1fc0252a9-01\\production-d3d12\\capture\\frame"
+    ],
+    "receipt": "<WORKSPACE>\\stabilization-20261026\\regina-c1-production-d3d12-skate2.json",
+    "checks": {
+      "exit_zero": true,
+      "no_errors": true,
+      "correct_version": true,
+      "correct_api": true,
+      "gpu_4060": true,
+      "actual_cli_game": true,
+      "three_real_screenshots": true,
+      "job_owned": true,
+      "no_owned_ngx": true,
+      "natural_exit_before_guard": false
+    },
+    "images": [
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-d3d12\\capture\\frame_0.png",
+        "sha256": "4b9f7ec12221170b13f53ff14e96f04d75a43ca920a2de65c59b8c15469b48ad",
+        "size": [
+          1600,
+          900
+        ]
+      },
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-d3d12\\capture\\frame_1.png",
+        "sha256": "c47b399a4a07ebb83c2011cbd6d7486236399496543ea64d3dfd22a6ab3f0669",
+        "size": [
+          1600,
+          900
+        ]
+      },
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-d3d12\\capture\\frame_2.png",
+        "sha256": "11c5b7967f8a51f4f6fe8827185dc055c4665acf8a86ff696bfe51f6a3e52683",
+        "size": [
+          1600,
+          900
+        ]
+      }
+    ],
+    "passed": false,
+    "scope": "Actual exported PCK, production --shots exits through RSExit after the final 8s capture; --quit-after1200 is a 20s guard, no --path or external script."
+  },
+  {
+    "label": "regina-c1-production-vulkan-basketball4",
+    "source_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+    "command": [
+      "<WORKSPACE>\\stabilization-20261026\\regina-export-c1fc0252a9-01\\game\\RTXAcceptance.exe",
+      "--verbose",
+      "--rendering-method",
+      "forward_plus",
+      "--rendering-driver",
+      "vulkan",
+      "--resolution",
+      "1600x900",
+      "--fixed-fps",
+      "60",
+      "--quit-after",
+      "1200",
+      "--",
+      "--game=basketball",
+      "--demo=4",
+      "--map=0",
+      "--at=1,4,8",
+      "--shots=<WORKSPACE>\\stabilization-20261026\\regina-export-c1fc0252a9-01\\production-vulkan\\capture\\frame"
+    ],
+    "receipt": "<WORKSPACE>\\stabilization-20261026\\regina-c1-production-vulkan-basketball4.json",
+    "checks": {
+      "exit_zero": true,
+      "no_errors": true,
+      "correct_version": true,
+      "correct_api": true,
+      "gpu_4060": true,
+      "actual_cli_game": true,
+      "three_real_screenshots": true,
+      "job_owned": true,
+      "no_owned_ngx": true,
+      "natural_exit_before_guard": false
+    },
+    "images": [
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-vulkan\\capture\\frame_0.png",
+        "sha256": "9403e31e593e51faa07b36eac898144ffb9bbbc3ae54554cb3118b328af6b8fd",
+        "size": [
+          1600,
+          900
+        ]
+      },
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-vulkan\\capture\\frame_1.png",
+        "sha256": "a217ccf280e821e0885843233255a79e031d2c4f55309dc04142329dd3ca6bf4",
+        "size": [
+          1600,
+          900
+        ]
+      },
+      {
+        "file": "regina-export-c1fc0252a9-01\\production-vulkan\\capture\\frame_2.png",
+        "sha256": "505f828ddaa441753403ef2f23d368c5abf70207663554df364a72b17c271de6",
+        "size": [
+          1600,
+          900
+        ]
+      }
+    ],
+    "passed": false,
+    "scope": "Actual exported PCK, production --shots exits through RSExit after the final 8s capture; --quit-after1200 is a 20s guard, no --path or external script."
+  }
+]

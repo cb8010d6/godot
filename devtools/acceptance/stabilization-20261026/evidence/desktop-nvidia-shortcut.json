@@ -1,0 +1,9 @@
+{
+  "path": "<USERPROFILE>\\Desktop\\Regina Sports NVIDIA.lnk",
+  "target": "<SYSTEM32>\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "arguments": "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File \"<WORKSPACE>\\stabilization-20261026\\launch_nvidia.ps1\" -EnginePath \"<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe\" -AllowedEngineSha c1fc0252a98913d3be394417b6977a8c5aa4d77d -ExpectedBinarySha256 436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20 -Renderer d3d12",
+  "working_directory": "<WORKSPACE>\\stabilization-20261026",
+  "icon": "<ABS_ROOT>/Regina-main\\regina-sports\\tools\\regina_sports.ico,0",
+  "shortcut_sha256": "73B3C8A2F9EB8AAA53A5396587B29669FF71722855D4D9940E2C7EDCF1C51DBD",
+  "original_shortcut_sha256": "D78160BF218622C7E29F04F9965AD82BEF73AD2305AEE8EF393357A3389B2DE9"
+}

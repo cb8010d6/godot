@@ -1,0 +1,30 @@
+test_all_five_stages_keep_their_source_and_order (test_raytracing_builders.RaytracingBuilderTests.test_all_five_stages_keep_their_source_and_order) ... ok
+test_hit_group_without_raygen_preserves_sparse_offsets (test_raytracing_builders.RaytracingBuilderTests.test_hit_group_without_raygen_preserves_sparse_offsets) ... ok
+test_raygen_only_leaves_other_stages_null (test_raytracing_builders.RaytracingBuilderTests.test_raygen_only_leaves_other_stages_null) ... ok
+test_changed_download_is_rejected_before_archive_access (test_streamline_manifest.StreamlineManifestTest.test_changed_download_is_rejected_before_archive_access) ... ok
+test_complete_release_inventory_is_accepted (test_streamline_manifest.StreamlineManifestTest.test_complete_release_inventory_is_accepted) ... ok
+test_development_files_do_not_replace_missing_release_entries (test_streamline_manifest.StreamlineManifestTest.test_development_files_do_not_replace_missing_release_entries) ... ok
+test_empty_duplicate_and_missing_archive_entries_are_rejected (test_streamline_manifest.StreamlineManifestTest.test_empty_duplicate_and_missing_archive_entries_are_rejected) ... ok
+test_metadata_drift_and_unpinned_urls_are_rejected (test_streamline_manifest.StreamlineManifestTest.test_metadata_drift_and_unpinned_urls_are_rejected) ... ok
+test_mismatched_compiled_header_version_is_rejected (test_streamline_manifest.StreamlineManifestTest.test_mismatched_compiled_header_version_is_rejected) ... ok
+test_missing_feature_plugins_or_licenses_are_rejected (test_streamline_manifest.StreamlineManifestTest.test_missing_feature_plugins_or_licenses_are_rejected) ... ok
+test_pinned_release_metadata_matches_compiled_headers (test_streamline_manifest.StreamlineManifestTest.test_pinned_release_metadata_matches_compiled_headers) ... ok
+test_public_packages_accept_engine_and_physics_libraries (test_streamline_manifest.StreamlineManifestTest.test_public_packages_accept_engine_and_physics_libraries) ... ok
+test_public_packages_reject_runtime_dlls_in_any_folder_or_case (test_streamline_manifest.StreamlineManifestTest.test_public_packages_reject_runtime_dlls_in_any_folder_or_case) ... ok
+test_unsafe_or_duplicate_windows_filenames_are_rejected (test_streamline_manifest.StreamlineManifestTest.test_unsafe_or_duplicate_windows_filenames_are_rejected) ... ok
+test_vendored_sdk_accepts_newline_normalization (test_streamline_manifest.StreamlineManifestTest.test_vendored_sdk_accepts_newline_normalization) ... ok
+test_vendored_sdk_rejects_missing_or_duplicate_archive_files (test_streamline_manifest.StreamlineManifestTest.test_vendored_sdk_rejects_missing_or_duplicate_archive_files) ... ok
+test_vendored_sdk_rejects_missing_or_extra_headers (test_streamline_manifest.StreamlineManifestTest.test_vendored_sdk_rejects_missing_or_extra_headers) ... ok
+test_vendored_sdk_rejects_tampered_header_or_license (test_streamline_manifest.StreamlineManifestTest.test_vendored_sdk_rejects_tampered_header_or_license) ... ok
+test_missing_blast_or_flow_prevents_editor_package (test_windows_packages.WindowsPackageFixtureTest.test_missing_blast_or_flow_prevents_editor_package) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_missing_private_runtime_prevents_private_package (test_windows_packages.WindowsPackageFixtureTest.test_missing_private_runtime_prevents_private_package) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_nested_nvidia_dll_in_mono_output_rejects_and_deletes_public_archive (test_windows_packages.WindowsPackageFixtureTest.test_nested_nvidia_dll_in_mono_output_rejects_and_deletes_public_archive) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_powershell_package_sources_parse (test_windows_packages.WindowsPackageFixtureTest.test_powershell_package_sources_parse) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_private_editor_uses_allowlist_and_omits_nvperf_and_extra_plugins (test_windows_packages.WindowsPackageFixtureTest.test_private_editor_uses_allowlist_and_omits_nvperf_and_extra_plugins) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_public_standard_and_mono_editor_archives (test_windows_packages.WindowsPackageFixtureTest.test_public_standard_and_mono_editor_archives) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+test_public_standard_and_mono_template_archives (test_windows_packages.WindowsPackageFixtureTest.test_public_standard_and_mono_template_archives) ... skipped 'requires Linux/Unix and PowerShell 7 (set PWSH)'
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.200s
+
+OK (skipped=7)

@@ -1,0 +1,26 @@
+Godot Engine v4.8.beta1.custom_build.c1fc0252a (2026-10-25 20:23:01 UTC) - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\editor-c1fc0252a9-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

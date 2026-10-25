@@ -1,0 +1,60 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "data": {
+    "machine_snapshot": {
+      "os": {
+        "Caption": "Microsoft Windows 10 Pro",
+        "Version": "10.0.19045",
+        "BuildNumber": "19045"
+      },
+      "cpu": {
+        "Name": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics     ",
+        "NumberOfCores": 8,
+        "NumberOfLogicalProcessors": 16
+      },
+      "memoryBytes": 33524641792,
+      "gpu": [
+        "NVIDIA GeForce RTX 4060 Laptop GPU, 610.88, 8188 MiB"
+      ],
+      "vs": "17.14.37806.7",
+      "msvc": [
+        "14.44.35207"
+      ],
+      "windowsSdk": [
+        "10.0.19041.0",
+        "10.0.26100.0"
+      ],
+      "vulkanSdkInstalled": false,
+      "vulkanHeader": [
+        "69:#define VK_HEADER_VERSION 335"
+      ],
+      "hags": 2,
+      "dotnetSdks": [
+        "9.0.319 [<PROGRAM_FILES>\\DOTNET\\sdk]"
+      ]
+    },
+    "intake": {
+      "branch": "local/windows-4.8-beta1-acceptance",
+      "head": "afa73e66c3fde2559d158e2caae2f1e08ad89ffc",
+      "cloud_head": "afa73e66c3fde2559d158e2caae2f1e08ad89ffc",
+      "base": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+      "stage_a": "4b97a9fc16fb9160f616258b3c72e1496565177d",
+      "stage_b": "0af58f0a62f05a901e99dde96f1654c35a6bdbc1",
+      "upstream": "4d10419cacd6d3009976e8f9fd3abd970fd58018",
+      "ancestry": {
+        "base_in_stage_a": true,
+        "pinned_upstream_in_stage_a": true,
+        "stage_a_in_stage_b": true,
+        "stage_b_in_cloud_head": true
+      },
+      "upstream_version_file_identical": true,
+      "binary_or_key_extensions_changed": [],
+      "conflict_markers": [],
+      "secret_pattern_candidates": []
+    },
+    "sdk_provenance": "Streamline SDK headers\n=====================\n\nUpstream: https://github.com/NVIDIA-RTX/Streamline\nVersion: v2.14.16\nCommit: 625db07d4bca5abc67d781c42af7e7fb0761f1b6\n\nSource archive:\nhttps://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.16/streamline-sdk-v2.14.16.zip\nSize: 276016170 bytes\nSHA-256: 32041e51db0cab709a271b72a352281b690c2abbd669a827809401a5dd23956b\n\nThe 24 include/*.h files and LICENSE.txt come from the verified official\narchive (LICENSE.txt is its license.txt). There are no local SDK patches.\nGit normalizes text line endings to LF according to the repository policy.\nNo NVIDIA runtime DLLs or model binaries are vendored here.\n\nThe engine still uses the existing global resource-tagging API. Its deprecated\nfunction type is aliased inside the SDK diagnostic scope in\ndrivers/streamline/streamline_headers.h; no SDK declaration is modified.\nThe new Neural Rendering and Dynamic MFG APIs are not enabled by this upgrade.\n",
+    "dotnet_version_observation": "10.0.402",
+    "legacy_report_toolchain_excerpt": "| 项目 | 实际环境 |\n| --- | --- |\n| 系统 | Windows 10 Pro 10.0.19045，32 GiB 内存 |\n| CPU | Ryzen 9 7940H，8 核 / 16 线程 |\n| GPU / 驱动 | RTX 4060 Laptop 8 GB / NVIDIA 610.88；另有 AMD 780M |\n| VS / MSVC | Visual Studio 2022 Community 17.14.42；MSVC 14.44.35207，cl 19.44.35229.0，v143 |\n| Windows SDK | 实际选择 10.0.26100.0；系统另装 10.0.19041.0 |\n| Vulkan | 无独立 Vulkan SDK；仓库头 1.4.335，实际驱动 API 1.4.341 |\n| 验证层 | 先用已有 1.3.285 控制，确认过旧；正式诊断使用 Khronos 1.4.366 nightly `bc5da10620168c5370f82257528c08756e19a7b2` |\n| D3D12 | Forward+ 实际设备级别 12_0，随构建部署 Agility DLL |\n| .NET | F 盘便携 SDK 10.0.402 / runtime 10.0.13；项目 net10.0；系统原有 SDK 9 不用于本次构建 |\n| Python / SCons | Python 3.12.10，SCons 4.11.1 |\n| 原生依赖 | PhysX ovphysx-0.5.11 / 5.10.0，真实 CPU/CUDA GPU 库、Blast、Flow；CUDA 编译器 12.8.93，runtime/CCCL 12.8.90 |",
+    "locked_source_audit_excerpt": "| Source | Locked revision | Role |\n| --- | --- | --- |\n| Diginaat `dev` | `25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa` | Clean starting tree, custom build 0.7.3 |\n| Diginaat default `nvidia-dlss-physx` | `0d2488e2912b7004cd510906f5a6a61b09c6cf5f` | Two README-only commits ahead of `dev` |\n| Official Godot | `4d10419cacd6d3009976e8f9fd3abd970fd58018` | 4.8 beta 1; 172 upstream commits after the previous sync |\n| NVIDIA Godot | `135dff3887a3d2ccf45cafbd9bdffa7b718e1e76` | Existing RTX integration, already an ancestor of `dev` |\n| Streamline `v2.14.16` | `625db07d4bca5abc67d781c42af7e7fb0761f1b6` | Complete official header set, replacing 2.10.0 |\n| PhysX module | Existing vendored module and adaptations | Unchanged SDK pin `ovphysx-0.5.11` (PhysX 5.10.0) |"
+  }
+}

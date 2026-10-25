@@ -1,0 +1,103 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/remaining-render-d37-matrix.json",
+      "bytes": 2110,
+      "sha256": "38230e1972c40f95560e887f94abc14f9120c89dd80d7521d39c65c20054f71c"
+    }
+  ],
+  "data": [
+    {
+      "label": "managed-api-d37",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {
+        "CSHARP_PHYSX_SMOKE_PASS": true
+      },
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "rr-complex-d37-import",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 3221225477,
+      "errors": [
+        "ERROR: Parameter \"singleton\" is null."
+      ],
+      "markers": {},
+      "skipped": false,
+      "passed": false
+    },
+    {
+      "label": "rr-complex-d37-vulkan",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {
+        "RR_SUITE_FINISHED": true
+      },
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-none",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {
+        "MEASURE": true
+      },
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-ddgi",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {
+        "MEASURE": true
+      },
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-scroll",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {},
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-light-switch",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {},
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-bake",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {},
+      "skipped": false,
+      "passed": true
+    },
+    {
+      "label": "ddgi-d37-load",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "markers": {},
+      "skipped": false,
+      "passed": true
+    }
+  ]
+}

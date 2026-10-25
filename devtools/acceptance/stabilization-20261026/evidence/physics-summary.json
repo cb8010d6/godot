@@ -1,0 +1,154 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/physics-d37-matrix.json",
+      "bytes": 5109,
+      "sha256": "996f330796ac8d2d36492cacf0880ff115010869613cf1cd2da501edc2510eff"
+    }
+  ],
+  "data": [
+    {
+      "label": "native-d37-physx-cpu",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "fall_pass": true,
+        "forced_cpu": true,
+        "gpu_disabled": true
+      },
+      "key_output": [
+        "[smoke] physics/3d/physics_engine = PhysX",
+        "[smoke] box y right after add_child = 5.000",
+        "[smoke] tick 1  y=4.997",
+        "[smoke] tick 2  y=4.992",
+        "[smoke] tick 3  y=4.984",
+        "[smoke] tick 4  y=4.973",
+        "[smoke] tick 5  y=4.959",
+        "[smoke] y: start=5.000 min=0.494 end=0.499  settled_tick=59  expected_rest~0.500  ticks=59",
+        "[smoke] PASS"
+      ],
+      "passed": true
+    },
+    {
+      "label": "native-d37-physx-gpu-rigid",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "fall_pass": true,
+        "cuda": true,
+        "gpu_initialized": true
+      },
+      "key_output": [
+        "PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.",
+        "PhysX 5.10.0 initialized [GPU].",
+        "[smoke] physics/3d/physics_engine = PhysX",
+        "[smoke] box y right after add_child = 5.000",
+        "[smoke] tick 1  y=4.997",
+        "[smoke] tick 2  y=4.992",
+        "[smoke] tick 3  y=4.984",
+        "[smoke] tick 4  y=4.973",
+        "[smoke] tick 5  y=4.959",
+        "[smoke] y: start=5.000 min=0.494 end=0.499  settled_tick=59  expected_rest~0.500  ticks=59",
+        "[smoke] PASS"
+      ],
+      "passed": true
+    },
+    {
+      "label": "native-d37-physx-gpu-volume",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "simulation_pass": true,
+        "cuda": true,
+        "gpu_initialized": true,
+        "four_native_volumes": true
+      },
+      "key_output": [
+        "PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.",
+        "PhysX 5.10.0 initialized [GPU].",
+        "[sbgpu] engine=PhysX solver=PGS",
+        "PhysX: SoftBody3D -> GPU PxDeformableVolume.",
+        "PhysX: SoftBody3D -> GPU PxDeformableVolume.",
+        "PhysX: SoftBody3D -> GPU PxDeformableVolume.",
+        "PhysX: SoftBody3D -> GPU PxDeformableVolume.",
+        "[sbgpu] PASS  (fell to y=0.70, deformed to h=1.41, punched +12.3 m; pin held at y=4.29; soft-vs-soft: n/a (PGS))"
+      ],
+      "passed": true
+    },
+    {
+      "label": "native-d37-blast-runtime",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "damage_split": true,
+        "native_pass": true
+      },
+      "key_output": [
+        "PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.",
+        "PhysX 5.10.0 initialized [GPU].",
+        "[blast_probe] engine = PhysX",
+        "[blast_probe] loaded, live_actor_count=1",
+        "[blast_probe] apply_radial_damage spawned=8 body_count=8",
+        "[blast_probe] overall -> PASS"
+      ],
+      "passed": true
+    },
+    {
+      "label": "native-d37-flow-readback-vulkan",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "flow_pass": true,
+        "no_assertion_failure": true,
+        "real_checks": true
+      },
+      "key_output": [
+        "PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.",
+        "PhysX 5.10.0 initialized [GPU].",
+        "  [ok] Flow running                                   ",
+        "  [ok] fields read back from the GPU                  8164864 bytes",
+        "  [ok] hot gas rose above the emitter                 top 4.78 m",
+        "  [ok] and stayed near it sideways                    center (0.775, 1.575, 0.375)",
+        "  [ok] sample_smoke finds smoke over the emitter      0.287 there, 0.000 8 m away",
+        "[flow] step 0.93 ms avg",
+        "[flow] PASS"
+      ],
+      "passed": true
+    },
+    {
+      "label": "native-d37-flow-render-vulkan",
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "exit_code": 0,
+      "errors": [],
+      "skip": false,
+      "evidence": {
+        "flow_pass": true,
+        "no_assertion_failure": true,
+        "real_checks": true
+      },
+      "key_output": [
+        "PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.",
+        "PhysX 5.10.0 initialized [GPU].",
+        "  [ok] Flow running                                   ",
+        "  [ok] every Flow pipeline it ran compiled            29 ok, 0 failed, start 5 ms",
+        "  [ok] compute passes ran last frame                  4 passes, frame 928 done 924",
+        "  [ok] drawn by Flow's ray marcher every frame        464 frames",
+        "  [ok] nothing read back to the CPU                   0 bytes",
+        "[flow] cost per frame (avg ms): step 0.68",
+        "[flow] PASS"
+      ],
+      "passed": true
+    }
+  ]
+}

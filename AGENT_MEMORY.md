@@ -204,3 +204,9 @@ Read with: [AGENTS.md](AGENTS.md) (entry point), [CUSTOM_BUILD.md](CUSTOM_BUILD.
 - Repeated Windows GPU tests can leave delayed NGX updater children. Keep
   native tests in a Job Object with a pre/post census, limit concurrency, and
   correlate process ownership before cleanup or declaring an engine leak.
+- Keep acceptance matrices immutable while running. A zero game exit cannot
+  replace missing controller markers, captures or backend evidence. Retain
+  failed attempts and identify later reruns separately.
+- See the [Windows RTX acceptance snapshot](kb/tooling/windows-rtx-acceptance-20261026.md)
+  for C1 functional results and the separate d37 strict Vulkan failures;
+  documentation-only descendants do not imply another native/GPU test run.

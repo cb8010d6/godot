@@ -21,3 +21,8 @@ misc/msvs/* eol=crlf
 *.png binary
 *.ttf binary
 *.tza binary
+
+# Preserve the exact redacted evidence bytes covered by its SHA-256 manifest.
+devtools/acceptance/stabilization-20261026/** -text whitespace=cr-at-eol
+# Captured diagnostics retain their original trailing whitespace.
+devtools/acceptance/stabilization-20261026/logs/*.log -whitespace

@@ -1,0 +1,32 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/agent-ultra/cross-backend-comparison.json",
+      "bytes": 507,
+      "sha256": "6adcab61b770ba22fe48894db10b03103d6a4f825ba9addf5123068b094bf367"
+    }
+  ],
+  "data": {
+    "scope": "Real getter results from original 1000baebda engine, not patched-engine verification",
+    "all_35_rows_equal": true,
+    "ultra_min_optimal_max": [
+      853,
+      480
+    ],
+    "backends": {
+      "vulkan": {
+        "exit_code": 0,
+        "duration_seconds": 12.172,
+        "ngx_updaters_before": [],
+        "ngx_updaters_after": []
+      },
+      "d3d12": {
+        "exit_code": 0,
+        "duration_seconds": 11.657,
+        "ngx_updaters_before": [],
+        "ngx_updaters_after": []
+      }
+    }
+  }
+}

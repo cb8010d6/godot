@@ -1,0 +1,6 @@
+Editor: 4.8.beta1.custom_build.d37b63e72
+PASS  PhysX, game                        PhysX body fell and settled on the floor
+PASS  PhysX, editor                      PhysX 5.10.0 initialized [GPU].
+PASS  Path tracer, Vulkan                screenshot <WORKSPACE>\source\devtools\out\smoke\standard\path_tracer.png
+PASS  DDGI, interior                     view=interior gi=ddgi quality=1 anim=0 frames=30  mean_linear=0.0124  flicker_std=0.048  flicker_px=0.00%
+All smoke tests passed.

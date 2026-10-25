@@ -1,0 +1,881 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.c1fc0252a (2026-10-25 20:23:01 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.ReginaSports.0'.
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Discrete
+  #2: Microsoft Microsoft Basic Render Driver - Supported, CPU
+  #3: AMD AMD Radeon 780M Graphics - Supported, Discrete
+  #4: AMD AMD Radeon 780M Graphics - Supported, Discrete
+- Shader:
+  model: 6.5
+- D3D12 Variable Rate Shading supported:
+  Draw call
+  Primitive
+  Screen-space image (tile size: 16)
+- D3D12 multiview supported:
+  max view count: 4
+- Relaxed casting not supported
+- D3D12 16-bit ops supported: yes
+- Depth bounds test supported
+D3D12: Device does NOT support GPU UPLOAD heap. ReBAR must be enabled for this feature. Regular UPLOAD heaps will be used as fallback.
+D3D12 12_0 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: d278200babf761a35e80d4007e7782daf673891e11d1d0649c8e003b5a90a68d
+Shader cache miss for CanvasSdfShaderRD/d278200babf761a35e80d4007e7782daf673891e11d1d0649c8e003b5a90a68d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkeletonShaderRD' (group 0) SHA256: f5a1b7ab5ec93b54522e3c005351b78757193702ed4bf0768e40f557862b982f
+Shader cache miss for SkeletonShaderRD/f5a1b7ab5ec93b54522e3c005351b78757193702ed4bf0768e40f557862b982f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SortShaderRD' (group 0) SHA256: 9690c2efcb9ae115ac8205886413853795ba5bce999c71865fd7ce67422301f7
+Shader cache miss for SortShaderRD/9690c2efcb9ae115ac8205886413853795ba5bce999c71865fd7ce67422301f7/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ParticlesShaderRD' (group 0) SHA256: 901193cac23d6a0586a4eb8cc190ab93fa2690bcc8ee6763e08186d0608810be
+Shader cache miss for ParticlesShaderRD/901193cac23d6a0586a4eb8cc190ab93fa2690bcc8ee6763e08186d0608810be/07b5904b662900d90454c39c46885098de79aa4c
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: dabbc335854088611fe04744ab4c25639eeecc606b833c8aa58cd0ffa3941f11
+Shader cache miss for ParticlesCopyShaderRD/dabbc335854088611fe04744ab4c25639eeecc606b833c8aa58cd0ffa3941f11/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasShaderRD' (group 0) SHA256: 5dc0c90db7ca212b154ccd7f5adef3bbd1cea66be940a75442502da0e468e75a
+Shader cache miss for CanvasShaderRD/5dc0c90db7ca212b154ccd7f5adef3bbd1cea66be940a75442502da0e468e75a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: 583c4431dcc1a21ae24801b8715e19480d6526ba1583b54e475701e44bb59532
+Shader cache miss for CanvasOcclusionShaderRD/583c4431dcc1a21ae24801b8715e19480d6526ba1583b54e475701e44bb59532/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for CanvasShaderRD/5dc0c90db7ca212b154ccd7f5adef3bbd1cea66be940a75442502da0e468e75a/90b96afad25c311837b639f3c9d81d610d9b7ee9
+Shader cache miss for CanvasShaderRD/5dc0c90db7ca212b154ccd7f5adef3bbd1cea66be940a75442502da0e468e75a/8f9335de72e837eeead40640cc01fddc5baf5a7c
+Shader 'TexBlitShaderRD' (group 0) SHA256: da84574006e1eaf3235db76157c7d2d9766664bae0842733e837fc76b12ccd01
+Shader cache miss for TexBlitShaderRD/da84574006e1eaf3235db76157c7d2d9766664bae0842733e837fc76b12ccd01/1e8995c9eb0e9b0b053035999de68595c521a33e
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: 02ea75dda8713ad8d9fdbce34f7dbf72fc99dc3cbfc188efa385da9f30e76ca4
+Shader cache miss for ClusterRenderShaderRD/02ea75dda8713ad8d9fdbce34f7dbf72fc99dc3cbfc188efa385da9f30e76ca4/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: d89e24465ac5e77bcd38f173f8f7557be64cedb61074a7fb624a72fb29b0e0c3
+Shader cache miss for ClusterStoreShaderRD/d89e24465ac5e77bcd38f173f8f7557be64cedb61074a7fb624a72fb29b0e0c3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: afc0c0ed911f830425171c566aefcf9d4b0c747da3b9d373813da269c02f6252
+Shader cache miss for ClusterDebugShaderRD/afc0c0ed911f830425171c566aefcf9d4b0c747da3b9d373813da269c02f6252/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: 2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: 247cd858d3ea719f43fc6f0246b58b7dca49e5991a8170ddbb2f1c4615019212
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: 01e9bceb182a97cd9ce5a6b0b5dbae98844f08908b9f5687b4f88f132d06981f
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/a784797763b72ce058effad41b273eb697df9814
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 5e1be958f79103a1ba247dc26b3e632564fb0047585916f17c2bf32e797352a0
+Shader cache miss for BestFitNormalShaderRD/5e1be958f79103a1ba247dc26b3e632564fb0047585916f17c2bf32e797352a0/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: e9d28761fd7c668b9aba7d7f824f977c7af3025b9772c0a713abeea0e4659608
+Shader cache miss for IntegrateDfgShaderRD/e9d28761fd7c668b9aba7d7f824f977c7af3025b9772c0a713abeea0e4659608/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TaaResolveShaderRD' (group 0) SHA256: 81139a250339994e67cd4c040fb0d57faf3e5d7a0601d20f9fd6b1e4645b07d5
+Shader cache miss for TaaResolveShaderRD/81139a250339994e67cd4c040fb0d57faf3e5d7a0601d20f9fd6b1e4645b07d5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: e10241f194cf8155b131e87605ebbe07ef57854020669d355ba81adfe881c405
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: eb96780ac27506b50f43536d0887927ffd90680973ce57f37e29cbfb3932dec3
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: d16713bb87ed3277637fe08cf14e1806b8090c99e1a26cbc5cebfc56ed0a2185
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: c21b3553c6f2fe1eef3cf978ffe1584661c6f32b196f01122e6c46725d0ef9b1
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: 76a8dc4d274f8c6fc52287d451be6de4eaf6743711f5aa2299c789dd7a749a9f
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: 1578d7579e14472914bb222c6dcfdfd39c51e0792bdaac373a787dde056c09e3
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: 291ce1d516076f08fc647bffb324aa2bc2e527955b88701ab93b6e914f53182d
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: 253552772cdd7bc6a933bb651d5fb85fa376b75c70dfdb06e3dc08c89f35965e
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: 25c5fb1d1c9c1f40d9ed174eb2b66646cfbbbb560ae66178a306d81b075464fd
+Shader cache miss for MotionVectorDecodeShaderRD/25c5fb1d1c9c1f40d9ed174eb2b66646cfbbbb560ae66178a306d81b075464fd/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: daad378bc357707704bd8479498035261749d2d4d1a2b87c017f5b88c4833c16
+Shader cache miss for SsEffectsDownsampleShaderRD/daad378bc357707704bd8479498035261749d2d4d1a2b87c017f5b88c4833c16/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilShaderRD' (group 0) SHA256: efee6e9720a5e36b52d2562a0b3383d348d5fc369a3159d885f2fbcab1fc7818
+Shader cache miss for SsilShaderRD/efee6e9720a5e36b52d2562a0b3383d348d5fc369a3159d885f2fbcab1fc7818/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 4aed46fbc06c5a0e0cc4ed407ac6cf620e43697d2f47470eb401e14b33cf9a68
+Shader cache miss for SsilImportanceMapShaderRD/4aed46fbc06c5a0e0cc4ed407ac6cf620e43697d2f47470eb401e14b33cf9a68/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 6b874368c08f2320c382fa81ae24076cf315f2cf8df85c71fe21b5ffe0be9bad
+Shader cache miss for SsilBlurShaderRD/6b874368c08f2320c382fa81ae24076cf315f2cf8df85c71fe21b5ffe0be9bad/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: dd1c6d0a8824cc537c0998ee16e49b93fd677574e5ff4d1aad9a90faedf23412
+Shader cache miss for SsilInterleaveShaderRD/dd1c6d0a8824cc537c0998ee16e49b93fd677574e5ff4d1aad9a90faedf23412/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoShaderRD' (group 0) SHA256: 47233d1a48fbc39d9593137fc6345d7174a5016e631325afec2eb0df40383127
+Shader cache miss for SsaoShaderRD/47233d1a48fbc39d9593137fc6345d7174a5016e631325afec2eb0df40383127/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: b2675d9aac4669a7782240f0aa84eded958cb095d0a56ba2b1ec5ce3f17062b0
+Shader cache miss for SsaoImportanceMapShaderRD/b2675d9aac4669a7782240f0aa84eded958cb095d0a56ba2b1ec5ce3f17062b0/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 28b04066fdd1f35d802d9726c37adf4bad43b8c5d743c34535c445f741cffe74
+Shader cache miss for SsaoBlurShaderRD/28b04066fdd1f35d802d9726c37adf4bad43b8c5d743c34535c445f741cffe74/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: d0b4f5f39da2524a2f964d98b6165954f3773b52c5d0ac89ceb47a1a043ebfd6
+Shader cache miss for SsaoInterleaveShaderRD/d0b4f5f39da2524a2f964d98b6165954f3773b52c5d0ac89ceb47a1a043ebfd6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: e2e521299dc04d21636e07d5b0eee4c6ea030db9d8a3dbfa47e28aed0b25272a
+Shader cache miss for ScreenSpaceReflectionDownsampleShaderRD/e2e521299dc04d21636e07d5b0eee4c6ea030db9d8a3dbfa47e28aed0b25272a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: 30690656f7b6f818251140ea1d1ee19e51e205ab713e2934d81f26de2f648c1c
+Shader cache miss for ScreenSpaceReflectionHizShaderRD/30690656f7b6f818251140ea1d1ee19e51e205ab713e2934d81f26de2f648c1c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: e7ae07e489756444caa876a5fd249b0cc4ceace1bfb239c9dd889e94ae1cacd8
+Shader cache miss for ScreenSpaceReflectionShaderRD/e7ae07e489756444caa876a5fd249b0cc4ceace1bfb239c9dd889e94ae1cacd8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: 3d2ad3191dd1fa938320f19be0774a5f5beb5fcc34f983a2ff943397de993a43
+Shader cache miss for ScreenSpaceReflectionFilterShaderRD/3d2ad3191dd1fa938320f19be0774a5f5beb5fcc34f983a2ff943397de993a43/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: db2fa54104cca3252dac0edeb7a15b418d8b9289f610cca320941aba31300f46
+Shader cache miss for ScreenSpaceReflectionResolveShaderRD/db2fa54104cca3252dac0edeb7a15b418d8b9289f610cca320941aba31300f46/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: e251f7e51c90dbfcdd35dd1fb28ca52797c80f431689402fbc46a257890bc989
+Shader cache miss for ScreenSpaceContactShadowsShaderRD/e251f7e51c90dbfcdd35dd1fb28ca52797c80f431689402fbc46a257890bc989/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 409d473911fa33ed3727e85b6be1822baf1ce8ec4e1fdc0ef8b647dc36773890
+Shader cache miss for SubsurfaceScatteringShaderRD/409d473911fa33ed3727e85b6be1822baf1ce8ec4e1fdc0ef8b647dc36773890/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: 84cb812272fc77a7c74b3efe7f83496bda462354c22260952b979fc803ad3730
+Shader cache miss for MotionVectorsStoreShaderRD/84cb812272fc77a7c74b3efe7f83496bda462354c22260952b979fc803ad3730/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkyShaderRD' (group 0) SHA256: 8838275e199f10c6bf0ab7445d70b1368f7aa04bc7ce92175d75f5f83507e0b8
+Shader cache miss for SkyShaderRD/8838275e199f10c6bf0ab7445d70b1368f7aa04bc7ce92175d75f5f83507e0b8/0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701
+Shader cache miss for SkyShaderRD/8838275e199f10c6bf0ab7445d70b1368f7aa04bc7ce92175d75f5f83507e0b8/ff1961ca0c4c55a79eb12f819a7b6345801bbbaf
+Shader 'VoxelGiShaderRD' (group 0) SHA256: 2e8a96b11b7f465f7c058751fb5717dc76cca24243d68e2f0238c6abafe91f6c
+Shader cache miss for VoxelGiShaderRD/2e8a96b11b7f465f7c058751fb5717dc76cca24243d68e2f0238c6abafe91f6c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: c35f6e32cb151c7e4b6b16db2071cb6342e9b32b90fda045d0f3148d0236c168
+Shader cache miss for VoxelGiDebugShaderRD/c35f6e32cb151c7e4b6b16db2071cb6342e9b32b90fda045d0f3148d0236c168/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: f409d1e072e03653fcf1b0d6da5058735f7180f7fbeadb6f9b9b28e4f131e5a3
+Shader cache miss for SdfgiPreprocessShaderRD/f409d1e072e03653fcf1b0d6da5058735f7180f7fbeadb6f9b9b28e4f131e5a3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: c548dd3f49c534ecec35086137e0bdc5ed3e6af7d28689ad0b1251d56a8a545b
+Shader cache miss for SdfgiDirectLightShaderRD/c548dd3f49c534ecec35086137e0bdc5ed3e6af7d28689ad0b1251d56a8a545b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: 19e225a4c1b98dd853ee0aeb2e9c9d9d4fb8548922b747fb1a0275208dcda995
+Shader cache miss for SdfgiIntegrateShaderRD/19e225a4c1b98dd853ee0aeb2e9c9d9d4fb8548922b747fb1a0275208dcda995/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'GiShaderRD' (group 0) SHA256: 4292fe6c3c09000cdeda974d7396f9aaa0bb4a9d62b293e693be9d8c921372a6
+Shader 'GiShaderRD' (group 1) SHA256: b2a9d90189b1ffc8a5b4739a491a327d21551de4a7e5f6e3f4365cc332558cb6
+Shader cache miss for GiShaderRD/4292fe6c3c09000cdeda974d7396f9aaa0bb4a9d62b293e693be9d8c921372a6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for GiShaderRD/b2a9d90189b1ffc8a5b4739a491a327d21551de4a7e5f6e3f4365cc332558cb6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: e2dc7b4f85fa2e69c5cf12c3f9675710f3107b43b92f3dafaec2c49d450b36bf
+Shader cache miss for SdfgiDebugShaderRD/e2dc7b4f85fa2e69c5cf12c3f9675710f3107b43b92f3dafaec2c49d450b36bf/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: 793fc31b1d78532e65b5ebba382af832028934b3220d208a3df307121b7e65e8
+Shader cache miss for SdfgiDebugProbesShaderRD/793fc31b1d78532e65b5ebba382af832028934b3220d208a3df307121b7e65e8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 79ce971af6038b762c1bbeef0fc65eeebf646393acf2ce359b87101df5e01b50
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: c0ddfc9accfa03058f093d35701d309119cc73cfc943396cc74305794218a7f9
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: ce2408028232cc42bc8672ebe88a8019bf3e15d8133fde739302df9006bf2d27
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: 482d5da781c0d9f6830a7914f4691ea3b8640a0aee39777ecb7e4dac2ea44938
+Shader cache miss for VolumetricFogShaderRD/79ce971af6038b762c1bbeef0fc65eeebf646393acf2ce359b87101df5e01b50/3377d4ca9d0fc2e16f62596ee37d619e8e7e3f54
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 38092cfbe5e04f732432d7c5da7d22b839f46334833f2d1f588f839a144be59c
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: c53b9dc6ecbf8bde72c076d4c660a90d5646cd8788f3a8d3324342e01b32a9dc
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: 64a64971434c7ea6ed08d2c08d88bb0f39071b205f4b816d9f9675223b677c6d
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: 7b2be9cdf8fee531f55fceb23b9f654ebbe1c83c1d8a93b9697ba9e8d27ad90d
+Shader cache miss for VolumetricFogProcessShaderRD/38092cfbe5e04f732432d7c5da7d22b839f46334833f2d1f588f839a144be59c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BokehDofShaderRD' (group 0) SHA256: 0fbcab84d0d5a50d9c44caa929d88b0c54168e8c687dfe326058182db283314f
+Shader cache miss for BokehDofShaderRD/0fbcab84d0d5a50d9c44caa929d88b0c54168e8c687dfe326058182db283314f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyShaderRD' (group 0) SHA256: 47ce7dba83b80041511b02bc7748a3665600b1edd16fef531d45a31843b7a03f
+Shader cache miss for CopyShaderRD/47ce7dba83b80041511b02bc7748a3665600b1edd16fef531d45a31843b7a03f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyToFbShaderRD' (group 0) SHA256: 4c34197e1ff760c1595886013bf29886a2e2df4b4e2aebc3a5bd5592c3d20468
+Shader cache miss for CopyToFbShaderRD/4c34197e1ff760c1595886013bf29886a2e2df4b4e2aebc3a5bd5592c3d20468/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToDpShaderRD' (group 0) SHA256: 56f3d5f69f801ed8df1fcc2cec332c3ffad37c197e66e2fc0bc5e215190954c7
+Shader cache miss for CubeToDpShaderRD/56f3d5f69f801ed8df1fcc2cec332c3ffad37c197e66e2fc0bc5e215190954c7/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: 782a90a298e6765a35ce973387e19b8600c638b22dfa5eae7c4d794f3e6c76ca
+Shader cache miss for CubeToOctmapShaderRD/782a90a298e6765a35ce973387e19b8600c638b22dfa5eae7c4d794f3e6c76ca/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: 26544113f3983ec948e5510017a854dea28c1dfedc0f6f78e7d2f42861b9ff88
+Shader cache miss for OctmapDownsamplerShaderRD/26544113f3983ec948e5510017a854dea28c1dfedc0f6f78e7d2f42861b9ff88/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: 62d47320e28870aec98d0ece21d371826ef61338555a336d67ef2dadc0f28309
+Shader cache miss for OctmapFilterShaderRD/62d47320e28870aec98d0ece21d371826ef61338555a336d67ef2dadc0f28309/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: 6e2f8ad6ac578f1e0953ffa3036c44714797ad804485c84ef119091b4b3d505c
+Shader cache miss for OctmapRoughnessShaderRD/6e2f8ad6ac578f1e0953ffa3036c44714797ad804485c84ef119091b4b3d505c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: c4d3120ca8a9d3eab1bb3becdfbabb830c0555e1c96e4a6e74520e106976c69b
+Shader cache miss for SpecularMergeShaderRD/c4d3120ca8a9d3eab1bb3becdfbabb830c0555e1c96e4a6e74520e106976c69b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: 8afda83e0021edbb710369dc8721c74d020fb8740e0115cbfad501cd4cd1078d
+Shader cache miss for DepthReconstructShaderRD/8afda83e0021edbb710369dc8721c74d020fb8740e0115cbfad501cd4cd1078d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: 892aad54c97f2b1186078e519a6398eae4728599da5b4b9581aa157f8e1ef582
+Shader cache miss for ShadowFrustumShaderRD/892aad54c97f2b1186078e519a6398eae4728599da5b4b9581aa157f8e1ef582/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: b63cbc471b1d5f544b0c7e5817573a6dd7287e40d3f88882d33f1f62c78ab3fb
+Shader cache miss for MotionVectorsShaderRD/b63cbc471b1d5f544b0c7e5817573a6dd7287e40d3f88882d33f1f62c78ab3fb/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: 155723519cbfc077fc08cd8324fd2a6767305d7d962f4dcf80b593ec5c973a22
+Shader cache miss for LuminanceReduceShaderRD/155723519cbfc077fc08cd8324fd2a6767305d7d962f4dcf80b593ec5c973a22/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 996799a90536b1274bb29e43a142b09eb133f9b1ca1d6004802826f7a32cfa28
+Shader cache miss for SmaaEdgeDetectionShaderRD/996799a90536b1274bb29e43a142b09eb133f9b1ca1d6004802826f7a32cfa28/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 0818503b328417c4d6132a0c724507a858826924501065b075f75cae172a83c5
+Shader cache miss for SmaaWeightCalculationShaderRD/0818503b328417c4d6132a0c724507a858826924501065b075f75cae172a83c5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: 18c31af65f5ceb32e254b1c8910984bd9c5ad9e9c8ea6230d5ef1755020bc53e
+Shader cache miss for SmaaBlendingShaderRD/18c31af65f5ceb32e254b1c8910984bd9c5ad9e9c8ea6230d5ef1755020bc53e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TonemapShaderRD' (group 0) SHA256: 72299d361a7b57a7e2d1bcce60589b890bad74833090fd995474b6cf2b6fecfa
+Shader cache miss for TonemapShaderRD/72299d361a7b57a7e2d1bcce60589b890bad74833090fd995474b6cf2b6fecfa/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VrsShaderRD' (group 0) SHA256: cf749d25d2a529368d1a00154984523e0e647ec24c25d01db2683cecb630cf63
+Shader cache miss for VrsShaderRD/cf749d25d2a529368d1a00154984523e0e647ec24c25d01db2683cecb630cf63/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: d3c63d370e715ad0e54a23d7614c67a6d1820aae1d116c673704778165341253
+Shader cache miss for FsrUpscaleShaderRD/d3c63d370e715ad0e54a23d7614c67a6d1820aae1d116c673704778165341253/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ResolveShaderRD' (group 0) SHA256: f7ecd7756abdc9b4c287c26b67cacb6d4411142a528e3fb1b21dac259265171c
+Shader cache miss for ResolveShaderRD/f7ecd7756abdc9b4c287c26b67cacb6d4411142a528e3fb1b21dac259265171c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BlitShaderRD' (group 0) SHA256: bfa362450ebfc9336b60d2f0481559fcc7fc48b20c4efaca34e175114d50e07e
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+Shader cache miss for BlitShaderRD/bfa362450ebfc9336b60d2f0481559fcc7fc48b20c4efaca34e175114d50e07e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/60fbb158a5f44670392b2322a8401a535c41dc72
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 0
+EDITOR API HASH: 0
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://autoload/controller_hub.gdc remapped: res://autoload/controller_hub.gdc
+Completed load for: 'res://autoload/controller_hub.gd' remapped 'res://autoload/controller_hub.gdc' at thread -1
+Loaded system CA certificates
+Loading resource: res://.godot/exported/133200997/export-9ae7820dfc5b492c0424e6a9127ac776-main_menu.scn remapped: res://.godot/exported/133200997/export-9ae7820dfc5b492c0424e6a9127ac776-main_menu.scn
+Loading resource: res://scenes/menu/main_menu.gdc remapped: res://scenes/menu/main_menu.gdc
+Loading resource: res://shaders/ramp_paint.gdshader remapped: res://shaders/ramp_paint.gdshader
+Completed load for: 'res://shaders/ramp_paint.gdshader' remapped 'res://shaders/ramp_paint.gdshader' at thread -1
+Loading resource: res://shaders/facade.gdshader remapped: res://shaders/facade.gdshader
+Completed load for: 'res://shaders/facade.gdshader' remapped 'res://shaders/facade.gdshader' at thread -1
+Loading resource: res://shaders/sea.gdshader remapped: res://shaders/sea.gdshader
+Completed load for: 'res://shaders/sea.gdshader' remapped 'res://shaders/sea.gdshader' at thread -1
+Loading resource: res://shaders/pbr_surface.gdshader remapped: res://shaders/pbr_surface.gdshader
+Completed load for: 'res://shaders/pbr_surface.gdshader' remapped 'res://shaders/pbr_surface.gdshader' at thread -1
+Loading resource: res://shaders/toon.gdshader remapped: res://shaders/toon.gdshader
+Completed load for: 'res://shaders/toon.gdshader' remapped 'res://shaders/toon.gdshader' at thread -1
+Loading resource: res://shaders/crowd.gdshader remapped: res://shaders/crowd.gdshader
+Completed load for: 'res://shaders/crowd.gdshader' remapped 'res://shaders/crowd.gdshader' at thread -1
+Loading resource: res://.godot/exported/133200997/export-27f1ad087d98283734ed4262b7c2a794-archery_module.res remapped: res://.godot/exported/133200997/export-27f1ad087d98283734ed4262b7c2a794-archery_module.res
+Completed load for: 'res://scenes/archery/archery_module.tres' remapped 'res://.godot/exported/133200997/export-27f1ad087d98283734ed4262b7c2a794-archery_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-3355d674b1118f8af14e1d7a94158c1f-basketball_module.res remapped: res://.godot/exported/133200997/export-3355d674b1118f8af14e1d7a94158c1f-basketball_module.res
+Completed load for: 'res://scenes/basketball/basketball_module.tres' remapped 'res://.godot/exported/133200997/export-3355d674b1118f8af14e1d7a94158c1f-basketball_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-1b27be8e46d64e1151c208c848de70ba-bowling_module.res remapped: res://.godot/exported/133200997/export-1b27be8e46d64e1151c208c848de70ba-bowling_module.res
+Completed load for: 'res://scenes/bowling/bowling_module.tres' remapped 'res://.godot/exported/133200997/export-1b27be8e46d64e1151c208c848de70ba-bowling_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-5c7d91582b4c0ded2f32b974c6e25cca-golf_module.res remapped: res://.godot/exported/133200997/export-5c7d91582b4c0ded2f32b974c6e25cca-golf_module.res
+Completed load for: 'res://scenes/golf/golf_module.tres' remapped 'res://.godot/exported/133200997/export-5c7d91582b4c0ded2f32b974c6e25cca-golf_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-7567212f650c13cf9c9c0da165466a74-plane_module.res remapped: res://.godot/exported/133200997/export-7567212f650c13cf9c9c0da165466a74-plane_module.res
+Completed load for: 'res://scenes/plane/plane_module.tres' remapped 'res://.godot/exported/133200997/export-7567212f650c13cf9c9c0da165466a74-plane_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-c5e7a2c0a1bbe77ca416a0cf50d227cf-skate_module.res remapped: res://.godot/exported/133200997/export-c5e7a2c0a1bbe77ca416a0cf50d227cf-skate_module.res
+Completed load for: 'res://scenes/skate/skate_module.tres' remapped 'res://.godot/exported/133200997/export-c5e7a2c0a1bbe77ca416a0cf50d227cf-skate_module.res' at thread -1
+Loading resource: res://.godot/exported/133200997/export-299b714aa1cbfa05cfccbe1427e53c16-ski_module.res remapped: res://.godot/exported/133200997/export-299b714aa1cbfa05cfccbe1427e53c16-ski_module.res
+Completed load for: 'res://scenes/ski/ski_module.tres' remapped 'res://.godot/exported/133200997/export-299b714aa1cbfa05cfccbe1427e53c16-ski_module.res' at thread -1
+Completed load for: 'res://scenes/menu/main_menu.gd' remapped 'res://scenes/menu/main_menu.gdc' at thread -1
+Completed load for: 'res://scenes/menu/main_menu.tscn' remapped 'res://.godot/exported/133200997/export-9ae7820dfc5b492c0424e6a9127ac776-main_menu.scn' at thread -1
+CLI game: skate
+Loading resource: res://.godot/exported/133200997/export-b8cead9e17e6dc0a5f2cbb28d902c210-skate_game.scn remapped: res://.godot/exported/133200997/export-b8cead9e17e6dc0a5f2cbb28d902c210-skate_game.scn
+Loading resource: res://scenes/skate/skate_game.gdc remapped: res://scenes/skate/skate_game.gdc
+Completed load for: 'res://scenes/skate/skate_game.gd' remapped 'res://scenes/skate/skate_game.gdc' at thread -1
+Completed load for: 'res://scenes/skate/skate_game.tscn' remapped 'res://.godot/exported/133200997/export-b8cead9e17e6dc0a5f2cbb28d902c210-skate_game.scn' at thread -1
+Loading resource: res://assets/fonts/NotoSansSC-RS.ttf remapped: res://assets/fonts/NotoSansSC-RS.ttf
+Loading resource: res://.godot/imported/NotoSansSC-RS.ttf-2ed3b53c9703ff00c021c8aedf23d741.fontdata remapped: res://.godot/imported/NotoSansSC-RS.ttf-2ed3b53c9703ff00c021c8aedf23d741.fontdata
+Completed load for: 'res://assets/fonts/NotoSansSC-RS.ttf' remapped 'res://assets/fonts/NotoSansSC-RS.ttf' at thread -1
+Loading resource: res://assets/fonts/BarlowCondensed-BoldItalic.ttf remapped: res://assets/fonts/BarlowCondensed-BoldItalic.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-BoldItalic.ttf-0e69fd6ad5a5b42952216a4f8001fed3.fontdata remapped: res://.godot/imported/BarlowCondensed-BoldItalic.ttf-0e69fd6ad5a5b42952216a4f8001fed3.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-BoldItalic.ttf' remapped 'res://assets/fonts/BarlowCondensed-BoldItalic.ttf' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/b0298f277662c8dffe04cf40a1815022876f8b93
+Loading resource: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_diff_4k.jpg remapped: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_diff_4k.jpg
+Loading resource: res://.godot/imported/clean_asphalt_diff_4k.jpg-ffd7c50f127724794135ffcdf212b894.s3tc.ctex remapped: res://.godot/imported/clean_asphalt_diff_4k.jpg-ffd7c50f127724794135ffcdf212b894.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/clean_asphalt_nor_gl_4k.jpg-c6e5fe2bc0652c2afe0c26f44b04d577.s3tc.ctex remapped: res://.godot/imported/clean_asphalt_nor_gl_4k.jpg-c6e5fe2bc0652c2afe0c26f44b04d577.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_arm_4k.jpg remapped: res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_arm_4k.jpg
+Loading resource: res://.godot/imported/clean_asphalt_arm_4k.jpg-98d9c0f7f134d3a9d40206fec5f49bad.s3tc.ctex remapped: res://.godot/imported/clean_asphalt_arm_4k.jpg-98d9c0f7f134d3a9d40206fec5f49bad.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/clean_asphalt/clean_asphalt_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_diff_4k.jpg remapped: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_diff_4k.jpg
+Loading resource: res://.godot/imported/herringbone_brick_03_diff_4k.jpg-01b815959d92c92f9e286aea6bc434fa.s3tc.ctex remapped: res://.godot/imported/herringbone_brick_03_diff_4k.jpg-01b815959d92c92f9e286aea6bc434fa.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/herringbone_brick_03_nor_gl_4k.jpg-0f47312f91c7e988272aab3716789af3.s3tc.ctex remapped: res://.godot/imported/herringbone_brick_03_nor_gl_4k.jpg-0f47312f91c7e988272aab3716789af3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_arm_4k.jpg remapped: res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_arm_4k.jpg
+Loading resource: res://.godot/imported/herringbone_brick_03_arm_4k.jpg-87797bb73282427d0b25562f16db3726.s3tc.ctex remapped: res://.godot/imported/herringbone_brick_03_arm_4k.jpg-87797bb73282427d0b25562f16db3726.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_diff_4k.jpg remapped: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_diff_4k.jpg
+Loading resource: res://.godot/imported/large_grey_tiles_diff_4k.jpg-616dd8b4b96a1fe3ada856f5d9e736d5.s3tc.ctex remapped: res://.godot/imported/large_grey_tiles_diff_4k.jpg-616dd8b4b96a1fe3ada856f5d9e736d5.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/large_grey_tiles_nor_gl_4k.jpg-b2b833dd883c7ae7dd54592158b7a571.s3tc.ctex remapped: res://.godot/imported/large_grey_tiles_nor_gl_4k.jpg-b2b833dd883c7ae7dd54592158b7a571.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_arm_4k.jpg remapped: res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_arm_4k.jpg
+Loading resource: res://.godot/imported/large_grey_tiles_arm_4k.jpg-23195953b162d9de41a97fb16a97639d.s3tc.ctex remapped: res://.godot/imported/large_grey_tiles_arm_4k.jpg-23195953b162d9de41a97fb16a97639d.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_diff_4k.jpg remapped: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_diff_4k.jpg
+Loading resource: res://.godot/imported/patterned_concrete_pavers_diff_4k.jpg-dd0f295e17e7ed317cdc7feae11a5a77.s3tc.ctex remapped: res://.godot/imported/patterned_concrete_pavers_diff_4k.jpg-dd0f295e17e7ed317cdc7feae11a5a77.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/patterned_concrete_pavers_nor_gl_4k.jpg-fdbc0fb7245a294c2974c978b495f5ff.s3tc.ctex remapped: res://.godot/imported/patterned_concrete_pavers_nor_gl_4k.jpg-fdbc0fb7245a294c2974c978b495f5ff.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_arm_4k.jpg remapped: res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_arm_4k.jpg
+Loading resource: res://.godot/imported/patterned_concrete_pavers_arm_4k.jpg-1eff55662692e7fb28f724a70d8574fa.s3tc.ctex remapped: res://.godot/imported/patterned_concrete_pavers_arm_4k.jpg-1eff55662692e7fb28f724a70d8574fa.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg remapped: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg
+Loading resource: res://.godot/imported/concrete_floor_worn_001_diff_4k.jpg-cd845a337f8e627441f182a2ed9ccb57.s3tc.ctex remapped: res://.godot/imported/concrete_floor_worn_001_diff_4k.jpg-cd845a337f8e627441f182a2ed9ccb57.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/concrete_floor_worn_001_nor_gl_4k.jpg-a350f772fb8da3c7b3dcf81a79065b91.s3tc.ctex remapped: res://.godot/imported/concrete_floor_worn_001_nor_gl_4k.jpg-a350f772fb8da3c7b3dcf81a79065b91.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_arm_4k.jpg remapped: res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_arm_4k.jpg
+Loading resource: res://.godot/imported/concrete_floor_worn_001_arm_4k.jpg-37f0b22ef531392db830d526d1e26eb3.s3tc.ctex remapped: res://.godot/imported/concrete_floor_worn_001_arm_4k.jpg-37f0b22ef531392db830d526d1e26eb3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_diff_2k.jpg remapped: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_diff_2k.jpg
+Loading resource: res://.godot/imported/concrete_wall_003_diff_2k.jpg-13a545c3bcd54dc350c0c0935461bf49.s3tc.ctex remapped: res://.godot/imported/concrete_wall_003_diff_2k.jpg-13a545c3bcd54dc350c0c0935461bf49.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/concrete_wall_003_nor_gl_2k.jpg-bbd58a0b7bd54be32e7d4fa98426fe22.s3tc.ctex remapped: res://.godot/imported/concrete_wall_003_nor_gl_2k.jpg-bbd58a0b7bd54be32e7d4fa98426fe22.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_arm_2k.jpg remapped: res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_arm_2k.jpg
+Loading resource: res://.godot/imported/concrete_wall_003_arm_2k.jpg-2b92cba2e8304247709adeca6aa6f470.s3tc.ctex remapped: res://.godot/imported/concrete_wall_003_arm_2k.jpg-2b92cba2e8304247709adeca6aa6f470.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/plywood/plywood_diff_2k.jpg remapped: res://assets/polyhaven/textures/plywood/plywood_diff_2k.jpg
+Loading resource: res://.godot/imported/plywood_diff_2k.jpg-8ee95f8929280d63c4d59169fde09de2.s3tc.ctex remapped: res://.godot/imported/plywood_diff_2k.jpg-8ee95f8929280d63c4d59169fde09de2.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/plywood/plywood_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/plywood/plywood_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/plywood/plywood_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/plywood/plywood_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/plywood_nor_gl_2k.jpg-47472aace27f4a5b1b6843aa817147dd.s3tc.ctex remapped: res://.godot/imported/plywood_nor_gl_2k.jpg-47472aace27f4a5b1b6843aa817147dd.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/plywood/plywood_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/plywood/plywood_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/plywood/plywood_arm_2k.jpg remapped: res://assets/polyhaven/textures/plywood/plywood_arm_2k.jpg
+Loading resource: res://.godot/imported/plywood_arm_2k.jpg-49b4e9116f457b998cc1f478fb91d564.s3tc.ctex remapped: res://.godot/imported/plywood_arm_2k.jpg-49b4e9116f457b998cc1f478fb91d564.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/plywood/plywood_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/plywood/plywood_arm_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/079eb971646952e8d475707a6ee7855338ba6a56
+Loading resource: res://assets/decals/graffiti_0.png remapped: res://assets/decals/graffiti_0.png
+Loading resource: res://.godot/imported/graffiti_0.png-faffd3dfc7817b7e496e96530585a0ec.s3tc.ctex remapped: res://.godot/imported/graffiti_0.png-faffd3dfc7817b7e496e96530585a0ec.s3tc.ctex
+Completed load for: 'res://assets/decals/graffiti_0.png' remapped 'res://assets/decals/graffiti_0.png' at thread -1
+Loading resource: res://assets/decals/graffiti_1.png remapped: res://assets/decals/graffiti_1.png
+Loading resource: res://.godot/imported/graffiti_1.png-b9b8c84b9db75afdc19d5e8c2894658a.s3tc.ctex remapped: res://.godot/imported/graffiti_1.png-b9b8c84b9db75afdc19d5e8c2894658a.s3tc.ctex
+Completed load for: 'res://assets/decals/graffiti_1.png' remapped 'res://assets/decals/graffiti_1.png' at thread -1
+Loading resource: res://assets/decals/graffiti_2.png remapped: res://assets/decals/graffiti_2.png
+Loading resource: res://.godot/imported/graffiti_2.png-2d5e4eb361b6d7d47d9f73dcd1fa4ac2.s3tc.ctex remapped: res://.godot/imported/graffiti_2.png-2d5e4eb361b6d7d47d9f73dcd1fa4ac2.s3tc.ctex
+Completed load for: 'res://assets/decals/graffiti_2.png' remapped 'res://assets/decals/graffiti_2.png' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/32469472a46e9780019a552bdfcd6a982c3376df
+Loading resource: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_diff_2k.jpg remapped: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_diff_2k.jpg
+Loading resource: res://.godot/imported/beige_wall_001_diff_2k.jpg-37933d968f9df593e006ff4d42d23f1b.s3tc.ctex remapped: res://.godot/imported/beige_wall_001_diff_2k.jpg-37933d968f9df593e006ff4d42d23f1b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/beige_wall_001_nor_gl_2k.jpg-0acd4098cc588a5f14154de9c180403f.s3tc.ctex remapped: res://.godot/imported/beige_wall_001_nor_gl_2k.jpg-0acd4098cc588a5f14154de9c180403f.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_arm_2k.jpg remapped: res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_arm_2k.jpg
+Loading resource: res://.godot/imported/beige_wall_001_arm_2k.jpg-eb0d7e7b25c30d5c8fb0473081ee4ce9.s3tc.ctex remapped: res://.godot/imported/beige_wall_001_arm_2k.jpg-eb0d7e7b25c30d5c8fb0473081ee4ce9.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/beige_wall_001/beige_wall_001_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/hdris/kloppenheim_06_puresky/kloppenheim_06_puresky_4k.hdr remapped: res://assets/polyhaven/hdris/kloppenheim_06_puresky/kloppenheim_06_puresky_4k.hdr
+Loading resource: res://.godot/imported/kloppenheim_06_puresky_4k.hdr-0b8b0678d1b02493aaca6a3eb25743dd.bptc.ctex remapped: res://.godot/imported/kloppenheim_06_puresky_4k.hdr-0b8b0678d1b02493aaca6a3eb25743dd.bptc.ctex
+Completed load for: 'res://assets/polyhaven/hdris/kloppenheim_06_puresky/kloppenheim_06_puresky_4k.hdr' remapped 'res://assets/polyhaven/hdris/kloppenheim_06_puresky/kloppenheim_06_puresky_4k.hdr' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/0b36e8cefbbe1f57d8f4fc5b273e03980a22109a
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/0b5b7b02d4bde6a0f04a93d218bef7916602b76c
+Loading resource: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_diff_2k.jpg remapped: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_diff_2k.jpg
+Loading resource: res://.godot/imported/coast_sand_01_diff_2k.jpg-c909ea2c3c0a35b33500f5de33f3ea8c.s3tc.ctex remapped: res://.godot/imported/coast_sand_01_diff_2k.jpg-c909ea2c3c0a35b33500f5de33f3ea8c.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/coast_sand_01_nor_gl_2k.jpg-8914961701896c11e59596cdf8fbb9f3.s3tc.ctex remapped: res://.godot/imported/coast_sand_01_nor_gl_2k.jpg-8914961701896c11e59596cdf8fbb9f3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_arm_2k.jpg remapped: res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_arm_2k.jpg
+Loading resource: res://.godot/imported/coast_sand_01_arm_2k.jpg-ccc6f753a0b6368440f75bb53639db05.s3tc.ctex remapped: res://.godot/imported/coast_sand_01_arm_2k.jpg-ccc6f753a0b6368440f75bb53639db05.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/coast_sand_01/coast_sand_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf remapped: res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf
+Loading resource: res://.godot/imported/boulder_01_lod.gltf-c2f550366c6a1d35f34928b070a5b889.scn remapped: res://.godot/imported/boulder_01_lod.gltf-c2f550366c6a1d35f34928b070a5b889.scn
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_diff_2k.jpg-99501accc6248ce8f02e983efaac02f1.s3tc.ctex remapped: res://.godot/imported/boulder_01_diff_2k.jpg-99501accc6248ce8f02e983efaac02f1.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_arm_2k.jpg-24966c8edb82c507b6b2a89f5646eb96.s3tc.ctex remapped: res://.godot/imported/boulder_01_arm_2k.jpg-24966c8edb82c507b6b2a89f5646eb96.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_nor_gl_2k.jpg-6fa305bbbc32b205717717f569f9e793.s3tc.ctex remapped: res://.godot/imported/boulder_01_nor_gl_2k.jpg-6fa305bbbc32b205717717f569f9e793.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Completed load for: 'res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf' remapped 'res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/9dae05ba29ceac5894495a49a33f944fdfe75839
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/29ad28b0fddea5d1747b05dfafb4ebdc7345d976
+Loading resource: res://assets/polyhaven/models/street_lamp_01/street_lamp_01_2k.gltf remapped: res://assets/polyhaven/models/street_lamp_01/street_lamp_01_2k.gltf
+Loading resource: res://.godot/imported/street_lamp_01_2k.gltf-862e92e8174f67f2f17e81ede4bde5ea.scn remapped: res://.godot/imported/street_lamp_01_2k.gltf-862e92e8174f67f2f17e81ede4bde5ea.scn
+Loading resource: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_diff_2k.jpg remapped: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_diff_2k.jpg
+Loading resource: res://.godot/imported/street_lamp_01_diff_2k.jpg-9331c27f3c7751683ea09ae2a0ff2ad2.s3tc.ctex remapped: res://.godot/imported/street_lamp_01_diff_2k.jpg-9331c27f3c7751683ea09ae2a0ff2ad2.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_arm_2k.jpg remapped: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_arm_2k.jpg
+Loading resource: res://.godot/imported/street_lamp_01_arm_2k.jpg-be84420d061aaee958ccf0a4f7e1ca95.s3tc.ctex remapped: res://.godot/imported/street_lamp_01_arm_2k.jpg-be84420d061aaee958ccf0a4f7e1ca95.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/street_lamp_01_nor_gl_2k.jpg-b0b5f4b665e1d9ae373e51bd76f2349b.s3tc.ctex remapped: res://.godot/imported/street_lamp_01_nor_gl_2k.jpg-b0b5f4b665e1d9ae373e51bd76f2349b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_nor_gl_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/a496140de1a54a7fd99443fd4b03919305b2f8ae
+Completed load for: 'res://assets/polyhaven/models/street_lamp_01/street_lamp_01_2k.gltf' remapped 'res://assets/polyhaven/models/street_lamp_01/street_lamp_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/fire_hydrant_lod.gltf remapped: res://assets/polyhaven/models/fire_hydrant/fire_hydrant_lod.gltf
+Loading resource: res://.godot/imported/fire_hydrant_lod.gltf-869a447f050f33b740e46417f1350081.scn remapped: res://.godot/imported/fire_hydrant_lod.gltf-869a447f050f33b740e46417f1350081.scn
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_diff_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_diff_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_diff_2k.jpg-57c7647058b91d527ccb0acbd8101da4.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_diff_2k.jpg-57c7647058b91d527ccb0acbd8101da4.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_diff_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_arm_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_arm_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_arm_2k.jpg-88a9c2ff01b9bee8ed93ce32139a5252.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_arm_2k.jpg-88a9c2ff01b9bee8ed93ce32139a5252.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_arm_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_nor_gl_2k.jpg-623372bd14b8259f3788a0446a25d21c.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_nor_gl_2k.jpg-623372bd14b8259f3788a0446a25d21c.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_diff_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_diff_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_aged_diff_2k.jpg-ad43e343dd0ce5ad522def2a853cf167.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_aged_diff_2k.jpg-ad43e343dd0ce5ad522def2a853cf167.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_diff_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_arm_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_arm_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_aged_arm_2k.jpg-81c02f58684ffcf99d803b2e1019ffb5.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_aged_arm_2k.jpg-81c02f58684ffcf99d803b2e1019ffb5.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_arm_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/fire_hydrant_aged_nor_gl_2k.jpg-fe93c9991a59f217f7e06b143cb292ba.s3tc.ctex remapped: res://.godot/imported/fire_hydrant_aged_nor_gl_2k.jpg-fe93c9991a59f217f7e06b143cb292ba.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/fire_hydrant/fire_hydrant_lod.gltf' remapped 'res://assets/polyhaven/models/fire_hydrant/fire_hydrant_lod.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf remapped: res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf
+Loading resource: res://.godot/imported/exterior_aircon_unit_2k.gltf-70954f816ab1970e52304695a117afde.scn remapped: res://.godot/imported/exterior_aircon_unit_2k.gltf-70954f816ab1970e52304695a117afde.scn
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_diff_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_diff_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_01_diff_2k.jpg-68ab3f47146ba7d0996623f656ad6254.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_01_diff_2k.jpg-68ab3f47146ba7d0996623f656ad6254.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_01_arm_2k.jpg-18d39944a34e7193a241c4a505f27aac.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_01_arm_2k.jpg-18d39944a34e7193a241c4a505f27aac.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_01_nor_gl_2k.jpg-ff6563257d3019649aaf10ebdfe29cc0.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_01_nor_gl_2k.jpg-ff6563257d3019649aaf10ebdfe29cc0.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_opacity_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_opacity_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_01_opacity_2k.jpg-14136caf7ec9e6529c05076191cb6bf4.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_01_opacity_2k.jpg-14136caf7ec9e6529c05076191cb6bf4.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_opacity_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_opacity_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_02_arm_2k.jpg-abeda8efc69228d43c911c9247576d5b.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_02_arm_2k.jpg-abeda8efc69228d43c911c9247576d5b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_02_nor_gl_2k.jpg-86aec04e8f607af1a75628a680c46570.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_02_nor_gl_2k.jpg-86aec04e8f607af1a75628a680c46570.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_diff_2k.jpg-ed4a6dbfe251276b329e6c9dfda68a52.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_diff_2k.jpg-ed4a6dbfe251276b329e6c9dfda68a52.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_arm_2k.jpg-3ba64abb603d2aab38bb86e0785c9fec.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_arm_2k.jpg-3ba64abb603d2aab38bb86e0785c9fec.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg-927b56193aee91c23f4533d3a225170c.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg-927b56193aee91c23f4533d3a225170c.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_opacity_2k.jpg-1dbeddafb0a5a5b9d330426a905dc2ed.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_opacity_2k.jpg-1dbeddafb0a5a5b9d330426a905dc2ed.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_arm_2k.jpg-3b7d8e48524f75974f2aebb47af462a7.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_arm_2k.jpg-3b7d8e48524f75974f2aebb47af462a7.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg-41ed87398abc6f1036d262c2a663beca.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg-41ed87398abc6f1036d262c2a663beca.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf remapped: res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf
+Loading resource: res://.godot/imported/exterior_aircon_unit_2k.gltf-70954f816ab1970e52304695a117afde.scn remapped: res://.godot/imported/exterior_aircon_unit_2k.gltf-70954f816ab1970e52304695a117afde.scn
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_diff_2k.jpg-ed4a6dbfe251276b329e6c9dfda68a52.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_diff_2k.jpg-ed4a6dbfe251276b329e6c9dfda68a52.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_arm_2k.jpg-3ba64abb603d2aab38bb86e0785c9fec.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_arm_2k.jpg-3ba64abb603d2aab38bb86e0785c9fec.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg-927b56193aee91c23f4533d3a225170c.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg-927b56193aee91c23f4533d3a225170c.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_opacity_2k.jpg-1dbeddafb0a5a5b9d330426a905dc2ed.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_opacity_2k.jpg-1dbeddafb0a5a5b9d330426a905dc2ed.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_arm_2k.jpg-3b7d8e48524f75974f2aebb47af462a7.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_arm_2k.jpg-3b7d8e48524f75974f2aebb47af462a7.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg-41ed87398abc6f1036d262c2a663beca.s3tc.ctex remapped: res://.godot/imported/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg-41ed87398abc6f1036d262c2a663beca.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf' remapped 'res://assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_2k.gltf remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_2k.gltf
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_2k.gltf-09a0671cec0fe441ca4d38b5a859537a.scn remapped: res://.godot/imported/outdoor_table_chair_set_01_2k.gltf-09a0671cec0fe441ca4d38b5a859537a.scn
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_diff_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_diff_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_chair_diff_2k.jpg-11ce056b035237eecfd35bfc1743c1e4.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_chair_diff_2k.jpg-11ce056b035237eecfd35bfc1743c1e4.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_diff_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_arm_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_arm_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_chair_arm_2k.jpg-8735fe0fb0f3c6981eb005f8ba1f4c8c.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_chair_arm_2k.jpg-8735fe0fb0f3c6981eb005f8ba1f4c8c.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_arm_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg-fafab704b85d7e3538cb0ced3d37d417.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg-fafab704b85d7e3538cb0ced3d37d417.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_diff_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_diff_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_table_diff_2k.jpg-dea40b1c7db65de721b7cc4946976f10.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_table_diff_2k.jpg-dea40b1c7db65de721b7cc4946976f10.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_diff_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_arm_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_arm_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_table_arm_2k.jpg-26b083f78f2a64a71280e6f61f7550fa.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_table_arm_2k.jpg-26b083f78f2a64a71280e6f61f7550fa.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_arm_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/outdoor_table_chair_set_01_table_nor_gl_2k.jpg-ee88cd78d9cee8a35ffdec77b300a9fe.s3tc.ctex remapped: res://.godot/imported/outdoor_table_chair_set_01_table_nor_gl_2k.jpg-ee88cd78d9cee8a35ffdec77b300a9fe.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_2k.gltf' remapped 'res://assets/polyhaven/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/modular_street_seating_2k.gltf remapped: res://assets/polyhaven/models/modular_street_seating/modular_street_seating_2k.gltf
+Loading resource: res://.godot/imported/modular_street_seating_2k.gltf-2e5d77985a985ac4f4b69212d73d1200.scn remapped: res://.godot/imported/modular_street_seating_2k.gltf-2e5d77985a985ac4f4b69212d73d1200.scn
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_diff_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_diff_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_armrests_diff_2k.jpg-da1080523d22dbe5eed2675e59d8f6a4.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_armrests_diff_2k.jpg-da1080523d22dbe5eed2675e59d8f6a4.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_diff_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_arm_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_arm_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_armrests_arm_2k.jpg-20f9a4698443d66780d8fccc34d68730.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_armrests_arm_2k.jpg-20f9a4698443d66780d8fccc34d68730.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_arm_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_armrests_nor_gl_2k.jpg-3d4ad02af0ad837f8212bf3f931b6b54.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_armrests_nor_gl_2k.jpg-3d4ad02af0ad837f8212bf3f931b6b54.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_diff_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_diff_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_supports_diff_2k.jpg-42a03d2b465cdfb7babd44c3fff419af.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_supports_diff_2k.jpg-42a03d2b465cdfb7babd44c3fff419af.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_diff_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_arm_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_arm_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_supports_arm_2k.jpg-c1ccfa52b45db66c936e65ece040f0a8.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_supports_arm_2k.jpg-c1ccfa52b45db66c936e65ece040f0a8.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_arm_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_supports_nor_gl_2k.jpg-397f9325a902e32e4981c0e7e7df56af.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_supports_nor_gl_2k.jpg-397f9325a902e32e4981c0e7e7df56af.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_diff_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_diff_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_timber_diff_2k.jpg-4532114e5596141aa2a93048db692a7f.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_timber_diff_2k.jpg-4532114e5596141aa2a93048db692a7f.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_diff_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_arm_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_arm_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_timber_arm_2k.jpg-abc9a6d40e087b1f275517de10ce6ae2.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_timber_arm_2k.jpg-abc9a6d40e087b1f275517de10ce6ae2.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_arm_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_timber_nor_gl_2k.jpg-82df9fe31c1dbae5632fd1ddc3a957c8.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_timber_nor_gl_2k.jpg-82df9fe31c1dbae5632fd1ddc3a957c8.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_diff_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_diff_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_connectors_diff_2k.jpg-57e6ffbf1c6c79d7915ecf95f017c6dd.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_connectors_diff_2k.jpg-57e6ffbf1c6c79d7915ecf95f017c6dd.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_diff_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_arm_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_arm_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_connectors_arm_2k.jpg-e4a53e959a1ba1f467c01785bb66f73a.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_connectors_arm_2k.jpg-e4a53e959a1ba1f467c01785bb66f73a.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_arm_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/modular_street_seating_connectors_nor_gl_2k.jpg-c4f2ba663d5ce55ebd110f52aaba29ef.s3tc.ctex remapped: res://.godot/imported/modular_street_seating_connectors_nor_gl_2k.jpg-c4f2ba663d5ce55ebd110f52aaba29ef.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/modular_street_seating/modular_street_seating_2k.gltf' remapped 'res://assets/polyhaven/models/modular_street_seating/modular_street_seating_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/planter_box_02/planter_box_02_2k.gltf remapped: res://assets/polyhaven/models/planter_box_02/planter_box_02_2k.gltf
+Loading resource: res://.godot/imported/planter_box_02_2k.gltf-ed6704306374b51760e0cd4a2b5206cc.scn remapped: res://.godot/imported/planter_box_02_2k.gltf-ed6704306374b51760e0cd4a2b5206cc.scn
+Loading resource: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_diff_2k.jpg remapped: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_diff_2k.jpg
+Loading resource: res://.godot/imported/planter_box_02_diff_2k.jpg-aef59bb43c6f3fa02aeecc82fd47c67e.s3tc.ctex remapped: res://.godot/imported/planter_box_02_diff_2k.jpg-aef59bb43c6f3fa02aeecc82fd47c67e.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_diff_2k.jpg' remapped 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_arm_2k.jpg remapped: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_arm_2k.jpg
+Loading resource: res://.godot/imported/planter_box_02_arm_2k.jpg-3db651f672aee60e142c5e9e45c97c92.s3tc.ctex remapped: res://.godot/imported/planter_box_02_arm_2k.jpg-3db651f672aee60e142c5e9e45c97c92.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_arm_2k.jpg' remapped 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/planter_box_02_nor_gl_2k.jpg-d56ee07415eb46d966d4022cdef2e5f0.s3tc.ctex remapped: res://.godot/imported/planter_box_02_nor_gl_2k.jpg-d56ee07415eb46d966d4022cdef2e5f0.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/planter_box_02/textures/planter_box_02_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/planter_box_02/planter_box_02_2k.gltf' remapped 'res://assets/polyhaven/models/planter_box_02/planter_box_02_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/utility_box_01/utility_box_01_2k.gltf remapped: res://assets/polyhaven/models/utility_box_01/utility_box_01_2k.gltf
+Loading resource: res://.godot/imported/utility_box_01_2k.gltf-5803e0362715594528b3b4fba28a2af8.scn remapped: res://.godot/imported/utility_box_01_2k.gltf-5803e0362715594528b3b4fba28a2af8.scn
+Loading resource: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_diff_2k.jpg remapped: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_diff_2k.jpg
+Loading resource: res://.godot/imported/utility_box_01_diff_2k.jpg-2a8d47693b905d733532ca253a4544eb.s3tc.ctex remapped: res://.godot/imported/utility_box_01_diff_2k.jpg-2a8d47693b905d733532ca253a4544eb.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_arm_2k.jpg remapped: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_arm_2k.jpg
+Loading resource: res://.godot/imported/utility_box_01_arm_2k.jpg-8664b019d122c5dc2015ad9df433fb52.s3tc.ctex remapped: res://.godot/imported/utility_box_01_arm_2k.jpg-8664b019d122c5dc2015ad9df433fb52.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/utility_box_01_nor_gl_2k.jpg-f3ecc1516b6abe88f4895608f5d324fe.s3tc.ctex remapped: res://.godot/imported/utility_box_01_nor_gl_2k.jpg-f3ecc1516b6abe88f4895608f5d324fe.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/utility_box_01/textures/utility_box_01_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/utility_box_01/utility_box_01_2k.gltf' remapped 'res://assets/polyhaven/models/utility_box_01/utility_box_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/barrel_03/barrel_03_2k.gltf remapped: res://assets/polyhaven/models/barrel_03/barrel_03_2k.gltf
+Loading resource: res://.godot/imported/barrel_03_2k.gltf-456c46516d552f85079515273e4502aa.scn remapped: res://.godot/imported/barrel_03_2k.gltf-456c46516d552f85079515273e4502aa.scn
+Loading resource: res://assets/polyhaven/models/barrel_03/textures/barrel_03_diff_2k.jpg remapped: res://assets/polyhaven/models/barrel_03/textures/barrel_03_diff_2k.jpg
+Loading resource: res://.godot/imported/barrel_03_diff_2k.jpg-fa7fc1b55133eb0448dedf1aa9757d85.s3tc.ctex remapped: res://.godot/imported/barrel_03_diff_2k.jpg-fa7fc1b55133eb0448dedf1aa9757d85.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_diff_2k.jpg' remapped 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/barrel_03/textures/barrel_03_arm_2k.jpg remapped: res://assets/polyhaven/models/barrel_03/textures/barrel_03_arm_2k.jpg
+Loading resource: res://.godot/imported/barrel_03_arm_2k.jpg-439734665d5dd52294d87f34936bf553.s3tc.ctex remapped: res://.godot/imported/barrel_03_arm_2k.jpg-439734665d5dd52294d87f34936bf553.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_arm_2k.jpg' remapped 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/barrel_03/textures/barrel_03_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/barrel_03/textures/barrel_03_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/barrel_03_nor_gl_2k.jpg-10409f13a62d982a66ef7ab25d5e7b69.s3tc.ctex remapped: res://.godot/imported/barrel_03_nor_gl_2k.jpg-10409f13a62d982a66ef7ab25d5e7b69.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/barrel_03/textures/barrel_03_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/barrel_03/barrel_03_2k.gltf' remapped 'res://assets/polyhaven/models/barrel_03/barrel_03_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/plastic_crate_01/plastic_crate_01_2k.gltf remapped: res://assets/polyhaven/models/plastic_crate_01/plastic_crate_01_2k.gltf
+Loading resource: res://.godot/imported/plastic_crate_01_2k.gltf-c47ccf267bbfd34a83545e6e60644c83.scn remapped: res://.godot/imported/plastic_crate_01_2k.gltf-c47ccf267bbfd34a83545e6e60644c83.scn
+Loading resource: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_diff_2k.jpg remapped: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_diff_2k.jpg
+Loading resource: res://.godot/imported/plastic_crate_01_diff_2k.jpg-72cf0bce702bbc6912c4c1972f81a1ad.s3tc.ctex remapped: res://.godot/imported/plastic_crate_01_diff_2k.jpg-72cf0bce702bbc6912c4c1972f81a1ad.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_arm_2k.jpg remapped: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_arm_2k.jpg
+Loading resource: res://.godot/imported/plastic_crate_01_arm_2k.jpg-88439407044c5161907615e5a2172cd6.s3tc.ctex remapped: res://.godot/imported/plastic_crate_01_arm_2k.jpg-88439407044c5161907615e5a2172cd6.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/plastic_crate_01_nor_gl_2k.jpg-2708d1686faee2185f1132872640ee5a.s3tc.ctex remapped: res://.godot/imported/plastic_crate_01_nor_gl_2k.jpg-2708d1686faee2185f1132872640ee5a.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/plastic_crate_01/plastic_crate_01_2k.gltf' remapped 'res://assets/polyhaven/models/plastic_crate_01/plastic_crate_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/cardboard_box_01/cardboard_box_01_2k.gltf remapped: res://assets/polyhaven/models/cardboard_box_01/cardboard_box_01_2k.gltf
+Loading resource: res://.godot/imported/cardboard_box_01_2k.gltf-db870c190bd710bfb2faa39382e85c01.scn remapped: res://.godot/imported/cardboard_box_01_2k.gltf-db870c190bd710bfb2faa39382e85c01.scn
+Loading resource: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_diff_2k.jpg remapped: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_diff_2k.jpg
+Loading resource: res://.godot/imported/cardboard_box_01_diff_2k.jpg-50dbc822973eac4629580a94fdeacbd9.s3tc.ctex remapped: res://.godot/imported/cardboard_box_01_diff_2k.jpg-50dbc822973eac4629580a94fdeacbd9.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_arm_2k.jpg remapped: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_arm_2k.jpg
+Loading resource: res://.godot/imported/cardboard_box_01_arm_2k.jpg-3c6ecd19fb1b66f4a7e0f0f68c42fdb3.s3tc.ctex remapped: res://.godot/imported/cardboard_box_01_arm_2k.jpg-3c6ecd19fb1b66f4a7e0f0f68c42fdb3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/cardboard_box_01_nor_gl_2k.jpg-2f0a19611fc2ed43eb6f7e829d6d90fb.s3tc.ctex remapped: res://.godot/imported/cardboard_box_01_nor_gl_2k.jpg-2f0a19611fc2ed43eb6f7e829d6d90fb.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/cardboard_box_01/cardboard_box_01_2k.gltf' remapped 'res://assets/polyhaven/models/cardboard_box_01/cardboard_box_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/potted_plant_01_lod.gltf remapped: res://assets/polyhaven/models/potted_plant_01/potted_plant_01_lod.gltf
+Loading resource: res://.godot/imported/potted_plant_01_lod.gltf-a4991920092fcd2b00199577043506c4.scn remapped: res://.godot/imported/potted_plant_01_lod.gltf-a4991920092fcd2b00199577043506c4.scn
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_diff_2k.jpg remapped: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_diff_2k.jpg
+Loading resource: res://.godot/imported/potted_plant_01_pot_diff_2k.jpg-7e238b51917fe8f5df9b441f682005d1.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_pot_diff_2k.jpg-7e238b51917fe8f5df9b441f682005d1.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_diff_2k.jpg' remapped 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_rough_2k.jpg remapped: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_rough_2k.jpg
+Loading resource: res://.godot/imported/potted_plant_01_pot_rough_2k.jpg-424b0aeba4be889295a1b40ca2b3d734.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_pot_rough_2k.jpg-424b0aeba4be889295a1b40ca2b3d734.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_rough_2k.jpg' remapped 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_rough_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/potted_plant_01_pot_nor_gl_2k.jpg-e380f199153fcd16b11eeb268e6b986b.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_pot_nor_gl_2k.jpg-e380f199153fcd16b11eeb268e6b986b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_diff_2k.png remapped: res://assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_diff_2k.png
+Loading resource: res://.godot/imported/potted_plant_01_leaves_diff_2k.png-8a1986846091e537c3677d974c5145eb.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_leaves_diff_2k.png-8a1986846091e537c3677d974c5145eb.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_diff_2k.png' remapped 'res://assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_diff_2k.png' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.jpg remapped: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.jpg
+Loading resource: res://.godot/imported/potted_plant_01_leaves_rough_2k.jpg-ef8a04edac80bb32330cebe48a5fe6f9.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_leaves_rough_2k.jpg-ef8a04edac80bb32330cebe48a5fe6f9.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.jpg' remapped 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/potted_plant_01_leaves_nor_gl_2k.jpg-c18be86e875c31a3699a9d69610c37af.s3tc.ctex remapped: res://.godot/imported/potted_plant_01_leaves_nor_gl_2k.jpg-c18be86e875c31a3699a9d69610c37af.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/8f345455b2d2399241aff72abe7ac971e5c808f0
+Completed load for: 'res://assets/polyhaven/models/potted_plant_01/potted_plant_01_lod.gltf' remapped 'res://assets/polyhaven/models/potted_plant_01/potted_plant_01_lod.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf remapped: res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf
+Loading resource: res://.godot/imported/metal_trash_can_2k.gltf-cdc9bf9cca2697ffcf1edaa785ff257a.scn remapped: res://.godot/imported/metal_trash_can_2k.gltf-cdc9bf9cca2697ffcf1edaa785ff257a.scn
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_diff_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_diff_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_diff_2k.jpg-90d87ff173ffa8caee9cec29ba109f98.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_diff_2k.jpg-90d87ff173ffa8caee9cec29ba109f98.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_diff_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_arm_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_arm_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_arm_2k.jpg-69a8ebc1ac08bdfc7e7977f2f45cb499.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_arm_2k.jpg-69a8ebc1ac08bdfc7e7977f2f45cb499.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_arm_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_nor_gl_2k.jpg-461bb0ead62286154644d72291c1c672.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_nor_gl_2k.jpg-461bb0ead62286154644d72291c1c672.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_diff_2k.jpg-1094a4816c273fa855a5fa140a242537.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_diff_2k.jpg-1094a4816c273fa855a5fa140a242537.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_arm_2k.jpg-4db547cff6bd0d4afeccd233181962c8.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_arm_2k.jpg-4db547cff6bd0d4afeccd233181962c8.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_nor_gl_2k.jpg-9a1eda25da54c0b1dbce94e807e55353.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_nor_gl_2k.jpg-9a1eda25da54c0b1dbce94e807e55353.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf' remapped 'res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/Barrel_01/Barrel_01_2k.gltf remapped: res://assets/polyhaven/models/Barrel_01/Barrel_01_2k.gltf
+Loading resource: res://.godot/imported/Barrel_01_2k.gltf-42444352aabc5f002be92c60d9d3ddad.scn remapped: res://.godot/imported/Barrel_01_2k.gltf-42444352aabc5f002be92c60d9d3ddad.scn
+Loading resource: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_diff_2k.jpg remapped: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_diff_2k.jpg
+Loading resource: res://.godot/imported/Barrel_01_explosive_diff_2k.jpg-4f19752ca2a15a5515c2ce6f8f07ae42.s3tc.ctex remapped: res://.godot/imported/Barrel_01_explosive_diff_2k.jpg-4f19752ca2a15a5515c2ce6f8f07ae42.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_diff_2k.jpg' remapped 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_arm_2k.jpg remapped: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_arm_2k.jpg
+Loading resource: res://.godot/imported/Barrel_01_explosive_arm_2k.jpg-7106207bb2304cb3a5dcbee76bd503f7.s3tc.ctex remapped: res://.godot/imported/Barrel_01_explosive_arm_2k.jpg-7106207bb2304cb3a5dcbee76bd503f7.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_arm_2k.jpg' remapped 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/Barrel_01_explosive_nor_gl_2k.jpg-91389686b206161fa7d87971654fe096.s3tc.ctex remapped: res://.godot/imported/Barrel_01_explosive_nor_gl_2k.jpg-91389686b206161fa7d87971654fe096.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/Barrel_01/Barrel_01_2k.gltf' remapped 'res://assets/polyhaven/models/Barrel_01/Barrel_01_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf remapped: res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf
+Loading resource: res://.godot/imported/metal_trash_can_2k.gltf-cdc9bf9cca2697ffcf1edaa785ff257a.scn remapped: res://.godot/imported/metal_trash_can_2k.gltf-cdc9bf9cca2697ffcf1edaa785ff257a.scn
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_diff_2k.jpg-1094a4816c273fa855a5fa140a242537.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_diff_2k.jpg-1094a4816c273fa855a5fa140a242537.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_arm_2k.jpg-4db547cff6bd0d4afeccd233181962c8.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_arm_2k.jpg-4db547cff6bd0d4afeccd233181962c8.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/metal_trash_can_rust_nor_gl_2k.jpg-9a1eda25da54c0b1dbce94e807e55353.s3tc.ctex remapped: res://.godot/imported/metal_trash_can_rust_nor_gl_2k.jpg-9a1eda25da54c0b1dbce94e807e55353.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf' remapped 'res://assets/polyhaven/models/metal_trash_can/metal_trash_can_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/water_manhole_cover/water_manhole_cover_2k.gltf remapped: res://assets/polyhaven/models/water_manhole_cover/water_manhole_cover_2k.gltf
+Loading resource: res://.godot/imported/water_manhole_cover_2k.gltf-04ca4d7255f60d8af18bc79a80703cc9.scn remapped: res://.godot/imported/water_manhole_cover_2k.gltf-04ca4d7255f60d8af18bc79a80703cc9.scn
+Loading resource: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_diff_2k.jpg remapped: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_diff_2k.jpg
+Loading resource: res://.godot/imported/water_manhole_cover_diff_2k.jpg-7267f3f11146b3e29da68da712cd669b.s3tc.ctex remapped: res://.godot/imported/water_manhole_cover_diff_2k.jpg-7267f3f11146b3e29da68da712cd669b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_diff_2k.jpg' remapped 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_arm_2k.jpg remapped: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_arm_2k.jpg
+Loading resource: res://.godot/imported/water_manhole_cover_arm_2k.jpg-907b345eb8176f2ca29d01f26740c918.s3tc.ctex remapped: res://.godot/imported/water_manhole_cover_arm_2k.jpg-907b345eb8176f2ca29d01f26740c918.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_arm_2k.jpg' remapped 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/water_manhole_cover_nor_gl_2k.jpg-585241c3ed97e681edc8a3ef661cf64e.s3tc.ctex remapped: res://.godot/imported/water_manhole_cover_nor_gl_2k.jpg-585241c3ed97e681edc8a3ef661cf64e.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/water_manhole_cover/water_manhole_cover_2k.gltf' remapped 'res://assets/polyhaven/models/water_manhole_cover/water_manhole_cover_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/lifebuoy/lifebuoy_2k.gltf remapped: res://assets/polyhaven/models/lifebuoy/lifebuoy_2k.gltf
+Loading resource: res://.godot/imported/lifebuoy_2k.gltf-6aaa39fc62819f10f837cfc7773dc7d2.scn remapped: res://.godot/imported/lifebuoy_2k.gltf-6aaa39fc62819f10f837cfc7773dc7d2.scn
+Loading resource: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_diff_2k.jpg remapped: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_diff_2k.jpg
+Loading resource: res://.godot/imported/lifebuoy_diff_2k.jpg-3cbf41f655e0b35634a17414fb92f482.s3tc.ctex remapped: res://.godot/imported/lifebuoy_diff_2k.jpg-3cbf41f655e0b35634a17414fb92f482.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_diff_2k.jpg' remapped 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_arm_2k.jpg remapped: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_arm_2k.jpg
+Loading resource: res://.godot/imported/lifebuoy_arm_2k.jpg-aa702c34437170aa43d063efdf5734cf.s3tc.ctex remapped: res://.godot/imported/lifebuoy_arm_2k.jpg-aa702c34437170aa43d063efdf5734cf.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_arm_2k.jpg' remapped 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/lifebuoy_nor_gl_2k.jpg-dad8c026b292bca075078006dddf5f60.s3tc.ctex remapped: res://.godot/imported/lifebuoy_nor_gl_2k.jpg-dad8c026b292bca075078006dddf5f60.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/lifebuoy/textures/lifebuoy_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/lifebuoy/lifebuoy_2k.gltf' remapped 'res://assets/polyhaven/models/lifebuoy/lifebuoy_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/bronze_whale_statue/bronze_whale_statue_2k.gltf remapped: res://assets/polyhaven/models/bronze_whale_statue/bronze_whale_statue_2k.gltf
+Loading resource: res://.godot/imported/bronze_whale_statue_2k.gltf-c17971784ad678dfcf3eae166839dcbf.scn remapped: res://.godot/imported/bronze_whale_statue_2k.gltf-c17971784ad678dfcf3eae166839dcbf.scn
+Loading resource: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_diff_2k.jpg remapped: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_diff_2k.jpg
+Loading resource: res://.godot/imported/bronze_whale_statue_diff_2k.jpg-f6287d3b8106a99d73af8366a99659f9.ctex remapped: res://.godot/imported/bronze_whale_statue_diff_2k.jpg-f6287d3b8106a99d73af8366a99659f9.ctex
+Completed load for: 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_diff_2k.jpg' remapped 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_arm_2k.jpg remapped: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_arm_2k.jpg
+Loading resource: res://.godot/imported/bronze_whale_statue_arm_2k.jpg-cec9346b6b17fb73ceaa2c5442d80a35.ctex remapped: res://.godot/imported/bronze_whale_statue_arm_2k.jpg-cec9346b6b17fb73ceaa2c5442d80a35.ctex
+Completed load for: 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_arm_2k.jpg' remapped 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/bronze_whale_statue_nor_gl_2k.jpg-1945b453fce4f54ef1cb101e40d5c6ef.ctex remapped: res://.godot/imported/bronze_whale_statue_nor_gl_2k.jpg-1945b453fce4f54ef1cb101e40d5c6ef.ctex
+Completed load for: 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/bronze_whale_statue/bronze_whale_statue_2k.gltf' remapped 'res://assets/polyhaven/models/bronze_whale_statue/bronze_whale_statue_2k.gltf' at thread -1
+Loading resource: res://assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier_lod.gltf remapped: res://assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier_lod.gltf
+Loading resource: res://.godot/imported/concrete_road_barrier_lod.gltf-2ce1536dbd6650da6233b4b61c330e46.scn remapped: res://.godot/imported/concrete_road_barrier_lod.gltf-2ce1536dbd6650da6233b4b61c330e46.scn
+Loading resource: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg remapped: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg
+Loading resource: res://.godot/imported/concrete_road_barrier_diff_2k.jpg-4dd58564248d0025e155e94817fb4c3b.s3tc.ctex remapped: res://.godot/imported/concrete_road_barrier_diff_2k.jpg-4dd58564248d0025e155e94817fb4c3b.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg' remapped 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_arm_2k.jpg remapped: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_arm_2k.jpg
+Loading resource: res://.godot/imported/concrete_road_barrier_arm_2k.jpg-ea564680fed8c6fb4f9ce5a7b997e2dd.s3tc.ctex remapped: res://.godot/imported/concrete_road_barrier_arm_2k.jpg-ea564680fed8c6fb4f9ce5a7b997e2dd.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_arm_2k.jpg' remapped 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/concrete_road_barrier_nor_gl_2k.jpg-7fbd2997a308f0b072acca2198287880.s3tc.ctex remapped: res://.godot/imported/concrete_road_barrier_nor_gl_2k.jpg-7fbd2997a308f0b072acca2198287880.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.jpg' at thread -1
+Completed load for: 'res://assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier_lod.gltf' remapped 'res://assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier_lod.gltf' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SkyShaderRD/8838275e199f10c6bf0ab7445d70b1368f7aa04bc7ce92175d75f5f83507e0b8/723f70cebee6f2532406e527b1568d3412439290
+Loading resource: res://assets/sfx/roll.wav remapped: res://assets/sfx/roll.wav
+Loading resource: res://.godot/imported/roll.wav-1e2fdea0c9feb17626e5054987016dd3.sample remapped: res://.godot/imported/roll.wav-1e2fdea0c9feb17626e5054987016dd3.sample
+Completed load for: 'res://assets/sfx/roll.wav' remapped 'res://assets/sfx/roll.wav' at thread -1
+Loading resource: res://assets/sfx/applause.wav remapped: res://assets/sfx/applause.wav
+Loading resource: res://.godot/imported/applause.wav-6fb3c3b968fa466f3a5d39d4d3f66002.sample remapped: res://.godot/imported/applause.wav-6fb3c3b968fa466f3a5d39d4d3f66002.sample
+Completed load for: 'res://assets/sfx/applause.wav' remapped 'res://assets/sfx/applause.wav' at thread -1
+Loading resource: res://assets/sfx/pop_0.wav remapped: res://assets/sfx/pop_0.wav
+Loading resource: res://.godot/imported/pop_0.wav-23b91b2ee7767d2ca0ffcc87527908d7.sample remapped: res://.godot/imported/pop_0.wav-23b91b2ee7767d2ca0ffcc87527908d7.sample
+Completed load for: 'res://assets/sfx/pop_0.wav' remapped 'res://assets/sfx/pop_0.wav' at thread -1
+Loading resource: res://assets/sfx/pop_1.wav remapped: res://assets/sfx/pop_1.wav
+Loading resource: res://.godot/imported/pop_1.wav-97802d7cc1d6c121fae43191f4bb0e33.sample remapped: res://.godot/imported/pop_1.wav-97802d7cc1d6c121fae43191f4bb0e33.sample
+Completed load for: 'res://assets/sfx/pop_1.wav' remapped 'res://assets/sfx/pop_1.wav' at thread -1
+Loading resource: res://assets/sfx/land_0.wav remapped: res://assets/sfx/land_0.wav
+Loading resource: res://.godot/imported/land_0.wav-d910bd331875583014f15a1dad7ca992.sample remapped: res://.godot/imported/land_0.wav-d910bd331875583014f15a1dad7ca992.sample
+Completed load for: 'res://assets/sfx/land_0.wav' remapped 'res://assets/sfx/land_0.wav' at thread -1
+Loading resource: res://assets/sfx/land_1.wav remapped: res://assets/sfx/land_1.wav
+Loading resource: res://.godot/imported/land_1.wav-0703d13cfbed8248fb791bf3067b6bc8.sample remapped: res://.godot/imported/land_1.wav-0703d13cfbed8248fb791bf3067b6bc8.sample
+Completed load for: 'res://assets/sfx/land_1.wav' remapped 'res://assets/sfx/land_1.wav' at thread -1
+Loading resource: res://assets/sfx/land_2.wav remapped: res://assets/sfx/land_2.wav
+Loading resource: res://.godot/imported/land_2.wav-ce9c1eb6e9922ba54abcb24db3944770.sample remapped: res://.godot/imported/land_2.wav-ce9c1eb6e9922ba54abcb24db3944770.sample
+Completed load for: 'res://assets/sfx/land_2.wav' remapped 'res://assets/sfx/land_2.wav' at thread -1
+Loading resource: res://assets/sfx/push_0.wav remapped: res://assets/sfx/push_0.wav
+Loading resource: res://.godot/imported/push_0.wav-db7c256fc716b6dfc93d0afad90f961a.sample remapped: res://.godot/imported/push_0.wav-db7c256fc716b6dfc93d0afad90f961a.sample
+Completed load for: 'res://assets/sfx/push_0.wav' remapped 'res://assets/sfx/push_0.wav' at thread -1
+Loading resource: res://assets/sfx/push_1.wav remapped: res://assets/sfx/push_1.wav
+Loading resource: res://.godot/imported/push_1.wav-8dcb601882eda76522cf62c496d89012.sample remapped: res://.godot/imported/push_1.wav-8dcb601882eda76522cf62c496d89012.sample
+Completed load for: 'res://assets/sfx/push_1.wav' remapped 'res://assets/sfx/push_1.wav' at thread -1
+Loading resource: res://assets/sfx/push_2.wav remapped: res://assets/sfx/push_2.wav
+Loading resource: res://.godot/imported/push_2.wav-c1d40ca079c2959690f9fee0a8b101c4.sample remapped: res://.godot/imported/push_2.wav-c1d40ca079c2959690f9fee0a8b101c4.sample
+Completed load for: 'res://assets/sfx/push_2.wav' remapped 'res://assets/sfx/push_2.wav' at thread -1
+Loading resource: res://assets/sfx/push_3.wav remapped: res://assets/sfx/push_3.wav
+Loading resource: res://.godot/imported/push_3.wav-b19df7f6bcbb043bedb030e0d9b92d50.sample remapped: res://.godot/imported/push_3.wav-b19df7f6bcbb043bedb030e0d9b92d50.sample
+Completed load for: 'res://assets/sfx/push_3.wav' remapped 'res://assets/sfx/push_3.wav' at thread -1
+Loading resource: res://assets/sfx/bail_0.wav remapped: res://assets/sfx/bail_0.wav
+Loading resource: res://.godot/imported/bail_0.wav-ad00a1579518e110733a10e290862576.sample remapped: res://.godot/imported/bail_0.wav-ad00a1579518e110733a10e290862576.sample
+Completed load for: 'res://assets/sfx/bail_0.wav' remapped 'res://assets/sfx/bail_0.wav' at thread -1
+Loading resource: res://assets/sfx/bail_1.wav remapped: res://assets/sfx/bail_1.wav
+Loading resource: res://.godot/imported/bail_1.wav-e8201093df6afe93ace7d7bd2cbab1a4.sample remapped: res://.godot/imported/bail_1.wav-e8201093df6afe93ace7d7bd2cbab1a4.sample
+Completed load for: 'res://assets/sfx/bail_1.wav' remapped 'res://assets/sfx/bail_1.wav' at thread -1
+Loading resource: res://assets/sfx/bail_2.wav remapped: res://assets/sfx/bail_2.wav
+Loading resource: res://.godot/imported/bail_2.wav-b97b37f0259672bc2788ce94925ead4c.sample remapped: res://.godot/imported/bail_2.wav-b97b37f0259672bc2788ce94925ead4c.sample
+Completed load for: 'res://assets/sfx/bail_2.wav' remapped 'res://assets/sfx/bail_2.wav' at thread -1
+Loading resource: res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf remapped: res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-ExtraBoldItalic.ttf-77963f1052599542056aff19bae8f946.fontdata remapped: res://.godot/imported/BarlowCondensed-ExtraBoldItalic.ttf-77963f1052599542056aff19bae8f946.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf' remapped 'res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf' at thread -1
+Loading resource: res://assets/characters/rider0.glb remapped: res://assets/characters/rider0.glb
+Loading resource: res://.godot/imported/rider0.glb-45afae059a148c50c27e4600699473a6.scn remapped: res://.godot/imported/rider0.glb-45afae059a148c50c27e4600699473a6.scn
+Loading resource: res://assets/characters/rider0_young_lightskinned_male_diffuse.png remapped: res://assets/characters/rider0_young_lightskinned_male_diffuse.png
+Loading resource: res://.godot/imported/rider0_young_lightskinned_male_diffuse.png-a6719ac98710aa83d4730443481dee81.s3tc.ctex remapped: res://.godot/imported/rider0_young_lightskinned_male_diffuse.png-a6719ac98710aa83d4730443481dee81.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_young_lightskinned_male_diffuse.png' remapped 'res://assets/characters/rider0_young_lightskinned_male_diffuse.png' at thread -1
+Loading resource: res://assets/characters/rider0_eyebrow001.png remapped: res://assets/characters/rider0_eyebrow001.png
+Loading resource: res://.godot/imported/rider0_eyebrow001.png-363010a8eb434a7fd43b6ffc4c3f7ecf.s3tc.ctex remapped: res://.godot/imported/rider0_eyebrow001.png-363010a8eb434a7fd43b6ffc4c3f7ecf.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_eyebrow001.png' remapped 'res://assets/characters/rider0_eyebrow001.png' at thread -1
+Loading resource: res://assets/characters/rider0_eyelashes01.png remapped: res://assets/characters/rider0_eyelashes01.png
+Loading resource: res://.godot/imported/rider0_eyelashes01.png-29442170b83513d5fc379d3fa8f933bd.s3tc.ctex remapped: res://.godot/imported/rider0_eyelashes01.png-29442170b83513d5fc379d3fa8f933bd.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_eyelashes01.png' remapped 'res://assets/characters/rider0_eyelashes01.png' at thread -1
+Loading resource: res://assets/characters/rider0_darkbrown_eye.png remapped: res://assets/characters/rider0_darkbrown_eye.png
+Loading resource: res://.godot/imported/rider0_darkbrown_eye.png-01f6522345b190cd7a750e3276ecf123.s3tc.ctex remapped: res://.godot/imported/rider0_darkbrown_eye.png-01f6522345b190cd7a750e3276ecf123.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_darkbrown_eye.png' remapped 'res://assets/characters/rider0_darkbrown_eye.png' at thread -1
+Loading resource: res://assets/characters/rider0_male_casualsuit06_diffuse.png remapped: res://assets/characters/rider0_male_casualsuit06_diffuse.png
+Loading resource: res://.godot/imported/rider0_male_casualsuit06_diffuse.png-56061fa3c1904766c625d042c553ff85.s3tc.ctex remapped: res://.godot/imported/rider0_male_casualsuit06_diffuse.png-56061fa3c1904766c625d042c553ff85.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_male_casualsuit06_diffuse.png' remapped 'res://assets/characters/rider0_male_casualsuit06_diffuse.png' at thread -1
+Loading resource: res://assets/characters/rider0_male_casualsuit06_normal.png remapped: res://assets/characters/rider0_male_casualsuit06_normal.png
+Loading resource: res://.godot/imported/rider0_male_casualsuit06_normal.png-791d005ba458d14755f2dbaf7faf14a7.s3tc.ctex remapped: res://.godot/imported/rider0_male_casualsuit06_normal.png-791d005ba458d14755f2dbaf7faf14a7.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_male_casualsuit06_normal.png' remapped 'res://assets/characters/rider0_male_casualsuit06_normal.png' at thread -1
+Loading resource: res://assets/characters/rider0_shoes05_diffuse.png remapped: res://assets/characters/rider0_shoes05_diffuse.png
+Loading resource: res://.godot/imported/rider0_shoes05_diffuse.png-85aceb9a705b2e3dc7a5afa2eb69ff97.s3tc.ctex remapped: res://.godot/imported/rider0_shoes05_diffuse.png-85aceb9a705b2e3dc7a5afa2eb69ff97.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_shoes05_diffuse.png' remapped 'res://assets/characters/rider0_shoes05_diffuse.png' at thread -1
+Loading resource: res://assets/characters/rider0_short02_diffuse.png remapped: res://assets/characters/rider0_short02_diffuse.png
+Loading resource: res://.godot/imported/rider0_short02_diffuse.png-3791d0a1cc4afe245933be8a95659844.s3tc.ctex remapped: res://.godot/imported/rider0_short02_diffuse.png-3791d0a1cc4afe245933be8a95659844.s3tc.ctex
+Completed load for: 'res://assets/characters/rider0_short02_diffuse.png' remapped 'res://assets/characters/rider0_short02_diffuse.png' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/36a830bb8c1017df7767422038a8a68cf8ca3db3
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/b45440c3f456e9d028413e80ede78655eb8c9e53
+Completed load for: 'res://assets/characters/rider0.glb' remapped 'res://assets/characters/rider0.glb' at thread -1
+Shader cache miss for ParticlesShaderRD/901193cac23d6a0586a4eb8cc190ab93fa2690bcc8ee6763e08186d0608810be/db609cbc040d6020ca345654b3b71886442a36d7
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/137891017d8cd29cef192f3f7a249d32945f3b12
+Loading resource: res://assets/characters/rider1.glb remapped: res://assets/characters/rider1.glb
+Loading resource: res://.godot/imported/rider1.glb-39f2e15aef3bfeeb0e10abd5d183fbcd.scn remapped: res://.godot/imported/rider1.glb-39f2e15aef3bfeeb0e10abd5d183fbcd.scn
+Loading resource: res://assets/characters/rider1_young_lightskinned_female_diffuse3.png remapped: res://assets/characters/rider1_young_lightskinned_female_diffuse3.png
+Loading resource: res://.godot/imported/rider1_young_lightskinned_female_diffuse3.png-3e8479c61422804c47ab58aec3415b5f.s3tc.ctex remapped: res://.godot/imported/rider1_young_lightskinned_female_diffuse3.png-3e8479c61422804c47ab58aec3415b5f.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_young_lightskinned_female_diffuse3.png' remapped 'res://assets/characters/rider1_young_lightskinned_female_diffuse3.png' at thread -1
+Loading resource: res://assets/characters/rider1_eyebrow010.png remapped: res://assets/characters/rider1_eyebrow010.png
+Loading resource: res://.godot/imported/rider1_eyebrow010.png-d7b054a8df93bf69405f5c8441477394.s3tc.ctex remapped: res://.godot/imported/rider1_eyebrow010.png-d7b054a8df93bf69405f5c8441477394.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_eyebrow010.png' remapped 'res://assets/characters/rider1_eyebrow010.png' at thread -1
+Loading resource: res://assets/characters/rider1_eyelashes01.png remapped: res://assets/characters/rider1_eyelashes01.png
+Loading resource: res://.godot/imported/rider1_eyelashes01.png-d22b6fc868341e811b042b1742836156.s3tc.ctex remapped: res://.godot/imported/rider1_eyelashes01.png-d22b6fc868341e811b042b1742836156.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_eyelashes01.png' remapped 'res://assets/characters/rider1_eyelashes01.png' at thread -1
+Loading resource: res://assets/characters/rider1_female_casualsuit01_diffuse.png remapped: res://assets/characters/rider1_female_casualsuit01_diffuse.png
+Loading resource: res://.godot/imported/rider1_female_casualsuit01_diffuse.png-ab83250f083466c21330981ad62b21e4.s3tc.ctex remapped: res://.godot/imported/rider1_female_casualsuit01_diffuse.png-ab83250f083466c21330981ad62b21e4.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_female_casualsuit01_diffuse.png' remapped 'res://assets/characters/rider1_female_casualsuit01_diffuse.png' at thread -1
+Loading resource: res://assets/characters/rider1_female_casualsuit01_normal.png remapped: res://assets/characters/rider1_female_casualsuit01_normal.png
+Loading resource: res://.godot/imported/rider1_female_casualsuit01_normal.png-7ea0553ebfce381c28393e74362cb68c.s3tc.ctex remapped: res://.godot/imported/rider1_female_casualsuit01_normal.png-7ea0553ebfce381c28393e74362cb68c.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_female_casualsuit01_normal.png' remapped 'res://assets/characters/rider1_female_casualsuit01_normal.png' at thread -1
+Loading resource: res://assets/characters/rider1_brownlight_eye.png remapped: res://assets/characters/rider1_brownlight_eye.png
+Loading resource: res://.godot/imported/rider1_brownlight_eye.png-64e9799973c3df77c4719e9d662d43c3.s3tc.ctex remapped: res://.godot/imported/rider1_brownlight_eye.png-64e9799973c3df77c4719e9d662d43c3.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_brownlight_eye.png' remapped 'res://assets/characters/rider1_brownlight_eye.png' at thread -1
+Loading resource: res://assets/characters/rider1_ponytail01_diffuse.png remapped: res://assets/characters/rider1_ponytail01_diffuse.png
+Loading resource: res://.godot/imported/rider1_ponytail01_diffuse.png-0c4030dcdf95bcb202c375c31ba01d1c.s3tc.ctex remapped: res://.godot/imported/rider1_ponytail01_diffuse.png-0c4030dcdf95bcb202c375c31ba01d1c.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_ponytail01_diffuse.png' remapped 'res://assets/characters/rider1_ponytail01_diffuse.png' at thread -1
+Loading resource: res://assets/characters/rider1_shoes06_diffuse.png remapped: res://assets/characters/rider1_shoes06_diffuse.png
+Loading resource: res://.godot/imported/rider1_shoes06_diffuse.png-564333e961cb983a91d9e4a7c74e0d8c.s3tc.ctex remapped: res://.godot/imported/rider1_shoes06_diffuse.png-564333e961cb983a91d9e4a7c74e0d8c.s3tc.ctex
+Completed load for: 'res://assets/characters/rider1_shoes06_diffuse.png' remapped 'res://assets/characters/rider1_shoes06_diffuse.png' at thread -1
+Completed load for: 'res://assets/characters/rider1.glb' remapped 'res://assets/characters/rider1.glb' at thread -1
+Loading resource: res://assets/music/lobby.wav remapped: res://assets/music/lobby.wav
+Loading resource: res://.godot/imported/lobby.wav-57209117bb74e2c026f654c0286bd987.sample remapped: res://.godot/imported/lobby.wav-57209117bb74e2c026f654c0286bd987.sample
+Completed load for: 'res://assets/music/lobby.wav' remapped 'res://assets/music/lobby.wav' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/a108158d1a145ea996cac5b7f02478b69e74c614
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader cache miss for SceneForwardClusteredShaderRD/2f102ca803487d683cf9724a52d18af4ef98adaf3c404e2f07683d3d48f1b52b/7ad492364f5a1def59dede61e9545182f3efd4c0
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/a784797763b72ce058effad41b273eb697df9814
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/b0298f277662c8dffe04cf40a1815022876f8b93
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/079eb971646952e8d475707a6ee7855338ba6a56
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/32469472a46e9780019a552bdfcd6a982c3376df
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/0b36e8cefbbe1f57d8f4fc5b273e03980a22109a
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/0b5b7b02d4bde6a0f04a93d218bef7916602b76c
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/9dae05ba29ceac5894495a49a33f944fdfe75839
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/29ad28b0fddea5d1747b05dfafb4ebdc7345d976
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/a496140de1a54a7fd99443fd4b03919305b2f8ae
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/8f345455b2d2399241aff72abe7ac971e5c808f0
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/137891017d8cd29cef192f3f7a249d32945f3b12
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/a108158d1a145ea996cac5b7f02478b69e74c614
+Shader cache miss for SceneForwardClusteredShaderRD/d8822b367dcca0edc79b51e9de6e307dab3d7f51b8ae292e035e31342e10917d/7ad492364f5a1def59dede61e9545182f3efd4c0
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+Loading resource: res://assets/fonts/BarlowCondensed-SemiBold.ttf remapped: res://assets/fonts/BarlowCondensed-SemiBold.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-SemiBold.ttf-a61dd99857b2d1cd6578199d7509bfaf.fontdata remapped: res://.godot/imported/BarlowCondensed-SemiBold.ttf-a61dd99857b2d1cd6578199d7509bfaf.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-SemiBold.ttf' remapped 'res://assets/fonts/BarlowCondensed-SemiBold.ttf' at thread -1
+DLSS SR requested options: viewport=2 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS SR requested options: viewport=3 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+[  12.8] P1 s= 35.3  banked 520 Crooked Grind
+[  12.8] P2 s= 35.3  banked 520 Crooked Grind
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 2 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 2 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 2 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 2 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer '{DEBUG_ENABLED unavailable}' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\regina-export-c1fc0252a9-01\game\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

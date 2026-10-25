@@ -1,0 +1,5 @@
+Test run for <WORKSPACE>\source\modules\mono\editor\Godot.NET.Sdk\Godot.SourceGenerators.Tests\bin\Release\net10.0\Godot.SourceGenerators.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+Results File: <WORKSPACE>\stabilization-20261026\sourcegen-c1\<USER>_<HOST>_2026-10-26_08_03_39_net10.0.trx
+
+Passed!  - Failed:     0, Passed:    43, Skipped:     0, Total:    43, Duration: 12 s - Godot.SourceGenerators.Tests.dll (net10.0)

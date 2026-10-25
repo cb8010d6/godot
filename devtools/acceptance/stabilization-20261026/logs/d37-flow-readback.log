@@ -1,0 +1,270 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.d37b63e72 (2026-10-25 19:12:38 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.Godotphysx.0'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1888918308096
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Integrated
+Optional Vulkan device extension VK_EXT_fragment_density_map not found
+Optional Vulkan device extension VK_EXT_fragment_density_map2 not found
+Optional Vulkan device extension VK_QCOM_fragment_density_map_offset not found
+Optional Vulkan device extension VK_EXT_astc_decode_mode not found
+Optional Vulkan device extension VK_EXT_texture_compression_astc_hdr not found
+Optional Vulkan device extension VK_KHR_external_memory_fd not found
+Optional Vulkan device extension VK_EXT_debug_marker not found
+- Vulkan Fragment Shading Rate supported:
+  Pipeline fragment shading rate
+  Primitive fragment shading rate
+  Attachment fragment shading rate, min texel size: (16, 16), max texel size: (16, 16), max fragment size: (4, 4)
+- Vulkan Fragment Density Map not supported
+- Vulkan multiview supported:
+  max view count: 32
+  max instances: 134217727
+- Vulkan subgroup:
+  size: 32
+  min size: 32
+  max size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE, STAGE_RAYGEN_KHR, STAGE_ANY_HIT_KHR, STAGE_CLOSEST_HIT_KHR, STAGE_MISS_KHR, STAGE_INTERSECTION_KHR, STAGE_CALLABLE_KHR, STAGE_TASK_NV, STAGE_MESH_NV
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD, FEATURE_PARTITIONED_NV
+  quad operations in all stages
+- Vulkan Acceleration Structure supported
+  min acceleration structure scratch offset alignment: 128
+- Vulkan Raytracing supported
+  shader group handle size: 32
+  shader group handle alignment: 32
+  shader group handle size aligned: 32
+  shader group base alignment: 64
+Streamline Vulkan device features: privateData=1 presentId=1
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+Startup PSO cache (5.1 MiB)
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Creating VMA small objects pool for memory type index 1
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: b4449329f28f64c3e7b0ff6665c05bb826b362a53692a8b8ce0a5698cf3f611f
+Shader cache miss for CanvasSdfShaderRD/b4449329f28f64c3e7b0ff6665c05bb826b362a53692a8b8ce0a5698cf3f611f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkeletonShaderRD' (group 0) SHA256: 2a1d268a247814faa3eeff650e09e37b26ad7a829fa37b76f53db12515a303ad
+Shader cache miss for SkeletonShaderRD/2a1d268a247814faa3eeff650e09e37b26ad7a829fa37b76f53db12515a303ad/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SortShaderRD' (group 0) SHA256: 37038ec1428b47cf286e9ffdabe21c95d6bd36ea3b446b7ef6b928e47c629be4
+Shader cache miss for SortShaderRD/37038ec1428b47cf286e9ffdabe21c95d6bd36ea3b446b7ef6b928e47c629be4/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ParticlesShaderRD' (group 0) SHA256: 6cbb1472853723a496b84b99fc7af04cc45579c8306fae4ebb6f1bcb3a865c0e
+Shader cache miss for ParticlesShaderRD/6cbb1472853723a496b84b99fc7af04cc45579c8306fae4ebb6f1bcb3a865c0e/07b5904b662900d90454c39c46885098de79aa4c
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: 08ec8f4188f64f97e8c5c573e4bc99893b8fdc71be9a52fd4937e88c65927f63
+Shader cache miss for ParticlesCopyShaderRD/08ec8f4188f64f97e8c5c573e4bc99893b8fdc71be9a52fd4937e88c65927f63/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasShaderRD' (group 0) SHA256: 5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1
+Shader cache miss for CanvasShaderRD/5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: baf4776419e4a0663d23e746af65bc032ce82952600195d6aaf25a28f1bdeba5
+Shader cache miss for CanvasOcclusionShaderRD/baf4776419e4a0663d23e746af65bc032ce82952600195d6aaf25a28f1bdeba5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for CanvasShaderRD/5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1/90b96afad25c311837b639f3c9d81d610d9b7ee9
+Shader cache miss for CanvasShaderRD/5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1/8f9335de72e837eeead40640cc01fddc5baf5a7c
+Shader 'TexBlitShaderRD' (group 0) SHA256: d339352e8adfb5a433f6921ae835505e17eaa513c8a9a9746b7a0ca61c7ac507
+Shader cache miss for TexBlitShaderRD/d339352e8adfb5a433f6921ae835505e17eaa513c8a9a9746b7a0ca61c7ac507/1e8995c9eb0e9b0b053035999de68595c521a33e
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: c342deba7992d47804b82659a30c1d67201c1faa85ea339101b94bcdf8f1aed5
+Shader cache miss for ClusterRenderShaderRD/c342deba7992d47804b82659a30c1d67201c1faa85ea339101b94bcdf8f1aed5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: fc0317540b0b8938773bfad6726b724879596baea791ad4649a2411af623c12c
+Shader cache miss for ClusterStoreShaderRD/fc0317540b0b8938773bfad6726b724879596baea791ad4649a2411af623c12c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: 93ee3cc2fd07b2b5c61e573bf7398ba69bbaeebc5fcf66f9711377bab99ccdeb
+Shader cache miss for ClusterDebugShaderRD/93ee3cc2fd07b2b5c61e573bf7398ba69bbaeebc5fcf66f9711377bab99ccdeb/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: d127a40fe7be151edb04be86e1b16bbdc92564f10fd410804c53307a27d01ddd
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: f9bc78e21271641f4ccbde45a75c0a08bf2ee4c4062d34aa679a0466f28e8089
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: ec688ac880883f5a67bb852edce7163a0b2d21fbd47829abb7cb2871b4724875
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/a784797763b72ce058effad41b273eb697df9814
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 9bd698448282f3b019798cf1b4462780b9f9f85ec076a3d1ecc9930ab89d50c9
+Shader cache miss for BestFitNormalShaderRD/9bd698448282f3b019798cf1b4462780b9f9f85ec076a3d1ecc9930ab89d50c9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: 3266769773e527ac2f1755e7b71d38db2fccfa94b3e4b70c274095ab3f84ce5a
+Shader cache miss for IntegrateDfgShaderRD/3266769773e527ac2f1755e7b71d38db2fccfa94b3e4b70c274095ab3f84ce5a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TaaResolveShaderRD' (group 0) SHA256: 387158cd0757939c530f609228d89b85885aad261ffaee67d975169a067eb1c0
+Shader cache miss for TaaResolveShaderRD/387158cd0757939c530f609228d89b85885aad261ffaee67d975169a067eb1c0/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: b4a68f3634b5d31bcccfe75cd413c7cc977997942e8fa98d0709a6be62e6c7eb
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: 4e3b7c4936d89bd03ed8e4f9db4b298a4f5c404abcc047d09d656548f4a30102
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: ae3ce70ee6fd292039ba34cc6dda841d0d957d47bfebd045d3571a1d52226f6b
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: 20fca582d7e338d81615e79a7a2471a1c4a87fb7269b6dbdd56af22ffebbc9dd
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: 0d0e37fc87a165377680f62237f95ff10060196282b4f4b3a09dc4f82b9dae11
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: 3ba1b9b73e1b71666f2e9871ba1be2e04e1a038709a8835e83f3287b76c7d3f3
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: 89975588b0f2969c30bfd652e8307c102261da36859f5239263eee749e208918
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: 5a710d5c99d6c66a5d208028ef2e9e5842ce3a55730f64e28b15981679640ded
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: 285693bface231c6fcd2aa0c26fb5250f952c06d6fbb05c9a8d76f39c183ac80
+Shader cache miss for MotionVectorDecodeShaderRD/285693bface231c6fcd2aa0c26fb5250f952c06d6fbb05c9a8d76f39c183ac80/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: 6ec85bca686bdad5c4031cddd1b4ebfbc0ccf56654122a3151374e3f9cf79d70
+Shader cache miss for SsEffectsDownsampleShaderRD/6ec85bca686bdad5c4031cddd1b4ebfbc0ccf56654122a3151374e3f9cf79d70/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilShaderRD' (group 0) SHA256: e02294930d03056945e67301fb0f86de5f88f401d66ce51273a368b59ea10c1f
+Shader cache miss for SsilShaderRD/e02294930d03056945e67301fb0f86de5f88f401d66ce51273a368b59ea10c1f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 6037bcaf731abedd1a881ac01b09ed99d576e2df4b563c9370b5187fe3f8526d
+Shader cache miss for SsilImportanceMapShaderRD/6037bcaf731abedd1a881ac01b09ed99d576e2df4b563c9370b5187fe3f8526d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 5aecb49c4a6481b2d900d5316f435671693b7efa3604e91b6b8022714a1fa810
+Shader cache miss for SsilBlurShaderRD/5aecb49c4a6481b2d900d5316f435671693b7efa3604e91b6b8022714a1fa810/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: 540c8ecd236550ed67c9fdf5a6625d1cf0b9ebe84381f683d61d652a71c09e24
+Shader cache miss for SsilInterleaveShaderRD/540c8ecd236550ed67c9fdf5a6625d1cf0b9ebe84381f683d61d652a71c09e24/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoShaderRD' (group 0) SHA256: 6cbf599bcc504c932992e391e1491e06531d2e935a20e156aa60f5d522fd7964
+Shader cache miss for SsaoShaderRD/6cbf599bcc504c932992e391e1491e06531d2e935a20e156aa60f5d522fd7964/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: 41b95808a0deb6a6b1ac7a1cc2efdea21af23f0279160a6f81e17ac945df4745
+Shader cache miss for SsaoImportanceMapShaderRD/41b95808a0deb6a6b1ac7a1cc2efdea21af23f0279160a6f81e17ac945df4745/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 99df4e562db1a93e6e40a1cb390569d6b76638be814b78bec17505f5f7b25068
+Shader cache miss for SsaoBlurShaderRD/99df4e562db1a93e6e40a1cb390569d6b76638be814b78bec17505f5f7b25068/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: 26f4a0b6610110ee529927917ded91de9eb6ebd656434077d712cb06bca8ee41
+Shader cache miss for SsaoInterleaveShaderRD/26f4a0b6610110ee529927917ded91de9eb6ebd656434077d712cb06bca8ee41/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: d9f374211878640c42a6d60fe7045cf65546ca4a1e9e326dea9d73bbc9a1ce8d
+Shader cache miss for ScreenSpaceReflectionDownsampleShaderRD/d9f374211878640c42a6d60fe7045cf65546ca4a1e9e326dea9d73bbc9a1ce8d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: 28ef64f94cc3646c01d83d2348b403397c7144bd5ccb629f3cfa9dcddee8dc16
+Shader cache miss for ScreenSpaceReflectionHizShaderRD/28ef64f94cc3646c01d83d2348b403397c7144bd5ccb629f3cfa9dcddee8dc16/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: 10b771f63eff3c32d4f92a528d4ba0c312a4eed7029a72b1a665b2f923a54c1d
+Shader cache miss for ScreenSpaceReflectionShaderRD/10b771f63eff3c32d4f92a528d4ba0c312a4eed7029a72b1a665b2f923a54c1d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: a9a5836c650b3862beb3da2e9970fca5e551b76fbf02cd044793ab82bc697e6f
+Shader cache miss for ScreenSpaceReflectionFilterShaderRD/a9a5836c650b3862beb3da2e9970fca5e551b76fbf02cd044793ab82bc697e6f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: 88acd9129e794df2101ef0712d625d278977203f53d97c6227c4cd65d473c6c0
+Shader cache miss for ScreenSpaceReflectionResolveShaderRD/88acd9129e794df2101ef0712d625d278977203f53d97c6227c4cd65d473c6c0/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: 96569b06152e33520fa149dd21427a74f46d30026173087b341fd42bbedc570e
+Shader cache miss for ScreenSpaceContactShadowsShaderRD/96569b06152e33520fa149dd21427a74f46d30026173087b341fd42bbedc570e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 4af73ecf79b535439c4541c301dc90c59416a770467a6f1adf509824e112f9ce
+Shader cache miss for SubsurfaceScatteringShaderRD/4af73ecf79b535439c4541c301dc90c59416a770467a6f1adf509824e112f9ce/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: f0197353b5b3e52424e31b5646c2f8ffeb8170ba5e95a891c508f1da2d934805
+Shader cache miss for MotionVectorsStoreShaderRD/f0197353b5b3e52424e31b5646c2f8ffeb8170ba5e95a891c508f1da2d934805/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkyShaderRD' (group 0) SHA256: 5c7a5722257d51f342637c6b96d4916640644d5ce2c0010c0b3df8b901f5220e
+Shader cache miss for SkyShaderRD/5c7a5722257d51f342637c6b96d4916640644d5ce2c0010c0b3df8b901f5220e/0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701
+Shader cache miss for SkyShaderRD/5c7a5722257d51f342637c6b96d4916640644d5ce2c0010c0b3df8b901f5220e/ff1961ca0c4c55a79eb12f819a7b6345801bbbaf
+Shader 'VoxelGiShaderRD' (group 0) SHA256: eab9e298883e09ee8e9b13b93de40d5c1302fe6bc4c470ca8641719511a488ea
+Shader cache miss for VoxelGiShaderRD/eab9e298883e09ee8e9b13b93de40d5c1302fe6bc4c470ca8641719511a488ea/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: 3050bcbe6c81e8174c2856f5c104a1fd02ea6812326cd9d738ee699c9d60be16
+Shader cache miss for VoxelGiDebugShaderRD/3050bcbe6c81e8174c2856f5c104a1fd02ea6812326cd9d738ee699c9d60be16/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: f31cf80b5f62c0a585ab055afcef2e762a8f0a0257a21ebe390aa92ec6d26210
+Shader cache miss for SdfgiPreprocessShaderRD/f31cf80b5f62c0a585ab055afcef2e762a8f0a0257a21ebe390aa92ec6d26210/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: 85aca4dd83c177c63a4ad7fb8affc0574014a40a2d9a7d8c8fa5abc39de414fa
+Shader cache miss for SdfgiDirectLightShaderRD/85aca4dd83c177c63a4ad7fb8affc0574014a40a2d9a7d8c8fa5abc39de414fa/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: ac32e72420a87bd3b39fcc8c2ebb5f242e4961a0fba2e9fe38857baf7544b2a3
+Shader cache miss for SdfgiIntegrateShaderRD/ac32e72420a87bd3b39fcc8c2ebb5f242e4961a0fba2e9fe38857baf7544b2a3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'GiShaderRD' (group 0) SHA256: 3247fc91133db1257c13b64062ab56a1503b099545c3928666b8879411850e2b
+Shader 'GiShaderRD' (group 1) SHA256: d04ee2d10184cf38aafb5cc1e5cd01a65afa98a59a4eaa938c2ce9236db3b5f0
+Shader cache miss for GiShaderRD/3247fc91133db1257c13b64062ab56a1503b099545c3928666b8879411850e2b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for GiShaderRD/d04ee2d10184cf38aafb5cc1e5cd01a65afa98a59a4eaa938c2ce9236db3b5f0/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: 7307206f26e8d0b0582b5558d158d3da0c656d15f42ad81e6e888607ce6a984a
+Shader cache miss for SdfgiDebugShaderRD/7307206f26e8d0b0582b5558d158d3da0c656d15f42ad81e6e888607ce6a984a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: 3e8edee0ad3ba5f6ed83c9f19adf2571a5ffc99b78324b70bf300517109cf6b6
+Shader cache miss for SdfgiDebugProbesShaderRD/3e8edee0ad3ba5f6ed83c9f19adf2571a5ffc99b78324b70bf300517109cf6b6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 038920b4b387b90980f19744b12f4e79a2731b6ff36bf53bb8ff875f5e334ceb
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 73422c10d708d598d5a1dd016992c757ae232d53ee64856beb32ffa412545173
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: fe122cd8a1cf01062f737673bfa25628cde0d5c7e7c1a3bf7a424cad746f9ff8
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: a5fe1d87c6e38f50aed6864491f051f3f8e5bc407df2b2da772546414849b98c
+Shader cache miss for VolumetricFogShaderRD/fe122cd8a1cf01062f737673bfa25628cde0d5c7e7c1a3bf7a424cad746f9ff8/3377d4ca9d0fc2e16f62596ee37d619e8e7e3f54
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 8281dfea6bfe65875e092e7724873fefd35231f3826c22d57f947a4242b6679d
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: 1d3d43942d11ffe3540dda29f9f3fbd8e616fc53801b2d654e57d1e17159f8a9
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: 0bcd66a110c3409a289ecc2bd592003a49008de5622a95310ccf7a67ab596255
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: a2d35000c8df6fb1e3e34f70273c333846373f8cbd184bf38925c4b80f6830dd
+Shader cache miss for VolumetricFogProcessShaderRD/0bcd66a110c3409a289ecc2bd592003a49008de5622a95310ccf7a67ab596255/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BokehDofShaderRD' (group 0) SHA256: ec915698551077c85cb64216f7bcb0faf6e16d39df67c35365bb5334eff62c1f
+Shader cache miss for BokehDofShaderRD/ec915698551077c85cb64216f7bcb0faf6e16d39df67c35365bb5334eff62c1f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyShaderRD' (group 0) SHA256: c3d688fd8c178b946abba6f53a67531a49fae547cec59e23436a97b24305f385
+Shader cache miss for CopyShaderRD/c3d688fd8c178b946abba6f53a67531a49fae547cec59e23436a97b24305f385/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyToFbShaderRD' (group 0) SHA256: 04db489a70aec87ae35a5d7a4194a4a1233bc0df794c2c4c00b864c193089bb2
+Shader cache miss for CopyToFbShaderRD/04db489a70aec87ae35a5d7a4194a4a1233bc0df794c2c4c00b864c193089bb2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToDpShaderRD' (group 0) SHA256: 9e86d24145fc257b31283741652f95c1d54510788b782ac3ac552969894b3faa
+Shader cache miss for CubeToDpShaderRD/9e86d24145fc257b31283741652f95c1d54510788b782ac3ac552969894b3faa/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: 57f9950c45907eed0c561e55071e35187bed09fd84d28d939d22d59675781e44
+Shader cache miss for CubeToOctmapShaderRD/57f9950c45907eed0c561e55071e35187bed09fd84d28d939d22d59675781e44/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: b5c60fe8c6ee60cb47467815facfd60475a508e463cd4dc071b2b78c22fa78a6
+Shader cache miss for OctmapDownsamplerShaderRD/b5c60fe8c6ee60cb47467815facfd60475a508e463cd4dc071b2b78c22fa78a6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: e79859be4de53fde618dca9a64b702906583b3b8861f89c524fd1e28d0ea769c
+Shader cache miss for OctmapFilterShaderRD/e79859be4de53fde618dca9a64b702906583b3b8861f89c524fd1e28d0ea769c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: f808bb30c7fa44fd9a3cc1b8fabc95fc240479c9844d9f1884a2be4e6bf973ab
+Shader cache miss for OctmapRoughnessShaderRD/f808bb30c7fa44fd9a3cc1b8fabc95fc240479c9844d9f1884a2be4e6bf973ab/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: 225c303891226b47610f13d0c1f53831603cee3bf098b024d389cbd19fe8fbc5
+Shader cache miss for SpecularMergeShaderRD/225c303891226b47610f13d0c1f53831603cee3bf098b024d389cbd19fe8fbc5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: e803772354a601c1f0f50590ed17350ea79fa4f79797acd4bb4356a5e4245b27
+Shader cache miss for DepthReconstructShaderRD/e803772354a601c1f0f50590ed17350ea79fa4f79797acd4bb4356a5e4245b27/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: b0eddf08f49685fe3cf728a046fa65591896d98f63729eae8d86f2a469a84d4a
+Shader cache miss for ShadowFrustumShaderRD/b0eddf08f49685fe3cf728a046fa65591896d98f63729eae8d86f2a469a84d4a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 43cc5a6db9ab272876b63da5f93f9f3ff8f3442a65ab3193e3e5928b7dc97348
+Shader cache miss for MotionVectorsShaderRD/43cc5a6db9ab272876b63da5f93f9f3ff8f3442a65ab3193e3e5928b7dc97348/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: b93cc03299a4350423dc5b116b68e4aa5b7594b9cd6c4c1209d1d9a7eb8b856c
+Shader cache miss for LuminanceReduceShaderRD/b93cc03299a4350423dc5b116b68e4aa5b7594b9cd6c4c1209d1d9a7eb8b856c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 973f7fa7b0aa9d80421dfe675d484114f62d87431cdb29a6d0975794702b2fe7
+Shader cache miss for SmaaEdgeDetectionShaderRD/973f7fa7b0aa9d80421dfe675d484114f62d87431cdb29a6d0975794702b2fe7/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 2b4dbe79b6297c574625d6439985261875ef1050db8cc935277299ffffed1fa8
+Shader cache miss for SmaaWeightCalculationShaderRD/2b4dbe79b6297c574625d6439985261875ef1050db8cc935277299ffffed1fa8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: b371ed0f13a926717ba395ec1b977e2ead2ddcee4ba044cbd9cdb3b45f4ece5e
+Shader cache miss for SmaaBlendingShaderRD/b371ed0f13a926717ba395ec1b977e2ead2ddcee4ba044cbd9cdb3b45f4ece5e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TonemapShaderRD' (group 0) SHA256: 5a0b349bd25f386038189a0d9347f2c05f705b525e3cd18865840f0b61a1f8b9
+Shader cache miss for TonemapShaderRD/5a0b349bd25f386038189a0d9347f2c05f705b525e3cd18865840f0b61a1f8b9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VrsShaderRD' (group 0) SHA256: a885aeecb577697b93d0f50c85eef3b2cc7577aac38a8318af791fcaf7e8827f
+Shader cache miss for VrsShaderRD/a885aeecb577697b93d0f50c85eef3b2cc7577aac38a8318af791fcaf7e8827f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: dbe677e57fe3c625a0a7e3170710c4034254743676e380af4687114d99f94cb7
+Shader cache miss for FsrUpscaleShaderRD/dbe677e57fe3c625a0a7e3170710c4034254743676e380af4687114d99f94cb7/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ResolveShaderRD' (group 0) SHA256: 4f4a998acd1a6d5a2f2df57d91484040c1105ce210c5a23b4f8cbce09dc12389
+Shader cache miss for ResolveShaderRD/4f4a998acd1a6d5a2f2df57d91484040c1105ce210c5a23b4f8cbce09dc12389/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BlitShaderRD' (group 0) SHA256: 9ffd05d12761953f2c18e766047e6f08b27cbf12a6a6e23e2121838a5ec7dd1c
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Shader cache miss for BlitShaderRD/9ffd05d12761953f2c18e766047e6f08b27cbf12a6a6e23e2121838a5ec7dd1c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/c829cbf36d9eb726291ec00b2cae2e2dc56da837fcb9684d756f1ebe21034bb1/60fbb158a5f44670392b2322a8401a535c41dc72
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+Shader cache miss for CanvasShaderRD/5cd22304af32979dce1472c89a851cd97ff2d811aad11d2e581aa1a665b6aff1/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+PhysX: CPU dispatcher using 4 worker threads (of 16) [GPU path].
+PhysX 5.10.0 initialized [GPU].
+CORE API HASH: 984715307
+EDITOR API HASH: 3714769106
+Loading resource: res://test/flow/flow_smoke_test.gd remapped: res://test/flow/flow_smoke_test.gd
+Completed load for: 'res://test/flow/flow_smoke_test.gd' remapped 'res://test/flow/flow_smoke_test.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+  [ok] Flow running                                   
+  [ok] fields read back from the GPU                  8164864 bytes
+  [ok] hot gas rose above the emitter                 top 4.78 m
+  [ok] and stayed near it sideways                    center (0.775, 1.575, 0.375)
+  [ok] sample_smoke finds smoke over the emitter      0.287 there, 0.000 8 m away
+[flow] step 0.93 ms avg
+[flow] PASS
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline terminal Vulkan device wait starting.
+Streamline terminal Vulkan device idle completed (VkResult 0).
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<WORKSPACE>\stabilization-20261026\builds\final-d37b63e72b-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

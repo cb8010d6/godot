@@ -1,0 +1,73 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-matrix.json",
+      "bytes": 890,
+      "sha256": "fcf98c28d86c3bd7bf772f639856a497b931f5b55632c61934bd83a02e2bda7b"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/packages-d37b63e72b-inventory.json",
+      "bytes": 819,
+      "sha256": "404fce41bb81538247301d5ba189f8564565e8828df4c4941dbed6f19fff95c0"
+    }
+  ],
+  "data": {
+    "matrix": [
+      {
+        "label": "package-d37b63e72b-editor-standard",
+        "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+        "kind": "editor",
+        "mono": false,
+        "exit_code": 0,
+        "duration_seconds": 25.781
+      },
+      {
+        "label": "package-d37b63e72b-editor-mono",
+        "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+        "kind": "editor",
+        "mono": true,
+        "exit_code": 0,
+        "duration_seconds": 32.593
+      },
+      {
+        "label": "package-d37b63e72b-templates-standard",
+        "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+        "kind": "templates",
+        "mono": false,
+        "exit_code": 0,
+        "duration_seconds": 9.172
+      },
+      {
+        "label": "package-d37b63e72b-templates-mono",
+        "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+        "kind": "templates",
+        "mono": true,
+        "exit_code": 0,
+        "duration_seconds": 9.14
+      }
+    ],
+    "archive_inventory": [
+      {
+        "file": "godot_4.8-nvidia-rt-dlss-physx_v0.7.3-editor_windows_amd64.zip",
+        "bytes": 183616634,
+        "sha256": "c63cf38d9269720956826291f6a7ba0fc19462e4dda381bd54825504187301bb"
+      },
+      {
+        "file": "godot_4.8-nvidia-rt-dlss-physx_v0.7.3-editor_windows_amd64_mono.zip",
+        "bytes": 215918143,
+        "sha256": "f2cade2bd06f52bb8e35b15fad5ba3c9ea09d36484f93c53fa53a717a234ed82"
+      },
+      {
+        "file": "godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64.tpz",
+        "bytes": 66895560,
+        "sha256": "3de908b7b1dd5e3f7fd7b6d6e09dd38490f57388dc2b90f22f3e5d0cba040905"
+      },
+      {
+        "file": "godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64_mono.tpz",
+        "bytes": 67091310,
+        "sha256": "111d431416b27ee702bb9cc624e7655315a6a36b0c60cca351aa658bab78488e"
+      }
+    ]
+  }
+}

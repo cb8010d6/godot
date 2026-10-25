@@ -1,0 +1,54 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/local-rd-after-d37-matrix.json",
+      "bytes": 2411,
+      "sha256": "d5e1137523b25a2ee947a977b1eaedd9c4f3706f0e615e49b67a9b6f5fbce9c8"
+    }
+  ],
+  "data": [
+    {
+      "label": "local-rd-after-d37-vulkan",
+      "exit_code": 0,
+      "source_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+      "validation": true,
+      "local_rd_markers": [
+        "LOCAL_RD_BEFORE {\"available\":true,\"eligible\":false,\"reason\":\"no_request\",\"rendered_3d_views\":1,\"requested_3d_views\":0,\"sdk_enabled\":false,\"supported_generated_frames\":1}",
+        "LOCAL_RD_CREATED NVIDIA GeForce RTX 4060 Laptop GPU",
+        "LOCAL_RD_AFTER {\"available\":true,\"eligible\":false,\"reason\":\"no_request\",\"rendered_3d_views\":1,\"requested_3d_views\":0,\"sdk_enabled\":false,\"supported_generated_frames\":1}"
+      ],
+      "engine_errors": [
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: -72737220 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03868",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+        "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+      ],
+      "vulkan_diagnostics": [
+        "Loader Message",
+        "Loader Message",
+        "Loader Message",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkQueueSubmit2-semaphore-03868",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600",
+        "VUID-vkCmdDraw-None-09600"
+      ],
+      "d3d_errors": [],
+      "completed": true
+    }
+  ]
+}

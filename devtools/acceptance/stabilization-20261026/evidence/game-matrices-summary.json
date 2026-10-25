@@ -1,0 +1,3391 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-d37b63e72b-20261025T195444Z-573ba3/matrix.json",
+      "bytes": 234210,
+      "sha256": "a2e27620e2ffec1e84117ad853b8ed364c5141fd1fc48be2e814ff9f8a8d6050"
+    },
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/matrix.json",
+      "bytes": 239795,
+      "sha256": "e8f18e1955a1f4bf24d450543e8365c80518466f1f9faec1e558e668cded3a0d"
+    }
+  ],
+  "data": [
+    {
+      "input": {
+        "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-d37b63e72b-20261025T195444Z-573ba3/matrix.json",
+        "bytes": 234210,
+        "sha256": "a2e27620e2ffec1e84117ad853b8ed364c5141fd1fc48be2e814ff9f8a8d6050"
+      },
+      "data": {
+        "status": "FAIL",
+        "expected_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+        "global_error": "ValueError: A frozen engine, fixture, adapter, or project input changed during captures",
+        "limitations": [
+          "180 real post-draw frames, fixed simulation delta; functional captures, not FPS measurements.",
+          "Requested preset and SDK status do not prove active DLSS model or generated output frames.",
+          "No validation layer is requested; this matrix does not claim strict GPU validation-layer cleanliness."
+        ],
+        "finished_utc": "2026-10-25T20:03:13.487840+00:00",
+        "inputs": [
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161794560,
+            "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-no-sl\\godot.windows.editor.x86_64.exe",
+            "bytes": 161794560,
+            "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\game_render_capture.gd",
+            "bytes": 6531,
+            "sha256": "ec9a3378c29c8db893a193f86a30ac7e03934846b0edad6cf1d0ef285c4623c5"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\run_logged.py",
+            "bytes": 6438,
+            "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\game_capture_matrix.py",
+            "bytes": 17357,
+            "sha256": "8633d812a3bd40e755668265dbde00b99a189ea57bed92c2240cfdbf9ca6384a"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\project.godot",
+            "bytes": 2096,
+            "sha256": "77c4b82a2c8f693064dc787b0635f5e03d44df241152221bf34e7ff325ebbf36"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\settings.gd",
+            "bytes": 15926,
+            "sha256": "9fbad4d30a97b5d10dbce4fee99d82f048ed451c513119d25409430b6684f8d5"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\nvidia.gd",
+            "bytes": 4880,
+            "sha256": "da76224a3ec29b17bb9d7b4790c1378bb4b2c7e456402b599f467b368f135d15"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\app_exit.gd",
+            "bytes": 1588,
+            "sha256": "dd2a0d0d3936f7956c2d996796957127c3e9a8ff94b553d4e604c6f5ef53081a"
+          }
+        ],
+        "individual_status_counts": {
+          "PASS": 17
+        },
+        "results": [
+          {
+            "case": {
+              "name": "vulkan-skate1-quality-recommended",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate1-quality-recommended\\capture\\frame.png",
+              "bytes": 1613070,
+              "sha256": "b3a7b7a839fdc1213920bab4e2a04b64a9206d418cda2cbbf7dde245c500b70f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-dlaa-M",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 6,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate1-dlaa-M\\capture\\frame.png",
+              "bytes": 1728550,
+              "sha256": "9fa451ac91668ade529ebd2400733b396997b8771ae832118ffbd0a51580438b",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 1.0,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 6,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-performance-M",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 9,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate1-performance-M\\capture\\frame.png",
+              "bytes": 1667876,
+              "sha256": "7fb3af78a55a668af04bbf869c59013745d1249c0c88f04377bf557cba6fce3f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.5,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 9,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-basketball2-quality-fg-request",
+              "api": "vulkan",
+              "game": "basketball",
+              "players": 2,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-basketball2-quality-fg-request\\capture\\frame.png",
+              "bytes": 1675695,
+              "sha256": "882cb5eff39aed493265d6edee2fc0c8d561c1e000424ad8de71dd47ecacaa10",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 2,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 2,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 2,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-basketball4-quality-fg-request",
+              "api": "vulkan",
+              "game": "basketball",
+              "players": 4,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-basketball4-quality-fg-request\\capture\\frame.png",
+              "bytes": 1681415,
+              "sha256": "5453d8e10952fcafa71dc3098ba88938ddc458844ab56e4e9856376caa34979b",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 4,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 4,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 4,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate3-quality",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 3,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate3-quality\\capture\\frame.png",
+              "bytes": 1313683,
+              "sha256": "82e6598ddd43e0fc08d4c47a35cb19c8b6a5b2e3c3f007f2918c0edccfe73527",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 3,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 3,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 3,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-quality-recommended",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-skate1-quality-recommended\\capture\\frame.png",
+              "bytes": 1632329,
+              "sha256": "9ba2a2f8debfcd35235971766c4b0099229c12776550f92f41bbc906eeb19f4f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-dlaa-M",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 6,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-skate1-dlaa-M\\capture\\frame.png",
+              "bytes": 1749211,
+              "sha256": "9cdc057ac59de868f9064d5c6f78fe607522f5cb1325dc5e4255eef2dd5c0235",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 1.0,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 6,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-performance-M",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 9,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 2,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-skate1-performance-M\\capture\\frame.png",
+              "bytes": 1736022,
+              "sha256": "9339b75e0638e69f835811707ad5b4f3e0ebc048ab6f08887193adb28ed31561",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.5,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 9,
+              "requested_preset_name": "M",
+              "requested_sharpness": 2,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-basketball2-quality-fg-request",
+              "api": "d3d12",
+              "game": "basketball",
+              "players": 2,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-basketball2-quality-fg-request\\capture\\frame.png",
+              "bytes": 1709886,
+              "sha256": "b48b0b130ce0b9f380539d2a4240d643331529975cabc58966fe0e2fad2b0b49",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 2,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 2,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 2,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-basketball4-quality-fg-request",
+              "api": "d3d12",
+              "game": "basketball",
+              "players": 4,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-basketball4-quality-fg-request\\capture\\frame.png",
+              "bytes": 1700348,
+              "sha256": "5a15289e2c5b94d2043459feadaaa24f9f9296aa5f635324221448a5727fce9c",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 4,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 4,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 4,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate3-quality",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 3,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-skate3-quality\\capture\\frame.png",
+              "bytes": 1322309,
+              "sha256": "ead4d7ca4e8e47d03c23a6463498a08d463c504d38c05dd998b01dee766b8930",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 3,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 3,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 3,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-ddgi",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 1,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate1-ddgi\\capture\\frame.png",
+              "bytes": 1598129,
+              "sha256": "53788d7203a2e0fa86ee0c192caac99a2755531e468cf2838b3f35dc95eb72d0",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 1,
+              "environments": [
+                {
+                  "ddgi": true,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-pt-rr",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 2,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\vulkan-skate1-pt-rr\\capture\\frame.png",
+              "bytes": 789274,
+              "sha256": "d8963ba62e1b6d12c7a3a3ac1609e7992dae4dd3f84b30dfe4a3108455f7add9",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 2,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": true
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-pt-raster-fallback",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 2,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\d3d12-skate1-pt-raster-fallback\\capture\\frame.png",
+              "bytes": 1632329,
+              "sha256": "9ba2a2f8debfcd35235971766c4b0099229c12776550f92f41bbc906eeb19f4f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": true,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 2,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "no-sdk-vulkan-skate1-fsr-fallback",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": true
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\no-sdk-vulkan-skate1-fsr-fallback\\capture\\frame.png",
+              "bytes": 1878493,
+              "sha256": "1b031b1d0765c279f67dedb82d6585a4900dfb9d6ff6b50edb335a087559c91f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 2,
+              "effective_scale": 0.67,
+              "lighting_fallback_expected": false,
+              "fg_reason": "unavailable",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-no-sl\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": false,
+                "eligible": false,
+                "reason": "unavailable",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 0
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 2,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "no-sdk-d3d12-skate1-fsr-fallback",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": true
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-d37b63e72b-20261025T195444Z-573ba3\\no-sdk-d3d12-skate1-fsr-fallback\\capture\\frame.png",
+              "bytes": 1900757,
+              "sha256": "ab1ba250c3a63c01c2da6f4ed0b474a066deec285148a41b4555a549a76f63ce",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 2,
+              "effective_scale": 0.67,
+              "lighting_fallback_expected": false,
+              "fg_reason": "unavailable",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\final-d37b63e72b-no-sl\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "ef03a26cd8ce8a01b6f8b985592ac609ae10627209bb5a8264f824808146aa16"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "d37b63e72bd5b0b72c8d72adb7cceb1b20e1b1f8",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792955558
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": false,
+                "eligible": false,
+                "reason": "unavailable",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 0
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 2,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "input": {
+        "origin": "<PRIVATE_ACCEPTANCE_ROOT>/game-captures-c1fc0252a9-20261025T202743Z-ca774d/matrix.json",
+        "bytes": 239795,
+        "sha256": "e8f18e1955a1f4bf24d450543e8365c80518466f1f9faec1e558e668cded3a0d"
+      },
+      "data": {
+        "status": "PASS",
+        "expected_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+        "limitations": [
+          "180 real post-draw frames, fixed simulation delta; functional captures, not FPS measurements.",
+          "Requested preset and SDK status do not prove active DLSS model or generated output frames.",
+          "No validation layer is requested; this matrix does not claim strict GPU validation-layer cleanliness."
+        ],
+        "finished_utc": "2026-10-25T20:35:39.931377+00:00",
+        "inputs": [
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161794560,
+            "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-no-sl\\godot.windows.editor.x86_64.exe",
+            "bytes": 161794560,
+            "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\game_render_capture.gd",
+            "bytes": 6531,
+            "sha256": "ec9a3378c29c8db893a193f86a30ac7e03934846b0edad6cf1d0ef285c4623c5"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\run_logged.py",
+            "bytes": 6438,
+            "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\windows_job.py",
+            "bytes": 3753,
+            "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+          },
+          {
+            "file": "<WORKSPACE>\\stabilization-20261026\\game_capture_matrix.py",
+            "bytes": 18130,
+            "sha256": "590d107302393e1bc744d8ee49aa0b3ce13545005f1c265457ab25325e908a89"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\project.godot",
+            "bytes": 2096,
+            "sha256": "77c4b82a2c8f693064dc787b0635f5e03d44df241152221bf34e7ff325ebbf36"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\settings.gd",
+            "bytes": 15926,
+            "sha256": "9fbad4d30a97b5d10dbce4fee99d82f048ed451c513119d25409430b6684f8d5"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\nvidia.gd",
+            "bytes": 4880,
+            "sha256": "da76224a3ec29b17bb9d7b4790c1378bb4b2c7e456402b599f467b368f135d15"
+          },
+          {
+            "file": "<WORKSPACE>\\sport-games-stabilization-20261026\\game\\core\\app_exit.gd",
+            "bytes": 1588,
+            "sha256": "dd2a0d0d3936f7956c2d996796957127c3e9a8ff94b553d4e604c6f5ef53081a"
+          }
+        ],
+        "individual_status_counts": {
+          "PASS": 17
+        },
+        "results": [
+          {
+            "case": {
+              "name": "vulkan-skate1-quality-recommended",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate1-quality-recommended\\capture\\frame.png",
+              "bytes": 1613070,
+              "sha256": "b3a7b7a839fdc1213920bab4e2a04b64a9206d418cda2cbbf7dde245c500b70f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-dlaa-M",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 6,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate1-dlaa-M\\capture\\frame.png",
+              "bytes": 1728550,
+              "sha256": "9fa451ac91668ade529ebd2400733b396997b8771ae832118ffbd0a51580438b",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 1.0,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 6,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-performance-M",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 9,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate1-performance-M\\capture\\frame.png",
+              "bytes": 1667876,
+              "sha256": "7fb3af78a55a668af04bbf869c59013745d1249c0c88f04377bf557cba6fce3f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.5,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 9,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-basketball2-quality-fg-request",
+              "api": "vulkan",
+              "game": "basketball",
+              "players": 2,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-basketball2-quality-fg-request\\capture\\frame.png",
+              "bytes": 1675695,
+              "sha256": "882cb5eff39aed493265d6edee2fc0c8d561c1e000424ad8de71dd47ecacaa10",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 2,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 2,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 2,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-basketball4-quality-fg-request",
+              "api": "vulkan",
+              "game": "basketball",
+              "players": 4,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-basketball4-quality-fg-request\\capture\\frame.png",
+              "bytes": 1681415,
+              "sha256": "5453d8e10952fcafa71dc3098ba88938ddc458844ab56e4e9856376caa34979b",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 4,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 4,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 4,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate3-quality",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 3,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate3-quality\\capture\\frame.png",
+              "bytes": 1313683,
+              "sha256": "82e6598ddd43e0fc08d4c47a35cb19c8b6a5b2e3c3f007f2918c0edccfe73527",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 3,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 3,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 3,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-quality-recommended",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-skate1-quality-recommended\\capture\\frame.png",
+              "bytes": 1632329,
+              "sha256": "9ba2a2f8debfcd35235971766c4b0099229c12776550f92f41bbc906eeb19f4f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-dlaa-M",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 6,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-skate1-dlaa-M\\capture\\frame.png",
+              "bytes": 1749211,
+              "sha256": "9cdc057ac59de868f9064d5c6f78fe607522f5cb1325dc5e4255eef2dd5c0235",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 1.0,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 6,
+              "requested_preset_name": "M",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-performance-M",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 9,
+              "preset": 3,
+              "lighting": 0,
+              "sharpness": 2,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-skate1-performance-M\\capture\\frame.png",
+              "bytes": 1736022,
+              "sha256": "9339b75e0638e69f835811707ad5b4f3e0ebc048ab6f08887193adb28ed31561",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.5,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 9,
+              "requested_preset_name": "M",
+              "requested_sharpness": 2,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-basketball2-quality-fg-request",
+              "api": "d3d12",
+              "game": "basketball",
+              "players": 2,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-basketball2-quality-fg-request\\capture\\frame.png",
+              "bytes": 1709886,
+              "sha256": "b48b0b130ce0b9f380539d2a4240d643331529975cabc58966fe0e2fad2b0b49",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 2,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 2,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 2,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-basketball4-quality-fg-request",
+              "api": "d3d12",
+              "game": "basketball",
+              "players": 4,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": true,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-basketball4-quality-fg-request\\capture\\frame.png",
+              "bytes": 1700348,
+              "sha256": "5a15289e2c5b94d2043459feadaaa24f9f9296aa5f635324221448a5727fce9c",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 4,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "basketball",
+              "players": 4,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": true,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 4,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/BasketballGame/@Node3D@328/@WorldEnvironment@329",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate3-quality",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 3,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-skate3-quality\\capture\\frame.png",
+              "bytes": 1322309,
+              "sha256": "ead4d7ca4e8e47d03c23a6463498a08d463c504d38c05dd998b01dee766b8930",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 3,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 3,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 3,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-ddgi",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 1,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate1-ddgi\\capture\\frame.png",
+              "bytes": 1597596,
+              "sha256": "be973592f8ec313b7a6e0d1965dd37dac29248ceb11bbc3519d3dd010e3524e7",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 1,
+              "environments": [
+                {
+                  "ddgi": true,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "vulkan-skate1-pt-rr",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 2,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\vulkan-skate1-pt-rr\\capture\\frame.png",
+              "bytes": 1511068,
+              "sha256": "56e84ec302bfb9622ec25ff90823787b6861686f7e4e39d291c5714c125dafc5",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": false,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 2,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": true
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "d3d12-skate1-pt-raster-fallback",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 2,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": false
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\d3d12-skate1-pt-raster-fallback\\capture\\frame.png",
+              "bytes": 1632329,
+              "sha256": "9ba2a2f8debfcd35235971766c4b0099229c12776550f92f41bbc906eeb19f4f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 6,
+              "effective_scale": 0.6666666666666666,
+              "lighting_fallback_expected": true,
+              "fg_reason": "no_request",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-sdk214\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": true,
+                "eligible": false,
+                "reason": "no_request",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 1
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 7,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 2,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "no-sdk-vulkan-skate1-fsr-fallback",
+              "api": "vulkan",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": true
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\no-sdk-vulkan-skate1-fsr-fallback\\capture\\frame.png",
+              "bytes": 1878493,
+              "sha256": "1b031b1d0765c279f67dedb82d6585a4900dfb9d6ff6b50edb335a087559c91f",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 2,
+              "effective_scale": 0.67,
+              "lighting_fallback_expected": false,
+              "fg_reason": "unavailable",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-no-sl\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "vulkan",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": false,
+                "eligible": false,
+                "reason": "unavailable",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 0
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 2,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          },
+          {
+            "case": {
+              "name": "no-sdk-d3d12-skate1-fsr-fallback",
+              "api": "d3d12",
+              "game": "skate",
+              "players": 1,
+              "upscale": 7,
+              "preset": 0,
+              "lighting": 0,
+              "sharpness": 0,
+              "fg": false,
+              "no_sdk": true
+            },
+            "status": "PASS",
+            "passed": true,
+            "wrapper_exit_code": 0,
+            "png": {
+              "file": "<WORKSPACE>\\stabilization-20261026\\game-captures-c1fc0252a9-20261025T202743Z-ca774d\\no-sdk-d3d12-skate1-fsr-fallback\\capture\\frame.png",
+              "bytes": 1900757,
+              "sha256": "ab1ba250c3a63c01c2da6f4ed0b474a066deec285148a41b4555a549a76f63ce",
+              "size": [
+                1600,
+                900
+              ],
+              "all_chunk_crc_valid": true
+            },
+            "verified": {
+              "active_3d_views": 1,
+              "effective_mode": 2,
+              "effective_scale": 0.67,
+              "lighting_fallback_expected": false,
+              "fg_reason": "unavailable",
+              "actual_model_verified": false
+            },
+            "receipt": {
+              "exit_code": 0,
+              "checkout_sha": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+              "command_input_binaries": [
+                {
+                  "file": "<WORKSPACE>\\stabilization-20261026\\builds\\editor-c1fc0252a9-no-sl\\godot.windows.editor.x86_64.exe",
+                  "bytes": 161794560,
+                  "sha256": "436ddd6b7aab06cb0f4f74cde1a2fc56b6012a6fa07e0a1ae3e3a5d24563ef20"
+                }
+              ]
+            },
+            "metadata": {
+              "engine": {
+                "build": "custom_build",
+                "hash": "c1fc0252a98913d3be394417b6977a8c5aa4d77d",
+                "hex": 264192,
+                "major": 4,
+                "minor": 8,
+                "patch": 0,
+                "status": "beta1",
+                "string": "4.8-beta1 (custom_build)",
+                "timestamp": 1792959781
+              },
+              "driver": "d3d12",
+              "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "game": "skate",
+              "players": 1,
+              "physics": "Jolt Physics",
+              "ticks": 120,
+              "post_draw_samples": 180,
+              "image_size": [
+                1600,
+                900
+              ],
+              "requested_fg": false,
+              "fg_status": {
+                "available": false,
+                "eligible": false,
+                "reason": "unavailable",
+                "rendered_3d_views": 1,
+                "requested_3d_views": 0,
+                "sdk_enabled": false,
+                "supported_generated_frames": 0
+              },
+              "requested_hdr": false,
+              "hdr_output_requested": false,
+              "effective_upscale": 2,
+              "requested_preset_name": "Recommended",
+              "requested_sharpness": 0,
+              "requested_lighting": 0,
+              "environments": [
+                {
+                  "ddgi": false,
+                  "denoiser": 1,
+                  "name": "/root/SkateGame/@WorldEnvironment@318",
+                  "pt": false
+                }
+              ],
+              "actual_model_queried": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

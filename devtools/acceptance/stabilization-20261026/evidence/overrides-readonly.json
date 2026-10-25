@@ -1,0 +1,42 @@
+{
+  "evidence_kind": "derived_from_existing_records",
+  "inputs": [
+    {
+      "origin": "<PRIVATE_ACCEPTANCE_ROOT>/overrides-after-user-app-setting.json",
+      "bytes": 1146,
+      "sha256": "be30f140218294afe57b93c11a67b1862b680b47e565b90d6b991684b6798d33"
+    }
+  ],
+  "data": {
+    "command": [
+      "<WORKSPACE>\\acceptance-20261025\\drs_readonly.exe"
+    ],
+    "cwd": "<WORKSPACE>\\source",
+    "checkout_sha": "1000baebdaccc35a6dfb9511c7fe9209cdc8295b",
+    "worktree_status": "",
+    "command_input_binaries": [
+      {
+        "file": "<WORKSPACE>\\acceptance-20261025\\drs_readonly.exe",
+        "bytes": 287232,
+        "sha256": "0282de02b4fbc7a24bae6177229c2446f72fbed830cbb13e9eb0b401df8fbf1c"
+      }
+    ],
+    "environment": {
+      "GODOT_VERSION_STATUS": "beta1",
+      "GODOT_STREAMLINE_DISABLE_OTA": "1",
+      "GODOT_RG_REORDER": null,
+      "GODOT_RG_FULL_BARRIERS": null,
+      "LOCALAPPDATA": "<WORKSPACE>\\toolchains\\cache\\local",
+      "TEMP": "<WORKSPACE>\\toolchains\\cache\\tmp",
+      "NUGET_PACKAGES": "<WORKSPACE>\\toolchains\\cache\\nuget",
+      "DOTNET_ROOT": "<WORKSPACE>\\toolchains\\dotnet10",
+      "CUDA_PATH": "<WORKSPACE>\\toolchains\\cuda12.8"
+    },
+    "started_utc": "2026-10-25T17:42:40.095520+00:00",
+    "log": "<WORKSPACE>\\stabilization-20261026\\logs\\overrides-after-user-app-setting.log",
+    "pid": 44916,
+    "exit_code": 0,
+    "duration_seconds": 0.281,
+    "finished_utc": "2026-10-25T17:42:40.318292+00:00"
+  }
+}
