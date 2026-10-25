@@ -1,0 +1,51 @@
+{
+  "command": [
+    "<WORKSPACE_ROOT>\\.venv\\Scripts\\python.exe",
+    "devtools/test/upgrade_smoke.py",
+    "--export-editor",
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--template",
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.template_release.x86_64.exe",
+    "--output-dir",
+    "<ACCEPTANCE_ROOT>\\exports\\pck-standard-release",
+    "--require-physx",
+    "--require-blast",
+    "--require-flow"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<WORKSPACE_ROOT>\\.venv\\Scripts\\python.exe",
+      "bytes": 274424,
+      "sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.template_release.x86_64.exe",
+      "bytes": 80756224,
+      "sha256": "17f22ef3d8a23c4cd33435ba8ca7fd8b15103f9d26966d45c853ac0d2c98fe6e"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:31:55.255408+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\pck-standard-release.log",
+  "pid": 21128,
+  "exit_code": 0,
+  "duration_seconds": 6.61,
+  "finished_utc": "2026-10-25T11:32:01.576146+00:00"
+}

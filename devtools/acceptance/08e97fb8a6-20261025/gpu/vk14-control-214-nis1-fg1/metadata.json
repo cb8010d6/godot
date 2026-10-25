@@ -1,0 +1,31 @@
+{
+  "api": "1.4.341",
+  "capabilities": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "driver": "vulkan",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1792926689
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "mode": "fg",
+  "process_id": 37112,
+  "renderer": "forward_plus",
+  "requested_rr_preset": "?",
+  "requested_sr_preset": "?",
+  "suite": "motion"
+}

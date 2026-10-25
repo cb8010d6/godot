@@ -1,0 +1,34 @@
+[
+  {
+    "label": "import-control-08e-warm-1",
+    "binary": "08e",
+    "exit_code": 0,
+    "engine_errors": [],
+    "singleton_diagnostic": false
+  },
+  {
+    "label": "import-control-08e-warm-2",
+    "binary": "08e",
+    "exit_code": 0,
+    "engine_errors": [],
+    "singleton_diagnostic": false
+  },
+  {
+    "label": "import-control-138-fresh",
+    "binary": "138",
+    "exit_code": 3221225477,
+    "engine_errors": [
+      "ERROR: Parameter \"singleton\" is null."
+    ],
+    "singleton_diagnostic": true
+  },
+  {
+    "label": "import-control-08e-fresh",
+    "binary": "08e",
+    "exit_code": 3221225477,
+    "engine_errors": [
+      "ERROR: Parameter \"singleton\" is null."
+    ],
+    "singleton_diagnostic": true
+  }
+]

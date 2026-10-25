@@ -1,0 +1,74 @@
+[
+  {
+    "file": "godot.windows.editor.x86_64.console.exe",
+    "bytes": 301056,
+    "sha256": "9197105d8de7024a186b4f6899100c21360d450426a386273ddb1b4f3f47b832",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.editor.x86_64.exe",
+    "bytes": 161774592,
+    "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.editor.x86_64.mono.console.exe",
+    "bytes": 301056,
+    "sha256": "389f7add573324edd94bb6651e01eea385bed92f1eeb1c9b0651ad2b62adb363",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.editor.x86_64.mono.exe",
+    "bytes": 162344448,
+    "sha256": "759f07a4c9d53904a1ab7aef21cbcbb772f3f90faae0bf184d53a9b13a0e8d14",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_debug.x86_64.console.exe",
+    "bytes": 300544,
+    "sha256": "eb1e946950861877b7b916128acaf760e776b24cbf49540a689162a896196ba0",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_debug.x86_64.exe",
+    "bytes": 95599616,
+    "sha256": "59e48d6ca1588d6b00300fac9500a054e57cd24c3ab2fff4738bf15f26fd0b77",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_debug.x86_64.mono.console.exe",
+    "bytes": 300544,
+    "sha256": "968e3900af6a7f451c797330f1307ab2c5b11ebf9bb9067d1fb883aa31c74b3b",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_debug.x86_64.mono.exe",
+    "bytes": 95832064,
+    "sha256": "a746110bf0edcffc17f836a39df04633e565beee9207f9ff3cf4457b9aa99d31",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_release.x86_64.console.exe",
+    "bytes": 292864,
+    "sha256": "dcfa2833e02b50b9ee397521eec99693fd2e7e2757146245b1e66d4fec0c8014",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_release.x86_64.exe",
+    "bytes": 80756224,
+    "sha256": "17f22ef3d8a23c4cd33435ba8ca7fd8b15103f9d26966d45c853ac0d2c98fe6e",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_release.x86_64.mono.console.exe",
+    "bytes": 292864,
+    "sha256": "be1bac4f5921485986402f230f520f36f8ebfc8c76d6815a9194217073700e60",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  },
+  {
+    "file": "godot.windows.template_release.x86_64.mono.exe",
+    "bytes": 80958464,
+    "sha256": "1eaa4c49768ada03c0826fa8ad2312bdc55ba456bdf7a7a318b8e58ea65ba42d",
+    "engine_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208"
+  }
+]

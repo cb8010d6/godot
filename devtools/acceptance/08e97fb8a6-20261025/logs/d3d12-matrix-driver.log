@@ -1,0 +1,540 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-factory-normal.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:28:35.214559+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-factory-normal.log",
+  "pid": 40448,
+  "exit_code": 0,
+  "duration_seconds": 50.375,
+  "finished_utc": "2026-10-25T12:29:25.361560+00:00"
+}
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+Shader cache miss for CanvasShaderRD/df678bcb4710a1c8a8757c4ab989a19a37d0399a47e311b019fe3bac78e8c294/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+CORE API HASH: 2678673284
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"0","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"foreground_process_id":19124.0,"interposer_loaded":false,"process_id":40664.0,"thread_id":47376.0}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-factory-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:29:25.678465+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-factory-validation.log",
+  "pid": 31376,
+  "exit_code": 0,
+  "duration_seconds": 9.218,
+  "finished_utc": "2026-10-25T12:29:34.749534+00:00"
+}
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 2678673284
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"0","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"foreground_process_id":19124.0,"interposer_loaded":false,"process_id":38768.0,"thread_id":48800.0}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-legacy-normal.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:29:35.055507+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-legacy-normal.log",
+  "pid": 45332,
+  "exit_code": 0,
+  "duration_seconds": 9.109,
+  "finished_utc": "2026-10-25T12:29:44.019907+00:00"
+}
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 2678673284
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"1","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"foreground_process_id":19124.0,"interposer_loaded":false,"process_id":20780.0,"thread_id":27652.0}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-legacy-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:29:44.430779+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-no-sl-legacy-validation.log",
+  "pid": 40724,
+  "exit_code": 0,
+  "duration_seconds": 22.172,
+  "finished_utc": "2026-10-25T12:30:06.354585+00:00"
+}
+Shader cache miss for CanvasShaderRD/df678bcb4710a1c8a8757c4ab989a19a37d0399a47e311b019fe3bac78e8c294/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+CORE API HASH: 2678673284
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"1.4.341","backend":"vulkan","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"1","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"foreground_process_id":19124.0,"interposer_loaded":false,"process_id":27088.0,"thread_id":45568.0}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+Updated PSO cache (5.1 MiB)
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl210-legacy-normal.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:30:06.765064+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl210-legacy-normal.log",
+  "pid": 41628,
+  "exit_code": 0,
+  "duration_seconds": 83.906,
+  "finished_utc": "2026-10-25T12:31:30.439576+00:00"
+}
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"0","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"fg":{"dynamic_mfg_supported":0.0,"max_generated_frames":1.0,"min_dimension":100.0,"presented_since_query":1.0,"result":0.0,"status":0.0},"fg_getter_result":0.0,"foreground_process_id":19124.0,"interposer_loaded":true,"loaded_runtime_paths":["<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.interposer.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.common.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.dlss.dll","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlss\\versions\\20318480\\files\\160_E658700.bin","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssg\\versions\\20318480\\files\\160_E658700.bin","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\nvngx_deepdvc.dll","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssd\\versions\\20318480\\files\\160_E658700.bin","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.dlss_d.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.dlss_g.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.nis.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.pcl.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.reflex.dll"],"process_id":36456.0,"reflex":{"frame_id":0.0,"gpu_end":0.0,"gpu_start":0.0,"low_latency_available":true,"present_end":0.0,"present_start":0.0,"render_submit_end":0.0,"render_submit_start":0.0,"report_available":true,"result":0.0,"simulation_end":0.0,"simulation_start":0.0},"sr_rr_viewports":[{"rr_estimated_vram_bytes":0.0,"rr_result":0.0,"sr_estimated_vram_bytes":0.0,"sr_result":0.0,"viewport":1.0},{"rr_estimated_vram_bytes":0.0,"rr_result":0.0,"sr_estimated_vram_bytes":0.0,"sr_result":0.0,"viewport":2.0}],"thread_id":25764.0,"versions":[{"feature":0.0,"ngx":"310.5.0","result":0.0,"sl":"2.10.0"},{"feature":1001.0,"ngx":"310.5.0","result":0.0,"sl":"2.10.0"},{"feature":1000.0,"ngx":"310.5.0","result":0.0,"sl":"2.10.0"},{"feature":3.0,"ngx":"0.0.0","result":0.0,"sl":"2.10.0"}]}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl210-legacy-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:31:30.777474+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl210-legacy-validation.log",
+  "pid": 43140,
+  "exit_code": 0,
+  "duration_seconds": 40.329,
+  "finished_utc": "2026-10-25T12:32:10.958470+00:00"
+}
+ERROR: sl::eErrorNotInitialized
+   at: StreamlineContext::get_new_frame_token (drivers\streamline\streamline_context.cpp:237)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk210\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-normal.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:32:11.393826+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-normal.log",
+  "pid": 34236,
+  "exit_code": 0,
+  "duration_seconds": 95.657,
+  "finished_utc": "2026-10-25T12:33:46.831660+00:00"
+}
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"a182f0c9f24411242f18b68aa5d91ece9acb983e","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792930968},"force_legacy":"0","frame_count":30,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{"fg":{"dynamic_mfg_supported":0.0,"max_generated_frames":1.0,"min_dimension":100.0,"presented_since_query":1.0,"result":0.0,"status":0.0},"fg_getter_result":0.0,"foreground_process_id":19124.0,"interposer_loaded":true,"loaded_runtime_paths":["<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.interposer.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.common.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss.dll","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlss\\versions\\20318480\\files\\160_E658700.bin","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssg\\versions\\20318480\\files\\160_E658700.bin","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\nvngx_deepdvc.dll","%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssd\\versions\\20318480\\files\\160_E658700.bin","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss_d.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss_g.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.nis.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.pcl.dll","<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.reflex.dll"],"process_id":39664.0,"reflex":{"frame_id":0.0,"gpu_end":0.0,"gpu_start":0.0,"low_latency_available":true,"present_end":0.0,"present_start":0.0,"render_submit_end":0.0,"render_submit_start":0.0,"report_available":true,"result":0.0,"simulation_end":0.0,"simulation_start":0.0},"sr_rr_viewports":[{"rr_estimated_vram_bytes":0.0,"rr_result":0.0,"sr_estimated_vram_bytes":0.0,"sr_result":0.0,"viewport":1.0},{"rr_estimated_vram_bytes":0.0,"rr_result":0.0,"sr_estimated_vram_bytes":0.0,"sr_result":0.0,"viewport":2.0}],"thread_id":44528.0,"versions":[{"feature":0.0,"ngx":"310.9.16","result":0.0,"sl":"2.14.16"},{"feature":1001.0,"ngx":"310.9.16","result":0.0,"sl":"2.14.16"},{"feature":1000.0,"ngx":"310.9.16","result":0.0,"sl":"2.14.16"},{"feature":3.0,"ngx":"0.0.0","result":0.0,"sl":"2.14.16"}]}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:33:47.141720+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-validation.log",
+  "pid": 31088,
+  "exit_code": 0,
+  "duration_seconds": 46.735,
+  "finished_utc": "2026-10-25T12:34:33.729236+00:00"
+}
+ERROR: sl::eErrorNotInitialized
+   at: StreamlineContext::get_new_frame_token (drivers\streamline\streamline_context.cpp:237)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

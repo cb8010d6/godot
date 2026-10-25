@@ -1,0 +1,22 @@
+[
+  {
+    "variant": "installed-standard-debug",
+    "template_version": "4.8.beta1",
+    "passed_export_and_run": true
+  },
+  {
+    "variant": "installed-standard-release",
+    "template_version": "4.8.beta1",
+    "passed_export_and_run": true
+  },
+  {
+    "variant": "rerun-installed-mono-debug",
+    "template_version": "4.8.beta1.mono",
+    "passed_export_and_run": true
+  },
+  {
+    "variant": "rerun-installed-mono-release",
+    "template_version": "4.8.beta1.mono",
+    "passed_export_and_run": true
+  }
+]

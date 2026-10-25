@@ -1,0 +1,41 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\standard-project",
+    "--export-release",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\installed-standard-release\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:41:59.710074+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-standard-release-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 47764,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.297,
+  "finished_utc": "2026-10-25T11:42:03.852409+00:00"
+}

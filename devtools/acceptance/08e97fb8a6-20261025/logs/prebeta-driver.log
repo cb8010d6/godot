@@ -1,0 +1,203 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\prebeta-sdk210-normal.debug.log",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\startup-fixture"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\godot.windows.editor.x86_64.exe",
+      "bytes": 180171776,
+      "sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T13:05:52.199097+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\prebeta-sdk210-normal.log",
+  "pid": 31772,
+  "exit_code": 0,
+  "duration_seconds": 119.094,
+  "finished_utc": "2026-10-25T13:07:51.019989+00:00"
+}
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_d_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_nis_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_common_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_d_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_g_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_nis_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_reflex_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\prebeta-sdk210-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\godot.windows.editor.x86_64.exe",
+      "bytes": 180171776,
+      "sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T13:07:51.496261+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\prebeta-sdk210-validation.log",
+  "pid": 39376,
+  "exit_code": 0,
+  "duration_seconds": 51.406,
+  "finished_utc": "2026-10-25T13:08:42.733045+00:00"
+}
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_d_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_nis_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_common_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_d_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_g_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_nis_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+File '%PROGRAMDATA%\NVIDIA/NGX/models/sl_reflex_0\versions\134672\files\190_E658703.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\prebeta-no-sl-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\no-sl\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\prebeta-20261026\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\prebeta-20261026\\no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 180171776,
+      "sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T13:08:43.227938+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\prebeta-no-sl-validation.log",
+  "pid": 43260,
+  "exit_code": 0,
+  "duration_seconds": 9.953,
+  "finished_utc": "2026-10-25T13:08:53.001654+00:00"
+}
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 2834834333
+EDITOR API HASH: 3699490780
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+STARTUP_DIAGNOSTIC {"api":"12_0","backend":"d3d12","editor_hint":false,"engine":{"build":"custom_build","hash":"25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa","hex":264192,"major":4,"minor":8,"patch":0,"status":"dev","string":"4.8-dev (custom_build)","timestamp":1791819422},"force_legacy":"","frame_count":29,"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","runtime":{}}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.

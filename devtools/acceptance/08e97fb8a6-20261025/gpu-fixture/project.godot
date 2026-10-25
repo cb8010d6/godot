@@ -1,0 +1,17 @@
+config_version=5
+
+[application]
+config/name="RTX upgrade GPU acceptance"
+run/main_scene="res://main.tscn"
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/vsync/vsync_mode=0
+
+[rendering]
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
+rendering_device/driver.windows="vulkan"
+streamline/streamline_log=true
+textures/default_filters/use_nearest_mipmap_filter=false

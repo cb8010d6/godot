@@ -1,0 +1,104 @@
+{
+  "api": "12_0",
+  "backend": "d3d12",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1792930968
+  },
+  "force_legacy": "0",
+  "frame_count": 30,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime": {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 19124.0,
+    "interposer_loaded": true,
+    "loaded_runtime_paths": [
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.interposer.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.common.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlss\\versions\\20318480\\files\\160_E658700.bin",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssg\\versions\\20318480\\files\\160_E658700.bin",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\nvngx_deepdvc.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssd\\versions\\20318480\\files\\160_E658700.bin",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss_d.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.dlss_g.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.nis.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.pcl.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.reflex.dll"
+    ],
+    "process_id": 39664.0,
+    "reflex": {
+      "frame_id": 0.0,
+      "gpu_end": 0.0,
+      "gpu_start": 0.0,
+      "low_latency_available": true,
+      "present_end": 0.0,
+      "present_start": 0.0,
+      "render_submit_end": 0.0,
+      "render_submit_start": 0.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 0.0,
+      "simulation_start": 0.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 0.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 0.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 44528.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  }
+}

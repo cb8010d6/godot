@@ -1,0 +1,516 @@
+CHILD pid=44792 exe=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\godot.windows.editor.x86_64.exe
+MODULE base=00007FF833030000 file=%SYSTEMROOT%\System32\ntdll.dll
+MODULE base=00007FF832F20000 file=%SYSTEMROOT%\System32\kernel32.dll
+MODULE base=00007FF830BA0000 file=%SYSTEMROOT%\System32\KernelBase.dll
+MODULE base=00007FF832CC0000 file=%SYSTEMROOT%\System32\ole32.dll
+MODULE base=00007FF830820000 file=%SYSTEMROOT%\System32\ucrtbase.dll
+MODULE base=00007FF81DD90000 file=%SYSTEMROOT%\System32\winmm.dll
+MODULE base=00007FF8322F0000 file=%SYSTEMROOT%\System32\rpcrt4.dll
+MODULE base=00007FF832420000 file=%SYSTEMROOT%\System32\msvcrt.dll
+MODULE base=00007FF830FE0000 file=%SYSTEMROOT%\System32\combase.dll
+MODULE base=00007FF832980000 file=%SYSTEMROOT%\System32\gdi32.dll
+MODULE base=00007FF830680000 file=%SYSTEMROOT%\System32\win32u.dll
+MODULE base=00007FF830920000 file=%SYSTEMROOT%\System32\gdi32full.dll
+MODULE base=00007FF830730000 file=%SYSTEMROOT%\System32\msvcp_win.dll
+MODULE base=00007FF8325C0000 file=%SYSTEMROOT%\System32\user32.dll
+MODULE base=00007FF831370000 file=%SYSTEMROOT%\System32\oleaut32.dll
+MODULE base=00007FF832920000 file=%SYSTEMROOT%\System32\shlwapi.dll
+MODULE base=00007FF832770000 file=%SYSTEMROOT%\System32\SHCore.dll
+MODULE base=00007FF831B70000 file=%SYSTEMROOT%\System32\shell32.dll
+MODULE base=00007FF832A80000 file=%SYSTEMROOT%\System32\advapi32.dll
+MODULE base=00007FF832B40000 file=%SYSTEMROOT%\System32\sechost.dll
+MODULE base=00007FF830650000 file=%SYSTEMROOT%\System32\bcrypt.dll
+MODULE base=00007FF831340000 file=%SYSTEMROOT%\System32\imm32.dll
+MODULE base=00007FF830A40000 file=%SYSTEMROOT%\System32\crypt32.dll
+MODULE base=00007FF8324C0000 file=%SYSTEMROOT%\System32\ws2_32.dll
+MODULE base=00007FF82D2B0000 file=%SYSTEMROOT%\System32\dwmapi.dll
+MODULE base=00007FF82E5E0000 file=%SYSTEMROOT%\System32\avrt.dll
+MODULE base=00007FF82DDA0000 file=%SYSTEMROOT%\System32\DWrite.dll
+MODULE base=00007FF82EDE0000 file=%SYSTEMROOT%\System32\hid.dll
+MODULE base=00007FF82F970000 file=%SYSTEMROOT%\System32\IPHLPAPI.DLL
+MODULE base=00007FF82E160000 file=%SYSTEMROOT%\System32\dbghelp.dll
+MODULE base=00007FF8079E0000 file=%SYSTEMROOT%\System32\wsock32.dll
+MODULE base=00007FFFBA4D0000 file=%SYSTEMROOT%\System32\UIAutomationCore.dll
+MODULE base=00007FF82BA30000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\NvBlast.dll
+MODULE base=00007FFFBAC40000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\NvBlastExtAuthoring.dll
+MODULE base=00007FF816F20000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\NvBlastExtShaders.dll
+MODULE base=00007FF82C840000 file=%SYSTEMROOT%\System32\propsys.dll
+MODULE base=00007FF816F10000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\NvBlastGlobals.dll
+MODULE base=00007FF8232F0000 file=%SYSTEMROOT%\System32\msvcp140.dll
+MODULE base=00007FF823380000 file=%SYSTEMROOT%\System32\vcruntime140.dll
+MODULE base=000001974ED60000 file=%SYSTEMROOT%\System32\vcruntime140.dll
+MODULE base=00007FF8233A0000 file=%SYSTEMROOT%\System32\vcruntime140_1.dll
+EXCEPTION code=0x80000003 first=1
+MODULE base=00007FF830F50000 file=%SYSTEMROOT%\System32\bcryptprimitives.dll
+MODULE base=00007FFF86D30000 file=%SYSTEMROOT%\System32\dinput8.dll
+MODULE base=00007FF81EBE0000 file=%SYSTEMROOT%\System32\InputHost.dll
+MODULE base=00007FF82A610000 file=%SYSTEMROOT%\System32\CoreMessaging.dll
+MODULE base=00007FF82C000000 file=%SYSTEMROOT%\System32\WinTypes.dll
+MODULE base=00007FF829570000 file=%SYSTEMROOT%\System32\CoreUIComponents.dll
+MODULE base=00007FF82F800000 file=%SYSTEMROOT%\System32\ntmarta.dll
+MODULE base=00007FF82EDF0000 file=%SYSTEMROOT%\System32\kernel.appcore.dll
+MODULE base=000001974ED90000 file=%SYSTEMROOT%\System32\kernel.appcore.dll
+MODULE base=00007FF82CF80000 file=%SYSTEMROOT%\System32\uxtheme.dll
+MODULE base=00007FF816D50000 file=<ACCEPTANCE_ROOT>\startup-fixture\rtx_probe.dll
+MODULE base=00007FFFBAB90000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.interposer.dll
+MODULE base=00007FF809D50000 file=%SYSTEMROOT%\System32\dbgcore.dll
+MODULE base=00007FF82E630000 file=%SYSTEMROOT%\System32\windows.storage.dll
+MODULE base=00007FF82FEC0000 file=%SYSTEMROOT%\System32\wldp.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:001ms:580us]pluginManager.cpp:430[setHostSDKVersion] Streamline v2.14.16.b742680bf - built on Wed Sep 30 11:45:07 2026 - host SDK v2.14.16
+
+MODULE base=00007FF830580000 file=%SYSTEMROOT%\System32\profapi.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:003ms:630us]ota.cpp:406[parseServerManifest] OTA feature sdk_0 version 2.14.16
+
+MODULE base=00007FF830190000 file=%SYSTEMROOT%\System32\msasn1.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:004ms:076us]ota.cpp:406[parseServerManifest] OTA feature common_0 version 2.14.16
+
+MODULE base=00007FF824C10000 file=%SYSTEMROOT%\System32\cryptnet.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:004ms:518us]ota.cpp:406[parseServerManifest] OTA feature deepdvc_0 version 2.14.16
+
+ODS [23-33-47][streamline][info][tid:38036][0s:004ms:821us]ota.cpp:406[parseServerManifest] OTA feature dlss_0 version 2.14.16
+
+MODULE base=00007FF82FE30000 file=%SYSTEMROOT%\System32\cryptbase.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:005ms:203us]ota.cpp:406[parseServerManifest] OTA feature dlss_d_0 version 2.14.16
+
+ODS [23-33-47][streamline][info][tid:38036][0s:005ms:478us]ota.cpp:406[parseServerManifest] OTA feature dlss_g_0 version 2.14.16
+
+MODULE base=00007FF824AC0000 file=%SYSTEMROOT%\System32\drvstore.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:005ms:877us]ota.cpp:406[parseServerManifest] OTA feature nis_0 version 2.14.16
+
+ODS [23-33-47][streamline][info][tid:38036][0s:006ms:145us]ota.cpp:406[parseServerManifest] OTA feature nvperf_0 version 2.14.16
+
+MODULE base=00007FF830360000 file=%SYSTEMROOT%\System32\devobj.dll
+MODULE base=00007FF8307D0000 file=%SYSTEMROOT%\System32\cfgmgr32.dll
+ODS [23-33-47][streamline][info][tid:38036][0s:006ms:508us]ota.cpp:406[parseServerManifest] OTA feature pcl_0 version 2.14.16
+
+ODS [23-33-47][streamline][info][tid:38036][0s:006ms:973us]ota.cpp:406[parseServerManifest] OTA feature reflex_0 version 2.14.16
+
+MODULE base=00007FF81DC70000 file=%SYSTEMROOT%\System32\nvapi64.dll
+MODULE base=00007FF81D650000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvapi64_impl.dll
+MODULE base=00007FF8314E0000 file=%SYSTEMROOT%\System32\setupapi.dll
+MODULE base=00007FF8255D0000 file=%SYSTEMROOT%\System32\version.dll
+ODS [23-33-50][streamline][info][tid:38036][2s:670ms:354us]ota.cpp:832[getNVDAArchitecture] Found NVIDIA GPUs, [0000002AACBF8F30]: 1
+
+ODS [23-33-50][streamline][info][tid:38036][2s:677ms:022us]ota.cpp:838[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [23-33-50][streamline][info][tid:38036][2s:677ms:637us]ota.cpp:242[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_sdk_0 -api update -type zip -gpuarch 0x190 -bootstrap
+
+ODS [23-33-50][streamline][info][tid:38036][2s:677ms:957us]pluginManager.cpp:545[findPlugins] Looking for plugins in <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\ ...
+
+MODULE base=00007FF8306B0000 file=%SYSTEMROOT%\System32\wintrust.dll
+ODS [23-33-50][streamline][info][tid:38036][2s:678ms:429us]pluginManager.cpp:1048[loadPlugins] eLoadDownloadedPlugins flag not passed to preferences, OTA'd plugins will not be loaded!
+
+MODULE base=00007FF82FF00000 file=%SYSTEMROOT%\System32\cryptsp.dll
+MODULE base=00007FF82F5B0000 file=%SYSTEMROOT%\System32\rsaenh.dll
+MODULE base=00007FF832820000 file=%SYSTEMROOT%\System32\imagehlp.dll
+MODULE base=00007FF82FCE0000 file=%SYSTEMROOT%\System32\gpapi.dll
+MODULE base=00007FF82BDD0000 file=%SYSTEMROOT%\System32\winnsi.dll
+MODULE base=00007FF832BF0000 file=%SYSTEMROOT%\System32\nsi.dll
+MODULE base=00007FFF7FB00000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.common.dll
+MODULE base=00007FF82EE30000 file=%SYSTEMROOT%\System32\dxgi.dll
+MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\System32\D3D12.dll
+ODS [23-33-50][streamline][info][tid:38036][3s:039ms:514us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-33-50][streamline][info][tid:38036][3s:039ms:936us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-33-50][streamline][info][tid:38036][3s:040ms:510us]commonInterface.cpp:165[getSystemCaps] Enumerating up to 8 adapters but only one of them can be used to create a device - no mGPU support in this SDK
+
+MODULE base=00007FF82D1B0000 file=%SYSTEMROOT%\System32\ResourcePolicyClient.dll
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(121)\dxgi.dll!00007FF82EE7412C: (caller: 00007FF82EE4DD72) ReturnHr(1) tid(9494) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(98)\dxgi.dll!00007FF82EE73DFD: (caller: 00007FF82EE3DE61) ReturnHr(2) tid(9494) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\directxdatabasehelper.cpp(1410)\dxgi.dll!00007FF82EE73F1D: (caller: 00007FF82EE3DE61) ReturnHr(3) tid(9494) 8000FFFF Catastrophic failure
+
+
+MODULE base=00007FFFB8D60000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvdlistx.dll
+ODS [23-33-50][streamline][info][tid:38036][3s:081ms:645us]commonInterface.cpp:287[getSystemCaps] >-----------------------------------------
+
+ODS [23-33-50][streamline][info][tid:38036][3s:082ms:164us]commonInterface.cpp:290[getSystemCaps] NVIDIA driver 610.88
+
+ODS [23-33-50][streamline][info][tid:38036][3s:092ms:544us]commonInterface.cpp:315[getSystemCaps] Adapter 0 architecture 0x190 implementation 0x7 revision 0xa1 - bit 0x1 - LUID 0.106613
+
+ODS [23-33-50][streamline][info][tid:38036][3s:092ms:876us]commonInterface.cpp:321[getSystemCaps] -----------------------------------------<
+
+ODS [23-33-50][streamline][info][tid:38036][3s:093ms:416us]commonEntry.cpp:2045[getOSVersionAndUpdateTimerResolution] Changed high resolution timer resolution to 5000 [100 ns units].
+
+ODS [23-33-50][streamline][info][tid:38036][3s:093ms:946us]commonEntry.cpp:2124[updateEmbeddedJSON] Detected Windows OS version 10.0.19045
+
+ODS [23-33-50][streamline][info][tid:38036][3s:095ms:328us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.common' - version 2.14.16.b742680bf PRODUCTION - id 4294967295 - priority 0 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFF95310000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.deepdvc.dll
+ODS [23-33-50][streamline][info][tid:38036][3s:157ms:939us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-33-50][streamline][info][tid:38036][3s:158ms:451us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-33-50][streamline][info][tid:38036][3s:159ms:539us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDeepDVC`
+
+ODS [23-33-50][streamline][warn][tid:38036][3s:169ms:882us]pluginManager.cpp:797[mapPlugins] Ignoring plugin 'sl.deepdvc' since it is was not requested by the host
+
+MODULE base=00007FFF95310000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.directsr.dll
+ODS [23-33-50][streamline][info][tid:38036][3s:214ms:378us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-33-50][streamline][info][tid:38036][3s:218ms:905us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-33-50][streamline][info][tid:38036][3s:238ms:549us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [23-33-50][streamline][info][tid:38036][3s:238ms:911us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [23-33-50][streamline][info][tid:38036][3s:239ms:202us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [23-33-50][streamline][info][tid:38036][3s:239ms:481us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [23-33-50][streamline][warn][tid:38036][3s:239ms:753us]pluginManager.cpp:797[mapPlugins] Ignoring plugin 'sl.directsr' since it is was not requested by the host
+
+MODULE base=00007FFF83B60000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.dlss.dll
+ODS [23-33-50][streamline][info][tid:38036][3s:280ms:227us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-33-50][streamline][info][tid:38036][3s:280ms:573us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+MODULE base=00007FFF7D3C0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\_nvngx.dll
+ODS [23-33-54][streamline][info][tid:37348][6s:949ms:052us]ota.cpp:144[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_sdk_0 -api update -type zip -gpuarch 0x190 -bootstrap
+
+ODS [23-33-54][streamline][info][tid:37348][6s:951ms:203us]ota.cpp:156[execThreadProc] NGX Updater reported: 2.14.16
+
+
+MODULE base=00007FFEDD0C0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\nvngx_dlss.dll
+MODULE base=00007FFED89E0000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files\160_E658700.bin
+MODULE base=00007FFF6A4A0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\nvngx_dlssg.dll
+MODULE base=00007FFF68990000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files\160_E658700.bin
+MODULE base=00007FFF63A40000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_dlssg.dll
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+MODULE base=00007FFFEE970000 file=%SYSTEMROOT%\System32\nvcuda.dll
+MODULE base=00007FFF6A8E0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\nvngx_deepdvc.dll
+MODULE base=00007FFEDDAE0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\nvngx_dlssd.dll
+MODULE base=00007FFED3DC0000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files\160_E658700.bin
+ODS [23-34-22][streamline][info][tid:38036][34s:740ms:517us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 1 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [23-34-22][streamline][info][tid:38036][34s:740ms:926us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:741ms:245us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:741ms:551us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:741ms:921us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:742ms:932us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.dlss' - version 2.14.16.b742680bf PRODUCTION - id 0 - priority 100 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFF81B60000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.dlss_d.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:754ms:489us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:755ms:352us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][info][tid:38036][34s:794ms:318us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 13 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [23-34-22][streamline][info][tid:38036][34s:794ms:993us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:795ms:306us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:795ms:603us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:795ms:938us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:796ms:823us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.dlss_d' - version 2.14.16.b742680bf PRODUCTION - id 1001 - priority 100 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFF818D0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.dlss_g.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:810ms:133us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:810ms:821us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][info][tid:38036][34s:849ms:913us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 11 requirements - minOS 10.0.19041 minHW 0x190
+
+ODS [23-34-22][streamline][info][tid:38036][34s:850ms:771us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:851ms:656us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:851ms:956us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeHUDLessColor' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:852ms:285us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeUIColorAndAlpha' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:856ms:961us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.dlss_g' - version 2.14.16.b742680bf PRODUCTION - id 1000 - priority 1000 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFF796A0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.nis.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:873ms:954us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:875ms:581us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][info][tid:38036][34s:878ms:116us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:879ms:096us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [23-34-22][streamline][info][tid:38036][34s:879ms:428us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.nis' - version 2.14.16.b742680bf PRODUCTION - id 2 - priority 100 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFF807D0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.nvperf.dll
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:900ms:219us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:907ms:346us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][warn][tid:38036][34s:912ms:540us]pluginManager.cpp:797[mapPlugins] Ignoring plugin 'sl.nvperf' since it is was not requested by the host
+
+MODULE base=00007FFF95310000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.pcl.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:933ms:545us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:933ms:991us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][info][tid:38036][34s:935ms:000us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.pcl' - version 2.14.16.b742680bf PRODUCTION - id 4 - priority 2 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFF8B7C0000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\sl.reflex.dll
+ODS [23-34-22][streamline][info][tid:38036][34s:950ms:650us]plugin.cpp:94[isAppDenylisted] Plugin path: <ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\
+
+ODS [23-34-22][streamline][info][tid:38036][34s:953ms:389us]plugin.cpp:110[isAppDenylisted] Plugin is not from OTA - denylist does not apply
+
+ODS [23-34-22][streamline][info][tid:38036][34s:961ms:350us]pluginManager.cpp:907[mapPlugins] Loaded plugin 'sl.reflex' - version 2.14.16.b742680bf PRODUCTION - id 3 - priority 100 - adapter mask 0xf - interposer 'no'
+
+ODS [23-34-22][streamline][info][tid:38036][34s:969ms:318us]pluginManager.cpp:1190[loadPlugins] Plugin execution order based on priority:
+
+ODS [23-34-22][streamline][info][tid:38036][34s:969ms:726us]pluginManager.cpp:1193[loadPlugins] P0 - sl.common
+
+ODS [23-34-22][streamline][info][tid:38036][34s:970ms:135us]pluginManager.cpp:1193[loadPlugins] P2 - sl.pcl
+
+ODS [23-34-22][streamline][info][tid:38036][34s:970ms:818us]pluginManager.cpp:1193[loadPlugins] P100 - sl.dlss
+
+ODS [23-34-22][streamline][info][tid:38036][34s:971ms:577us]pluginManager.cpp:1193[loadPlugins] P100 - sl.dlss_d
+
+ODS [23-34-22][streamline][info][tid:38036][34s:972ms:118us]pluginManager.cpp:1193[loadPlugins] P100 - sl.nis
+
+ODS [23-34-22][streamline][info][tid:38036][34s:972ms:385us]pluginManager.cpp:1193[loadPlugins] P100 - sl.reflex
+
+ODS [23-34-22][streamline][info][tid:38036][34s:972ms:632us]pluginManager.cpp:1193[loadPlugins] P1000 - sl.dlss_g
+
+MODULE base=00007FF8329C0000 file=%SYSTEMROOT%\System32\clbcatq.dll
+MODULE base=00007FFFC9870000 file=%SYSTEMROOT%\System32\wpnapps.dll
+MODULE base=00007FF82D3C0000 file=%SYSTEMROOT%\System32\rmclient.dll
+MODULE base=00007FF828160000 file=%SYSTEMROOT%\System32\twinapi.appcore.dll
+MODULE base=00007FF828ED0000 file=%SYSTEMROOT%\System32\xmllite.dll
+MODULE base=00007FF82B5F0000 file=%SYSTEMROOT%\System32\usermgrcli.dll
+MODULE base=00007FF824C50000 file=%SYSTEMROOT%\System32\OneCoreUAPCommonProxyStub.dll
+MODULE base=00007FF819F20000 file=%SYSTEMROOT%\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.7802_none_60b401cf71fa5b8a\comctl32.dll
+MODULE base=00007FF829D30000 file=%SYSTEMROOT%\System32\dcomp.dll
+MODULE base=00007FFF34250000 file=%SYSTEMROOT%\System32\D3D12Core.dll
+MODULE base=00007FF818740000 file=%SYSTEMROOT%\System32\DXGIDebug.dll
+MODULE base=00007FFF6A420000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\d3d12SDKLayers.dll
+ODS D3D Error 887e0003: (38036@94114171) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll.
+
+
+MODULE base=00007FF818740000 file=%SYSTEMROOT%\System32\DXGIDebug.dll
+ODS [23-34-24][streamline][info][tid:38036][37s:171ms:395us]dxgi.cpp:323[CreateDXGIFactoryInternal] Injecting hooks into DXGI proxy virtual table
+
+MODULE base=00007FF830440000 file=%SYSTEMROOT%\System32\sxs.dll
+ODS mincore\com\oleaut32\dispatch\ups.cpp(2122)\OLEAUT32.dll!00007FF8313831B6: (caller: 00007FF831383F69) ReturnHr(1) tid(9494) 8002801D Library not registered.
+
+
+MODULE base=00007FF832E00000 file=%SYSTEMROOT%\System32\msctf.dll
+ODS clientcore\windows\dwm\dwmapi\attribute.cpp(185)\dwmapi.dll!00007FF82D2B2BA7: (caller: 00007FF779E6D10B) ReturnHr(1) tid(9494) 80070057 The parameter is incorrect.
+
+
+MODULE base=00007FF82B750000 file=%SYSTEMROOT%\System32\Windows.Graphics.dll
+ODS clientcore\windows\dwm\dwmapi\attribute.cpp(185)\dwmapi.dll!00007FF82D2B2BA7: (caller: 00007FF779E73112) ReturnHr(2) tid(9494) 80070057 The parameter is incorrect.
+
+
+MODULE base=00007FF82ADB0000 file=%SYSTEMROOT%\System32\DXCore.dll
+MODULE base=00007FFFE9060000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvldumdx.dll
+MODULE base=00007FFF05F40000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvgpucomp64.dll
+MODULE base=00007FFFB40F0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\NvMemMapStoragex.dll
+MODULE base=00007FF8303F0000 file=%SYSTEMROOT%\System32\powrprof.dll
+MODULE base=00007FF8303D0000 file=%SYSTEMROOT%\System32\umpdc.dll
+MODULE base=00007FFF00990000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvwgf2umx.dll
+MODULE base=00007FFF24CF0000 file=%SYSTEMROOT%\System32\nvspcap64.dll
+MODULE base=00007FFF6A420000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\d3d12SDKLayers.dll
+ODS D3D Error 887e0003: (38036@94114921) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll.
+
+
+EXCEPTION code=0xe06d7363 first=1
+ODS [23-34-25][streamline][warn][tid:38036][37s:926ms:223us]d3d12.cpp:76[D3D12CreateDevice] D3D12CreateDevice failed with error code 80070057
+
+ODS D3D12CreateDevice failed with error 0x80070057.
+
+ODS drivers\d3d12\rendering_device_driver_d3d12.cpp:6723 - Condition "err != OK" is true. Returning: ERR_CANT_CREATE
+
+ODS Failed to initialize driver for device.
+
+ODS [23-34-25][streamline][info][tid:38036][37s:947ms:871us]pluginManager.cpp:1202[unloadPlugins] Unloading all plugins ...
+
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+MODULE base=00007FF81DBD0000 file=%SYSTEMROOT%\System32\Windows.StateRepositoryCore.dll
+MODULE base=00007FFECDA40000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\amdvlk.inf_amd64_c59613e69f1b917d\amdvlk64.dll
+MODULE base=00007FFF25D00000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvoglv64.dll
+MODULE base=00007FF828E20000 file=%SYSTEMROOT%\System32\wtsapi32.dll
+MODULE base=00007FFF05F40000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvgpucomp64.dll
+MODULE base=00007FFFFEFC0000 file=%PROGRAMFILES_X86%\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.dll
+MODULE base=000000006ED30000 file=%SYSTEMROOT%\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_08e1c10da83fbc83\msvcr90.dll
+MODULE base=000000006EC50000 file=%SYSTEMROOT%\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_08e1c10da83fbc83\msvcp90.dll
+MODULE base=00000000727E0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdenc64.dll
+MODULE base=00007FF821D50000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdihk64.dll
+MODULE base=00007FF832DF0000 file=%SYSTEMROOT%\System32\psapi.dll
+MODULE base=00007FFEDD4B0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvrtum64.dll
+ODS [23-34-25][streamline][error][tid:38036][38s:332ms:264us]sl.cpp:168[slValidateState] SL not initialized or no plugins found - please make sure to include all required plugins including sl.common
+
+ODS [23-34-25][streamline][info][tid:38036][38s:332ms:521us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_swapchain' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:332ms:704us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_timeline_semaphore' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:332ms:855us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_create_renderpass2' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:332ms:985us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_acceleration_structure' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:153us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_16bit_storage' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:339us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_push_descriptor' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:470us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_buffer_device_address' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:617us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_deferred_host_operations' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:788us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_depth_stencil_resolve' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:333ms:973us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_ray_tracing_pipeline' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:253us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_driver_properties' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:368us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_synchronization2' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:458us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_fragment_shading_rate' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:561us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_image_format_list' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:672us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_maintenance2' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:334ms:761us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_multiview' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:003us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_ray_query' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:118us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_shader_float16_int8' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:305us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_storage_buffer_storage_class' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:421us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_KHR_vulkan_memory_model' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:520us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_EXT_device_fault' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:611us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_EXT_pipeline_creation_cache_control' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:714us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_EXT_ray_tracing_invocation_reorder' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:335ms:806us]wrapper.cpp:847[vkCreateDevice] Device extension 'VK_EXT_subgroup_size_control' requested by a plugin(s) added.
+
+ODS [23-34-25][streamline][info][tid:38036][38s:336ms:001us]wrapper.cpp:878[vkCreateDevice] Found Vulkan graphics queue family at index 0 - max queues allowed 16
+
+ODS [23-34-25][streamline][info][tid:38036][38s:336ms:101us]wrapper.cpp:884[vkCreateDevice] Found Vulkan compute queue family at index 2 - max queues allowed 8
+
+MODULE base=00007FFFCEA00000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvcuda64.dll
+MODULE base=00007FFFF8D30000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvdxgdmal64.dll
+MODULE base=00007FFFE2430000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvobjectloader64.dll
+ODS [23-34-25][streamline][error][tid:38036][38s:549ms:410us]pluginManager.cpp:1480[initializePlugins] Please call slInit before any other SL/DirectX/DXGI/Vulkan API
+
+ODS platform\windows\display_server_windows.cpp:8221 - Your video card drivers seem not to support Direct3D 12, switching to Vulkan.
+
+MODULE base=00007FFFE6030000 file=%SYSTEMROOT%\System32\XInput1_4.dll
+EXCEPTION code=0x406d1388 first=1
+EXCEPTION code=0x406d1388 first=1
+MODULE base=00007FF81ED40000 file=%SYSTEMROOT%\System32\TextInputFramework.dll
+MODULE base=00007FF819E00000 file=%SYSTEMROOT%\System32\oleacc.dll
+MODULE base=00007FF828E40000 file=%SYSTEMROOT%\System32\MMDevAPI.dll
+MODULE base=00007FF8290D0000 file=%SYSTEMROOT%\System32\AudioSes.dll
+MODULE base=00007FF8303F0000 file=%SYSTEMROOT%\System32\powrprof.dll
+MODULE base=00007FF8303D0000 file=%SYSTEMROOT%\System32\umpdc.dll
+MODULE base=00007FF82D1B0000 file=%SYSTEMROOT%\System32\ResourcePolicyClient.dll
+MODULE base=00007FFFE9060000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvldumdx.dll
+MODULE base=00007FFFB40F0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\NvMemMapStoragex.dll
+MODULE base=00007FFF00990000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvwgf2umx.dll
+MODULE base=00007FFF6A420000 file=<ACCEPTANCE_ROOT>\builds\diagnostic-sdk214\d3d12SDKLayers.dll
+ODS D3D Error 887e0003: (38036@94119078) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll.
+
+
+EXCEPTION code=0xe06d7363 first=1
+MODULE base=00007FFFF3B80000 file=%SYSTEMROOT%\System32\opengl32.dll
+MODULE base=00007FFFF3970000 file=%SYSTEMROOT%\System32\glu32.dll
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(121)\opengl32.dll!00007FFFF3C4322A: (caller: 00007FFFF3C41053) ReturnHr(1) tid(9494) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(98)\opengl32.dll!00007FFFF3C4107C: (caller: 00007FFFF3BA07F7) ReturnHr(2) tid(9494) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\directxdatabasehelper.cpp(1410)\opengl32.dll!00007FFFF3C41159: (caller: 00007FFFF3BA07F7) ReturnHr(3) tid(9494) 8000FFFF Catastrophic failure
+
+
+MODULE base=00007FF826FF0000 file=%SYSTEMROOT%\System32\AppXDeploymentClient.dll
+MODULE base=00007FFFAEA70000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvppex.dll
+MODULE base=00007FF82FFB0000 file=%SYSTEMROOT%\System32\winsta.dll
+MODULE base=00007FF82E370000 file=%SYSTEMROOT%\System32\d3d11.dll
+MODULE base=00007FFFE9060000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvldumdx.dll
+MODULE base=00007FFFB40F0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\NvMemMapStoragex.dll
+MODULE base=00007FFF00990000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvwgf2umx.dll
+MODULE base=00007FF81A970000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdxx64.dll
+MODULE base=00007FF821DA0000 file=%SYSTEMROOT%\System32\atidxx64.dll
+MODULE base=00007FF82B670000 file=%SYSTEMROOT%\System32\apphelp.dll
+MODULE base=00007FF829D30000 file=%SYSTEMROOT%\System32\dcomp.dll
+ODS [23-34-30][streamline][info][tid:38036][42s:697ms:371us]dxgiFactory.cpp:79[setupSwapchainProxy] IDXGISwapChain proxy not required, skipping
+
+EXCEPTION code=0x406d1388 first=1
+MODULE base=00007FFFBF840000 file=%SYSTEMROOT%\System32\DataExchange.dll
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+ODS sl::eErrorNotInitialized
+
+EXIT code=0

@@ -1,0 +1,20 @@
+{
+  "api": "12_0",
+  "backend": "d3d12",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "dev",
+    "string": "4.8-dev (custom_build)",
+    "timestamp": 1791819422
+  },
+  "force_legacy": "",
+  "frame_count": 29,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime": {}
+}

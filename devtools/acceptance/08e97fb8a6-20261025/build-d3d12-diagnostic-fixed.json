@@ -1,0 +1,33 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/build/build.ps1",
+    "-KeepGoing",
+    "-Jobs",
+    "4",
+    "-VersionStatus",
+    "beta1"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:23:09.614300+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\build-d3d12-diagnostic-fixed.log",
+  "pid": 34320,
+  "exit_code": 0,
+  "duration_seconds": 42.969,
+  "finished_utc": "2026-10-25T12:23:52.575224+00:00"
+}

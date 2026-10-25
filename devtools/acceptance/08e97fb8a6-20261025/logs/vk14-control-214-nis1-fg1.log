@@ -1,0 +1,995 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.RtxUpgradeGpuAcceptance.0'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2017430485184
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2017430485184
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2017430485184
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+ERROR: VALIDATION - Message Id Number: 1342804845 | Message Id Name: VUID-VkWin32SurfaceCreateInfoKHR-hinstance-01307
+	vkCreateWin32SurfaceKHR(): pCreateInfo->hinstance is NULL.
+The Vulkan spec states: hinstance must be a valid Win32 HINSTANCE (https://docs.vulkan.org/spec/latest/chapters/VK_KHR_surface/wsi.html#VUID-VkWin32SurfaceCreateInfoKHR-hinstance-01307)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2017430485184
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Integrated
+Optional Vulkan device extension VK_EXT_fragment_density_map not found
+Optional Vulkan device extension VK_EXT_fragment_density_map2 not found
+Optional Vulkan device extension VK_QCOM_fragment_density_map_offset not found
+Optional Vulkan device extension VK_EXT_astc_decode_mode not found
+Optional Vulkan device extension VK_EXT_texture_compression_astc_hdr not found
+Optional Vulkan device extension VK_KHR_external_memory_fd not found
+Optional Vulkan device extension VK_EXT_debug_marker not found
+- Vulkan Fragment Shading Rate supported:
+  Pipeline fragment shading rate
+  Primitive fragment shading rate
+  Attachment fragment shading rate, min texel size: (16, 16), max texel size: (16, 16), max fragment size: (4, 4)
+- Vulkan Fragment Density Map not supported
+- Vulkan multiview supported:
+  max view count: 32
+  max instances: 134217727
+- Vulkan subgroup:
+  size: 32
+  min size: 32
+  max size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE, STAGE_RAYGEN_KHR, STAGE_ANY_HIT_KHR, STAGE_CLOSEST_HIT_KHR, STAGE_MISS_KHR, STAGE_INTERSECTION_KHR, STAGE_CALLABLE_KHR, STAGE_TASK_NV, STAGE_MESH_NV
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD, FEATURE_PARTITIONED_NV
+  quad operations in all stages
+- Vulkan Acceleration Structure supported
+  min acceleration structure scratch offset alignment: 128
+- Vulkan Raytracing supported
+  shader group handle size: 32
+  shader group handle alignment: 32
+  shader group handle size aligned: 32
+  shader group base alignment: 64
+ERROR: VALIDATION - Message Id Number: 307460652 | Message Id Name: VUID-vkCreateDevice-ppEnabledExtensionNames-01387
+	vkCreateDevice(): pCreateInfo->ppEnabledExtensionNames[10] Missing extension required to enable device extension VK_NV_low_latency2:
+ - VK_KHR_present_id or VK_KHR_present_id2
+The Vulkan spec states: All required device extensions for each extension in the VkDeviceCreateInfo::ppEnabledExtensionNames list must also be present in that list (https://docs.vulkan.org/spec/latest/chapters/devsandqueues.html#VUID-vkCreateDevice-ppEnabledExtensionNames-01387)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2017430485184
+ERROR: VALIDATION - Message Id Number: -615737123 | Message Id Name: VUID-vkCreatePrivateDataSlot-privateData-04564
+	vkCreatePrivateDataSlot(): privateData feature was not enabled.
+The Vulkan spec states: The privateData feature must be enabled (https://docs.vulkan.org/spec/latest/chapters/private_data.html#VUID-vkCreatePrivateDataSlot-privateData-04564)
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+Startup PSO cache (6.4 MiB)
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Creating VMA small objects pool for memory type index 1
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: 69bb02720622e4d918aa2330721115990a9d57b7d87df0d3334fdc6481d8cc2c
+Shader 'SkeletonShaderRD' (group 0) SHA256: ead7fece1efac16b6d83f894c6a5141bfbc430b7edbad2fb9d38e4fec6d7719a
+Shader 'SortShaderRD' (group 0) SHA256: fc46823332a0a81d126ecb5d3db09511c623ccbb733424f1f4709908d488abd1
+Shader 'ParticlesShaderRD' (group 0) SHA256: 01f87d1f98ea5d2c7c9cc0c1366734ec72b328ec211c817ad828e6935a39ce41
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: b1e77f46305ccd868b5a83600a97c8bfb8c769cbedac41043071d6182e0a6759
+Shader 'CanvasShaderRD' (group 0) SHA256: 9072726986c702b09c65ef954817f8eba0c3ae27e024e5a0648a3402122fc6c4
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: cb4f5a00dbbbb7e36bdd1bdfce65005c3ff5bee70abb967d287b785dbcec5b7d
+Shader 'TexBlitShaderRD' (group 0) SHA256: 8ec248ad0ea31f74738e152ee394d733958ac123213c55230efd3ff0b9c3d7c7
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: 3f7306a15858b26df551c492b8f967b89a0e85a9f486655b36285d1110e85e2b
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: c9b6441a49b02c871e97181f7d1f2a55ce8dc3fd09f511313bcce529b19222e1
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: fabb3dd91f82272daa6c0a84876bdf5a15432605ac4c911ca1e9aeb96cd831af
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: 043484a1826eefadb32565a506b06ae38b8dc89f0394d058ffe44d9abf9d3897
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: 8c766e9e3c0cb50b6000493051e03b63e679dad793f837775c86f97d9a1db787
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: fcf221edd50dff384605d38be9a326e5e56eb63f772e06e0c5320188f6387792
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: 196a4d3b377b5b3e68af3695dad3361a43c4ff6882b30b083d50dc783f01ba0e
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 84d2f47257e01a8e5e14ed9f04a3aa4532b8771a1d4f6e3668478944a83ef4cd
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: bf3615ba5f4d403824ff9a8ffd4597ffaca7e4537fc6920563d5ebf889437b00
+Shader 'TaaResolveShaderRD' (group 0) SHA256: d7b040757afdb9f78dcc6876f8973602c772abfd60056a879d24d03bb2e822e6
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: 181a2862bacae9c70ea56116c81dcab077e13590333c7c4845903b0d84985181
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: 8c2479029820b36daf2374ed05310f4368ba54c99423bb339575a9f2c9366673
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: fc4c7dbe8acb2f5f9739649cd135e54355d5a32e35938a47dfb4a969acd13ed5
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: dfc856ab18be2c787dcad728dcbce5e942ada43e79ddde8c5fd382f7fbda44c1
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: e1992126e427fa66837ede72a16311300bee5bfa1f5e0bc3ac0a453d7375881e
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: ca135b49793aeee8670bf8df6139a664dfafbae80de74722fabd98c0dc86fee1
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: b9eacfe4da022998253f85c0ed39f1a7614a757276bc859aef8faeb0872b7764
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: b5a0a7332cb2aa9c4d478bc0c44c608e2cd4a55285221a7011d3c8f915e09569
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: a9b849fbeaec19199b07d3e3802439867c6202789eb35796d315068daa219746
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: ff3ec3b96614c7ebeac779fcb27c6c0d82cce8e6b974dd5b126bfc807f95b924
+Shader 'SsilShaderRD' (group 0) SHA256: 7944365f2e984af014f256a6f4a1901139e3312b27ac9c721f3c503d3f9af42f
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 6adc9880a84b9716b5818da8bd1b6f043b78b8354d8e15ed21433e05981389c2
+Shader 'SsilBlurShaderRD' (group 0) SHA256: b766409077d7bbf8b91984967180f9ee9b364d8d6ab01dffb1fada43fff8f691
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: d86ac3e12e8c1c1d3d9009658c2252e5103c1f85ac556cc88b543ad05a261a3c
+Shader 'SsaoShaderRD' (group 0) SHA256: 5683fab1e7c6849884a2a3a75a68ab0162c13d49e7c4e09e83e4643c63e71d92
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: fdbc05b51318ab223ca3a48198ac8e497eed3d45777a81cb31f24583497429a1
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 98a7f073cda7e177dc4fb5475773bf537c6bfb0a2f4ebd2dc87e45e3f2501634
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: a7172fcb4652642de34580d0d6c01d67a65e31911d13cdc0b3aad5eb9a5d704a
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: 4ddbd0013983329a67e0757969a9325bf78cf64dfdaa918466579dbd71640234
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: c4b6849c0d21fa8da568d0edf998b3536f205e21f33a591326687522e0ddaecb
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: af9e5accf2fbae76e2fe21ef7b1e3dacc2c398689d6aaa245871591c07967be0
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: 56d824eb2c0a38c97c9d771906af119c3254ea3142f58d0255418eb697931dd5
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: 84ece9b32df6a4450e32778da570e1732b2ed982d84d26288571771c78d88cdb
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: 481a04ec787f6db593ceb7a9e44a9f3d2c36c5e749a0654eb6fe3ce7222db8a9
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 0daf78e72f5ba3c3c4efbc0882fbc37e2f703553d0c022d2e4eb518a48b2d9eb
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: 880c822c752a55c891de094ee96f8c9849c6e28603df9bdfc327a7528f0ce590
+Shader 'SkyShaderRD' (group 0) SHA256: 6ad8f889048986358e88b241c9e4ddc3dd3a4fff60de8a6ec8e844b02db7cd77
+Shader 'VoxelGiShaderRD' (group 0) SHA256: f5c57e2f20ed2cb641c1df68ef34be8c457d1fdc3cf9511ef45366760c804436
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: adbb07bd6c0f8f730733cb04df4320647467a92624efd3d42fea0469ba69e1ab
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: c946f7064dce70c2c9ed99f9c6c8adfd09dc5cab4b938f85f4d7f8db66059d68
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: 786a3b4a52aeafc84a8c2d481f873297725d25b570c2dd396c86c90159cb8edf
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: c85ddbff1558eabe244c9c72bbd2554df68420d52c903a961ef188db66617966
+Shader 'GiShaderRD' (group 0) SHA256: 69983ae51d4bb90b64ef0dd78d3e614b498339c088bdd6fda20d78fe61cbb1c2
+Shader 'GiShaderRD' (group 1) SHA256: fded7644c74ecbc28fc3575189e8e2fc6a34149283ebc39df67ca33a04e47599
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: 45b5b52dae647299ef4967720cbd3fe99c62fb911285f077f8057ac7936d55c5
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: 9d21cde7c7269578a9072bca891d61b5fb6ab6b423b64c66a9075c62f873a538
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 111aac62486ad2279f94e60e069c3f956e28598d14053ce3ff2fa300b060c380
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 54d09a36a1a7eb9789246b706ad78bdabfa66ab5360cd0a1a669b27e63e9913a
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: eca6f05e5bb0ef5b605801706104f711b71c987ccf622fe8b18924280d66758f
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: 409f70380eff3910357f5ee2607e8dd527f9aa8f0e3b00fdc765b6c9796a67cc
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: d9e855dde8701536b726b5cc940ee7332b560d69deb3e2c41d3877d550fb0e88
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: 9cd187c1f2795e6601e90ad3388b701a4853a334824c120ed6fa77c8501f5d07
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: a8a4e84f1ea592790c9c48a35b9fb7d797ef4a5590372e333b274b9d45a1d458
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: eee8e24395b84fa5df4eef48c767d0911fff2153ce3dfdfeb100c49ea00192a5
+Shader 'BokehDofShaderRD' (group 0) SHA256: 981bb70d855bb9ffb6d9f170d0588feb496872657882a62bffee4bea170eddcb
+Shader 'CopyShaderRD' (group 0) SHA256: ef97df77461e0966ea3773b2f33b71404e333e1f2931b6c92fe5ca2cc8bd8d56
+Shader 'CopyToFbShaderRD' (group 0) SHA256: be01587da6c66d1a62ee0a469859ebd44271d8e0861d205abde53610cacaf4c4
+Shader 'CubeToDpShaderRD' (group 0) SHA256: ddb506e0b8bd13b50815a5bdace19128b69456bfce4e535a7fca16f1c138e020
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: 68d6def69ae9520cbade2176cbee6da84df34e5e70640d54e2d274857eb9500f
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: ac7ccb57fb39ac64e039641c4fb28a0b6d1c329bcabea67edc32f8b75328214b
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: 5955f0ab69b2ae38e34172e9902b499ab57e61b437808d93521649a894e14429
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: 94bc209b63a813a61133efc957c8c597887724404cdd49acef4fcf8193177679
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: f7e1304955b9c4e36cab0f72da62b2db75f196d180412b086d43d13530e826cb
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: bccda9b2f0c18b1f24d4e295137e76c0aac2aa34e04618872622e2b3babc42d4
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: 8b54cbcd640cdf56031770abc798fadf39ccbca5f929341708b98457bbfc7490
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 1ec0491a0c06ac8a00b9229293d7c66f50a449b5eaef540167617018ecc2cf78
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: 1f657af8a822d236128697b4994189583975e5817f827adb0b16631103db27e4
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 592265369225e407e802f5f9930f270efb914e91e0882a7989ae69ea295ef70b
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 8ca88f3bfd9342ddf88ca9b99ef5b6fde4c10c3d9a137390779e2fe8381e3c47
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: b046b9fca61df9261ecff48858858fe10fd759bb4aa9f1c3317706948f436c7e
+Shader 'TonemapShaderRD' (group 0) SHA256: 00f971b860f85745122c2d4eaefbc9da257ddfeb1e9adf0de95cbd87509b46f3
+Shader 'VrsShaderRD' (group 0) SHA256: 6116138d0d10c7298c0eb8f6755405be2e7b6777f3ae8c0c0fc381ae7f114766
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: 902bba347a577ddac5da4730247aca4afb1b5f79e3647e80a1e0bcc4a03417ff
+Shader 'ResolveShaderRD' (group 0) SHA256: 9528de0e9e0e97f5809bc8451022c0bda654fce5ec45bb10520120faecc68fcc
+Shader 'BlitShaderRD' (group 0) SHA256: 68dffdc452f204f70136ac75a1909ec4e339ff129d9d11922794fbf3d3e85c92
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].newLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79e000000079e usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79e000000079e) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].oldLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79e000000079e usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba00d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+CORE API HASH: 2678673284
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+GPU_ACCEPTANCE_METADATA {"api":"1.4.341","capabilities":{"0":true,"1":true,"2":true,"3":true,"4":true,"5":true},"driver":"vulkan","editor_hint":false,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","mode":"fg","process_id":37112,"renderer":"forward_plus","requested_rr_preset":"?","requested_sr_preset":"?","suite":"motion"}
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].newLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79e000000079e usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79e000000079e) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].oldLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79e000000079e usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2144047674165150
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba38d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a800000007a8[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2155042790442920, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].newLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].oldLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: -72737220 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03868
+	vkQueueSubmit2(): pSubmits[0].pSignalSemaphoreInfos[1].semaphore (VkSemaphore 0x78b000000078b[nv.sl.dlss_g.cmdCtx.pacer.present-semaphore]) is being signaled by VkQueue 0x1d5fa6f23d0[nv.sl.dlss_g.cmdQ.pacer], but it may still be in use by VkSwapchainKHR 0x79d000000079d.
+Most recently acquired image indices: 0, [0], 1.
+(Brackets mark the last use of VkSemaphore 0x78b000000078b[nv.sl.dlss_g.cmdCtx.pacer.present-semaphore] in a presentation operation.)
+Swapchain image 0 was presented but was not re-acquired, so VkSemaphore 0x78b000000078b[nv.sl.dlss_g.cmdCtx.pacer.present-semaphore] may still be in use and cannot be safely reused with image index 1.
+Hint: See https://docs.vulkan.org/guide/latest/swapchain_semaphore_reuse.html for details on swapchain semaphore reuse. Examples of possible approaches:
+   a) Use a separate semaphore per swapchain image. Index these semaphores using the index of the acquired image.
+   b) Consider the VK_KHR_swapchain_maintenance1 extension. It allows using a VkFence with the presentation operation.
+The Vulkan spec states: The semaphore member of any binary semaphore element of the pSignalSemaphoreInfos member of any element of pSubmits must be unsignaled when the semaphore signal operation it defines is executed on the device (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03868)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2123156953237387, Name "nv.sl.dlss_g.cmdCtx.pacer.present-semaphore"
+		Object[1] - VK_OBJECT_TYPE_QUEUE, Handle 2018541249488, Name "nv.sl.dlss_g.cmdQ.pacer"
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba00d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].newLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].oldLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba38d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	vkCmdPipelineBarrier(): pImageMemoryBarriers[0].newLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1338377618 | Message Id Name: VUID-VkImageMemoryBarrier-oldLayout-01213
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkCmdPipelineBarrier(): pImageMemoryBarriers[0].oldLayout (VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL) is not compatible with VkImage 0x79f000000079f usage flags VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR.
+The Vulkan spec states: If layouts are not ignored, oldLayout or newLayout is VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL then image must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-VkImageMemoryBarrier-oldLayout-01213)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba00d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a800000007a8[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2155042790442920, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+DLSS SR requested options: viewport=1 mode=3 selection=? DLAA=0 Quality=0 Balanced=0 Performance=0 UltraPerformance=0 UltraQuality=0 result=sl::eOk (active model not queried)
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xd7b0000000d7b[RenderBuffer render_buffers/color_upscaled], which was previously written by vkCmdClearColorImage[Command Graph (L5) (Custom)::nv.ngx.dlss.Evaluate]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_CLEAR_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_TRANSFER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_GENERAL,
+  newLayout = VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3794414627458427, Name "RenderBuffer render_buffers/color_upscaled"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1], which was previously written by vkCmdCopyImage[Command Graph (L5) (Custom)]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_COPY_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_COPY_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_SHADER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
+  newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf40000000df4[nv.sl.chi.descriptorSet.thread.11756.kernel.0], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3927455534419444, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.0"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	[ Debug region: Command Graph (L5) (Custom) ] vkQueueSubmit(): pSubmits[0] command buffer VkCommandBuffer 0x1d5fabd10d0 expects VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_UNDEFINED.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L7) (Draw){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba38d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xd7b0000000d7b[RenderBuffer render_buffers/color_upscaled], which was previously written by vkCmdClearColorImage[Command Graph (L5) (Custom)::nv.ngx.dlss.Evaluate]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_CLEAR_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_TRANSFER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_GENERAL,
+  newLayout = VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546342096
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3794414627458427, Name "RenderBuffer render_buffers/color_upscaled"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1], which was previously written by vkCmdCopyImage[Command Graph (L5) (Custom)]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_COPY_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_COPY_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_SHADER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
+  newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546342096
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf50000000df5[nv.sl.chi.descriptorSet.thread.11756.kernel.1], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3928555046047221, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.1"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	[ Debug region: Command Graph (L5) (Custom) ] vkQueueSubmit(): pSubmits[0] command buffer VkCommandBuffer 0x1d5fabcd8d0 expects VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_GENERAL.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546342096
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L7) (Draw){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	vkQueueSubmit2(): pSubmits[0] command buffer VkCommandBuffer 0x1d608ba00d0[nv.sl.dlss_g.cmdCtx.pacer.command-buffer] expects VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_PRESENT_SRC_KHR.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xd7b0000000d7b[RenderBuffer render_buffers/color_upscaled], which was previously written by vkCmdClearColorImage[Command Graph (L5) (Custom)::nv.ngx.dlss.Evaluate]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_CLEAR_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_TRANSFER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_GENERAL,
+  newLayout = VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3794414627458427, Name "RenderBuffer render_buffers/color_upscaled"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1], which was previously written by vkCmdCopyImage[Command Graph (L5) (Custom)]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_COPY_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_COPY_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_SHADER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
+  newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf60000000df6[nv.sl.chi.descriptorSet.thread.11756.kernel.2], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3929654557674998, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.2"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+[ Debug region: Command Graph (L5) (Custom) ] vkQueueSubmit(): pSubmits[0] command buffer VkCommandBuffer 0x1d5fabd10d0 expects VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL--instead, current layout is VK_IMAGE_LAYOUT_GENERAL.
+The expected layout comes from vkCmdCopyImage, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L7) (Draw){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xd7b0000000d7b[RenderBuffer render_buffers/color_upscaled], which was previously written by vkCmdClearColorImage[Command Graph (L5) (Custom)::nv.ngx.dlss.Evaluate]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_CLEAR_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_TRANSFER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_GENERAL,
+  newLayout = VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546342096
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3794414627458427, Name "RenderBuffer render_buffers/color_upscaled"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1], which was previously written by vkCmdCopyImage[Command Graph (L5) (Custom)]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_COPY_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_COPY_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_SHADER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
+  newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546342096
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf70000000df7[nv.sl.chi.descriptorSet.thread.11756.kernel.3], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3930754069302775, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.3"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781036752, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xd7b0000000d7b[RenderBuffer render_buffers/color_upscaled], which was previously written by vkCmdClearColorImage[Command Graph (L5) (Custom)::nv.ngx.dlss.Evaluate]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_CLEAR_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_TRANSFER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_GENERAL,
+  newLayout = VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3794414627458427, Name "RenderBuffer render_buffers/color_upscaled"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkCmdPipelineBarrier(): WRITE_AFTER_WRITE hazard detected. vkCmdPipelineBarrier performs image layout transition on the VkImage 0xde20000000de2[nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1], which was previously written by vkCmdCopyImage[Command Graph (L5) (Custom)]. 
+No sufficient synchronization is present to ensure that a layout transition does not conflict with a prior write (VK_ACCESS_2_TRANSFER_WRITE_BIT) at VK_PIPELINE_STAGE_2_COPY_BIT.
+Hint: Ensure that srcStageMask includes VK_PIPELINE_STAGE_2_COPY_BIT and srcAccessMask includes VK_ACCESS_2_TRANSFER_WRITE_BIT. The source side of the barrier protects layout transition writes from previous accesses, and the destination side cannot introduce this specific hazard.
+pImageMemoryBarriers[0]: {
+  srcStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  srcAccessMask = VK_ACCESS_2_NONE,
+  dstStageMask = VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT,
+  dstAccessMask = VK_ACCESS_2_SHADER_READ_BIT,
+  oldLayout = VK_IMAGE_LAYOUT_UNDEFINED,
+  newLayout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,
+  subresourceRange = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018546356432
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3907664325119458, Name "nv.sl.common.clone.tagVolatile.kBufferTypeScalingInputColor.1"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf80000000df8[nv.sl.chi.descriptorSet.thread.11756.kernel.4], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3931853580930552, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.4"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: -876098841 | Message Id Name: VUID-vkCmdCopyImage-aspect-06663
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkCmdCopyImage(): dstImage (VkImage 0x79f000000079f) was created with VK_IMAGE_USAGE_2_COLOR_ATTACHMENT_BIT_KHR but requires VK_IMAGE_USAGE_2_TRANSFER_DST_BIT_KHR.
+The Vulkan spec states: If the aspect member of any element of pRegions includes any flag other than VK_IMAGE_ASPECT_STENCIL_BIT or dstImage was not created with separate stencil usage, dstImage must have been created with the VK_IMAGE_USAGE_TRANSFER_DST_BIT usage flag set (https://docs.vulkan.org/spec/latest/chapters/copies.html#VUID-vkCmdCopyImage-aspect-06663)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781051088, Name "nv.sl.dlss_g.cmdCtx.pacer.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2145147185792927
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdf90000000df9[nv.sl.chi.descriptorSet.thread.11756.kernel.5], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3932953092558329, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.5"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+WARNING: Enabling DLSS-G on viewport: 1
+   at: RendererRD::DLSSEffect::_upscale_internal (servers\rendering\renderer_rd\effects\dlss.cpp:522)
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdfa0000000dfa[nv.sl.chi.descriptorSet.thread.11756.kernel.6], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3934052604186106, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.6"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdfb0000000dfb[nv.sl.chi.descriptorSet.thread.11756.kernel.7], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3935152115813883, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.7"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7d200000007d2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 12) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2201222278809554
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b300000007b3) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 12) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2167137418348467
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781108432, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 13608 "nv.sl.dlss_g.thread.dlssg" (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkAcquireNextImageKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdfc0000000dfc[nv.sl.chi.descriptorSet.thread.11756.kernel.8], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3936251627441660, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.8"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0xd9c0000000d9c) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 13) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 3830698511175068
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b400000007b4) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 13) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2168236929976244
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781122768, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+WARNING: VALIDATION - Message Id Number: 20145586 | Message Id Name: Undefined-Value-StorageImage-FormatMismatch-ImageView
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkCmdDispatch(): the storage image descriptor [VkDescriptorSet 0xdfd0000000dfd[nv.sl.chi.descriptorSet.thread.11756.kernel.9], Set 0, Binding 3, Index 0, variable "out_texture_0"] is accessed by a OpTypeImage that has a Format operand Rgba32f (equivalent to VK_FORMAT_R32G32B32A32_SFLOAT) which doesn't match the VkImageView 0xd7c0000000d7c[RenderBuffer render_buffers/color_upscaled View] format (VK_FORMAT_R16G16B16A16_SFLOAT). Any loads or stores with the variable will produce undefined values to the whole image (not just the texel being accessed).
+Spec information at https://docs.vulkan.org/spec/latest/chapters/textures.html#textures-format-validation
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_PIPELINE, Handle 3997824278597172, Name "nv.sl.chi.pipeline.thread-kernel"
+		Object[1] - VK_OBJECT_TYPE_DESCRIPTOR_SET, Handle 3937351139069437, Name "nv.sl.chi.descriptorSet.thread.11756.kernel.9"
+		Object[2] - VK_OBJECT_TYPE_IMAGE_VIEW, Handle 3795514139086204, Name "RenderBuffer render_buffers/color_upscaled View"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7d200000007d2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 14) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2201222278809554
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a800000007a8[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781137104, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2155042790442920, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b200000007b2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 14) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2166037906720690
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0xd9c0000000d9c) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 15) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 3830698511175068
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781151440, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b300000007b3) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 15) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2167137418348467
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7d200000007d2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 16) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2201222278809554
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781165776, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b400000007b4) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 16) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2168236929976244
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0xd9c0000000d9c) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 17) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 3830698511175068
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b200000007b2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 17) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2166037906720690
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a800000007a8[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781180112, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2155042790442920, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7d200000007d2) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 18) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2201222278809554
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b300000007b3) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 18) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2167137418348467
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781108432, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkAcquireNextImageKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a500000007a5[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781122768, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2151744255559589, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -1258007888 | Message Id Name: VUID-vkQueueSubmit-pWaitSemaphores-03238
+	vkQueueSubmit(): pSubmits[0].pWaitSemaphores[0] queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0xd9c0000000d9c) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 19) that does not have resolving signal submitted yet.
+The Vulkan spec states: All elements of the pWaitSemaphores member of all elements of pSubmits created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitSemaphores-03238)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 3830698511175068
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -2139599761 | Message Id Name: VUID-vkQueueSubmit2-semaphore-03873
+	vkQueueSubmit2(): pSubmits[0].pWaitSemaphoreInfos[0].semaphore queue (VkQueue 0x1d5fa6f14d0[nv.sl.dlss_g.cmdQ.game]) is waiting on binary semaphore (VkSemaphore 0x7b400000007b4) that has an associated signal but it depends on timeline semaphore wait (VkSemaphore 0xdc00000000dc[nv.sl.dlss_g.fence.dlfg-signal], wait value = 19) that does not have resolving signal submitted yet.
+The Vulkan spec states: The semaphore member of any element of the pWaitSemaphoreInfos member of any element of pSubmits that was created with a VkSemaphoreType of VK_SEMAPHORE_TYPE_BINARY must reference a semaphore signal operation that has been submitted for execution and any semaphore signal operations on which it depends must have also been submitted for execution (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit2-semaphore-03873)
+	Objects - 3
+		Object[0] - VK_OBJECT_TYPE_SEMAPHORE, Handle 2168236929976244
+		Object[1] - VK_OBJECT_TYPE_SEMAPHORE, Handle 241892558110940, Name "nv.sl.dlss_g.fence.dlfg-signal"
+		Object[2] - VK_OBJECT_TYPE_QUEUE, Handle 2018541245648, Name "nv.sl.dlss_g.cmdQ.game"
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a800000007a8[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781137104, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2155042790442920, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -1604639890 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Write
+	vkQueuePresentKHR(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR) and thread 11756 (vkLatencySleepNV)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: -455515022 | Message Id Name: SYNC-HAZARD-READ-AFTER-WRITE
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkCmdCopyImage(): READ_AFTER_WRITE hazard detected. vkCmdCopyImage reads VkImage 0x7a200000007a2[nv.sl.dlss_g.tex2d.fake-swapchain-buffer], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[nv.ngx.dlssg.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_READ_BIT accesses at VK_PIPELINE_STAGE_2_COPY_BIT.
+Image copy region 0: {
+  offset = {x = 0, y = 0, z = 0},
+  extent = {width = 960, height = 540, depth = 1},
+  subresource = {aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, baseArrayLayer = 0, layerCount = 1}
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 2018781151440, Name "nv.sl.dlss_g.cmdCtx.dlssg.command-buffer"
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 2148445720676258, Name "nv.sl.dlss_g.tex2d.fake-swapchain-buffer"
+	Command Buffer Labels - 1
+		Label[0] - nv.ngx.dlssg.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: -1604639890 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Write
+	vkQueuePresentKHR(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR) and thread 11756 (vkLatencySleepNV)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: -1604639890 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Write
+	vkQueuePresentKHR(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR) and thread 11756 (vkLatencySleepNV)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: -1604639890 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Write
+	vkQueuePresentKHR(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR) and thread 11756 (vkLatencySleepNV)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: -1604639890 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Write
+	vkQueuePresentKHR(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR) and thread 11756 (vkLatencySleepNV)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkAcquireNextImageKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkAcquireNextImageKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+ERROR: VALIDATION - Message Id Number: 1010413496 | Message Id Name: UNASSIGNED-Threading-MultipleThreads-Read
+	(Warning - This VUID has now been reported 10 times, which is the duplicate_message_limit value, this will be the last time reporting it).
+vkSetLatencyMarkerNV(): THREADING ERROR : object of type VkSwapchainKHR is simultaneously used in current thread 11756 (vkSetLatencyMarkerNV) and thread 23376 "nv.sl.dlss_g.thread.pacer" (vkQueuePresentKHR)
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_SWAPCHAIN_KHR, Handle 2142948162537373
+GPU_ACCEPTANCE_FINISHED actual_viewport_captures=49
+ERROR: VALIDATION - Message Id Number: -978265390 | Message Id Name: VUID-vkDestroySwapchainKHR-swapchain-01282
+	vkDestroySwapchainKHR(): can't be called on VkSwapchainKHR 0x79d000000079d that is currently in use by VkQueue 0x1d5fa6f23d0[nv.sl.dlss_g.cmdQ.pacer].
+The Vulkan spec states: All uses of presentable images acquired from swapchain must have completed execution (https://docs.vulkan.org/spec/latest/chapters/VK_KHR_surface/wsi.html#VUID-vkDestroySwapchainKHR-swapchain-01282)
+ERROR: VALIDATION - Message Id Number: -1813885519 | Message Id Name: VUID-vkDestroySemaphore-semaphore-05149
+	vkDestroySemaphore(): can't be called on VkSemaphore 0x78b000000078b[nv.sl.dlss_g.cmdCtx.pacer.present-semaphore] that is currently in use by VkQueue 0x1d5fa6f23d0[nv.sl.dlss_g.cmdQ.pacer].
+The Vulkan spec states: All submitted batches that refer to semaphore must have completed execution (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-vkDestroySemaphore-semaphore-05149)
+ERROR: VALIDATION - Message Id Number: -1813885519 | Message Id Name: VUID-vkDestroySemaphore-semaphore-05149
+	vkDestroySemaphore(): can't be called on VkSemaphore 0xdf00000000df[nv.sl.dlss_g.fence.pacer-signal] that is currently in use by VkQueue 0x1d5fa6f23d0[nv.sl.dlss_g.cmdQ.pacer].
+The Vulkan spec states: All submitted batches that refer to semaphore must have completed execution (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-vkDestroySemaphore-semaphore-05149)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

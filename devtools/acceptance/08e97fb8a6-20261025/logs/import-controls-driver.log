@@ -1,0 +1,232 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\standard-project",
+    "--import"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:38:13.647771+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\import-control-08e-warm-1.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 48988,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 3.953,
+  "finished_utc": "2026-10-25T11:38:17.422653+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\standard-project",
+    "--import"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:38:17.772089+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\import-control-08e-warm-2.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 41264,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 3.922,
+  "finished_utc": "2026-10-25T11:38:21.527307+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+{
+  "command": [
+    "<PREVIOUS_ACCEPTANCE_ROOT>\\builds\\final-138-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\repro\\import-138-fresh",
+    "--import"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<PREVIOUS_ACCEPTANCE_ROOT>\\builds\\final-138-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161772032,
+      "sha256": "d9ae81d59e1b76a7bc5f340dcc5a1d9bab95c8325a487acd4681b46d57943baf"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:38:21.954594+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\import-control-138-fresh.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 44712,
+  "exit_code": 3221225477,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.688,
+  "finished_utc": "2026-10-25T11:38:26.404396+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.1381c3259 (2026-10-25 08:58:40 UTC) - https://godotengine.org
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+ERROR: Parameter "singleton" is null.
+   at: EditorNode::is_cmdline_mode (editor\editor_node.cpp:6769)
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\repro\\import-08e-fresh",
+    "--import"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:38:26.756166+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\import-control-08e-fresh.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 42236,
+  "exit_code": 3221225477,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.156,
+  "finished_utc": "2026-10-25T11:38:30.751450+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+ERROR: Parameter "singleton" is null.
+   at: EditorNode::is_cmdline_mode (editor\editor_node.cpp:6769)

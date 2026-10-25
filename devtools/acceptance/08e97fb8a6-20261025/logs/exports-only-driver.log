@@ -1,0 +1,499 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\standard-project",
+    "--export-debug",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\installed-standard-debug\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:41:49.200142+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-standard-debug-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 38120,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.485,
+  "finished_utc": "2026-10-25T11:41:53.527708+00:00"
+}
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+NVIDIA DLSS isn't installed next to the editor (use the editor's "Get NVIDIA DLSS..." button): the exported game runs without DLSS.
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://main.gdc[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://main.gd.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://main.tscn.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\exports\\installed-standard-debug\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--fixed-fps",
+    "60",
+    "--quit-after",
+    "300"
+  ],
+  "cwd": "<ACCEPTANCE_ROOT>\\exports\\installed-standard-debug",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\exports\\installed-standard-debug\\RTXAcceptance.exe",
+      "bytes": 95462408,
+      "sha256": "c279c816aa8e590eb47cbc4bf00f9817df72c786c2ba13c1e507ff90571722bb"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:41:53.828950+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-standard-debug-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 25032,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 5.328,
+  "finished_utc": "2026-10-25T11:41:59.055722+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+PHYSX_SMOKE_PASS height=0.4999994635582 ticks=120
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\standard-project",
+    "--export-release",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\installed-standard-release\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:41:59.710074+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-standard-release-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 47764,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.297,
+  "finished_utc": "2026-10-25T11:42:03.852409+00:00"
+}
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+NVIDIA DLSS isn't installed next to the editor (use the editor's "Get NVIDIA DLSS..." button): the exported game runs without DLSS.
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://main.gdc[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://main.gd.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://main.tscn.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\exports\\installed-standard-release\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--fixed-fps",
+    "60",
+    "--quit-after",
+    "300"
+  ],
+  "cwd": "<ACCEPTANCE_ROOT>\\exports\\installed-standard-release",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\exports\\installed-standard-release\\RTXAcceptance.exe",
+      "bytes": 80619016,
+      "sha256": "ab3e97f97695b927d8794dc1f1b2dc3c95133d1049a70b989dd65bc13f8c4c66"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:42:04.109621+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-standard-release-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 15752,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.297,
+  "finished_utc": "2026-10-25T11:42:08.324227+00:00"
+}
+Godot Engine v4.8.beta1.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+PHYSX_SMOKE_PASS height=0.4999994635582 ticks=120
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\managed-project",
+    "--export-debug",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\installed-mono-debug\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162344448,
+      "sha256": "759f07a4c9d53904a1ab7aef21cbcbb772f3f90faae0bf184d53a9b13a0e8d14"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<ACCEPTANCE_ROOT>\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:42:09.831643+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\installed-mono-debug-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 45180,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 553.219,
+  "finished_utc": "2026-10-25T11:51:22.912185+00:00"
+}
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+NVIDIA DLSS isn't installed next to the editor (use the editor's "Get NVIDIA DLSS..." button): the exported game runs without DLSS.
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+ERROR: Safe save failed. This may be a permissions problem, but also may happen because you are running a paranoid antivirus. If this is the case, please switch to Windows Defender or disable the 'safe save' option in editor settings. This makes it work, but increases the risk of file corruption in a crash.
+   at: FileAccessWindows::_close (drivers\windows\file_access_windows.cpp:287)
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://ManagedSmoke.cs[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://Main.tscn.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\managed-project",
+    "--export-debug",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-debug\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162344448,
+      "sha256": "759f07a4c9d53904a1ab7aef21cbcbb772f3f90faae0bf184d53a9b13a0e8d14"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<ACCEPTANCE_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<ACCEPTANCE_ROOT>\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:53:04.860237+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\rerun-installed-mono-debug-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 17368,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.984,
+  "finished_utc": "2026-10-25T11:53:15.668334+00:00"
+}
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+NVIDIA DLSS isn't installed next to the editor (use the editor's "Get NVIDIA DLSS..." button): the exported game runs without DLSS.
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://ManagedSmoke.cs[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://Main.tscn.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-debug\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--fixed-fps",
+    "60",
+    "--quit-after",
+    "300"
+  ],
+  "cwd": "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-debug",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-debug\\RTXAcceptance.exe",
+      "bytes": 95691264,
+      "sha256": "a3cbbadb5406475aea4ccefd7e0749449c8fb4ebdff4e4bcf408bc436bcfc097"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": null,
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:53:15.957547+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\rerun-installed-mono-debug-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 26960,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 5.937,
+  "finished_utc": "2026-10-25T11:53:21.798835+00:00"
+}
+Godot Engine v4.8.beta1.mono.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+CSHARP_PHYSX_SMOKE_PASS typed_and_dictionary_ray_queries custom_types=4
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+    "--headless",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\exports\\managed-project",
+    "--export-release",
+    "Acceptance",
+    "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-release\\RTXAcceptance.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\fixed08e-no-streamline\\godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162344448,
+      "sha256": "759f07a4c9d53904a1ab7aef21cbcbb772f3f90faae0bf184d53a9b13a0e8d14"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<ACCEPTANCE_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<ACCEPTANCE_ROOT>\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:53:22.591618+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\rerun-installed-mono-release-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 45508,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 12.172,
+  "finished_utc": "2026-10-25T11:53:34.605121+00:00"
+}
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+NVIDIA DLSS isn't installed next to the editor (use the editor's "Get NVIDIA DLSS..." button): the exported game runs without DLSS.
+[   0% ] [90m[1mdotnet_publish_project[22m | Started Publishing .NET project... (1 steps)[39m[0m
+[   0% ] [90m[1mdotnet_publish_project[22m | Running dotnet publish[39m[0m
+[92m[ DONE ][39m [1mdotnet_publish_project[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started Packing (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | Storing File: res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://ManagedSmoke.cs[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://Main.tscn.remap[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/global_script_class_cache.cfg[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://.godot/uid_cache.bin[39m[0m
+[  50% ] [90m[1msavepack[22m | Storing File: res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-release\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--fixed-fps",
+    "60",
+    "--quit-after",
+    "300"
+  ],
+  "cwd": "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-release",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\exports\\rerun-installed-mono-release\\RTXAcceptance.exe",
+      "bytes": 80817664,
+      "sha256": "fac1bbaeaafbfc3c9b4d4eaec7423e3834fc417b2181d153be841dd488798c21"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": null,
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:53:34.859236+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\rerun-installed-mono-release-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 42468,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 3.718,
+  "finished_utc": "2026-10-25T11:53:38.507249+00:00"
+}
+Godot Engine v4.8.beta1.mono.custom_build.08e97fb8a (2026-10-25 11:11:29 UTC) - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+PhysX: CUDA context ready on device 'NVIDIA GeForce RTX 4060 Laptop GPU' -> GPU dynamics available.
+CSHARP_PHYSX_SMOKE_PASS typed_and_dictionary_ray_queries custom_types=4

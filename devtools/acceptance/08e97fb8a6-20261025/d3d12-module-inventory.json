@@ -1,0 +1,50 @@
+[
+  {
+    "loaded_path": "%SYSTEMROOT%\\System32\\D3D12.dll",
+    "file_version": "10.0.19041.7291 (WinBuild.160101.0800)",
+    "bytes": 135496,
+    "sha256": "ba6c94c616cc8aeb226c3376effa1e5647a32e2e425de3cab86478d94b21051b"
+  },
+  {
+    "loaded_path": "%SYSTEMROOT%\\System32\\D3D12Core.dll",
+    "file_version": "10.0.19041.7291 (WinBuild.160101.0800)",
+    "bytes": 1855432,
+    "sha256": "0cad7e3971076ae4d25da52f6b587bdace9a2005a45cb6fb94b5451a992d1536"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\D3D12Core.dll",
+    "file_version": "1.618.5.0.20251205.1",
+    "bytes": 4821064,
+    "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-no-sl\\d3d12SDKLayers.dll",
+    "file_version": "1.618.5.0.20251205.1",
+    "bytes": 4932640,
+    "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\d3d12SDKLayers.dll",
+    "file_version": "1.618.5.0.20251205.1",
+    "bytes": 4932640,
+    "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk210\\sl.interposer.dll",
+    "file_version": "2,10,0,0",
+    "bytes": 569472,
+    "sha256": "c2397e96e35c1e78c0b351b0d2b070c6529ccc990f4cc73f04722db24dc2acce"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\d3d12SDKLayers.dll",
+    "file_version": "1.618.5.0.20251205.1",
+    "bytes": 4932640,
+    "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+  },
+  {
+    "loaded_path": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.interposer.dll",
+    "file_version": "2,14,16,0",
+    "bytes": 652928,
+    "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+  }
+]

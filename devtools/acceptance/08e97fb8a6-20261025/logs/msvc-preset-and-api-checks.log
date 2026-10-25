@@ -1,0 +1,8 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.42
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+test_streamline_dlss_presets.cpp
+PASS: 85 checks, 18 captured SR submissions (no runtime or active-model verification)
+streamline_api_smoke.cpp
+PASS: Streamline 2.14.16 API, versioned options, and disabled initial state (no runtime or GPU test)

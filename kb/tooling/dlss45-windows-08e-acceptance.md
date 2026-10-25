@@ -24,3 +24,17 @@ Both old/new engines reproduce the first-import singleton failure under the
 shared cache; isolated cache retries removed the observed Mono safe-save
 error. Do not call cache isolation a proven engine fix or disable protections.
 See the [full public-safe record](../../devtools/WINDOWS_08E_ACCEPTANCE_2026_10_25.md).
+
+On 2026-10-26 the saved pre-beta `25f6a147ed` engine reproduced the same
+SL2.10 legacy failure only with `--gpu-validation`; ordinary D3D12 and the
+no-SL factory debug control succeeded. Old/new Agility Core/layer hashes
+match and the driver/installer code is unchanged by stage A. In the current
+dependency environment the failure predates beta1. This is not historical
+OS/driver reconstruction or pure-old-model proof: old logs include downloaded
+plugins and the old SDK has no newer OTA opt-out.
+
+The complete [report and evidence](../../devtools/acceptance/08e97fb8a6-20261025/REPORT.md)
+now retain path-sanitized receipts/logs and unchanged application PNGs with
+raw/public hashes. SDK/runtime binaries and private process/desktop data are
+excluded. A missed observation by the user is not evidence of missing HUD
+fields; actual model identity remains unconfirmed.

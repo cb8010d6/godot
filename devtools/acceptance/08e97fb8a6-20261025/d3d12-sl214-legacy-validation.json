@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-validation.debug.log",
+    "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\startup-fixture",
+    "--gpu-validation"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161780224,
+      "sha256": "8ef24973106c0413ad4d08ccbeb13d7b6b5547f79632573ec5ba0340376c2d23"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:33:47.141720+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\d3d12-sl214-legacy-validation.log",
+  "pid": 31088,
+  "exit_code": 0,
+  "duration_seconds": 46.735,
+  "finished_utc": "2026-10-25T12:34:33.729236+00:00"
+}

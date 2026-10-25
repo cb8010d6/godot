@@ -1,0 +1,26 @@
+{
+  "method": "Real red-marker centroids; preserve all 48 frames, exclude first eight only from settled statistic. Old native reference uses identical scene/projection; this is image phase, not physical latency.",
+  "results": [
+    {
+      "dataset": "<PREVIOUS_ACCEPTANCE_ROOT>\\gpu\\native-control",
+      "samples": 48,
+      "median_x_offset_px": 0.0,
+      "reference_step_px": 6.0,
+      "relative_phase_frames": -0.0
+    },
+    {
+      "dataset": "<ACCEPTANCE_ROOT>\\gpu\\fixed08e-vulkan-motion",
+      "samples": 48,
+      "median_x_offset_px": 0.024632401739467014,
+      "reference_step_px": 6.0,
+      "relative_phase_frames": -0.004105400289911169
+    },
+    {
+      "dataset": "<ACCEPTANCE_ROOT>\\gpu\\fixed08e-d3d12-motion",
+      "samples": 48,
+      "median_x_offset_px": 0.024632401739467014,
+      "reference_step_px": 6.0,
+      "relative_phase_frames": -0.004105400289911169
+    }
+  ]
+}

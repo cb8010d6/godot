@@ -1,0 +1,9 @@
+Public package contains no NVIDIA runtime DLLs.
+
+Engine version: 4.8.beta1.mono.custom_build.08e97fb8a
+Release tag:    godot4.8-beta1-nvidia-rt-dlss-physx-v0.7.3
+Release title:  Godot NVIDIA + PhysX (Godot 4.8-beta1) v0.7.3
+Name                                                                    MB
+----                                                                    --
+godot_4.8-nvidia-rt-dlss-physx_v0.7.3-editor_windows_amd64_mono.zip 205.90
+

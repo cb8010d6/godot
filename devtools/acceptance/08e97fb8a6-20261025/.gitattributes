@@ -1,0 +1,2 @@
+# Keep measured log whitespace; line endings follow the repository LF policy.
+*.log -whitespace

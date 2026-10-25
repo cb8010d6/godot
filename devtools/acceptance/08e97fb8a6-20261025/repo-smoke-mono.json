@@ -1,0 +1,29 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/test/smoke.ps1",
+    "-Mono"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:31:20.421887+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\repo-smoke-mono.log",
+  "pid": 16224,
+  "exit_code": 0,
+  "duration_seconds": 26.578,
+  "finished_utc": "2026-10-25T11:31:47.006976+00:00"
+}

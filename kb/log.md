@@ -1,5 +1,16 @@
 # Update log
 
+## 2026-10-26 (fixed 08e evidence archive and pre-beta control)
+
+* **Archived**: the full fixed-head report, command receipts, sanitized logs,
+  unchanged application PNGs and fixture sources with provenance hashes.
+  SDK/runtime binaries, build caches and private desktop/process data are
+  excluded; active DLSS 4.5 model identity is still unconfirmed.
+* **Measured**: the saved pre-beta engine reproduces the legacy debug-layer
+  failure with the same Agility bytes; ordinary D3D12 and the no-SL factory
+  debug control succeed. This failure predates beta1 in the current dependency
+  environment. [Evidence and limits](/tooling/dlss45-windows-08e-acceptance.md).
+
 ## 2026-10-25 (fixed 08e Windows candidate)
 
 * **Measured**: six targets, two smoke variants, installed-template games and

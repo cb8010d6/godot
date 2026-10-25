@@ -1,0 +1,22 @@
+[
+  {
+    "label": "fixed08e-fg-d3d12-scenes",
+    "exit_zero": true,
+    "engine_errors": []
+  },
+  {
+    "label": "fixed08e-vulkan-motion",
+    "exit_zero": true,
+    "engine_errors": []
+  },
+  {
+    "label": "fixed08e-d3d12-motion",
+    "exit_zero": true,
+    "engine_errors": []
+  },
+  {
+    "label": "fixed08e-rr-complex",
+    "exit_zero": true,
+    "engine_errors": []
+  }
+]

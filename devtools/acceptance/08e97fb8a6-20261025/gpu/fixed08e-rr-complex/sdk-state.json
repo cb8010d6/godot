@@ -1,0 +1,2004 @@
+[
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "loaded_runtime_paths": [
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.interposer.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.common.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.dlss.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlss\\versions\\20318480\\files\\160_E658700.bin",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssg\\versions\\20318480\\files\\160_E658700.bin",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\nvngx_deepdvc.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssd\\versions\\20318480\\files\\160_E658700.bin",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.dlss_d.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.dlss_g.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.nis.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.pcl.dll",
+      "<ACCEPTANCE_ROOT>\\builds\\sdk214\\sl.reflex.dll"
+    ],
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 150.0,
+      "gpu_end": 1792930525276486.0,
+      "gpu_start": 1792930525271659.0,
+      "low_latency_available": true,
+      "present_end": 1792930525255030.0,
+      "present_start": 1792930525254825.0,
+      "render_submit_end": 1792930525254027.0,
+      "render_submit_start": 1792930525253299.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930525253289.0,
+      "simulation_start": 1792930525253176.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 310.0,
+      "gpu_end": 1792930528231140.0,
+      "gpu_start": 1792930528226143.0,
+      "low_latency_available": true,
+      "present_end": 1792930528209144.0,
+      "present_start": 1792930528208988.0,
+      "render_submit_end": 1792930528208402.0,
+      "render_submit_start": 1792930528207952.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930528207945.0,
+      "simulation_start": 1792930528207821.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 470.0,
+      "gpu_end": 1792930530961808.0,
+      "gpu_start": 1792930530957015.0,
+      "low_latency_available": true,
+      "present_end": 1792930530940349.0,
+      "present_start": 1792930530940192.0,
+      "render_submit_end": 1792930530939691.0,
+      "render_submit_start": 1792930530939251.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930530939245.0,
+      "simulation_start": 1792930530939150.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 630.0,
+      "gpu_end": 1792930533765058.0,
+      "gpu_start": 1792930533759951.0,
+      "low_latency_available": true,
+      "present_end": 1792930533743306.0,
+      "present_start": 1792930533743143.0,
+      "render_submit_end": 1792930533742573.0,
+      "render_submit_start": 1792930533742102.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930533742096.0,
+      "simulation_start": 1792930533741971.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 790.0,
+      "gpu_end": 1792930536493802.0,
+      "gpu_start": 1792930536489572.0,
+      "low_latency_available": true,
+      "present_end": 1792930536472371.0,
+      "present_start": 1792930536472212.0,
+      "render_submit_end": 1792930536471715.0,
+      "render_submit_start": 1792930536471279.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930536471272.0,
+      "simulation_start": 1792930536471175.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 950.0,
+      "gpu_end": 1792930539211807.0,
+      "gpu_start": 1792930539206140.0,
+      "low_latency_available": true,
+      "present_end": 1792930539189460.0,
+      "present_start": 1792930539189307.0,
+      "render_submit_end": 1792930539188737.0,
+      "render_submit_start": 1792930539188311.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930539188306.0,
+      "simulation_start": 1792930539188235.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1110.0,
+      "gpu_end": 1792930541976793.0,
+      "gpu_start": 1792930541973030.0,
+      "low_latency_available": true,
+      "present_end": 1792930541956438.0,
+      "present_start": 1792930541956268.0,
+      "render_submit_end": 1792930541955767.0,
+      "render_submit_start": 1792930541955286.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930541955277.0,
+      "simulation_start": 1792930541955178.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1270.0,
+      "gpu_end": 1792930544704141.0,
+      "gpu_start": 1792930544698771.0,
+      "low_latency_available": true,
+      "present_end": 1792930544682101.0,
+      "present_start": 1792930544681947.0,
+      "render_submit_end": 1792930544681359.0,
+      "render_submit_start": 1792930544680897.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930544680891.0,
+      "simulation_start": 1792930544680803.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1430.0,
+      "gpu_end": 1792930547460995.0,
+      "gpu_start": 1792930547456517.0,
+      "low_latency_available": true,
+      "present_end": 1792930547439562.0,
+      "present_start": 1792930547439415.0,
+      "render_submit_end": 1792930547438915.0,
+      "render_submit_start": 1792930547438488.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930547438482.0,
+      "simulation_start": 1792930547438397.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1590.0,
+      "gpu_end": 1792930550255135.0,
+      "gpu_start": 1792930550250135.0,
+      "low_latency_available": true,
+      "present_end": 1792930550233996.0,
+      "present_start": 1792930550233737.0,
+      "render_submit_end": 1792930550232710.0,
+      "render_submit_start": 1792930550232084.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930550232077.0,
+      "simulation_start": 1792930550231955.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1750.0,
+      "gpu_end": 1792930552982459.0,
+      "gpu_start": 1792930552977636.0,
+      "low_latency_available": true,
+      "present_end": 1792930552960573.0,
+      "present_start": 1792930552960353.0,
+      "render_submit_end": 1792930552959577.0,
+      "render_submit_start": 1792930552958822.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930552958813.0,
+      "simulation_start": 1792930552958673.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 1910.0,
+      "gpu_end": 1792930555770848.0,
+      "gpu_start": 1792930555766023.0,
+      "low_latency_available": true,
+      "present_end": 1792930555748694.0,
+      "present_start": 1792930555748539.0,
+      "render_submit_end": 1792930555747950.0,
+      "render_submit_start": 1792930555747503.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930555747498.0,
+      "simulation_start": 1792930555747419.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2070.0,
+      "gpu_end": 1792930558503501.0,
+      "gpu_start": 1792930558498442.0,
+      "low_latency_available": true,
+      "present_end": 1792930558481494.0,
+      "present_start": 1792930558481342.0,
+      "render_submit_end": 1792930558480829.0,
+      "render_submit_start": 1792930558480328.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930558480322.0,
+      "simulation_start": 1792930558480239.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2230.0,
+      "gpu_end": 1792930561262985.0,
+      "gpu_start": 1792930561257831.0,
+      "low_latency_available": true,
+      "present_end": 1792930561240856.0,
+      "present_start": 1792930561240682.0,
+      "render_submit_end": 1792930561240018.0,
+      "render_submit_start": 1792930561239454.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930561239447.0,
+      "simulation_start": 1792930561239341.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2390.0,
+      "gpu_end": 1792930564014364.0,
+      "gpu_start": 1792930564009343.0,
+      "low_latency_available": true,
+      "present_end": 1792930563993137.0,
+      "present_start": 1792930563992903.0,
+      "render_submit_end": 1792930563992101.0,
+      "render_submit_start": 1792930563991318.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930563991309.0,
+      "simulation_start": 1792930563991184.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2550.0,
+      "gpu_end": 1792930566775282.0,
+      "gpu_start": 1792930566770048.0,
+      "low_latency_available": true,
+      "present_end": 1792930566753376.0,
+      "present_start": 1792930566753219.0,
+      "render_submit_end": 1792930566752641.0,
+      "render_submit_start": 1792930566752145.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930566752138.0,
+      "simulation_start": 1792930566752050.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2710.0,
+      "gpu_end": 1792930569553042.0,
+      "gpu_start": 1792930569549248.0,
+      "low_latency_available": true,
+      "present_end": 1792930569533048.0,
+      "present_start": 1792930569532866.0,
+      "render_submit_end": 1792930569532212.0,
+      "render_submit_start": 1792930569531707.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930569531700.0,
+      "simulation_start": 1792930569531617.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 2870.0,
+      "gpu_end": 1792930572306868.0,
+      "gpu_start": 1792930572301471.0,
+      "low_latency_available": true,
+      "present_end": 1792930572284593.0,
+      "present_start": 1792930572284438.0,
+      "render_submit_end": 1792930572283841.0,
+      "render_submit_start": 1792930572283392.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930572283385.0,
+      "simulation_start": 1792930572283303.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3030.0,
+      "gpu_end": 1792930575060625.0,
+      "gpu_start": 1792930575056450.0,
+      "low_latency_available": true,
+      "present_end": 1792930575039965.0,
+      "present_start": 1792930575039798.0,
+      "render_submit_end": 1792930575039187.0,
+      "render_submit_start": 1792930575038706.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930575038699.0,
+      "simulation_start": 1792930575038622.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3110.0,
+      "gpu_end": 1792930576463854.0,
+      "gpu_start": 1792930576458436.0,
+      "low_latency_available": true,
+      "present_end": 1792930576439795.0,
+      "present_start": 1792930576439547.0,
+      "render_submit_end": 1792930576438502.0,
+      "render_submit_start": 1792930576437629.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930576437618.0,
+      "simulation_start": 1792930576437501.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3190.0,
+      "gpu_end": 1792930577824405.0,
+      "gpu_start": 1792930577818981.0,
+      "low_latency_available": true,
+      "present_end": 1792930577801066.0,
+      "present_start": 1792930577800236.0,
+      "render_submit_end": 1792930577799183.0,
+      "render_submit_start": 1792930577798342.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930577798331.0,
+      "simulation_start": 1792930577798150.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3270.0,
+      "gpu_end": 1792930579167354.0,
+      "gpu_start": 1792930579163237.0,
+      "low_latency_available": true,
+      "present_end": 1792930579149346.0,
+      "present_start": 1792930579149106.0,
+      "render_submit_end": 1792930579148084.0,
+      "render_submit_start": 1792930579145262.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930579145254.0,
+      "simulation_start": 1792930579145167.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3350.0,
+      "gpu_end": 1792930580526464.0,
+      "gpu_start": 1792930580521326.0,
+      "low_latency_available": true,
+      "present_end": 1792930580505011.0,
+      "present_start": 1792930580504761.0,
+      "render_submit_end": 1792930580503708.0,
+      "render_submit_start": 1792930580502841.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930580502830.0,
+      "simulation_start": 1792930580502704.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3430.0,
+      "gpu_end": 1792930581864016.0,
+      "gpu_start": 1792930581858741.0,
+      "low_latency_available": true,
+      "present_end": 1792930581840595.0,
+      "present_start": 1792930581840337.0,
+      "render_submit_end": 1792930581839253.0,
+      "render_submit_start": 1792930581838293.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930581838282.0,
+      "simulation_start": 1792930581838183.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 101503864.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3510.0,
+      "gpu_end": 1792930583317421.0,
+      "gpu_start": 1792930583309465.0,
+      "low_latency_available": true,
+      "present_end": 1792930583291691.0,
+      "present_start": 1792930583291521.0,
+      "render_submit_end": 1792930583290816.0,
+      "render_submit_start": 1792930583290300.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930583290293.0,
+      "simulation_start": 1792930583290226.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 50751932.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3750.0,
+      "gpu_end": 1792930587423554.0,
+      "gpu_start": 1792930587417726.0,
+      "low_latency_available": true,
+      "present_end": 1792930587400586.0,
+      "present_start": 1792930587400314.0,
+      "render_submit_end": 1792930587398775.0,
+      "render_submit_start": 1792930587397468.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930587397457.0,
+      "simulation_start": 1792930587397329.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 65881336.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 65881336.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 3930.0,
+      "gpu_end": 1792930590873387.0,
+      "gpu_start": 1792930590867343.0,
+      "low_latency_available": true,
+      "present_end": 1792930590850506.0,
+      "present_start": 1792930590850269.0,
+      "render_submit_end": 1792930590849000.0,
+      "render_submit_start": 1792930590847931.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930590847923.0,
+      "simulation_start": 1792930590847799.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 151654036.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 151654036.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 40695012.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  },
+  {
+    "fg": {
+      "dynamic_mfg_supported": 0.0,
+      "max_generated_frames": 1.0,
+      "min_dimension": 100.0,
+      "presented_since_query": 1.0,
+      "result": 0.0,
+      "status": 0.0
+    },
+    "fg_getter_result": 0.0,
+    "foreground_process_id": 39304.0,
+    "interposer_loaded": true,
+    "process_id": 39304.0,
+    "reflex": {
+      "frame_id": 4090.0,
+      "gpu_end": 1792930593703180.0,
+      "gpu_start": 1792930593699209.0,
+      "low_latency_available": true,
+      "present_end": 1792930593682677.0,
+      "present_start": 1792930593682453.0,
+      "render_submit_end": 1792930593681668.0,
+      "render_submit_start": 1792930593681064.0,
+      "report_available": true,
+      "result": 0.0,
+      "simulation_end": 1792930593681053.0,
+      "simulation_start": 1792930593680939.0
+    },
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 151654036.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 78105000.0,
+        "sr_result": 0.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 151654036.0,
+        "rr_result": 0.0,
+        "sr_estimated_vram_bytes": 78105000.0,
+        "sr_result": 0.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 40696.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "310.9.16",
+        "result": 0.0,
+        "sl": "2.14.16"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 0.0,
+        "sl": "2.14.16"
+      }
+    ]
+  }
+]

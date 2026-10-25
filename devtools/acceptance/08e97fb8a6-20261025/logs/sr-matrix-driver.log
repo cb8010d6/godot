@@ -1,0 +1,3323 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:03:32.975331+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-recommended-dlaa-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 47244,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    31248,
+    44156,
+    47704,
+    48560,
+    24924,
+    36264,
+    38616,
+    45992,
+    24264,
+    28348,
+    41980,
+    31720,
+    37268,
+    18976,
+    7816,
+    31640,
+    25476,
+    47512,
+    44048,
+    42692,
+    35856,
+    45908,
+    46232,
+    48528,
+    16760,
+    11804,
+    44224,
+    42852,
+    37432,
+    42276,
+    45568,
+    48476,
+    32748,
+    6936,
+    47760,
+    34788
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 12.218,
+  "finished_utc": "2026-10-25T12:03:45.040931+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"Recommended","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:03:45.358798+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-recommended-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 39620,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    1404,
+    40184,
+    24372,
+    26956,
+    43728,
+    39732,
+    36664,
+    41892,
+    43848,
+    34832,
+    35576,
+    41392,
+    35540,
+    14752,
+    48740,
+    39752,
+    37460,
+    48564,
+    17412,
+    45312,
+    20096,
+    33124,
+    49676,
+    16124,
+    26072,
+    42336,
+    8084,
+    36336,
+    45332,
+    45468,
+    31972,
+    41216,
+    32396,
+    49796,
+    21596,
+    43948
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.453,
+  "finished_utc": "2026-10-25T12:03:56.668004+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"Recommended","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=balanced",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:03:56.987900+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-recommended-balanced-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 49452,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    45760,
+    15292,
+    19080,
+    5648,
+    23296,
+    44328,
+    31644,
+    27568,
+    35648,
+    47860,
+    38052,
+    47248,
+    40116,
+    41588,
+    25504,
+    5712,
+    36288,
+    904,
+    18380,
+    9476,
+    1716,
+    48060,
+    25132,
+    45996,
+    18264,
+    44104,
+    27692,
+    39048,
+    45084,
+    27920,
+    41056,
+    30676,
+    36712,
+    47920,
+    37664,
+    36080,
+    6572,
+    25988,
+    21880,
+    13480,
+    35524
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.344,
+  "finished_utc": "2026-10-25T12:04:08.190320+00:00"
+}
+DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"balanced","requested_preset":"Recommended","requested_scale":0.58,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:04:08.499662+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-recommended-performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 43656,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    23076,
+    25992,
+    45756,
+    43084,
+    39400,
+    47564,
+    40620,
+    41700,
+    7872,
+    15396,
+    1972,
+    48884,
+    45132,
+    39168,
+    43172,
+    8276,
+    27180,
+    48512,
+    26860,
+    32672,
+    18964,
+    49036,
+    49972,
+    33552,
+    11364,
+    2320,
+    45488,
+    30768,
+    36512,
+    38956,
+    43224,
+    49736,
+    47776,
+    8916,
+    38464,
+    21228,
+    34224,
+    41660
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.406,
+  "finished_utc": "2026-10-25T12:04:19.768457+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"Recommended","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=ultra_performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:04:20.114871+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-recommended-ultra_performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 28188,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    48916,
+    45928,
+    28932,
+    40668,
+    45876,
+    19656,
+    39244,
+    36256,
+    46192,
+    49408,
+    8356,
+    42296,
+    39724,
+    49288,
+    26924,
+    3468,
+    13440,
+    46140,
+    38220,
+    44136,
+    37524,
+    47544,
+    26268,
+    37796,
+    42432,
+    42056,
+    3160,
+    12096,
+    19256,
+    34104,
+    34828,
+    46992,
+    49876,
+    49912,
+    29196,
+    36984,
+    40280,
+    3920
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.266,
+  "finished_utc": "2026-10-25T12:04:31.233671+00:00"
+}
+DLSS SR requested options: viewport=1 mode=4 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"ultra_performance","requested_preset":"Recommended","requested_scale":0.3333,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:04:31.546784+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-k-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 41120,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    30160,
+    44496,
+    49828,
+    43792,
+    43000,
+    23588,
+    5880,
+    41564,
+    44252,
+    38596,
+    12896,
+    45912,
+    46336,
+    20532,
+    47940,
+    43404,
+    44836,
+    46260,
+    49204,
+    40896,
+    46052,
+    35016,
+    21544,
+    49196,
+    45300,
+    40744,
+    34696,
+    43496,
+    43604,
+    49760,
+    35664,
+    48976,
+    46884,
+    45236,
+    47348,
+    47828
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.375,
+  "finished_utc": "2026-10-25T12:04:42.774616+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"K","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:04:43.098272+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-k-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 38952,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    38840,
+    31508,
+    45444,
+    16168,
+    28784,
+    45744,
+    24732,
+    40476,
+    49588,
+    22524,
+    46912,
+    34992,
+    23688,
+    36692,
+    39332,
+    39684,
+    32448,
+    23184,
+    36628,
+    42816,
+    31076,
+    30724,
+    25680,
+    20892,
+    35700,
+    42564,
+    8272,
+    27676,
+    11096,
+    43716,
+    33104,
+    41060,
+    28548,
+    36860,
+    27232,
+    39672,
+    41264,
+    28132
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.437,
+  "finished_utc": "2026-10-25T12:04:54.375322+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"K","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:04:54.693890+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-k-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 27644,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    39364,
+    45880,
+    1216,
+    19284,
+    34280,
+    35624,
+    34256,
+    27028,
+    40252,
+    35864,
+    34996,
+    12768,
+    47436,
+    6860,
+    45752,
+    4732,
+    49808,
+    31380,
+    21592,
+    40168,
+    41128,
+    27272,
+    46072,
+    47132,
+    12532,
+    32324,
+    31936,
+    27340,
+    45076,
+    48172,
+    47236,
+    48224,
+    38440,
+    49860,
+    45368,
+    2224
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.61,
+  "finished_utc": "2026-10-25T12:05:06.161149+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"K","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:05:06.480053+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-m-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 25268,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    3456,
+    48324,
+    38468,
+    35340,
+    33008,
+    42584,
+    13472,
+    8672,
+    40576,
+    49144,
+    31464,
+    44164,
+    37500,
+    44644,
+    31704,
+    17704,
+    27184,
+    18020,
+    39104,
+    47676,
+    25856,
+    43252,
+    47208,
+    37220,
+    27492,
+    40132,
+    3212,
+    1416,
+    45392,
+    49804,
+    43376,
+    23232,
+    38980,
+    7196,
+    1868,
+    11900,
+    45156,
+    49044
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.5,
+  "finished_utc": "2026-10-25T12:05:17.835197+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"M","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:05:18.194514+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-m-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 44416,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    16012,
+    43196,
+    49592,
+    28932,
+    45356,
+    9416,
+    7768,
+    34104,
+    46312,
+    45876,
+    34828,
+    47628,
+    9972,
+    13520,
+    48236,
+    17368,
+    47872,
+    49176,
+    46956,
+    40360,
+    36976,
+    49216,
+    35360,
+    32892,
+    41712,
+    40724,
+    36808,
+    45176,
+    21860,
+    48696,
+    32408,
+    31812,
+    39352,
+    36732,
+    9616,
+    45600
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.969,
+  "finished_utc": "2026-10-25T12:05:29.979799+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"M","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:05:30.294085+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-m-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 44920,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    46856,
+    37300,
+    34580,
+    49756,
+    42012,
+    3064,
+    35048,
+    40820,
+    25588,
+    43464,
+    5036,
+    6744,
+    40984,
+    30272,
+    49416,
+    43952,
+    49496,
+    46768,
+    41304,
+    24540,
+    8880,
+    38632,
+    33192,
+    3516,
+    4452,
+    31236,
+    31652,
+    4100,
+    43408,
+    15476,
+    38348,
+    43428,
+    39224,
+    44280,
+    5204,
+    3232,
+    6412,
+    17388
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.453,
+  "finished_utc": "2026-10-25T12:05:41.609221+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"M","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:05:41.927222+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-l-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 36628,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    49600,
+    38952,
+    26708,
+    21452,
+    49228,
+    7968,
+    34928,
+    34728,
+    49004,
+    47080,
+    37104,
+    21520,
+    49676,
+    35140,
+    14672,
+    31760,
+    41672,
+    37388,
+    47112,
+    20720,
+    32420,
+    16620,
+    38736,
+    45096,
+    45788,
+    42140,
+    43848,
+    14752,
+    39752,
+    36612,
+    42800,
+    38472,
+    19344,
+    23120,
+    32424,
+    42424
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.468,
+  "finished_utc": "2026-10-25T12:05:53.252868+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"L","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:05:53.583491+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-l-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 34120,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    39096,
+    34320,
+    47236,
+    36356,
+    50092,
+    40352,
+    20652,
+    21012,
+    40016,
+    35964,
+    41476,
+    40432,
+    19016,
+    30780,
+    32384,
+    14348,
+    41208,
+    3128,
+    36340,
+    25188,
+    24556,
+    40372,
+    7872,
+    47776,
+    36764,
+    37236,
+    22264,
+    28472,
+    47696,
+    26164,
+    41940,
+    41032,
+    41004,
+    20696,
+    38284,
+    12788,
+    32096,
+    41336
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.766,
+  "finished_utc": "2026-10-25T12:06:05.207475+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"L","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:06:05.517297+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-l-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 40948,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    45968,
+    37456,
+    41196,
+    47464,
+    37444,
+    34920,
+    27760,
+    25560,
+    48144,
+    24820,
+    24924,
+    41424,
+    35352,
+    48488,
+    34108,
+    32808,
+    47948,
+    21768,
+    42456,
+    35012,
+    49556,
+    5208,
+    48056,
+    47448,
+    34384,
+    33632,
+    43052,
+    25848,
+    45772,
+    34464,
+    19524,
+    42936,
+    44964,
+    14608,
+    22260,
+    34012
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.516,
+  "finished_utc": "2026-10-25T12:06:16.885127+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"L","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=?",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=vulkan"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:06:17.287561+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-vulkan-default-performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 39252,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    46748,
+    46948,
+    38392,
+    24928,
+    37264,
+    48868,
+    41432,
+    26480,
+    38160,
+    40744,
+    47672,
+    36532,
+    32152,
+    41844,
+    320,
+    44480,
+    36664,
+    42752,
+    24660,
+    49424,
+    45848,
+    43680,
+    42920,
+    50040,
+    21160,
+    43744,
+    44580,
+    28208,
+    40972,
+    43344,
+    3516,
+    31236,
+    30272,
+    47140,
+    38296,
+    37112,
+    49496,
+    36852,
+    47016,
+    23888
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 12.969,
+  "finished_utc": "2026-10-25T12:06:30.070007+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=? DLAA=0 Quality=0 Balanced=0 Performance=0 UltraPerformance=0 UltraQuality=0 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"vulkan","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"vulkan","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"?","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:06:30.411368+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-recommended-dlaa-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 47224,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    48840,
+    21456,
+    40104,
+    28052,
+    2320,
+    34224,
+    43896,
+    27164,
+    40088,
+    21940,
+    27880,
+    37632,
+    5676,
+    46636,
+    47400,
+    33004,
+    48828,
+    45792,
+    37700,
+    42784,
+    41952,
+    40144,
+    46220,
+    41656,
+    15568,
+    46384,
+    28544,
+    32352,
+    45456,
+    37900,
+    37504,
+    35832,
+    41464,
+    29096,
+    40468,
+    46692,
+    35148,
+    34912
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.141,
+  "finished_utc": "2026-10-25T12:06:41.404474+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"Recommended","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:06:41.715430+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-recommended-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 45196,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    46340,
+    48776,
+    42808,
+    46644,
+    46272,
+    41988,
+    37952,
+    44288,
+    25180,
+    43296,
+    48400,
+    10972,
+    2780,
+    47708,
+    6632,
+    48316,
+    23076,
+    30548,
+    38172,
+    35068,
+    36408,
+    39096,
+    41188,
+    4796,
+    40016,
+    48364,
+    37236,
+    32096,
+    41032,
+    25188,
+    47696,
+    33552,
+    19016,
+    32672,
+    45612,
+    13916
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.016,
+  "finished_utc": "2026-10-25T12:06:52.584921+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"Recommended","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=balanced",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:06:52.908280+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-recommended-balanced-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 22364,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    48304,
+    19048,
+    37380,
+    16208,
+    35452,
+    48976,
+    43688,
+    47808,
+    42776,
+    44728,
+    38684,
+    38144,
+    38828,
+    49216,
+    40360,
+    49172,
+    1720,
+    31796,
+    43464,
+    38632,
+    3028,
+    48416,
+    3232,
+    19632,
+    17048,
+    13432,
+    26416,
+    37824,
+    12852,
+    22268,
+    45528,
+    37808,
+    13516,
+    41124,
+    33292,
+    49220,
+    15740,
+    25292
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.938,
+  "finished_utc": "2026-10-25T12:07:03.707431+00:00"
+}
+DLSS SR requested options: viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"balanced","requested_preset":"Recommended","requested_scale":0.58,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:07:04.026294+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-recommended-performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 31180,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    12896,
+    45336,
+    44036,
+    42212,
+    16160,
+    35856,
+    18604,
+    49580,
+    45036,
+    36164,
+    36636,
+    44212,
+    23424,
+    37672,
+    46408,
+    40904,
+    4044,
+    46332,
+    28036,
+    31972,
+    24708,
+    44308,
+    42816,
+    38952,
+    41384,
+    32668,
+    9940,
+    49724,
+    13476,
+    31876,
+    10992,
+    48080,
+    27920,
+    41676,
+    14932,
+    41040,
+    49252,
+    6732
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.969,
+  "finished_utc": "2026-10-25T12:07:14.845496+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"Recommended","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=ultra_performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:07:15.173433+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-recommended-ultra_performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 11244,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    23080,
+    32432,
+    25240,
+    47036,
+    39364,
+    44780,
+    44180,
+    43268,
+    48520,
+    46944,
+    39280,
+    43084,
+    31464,
+    21196,
+    16928,
+    2940,
+    43244,
+    37004,
+    15188,
+    6044,
+    37944,
+    28736,
+    39972,
+    34944,
+    34184,
+    36844,
+    32860,
+    38572,
+    31132,
+    43968,
+    39884,
+    32300,
+    44332,
+    1216,
+    48988,
+    24424,
+    50128,
+    33480
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.328,
+  "finished_utc": "2026-10-25T12:07:26.344954+00:00"
+}
+DLSS SR requested options: viewport=1 mode=4 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"ultra_performance","requested_preset":"Recommended","requested_scale":0.3333,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:07:26.658936+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-k-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 47828,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    22396,
+    43092,
+    12616,
+    47196,
+    44956,
+    47520,
+    37240,
+    47308,
+    43784,
+    33372,
+    15004,
+    13072,
+    45904,
+    7960,
+    40532,
+    31708,
+    23788,
+    40124,
+    46164,
+    45512,
+    45324,
+    49596,
+    48052,
+    26336,
+    34068,
+    38780,
+    45304,
+    10792,
+    37848,
+    22056,
+    19484,
+    7328,
+    41288,
+    22220,
+    49840,
+    44828,
+    32072,
+    43048
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.078,
+  "finished_utc": "2026-10-25T12:07:37.591440+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"K","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:07:37.908826+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-k-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 40508,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    47632,
+    49188,
+    45992,
+    31964,
+    33636,
+    47920,
+    21036,
+    49732,
+    40664,
+    45096,
+    38984,
+    47560,
+    14800,
+    37340,
+    18976,
+    23084,
+    44532,
+    47496,
+    42656,
+    42224,
+    35792,
+    21948,
+    32712,
+    41428,
+    35072,
+    23888,
+    10200,
+    35048,
+    3512,
+    48516,
+    48344,
+    30272,
+    13036,
+    37264,
+    43404,
+    20720
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.156,
+  "finished_utc": "2026-10-25T12:07:48.918415+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"K","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=K",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:07:49.258634+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-k-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 13804,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    41276,
+    22748,
+    31484,
+    48844,
+    42512,
+    34880,
+    49876,
+    37972,
+    37912,
+    26056,
+    1416,
+    44560,
+    39104,
+    49036,
+    24040,
+    8540,
+    39512,
+    26180,
+    8916,
+    43932,
+    43884,
+    48512,
+    21584,
+    47108,
+    36760,
+    6632,
+    9560,
+    26164,
+    47888,
+    7872,
+    47708,
+    46656,
+    46644,
+    41032,
+    36364,
+    40676,
+    36824,
+    47340
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.938,
+  "finished_utc": "2026-10-25T12:08:00.035588+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"K","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:00.351846+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-m-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 42472,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    47380,
+    45496,
+    43188,
+    45092,
+    50072,
+    18372,
+    47512,
+    21468,
+    34920,
+    48144,
+    46648,
+    12788,
+    46388,
+    48776,
+    38000,
+    23200,
+    39096,
+    49512,
+    50172,
+    46004,
+    42756,
+    15016,
+    38740,
+    18252,
+    47704,
+    41788,
+    18692,
+    31780,
+    48548,
+    43840,
+    46060,
+    38316,
+    31944,
+    49940,
+    36120,
+    47220,
+    40212,
+    7816,
+    43120,
+    48432
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.0,
+  "finished_utc": "2026-10-25T12:08:11.196742+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"M","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:11.515875+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-m-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 46464,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    672,
+    34364,
+    44248,
+    27884,
+    14216,
+    18368,
+    46368,
+    27048,
+    49184,
+    22268,
+    17048,
+    29716,
+    37808,
+    18064,
+    32364,
+    1720,
+    45528,
+    19632,
+    27812,
+    41980,
+    21128,
+    40624,
+    9476,
+    34732,
+    2680,
+    45524,
+    43716,
+    1576,
+    17580,
+    40740,
+    46868,
+    44916,
+    48964,
+    34796,
+    42328,
+    46204,
+    43484,
+    31792,
+    41212,
+    42500
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.953,
+  "finished_utc": "2026-10-25T12:08:22.316336+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"M","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=M",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:22.637458+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-m-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 48800,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    37016,
+    44236,
+    45408,
+    30168,
+    45924,
+    37732,
+    20116,
+    7140,
+    44568,
+    35296,
+    30204,
+    32616,
+    44092,
+    35784,
+    46284,
+    47112,
+    42504,
+    33376,
+    26888,
+    37980,
+    31236,
+    38692,
+    28952,
+    39252,
+    13608,
+    48564,
+    37864,
+    47140,
+    33192,
+    24640,
+    42752,
+    28208,
+    46692,
+    9704,
+    37932,
+    48044,
+    28544,
+    21940,
+    32916,
+    21552
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.282,
+  "finished_utc": "2026-10-25T12:08:33.780567+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"M","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=quality",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:34.104472+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-l-quality-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 21036,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    10200,
+    32712,
+    20720,
+    32928,
+    35792,
+    14800,
+    676,
+    45976,
+    30992,
+    40748,
+    21784,
+    42832,
+    25752,
+    41896,
+    48332,
+    19576,
+    47004,
+    18424,
+    45928,
+    3716,
+    45256,
+    44420,
+    42808,
+    45676,
+    37952,
+    32672,
+    44152,
+    38384,
+    21056,
+    35520,
+    39812,
+    14672,
+    49500,
+    32796,
+    33276,
+    7932,
+    37724,
+    31160
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.937,
+  "finished_utc": "2026-10-25T12:08:44.890828+00:00"
+}
+DLSS SR requested options: viewport=1 mode=3 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"quality","requested_preset":"L","requested_scale":0.6667,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1400x600",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=dlaa",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:45.225596+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-l-dlaa-1400x600.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 34288,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    4304,
+    30812,
+    25164,
+    43204,
+    31844,
+    49828,
+    31012,
+    36512,
+    44404,
+    41264,
+    47720,
+    33080,
+    43296,
+    39460,
+    33736,
+    14728,
+    49628,
+    12880,
+    48756,
+    31008,
+    45832,
+    49640,
+    47812,
+    39728,
+    19840,
+    24332,
+    44264,
+    13164,
+    40984,
+    30836,
+    38776,
+    49584,
+    43104,
+    26884,
+    47464,
+    33184,
+    32188,
+    37624
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.953,
+  "finished_utc": "2026-10-25T12:08:56.013410+00:00"
+}
+DLSS SR requested options: viewport=1 mode=6 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"dlaa","requested_preset":"L","requested_scale":1.0,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "600x900",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=L",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:08:56.328924+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-l-performance-600x900.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 49424,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    33420,
+    41468,
+    39680,
+    44252,
+    43940,
+    45572,
+    40692,
+    6464,
+    41972,
+    36748,
+    31040,
+    20096,
+    48908,
+    35636,
+    48544,
+    6348,
+    50080,
+    16044,
+    46756,
+    43444,
+    49580,
+    32776,
+    32496,
+    38428,
+    43240,
+    41148,
+    29660,
+    24608,
+    49492,
+    47304,
+    47872,
+    38524,
+    48352,
+    47828,
+    46348,
+    49276,
+    42236,
+    38684
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.937,
+  "finished_utc": "2026-10-25T12:09:07.129986+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"L","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--resolution",
+    "1280x720",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=?",
+    "--mode=performance",
+    "--frames=240",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:09:07.445462+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\sr-d3d12-default-performance-1280x720.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 39408,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    25000,
+    32500,
+    7988,
+    45232,
+    27840,
+    37460,
+    17164,
+    27088,
+    40944,
+    48852,
+    33744,
+    16016,
+    48412,
+    45472,
+    30800,
+    37252,
+    13472,
+    2340,
+    38952,
+    31136,
+    32668,
+    43504,
+    35932,
+    6784,
+    44500,
+    9904,
+    37700,
+    34280,
+    31280,
+    42076,
+    14860,
+    45460,
+    47848,
+    42608,
+    25496,
+    43772,
+    3604,
+    11804
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.969,
+  "finished_utc": "2026-10-25T12:09:18.273744+00:00"
+}
+DLSS SR requested options: viewport=1 mode=1 selection=? DLAA=0 Quality=0 Balanced=0 Performance=0 UltraPerformance=0 UltraQuality=0 result=sl::eOk (active model not queried)
+DLSS45_RUN_COMPLETED {"active_model_confirmed":false,"actual_backend":"d3d12","allow_unavailable":false,"completed_frames":240,"dlss_available":true,"engine":{"build":"custom_build","hash":"08e97fb8a6871cfe39f83a24e2a5813936efd208","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792926689},"exit_code":0,"expected_backend":"d3d12","frame_count_kind":"scene_process_updates","frame_generation_requested":false,"os":"Windows","ray_reconstruction_requested":false,"reason":"scene frame budget completed","rendering_method":"forward_plus","requested_frames":240,"requested_mode":"performance","requested_preset":"?","requested_scale":0.5,"requested_sharpness":0.2,"streamline_singleton":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Accessibility: window 0 adapter destroyed.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<ACCEPTANCE_ROOT>\builds\sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

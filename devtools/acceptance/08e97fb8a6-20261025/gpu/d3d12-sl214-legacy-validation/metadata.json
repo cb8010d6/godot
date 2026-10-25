@@ -1,0 +1,75 @@
+{
+  "api": "1.4.341",
+  "backend": "vulkan",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1792930968
+  },
+  "force_legacy": "0",
+  "frame_count": 30,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime": {
+    "fg_getter_result": 21.0,
+    "foreground_process_id": 19124.0,
+    "interposer_loaded": true,
+    "loaded_runtime_paths": [
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\sl.interposer.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlss\\versions\\20318480\\files\\160_E658700.bin",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssg\\versions\\20318480\\files\\160_E658700.bin",
+      "<ACCEPTANCE_ROOT>\\builds\\diagnostic-sdk214\\nvngx_deepdvc.dll",
+      "%PROGRAMDATA%\\NVIDIA\\NGX\\models\\dlssd\\versions\\20318480\\files\\160_E658700.bin"
+    ],
+    "process_id": 44792.0,
+    "sr_rr_viewports": [
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": -1.0,
+        "sr_estimated_vram_bytes": 0.0,
+        "sr_result": -1.0,
+        "viewport": 1.0
+      },
+      {
+        "rr_estimated_vram_bytes": 0.0,
+        "rr_result": -1.0,
+        "sr_estimated_vram_bytes": 0.0,
+        "sr_result": -1.0,
+        "viewport": 2.0
+      }
+    ],
+    "thread_id": 38036.0,
+    "versions": [
+      {
+        "feature": 0.0,
+        "ngx": "0.0.0",
+        "result": 21.0,
+        "sl": "0.0.0"
+      },
+      {
+        "feature": 1001.0,
+        "ngx": "0.0.0",
+        "result": 21.0,
+        "sl": "0.0.0"
+      },
+      {
+        "feature": 1000.0,
+        "ngx": "0.0.0",
+        "result": 21.0,
+        "sl": "0.0.0"
+      },
+      {
+        "feature": 3.0,
+        "ngx": "0.0.0",
+        "result": 21.0,
+        "sl": "0.0.0"
+      }
+    ]
+  }
+}

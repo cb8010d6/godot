@@ -1,0 +1,59 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+    "--verbose",
+    "--max-fps",
+    "60",
+    "--rendering-driver",
+    "d3d12",
+    "--path",
+    "<ACCEPTANCE_ROOT>\\sr-fixture",
+    "--",
+    "--preset=Recommended",
+    "--mode=performance",
+    "--frames=7200",
+    "--sharpness=0.2",
+    "--expected-backend=d3d12"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\builds\\sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161774592,
+      "sha256": "6679bf7948eb3c1740decda25c7d2eda0af071c6c800a3a42414032ed5604fba"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:59:57.817309+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\model-d3d12-recommended-performance.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 23692,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    40984,
+    19108,
+    45104,
+    39792,
+    42780,
+    34432,
+    9376,
+    48520,
+    44020,
+    33872
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 133.312,
+  "finished_utc": "2026-10-25T12:02:10.965024+00:00"
+}

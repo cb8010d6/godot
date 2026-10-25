@@ -1,0 +1,11 @@
+{
+  "candidate": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "previous_tested_engine": "1381c325931b2f2cb39ed782df5d7b14b91e878d",
+  "branch": "validation/fixed-08e97fb8a6",
+  "jobs": 4,
+  "gpu_tests": "sequential",
+  "system_drive_downloads": false,
+  "initial_c_free_gib": 16.93,
+  "initial_f_free_gib": 34.33,
+  "status": "build_pending"
+}

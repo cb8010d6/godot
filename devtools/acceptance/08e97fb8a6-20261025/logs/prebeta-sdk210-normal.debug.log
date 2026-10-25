@@ -1,0 +1,2352 @@
+CHILD pid=26112 exe=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\godot.windows.editor.x86_64.exe
+MODULE base=00007FF833030000 file=%SYSTEMROOT%\System32\ntdll.dll
+MODULE base=00007FF832F20000 file=%SYSTEMROOT%\System32\kernel32.dll
+MODULE base=00007FF830BA0000 file=%SYSTEMROOT%\System32\KernelBase.dll
+MODULE base=00007FF82B670000 file=%SYSTEMROOT%\System32\apphelp.dll
+MODULE base=00007FF832CC0000 file=%SYSTEMROOT%\System32\ole32.dll
+MODULE base=00007FF830820000 file=%SYSTEMROOT%\System32\ucrtbase.dll
+MODULE base=00007FF81DD90000 file=%SYSTEMROOT%\System32\winmm.dll
+MODULE base=00007FF8322F0000 file=%SYSTEMROOT%\System32\rpcrt4.dll
+MODULE base=00007FF832420000 file=%SYSTEMROOT%\System32\msvcrt.dll
+MODULE base=00007FF830FE0000 file=%SYSTEMROOT%\System32\combase.dll
+MODULE base=00007FF832980000 file=%SYSTEMROOT%\System32\gdi32.dll
+MODULE base=00007FF830680000 file=%SYSTEMROOT%\System32\win32u.dll
+MODULE base=00007FF830920000 file=%SYSTEMROOT%\System32\gdi32full.dll
+MODULE base=00007FF830730000 file=%SYSTEMROOT%\System32\msvcp_win.dll
+MODULE base=00007FF8325C0000 file=%SYSTEMROOT%\System32\user32.dll
+MODULE base=00007FF831370000 file=%SYSTEMROOT%\System32\oleaut32.dll
+MODULE base=00007FF832920000 file=%SYSTEMROOT%\System32\shlwapi.dll
+MODULE base=00007FF832770000 file=%SYSTEMROOT%\System32\SHCore.dll
+MODULE base=00007FF831B70000 file=%SYSTEMROOT%\System32\shell32.dll
+MODULE base=00007FF832A80000 file=%SYSTEMROOT%\System32\advapi32.dll
+MODULE base=00007FF832B40000 file=%SYSTEMROOT%\System32\sechost.dll
+MODULE base=00007FF830650000 file=%SYSTEMROOT%\System32\bcrypt.dll
+MODULE base=00007FF831340000 file=%SYSTEMROOT%\System32\imm32.dll
+MODULE base=00007FF830A40000 file=%SYSTEMROOT%\System32\crypt32.dll
+MODULE base=00007FF8324C0000 file=%SYSTEMROOT%\System32\ws2_32.dll
+MODULE base=00007FF82D2B0000 file=%SYSTEMROOT%\System32\dwmapi.dll
+MODULE base=00007FF82E5E0000 file=%SYSTEMROOT%\System32\avrt.dll
+MODULE base=00007FF82DDA0000 file=%SYSTEMROOT%\System32\DWrite.dll
+MODULE base=00007FF82EDE0000 file=%SYSTEMROOT%\System32\hid.dll
+MODULE base=00007FF82E160000 file=%SYSTEMROOT%\System32\dbghelp.dll
+MODULE base=00007FF82F970000 file=%SYSTEMROOT%\System32\IPHLPAPI.DLL
+MODULE base=00007FF8079E0000 file=%SYSTEMROOT%\System32\wsock32.dll
+MODULE base=00007FFFBA4D0000 file=%SYSTEMROOT%\System32\UIAutomationCore.dll
+MODULE base=00007FF82C840000 file=%SYSTEMROOT%\System32\propsys.dll
+MODULE base=00007FFFE1BE0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\NvBlast.dll
+MODULE base=00007FFFF8410000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\NvBlastExtShaders.dll
+MODULE base=00007FF823380000 file=%SYSTEMROOT%\System32\vcruntime140.dll
+MODULE base=00007FFFB6A10000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\NvBlastExtAuthoring.dll
+MODULE base=00007FF8232F0000 file=%SYSTEMROOT%\System32\msvcp140.dll
+MODULE base=00007FF8233A0000 file=%SYSTEMROOT%\System32\vcruntime140_1.dll
+MODULE base=000002B3C23E0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\NvBlastGlobals.dll
+MODULE base=00007FFFF4600000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\NvBlastGlobals.dll
+EXCEPTION code=0x80000003 first=1
+MODULE base=00007FF830F50000 file=%SYSTEMROOT%\System32\bcryptprimitives.dll
+MODULE base=00007FFF86D30000 file=%SYSTEMROOT%\System32\dinput8.dll
+MODULE base=00007FF81EBE0000 file=%SYSTEMROOT%\System32\InputHost.dll
+MODULE base=00007FF82A610000 file=%SYSTEMROOT%\System32\CoreMessaging.dll
+MODULE base=00007FF82C000000 file=%SYSTEMROOT%\System32\WinTypes.dll
+MODULE base=00007FF829570000 file=%SYSTEMROOT%\System32\CoreUIComponents.dll
+MODULE base=00007FF82F800000 file=%SYSTEMROOT%\System32\ntmarta.dll
+MODULE base=00007FF82EDF0000 file=%SYSTEMROOT%\System32\kernel.appcore.dll
+MODULE base=000002B3C2410000 file=%SYSTEMROOT%\System32\kernel.appcore.dll
+MODULE base=00007FF82CF80000 file=%SYSTEMROOT%\System32\uxtheme.dll
+MODULE base=00007FFFAF320000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.interposer.dll
+MODULE base=00007FF809D50000 file=%SYSTEMROOT%\System32\dbgcore.dll
+MODULE base=00007FF82E630000 file=%SYSTEMROOT%\System32\windows.storage.dll
+MODULE base=00007FF82FEC0000 file=%SYSTEMROOT%\System32\wldp.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:001ms:484us]pluginManager.cpp:406[setHostSDKVersion] Streamline v2.10.0.af098e7c - built on Fri Dec 19 20:48:39 2025 - host SDK v2.10.0
+
+MODULE base=00007FF830580000 file=%SYSTEMROOT%\System32\profapi.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:003ms:791us]ota.cpp:325[parseServerManifest] OTA feature sdk_0 version 2.14.16
+
+ODS [00-05-52][streamline][info][tid:43188][0s:004ms:055us]ota.cpp:325[parseServerManifest] OTA feature common_0 version 2.14.16
+
+MODULE base=00007FF830190000 file=%SYSTEMROOT%\System32\msasn1.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:004ms:423us]ota.cpp:325[parseServerManifest] OTA feature deepdvc_0 version 2.14.16
+
+ODS [00-05-52][streamline][info][tid:43188][0s:004ms:686us]ota.cpp:325[parseServerManifest] OTA feature dlss_0 version 2.14.16
+
+MODULE base=00007FF824C10000 file=%SYSTEMROOT%\System32\cryptnet.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:005ms:063us]ota.cpp:325[parseServerManifest] OTA feature dlss_d_0 version 2.14.16
+
+ODS [00-05-52][streamline][info][tid:43188][0s:005ms:366us]ota.cpp:325[parseServerManifest] OTA feature dlss_g_0 version 2.14.16
+
+ODS [00-05-52][streamline][info][tid:43188][0s:005ms:621us]ota.cpp:325[parseServerManifest] OTA feature nis_0 version 2.14.16
+
+MODULE base=00007FF824AC0000 file=%SYSTEMROOT%\System32\drvstore.dll
+ODS [00-05-52][streamline][error][tid:43188][0s:006ms:025us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][info][tid:43188][0s:006ms:295us]ota.cpp:325[parseServerManifest] OTA feature nvperf_0 version 2.14.16
+
+ODS [00-05-52][streamline][info][tid:43188][0s:006ms:583us]ota.cpp:325[parseServerManifest] OTA feature pcl_0 version 2.14.16
+
+MODULE base=00007FF830360000 file=%SYSTEMROOT%\System32\devobj.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:007ms:065us]ota.cpp:325[parseServerManifest] OTA feature reflex_0 version 2.14.16
+
+MODULE base=00007FF8307D0000 file=%SYSTEMROOT%\System32\cfgmgr32.dll
+ODS [00-05-52][streamline][error][tid:43188][0s:007ms:496us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:007ms:741us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:008ms:039us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+MODULE base=00007FF82FE30000 file=%SYSTEMROOT%\System32\cryptbase.dll
+ODS [00-05-52][streamline][error][tid:43188][0s:008ms:474us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+MODULE base=00007FF81DC70000 file=%SYSTEMROOT%\System32\nvapi64.dll
+ODS [00-05-52][streamline][error][tid:43188][0s:009ms:125us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:009ms:486us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:009ms:963us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:010ms:298us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+ODS [00-05-52][streamline][error][tid:43188][0s:010ms:572us]ota.cpp:329[parseServerManifest] Unexpected line in manifest file: P\x81ų
+
+MODULE base=00007FF81D650000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvapi64_impl.dll
+MODULE base=00007FF8314E0000 file=%SYSTEMROOT%\System32\setupapi.dll
+MODULE base=00007FF8255D0000 file=%SYSTEMROOT%\System32\version.dll
+ODS [00-05-52][streamline][info][tid:43188][0s:036ms:484us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:047ms:925us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:048ms:230us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:049ms:046us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_pcl_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:053ms:105us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:053ms:650us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:054ms:169us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:054ms:673us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_reflex_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:057ms:674us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:058ms:191us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:058ms:716us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:061ms:880us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_g_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:062ms:486us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:063ms:156us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:066ms:231us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:067ms:356us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:070ms:169us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:070ms:691us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:071ms:484us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:072ms:034us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_d_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:076ms:052us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:078ms:751us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:079ms:408us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:079ms:949us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_nis_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:081ms:275us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:082ms:220us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:102ms:776us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:117ms:101us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_common_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:118ms:887us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9560]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:120ms:734us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:122ms:621us]ota.cpp:456[checkForOTA] Requesting optional updates!
+
+ODS [00-05-52][streamline][info][tid:43188][0s:124ms:041us]ota.cpp:227[invokeNGXUpdater] Invoking NGX Updater: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_pcl_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-52][streamline][info][tid:43188][0s:125ms:286us]pluginManager.cpp:525[findPlugins] Looking for plugins in <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\ ...
+
+ODS [00-05-52][streamline][info][tid:43188][0s:126ms:441us]pluginManager.cpp:919[loadPlugins] Searching for OTA'd plugins...
+
+ODS [00-05-52][streamline][info][tid:43188][0s:127ms:621us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:128ms:935us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:130ms:136us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-52][streamline][info][tid:43188][0s:137ms:826us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:139ms:165us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:140ms:540us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_reflex_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-52][streamline][info][tid:43188][0s:153ms:762us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:154ms:871us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:156ms:019us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_g_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-52][streamline][info][tid:43188][0s:165ms:297us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-52][streamline][info][tid:43188][0s:165ms:824us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-52][streamline][info][tid:43188][0s:166ms:428us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-53][streamline][info][tid:43188][0s:171ms:595us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-53][streamline][info][tid:43188][0s:172ms:384us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-53][streamline][info][tid:43188][0s:172ms:961us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_dlss_d_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-53][streamline][info][tid:43188][0s:179ms:789us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-53][streamline][info][tid:43188][0s:180ms:192us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-53][streamline][info][tid:43188][0s:180ms:811us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_nis_0\versions\134672\files\190_E658703.dll
+
+ODS [00-05-53][streamline][info][tid:43188][0s:190ms:554us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-53][streamline][info][tid:43188][0s:191ms:949us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+ODS [00-05-53][streamline][info][tid:43188][0s:193ms:863us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_common_0\versions\134672\files\190_E658703.dll
+
+MODULE base=00007FF8306B0000 file=%SYSTEMROOT%\System32\wintrust.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:204ms:165us]ota.cpp:395[getNVDAArchitecture] Found NVIDIA GPUs, [000000B9553F9330]: 1
+
+ODS [00-05-53][streamline][info][tid:43188][0s:204ms:994us]ota.cpp:401[getNVDAArchitecture] Found GPU 0, arch=0x190
+
+MODULE base=00007FF82FF00000 file=%SYSTEMROOT%\System32\cryptsp.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:206ms:149us]pluginManager.cpp:925[loadPlugins] Found plugin: %PROGRAMDATA%\NVIDIA/NGX/models/sl_pcl_0\versions\134672\files\190_E658703.dll
+
+MODULE base=00007FF82F5B0000 file=%SYSTEMROOT%\System32\rsaenh.dll
+MODULE base=00007FF832820000 file=%SYSTEMROOT%\System32\imagehlp.dll
+MODULE base=00007FF82FCE0000 file=%SYSTEMROOT%\System32\gpapi.dll
+MODULE base=00007FF82BDD0000 file=%SYSTEMROOT%\System32\winnsi.dll
+MODULE base=00007FF832BF0000 file=%SYSTEMROOT%\System32\nsi.dll
+MODULE base=00007FFFA7F00000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_common_0\versions\134672\files\190_E658703.dll
+MODULE base=00007FF82EE30000 file=%SYSTEMROOT%\System32\dxgi.dll
+MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\System32\D3D12.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:734ms:673us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_common_0\versions\134672\files\
+
+ODS [00-05-53][streamline][info][tid:43188][0s:735ms:432us]plugin.cpp:154[isAppDenylisted] Checking SL OTA denylist for appid=0x90d07004
+
+ODS [00-05-53][streamline][info][tid:43188][0s:735ms:743us]ota.cpp:777[readServerDenylist] Reading SL denylist file at: %PROGRAMDATA%\NVIDIA/NGX/models/config\versions\1\files\nvngx_deny_list.txt
+
+ODS [00-05-53][streamline][info][tid:43188][0s:736ms:132us]ota.cpp:634[parseServerDenylist] Hashed CMSID 84D32F0 is on the Streamline OTA denylist
+
+ODS [00-05-53][streamline][info][tid:43188][0s:736ms:883us]commonInterface.cpp:165[getSystemCaps] Enumerating up to 8 adapters but only one of them can be used to create a device - no mGPU support in this SDK
+
+MODULE base=00007FF82D1B0000 file=%SYSTEMROOT%\System32\ResourcePolicyClient.dll
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(121)\dxgi.dll!00007FF82EE7412C: (caller: 00007FF82EE4DD72) ReturnHr(1) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(98)\dxgi.dll!00007FF82EE73DFD: (caller: 00007FF82EE3DE61) ReturnHr(2) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\directxdatabasehelper.cpp(1410)\dxgi.dll!00007FF82EE73F1D: (caller: 00007FF82EE3DE61) ReturnHr(3) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+MODULE base=00007FFFCDA70000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvdlistx.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:761ms:172us]commonInterface.cpp:287[getSystemCaps] >-----------------------------------------
+
+ODS [00-05-53][streamline][info][tid:43188][0s:762ms:095us]commonInterface.cpp:290[getSystemCaps] NVIDIA driver 610.88
+
+ODS [00-05-53][streamline][info][tid:43188][0s:785ms:022us]commonInterface.cpp:315[getSystemCaps] Adapter 0 architecture 0x190 implementation 0x7 revision 0xa1 - bit 0x1 - LUID 0.106613
+
+ODS [00-05-53][streamline][info][tid:43188][0s:785ms:404us]commonInterface.cpp:321[getSystemCaps] -----------------------------------------<
+
+ODS [00-05-53][streamline][info][tid:43188][0s:786ms:165us]commonEntry.cpp:2124[updateEmbeddedJSON] Detected Windows OS version 10.0.19045
+
+ODS [00-05-53][streamline][info][tid:43188][0s:789ms:720us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.common' - version 2.14.16.b742680bf - id 4294967295 - priority 0 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFFB0100000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\190_E658703.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:807ms:710us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\
+
+ODS [00-05-53][streamline][info][tid:43188][0s:808ms:411us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-05-53][streamline][info][tid:43188][0s:810ms:223us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.pcl' - version 2.14.16.b742680bf - id 4 - priority 2 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFFAF940000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_reflex_0\versions\134672\files\190_E658703.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:852ms:533us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_reflex_0\versions\134672\files\
+
+ODS [00-05-53][streamline][info][tid:43188][0s:856ms:893us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-05-53][streamline][info][tid:43188][0s:879ms:717us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.reflex' - version 2.14.16.b742680bf - id 3 - priority 100 - adapter mask 0xf - interposer 'no'
+
+MODULE base=00007FFFA8AF0000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_g_0\versions\134672\files\190_E658703.dll
+ODS [00-05-53][streamline][info][tid:43188][0s:971ms:572us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_g_0\versions\134672\files\
+
+ODS [00-05-53][streamline][info][tid:43188][1s:017ms:634us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+MODULE base=00007FFFA7650000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\_nvngx.dll
+ODS [00-05-56][streamline][info][tid:35588][3s:534ms:965us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-05-56][streamline][info][tid:35588][3s:561ms:153us]ota.cpp:159[execThreadProc] NGX Updater reported: 2.14.16
+
+
+MODULE base=00007FFF29210000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlss.dll
+ODS [00-06-02][streamline][info][tid:3796][9s:405ms:289us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_pcl_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-02][streamline][info][tid:3796][9s:467ms:241us]ota.cpp:159[execThreadProc] NGX Updater reported: 2.14.16
+
+
+MODULE base=00007FFEDEC00000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files\160_E658700.bin
+MODULE base=00007FFF6FF60000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlssg.dll
+ODS [00-06-05][streamline][info][tid:48896][13s:107ms:422us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_nis_0 -api update -type dll -gpuarch 0x190 -optional
+
+MODULE base=00007FFF6E190000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files\160_E658700.bin
+MODULE base=00007FFF687D0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_dlssg.dll
+MODULE base=00007FFFEE970000 file=%SYSTEMROOT%\System32\nvcuda.dll
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+MODULE base=00007FFF7F200000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_deepdvc.dll
+MODULE base=00007FFF2AB10000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlssd.dll
+ODS [00-06-18][streamline][info][tid:8356][25s:682ms:855us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_pcl_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-18][streamline][info][tid:8356][25s:684ms:786us]ota.cpp:159[execThreadProc] NGX Updater reported: 2.14.16
+
+
+MODULE base=00007FFED9FE0000 file=%PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files\160_E658700.bin
+ODS [00-06-19][streamline][info][tid:43188][26s:623ms:381us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 11 requirements - minOS 10.0.19041 minHW 0x190
+
+ODS [00-06-19][streamline][info][tid:43188][26s:623ms:907us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:624ms:220us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:624ms:491us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeHUDLessColor' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:624ms:769us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeUIColorAndAlpha' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:626ms:121us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.dlss_g' - version 2.14.16.b742680bf - id 1000 - priority 1000 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFFA7E90000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_0\versions\134672\files\190_E658703.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:638ms:744us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][26s:639ms:812us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-19][streamline][info][tid:43188][26s:684ms:145us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 1 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-19][streamline][info][tid:43188][26s:684ms:876us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:685ms:387us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:685ms:729us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:686ms:065us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:689ms:882us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.dlss' - version 2.14.16.b742680bf - id 0 - priority 100 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFFA7E20000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_d_0\versions\134672\files\190_E658703.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:702ms:867us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_d_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][26s:703ms:439us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-19][streamline][info][tid:43188][26s:736ms:775us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 13 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-19][streamline][info][tid:43188][26s:737ms:768us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:738ms:500us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:738ms:860us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:739ms:132us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:741ms:801us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.dlss_d' - version 2.14.16.b742680bf - id 1001 - priority 100 - adapter mask 0x1 - interposer 'no'
+
+MODULE base=00007FFFA7530000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_nis_0\versions\134672\files\190_E658703.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:757ms:796us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_nis_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][26s:758ms:529us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-19][streamline][info][tid:43188][26s:759ms:254us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:759ms:957us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:760ms:266us]pluginManager.cpp:828[mapPlugins] Loaded plugin 'sl.nis' - version 2.14.16.b742680bf - id 2 - priority 100 - adapter mask 0xf - interposer 'no'
+
+ODS [00-06-19][streamline][info][tid:43188][26s:770ms:797us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - 190_E658703
+
+ODS [00-06-19][streamline][warn][tid:43188][26s:771ms:095us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.pcl' since it has duplicated unique id
+
+MODULE base=00007FFFB0100000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\190_E658703.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:783ms:881us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][26s:784ms:527us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+MODULE base=00007FFF95350000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.common.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:828ms:489us]commonInterface.cpp:154[getSystemCaps] Enumerating up to 8 adapters but only one of them can be used to create a device - no mGPU support in this SDK
+
+ODS [00-06-19][streamline][info][tid:43188][26s:832ms:719us]commonInterface.cpp:276[getSystemCaps] >-----------------------------------------
+
+ODS [00-06-19][streamline][info][tid:43188][26s:833ms:329us]commonInterface.cpp:279[getSystemCaps] NVIDIA driver 610.88
+
+ODS [00-06-19][streamline][info][tid:43188][26s:844ms:992us]commonInterface.cpp:304[getSystemCaps] Adapter 0 architecture 0x190 implementation 0x7 revision 0xa1 - bit 0x1 - LUID 0.106613
+
+ODS [00-06-19][streamline][info][tid:43188][26s:845ms:475us]commonInterface.cpp:310[getSystemCaps] -----------------------------------------<
+
+ODS [00-06-19][streamline][info][tid:43188][26s:847ms:447us]commonEntry.cpp:1758[getOSVersionAndUpdateTimerResolution] Changed high resolution timer resolution to 5000 [100 ns units].
+
+ODS [00-06-19][streamline][info][tid:43188][26s:848ms:633us]commonEntry.cpp:1833[updateEmbeddedJSON] Detected Windows OS version 10.0.19045
+
+ODS [00-06-19][streamline][info][tid:43188][26s:849ms:991us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.common
+
+ODS [00-06-19][streamline][warn][tid:43188][26s:850ms:273us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.common' since it has duplicated unique id
+
+MODULE base=00007FFFA7F00000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_common_0\versions\134672\files\190_E658703.dll
+MODULE base=00007FF82EE30000 file=%SYSTEMROOT%\System32\dxgi.dll
+MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\System32\D3D12.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:862ms:088us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_common_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][26s:862ms:528us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-19][streamline][info][tid:43188][26s:862ms:859us]commonInterface.cpp:165[getSystemCaps] Enumerating up to 8 adapters but only one of them can be used to create a device - no mGPU support in this SDK
+
+MODULE base=00007FF82D1B0000 file=%SYSTEMROOT%\System32\ResourcePolicyClient.dll
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(121)\dxgi.dll!00007FF82EE7412C: (caller: 00007FF82EE4DD72) ReturnHr(1) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\perappusersettingsqueryimpl.cpp(98)\dxgi.dll!00007FF82EE73DFD: (caller: 00007FF82EE3DE61) ReturnHr(2) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+ODS onecore\windows\directx\database\helperlibrary\lib\directxdatabasehelper.cpp(1410)\dxgi.dll!00007FF82EE73F1D: (caller: 00007FF82EE3DE61) ReturnHr(3) tid(a8b4) 8000FFFF Catastrophic failure
+
+
+ODS [00-06-19][streamline][info][tid:43188][26s:873ms:814us]commonInterface.cpp:287[getSystemCaps] >-----------------------------------------
+
+ODS [00-06-19][streamline][info][tid:43188][26s:874ms:362us]commonInterface.cpp:290[getSystemCaps] NVIDIA driver 610.88
+
+ODS [00-06-19][streamline][info][tid:43188][26s:894ms:716us]commonInterface.cpp:315[getSystemCaps] Adapter 0 architecture 0x190 implementation 0x7 revision 0xa1 - bit 0x1 - LUID 0.106613
+
+ODS [00-06-19][streamline][info][tid:43188][26s:895ms:363us]commonInterface.cpp:321[getSystemCaps] -----------------------------------------<
+
+ODS [00-06-19][streamline][info][tid:43188][26s:896ms:098us]commonEntry.cpp:2124[updateEmbeddedJSON] Detected Windows OS version 10.0.19045
+
+MODULE base=00007FFFC99E0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.deepdvc.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:937ms:489us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDeepDVC`
+
+ODS [00-06-19][streamline][warn][tid:43188][26s:938ms:790us]pluginManager.cpp:725[mapPlugins] Ignoring plugin 'sl.deepdvc' since it is was not requested by the host
+
+MODULE base=00007FFFC99E0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.directsr.dll
+ODS [00-06-19][streamline][info][tid:43188][26s:975ms:569us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:977ms:423us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:978ms:831us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [00-06-19][streamline][info][tid:43188][26s:979ms:158us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDirectSR`
+
+ODS [00-06-19][streamline][warn][tid:43188][26s:979ms:473us]pluginManager.cpp:725[mapPlugins] Ignoring plugin 'sl.directsr' since it is was not requested by the host
+
+MODULE base=00007FFFC5B90000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.dlss.dll
+ODS [00-06-19][streamline][info][tid:43188][27s:064ms:329us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 1 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-19][streamline][info][tid:43188][27s:065ms:635us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:066ms:547us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:066ms:846us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:067ms:157us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:069ms:766us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.dlss
+
+ODS [00-06-19][streamline][warn][tid:43188][27s:070ms:129us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.dlss' since it has duplicated unique id
+
+MODULE base=00007FFFA7E90000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_0\versions\134672\files\190_E658703.dll
+ODS [00-06-19][streamline][info][tid:43188][27s:078ms:375us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_0\versions\134672\files\
+
+ODS [00-06-19][streamline][info][tid:43188][27s:078ms:922us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-19][streamline][info][tid:43188][27s:106ms:151us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 1 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-19][streamline][info][tid:43188][27s:106ms:484us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:106ms:772us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:107ms:023us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+ODS [00-06-19][streamline][info][tid:43188][27s:107ms:329us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS`
+
+MODULE base=00007FFFC5B90000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.dlss_d.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:175ms:871us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 13 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-20][streamline][info][tid:43188][27s:176ms:740us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:177ms:289us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:177ms:600us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:177ms:872us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:179ms:229us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.dlss_d
+
+ODS [00-06-20][streamline][warn][tid:43188][27s:179ms:542us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.dlss_d' since it has duplicated unique id
+
+MODULE base=00007FFFA7E20000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_d_0\versions\134672\files\190_E658703.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:187ms:698us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_d_0\versions\134672\files\
+
+ODS [00-06-20][streamline][info][tid:43188][27s:188ms:298us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-20][streamline][info][tid:43188][27s:216ms:834us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 13 requirements - minOS 10.0.0 minHW 0x160
+
+ODS [00-06-20][streamline][info][tid:43188][27s:217ms:145us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:217ms:426us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:217ms:728us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:218ms:141us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureDLSS_RR`
+
+MODULE base=00007FFFA74C0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.dlss_g.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:296ms:515us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 11 requirements - minOS 10.0.19041 minHW 0x190
+
+ODS [00-06-20][streamline][info][tid:43188][27s:298ms:694us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:299ms:229us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:299ms:559us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeHUDLessColor' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:299ms:875us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeUIColorAndAlpha' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:306ms:498us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.dlss_g
+
+ODS [00-06-20][streamline][warn][tid:43188][27s:307ms:123us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.dlss_g' since it has duplicated unique id
+
+MODULE base=00007FFFA8AF0000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_g_0\versions\134672\files\190_E658703.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:316ms:226us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_dlss_g_0\versions\134672\files\
+
+ODS [00-06-20][streamline][info][tid:43188][27s:317ms:144us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-20][streamline][info][tid:43188][27s:345ms:568us]commonEntry.cpp:1100[getNGXFeatureRequirements] NGX feature 11 requirements - minOS 10.0.19041 minHW 0x190
+
+ODS [00-06-20][streamline][info][tid:43188][27s:346ms:050us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeDepth' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:346ms:343us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeMotionVectors' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:346ms:653us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeHUDLessColor' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:346ms:935us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeUIColorAndAlpha' life-cycle 'ResourceLifecycle::eValidUntilPresent' for feature `kFeatureDLSS_G`
+
+MODULE base=00007FFF95320000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.nis.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:395ms:023us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:396ms:275us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:396ms:693us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.nis
+
+ODS [00-06-20][streamline][warn][tid:43188][27s:397ms:001us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.nis' since it has duplicated unique id
+
+MODULE base=00007FFFA7530000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_nis_0\versions\134672\files\190_E658703.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:406ms:262us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_nis_0\versions\134672\files\
+
+ODS [00-06-20][streamline][info][tid:43188][27s:406ms:746us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-20][streamline][info][tid:43188][27s:407ms:129us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingInputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+ODS [00-06-20][streamline][info][tid:43188][27s:407ms:405us]commonEntry.cpp:1457[updateCommonEmbeddedJSONConfig] Registering required tag 'kBufferTypeScalingOutputColor' life-cycle 'ResourceLifecycle::eValidUntilEvaluate' for feature `kFeatureNIS`
+
+MODULE base=00007FFF95370000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.nvperf.dll
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+ODS [00-06-20][streamline][warn][tid:43188][27s:461ms:017us]pluginManager.cpp:725[mapPlugins] Ignoring plugin 'sl.nvperf' since it is was not requested by the host
+
+MODULE base=00007FFFC99E0000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.pcl.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:497ms:374us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.pcl
+
+ODS [00-06-20][streamline][warn][tid:43188][27s:497ms:654us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.pcl' since it has duplicated unique id
+
+MODULE base=00007FFFB0100000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\190_E658703.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:505ms:593us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_pcl_0\versions\134672\files\
+
+ODS [00-06-20][streamline][info][tid:43188][27s:506ms:034us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+MODULE base=00007FFFC5B90000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\sl.reflex.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:543ms:447us]pluginManager.cpp:679[mapPlugins] Detected two plugins with the same id 190_E658703 - sl.reflex
+
+ODS [00-06-20][streamline][warn][tid:43188][27s:543ms:897us]pluginManager.cpp:730[mapPlugins] Ignoring plugin 'sl.reflex' since it has duplicated unique id
+
+MODULE base=00007FFFAF940000 file=%PROGRAMDATA%\NVIDIA\NGX\models\sl_reflex_0\versions\134672\files\190_E658703.dll
+ODS [00-06-20][streamline][info][tid:43188][27s:552ms:807us]plugin.cpp:94[isAppDenylisted] Plugin path: %PROGRAMDATA%\NVIDIA\NGX\models\sl_reflex_0\versions\134672\files\
+
+ODS [00-06-20][streamline][info][tid:43188][27s:553ms:314us]plugin.cpp:117[isAppDenylisted] Plugin is already checked for OTA denylist - returning cached result: 0
+
+ODS [00-06-20][streamline][info][tid:43188][27s:553ms:973us]pluginManager.cpp:1091[loadPlugins] Plugin execution order based on priority:
+
+ODS [00-06-20][streamline][info][tid:43188][27s:554ms:716us]pluginManager.cpp:1094[loadPlugins] P0 - sl.common
+
+ODS [00-06-20][streamline][info][tid:43188][27s:555ms:748us]pluginManager.cpp:1094[loadPlugins] P2 - sl.pcl
+
+ODS [00-06-20][streamline][info][tid:43188][27s:556ms:069us]pluginManager.cpp:1094[loadPlugins] P100 - sl.reflex
+
+ODS [00-06-20][streamline][info][tid:43188][27s:556ms:351us]pluginManager.cpp:1094[loadPlugins] P100 - sl.dlss
+
+ODS [00-06-20][streamline][info][tid:43188][27s:556ms:620us]pluginManager.cpp:1094[loadPlugins] P100 - sl.dlss_d
+
+ODS [00-06-20][streamline][info][tid:43188][27s:557ms:224us]pluginManager.cpp:1094[loadPlugins] P100 - sl.nis
+
+ODS [00-06-20][streamline][info][tid:43188][27s:557ms:681us]pluginManager.cpp:1094[loadPlugins] P1000 - sl.dlss_g
+
+MODULE base=00007FF8329C0000 file=%SYSTEMROOT%\System32\clbcatq.dll
+MODULE base=00007FFFC9870000 file=%SYSTEMROOT%\System32\wpnapps.dll
+MODULE base=00007FF828ED0000 file=%SYSTEMROOT%\System32\xmllite.dll
+MODULE base=00007FF82D3C0000 file=%SYSTEMROOT%\System32\rmclient.dll
+MODULE base=00007FF828160000 file=%SYSTEMROOT%\System32\twinapi.appcore.dll
+MODULE base=00007FF82B5F0000 file=%SYSTEMROOT%\System32\usermgrcli.dll
+MODULE base=00007FF824C50000 file=%SYSTEMROOT%\System32\OneCoreUAPCommonProxyStub.dll
+MODULE base=00007FF819F20000 file=%SYSTEMROOT%\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.7802_none_60b401cf71fa5b8a\comctl32.dll
+MODULE base=00007FF829D30000 file=%SYSTEMROOT%\System32\dcomp.dll
+ODS [00-06-22][streamline][info][tid:43188][29s:424ms:564us]dxgi.cpp:323[CreateDXGIFactoryInternal] Injecting hooks into DXGI proxy virtual table
+
+MODULE base=00007FF830440000 file=%SYSTEMROOT%\System32\sxs.dll
+ODS mincore\com\oleaut32\dispatch\ups.cpp(2122)\OLEAUT32.dll!00007FF8313831B6: (caller: 00007FF831383F69) ReturnHr(1) tid(a8b4) 8002801D Library not registered.
+
+
+MODULE base=00007FF832E00000 file=%SYSTEMROOT%\System32\msctf.dll
+ODS clientcore\windows\dwm\dwmapi\attribute.cpp(185)\dwmapi.dll!00007FF82D2B2BA7: (caller: 00007FF770EED517) ReturnHr(1) tid(a8b4) 80070057 The parameter is incorrect.
+
+
+MODULE base=00007FF82B750000 file=%SYSTEMROOT%\System32\Windows.Graphics.dll
+ODS clientcore\windows\dwm\dwmapi\attribute.cpp(185)\dwmapi.dll!00007FF82D2B2BA7: (caller: 00007FF770EF34B2) ReturnHr(2) tid(a8b4) 80070057 The parameter is incorrect.
+
+
+MODULE base=00007FFF34250000 file=%SYSTEMROOT%\System32\D3D12Core.dll
+MODULE base=00007FF82ADB0000 file=%SYSTEMROOT%\System32\DXCore.dll
+MODULE base=00007FFFE9060000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvldumdx.dll
+MODULE base=00007FFF05F40000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvgpucomp64.dll
+MODULE base=00007FFFB40F0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\NvMemMapStoragex.dll
+MODULE base=00007FF8303F0000 file=%SYSTEMROOT%\System32\powrprof.dll
+MODULE base=00007FF8303D0000 file=%SYSTEMROOT%\System32\umpdc.dll
+MODULE base=00007FFF00990000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvwgf2umx.dll
+MODULE base=00007FFF24CF0000 file=%SYSTEMROOT%\System32\nvspcap64.dll
+MODULE base=00007FFFAEA70000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvppex.dll
+MODULE base=00007FFF3FC70000 file=%SYSTEMROOT%\System32\D3DSCache.dll
+MODULE base=00007FF8304F0000 file=%SYSTEMROOT%\System32\userenv.dll
+MODULE base=00007FFF7FAB0000 file=%SYSTEMROOT%\System32\dxilconv.dll
+ODS [00-06-23][streamline][info][tid:43188][30s:287ms:390us]pluginManager.cpp:1279[initializePlugins] Initializing plugins - api 0.0.1 - application ID 2429579268
+
+ODS [00-06-23][streamline][info][tid:43188][30s:290ms:045us]d3d12.cpp:1339[createKernel] Creating DXBC kernel copy_to_buffer.cs:main hash 12564409127886710297
+
+ODS [00-06-23][streamline][info][tid:43188][30s:290ms:372us]generic.cpp:112[initNsightActivity] NSight SDK activity not detected (6)!
+
+ODS [00-06-23][streamline][info][tid:43188][30s:291ms:329us]commonEntry.cpp:1568[slOnPluginStartup] At least one plugin requires NGX, trying to initialize ...
+
+ODS [00-06-23][streamline][info][tid:43188][30s:292ms:494us]commonEntry.cpp:1368[ngxLog] [Unknown(32764)] [2026-10-26 00:06:23] [NGXSafeInitializeLog:150] App logging hooks successfully initialized
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:292ms:881us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXSafeInitializeLog:139] App logging hooks successfully initialized
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:305ms:919us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXCheckArchitectureSupport:229] Found matching adapter with NVAPI physical GPU handle: 0x100 and LUID: { 0x0, 0x1a075 }
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:307ms:133us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXGetPathUsingQAI:475] Checking for path to NGX using QueryAdapterInfo
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:307ms:564us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXGetPathUsingQAI:512] Path to driverStore found using QAI: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:307ms:816us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXGetPath:1045] using path for models: %PROGRAMDATA%\NVIDIA\NGX\models
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:308ms:137us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXGetPath:1045] using path for models: %PROGRAMDATA%\NVIDIA\NGX\models
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:308ms:499us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [CreateSecurityDescriptor:94] security attributes generated successfully
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:308ms:769us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [CreateFolderWithACEs:154] using generated security descriptor for creating folder at: %PROGRAMDATA%\NVIDIA\NGX\models
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:343ms:366us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [ModifyExistingFolderDACL:211] updated access control list for NGX cache (NGX cache should now be usable by all authenticated users)
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:343ms:656us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXCreateModelsFolder:1072] model folder created: %PROGRAMDATA%\NVIDIA\NGX\models
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:344ms:431us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_sdk_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:345ms:406us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:347ms:235us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_common_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:349ms:662us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:352ms:071us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_deepdvc_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:355ms:398us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:357ms:166us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:357ms:864us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:358ms:136us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_d_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:358ms:482us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:359ms:059us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_g_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:360ms:792us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:363ms:832us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_nis_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:367ms:404us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:370ms:083us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_deepdvc_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:375ms:723us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:376ms:513us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_nvperf_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:378ms:112us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:378ms:469us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_pcl_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:378ms:894us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:379ms:288us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_reflex_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:379ms:732us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:380ms:082us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [dlss]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:380ms:428us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DB4F4=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:380ms:769us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9C3560=2.1.201
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:381ms:150us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9FD6C0=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:381ms:548us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=310.9.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:382ms:002us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658702=0.0.0
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:382ms:489us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658701=0.0.0
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:382ms:812us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9FEB50=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:383ms:329us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9FF4BC=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:383ms:683us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9FD524=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:384ms:173us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DF510=1.3.106
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:384ms:636us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9CB0B8=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:385ms:080us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9E26B0=2.1.28
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:385ms:438us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D48D0=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:385ms:939us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E99B5EC=1.2.109
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:386ms:368us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DFA64=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:386ms:744us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D6F08=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:387ms:104us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D2F5C=1.2.110
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:387ms:527us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D7388=1.0.108
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:387ms:921us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9F5618=2.1.29
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:388ms:389us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DAE68=1.2.109
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:388ms:793us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9CF688=2.2.15
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:389ms:202us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D8C54=1.2.109
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:389ms:557us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D3EF0=2.1.28
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:389ms:913us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9FACDC=2.1.201
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:390ms:260us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_F7361DC=2.1.28
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:390ms:711us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9BF564=2.1.201
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:391ms:269us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9B0430=2.1.28
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:391ms:645us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [dlssg]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:392ms:105us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=310.9.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:392ms:423us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [dlssd]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:392ms:794us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=310.9.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:393ms:231us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [dlss_override]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:393ms:653us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=310.9.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:394ms:057us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [dlisp]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:394ms:423us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9CF688=2.1.15
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:394ms:881us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E99B5EC=1.2.102
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:395ms:276us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658703=310.0.0
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:395ms:739us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D8C54=1.2.106
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:396ms:121us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9D2F5C=1.2.106
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:396ms:478us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DF510=1.3.101
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:396ms:912us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_B9DAE68=1.2.106
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:397ms:277us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_sdk_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:397ms:616us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:398ms:191us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_g_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:398ms:647us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:399ms:173us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_common_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:399ms:522us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:399ms:884us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:400ms:234us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:400ms:590us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_nis_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:400ms:961us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:401ms:335us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_dlss_d_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:401ms:672us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:402ms:137us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_nvperf_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:402ms:590us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:403ms:058us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_pcl_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:403ms:453us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:403ms:826us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1144] [sl_reflex_override_0]
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:404ms:221us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXLoadConfig:1150] app_E658700=2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43260][30s:754ms:078us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_d_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-23][streamline][info][tid:43260][30s:756ms:719us]ota.cpp:159[execThreadProc] NGX Updater reported: 2.14.16
+
+
+ODS [00-06-23][streamline][info][tid:43188][30s:926ms:744us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:23] [NGXDRSInit:182] NvAPI_DRS_FindApplicationByName -166
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:486ms:086us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXInitContext:245] called from module 190_E658703.dll at %PROGRAMDATA%\NVIDIA\NGX\models\sl_common_0\versions\134672\files
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:486ms:408us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXContextDenyListData::IsFeatureDenied:666] Feature dldenoiser, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:486ms:752us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:487ms:021us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:487ms:308us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dldenoiser.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:487ms:555us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXReportStatusFeedback:1076] Override shared memory was opened successfully
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:487ms:880us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXReportStatusFeedback:1088] Override shared memory was mapped successfully
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:488ms:155us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlss, denial value 0 for Cms ID 9eb5f707
+
+
+MODULE base=00007FFF29210000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlss.dll
+ODS [00-06-24][streamline][info][tid:43188][31s:573ms:813us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXLoadLibrary:34] Loaded NGXCore from path (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlss.dll)
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:574ms:556us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1490] Validating snippet <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlss.dll
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:574ms:836us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:575ms:214us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x160
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:575ms:461us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID)
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:575ms:701us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 470.0
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:575ms:935us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXValidateSnippetMetaData:1561] Snippet version : 310.5.0, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:576ms:243us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:576ms:541us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXSecureLoadFeature:1345] Feature dlss failed to load (cmsid 18446744072077309703) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\0\files, name: 160_FFFFFFFF9EB5F707.bin)
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:577ms:207us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-24][streamline][info][tid:43188][31s:582ms:648us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:24] [NGXSecureLoadFeature:1345] Feature dlss failed to load (cmsid 241534723) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\0\files, name: 160_E658703.bin)
+
+
+ODS [00-06-27][streamline][info][tid:44432][35s:139ms:987us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_reflex_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-29][streamline][info][tid:43188][36s:390ms:243us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1309] Feature dlss override enabled
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:465ms:303us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXLoadLibrary:34] Loaded NGXCore from path (%PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files/160_E658700.bin)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:465ms:671us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1490] Validating snippet %PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files/160_E658700.bin
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:466ms:048us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:466ms:668us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x160
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:467ms:520us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:468ms:313us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 470.0
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:468ms:752us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1561] Snippet version : 310.9.16, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:469ms:488us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1315] Found dlss snippet at %PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:470ms:766us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:471ms:665us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1459] app FFFFFFFF9EB5F707 feature dlss snippet: %PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files/160_E658700.bin version: 310.9.16
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:499ms:034us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXLoadFeature:1535] Setting telemetry callback for dlss [schema 3.0+]
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:499ms:293us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXLoadFeature:1540] Setting override status callback for dlss
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:499ms:672us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlinpainting, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:499ms:927us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:500ms:274us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:500ms:626us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlinpainting.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:500ms:992us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlisr, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:501ms:322us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:501ms:693us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:501ms:952us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlisr.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:502ms:201us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlslowmo, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:502ms:465us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:502ms:745us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:502ms:991us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlslowmo.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:503ms:252us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlvsr, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:503ms:567us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:503ms:822us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:504ms:107us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlvsr.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:504ms:353us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlcolorize, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:504ms:722us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:504ms:980us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:505ms:238us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlcolorize.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:505ms:505us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlstyletransfer, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:505ms:765us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:506ms:013us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:506ms:285us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlstyletransfer.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:506ms:562us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlvdenoiser, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:506ms:827us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:507ms:133us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:507ms:409us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlvdenoiser.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:507ms:662us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlisp, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:507ms:958us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:508ms:205us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:508ms:479us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlisp.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:508ms:742us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlresolve, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:508ms:991us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:509ms:249us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:509ms:490us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_dlresolve.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:509ms:741us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlssg, denial value 0 for Cms ID 9eb5f707
+
+
+MODULE base=00007FFF6FF60000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlssg.dll
+ODS [00-06-29][streamline][info][tid:43188][36s:525ms:526us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXLoadLibrary:34] Loaded NGXCore from path (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlssg.dll)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:525ms:890us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1490] Validating snippet <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlssg.dll
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:526ms:171us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:526ms:473us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x190
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:526ms:770us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0x0()
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:527ms:054us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 520.0
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:527ms:309us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXValidateSnippetMetaData:1561] Snippet version : 310.5.0, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:527ms:631us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:528ms:160us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1345] Feature dlssg failed to load (cmsid 18446744072077309703) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\0\files, name: 160_FFFFFFFF9EB5F707.bin)
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:530ms:008us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-29][streamline][info][tid:43188][36s:531ms:260us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:29] [NGXSecureLoadFeature:1345] Feature dlssg failed to load (cmsid 241534723) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\0\files, name: 160_E658703.bin)
+
+
+ODS [00-06-32][streamline][info][tid:32112][39s:342ms:796us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_common_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-34][streamline][info][tid:43188][41s:802ms:751us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1309] Feature dlssg override enabled
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:815ms:902us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadLibrary:34] Loaded NGXCore from path (%PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files/160_E658700.bin)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:816ms:205us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1490] Validating snippet %PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files/160_E658700.bin
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:816ms:496us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:816ms:807us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x190
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:817ms:060us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0x0()
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:817ms:307us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 520.0
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:817ms:552us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1561] Snippet version : 310.9.16, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:817ms:845us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1315] Found dlssg snippet at %PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files
+
+
+MODULE base=00007FFF687D0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_dlssg.dll
+MODULE base=00007FFFEE970000 file=%SYSTEMROOT%\System32\nvcuda.dll
+MODULE base=00007FFFE66F0000 file=%SYSTEMROOT%\System32\vulkan-1.dll
+ODS [00-06-34][streamline][info][tid:43188][41s:921ms:154us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadLibrary:34] Loaded NGXCore from path (%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53/nvngx_dlssg.dll)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:924ms:425us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1490] Validating snippet %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53/nvngx_dlssg.dll
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:925ms:309us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:925ms:770us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x190
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:942ms:756us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0x0()
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:943ms:179us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 520.0
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:943ms:952us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1561] Snippet version : 310.2.1, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:944ms:672us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1381] Found dlssg driver fallback snippet at %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:946ms:067us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1459] app FFFFFFFF9EB5F707 feature dlssg snippet: %PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files/160_E658700.bin version: 310.9.16
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:952ms:338us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadFeature:1535] Setting telemetry callback for dlssg [schema 3.0+]
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:952ms:615us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadFeature:1540] Setting override status callback for dlssg
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:952ms:895us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXContextDenyListData::IsFeatureDenied:666] Feature deepdvc, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:961ms:501us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadLibrary:34] Loaded NGXCore from path (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_deepdvc.dll)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:961ms:976us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1490] Validating snippet <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_deepdvc.dll
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:962ms:360us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:962ms:707us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x160
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:963ms:177us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0x0()
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:963ms:434us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 535.0
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:963ms:702us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1561] Snippet version : 310.5.0, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:963ms:966us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:964ms:216us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1345] Feature deepdvc failed to load (cmsid 18446744072077309703) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\deepdvc\versions\0\files, name: 160_FFFFFFFF9EB5F707.bin)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:964ms:504us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:964ms:743us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1345] Feature deepdvc failed to load (cmsid 241534723) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\deepdvc\versions\0\files, name: 160_E658703.bin)
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:964ms:985us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:965ms:219us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1459] app FFFFFFFF9EB5F707 feature deepdvc snippet: <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_deepdvc.dll version: 310.5.0
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:965ms:589us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadFeature:1535] Setting telemetry callback for deepdvc [schema 3.0+]
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:965ms:848us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadFeature:1540] Setting override status callback for deepdvc
+
+
+ODS [00-06-34][streamline][info][tid:43188][41s:966ms:121us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXContextDenyListData::IsFeatureDenied:666] Feature dlssd, denial value 0 for Cms ID 9eb5f707
+
+
+MODULE base=00007FFF2AB10000 file=<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx_dlssd.dll
+ODS [00-06-34][streamline][info][tid:43188][42s:056ms:858us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXLoadLibrary:34] Loaded NGXCore from path (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlssd.dll)
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:057ms:689us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1490] Validating snippet <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\/nvngx_dlssd.dll
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:058ms:861us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:059ms:362us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x160
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:059ms:634us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID)
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:060ms:026us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 537.2
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:060ms:327us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXValidateSnippetMetaData:1561] Snippet version : 310.5.0, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:060ms:608us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:071ms:032us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1345] Feature dlssd failed to load (cmsid 18446744072077309703) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\0\files, name: 160_FFFFFFFF9EB5F707.bin)
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:076ms:042us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-34][streamline][info][tid:43188][42s:077ms:239us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:34] [NGXSecureLoadFeature:1345] Feature dlssd failed to load (cmsid 241534723) from cache (location: %PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\0\files, name: 160_E658703.bin)
+
+
+ODS [00-06-37][streamline][info][tid:21876][44s:750ms:552us]ota.cpp:147[execThreadProc] execThreadProc: %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvngx_update.exe -cmsid 0 -feature sl_dlss_g_0 -api update -type dll -gpuarch 0x190 -optional
+
+ODS [00-06-40][streamline][info][tid:43188][47s:631ms:054us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1309] Feature dlssd override enabled
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:710ms:138us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXLoadLibrary:34] Loaded NGXCore from path (%PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files/160_E658700.bin)
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:710ms:554us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1490] Validating snippet %PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files/160_E658700.bin
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:710ms:962us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1492] NGX CORE API version : 0x15, Snippet requires at least : 0x13
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:718ms:712us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1494] GPU architecture : 0x190, Snippet expects at least : 0x160
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:719ms:513us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1508] Driver support flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID), Snippet required flags : 0xF(SEAMLESS_OTA|LINUX_EXTENDED_DRIVER_VERSIONS|API_SPECIFIC_POPULATE_PARAMS|REQUIRE_CMSID)
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:721ms:308us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1535] Driver version : 610.88, Snippet expects at least : 537.2
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:722ms:852us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXValidateSnippetMetaData:1561] Snippet version : 310.9.16, Embedded app Id : E658703 (0)
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:724ms:048us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1315] Found dlssd snippet at %PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:724ms:377us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:724ms:999us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1459] app FFFFFFFF9EB5F707 feature dlssd snippet: %PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files/160_E658700.bin version: 310.9.16
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:726ms:715us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXLoadFeature:1535] Setting telemetry callback for dlssd [schema 3.0+]
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:727ms:017us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXLoadFeature:1540] Setting override status callback for dlssd
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:727ms:343us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXContextDenyListData::IsFeatureDenied:666] Feature truehdr, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:727ms:614us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:727ms:905us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:728ms:204us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_truehdr.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:728ms:469us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXContextDenyListData::IsFeatureDenied:666] Feature latewarp, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:728ms:740us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:729ms:034us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:729ms:310us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_latewarp.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:729ms:597us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXContextDenyListData::IsFeatureDenied:666] Feature vsr, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:729ms:876us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:730ms:153us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:730ms:432us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_vsr.dll doesn't exist in any of the search paths!
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:730ms:718us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXContextDenyListData::IsFeatureDenied:666] Feature fgx, denial value 0 for Cms ID 9eb5f707
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:731ms:074us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:731ms:312us]commonEntry.cpp:1368[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [`anonymous-namespace'::SnippetLocationInfo::load:713] NGXLoadFromPath failed: -1160773628
+
+
+ODS [00-06-40][streamline][info][tid:43188][47s:731ms:580us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:40] [NGXSecureLoadFeature:1247] warning: ModuleName - nvngx_fgx.dll doesn't exist in any of the search paths!
+
+
+MODULE base=00007FF8198F0000 file=%PROGRAMFILES%\NVIDIA Corporation\NvTelemetry\NvTelemetryAPI64.dll
+ODS [00-06-44][streamline][info][tid:43188][51s:841ms:286us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXInitLog:208] App logging hooks successfully initialized
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:841ms:773us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXInitLog:214] Build v310.9.16 CL 38955375
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:842ms:124us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXInitLog:216] Built with APP_NAME = nvapp_override
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:842ms:387us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXInitLog:226] Loaded from path "%PROGRAMDATA%\NVIDIA\NGX\models\dlss\versions\20318480\files/160_E658700.bin" by godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:842ms:656us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][InitCommon:110] m_pDevice: 0x0000000000000000->0x000002B3CA8DFD60
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:842ms:931us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinD3D12::Init:135] Enabling texmode_raw
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:843ms:449us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinD3D12::Init:147] Enabling CuModule kernel path (load fatbin once, resolve entry points)
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:843ms:960us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinD3D12::Init:152] Build - PRODUCTION
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:844ms:372us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinD3D12::Init:156] GPU nodes 1 - visible node mask 1
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:844ms:805us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinKernelMap::InitCubins:42] Loading NGXCubin kernels
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:847ms:049us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinGeneric::SetGPUArch:413] SetGPUArch:: Gpu count = 1, luid: 0x1a075
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:858ms:877us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinGeneric::SetGPUArch:473] m_gpuArch = 0x190
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:864ms:343us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXCubinGeneric::genericPostInit:164] Fast UAV clear: supported
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:864ms:678us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLAA Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:864ms:970us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLSS Debug Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:865ms:296us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLTSS Engine Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:865ms:581us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLTSS NW Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:865ms:869us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLTSS NW E5M3_SKIP Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:866ms:126us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DLSSCubinKernelMap::InitCubins:303] Setting DLTSS NW Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:866ms:364us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][DldnCubinKernelMap::InitCubins:138] Setting DLDN Engine Pre / Post Cubins
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:867ms:319us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXDLAA::ReadValuesFromDRS:1732] Using global override for DLSS-SR mode
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:867ms:592us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXDLAA::ReadValuesFromDRS:1762] Info: Reading NGX_DLSS_MODE_ID from DRS, value = 3
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:870ms:403us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXDLAA::ReadValuesFromDRS:1791] Using global override for DLSS-SR preset
+
+
+ODS [00-06-44][streamline][info][tid:43188][51s:870ms:715us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:44] [tid:43188][NGXDLAA::ReadValuesFromDRS:1827] Info: Reading NGX_OVERRIDE_RENDER_PRESET_SELECTION from DRS, value = 16777215
+
+
+MODULE base=00007FFFCEA00000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvcuda64.dll
+MODULE base=00007FFFF8D30000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvdxgdmal64.dll
+MODULE base=00007FFFE2430000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvobjectloader64.dll
+ODS [00-06-45][streamline][info][tid:43188][52s:564ms:248us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:45] [tid:43188][NGXDLAA::Init:207] Device 0xca8dfd60
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:564ms:836us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [GetSystemInfo:985] Detected Windows Version 10.0.19041.7725
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:568ms:469us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:302] Sending Telemetry Init Data
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:569ms:302us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:303] appExeName = 190_E658703.dll
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:569ms:709us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:304] drsProfileName = 
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:570ms:064us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:305] drsName = 
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:570ms:320us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:307] AppIdType = CMS_ID
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:570ms:609us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:308] ProjectId = 
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:570ms:873us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:309] EngineVersion = 
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:571ms:131us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:310] EngineType = 
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:571ms:383us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:311] cmsId = 18446744071844163588
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:571ms:650us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:312] featureType = SuperSampling
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:572ms:023us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:313] gpuDeviceId = 10464
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:572ms:392us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:314] gpuVendorId = 4318
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:572ms:774us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:315] gpuSubSys = 429723715
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:573ms:170us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:316] gpuRev = 161
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:573ms:574us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:317] ngxSDKVersion = 1.5
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:573ms:896us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:318] ngxCoreVersion = 1.4.0.0
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:574ms:287us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:319] ngxFeatureVersion = 310.9.16
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:574ms:585us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:320] displayDriverVersion = 610.88
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:574ms:926us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:321] osVersion = 10.0.19041.7725
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:575ms:280us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:322] APIType = 0
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:575ms:677us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:323] FeatureInitResult = NvNGXFeatureInitSuccess
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:576ms:096us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:324] GpuAPI = 2
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:576ms:514us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:326] StreamlineVersion = 2,14,16,0
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:576ms:894us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:327] StreamlineGitSHA = SHA: b742680bf v2.14.16-rc2
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:577ms:323us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:328] ExeModuleName = godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:577ms:729us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:329] OTAEnabled = 1
+
+
+ODS [00-06-45][streamline][info][tid:43188][52s:578ms:108us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:45] [NGXSendTelemetryInitializeData:335] -- END telemetry init data --
+
+
+MODULE base=00007FFFE85C0000 file=%PROGRAMFILES%\NVIDIA Corporation\NvTelemetry\NvTelemetryBridge64.dll
+ODS [00-06-46][streamline][info][tid:43188][53s:755ms:148us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXInitLog:208] App logging hooks successfully initialized
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:755ms:450us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXInitLog:214] Build v310.9.16 CL 39026150
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:755ms:726us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXInitLog:216] Built with APP_NAME = nvapp_override
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:756ms:005us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXInitLog:226] Loaded from path "%PROGRAMDATA%\NVIDIA\NGX\models\dlssg\versions\20318480\files/160_E658700.bin" by godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:758ms:747us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][DLSSGDRSKeys::ReadValuesFromDRSImpl:70] util::drsReadKey SUCCESS: id 104d6667, value 00000000
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:759ms:654us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][DLSSGDRSKeys::ReadValuesFromDRSImpl:70] util::drsReadKey SUCCESS: id 10e41df1, value 00fffffe
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:760ms:104us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][DLSSGDRSKeys::ReadValuesFromDRSImpl:78] Finished loading values from DRS
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:760ms:410us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinD3D12::Init:135] Enabling texmode_raw
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:760ms:757us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinD3D12::Init:147] Enabling CuModule kernel path (load fatbin once, resolve entry points)
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:761ms:073us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinD3D12::Init:152] Build - PRODUCTION
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:761ms:357us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinD3D12::Init:156] GPU nodes 1 - visible node mask 1
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:761ms:597us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinKernelMap::InitCubins:42] Loading NGXCubin kernels
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:761ms:857us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinGeneric::SetGPUArch:473] m_gpuArch = 0x190
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:762ms:240us]commonEntry.cpp:1368[ngxLog] [FrameGeneration] [2026-10-26 00:06:46] [tid:43188][NGXCubinGeneric::genericPostInit:164] Fast UAV clear: supported
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:762ms:674us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [GetSystemInfo:985] Detected Windows Version 10.0.19041.7725
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:765ms:381us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:302] Sending Telemetry Init Data
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:766ms:010us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:303] appExeName = 190_E658703.dll
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:766ms:557us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:304] drsProfileName = 
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:767ms:041us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:305] drsName = 
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:767ms:612us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:307] AppIdType = CMS_ID
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:768ms:147us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:308] ProjectId = 
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:768ms:669us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:309] EngineVersion = 
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:768ms:962us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:310] EngineType = 
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:769ms:326us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:311] cmsId = 18446744071844163588
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:769ms:594us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:312] featureType = FrameGeneration
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:769ms:839us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:313] gpuDeviceId = 10464
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:770ms:116us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:314] gpuVendorId = 4318
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:770ms:390us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:315] gpuSubSys = 429723715
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:770ms:656us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:316] gpuRev = 161
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:771ms:138us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:317] ngxSDKVersion = 1.5
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:771ms:652us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:318] ngxCoreVersion = 1.4.0.0
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:772ms:625us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:319] ngxFeatureVersion = 310.9.16
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:774ms:930us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:320] displayDriverVersion = 610.88
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:776ms:177us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:321] osVersion = 10.0.19041.7725
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:777ms:290us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:322] APIType = 0
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:778ms:509us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:323] FeatureInitResult = NvNGXFeatureInitSuccess
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:781ms:298us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:324] GpuAPI = 2
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:783ms:254us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:326] StreamlineVersion = 2,14,16,0
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:789ms:231us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:327] StreamlineGitSHA = SHA: b742680bf v2.14.16-rc2
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:794ms:598us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:328] ExeModuleName = godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:805ms:549us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:329] OTAEnabled = 1
+
+
+ODS [00-06-46][streamline][info][tid:43188][53s:807ms:126us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:46] [NGXSendTelemetryInitializeData:335] -- END telemetry init data --
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:652ms:107us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [GetSystemInfo:985] Detected Windows Version 10.0.19041.7725
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:655ms:530us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:302] Sending Telemetry Init Data
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:656ms:168us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:303] appExeName = 190_E658703.dll
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:656ms:432us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:304] drsProfileName = 
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:656ms:763us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:305] drsName = 
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:657ms:034us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:307] AppIdType = CMS_ID
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:657ms:323us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:308] ProjectId = 
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:657ms:608us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:309] EngineVersion = 
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:657ms:876us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:310] EngineType = 
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:658ms:389us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:311] cmsId = 18446744071844163588
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:659ms:093us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:312] featureType = DeepDVC
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:659ms:785us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:313] gpuDeviceId = 10464
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:661ms:134us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:314] gpuVendorId = 4318
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:662ms:815us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:315] gpuSubSys = 429723715
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:664ms:706us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:316] gpuRev = 161
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:668ms:608us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:317] ngxSDKVersion = 1.5
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:669ms:798us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:318] ngxCoreVersion = 1.4.0.0
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:671ms:252us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:319] ngxFeatureVersion = 310.5.0
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:681ms:777us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:320] displayDriverVersion = 610.88
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:684ms:974us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:321] osVersion = 10.0.19041.7725
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:686ms:165us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:322] APIType = 0
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:686ms:855us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:323] FeatureInitResult = NvNGXFeatureInitSuccess
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:688ms:283us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:324] GpuAPI = 2
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:705ms:998us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:326] StreamlineVersion = 2,14,16,0
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:707ms:276us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:327] StreamlineGitSHA = SHA: b742680bf v2.14.16-rc2
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:710ms:427us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:328] ExeModuleName = godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:711ms:343us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:329] OTAEnabled = 1
+
+
+ODS [00-06-50][streamline][info][tid:43188][57s:711ms:965us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:50] [NGXSendTelemetryInitializeData:335] -- END telemetry init data --
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:517ms:922us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXInitLog:208] App logging hooks successfully initialized
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:518ms:392us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXInitLog:214] Build v310.9.16 CL 39061540
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:518ms:924us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXInitLog:216] Built with APP_NAME = app_dlssd_nvapp_override
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:519ms:342us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXInitLog:226] Loaded from path "%PROGRAMDATA%\NVIDIA\NGX\models\dlssd\versions\20318480\files/160_E658700.bin" by godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:519ms:753us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][InitCommon:110] m_pDevice: 0x0000000000000000->0x000002B3CA8DFD60
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:520ms:144us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinD3D12::Init:135] Enabling texmode_raw
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:520ms:499us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinD3D12::Init:147] Enabling CuModule kernel path (load fatbin once, resolve entry points)
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:520ms:918us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinD3D12::Init:152] Build - PRODUCTION
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:521ms:336us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinD3D12::Init:156] GPU nodes 1 - visible node mask 1
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:521ms:764us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinKernelMap::InitCubins:42] Loading NGXCubin kernels
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:522ms:523us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinGeneric::SetGPUArch:413] SetGPUArch:: Gpu count = 1, luid: 0x1a075
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:533ms:380us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinGeneric::SetGPUArch:473] m_gpuArch = 0x190
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:535ms:175us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXCubinGeneric::genericPostInit:164] Fast UAV clear: supported
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:535ms:455us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][DLSSCubinKernelMap::InitCubins:208] Setting DLSS Base Cubins for standalone RR
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:535ms:731us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][DldnCubinKernelMap::InitCubins:156] Setting DLDN Engine Pre / Post Cubins
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:535ms:994us]commonEntry.cpp:1368[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][DldnCubinKernelMap::InitCubins:188] Setting DLDN Engine Pre / Post Cubins
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:537ms:097us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXDLSSD::ReadValuesFromDRS:1526] Using global override for DLSS-RR preset
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:537ms:364us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXDLSSD::ReadValuesFromDRS:1548] Info: Reading NGX_DLSS_RR_OVERRIDE_RENDER_PRESET_SELECTION from DRS, value = 16777215
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:537ms:980us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXDLSSD::ReadValuesFromDRS:1561] Using global override for DLSS-RR mode
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:538ms:269us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXDLSSD::ReadValuesFromDRS:1591] Info: Reading NGX_DLSS_RR_MODE_ID from DRS, value = 3
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:553ms:845us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:06:54] [tid:43188][NGXDLSSD::Init:184] Device 0xca8dfd60
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:554ms:512us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [GetSystemInfo:985] Detected Windows Version 10.0.19041.7725
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:561ms:257us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:302] Sending Telemetry Init Data
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:563ms:094us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:303] appExeName = 190_E658703.dll
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:564ms:175us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:304] drsProfileName = 
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:564ms:677us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:305] drsName = 
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:565ms:958us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:307] AppIdType = CMS_ID
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:566ms:619us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:308] ProjectId = 
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:572ms:768us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:309] EngineVersion = 
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:575ms:907us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:310] EngineType = 
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:579ms:581us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:311] cmsId = 18446744071844163588
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:580ms:199us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:312] featureType = SuperSamplingDenoising
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:634ms:297us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:313] gpuDeviceId = 10464
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:729ms:483us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:314] gpuVendorId = 4318
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:729ms:941us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:315] gpuSubSys = 429723715
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:730ms:255us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:316] gpuRev = 161
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:730ms:525us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:317] ngxSDKVersion = 1.5
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:730ms:776us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:318] ngxCoreVersion = 1.4.0.0
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:731ms:060us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:319] ngxFeatureVersion = 310.9.16
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:731ms:640us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:320] displayDriverVersion = 610.88
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:745ms:525us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:321] osVersion = 10.0.19041.7725
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:751ms:663us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:322] APIType = 0
+
+
+ODS [00-06-54][streamline][info][tid:43188][61s:965ms:634us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:323] FeatureInitResult = NvNGXFeatureInitSuccess
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:012ms:810us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:324] GpuAPI = 2
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:059ms:501us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:326] StreamlineVersion = 2,14,16,0
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:114ms:778us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:327] StreamlineGitSHA = SHA: b742680bf v2.14.16-rc2
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:117ms:323us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:328] ExeModuleName = godot.windows.editor.x86_64.exe
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:123ms:075us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:329] OTAEnabled = 1
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:124ms:990us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:06:54] [NGXSendTelemetryInitializeData:335] -- END telemetry init data --
+
+
+ODS [00-06-54][streamline][info][tid:43188][62s:134ms:617us]commonEntry.cpp:1694[slOnPluginStartup] NGX loaded - app id 2429579268 - application data path <ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\
+
+ODS [00-06-54][streamline][info][tid:43188][62s:141ms:628us]commonEntry.cpp:1754[slOnPluginStartup] At least one plugin requires DRS, trying to initialize ...
+
+ODS [00-06-57][streamline][info][tid:43188][64s:827ms:437us]commonEntry.cpp:1762[slOnPluginStartup] DRS loaded - app id 2429579268
+
+ODS [00-06-57][streamline][info][tid:43188][64s:830ms:902us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.common:slSetData:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:831ms:961us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.common:slGetData:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:834ms:189us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.common:slAllocateResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:834ms:813us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.common:slFreeResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:836ms:404us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.common:slEvaluateFeature:0x7fffa7f3a0c0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:840ms:708us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.common:slSetTag:0x7fffa7f38ba0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:843ms:593us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.common:slSetTagForFrame:0x7fffa7f38d10
+
+ODS [00-06-57][streamline][info][tid:43188][64s:848ms:507us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.common:slSetConsts:0x7fffa7f39ba0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:848ms:920us]pluginManager.cpp:1167[processPluginHooks] Hook sl.common:slHookVkPresent:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:850ms:450us]pluginManager.cpp:1167[processPluginHooks] Hook sl.common:slHookVkAfterPresent:after - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:850ms:867us]pluginManager.cpp:1167[processPluginHooks] Hook sl.common:slHookVkCmdBindPipeline:after - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:851ms:130us]pluginManager.cpp:1167[processPluginHooks] Hook sl.common:slHookVkCmdBindDescriptorSets:after - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:851ms:385us]pluginManager.cpp:1167[processPluginHooks] Hook sl.common:slHookVkBeginCommandBuffer:after - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:851ms:761us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookCreateSwapChain:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:852ms:067us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookCreateSwapChainForHwnd:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:852ms:362us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookCreateSwapChainForCoreWindow:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:852ms:636us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookResizeSwapChainPre:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:852ms:968us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookPresent:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:853ms:335us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookAfterPresent:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:854ms:001us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookPresent1:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:854ms:299us]pluginManager.cpp:1191[processPluginHooks] Hook sl.common:slHookAfterPresent:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:854ms:549us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.pcl:slSetData:0x7fffb013b850
+
+ODS [00-06-57][streamline][info][tid:43188][64s:854ms:824us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.pcl:slGetData:0x7fffb013b860
+
+ODS [00-06-57][streamline][info][tid:43188][64s:855ms:081us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.pcl:slAllocateResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:855ms:355us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.pcl:slFreeResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:855ms:714us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.pcl:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:856ms:009us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.pcl:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:856ms:293us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.pcl:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:856ms:556us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.pcl:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:856ms:823us]pluginManager.cpp:1152[processPluginHooks] Plugin 'sl.pcl' has no registered hooks
+
+ODS [00-06-57][streamline][info][tid:43188][64s:857ms:093us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.reflex:slSetData:0x7fffaf97bae0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:857ms:351us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.reflex:slGetData:0x7fffaf97c450
+
+ODS [00-06-57][streamline][info][tid:43188][64s:857ms:806us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.reflex:slAllocateResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:858ms:177us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.reflex:slFreeResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:861ms:020us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.reflex:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:861ms:569us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.reflex:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:861ms:862us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.reflex:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:862ms:389us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.reflex:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:862ms:705us]pluginManager.cpp:1167[processPluginHooks] Hook sl.reflex:slHookVkCreateSwapchainKHRBefore:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:863ms:012us]pluginManager.cpp:1167[processPluginHooks] Hook sl.reflex:slHookVkCreateSwapchainKHRAfter:after - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:863ms:507us]pluginManager.cpp:1167[processPluginHooks] Hook sl.reflex:slHookVkDestroySwapchainKHRBefore:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:865ms:162us]d3d12.cpp:1339[createKernel] Creating DXBC kernel mvec.cs:main hash 16878813813918631183
+
+ODS [00-06-57][streamline][info][tid:43188][64s:865ms:526us]commonEntry.cpp:1368[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXLoadLibrary:332] error: failed to load NGXCore: 126 (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\_nvngx.dll)
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:865ms:905us]commonEntry.cpp:1368[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXLoadLibrary:332] error: failed to load NGXCore: 126 (<ACCEPTANCE_ROOT>\prebeta-20261026\sdk210\nvngx.dll)
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:866ms:216us]commonEntry.cpp:1369[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXLoadCoreLibrary:253] NGXCore not found next to the application
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:866ms:537us]commonEntry.cpp:1369[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXGetPathUsingQAI:69] Checking for path to NGX using QueryAdapterInfo
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:866ms:937us]commonEntry.cpp:1368[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXGetPathUsingQAI:198] error: no matching adapter found
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:867ms:214us]commonEntry.cpp:1369[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXGetPathFromRegistry:47] Trying registry key NGXPath in System\CurrentControlSet\Services\nvlddmkm\Parameters\NGXCore
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:867ms:533us]commonEntry.cpp:1369[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXGetPathFromRegistry:54] Found registry key NGXPath in System\CurrentControlSet\Services\nvlddmkm\Parameters\NGXCore
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:870ms:351us]commonEntry.cpp:1369[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXLoadLibrary:328] Loaded NGXCore from path (%SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\_nvngx.dll)
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:870ms:742us]commonEntry.cpp:1368[ngxLog] [Unknown(32764)] [2026-10-26 00:06:57] [NGXLoadCoreLibrary:285] Loading %SYSTEMROOT%\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\_nvngx.dll succeeded
+
+
+ODS [00-06-57][streamline][info][tid:43188][64s:871ms:053us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.dlss:slSetData:0x7fffa7ecc770
+
+ODS [00-06-57][streamline][info][tid:43188][64s:871ms:376us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.dlss:slGetData:0x7fffa7ed0ee0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:871ms:819us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.dlss:slAllocateResources:0x7fffa7ed1670
+
+ODS [00-06-57][streamline][info][tid:43188][64s:873ms:004us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.dlss:slFreeResources:0x7fffa7ed1710
+
+ODS [00-06-57][streamline][info][tid:43188][64s:874ms:711us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.dlss:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:875ms:641us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.dlss:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:876ms:690us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.dlss:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:877ms:026us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.dlss:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:877ms:297us]pluginManager.cpp:1152[processPluginHooks] Plugin 'sl.dlss' has no registered hooks
+
+ODS [00-06-57][streamline][warn][tid:43188][64s:877ms:577us]d3d12.cpp:1354[createKernel] Kernel mvec.cs:main with hash 0xea3d97bc6893850f already created!
+
+ODS [00-06-57][streamline][info][tid:43188][64s:877ms:864us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.dlss_d:slSetData:0x7fffa7e5c750
+
+ODS [00-06-57][streamline][info][tid:43188][64s:878ms:205us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.dlss_d:slGetData:0x7fffa7e63c50
+
+ODS [00-06-57][streamline][info][tid:43188][64s:878ms:489us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.dlss_d:slAllocateResources:0x7fffa7e643e0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:878ms:820us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.dlss_d:slFreeResources:0x7fffa7e64480
+
+ODS [00-06-57][streamline][info][tid:43188][64s:879ms:103us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.dlss_d:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:879ms:355us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.dlss_d:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:879ms:615us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.dlss_d:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:879ms:929us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.dlss_d:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:880ms:231us]pluginManager.cpp:1152[processPluginHooks] Plugin 'sl.dlss_d' has no registered hooks
+
+ODS [00-06-57][streamline][info][tid:43188][64s:880ms:484us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V0_H0.cs6:main hash 17332320951983131740
+
+ODS [00-06-57][streamline][info][tid:43188][64s:880ms:766us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V0_H1.cs6:main hash 2711106042373488800
+
+ODS [00-06-57][streamline][info][tid:43188][64s:881ms:119us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V0_H2.cs6:main hash 1745129761335468163
+
+ODS [00-06-57][streamline][info][tid:43188][64s:881ms:412us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V1_H0.cs6:main hash 6874341505130304577
+
+ODS [00-06-57][streamline][info][tid:43188][64s:881ms:699us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V1_H1.cs6:main hash 7377035369503007491
+
+ODS [00-06-57][streamline][info][tid:43188][64s:881ms:979us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Sharpen_V1_H2.cs6:main hash 7142365751098968885
+
+ODS [00-06-57][streamline][info][tid:43188][64s:882ms:251us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V0_H0.cs6:main hash 5315391162370979853
+
+ODS [00-06-57][streamline][info][tid:43188][64s:882ms:520us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V0_H1.cs6:main hash 7964455873098179660
+
+ODS [00-06-57][streamline][info][tid:43188][64s:882ms:866us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V0_H2.cs6:main hash 5949344629209253909
+
+ODS [00-06-57][streamline][info][tid:43188][64s:883ms:182us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V1_H0.cs6:main hash 7744823992464207557
+
+ODS [00-06-57][streamline][info][tid:43188][64s:883ms:513us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V1_H1.cs6:main hash 13756369491391696651
+
+ODS [00-06-57][streamline][info][tid:43188][64s:883ms:813us]d3d12.cpp:1339[createKernel] Creating DXBC kernel NIS_Scaler_V1_H2.cs6:main hash 52492590267169677
+
+ODS [00-06-57][streamline][info][tid:43188][64s:884ms:221us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.nis:slSetData:0x7fffa756b940
+
+ODS [00-06-57][streamline][info][tid:43188][64s:884ms:552us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.nis:slGetData:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:884ms:827us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.nis:slAllocateResources:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:885ms:086us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.nis:slFreeResources:0x7fffa75705a0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:885ms:345us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.nis:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:892ms:402us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.nis:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:893ms:353us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.nis:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:894ms:280us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.nis:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:895ms:221us]pluginManager.cpp:1152[processPluginHooks] Plugin 'sl.nis' has no registered hooks
+
+ODS [00-06-57][streamline][info][tid:43188][64s:896ms:411us]dlfgDrs.cpp:41[readSingleDRSKey] Read DRS key 273507943 = 0x0 from global profile
+
+ODS [00-06-57][streamline][info][tid:43188][64s:896ms:781us]dlfgDrs.cpp:41[readSingleDRSKey] Read DRS key 11041231 = 0x60925292 from global profile
+
+ODS [00-06-57][streamline][info][tid:43188][64s:897ms:098us]dlss_gEntry.cpp:1440[slOnPluginStartup] Host SDK version: 2.10.0, platform: D3D12 (VSync with FG: supported)
+
+ODS [00-06-57][streamline][info][tid:43188][64s:897ms:364us]dlfg.cpp:1042[checkModelVersion] ModelVersion parameter indicates FG v2 or later (0x200)
+
+ODS [00-06-57][streamline][info][tid:43188][64s:897ms:643us]dlss_gEntry.cpp:1504[slOnPluginStartup] Multi-frame not supported, max generated frames 1 (SL Plugin supports 5, NGX feature supports 1)
+
+ODS [00-06-57][streamline][info][tid:43188][64s:897ms:900us]flipMetering.cpp:68[initialize] pfnNvAPI_SetFlipConfig API available
+
+ODS [00-06-57][streamline][info][tid:43188][64s:898ms:148us]flipMetering.cpp:83[initialize] Driver reports SetFlipConfig V2 support
+
+ODS [00-06-57][streamline][info][tid:43188][64s:898ms:411us]dlfg.cpp:165[checkDynamicMFGSupport] Dynamic MFG not supported: multi-frame not available
+
+ODS [00-06-57][streamline][info][tid:43188][64s:898ms:698us]pluginManager.cpp:1385[mapPluginCallbacks] Callback sl.dlss_g:slSetData:0x7fffa8b48340
+
+ODS [00-06-57][streamline][info][tid:43188][64s:898ms:938us]pluginManager.cpp:1386[mapPluginCallbacks] Callback sl.dlss_g:slGetData:0x7fffa8b47b00
+
+ODS [00-06-57][streamline][info][tid:43188][64s:899ms:195us]pluginManager.cpp:1387[mapPluginCallbacks] Callback sl.dlss_g:slAllocateResources:0x7fffa8b48980
+
+ODS [00-06-57][streamline][info][tid:43188][64s:899ms:434us]pluginManager.cpp:1388[mapPluginCallbacks] Callback sl.dlss_g:slFreeResources:0x7fffa8b48b30
+
+ODS [00-06-57][streamline][info][tid:43188][64s:899ms:679us]pluginManager.cpp:1389[mapPluginCallbacks] Callback sl.dlss_g:slEvaluateFeature:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:899ms:909us]pluginManager.cpp:1390[mapPluginCallbacks] Callback sl.dlss_g:slSetTag:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:900ms:195us]pluginManager.cpp:1391[mapPluginCallbacks] Callback sl.dlss_g:slSetTagForFrame:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:900ms:459us]pluginManager.cpp:1392[mapPluginCallbacks] Callback sl.dlss_g:slSetConsts:0x0
+
+ODS [00-06-57][streamline][info][tid:43188][64s:900ms:692us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkPresent:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:900ms:964us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkCreateSwapchainKHR:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:901ms:260us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkDestroySwapchainKHR:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:901ms:519us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkGetSwapchainImagesKHR:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:901ms:776us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkAcquireNextImageKHR:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:902ms:046us]pluginManager.cpp:1167[processPluginHooks] Hook sl.dlss_g:slHookVkDeviceWaitIdle:before - skipped
+
+ODS [00-06-57][streamline][info][tid:43188][64s:902ms:358us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookCreateSwapChainForCoreWindow:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:902ms:667us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookCreateSwapChainForHwnd:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:902ms:917us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookCreateSwapChain:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:903ms:161us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookPresent:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:903ms:464us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookPresent1:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:903ms:704us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookGetDescPost:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:904ms:087us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookResizeSwapChainPre:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:904ms:340us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookResizeSwapChainPost:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:904ms:606us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookResize1SwapChainPre:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:904ms:870us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookResize1SwapChainPost:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:905ms:109us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookGetBuffer:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:905ms:360us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookGetCurrentBackBufferIndex:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:905ms:622us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookSetFullscreenStatePre:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:905ms:853us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookSetFullscreenStatePost:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:906ms:104us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookSwapChainDestroyed:before - OK
+
+ODS [00-06-57][streamline][info][tid:43188][64s:906ms:378us]pluginManager.cpp:1191[processPluginHooks] Hook sl.dlss_g:slHookCreateCommandQueue:after - OK
+
+ODS [00-06-57][streamline][info][tid:43188][65s:036ms:139us]d3d12Device.cpp:341[checkAndUpgradeInterface] Upgraded ID3D12Device v0 to v1
+
+ODS [00-06-57][streamline][info][tid:43188][65s:036ms:458us]d3d12Device.cpp:341[checkAndUpgradeInterface] Upgraded ID3D12Device v1 to v4
+
+ODS [00-06-57][streamline][info][tid:43188][65s:036ms:728us]d3d12Device.cpp:341[checkAndUpgradeInterface] Upgraded ID3D12Device v4 to v8
+
+ODS [00-06-57][streamline][info][tid:43188][65s:115ms:829us]d3d12Device.cpp:479[CreateCommandList] Command list state tracking disabled, not using D3D12GraphicsCommandList proxy for optimal performance
+
+MODULE base=00007FFFEF700000 file=%SYSTEMROOT%\System32\XInput1_4.dll
+EXCEPTION code=0x406d1388 first=1
+EXCEPTION code=0x406d1388 first=1
+MODULE base=00007FF81ED40000 file=%SYSTEMROOT%\System32\TextInputFramework.dll
+MODULE base=00007FF819E00000 file=%SYSTEMROOT%\System32\oleacc.dll
+MODULE base=00007FF828E40000 file=%SYSTEMROOT%\System32\MMDevAPI.dll
+MODULE base=00007FF8290D0000 file=%SYSTEMROOT%\System32\AudioSes.dll
+MODULE base=00007FF82D1B0000 file=%SYSTEMROOT%\System32\ResourcePolicyClient.dll
+MODULE base=00007FF82E370000 file=%SYSTEMROOT%\System32\d3d11.dll
+MODULE base=00007FF81A970000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdxx64.dll
+MODULE base=00007FF821DA0000 file=%SYSTEMROOT%\System32\atidxx64.dll
+MODULE base=00000000727E0000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdenc64.dll
+MODULE base=00007FF821D50000 file=%SYSTEMROOT%\System32\DriverStore\FileRepository\u0201164.inf_amd64_56e26dabda1a22f9\B026083\amdihk64.dll
+ODS [00-07-31][streamline][info][tid:43188][99s:026ms:928us]dlfgSwapchain.cpp:202[linkSwapchainToCmdQueue] Created swap-chain 0x2b3e9fb7e40 (640,360) - buffers 2 (requested 3) - vsync 0
+
+ODS [00-07-31][streamline][info][tid:43188][99s:028ms:753us]rsync.cpp:835[init] RSYNC: Init.
+
+ODS [00-07-31][streamline][info][tid:43188][99s:069ms:239us]dlfgSwapchain.cpp:86[cloneFakeBuffers] cloneFakeBuffers: ENTRY - width=640, height=360, format=28, bufferCount=2, isHybridGPU=0, swapchain=000002B3E9FB7E40
+
+ODS [00-07-31][streamline][info][tid:43188][99s:069ms:551us]generic.cpp:717[manageVRAM] vram alloc [sl.dlss_g 1 0.0MB usage:0.00GB budget:0.00GB] resource 0x2b3e754cf50 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-31][streamline][info][tid:43188][99s:069ms:904us]generic.cpp:717[manageVRAM] vram alloc [sl.dlss_g 2 1.0MB usage:0.00GB budget:0.00GB] resource 0x2b3e82ad0c0 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-31][streamline][info][tid:43188][99s:070ms:199us]generic.cpp:717[manageVRAM] vram alloc [sl.dlss_g 3 2.0MB usage:0.00GB budget:0.00GB] resource 0x2b3efa9fcd0 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-31][streamline][info][tid:43188][99s:070ms:652us]generic.cpp:717[manageVRAM] vram alloc [sl.dlss_g 4 3.0MB usage:0.00GB budget:0.00GB] resource 0x2b3efaa1140 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-31][streamline][info][tid:43188][99s:071ms:334us]generic.cpp:717[manageVRAM] vram alloc [sl.dlss_g 5 4.0MB usage:0.00GB budget:0.00GB] resource 0x2b3efaa1da0 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-31][streamline][info][tid:43188][99s:079ms:055us]dxgiSwapchain.cpp:95[checkAndUpgradeInterface] Upgraded IDXGISwapChain v0 to v3
+
+ODS [00-07-32][streamline][info][tid:43188][99s:248ms:479us]dlfgPresent.cpp:920[presentCommon] Present() is called on the thread 43188.
+
+ODS [00-07-32][streamline][info][tid:43188][99s:250ms:745us]swapChainData.cpp:514[throttleFlipQueue] SetMaximumFrameLatency changed from 0 to 1.
+
+MODULE base=00007FFFBF840000 file=%SYSTEMROOT%\System32\DataExchange.dll
+MODULE base=00007FFFE9C90000 file=%PROGRAMFILES%\3Dconnexion\3DxWare\3DxWinCore\SiFocusHook.dll
+ODS [00-07-37][streamline][info][tid:43188][104s:871ms:695us]commonInterface.cpp:626[presentCommon] Total VRAM used: 0.07 GB
+
+EXCEPTION code=0x406d1388 first=1
+ODS [00-07-37][streamline][info][tid:43188][104s:882ms:688us]commonInterface.cpp:626[presentCommon] Total VRAM used: 0.08 GB
+
+ODS [00-07-37][streamline][info][tid:43188][104s:914ms:304us]rsync.cpp:539[checkGsyncAndVsync] RSYNC: GSYNC FS OFF is 1, VSync enabled is 0, DRS VSync mode is App-Controlled, fullscreen iFlip is 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:722ms:821us]dlss_gEntry.cpp:680[slHookSwapChainDestroyed] Destroying swap-chain 0x2971747974720
+
+ODS [00-07-38][streamline][info][tid:43188][105s:724ms:769us]dlfgPresent.cpp:2105[flushAll] Flushing all worker queues ...
+
+ODS [00-07-38][streamline][info][tid:43188][105s:725ms:062us]rsync.cpp:746[flushLocked] RSYNC: Flush.
+
+ODS [00-07-38][streamline][info][tid:43188][105s:730ms:893us]generic.cpp:717[manageVRAM] vram free [sl.dlss_g 4 3.0MB usage:0.00GB budget:7.00GB] resource 0x2b3e754cf50 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-38][streamline][info][tid:43188][105s:731ms:216us]generic.cpp:717[manageVRAM] vram free [sl.dlss_g 3 2.0MB usage:0.00GB budget:7.00GB] resource 0x2b3e82ad0c0 [640:360:eFormatRGBA8UN] - 'Unknown'
+
+ODS [00-07-38][streamline][info][tid:43188][105s:731ms:521us]generic.cpp:717[manageVRAM] vram free [sl.dlss_g 2 1.0MB usage:0.00GB budget:7.00GB] resource 0x2b3efa9fcd0 [640:360:eFormatRGBA8UN] - 'nv.sl.dlss_g.tex2d.fake-swapchain-buffer'
+
+ODS [00-07-38][streamline][info][tid:43188][105s:731ms:869us]generic.cpp:717[manageVRAM] vram free [sl.dlss_g 1 0.0MB usage:0.00GB budget:7.00GB] resource 0x2b3efaa1140 [640:360:eFormatRGBA8UN] - 'nv.sl.dlss_g.tex2d.fake-swapchain-buffer'
+
+ODS [00-07-38][streamline][info][tid:43188][105s:732ms:234us]generic.cpp:717[manageVRAM] vram free [sl.dlss_g 0 0.0MB usage:0.00GB budget:7.00GB] resource 0x2b3efaa1da0 [640:360:eFormatRGBA8UN] - 'nv.sl.dlss_g.tex2d.fake-swapchain-buffer'
+
+ODS [00-07-38][streamline][info][tid:43188][105s:732ms:839us]generic.cpp:962[collectGarbage] Destroyed 0x2b3efa9e980(Unknown) - scheduled at frame 32 - finished frame 32 - forced yes - ref count 2
+
+ODS [00-07-38][streamline][info][tid:43188][105s:733ms:465us]generic.cpp:962[collectGarbage] Destroyed 0x2b3efa9eb20(Unknown) - scheduled at frame 32 - finished frame 32 - forced yes - ref count 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:733ms:742us]generic.cpp:962[collectGarbage] Destroyed 0x2b3efa9ece0(nv.sl.dlss_g.tex2d.fake-swapchain-buffer) - scheduled at frame 32 - finished frame 32 - forced yes - ref count 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:734ms:243us]generic.cpp:962[collectGarbage] Destroyed 0x2b3efa9e720(nv.sl.dlss_g.tex2d.fake-swapchain-buffer) - scheduled at frame 32 - finished frame 32 - forced yes - ref count 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:734ms:695us]generic.cpp:962[collectGarbage] Destroyed 0x2b3efa9e7c0(nv.sl.dlss_g.tex2d.fake-swapchain-buffer) - scheduled at frame 32 - finished frame 32 - forced yes - ref count 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:864ms:194us]dxgiSwapchain.cpp:207[Release] Destroyed DXGISwapChain proxy 0x2b3efa9e380 - native swap-chain 0x2b3e9fb7e40 ref count 0
+
+ODS [00-07-38][streamline][info][tid:43188][105s:904ms:862us]pluginManager.cpp:1103[unloadPlugins] Unloading all plugins ...
+
+ODS [00-07-38][streamline][info][tid:43188][105s:906ms:126us]plugin.cpp:344[onShutdown] Shutting down plugin sl.dlss_g
+
+ODS [00-07-38][streamline][info][tid:43188][105s:906ms:512us]rsync.cpp:808[shutdown] RSYNC: Shutting down.
+
+ODS [00-07-38][streamline][info][tid:43188][105s:907ms:144us]rsync.cpp:746[flushLocked] RSYNC: Flush.
+
+ODS [00-07-38][streamline][info][tid:43188][105s:957ms:264us]plugin.cpp:344[onShutdown] Shutting down plugin sl.nis
+
+ODS [00-07-38][streamline][info][tid:43188][105s:959ms:297us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V0_H2.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:959ms:794us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V0_H0.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:960ms:365us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V0_H1.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:960ms:805us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V1_H2.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:961ms:390us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V1_H0.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:961ms:785us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Sharpen_V1_H1.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:962ms:719us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V0_H0.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:963ms:105us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V0_H1.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:963ms:608us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V0_H2.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:964ms:344us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V1_H0.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:965ms:316us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V1_H1.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:965ms:993us]d3d12.cpp:1375[destroyKernel] Destroying kernel NIS_Scaler_V1_H2.cs6
+
+ODS [00-07-38][streamline][info][tid:43188][105s:966ms:395us]plugin.cpp:344[onShutdown] Shutting down plugin sl.dlss_d
+
+ODS [00-07-38][streamline][info][tid:43188][105s:966ms:768us]d3d12.cpp:1382[destroyKernel] Destroying kernel mvec.cs doesn't really happen since other contexts still refer to it. Decreasing refcounter to 1
+
+ODS [00-07-38][streamline][info][tid:43188][105s:967ms:264us]plugin.cpp:344[onShutdown] Shutting down plugin sl.dlss
+
+ODS [00-07-38][streamline][info][tid:43188][105s:967ms:670us]d3d12.cpp:1375[destroyKernel] Destroying kernel mvec.cs
+
+ODS [00-07-38][streamline][info][tid:43188][105s:968ms:078us]plugin.cpp:344[onShutdown] Shutting down plugin sl.reflex
+
+ODS [00-07-38][streamline][info][tid:43188][105s:968ms:523us]plugin.cpp:344[onShutdown] Shutting down plugin sl.pcl
+
+ODS [00-07-38][streamline][info][tid:43188][105s:968ms:991us]commonEntry.cpp:1872[slOnPluginShutdown] Shutting down NGX
+
+ODS [00-07-38][streamline][info][tid:43188][105s:969ms:380us]commonEntry.cpp:1369[ngxLog] [Unknown(32765)] [2026-10-26 00:07:38] [NGXSendTelemetryShutdownData:958] Sending Telemetry Shutdown Data
+
+
+ODS [00-07-38][streamline][info][tid:43188][105s:969ms:772us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:07:38] [tid:43188][NGXCubinGeneric::Shutdown:281] Delayed destroy resource list count 0
+
+
+ODS [00-07-40][streamline][info][tid:43188][107s:704ms:257us]commonEntry.cpp:1369[ngxLog] [FrameGeneration] [2026-10-26 00:07:40] [tid:43188][NGXCubinGeneric::Shutdown:281] Delayed destroy resource list count 0
+
+
+ODS [00-07-42][streamline][info][tid:43188][109s:728ms:196us]commonEntry.cpp:1369[ngxLog] [SuperSampling] [2026-10-26 00:07:42] [tid:43188][NGXCubinGeneric::Shutdown:281] Delayed destroy resource list count 0
+
+
+ODS [00-07-48][streamline][info][tid:43188][115s:972ms:191us]plugin.cpp:344[onShutdown] Shutting down plugin sl.common
+
+ODS [00-07-48][streamline][info][tid:43188][115s:972ms:917us]d3d12.cpp:1375[destroyKernel] Destroying kernel copy_to_buffer.cs
+
+ODS [00-07-48][streamline][info][tid:43188][115s:973ms:413us]generic.cpp:360[shutdown] Delayed destroy resource list count 0
+
+ODS [00-07-49][streamline][info][tid:43188][117s:049ms:538us]d3d12Device.cpp:396[Release] Destroyed D3D12Device proxy 0x2b3ca655db0 - native device 0x2b3ca8dfd60 ref count 0
+
+EXIT code=0

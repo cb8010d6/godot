@@ -1,0 +1,94 @@
+[
+  {
+    "label": "prebeta-sdk210-normal",
+    "old_engine_sha": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+    "actual_engine": {
+      "build": "custom_build",
+      "hash": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "dev",
+      "string": "4.8-dev (custom_build)",
+      "timestamp": 1791819422
+    },
+    "binary_sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f",
+    "runtime": "sdk210",
+    "validation": false,
+    "exit_code": 0,
+    "actual_backend": "d3d12",
+    "create_errors": [],
+    "core_layer_mismatch": [],
+    "d3d12_module_loads": [
+      "MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\\System32\\D3D12.dll",
+      "MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\\System32\\D3D12.dll",
+      "MODULE base=00007FFF34250000 file=%SYSTEMROOT%\\System32\\D3D12Core.dll"
+    ]
+  },
+  {
+    "label": "prebeta-sdk210-validation",
+    "old_engine_sha": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+    "actual_engine": {
+      "build": "custom_build",
+      "hash": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "dev",
+      "string": "4.8-dev (custom_build)",
+      "timestamp": 1791819422
+    },
+    "binary_sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f",
+    "runtime": "sdk210",
+    "validation": true,
+    "exit_code": 0,
+    "actual_backend": "vulkan",
+    "create_errors": [
+      "0x80070057."
+    ],
+    "core_layer_mismatch": [
+      "ODS D3D Error 887e0003: (49668@96148906) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll.",
+      "ODS D3D Error 887e0003: (49668@96149562) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll.",
+      "ODS D3D Error 887e0003: (49668@96163109) at 00007FFF3425FAE5 - D3D12 SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll."
+    ],
+    "d3d12_module_loads": [
+      "MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\\System32\\D3D12.dll",
+      "MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\\System32\\D3D12.dll",
+      "MODULE base=00007FFF34250000 file=%SYSTEMROOT%\\System32\\D3D12Core.dll",
+      "MODULE base=00007FFF6F970000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\d3d12SDKLayers.dll",
+      "MODULE base=00007FFF6F970000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\d3d12SDKLayers.dll",
+      "MODULE base=00007FFF6F970000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\d3d12SDKLayers.dll"
+    ]
+  },
+  {
+    "label": "prebeta-no-sl-validation",
+    "old_engine_sha": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+    "actual_engine": {
+      "build": "custom_build",
+      "hash": "25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "dev",
+      "string": "4.8-dev (custom_build)",
+      "timestamp": 1791819422
+    },
+    "binary_sha256": "025988ce6833015b2cbebc2ad36fbe00ada405420f0d30d71bc3559ace2c1b8f",
+    "runtime": "no-sl",
+    "validation": true,
+    "exit_code": 0,
+    "actual_backend": "d3d12",
+    "create_errors": [],
+    "core_layer_mismatch": [],
+    "d3d12_module_loads": [
+      "MODULE base=00007FFF6A0D0000 file=%SYSTEMROOT%\\System32\\D3D12.dll",
+      "MODULE base=00007FFF6F980000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\no-sl\\D3D12Core.dll",
+      "MODULE base=00007FFF6E420000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\d3d12SDKLayers.dll",
+      "MODULE base=00007FFF6E420000 file=<ACCEPTANCE_ROOT>\\prebeta-20261026\\sdk210\\d3d12SDKLayers.dll",
+      "MODULE base=00007FFF34250000 file=%SYSTEMROOT%\\System32\\D3D12Core.dll"
+    ]
+  }
+]

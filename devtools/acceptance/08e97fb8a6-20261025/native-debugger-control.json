@@ -1,0 +1,38 @@
+{
+  "command": [
+    "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+    "<ACCEPTANCE_ROOT>\\logs\\native-debugger-control.debug.log",
+    "<ACCEPTANCE_ROOT>\\preset_checks.exe"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "5ee9e26b539ee60158bf13a7bc44919aa95541d8",
+  "command_input_binaries": [
+    {
+      "file": "<ACCEPTANCE_ROOT>\\debug_capture.exe",
+      "bytes": 58368,
+      "sha256": "1e6778b3bc98b9ebcaad14a97e6264696d1d581beefaf46ae3be392b87beb8a3"
+    },
+    {
+      "file": "<ACCEPTANCE_ROOT>\\preset_checks.exe",
+      "bytes": 16896,
+      "sha256": "ce2a943670f428d28d92d43f1a6e97dafa2522aadddf785abda30d12f8e3d7e3"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T12:20:27.976898+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\native-debugger-control.log",
+  "pid": 49808,
+  "exit_code": 0,
+  "duration_seconds": 0.078,
+  "finished_utc": "2026-10-25T12:20:28.036838+00:00"
+}

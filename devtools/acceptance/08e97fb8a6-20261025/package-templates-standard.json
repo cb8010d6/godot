@@ -1,0 +1,28 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/package/package_templates_win64.ps1"
+  ],
+  "cwd": "<SOURCE_ROOT>",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<TOOLCHAIN_ROOT>\\cache\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:32:27.021257+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\package-templates-standard.log",
+  "pid": 46312,
+  "exit_code": 0,
+  "duration_seconds": 9.016,
+  "finished_utc": "2026-10-25T11:32:36.033390+00:00"
+}

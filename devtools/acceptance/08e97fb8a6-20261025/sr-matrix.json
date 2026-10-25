@@ -1,0 +1,392 @@
+[
+  {
+    "label": "sr-vulkan-recommended-dlaa-1280x720",
+    "backend": "vulkan",
+    "preset": "Recommended",
+    "mode": "dlaa",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-recommended-quality-1280x720",
+    "backend": "vulkan",
+    "preset": "Recommended",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-recommended-balanced-1280x720",
+    "backend": "vulkan",
+    "preset": "Recommended",
+    "mode": "balanced",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-recommended-performance-1280x720",
+    "backend": "vulkan",
+    "preset": "Recommended",
+    "mode": "performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-recommended-ultra_performance-1280x720",
+    "backend": "vulkan",
+    "preset": "Recommended",
+    "mode": "ultra_performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=4 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-k-quality-1280x720",
+    "backend": "vulkan",
+    "preset": "K",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-k-dlaa-1400x600",
+    "backend": "vulkan",
+    "preset": "K",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-k-performance-600x900",
+    "backend": "vulkan",
+    "preset": "K",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-m-quality-1280x720",
+    "backend": "vulkan",
+    "preset": "M",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-m-dlaa-1400x600",
+    "backend": "vulkan",
+    "preset": "M",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-m-performance-600x900",
+    "backend": "vulkan",
+    "preset": "M",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-l-quality-1280x720",
+    "backend": "vulkan",
+    "preset": "L",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-l-dlaa-1400x600",
+    "backend": "vulkan",
+    "preset": "L",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-l-performance-600x900",
+    "backend": "vulkan",
+    "preset": "L",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-vulkan-default-performance-1280x720",
+    "backend": "vulkan",
+    "preset": "?",
+    "mode": "performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=? DLAA=0 Quality=0 Balanced=0 Performance=0 UltraPerformance=0 UltraQuality=0 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-recommended-dlaa-1280x720",
+    "backend": "d3d12",
+    "preset": "Recommended",
+    "mode": "dlaa",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-recommended-quality-1280x720",
+    "backend": "d3d12",
+    "preset": "Recommended",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-recommended-balanced-1280x720",
+    "backend": "d3d12",
+    "preset": "Recommended",
+    "mode": "balanced",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=2 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-recommended-performance-1280x720",
+    "backend": "d3d12",
+    "preset": "Recommended",
+    "mode": "performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-recommended-ultra_performance-1280x720",
+    "backend": "d3d12",
+    "preset": "Recommended",
+    "mode": "ultra_performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=4 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-k-quality-1280x720",
+    "backend": "d3d12",
+    "preset": "K",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-k-dlaa-1400x600",
+    "backend": "d3d12",
+    "preset": "K",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-k-performance-600x900",
+    "backend": "d3d12",
+    "preset": "K",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=K DLAA=11 Quality=11 Balanced=11 Performance=11 UltraPerformance=11 UltraQuality=11 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-m-quality-1280x720",
+    "backend": "d3d12",
+    "preset": "M",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-m-dlaa-1400x600",
+    "backend": "d3d12",
+    "preset": "M",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-m-performance-600x900",
+    "backend": "d3d12",
+    "preset": "M",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=M DLAA=13 Quality=13 Balanced=13 Performance=13 UltraPerformance=13 UltraQuality=13 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-l-quality-1280x720",
+    "backend": "d3d12",
+    "preset": "L",
+    "mode": "quality",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=3 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-l-dlaa-1400x600",
+    "backend": "d3d12",
+    "preset": "L",
+    "mode": "dlaa",
+    "size": "1400x600",
+    "sdk_requests": [
+      "viewport=1 mode=6 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-l-performance-600x900",
+    "backend": "d3d12",
+    "preset": "L",
+    "mode": "performance",
+    "size": "600x900",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=L DLAA=12 Quality=12 Balanced=12 Performance=12 UltraPerformance=12 UltraQuality=12 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  },
+  {
+    "label": "sr-d3d12-default-performance-1280x720",
+    "backend": "d3d12",
+    "preset": "?",
+    "mode": "performance",
+    "size": "1280x720",
+    "sdk_requests": [
+      "viewport=1 mode=1 selection=? DLAA=0 Quality=0 Balanced=0 Performance=0 UltraPerformance=0 UltraQuality=0 result=sl::eOk (active model not queried)"
+    ],
+    "engine_errors": [],
+    "passed_request_and_run": true,
+    "active_model_confirmed": false
+  }
+]

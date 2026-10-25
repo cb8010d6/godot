@@ -1,0 +1,52 @@
+[
+  {
+    "file": "NvBlast.dll",
+    "bytes": 60416,
+    "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+  },
+  {
+    "file": "NvBlastExtAuthoring.dll",
+    "bytes": 823296,
+    "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+  },
+  {
+    "file": "NvBlastExtShaders.dll",
+    "bytes": 37376,
+    "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+  },
+  {
+    "file": "NvBlastGlobals.dll",
+    "bytes": 24064,
+    "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+  },
+  {
+    "file": "nvflow.dll",
+    "bytes": 2066944,
+    "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+  },
+  {
+    "file": "nvflowext.dll",
+    "bytes": 10371072,
+    "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+  },
+  {
+    "file": "PhysXGpu_64.dll",
+    "bytes": 346725888,
+    "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+  },
+  {
+    "file": "RTXAcceptance.exe",
+    "bytes": 80619016,
+    "sha256": "ab3e97f97695b927d8794dc1f1b2dc3c95133d1049a70b989dd65bc13f8c4c66"
+  },
+  {
+    "file": "x86_64/D3D12Core.dll",
+    "bytes": 4821064,
+    "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+  },
+  {
+    "file": "x86_64/d3d12SDKLayers.dll",
+    "bytes": 4932640,
+    "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+  }
+]

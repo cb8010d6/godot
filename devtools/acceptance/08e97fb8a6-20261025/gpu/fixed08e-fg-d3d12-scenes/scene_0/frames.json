@@ -1,0 +1,19 @@
+[
+  {
+    "expected_xy": [
+      480.0,
+      270.0
+    ],
+    "fg_requested": true,
+    "file": "static.png",
+    "frame": 600,
+    "height": 540,
+    "label": "static",
+    "marker_x": 0.0,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "fg",
+    "scale": 0.666666686534882,
+    "width": 960
+  }
+]

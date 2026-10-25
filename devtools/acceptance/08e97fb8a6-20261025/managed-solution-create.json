@@ -1,0 +1,37 @@
+{
+  "command": [
+    "<TOOLCHAIN_ROOT>\\dotnet10\\dotnet.exe",
+    "new",
+    "sln",
+    "--format",
+    "sln",
+    "--name",
+    "ManagedSmoke"
+  ],
+  "cwd": "<ACCEPTANCE_ROOT>\\exports\\managed-project",
+  "checkout_sha": "08e97fb8a6871cfe39f83a24e2a5813936efd208",
+  "command_input_binaries": [
+    {
+      "file": "<TOOLCHAIN_ROOT>\\dotnet10\\dotnet.exe",
+      "bytes": 167208,
+      "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<TOOLCHAIN_ROOT>\\cache\\local",
+    "TEMP": "<TOOLCHAIN_ROOT>\\cache\\tmp",
+    "NUGET_PACKAGES": "<ACCEPTANCE_ROOT>\\nuget",
+    "DOTNET_ROOT": "<TOOLCHAIN_ROOT>\\dotnet10",
+    "CUDA_PATH": "<TOOLCHAIN_ROOT>\\cuda12.8"
+  },
+  "started_utc": "2026-10-25T11:33:32.670623+00:00",
+  "log": "<ACCEPTANCE_ROOT>\\logs\\managed-solution-create.log",
+  "pid": 30548,
+  "exit_code": 0,
+  "duration_seconds": 0.907,
+  "finished_utc": "2026-10-25T11:33:33.581024+00:00"
+}

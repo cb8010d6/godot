@@ -4,6 +4,12 @@ Tested production source: `08e97fb8a6871cfe39f83a24e2a5813936efd208`.
 This is a measured follow-up to `DLSS_4_5_WINDOWS_HANDOFF.md`, not release
 approval. Active DLSS 4.5 model identity remains unconfirmed.
 
+The [full report and evidence archive](acceptance/08e97fb8a6-20261025/REPORT.md)
+contains command receipts, sanitized complete logs, original application PNGs,
+fixture sources and raw/public SHA-256 provenance. The 2026-10-26 supplement
+adds the actual pre-beta controls below. No SDK/runtime or engine binaries
+are included in the archive.
+
 ## Host and build
 
 Windows 10 Pro 19045; RTX 4060 Laptop 8 GB, driver 610.88; Ryzen 9 7940H,
@@ -57,6 +63,8 @@ versions, model-set IDs and rendered images do not establish the resolved
 model. NVIDIA App's statistics setup screen is not activity evidence. Keep
 DLSS 4.5 SR marked unconfirmed until Vulkan and D3D12 running-model/preset
 evidence is retained. See the official NVIDIA FAQ linked in the handoff.
+The user clarified that they had simply not watched the earlier overlay;
+this does not establish that model fields were absent or broken.
 
 ## Vulkan 1.4 controls
 
@@ -120,7 +128,25 @@ without SL and is not a new 2.14-specific interposition regression.
 This is a root-cause control, **not a production compatibility fix**. No Agility
 DLL was deleted or replaced to manufacture success. Selecting a coherent
 legacy runtime/layer pair needs its own change and regression. Diagnostic
-instrumentation remains on a local branch and is not part of release code.
+instrumentation remains on the separate `diagnostic/d3d12-legacy-08e97fb8a6`
+branch and is not part of release code.
+
+### Pre-beta comparison, 2026-10-26
+
+The saved real engine `25f6a147ed8ca36d521638ba2b5fe1715a3cbdaa` was run
+with the same Agility Core/SDKLayers hashes. Its D3D12 driver code and the
+Agility installer are unchanged by the stage-A beta1 merge. SL2.10 ordinary
+startup used D3D12; adding `--gpu-validation` reproduced 0x80070057 and the
+Core/SDKLayers mismatch, followed by Vulkan fallback. The old no-SL factory
+control with validation succeeded in D3D12. This failure therefore exists
+before beta1 in the current dependency environment; it is not a regression
+newly introduced by that merge in these controls.
+
+This reuses saved binaries rather than rebuilding a historical machine state.
+The old SDK cannot honor the new OTA opt-out and its logs include downloaded
+plugin loads. Do not use the old startup control as pure-old-model evidence.
+The [three receipts and debug output](acceptance/08e97fb8a6-20261025/prebeta-comparison.json)
+remain separate from the fixed candidate's SR results.
 
 ## Remaining acceptance
 

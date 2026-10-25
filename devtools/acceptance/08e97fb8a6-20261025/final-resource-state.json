@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-25T12:54:24.4851949Z",
+  "available_memory_gib": 15.08,
+  "ngx_processes": 0,
+  "godot_processes": 2,
+  "c_free_gib": 16.47,
+  "f_free_gib": 117.97,
+  "task_godot_processes": 0,
+  "note": "Aggregate Godot count may include unrelated workspace tasks; no unrelated process was modified."
+}

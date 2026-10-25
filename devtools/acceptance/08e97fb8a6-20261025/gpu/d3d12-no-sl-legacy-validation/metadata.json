@@ -1,0 +1,25 @@
+{
+  "api": "1.4.341",
+  "backend": "vulkan",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "a182f0c9f24411242f18b68aa5d91ece9acb983e",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1792930968
+  },
+  "force_legacy": "1",
+  "frame_count": 30,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime": {
+    "foreground_process_id": 19124.0,
+    "interposer_loaded": false,
+    "process_id": 27088.0,
+    "thread_id": 45568.0
+  }
+}
