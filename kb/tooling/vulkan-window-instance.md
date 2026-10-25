@@ -17,3 +17,10 @@ GWLP_HINSTANCE from the actual HWND. It reports missing ownership instead
 of passing an invalid Vulkan parameter. Build and actual no-SL/SL plus console
 launcher checks are required before declaring this fixed. The existing
 promoted-feature chain is unchanged.
+
+The first implementation at b8d791fa87 failed actual Vulkan startup: the
+registered window class also retained a null instance. The engine fell back
+to D3D12 with exit zero. Those rows are failed Vulkan controls, not successes.
+The revised fallback uses the current application module when both the
+optional supplied instance and GWLP_HINSTANCE are null. Rebuild and repeat
+the requested backend checks; preserve the first failure logs.

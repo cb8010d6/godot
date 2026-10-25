@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-26 (surface fallback correction)
+
+* **Failed and retained**: b8d791fa87's window-class handle can also be null,
+  producing Vulkan startup failure and D3D12 fallback. A zero exit did not
+  pass the backend check. Add the current application module as the final
+  instance source, then rebuild and rerun actual Vulkan controls.
+
 ## 2026-10-26 (Win32 surface validation candidate)
 
 * **Isolated**: the no-SL surface hinstance VUID follows a null optional

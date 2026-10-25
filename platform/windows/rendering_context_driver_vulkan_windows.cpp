@@ -61,6 +61,11 @@ RenderingContextDriver::SurfaceID RenderingContextDriverVulkanWindows::surface_c
 		// The Unicode/console entry point initializes OS_Windows without an
 		// instance. Recover the module that owns the actual window class.
 		create_info.hinstance = reinterpret_cast<HINSTANCE>(GetWindowLongPtrW(wpd->window, GWLP_HINSTANCE));
+		if (create_info.hinstance == nullptr) {
+			// RegisterClass can itself have received a null instance. In that
+			// case the class and window belong to the current application.
+			create_info.hinstance = GetModuleHandleW(nullptr);
+		}
 		ERR_FAIL_NULL_V_MSG(create_info.hinstance, SurfaceID(), "Cannot obtain the Vulkan window's HINSTANCE.");
 	}
 	create_info.hwnd = wpd->window;
