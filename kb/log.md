@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (DLSS ordering reproduction)
+
+* **Measured**: the inherited one-frame output phase defect, with native,
+  FSR2 and render-graph controls. An independent local correction is under
+  test: [DLSS output dependency](/tooling/dlss-output-dependency.md).
+
 ## 2026-10-25 (Windows acceptance in progress)
 
 * **Added**: an opt-out for Streamline OTA during pinned offline validation;

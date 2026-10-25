@@ -1,5 +1,7 @@
 # Tooling
 
+* [DLSS output dependency](/tooling/dlss-output-dependency.md) - local GPU reproduction and independent render-graph correction under test
+
 * [Streamline SDK upgrade validation](/tooling/streamline-sdk-validation.md) - release provenance, shared manifests, API compilation and runtime boundaries
 
 * [DDGI test protocol](/tooling/ddgi-test-protocol.md) - converged comparisons, step response, motion error, flicker spread, cost, a real game level, A/B builds
