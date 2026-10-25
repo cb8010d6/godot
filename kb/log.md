@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (installed Windows packages)
+
+* **Measured**: all four installed-template Debug/Release games exported and
+  ran; self-contained Mono games passed without SDK discovery. Editor package
+  tags now read the actual beta1 status from the binary rather than version.py.
+  [Package version finding](/tooling/windows-package-version.md).
+
 ## 2026-10-25 (Windows test process lifetime)
 
 * **Measured**: delayed NGX updater/console children caused about 11 GiB of
