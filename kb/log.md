@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (D3D12 diagnostic control correction)
+
+* **Corrected**: the legacy-control work order retains D3D12/DXGI loader
+  initialization and uses the actual Error return type. [Finding](/mistakes/d3d12-legacy-control-initialization.md).
+* **Boundary**: documentation only; startup results still require the first
+  failing call and HRESULT with the intended debug settings.
+
 ## 2026-10-25 (DLSS 4.5 SR follow-up)
 
 * **Added**: [DLSS 4.5 SR policy](/tooling/dlss-4.5-super-resolution.md),

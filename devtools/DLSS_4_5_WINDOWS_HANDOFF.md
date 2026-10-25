@@ -186,9 +186,14 @@ with the same Agility files:
 | Streamline 2.10 | Existing interposed legacy path |
 | Streamline 2.14.16 | Existing interposed legacy path |
 
-For the diagnostic-only build, skip `_init_device_factory()` by returning
-`false` at its entry on a separate local branch. Do not delete/replace
-Agility DLLs, and do not submit that diagnostic change as a fix.
+For the diagnostic-only build, retain the initial `LoadLibraryW` calls for
+D3D12, DXGI and optional DComp. In `_init_device_factory()`, insert a temporary
+`return OK;` after those loads and before the factory-selection code. This
+function returns `Error`, not `bool`. Do not return at the function entry:
+that would bypass required DLL initialization and invalidate the control.
+Verify non-null module handles and a null `device_factory` before the normal
+initialization continues. Do not delete/replace Agility DLLs, and do not
+submit this diagnostic change as a fix.
 
 Capture `OutputDebugString` through DebugView/WinDbg at startup: the engine's
 device info queue is installed after creation and misses earlier messages.
