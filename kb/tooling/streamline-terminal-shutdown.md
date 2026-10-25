@@ -83,6 +83,37 @@ The interposer module remains loaded so previously obtained native API
 function tables stay valid. The existing non-null `slInit` sentinel is kept;
 this change does not introduce SDK reinitialization within one process.
 
+# Terminal Vulkan queue wait candidate
+
+Waiting for Godot frame fences does not wait for every queue owned by the
+Vulkan device. In the `d040fbbe7d` validated local-device control, pacer
+semaphores and the real swapchain still reported `05149`/`01282` in the
+terminal path before the SDK shutdown completion message. That message alone
+does not establish which earlier cleanup call issued each native destruction.
+
+The main Vulkan driver now registers a terminal wait callback immediately
+after successful device creation, before subsequent allocator or pipeline
+initialization can fail. Local devices do not register or replace it. SDK
+shutdown consumes the callback and userdata once, invokes it only if SDK
+initialization succeeded, then shuts down the SDK. The callback keeps Vulkan
+types in the Vulkan driver; no RDD virtual interface is added.
+
+The wait resolves `vkDeviceWaitIdle` through the active SL-interposed GDPA,
+preserving `eVulkan_DeviceWaitIdle` before-hooks that can coordinate the
+pacer before the underlying device wait. Bypassing directly to the system
+loader would omit those hooks.[^vulkan-interposer] Missing device or function
+pointers and non-success results, including `VK_ERROR_DEVICE_LOST`, remain
+explicit errors. SDK cleanup still runs after a wait failure, but its `eOk`
+does not produce the ordinary successful-shutdown message or establish idle.
+Verbose start/completion markers distinguish the wait from SDK shutdown.
+
+The pinned DLSS-G guide's section 18 places `waitForIdle()` before releasing
+backbuffers and the swapchain; it does not state that every `slShutdown()`
+must call this exact Vulkan API. The SDK's private pacer wait implementation
+is not established by the public wrapper, so real strict-validation shutdown
+and local-device controls are still required before claiming those VUIDs are
+resolved.[^sdk-lifecycle]
+
 # Verification boundary
 
 At `d040fbbe7d`, the Vulkan local-device after-control completed with exit

@@ -363,12 +363,20 @@ void StreamlineContext::shutdown() {
 	// Consume the entry point before calling the SDK so repeated terminal
 	// cleanup paths cannot shut the process-wide SDK down twice.
 	PFun_slShutdown *shutdown_function = slShutdown;
+	TerminalGPUWaitCallback wait_callback = terminal_gpu_wait_callback;
+	void *wait_userdata = terminal_gpu_wait_userdata;
 	const bool was_initialized = sdk_initialized;
 	slShutdown = nullptr;
+	terminal_gpu_wait_callback = nullptr;
+	terminal_gpu_wait_userdata = nullptr;
 	sdk_initialized = false;
 
+	// Host frame fences do not cover SDK-owned queues. The native backend
+	// supplies the terminal wait without exposing its API types to this class.
+	const bool terminal_wait_succeeded = !was_initialized || wait_callback == nullptr || wait_callback(wait_userdata);
 	sl::Result result = sl::Result::eOk;
 	if (was_initialized) {
+		print_verbose("Streamline SDK shutdown starting after terminal GPU wait.");
 		result = shutdown_function ? shutdown_function() : sl::Result::eErrorMissingOrInvalidAPI;
 	}
 
@@ -418,8 +426,10 @@ void StreamlineContext::shutdown() {
 	publish_frame_generation_status();
 	if (result != sl::Result::eOk) {
 		ERR_PRINT("Failed to shut down Streamline. Result: " + String(result_to_string(result)));
-	} else if (was_initialized) {
+	} else if (was_initialized && terminal_wait_succeeded) {
 		print_verbose("Streamline SDK shutdown completed before native graphics teardown.");
+	} else if (was_initialized) {
+		print_verbose("Streamline SDK shutdown returned eOk after a failed terminal GPU wait; graphics idle is unconfirmed.");
 	}
 }
 

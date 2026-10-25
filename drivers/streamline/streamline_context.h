@@ -38,6 +38,8 @@
 #include <atomic>
 class StreamlineContext {
 public:
+	using TerminalGPUWaitCallback = bool (*)(void *p_userdata);
+
 	// Successful SDK initialization, distinct from loading its entry points.
 	bool sdk_initialized = false;
 
@@ -113,6 +115,10 @@ public:
 	uint64_t get_frame_generation_status_snapshot() const { return frame_generation_snapshot.load(std::memory_order_acquire); }
 
 	static void initialize(bool d3d12);
+	void set_terminal_gpu_wait_callback(TerminalGPUWaitCallback p_callback, void *p_userdata) {
+		terminal_gpu_wait_callback = p_callback;
+		terminal_gpu_wait_userdata = p_userdata;
+	}
 	// Terminal only: call after host rendering is drained, before native teardown.
 	void shutdown();
 
@@ -139,5 +145,9 @@ public:
 #endif
 
 	StreamlineCapabilities streamline_capabilities;
+
+private:
+	TerminalGPUWaitCallback terminal_gpu_wait_callback = nullptr;
+	void *terminal_gpu_wait_userdata = nullptr;
 };
 #endif

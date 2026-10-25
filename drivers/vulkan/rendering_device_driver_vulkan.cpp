@@ -99,6 +99,37 @@
 /**** GENERIC ****/
 /*****************/
 
+#ifdef STREAMLINE_ENABLED
+static bool _wait_for_streamline_vulkan_device(void *p_userdata) {
+	VkDevice device = static_cast<VkDevice>(p_userdata);
+	if (device == VK_NULL_HANDLE) {
+		ERR_PRINT("Streamline terminal Vulkan device wait failed: the main VkDevice is null.");
+		return false;
+	}
+	// Keep the SL interposer's DeviceWaitIdle before-hooks so it can coordinate
+	// its pacer before the underlying whole-device wait. Do not use a separate
+	// system-loader entry point which would bypass those hooks.
+	PFN_vkGetDeviceProcAddr get_device_proc_addr = vkGetDeviceProcAddr;
+	if (get_device_proc_addr == nullptr) {
+		ERR_PRINT("Streamline terminal Vulkan device wait failed: vkGetDeviceProcAddr is unavailable.");
+		return false;
+	}
+	PFN_vkDeviceWaitIdle wait_idle = PFN_vkDeviceWaitIdle(get_device_proc_addr(device, "vkDeviceWaitIdle"));
+	if (wait_idle == nullptr) {
+		ERR_PRINT("Streamline terminal Vulkan device wait failed: vkDeviceWaitIdle is unavailable.");
+		return false;
+	}
+	print_verbose("Streamline terminal Vulkan device wait starting.");
+	const VkResult result = wait_idle(device);
+	if (result != VK_SUCCESS) {
+		ERR_PRINT(vformat("Streamline terminal Vulkan device wait failed: %s (VkResult %d).", result == VK_ERROR_DEVICE_LOST ? "VK_ERROR_DEVICE_LOST" : "non-success result", result));
+		return false;
+	}
+	print_verbose("Streamline terminal Vulkan device idle completed (VkResult 0).");
+	return true;
+}
+#endif
+
 #if defined(DEBUG_ENABLED) || defined(DEV_ENABLED)
 static const uint32_t BREADCRUMB_BUFFER_ENTRIES = 512u;
 #endif
@@ -1651,6 +1682,14 @@ Error RenderingDeviceDriverVulkan::_initialize_device(const LocalVector<VkDevice
 		VkResult err = vkCreateDevice(physical_device, &create_info, VKC::get_allocation_callbacks(VK_OBJECT_TYPE_DEVICE), &vk_device);
 		ERR_FAIL_COND_V_MSG(err != VK_SUCCESS, ERR_CANT_CREATE, vformat("Couldn't create Vulkan device (VkResult error %d).", err));
 	}
+
+#ifdef STREAMLINE_ENABLED
+	if (is_main_device && StreamlineContext::get().sdk_initialized) {
+		// Register as soon as creation succeeds, so later initialization failures
+		// still wait for this device before the SDK and native device are freed.
+		StreamlineContext::get().set_terminal_gpu_wait_callback(_wait_for_streamline_vulkan_device, vk_device);
+	}
+#endif
 
 	for (uint32_t i = 0; i < queue_families.size(); i++) {
 		for (uint32_t j = 0; j < queue_families[i].size(); j++) {

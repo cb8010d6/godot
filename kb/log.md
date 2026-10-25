@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (terminal Vulkan device wait candidate)
+
+* Host frame fences do not cover the SDK pacer queue. Register a main-device
+  terminal wait using the existing SL-interposed Vulkan entry point, before
+  SDK shutdown. Preserve wait failures independently of SDK shutdown results.
+* This candidate requires rebuild and strict GPU comparison; it does not
+  declare the remaining semaphore/swapchain diagnostics resolved.
+
 ## 2026-10-26 (local Vulkan interposer prerequisites)
 
 * Real `d040fbbe7d` Vulkan local-device control no longer crashes, but
