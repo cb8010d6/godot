@@ -34,4 +34,12 @@ Declare the output as a storage-image write dependency and tag it in the
 matching Vulkan GENERAL or D3D12 UNORDERED_ACCESS state. Input tags retain
 their existing shader-read state. This is an independent local regression
 branch; no third-party PR commit was copied and the correction is not part
-of either upgrade review branch. Rebuild and GPU regression are pending.
+of either upgrade review branch. Both backends rebuilt and the actual settled
+motion offset became -0.004 frames, against 0.988 before the correction.
+
+Current Khronos validation then exposed additional output contract details:
+Streamline can clear/copy the output, requiring transfer usage and Vulkan
+general memory access. NIS also tags the same output image as its own input;
+both tags must describe its actual GENERAL/UAV state, based on the RID rather
+than tag name. A follow-up keeps D3D12 in explicit UAV state and expands only
+the Vulkan access scope. Rebuild and validation of this follow-up are pending.

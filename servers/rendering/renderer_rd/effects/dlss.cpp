@@ -307,7 +307,13 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 	for (int i = 0; i < num_resources; i++) {
 		// The external evaluator writes the output. Later consumers must depend
 		// on this callback, rather than reading the preceding frame's texture.
-		res[i].usage = res[i].rid == p_params.output ? RD::CALLBACK_RESOURCE_USAGE_STORAGE_IMAGE_READ_WRITE : RD::CALLBACK_RESOURCE_USAGE_TEXTURE_SAMPLE;
+		if (res[i].rid == p_params.output) {
+			// Vulkan evaluation can also clear/copy this image, while D3D12
+			// requires the explicit UAV state rather than GENERAL/COMMON.
+			res[i].usage = context->is_d3d12 ? RD::CALLBACK_RESOURCE_USAGE_STORAGE_IMAGE_READ_WRITE : RD::CALLBACK_RESOURCE_USAGE_GENERAL;
+		} else {
+			res[i].usage = RD::CALLBACK_RESOURCE_USAGE_TEXTURE_SAMPLE;
+		}
 	}
 	RD::get_singleton()->driver_callback_add((RDD::DriverCallback)DLSSEffect::_upscale_internal_graph_callback, p_params.context, VectorView<RD::CallbackResource>(res, num_resources));
 }
@@ -318,7 +324,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 	void *nativeCmdlist = RD::get_singleton()->get_device_driver()->command_buffer_get_native_handle(cmdid);
 
 	// Helper function for tagging resources.
-	auto assignResource = [context](sl::Resource *resources, sl::ResourceTag *resourceTags, int &numResources, RID textureRID, sl::BufferType bufferType, sl::ResourceLifecycle lifecycle) {
+	auto assignResource = [context, &p_params](sl::Resource *resources, sl::ResourceTag *resourceTags, int &numResources, RID textureRID, sl::BufferType bufferType, sl::ResourceLifecycle lifecycle) {
 		if (!textureRID.is_valid() || textureRID.is_null()) {
 			return;
 		}
@@ -331,7 +337,8 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 		if (context->is_d3d12) {
 			texture_state = DLSS_D3D12_RESOURCE_STATE_NON_PIXEL_SR;
 		}
-		if (bufferType == sl::kBufferTypeScalingOutputColor) {
+		// NIS tags the same output image as both its input and output.
+		if (textureRID == p_params.output) {
 			texture_state = context->is_d3d12 ? DLSS_D3D12_RESOURCE_STATE_UNORDERED_ACCESS : DLSS_VK_IMAGE_LAYOUT_GENERAL;
 		}
 		uint64_t texture_vkformat = RD::get_singleton()->get_driver_resource(RD::DriverResource::DRIVER_RESOURCE_TEXTURE_DATA_FORMAT, textureRID);
