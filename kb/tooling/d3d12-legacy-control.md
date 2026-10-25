@@ -32,3 +32,8 @@ startup for no-SL factory, no-SL legacy, SL2.10 and SL2.14.
 This instrumentation is diagnostic-only, not a proposed fix. Do not merge
 the environment switch into a release or claim that forwarding one function
 pointer fixes interoperability. Matrix results will be recorded separately.
+
+The first instrumentation build used `GetDesc1` on the device driver's
+`IDXGIAdapter` and failed to compile. Correct the trace to `GetDesc` and
+`DXGI_ADAPTER_DESC`; both expose the same LUID. Keep this failed diagnostic
+receipt separate from the successful exact-candidate six-target build.

@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (diagnostic adapter interface)
+
+* **Corrected**: the local D3D12 trace must use IDXGIAdapter::GetDesc,
+  not the IDXGIAdapter1 method. The first failed instrumentation build is
+  retained independently of candidate validation.
+
 ## 2026-10-25 (D3D12 diagnostic control)
 
 * **Diagnostic only**: add startup parameter/pointer/module tracing and force

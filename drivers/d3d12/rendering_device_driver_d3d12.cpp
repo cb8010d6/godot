@@ -6288,8 +6288,8 @@ Error RenderingDeviceDriverD3D12::_initialize_device() {
 		adapter = desired_adapter;
 	}
 
-	DXGI_ADAPTER_DESC1 acceptance_adapter{};
-	adapter->GetDesc1(&acceptance_adapter);
+	DXGI_ADAPTER_DESC acceptance_adapter{};
+	adapter->GetDesc(&acceptance_adapter);
 	print_line(vformat("[ACCEPTANCE-D3D12] adapter_luid_high=%d low=%d feature_level=%d IID=ID3D12Device", acceptance_adapter.AdapterLuid.HighPart, acceptance_adapter.AdapterLuid.LowPart, static_cast<uint32_t>(requested_feature_level)));
 	ID3D12DeviceFactory *device_factory = context_driver->device_factory_get();
 	print_line(vformat("[ACCEPTANCE-D3D12] CreateDevice factory_present=%s", device_factory ? "true" : "false"));
