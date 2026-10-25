@@ -34,21 +34,15 @@
 
 #include <d3d12.h>
 
-// PIX V2 blob constants (PIXEventsCommon.h / pix3_win.h).
-// Blob layout: [header][color][context ptr][label bytes...][0 terminator]
+// WinPixEventRuntime's compatible GPU format (PIXEventsLegacy.h / pix3_win.h).
+// See https://github.com/microsoft/PixEvents. The context is implicit in the
+// D3D12 command-list call; it is not an extra word in this packet.
+// Blob layout: [event type][color][string info][label bytes...][0 terminator].
 static const uint32_t PIX_EVENT_RECORD_QWORDS = 64;
 static const uint32_t PIX_EVENT_TAIL_QWORDS = 2;
-
-// Bits 0-6: size, bits 7-11: event type, bits 12-19: metadata, bits 20-63: timestamp.
-static const uint64_t PIX_EVENT_BEGIN_TYPE = 0x01;
-// ON_CONTEXT (0x01) | STRING_IS_ANSI (0x02) | HAS_COLOR (0xF0)
-static const uint8_t PIX_EVENT_METADATA_BEGIN = 0xF3;
-
-static uint64_t _pix_encode_event_info(uint8_t p_size_qwords) {
-	return ((PIX_EVENT_BEGIN_TYPE & 0x1Full) << 7) |
-			((static_cast<uint64_t>(PIX_EVENT_METADATA_BEGIN) & 0xFFull) << 12) |
-			((static_cast<uint64_t>(p_size_qwords) & 0x7Full) << 0);
-}
+static const uint64_t PIX_EVENT_BEGIN_NO_ARGS = 0x002ull << 10;
+// String alignment 0, copy chunk size 8, ANSI, no shortcut.
+static const uint64_t PIX_EVENT_STRING_INFO = (8ull << 55) | (1ull << 54);
 
 static void _pix_copy_ansi_string(uint64_t *&r_dest, const uint64_t *p_limit, const char *p_string) {
 	while (r_dest < p_limit) {
@@ -74,17 +68,13 @@ void d3d12_pix_begin_event(ID3D12GraphicsCommandList *p_command_list, uint32_t p
 	uint64_t *dest = buffer;
 	const uint64_t *limit = buffer + PIX_EVENT_RECORD_QWORDS - PIX_EVENT_TAIL_QWORDS;
 
-	uint64_t *header = dest++;
+	*dest++ = PIX_EVENT_BEGIN_NO_ARGS;
 	*dest++ = (uint64_t)p_bgra_color;
-	*dest++ = (uint64_t)(uintptr_t)p_command_list;
+	*dest++ = PIX_EVENT_STRING_INFO;
 	_pix_copy_ansi_string(dest, limit, p_name);
-	if (dest < limit) {
-		*dest++ = 0;
-	}
+	*dest = 0;
 
-	*header = _pix_encode_event_info((uint8_t)(dest - buffer));
-
-	p_command_list->BeginEvent(D3D12_PIX_EVENT_METADATA_V2, buffer, (UINT)((dest - buffer) * sizeof(uint64_t)));
+	p_command_list->BeginEvent(D3D12_PIX_EVENT_METADATA, buffer, (UINT)((dest - buffer) * sizeof(uint64_t)));
 }
 
 void d3d12_pix_end_event(ID3D12GraphicsCommandList *p_command_list) {

@@ -34,10 +34,11 @@
 
 struct ID3D12GraphicsCommandList;
 
-// Emits PIX V2 event blobs directly via ID3D12GraphicsCommandList::BeginEvent/EndEvent.
+// Emits compatible PIX event blobs via ID3D12GraphicsCommandList::BeginEvent/EndEvent.
 // No WinPixEventRuntime link required. Decoded by GPU Trace, PIX, and RenderDoc.
-// Metadata value: WINPIX_EVENT_PIX3BLOB_V2.
-static constexpr uint32_t D3D12_PIX_EVENT_METADATA_V2 = 6345127u;
+// Match WinPixEventRuntime's default GPU protocol, WINPIX_EVENT_PIX3BLOB_VERSION.
+// Older system debug layers reject the newer PIX3BLOB_V2 metadata value.
+static constexpr uint32_t D3D12_PIX_EVENT_METADATA = 2;
 
 void d3d12_pix_begin_event(ID3D12GraphicsCommandList *p_command_list, uint32_t p_bgra_color, const char *p_name);
 void d3d12_pix_end_event(ID3D12GraphicsCommandList *p_command_list);

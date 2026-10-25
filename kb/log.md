@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (native callback comparison and marker protocol candidate)
+
+* **Measured at eb9cd21be9**: standard build 51.750 s; paired real D3D12
+  evaluation removes resource/heap errors #527/#538/#708. BeginEvent #3 errors,
+  one timeout and an interrupted SDK2.10 NIS run still prevent strict acceptance.
+* **Implemented, pending comparison**: [compatible PIX GPU packet](/tooling/d3d12-pix-protocol-compatibility.md),
+  retaining names/colors and validation instead of suppressing marker errors.
+
 ## 2026-10-26 (native callback compile correction)
 
 * **Failed at e627be688e**: MSVC rejects range-for on VectorView. Use indexed

@@ -33,3 +33,9 @@ Capture OutputDebugString from process creation, not just engine stdout.
 The first e627be688e standard build failed: VectorView has no range-for
 begin/end. Replace that traversal with indexed access; the failed compiler
 receipt is retained. No GPU result is attributed to that unbuilt revision.
+
+The indexed correction eb9cd21be9 builds in 51.750 s. The actual paired debug
+controls remove #527/#538/#708; SR+NIS still emits 2522 BeginEvent #3 messages.
+These are a separate [PIX marker protocol comparison](/tooling/d3d12-pix-protocol-compatibility.md),
+not a clean debug pass. Retain the SR timeout and intentionally interrupted
+SDK2.10 NIS control. No generated-frame visual or latency claim follows.

@@ -1,5 +1,7 @@
 # Tooling
 
+* [D3D12 PIX protocol compatibility](/tooling/d3d12-pix-protocol-compatibility.md) - retain labels while diagnosing old debug-layer marker rejection
+
 * [D3D12 native callback state](/tooling/d3d12-native-callback-state.md) - prepare legacy texture states and invalidate external bindings
 
 * [D3D12 paired runtime layout](/tooling/d3d12-paired-runtime-layout.md) - isolate factory and legacy debug DLL lookup
