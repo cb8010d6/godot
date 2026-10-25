@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (D3D12 diagnostic control)
+
+* **Diagnostic only**: add startup parameter/pointer/module tracing and force
+  legacy after required DLL initialization, on a separate local branch based
+  on the exact tested 08e candidate. No production fix is claimed.
+  [Control design](/tooling/d3d12-legacy-control.md).
+
 ## 2026-10-25 (camera inputs in the model validation candidate)
 
 * **Applied in the integration candidate**: the existing reviewed FOV

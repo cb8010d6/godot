@@ -29,6 +29,7 @@
 /**************************************************************************/
 
 #include "rendering_context_driver_d3d12.h"
+#include "acceptance_trace.h"
 
 #include "core/config/engine.h"
 #include "core/config/project_settings.h"
@@ -106,8 +107,14 @@ Error RenderingContextDriverD3D12::_init_device_factory() {
 	ERR_FAIL_NULL_V(lib_dcomp, ERR_CANT_CREATE);
 #endif
 
+	acceptance_d3d12_modules();
+	if (OS::get_singleton()->get_environment("GODOT_ACCEPTANCE_FORCE_D3D12_LEGACY") == "1") {
+		print_line("[ACCEPTANCE-D3D12] diagnostic force legacy after required library loads");
+		return OK;
+	}
 	// Streamline doesn't currently support device factories, so fall back to default D3D12CreateDevice
 	if (Streamline::get_singleton()->get_internal_parameter(STREAMLINE_INTERNAL_PARAMETER_FUNC_D3D12GetInterface)) {
+		print_line("[ACCEPTANCE-D3D12] Streamline requests legacy creation");
 		return OK;
 	}
 
@@ -126,6 +133,7 @@ Error RenderingContextDriverD3D12::_init_device_factory() {
 		}
 		// If both calls failed, device factory is going to be nullptr, and D3D12CreateDevice is going to be used as fallback.
 	}
+	print_line(vformat("[ACCEPTANCE-D3D12] factory_present=%s sdk_version=%d configured_path=%s", device_factory ? "true" : "false", agility_sdk_version, agility_sdk_path));
 	return OK;
 }
 
@@ -133,15 +141,19 @@ Error RenderingContextDriverD3D12::_initialize_debug_layers() {
 	ComPtr<ID3D12Debug> debug_controller;
 	HRESULT res;
 
+	print_line(vformat("[ACCEPTANCE-D3D12] debug factory_present=%s", device_factory ? "true" : "false"));
 	if (device_factory) {
 		res = device_factory->GetConfigurationInterface(CLSID_D3D12DebugGodot, IID_PPV_ARGS(&debug_controller));
 	} else {
 		PFN_D3D12_GET_DEBUG_INTERFACE d3d_D3D12GetDebugInterface = (PFN_D3D12_GET_DEBUG_INTERFACE)(void *)GetProcAddress(lib_d3d12, "D3D12GetDebugInterface");
 		ERR_FAIL_NULL_V(d3d_D3D12GetDebugInterface, ERR_CANT_CREATE);
 
+		acceptance_d3d12_pointer("D3D12GetDebugInterface", reinterpret_cast<const void *>(d3d_D3D12GetDebugInterface));
 		res = d3d_D3D12GetDebugInterface(IID_PPV_ARGS(&debug_controller));
 	}
 
+	print_line(vformat("[ACCEPTANCE-D3D12] GetDebugInterface_HRESULT=0x%08x", static_cast<uint32_t>(res)));
+	acceptance_d3d12_modules();
 	ERR_FAIL_COND_V(!SUCCEEDED(res), ERR_QUERY_FAILED);
 	debug_controller->EnableDebugLayer();
 	return OK;

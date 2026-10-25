@@ -1,5 +1,7 @@
 # Tooling
 
+* [D3D12 legacy startup control](/tooling/d3d12-legacy-control.md) - distinguish factory/runtime differences from Streamline interposition
+
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
 
 * [PT storage-image formats](/tooling/pt-storage-image-formats.md) - match output and RR normal/roughness declarations with real allocations

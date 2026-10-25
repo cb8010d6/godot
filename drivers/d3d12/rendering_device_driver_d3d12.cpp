@@ -29,6 +29,7 @@
 /**************************************************************************/
 
 #include "rendering_device_driver_d3d12.h"
+#include "acceptance_trace.h"
 
 #include "core/config/engine.h"
 #include "core/config/project_settings.h"
@@ -6287,7 +6288,11 @@ Error RenderingDeviceDriverD3D12::_initialize_device() {
 		adapter = desired_adapter;
 	}
 
+	DXGI_ADAPTER_DESC1 acceptance_adapter{};
+	adapter->GetDesc1(&acceptance_adapter);
+	print_line(vformat("[ACCEPTANCE-D3D12] adapter_luid_high=%d low=%d feature_level=%d IID=ID3D12Device", acceptance_adapter.AdapterLuid.HighPart, acceptance_adapter.AdapterLuid.LowPart, static_cast<uint32_t>(requested_feature_level)));
 	ID3D12DeviceFactory *device_factory = context_driver->device_factory_get();
+	print_line(vformat("[ACCEPTANCE-D3D12] CreateDevice factory_present=%s", device_factory ? "true" : "false"));
 	if (device_factory != nullptr) {
 		res = device_factory->CreateDevice(adapter.Get(), requested_feature_level, IID_PPV_ARGS(device.GetAddressOf()));
 	} else {
@@ -6298,8 +6303,11 @@ Error RenderingDeviceDriverD3D12::_initialize_device() {
 			d3d_D3D12CreateDevice = (PFN_D3D12_CREATE_DEVICE)Streamline::get_singleton()->get_internal_parameter(STREAMLINE_INTERNAL_PARAMETER_FUNC_D3D12CreateDevice);
 		}
 
+		acceptance_d3d12_pointer("D3D12CreateDevice", reinterpret_cast<const void *>(d3d_D3D12CreateDevice));
 		res = d3d_D3D12CreateDevice(adapter.Get(), requested_feature_level, IID_PPV_ARGS(device.GetAddressOf()));
 	}
+	print_line(vformat("[ACCEPTANCE-D3D12] first_CreateDevice_HRESULT=0x%08x", static_cast<uint32_t>(res)));
+	acceptance_d3d12_modules();
 	ERR_FAIL_COND_V_MSG(!SUCCEEDED(res), ERR_CANT_CREATE, "D3D12CreateDevice failed with error " + vformat("0x%08ux", (uint64_t)res) + ".");
 
 	if (D3D12Hooks::get_singleton() != nullptr) {
