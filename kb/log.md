@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (build-isolation regression result)
+
+* **Measured on the separate combined regression build**: all six native
+  targets rebuilt and all four installed-template games ran, including
+  self-contained Mono without SDK discovery. The newly composed stage-A
+  review head has not itself been rebuilt; retain that distinction.
+
 ## 2026-10-25 (installed Windows packages)
 
 * **Measured**: all four installed-template Debug/Release games exported and
