@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (Windows default .NET export)
+
+* **Found**: a Mono editor resolving the standard template directory after
+  mixed incremental builds. Isolate native object/archive module variants;
+  [build finding](/tooling/windows-mono-artifact-isolation.md).
+
 ## 2026-10-24 (pinned engine synchronization)
 
 * **Added**: [4.8 beta 1 synchronization](/project/godot-4.8-beta1-sync.md)
