@@ -43,3 +43,11 @@ general memory access. NIS also tags the same output image as its own input;
 both tags must describe its actual GENERAL/UAV state, based on the RID rather
 than tag name. A follow-up keeps D3D12 in explicit UAV state and expands only
 the Vulkan access scope. Rebuild and validation of this follow-up are pending.
+
+The output transfer-usage and NIS layout diagnostics disappeared after that
+follow-up, but synchronization validation still found clears without a transfer
+stage dependency. `add_driver_callback()` left `self_stages` empty, unlike every
+native command. Assign ALL_COMMANDS for external callbacks, which can issue
+shader, copy and clear operations. This retains backend-specific image states.
+The remaining NGX/NIS and FG internal diagnostics need separate attribution;
+do not call the whole validation run clean merely because image phase is fixed.

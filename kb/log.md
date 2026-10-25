@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (external callback pipeline stages)
+
+* **Found**: callback stage masks were empty, so a GENERAL access declaration
+  alone did not protect SDK transfer clears. Declare external callback stages
+  as ALL_COMMANDS and recheck synchronization diagnostics.
+
 ## 2026-10-25 (DLSS 4.5 SR follow-up)
 
 * **Added**: [DLSS 4.5 SR policy](/tooling/dlss-4.5-super-resolution.md),
