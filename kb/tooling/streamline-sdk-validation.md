@@ -13,6 +13,13 @@ sources:
 
 # Match the actual release
 
+Pinned offline runtime tests can set `GODOT_STREAMLINE_DISABLE_OTA=1` to
+prevent the engine from opting into Streamline downloads or cached plugin
+replacement. The default integration still enables OTA. NVIDIA App/driver
+overrides are independent and must be recorded separately. Use the actual
+feature-version query and loaded-file identities; do not equate a release
+ZIP version with the runtime or active AI model.
+
 Verify the official ZIP's complete size and SHA-256, inspect its release
 inventory, and vendor the full public header set with its license and source
 revision. Do not update only `sl_version.h` or infer DLL names from the source

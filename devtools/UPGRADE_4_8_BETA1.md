@@ -146,6 +146,15 @@ The Linux fixture explicitly supplies the native SDK `.so` siblings from
 automatic Linux SDK redistribution is not established by this check.
 Windows distribution and embedded-PCK exports remain local Agent checks.
 
+For a pinned, offline Windows runtime check, set
+`GODOT_STREAMLINE_DISABLE_OTA=1` in the test process environment before
+starting the engine. This opts out of both Streamline OTA downloads and
+loading its downloaded plugins; the default remains unchanged. It does not
+disable NVIDIA App/driver overrides. Record `slGetFeatureVersion` results,
+loaded runtime files and the requested preset separately from the SDK ZIP.
+An SDK version or a successful capability query does not identify the active
+AI model or prove that generated frames were presented.
+
 An SDK header smoke compile, Windows cross-compile, package fixtures, and
 source-generator build cover distinct boundaries. None is a substitute
 for the native Windows and GPU checks below. Build and test logs go to

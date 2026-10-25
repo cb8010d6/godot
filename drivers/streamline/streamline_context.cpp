@@ -63,6 +63,7 @@
 
 #include "core/config/engine.h"
 #include "core/config/project_settings.h"
+#include "core/os/os.h"
 
 StreamlineContext &StreamlineContext::get() {
 	static StreamlineContext _context;
@@ -361,7 +362,12 @@ void StreamlineContext::initialize(bool d3d12) {
 
 	pref.renderAPI = d3d12 ? sl::RenderAPI::eD3D12 : sl::RenderAPI::eVulkan;
 	pref.applicationId = 0x90d07004;
-	pref.flags = sl::PreferenceFlags::eAllowOTA | sl::PreferenceFlags::eLoadDownloadedPlugins | sl::PreferenceFlags::eDisableCLStateTracking;
+	pref.flags = sl::PreferenceFlags::eDisableCLStateTracking;
+	// Allow offline validation of the installed release without an OTA download
+	// or a plugin substitution from the system cache. Normal builds keep OTA.
+	if (OS::get_singleton()->get_environment("GODOT_STREAMLINE_DISABLE_OTA") != "1") {
+		pref.flags |= sl::PreferenceFlags::eAllowOTA | sl::PreferenceFlags::eLoadDownloadedPlugins;
+	}
 
 	if (bool(GLOBAL_GET("rendering/streamline/streamline_log"))) {
 		pref.logLevel = sl::LogLevel::eVerbose;

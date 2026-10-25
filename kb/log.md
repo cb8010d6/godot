@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (Windows acceptance in progress)
+
+* **Added**: an opt-out for Streamline OTA during pinned offline validation;
+  the normal preference flags stay enabled by default. Runtime regression
+  checks and the Windows compatibility matrix are still in progress.
+
 ## 2026-10-25 (final source and managed exports)
 
 * **Verified**: both Linux editors and all four templates rebuilt at
