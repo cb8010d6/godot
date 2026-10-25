@@ -56,8 +56,17 @@ function Copy-Required($source, $destination) {
 # Blast and Flow are always part of a release: build with blast_sdk= and
 # flow_sdk= (see CUSTOM_BUILD.md), which copies their DLLs into bin/.
 $physx = @("PhysXGpu_64.dll", "NvBlast.dll", "NvBlastGlobals.dll", "NvBlastExtAuthoring.dll", "NvBlastExtShaders.dll", "nvflow.dll", "nvflowext.dll")
-foreach ($file in @($exe, $console, "D3D12Core.dll", "d3d12SDKLayers.dll") + $physx) {
+foreach ($file in @($exe, $console) + $physx) {
 	Copy-Required (Join-Path $bin $file) $stage
+}
+
+# The factory selects this architecture directory. Streamline's legacy path
+# must use the system Core and its matching system debug layer, without an
+# application-root Agility SDKLayers DLL overriding that layer.
+$agility = Join-Path $stage "x86_64"
+New-Item -ItemType Directory -Force $agility | Out-Null
+foreach ($file in @("D3D12Core.dll", "d3d12SDKLayers.dll")) {
+	Copy-Required (Join-Path $bin $file) $agility
 }
 
 $licenses = Join-Path $stage "licenses"

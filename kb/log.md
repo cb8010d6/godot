@@ -1,5 +1,17 @@
 # Update log
 
+## 2026-10-26 (FG policy measured and D3D12 layout correction)
+
+* **Measured at 99f59c8232**: standard editor build 77.984 s; twelve CPU policy
+  cases, 85 preset checks and eighteen captured requests pass. Eighteen actual
+  Vulkan/D3D12 policy cases pass, including missing runtimes, dynamic views
+  and resize. The explicit foreground FG+NIS matrix row timed out and fails;
+  policy options alone are not actual presentation evidence. SDK VUIDs remain.
+* **Isolated**: eight pinned a182f0c9f2 device controls succeed with the
+  [Agility pair in an architecture directory](/tooling/d3d12-paired-runtime-layout.md).
+  Correct matching editor package layout; actual current debug/package tests
+  follow. No beta1/SL2.14-specific device regression is established.
+
 ## 2026-10-26 (swapchain comparison and viewport guard candidate)
 
 * **Measured at 6e157d1131**: standard build and nine actual backend/scene/probe

@@ -1,5 +1,7 @@
 # Tooling
 
+* [D3D12 paired runtime layout](/tooling/d3d12-paired-runtime-layout.md) - isolate factory and legacy debug DLL lookup
+
 * [Frame Generation viewport policy](/tooling/streamline-fg-viewport-policy.md) - deterministic fallback and queryable cached SDK state
 
 * [Rejected Vulkan depth hypothesis](/tooling/streamline-vulkan-depth-handoff.md) - full pacer/swapchain messages contradicted the depth interpretation

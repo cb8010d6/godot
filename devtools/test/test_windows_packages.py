@@ -151,6 +151,9 @@ class WindowsPackageFixtureTest(unittest.TestCase):
                     self.assertTrue(set(PHYSICS_FILES).issubset(names))
                     flavor = ".mono" if mono else ""
                     self.assertIn("godot.windows.editor.x86_64" + flavor + ".exe", names)
+                    for dll in ("D3D12Core.dll", "d3d12SDKLayers.dll"):
+                        self.assertIn("x86_64/" + dll, names)
+                        self.assertNotIn(dll, names)
                     self.assertIn("licenses/NVIDIA-STREAMLINE-SDK-HEADERS-LICENSE.txt", names)
                     notice = archive.read("NVIDIA_DLSS_NOT_INCLUDED_README.txt").decode("utf-8-sig")
                     self.assertIn(self.manifest["sdk_version"], notice)
@@ -193,6 +196,9 @@ class WindowsPackageFixtureTest(unittest.TestCase):
             names = archive.namelist()
             self.assert_safe_paths(names)
             self.assertTrue(set(self.manifest["private_runtime_files"]).issubset(names))
+            self.assertIn("x86_64/D3D12Core.dll", names)
+            self.assertIn("x86_64/d3d12SDKLayers.dll", names)
+            self.assertNotIn("d3d12SDKLayers.dll", names)
             for excluded in ("sl.nvperf.dll", "sl.extra.dll", "nvngx_untracked.dll", "development/sl.debug.dll"):
                 self.assertNotIn(excluded, names)
             self.assertNotIn("NVIDIA_DLSS_NOT_INCLUDED_README.txt", names)

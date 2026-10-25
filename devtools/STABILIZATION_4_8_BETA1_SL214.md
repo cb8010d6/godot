@@ -147,6 +147,29 @@ separates eligibility, runtime support and cached successful SDK options.
 CPU boundaries and live GPU fixture are added; compilation and actual GPU
 policy/lifetime checks are pending. This does not resolve the SDK sync bugs.
 
+The standard editor at `99f59c8232` built in 77.984 s. Twelve CPU policy
+checks, 85 preset checks and eighteen captured API requests pass. All eighteen
+actual rendered policy cases pass (both backends, missing DLLs, 1/2/4 offscreen
+views, HUD, dynamic destruction and resize). Dynamic cases enable/disable twice
+including shutdown rather than every frame. Vulkan single/HUD/resize include
+foreground presented-two SDK samples. D3D12 policy snapshots do not establish
+generated-frame presentation. The separate strict FG+NIS foreground row timed
+out; retain it as failed, alongside persistent SDK sync/present diagnostics.
+
+## D3D12 runtime layout isolation
+
+Eight startup controls using the pinned diagnostic native binary
+`a182f0c9f24411242f18b68aa5d91ece9acb983e` return S_OK and render on D3D12
+with matching runtime lookup: no-SL factory/forced legacy and SL2.10/2.14
+legacy, each normal/debug. Factory uses local Core/SDKLayers 1.618.5 from
+`x86_64/`; legacy uses the system Core/layer pair. A root-level Agility
+SDKLayers caused the earlier legacy ABI mismatch. SL2.10 emits independent
+SDK diagnostics, so this is device-creation isolation, not strict acceptance.
+The editor packaging script had the same flat layout; stage both Agility
+DLLs in `x86_64/`, matching the existing multiarch export default. Current
+production debug startup and packaged editor tests follow. No system file or
+production D3D12 initialization is replaced or bypassed.
+
 ## Acceptance boundary
 
 SL 2.14.16, PhysX/CUDA/DDGI/Blast/Flow pins and public-runtime exclusion
