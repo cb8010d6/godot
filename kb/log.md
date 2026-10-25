@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (DLSS output validation follow-up)
+
+* **Measured**: the one-frame motion phase correction on both Vulkan/D3D12.
+  Current Khronos validation additionally requires output transfer usage,
+  general Vulkan access, and consistent NIS input/output tags for the shared
+  RID. [Output contract](/tooling/dlss-output-dependency.md).
+
 ## 2026-10-25 (PT/RR storage-image contract)
 
 * **Found**: two inherited image-format mismatches with the current official
