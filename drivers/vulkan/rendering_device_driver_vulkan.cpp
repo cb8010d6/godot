@@ -609,7 +609,10 @@ Error RenderingDeviceDriverVulkan::_initialize_device_extensions() {
 	_register_requested_device_extension(VK_KHR_SYNCHRONIZATION_2_EXTENSION_NAME, false);
 
 #ifdef STREAMLINE_ENABLED
-	streamline_device_features = is_main_device && StreamlineContext::get().sdk_initialized;
+	// Local devices still use the process-wide SL Vulkan interposer. Its
+	// injected extensions need supported prerequisites on every device,
+	// independently of which RD owns SDK registration and feature state.
+	streamline_device_features = StreamlineContext::get().sdk_initialized;
 	if (streamline_device_features) {
 		// The SL low-latency path can request VK_NV_low_latency2. Its present-id
 		// dependency and feature must also be enabled by the host.

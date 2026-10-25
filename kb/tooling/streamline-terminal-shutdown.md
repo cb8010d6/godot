@@ -18,6 +18,9 @@ sources:
   - id: driver-owner
     resource: ../../servers/rendering/rendering_device_driver.h
     title: Explicit main-device ownership passed to native drivers
+  - id: vulkan-interposer
+    url: https://github.com/NVIDIA-RTX/Streamline/blob/v2.14.16/source/core/sl.interposer/vulkan/wrapper.cpp
+    title: Pinned Streamline Vulkan device creation hook
 ---
 
 # Two distinct lifetime problems
@@ -47,13 +50,20 @@ requires shutdown before native graphics components are destroyed.[^sdk-lifecycl
 
 RenderingDevice passes its existing `is_main_instance` value to the driver
 before driver initialization. The driver flag defaults to false. Only the
-main Vulkan driver enables the Streamline device requirements, publishes
-physical-device capabilities and performs SDK post-init. Only the main D3D12
-driver uses the Streamline device-creation entry point, registers adapter and
-device information, and performs SDK post-init. Local devices use native
-creation and never replace that process-wide state. This is explicit
-ownership, not an inference from frame count; real SDK registration failures
-remain errors.[^driver-owner]
+main Vulkan driver publishes global physical-device capabilities and performs
+SDK post-init. Only the main D3D12 driver uses the Streamline device-creation
+entry point, registers adapter and device information, and performs SDK
+post-init; local D3D12 devices use native creation. This is explicit host-side
+SDK ownership, not an inference from frame count; real SDK registration
+failures remain errors.[^driver-owner]
+
+Vulkan still uses the process-wide SL instance dispatch for local device
+creation. The interposer can inject SDK-required device extensions into every
+`vkCreateDevice`, so all such devices must receive the supported private-data
+and present-id prerequisites while the SDK is initialized. This requirement
+does not authorize a local RD to change global SDK capabilities, options,
+device registration, or post-init state. It also does not claim complete
+native Vulkan dispatch isolation.
 
 After the global RenderingServer has finished and released its DLSS/NIS
 contexts, final display cleanup takes ownership of the main RD on the main
@@ -75,10 +85,22 @@ this change does not introduce SDK reinitialization within one process.
 
 # Verification boundary
 
-The local-device crashes above are measured before-fix results. The candidate
-has source review and diff validation only; its build and real post-fix
-Vulkan/D3D12 local-device, no-runtime, NIS, FG, shutdown and resize checks are
-still required. In particular, moving shutdown is not proof that all pacer
+At `d040fbbe7d`, the Vulkan local-device after-control completed with exit
+code 0 and preserved main SDK availability across local creation/destruction.
+Strict validation exposed one new `01387` during local `vkCreateDevice`:
+the final extension list contained `VK_NV_low_latency2` without
+`VK_KHR_present_id` or `VK_KHR_present_id2`. The main device had enabled those
+prerequisites, but the local-device owner guard had incorrectly omitted them.
+The original after-control logs retain this regression and the independent
+SDK fake-layout, semaphore and teardown diagnostics. The requirements-only
+follow-up still needs a real validated local-device run.
+
+The original local-device crashes remain measured before-fix results. The
+Vulkan after-control provides partial runtime evidence for the ownership and
+shutdown correction; the requirements follow-up has source review and diff
+validation only. Its build and real post-fix Vulkan/D3D12 local-device,
+no-runtime, NIS, FG, shutdown and resize checks remain separate requirements.
+In particular, moving shutdown is not proof that all pacer
 teardown VUIDs are resolved. The independent SDK fake-swapchain layout,
 present-semaphore reuse, NGX-internal clear/copy and marker-threading
 diagnostics retain their original logs and acceptance status.
@@ -87,3 +109,4 @@ diagnostics retain their original logs and acceptance status.
 [^global-finalize]: `finalize_display` joins renderer teardown before native display deletion.
 [^rd-finalize]: `is_main_instance` excludes local devices from global SDK finalization.
 [^driver-owner]: `set_is_main_device` copies the established RD owner flag before native driver initialization.
+[^vulkan-interposer]: The device creation hook merges loaded plugin extension requirements before calling the system loader.

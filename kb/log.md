@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-26 (local Vulkan interposer prerequisites)
+
+* Real `d040fbbe7d` Vulkan local-device control no longer crashes, but
+  validation finds `01387`: the interposer injects low-latency extensions for
+  local devices too. Apply supported prerequisites to every interposed device
+  while keeping global SDK registration restricted to the main device.
+* The public D3D12 regression passed three local-device cycles and final
+  rendering in 15.250 s; owned NGX descendants were cleaned to zero.
+
 ## 2026-10-26 (Streamline device ownership and terminal shutdown)
 
 * Both real backends reproduced `0xC0000005` after a local RD destructor
