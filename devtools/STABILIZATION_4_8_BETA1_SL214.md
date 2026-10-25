@@ -130,6 +130,23 @@ No final layout is falsified and no validation output is suppressed. The
 remaining fake-layout, semaphore and SDK-owned clear/dispatch hazards need
 their own evidence. The failed depth run and full objects/commands stay archived.
 
+At `6e157d1131` the standard build passed in 39.828 s and nine backend/scene/
+probe checks completed. The real swapchain's supported usage is 0x13/0x9f;
+01213/06663 disappear. Fake-layout 09600 remains with SL2.14, while SL2.10
+does not report it. SDK present/semaphore/teardown errors and FG internal
+clear/dispatch hazards remain. No depth workaround is retained.
+
+## Frame Generation viewport policy candidate
+
+Before any viewport draw, permit only a single window 3D view requesting FG.
+Multiple 3D views, XR multiview and offscreen-only arrangements keep their
+properties and use ordinary rendering, with a queryable reason and transition
+warning. A pure 2D HUD does not count. Disable an existing owner once on loss
+of eligibility and when its context is destroyed. One atomic public snapshot
+separates eligibility, runtime support and cached successful SDK options.
+CPU boundaries and live GPU fixture are added; compilation and actual GPU
+policy/lifetime checks are pending. This does not resolve the SDK sync bugs.
+
 ## Acceptance boundary
 
 SL 2.14.16, PhysX/CUDA/DDGI/Blast/Flow pins and public-runtime exclusion

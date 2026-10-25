@@ -1,5 +1,7 @@
 # Tooling
 
+* [Frame Generation viewport policy](/tooling/streamline-fg-viewport-policy.md) - deterministic fallback and queryable cached SDK state
+
 * [Rejected Vulkan depth hypothesis](/tooling/streamline-vulkan-depth-handoff.md) - full pacer/swapchain messages contradicted the depth interpretation
 * [Streamline swapchain transfer usage](/tooling/streamline-swapchain-transfer-usage.md) - real swapchain copy usage versus separate fake-layout/FG hazards
 

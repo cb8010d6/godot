@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (swapchain comparison and viewport guard candidate)
+
+* **Measured at 6e157d1131**: standard build and nine actual backend/scene/probe
+  cases complete; real-swapchain transfer-usage VUIDs disappear. SL2.14 fake
+  layout 09600 and SDK present/semaphore/internal FG hazards remain failures.
+* **Implemented, pending build/GPU checks**: [global FG viewport guard](/tooling/streamline-fg-viewport-policy.md),
+  with explicit fallback, owner destruction and atomic read-only status.
+
 ## 2026-10-26 (corrected swapchain attribution)
 
 * **Rejected and removed**: c76e671d0d's depth experiment did not alter the

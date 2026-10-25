@@ -9,6 +9,13 @@
 	<tutorials>
 	</tutorials>
 	<methods>
+		<method name="get_frame_generation_status" qualifiers="const">
+			<return type="Dictionary" />
+			<description>
+				Returns a consistent snapshot of ordinary 2X Frame Generation eligibility and application SDK options. [code]available[/code] reports runtime support, [code]eligible[/code] requires exactly one rendered 3D view requesting Frame Generation directly in a window, and [code]reason[/code] explains fallback ([code]unavailable[/code], [code]editor[/code], [code]no_3d_view[/code], [code]no_request[/code], [code]multiple_3d_views[/code], or [code]offscreen_viewport[/code]). [code]rendered_3d_views[/code] and [code]requested_3d_views[/code] count visible 3D views, including multiview layers. 2D HUD viewports do not count.
+				[code]sdk_enabled[/code] reflects successfully submitted enable/disable options, not actual generated frames or presentation quality. [code]supported_generated_frames[/code] is at most one for this integration (ordinary 2X); it does not advertise MFG or Dynamic MFG. The snapshot is updated on the render thread and can lag a property change until the next draw. SubViewport and multiple-3D-view arrangements retain their requested properties and render normally without Frame Generation.
+			</description>
+		</method>
 		<method name="get_capability">
 			<return type="bool" />
 			<param index="0" name="capability_type" type="int" enum="StreamlineCapabilityType" />

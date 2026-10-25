@@ -65,6 +65,8 @@
 #include "core/config/project_settings.h"
 #include "core/os/os.h"
 
+#include <algorithm>
+
 StreamlineContext &StreamlineContext::get() {
 	static StreamlineContext _context;
 	return _context;
@@ -183,10 +185,41 @@ void StreamlineContext::dlssg_disable() {
 
 		sl::DLSSGOptions dlssGOptions{};
 		dlssGOptions.mode = sl::DLSSGMode::eOff;
-		slDLSSGSetOptions(dlssg_viewport, dlssGOptions);
+		sl::Result result = slDLSSGSetOptions(dlssg_viewport, dlssGOptions);
+		ERR_FAIL_COND_MSG(result != sl::Result::eOk, "Failed to disable Streamline Frame Generation. Result: " + String(result_to_string(result)));
 
 		dlssg_viewport = sl::ViewportHandle(-1);
 	}
+	publish_frame_generation_status();
+}
+
+void StreamlineContext::update_frame_generation_policy(uint32_t p_rendered_views, uint32_t p_requested_views, uint32_t p_requested_window_views) {
+	const bool available = frame_generation_device_live && streamline_capabilities.dlss_g_available && slDLSSGSetOptions != nullptr;
+	StreamlineFGPolicy::Reason reason = StreamlineFGPolicy::select({ is_game, available, p_rendered_views, p_requested_views, p_requested_window_views });
+	if (reason != frame_generation_reason && p_requested_views > 0 &&
+			(reason == StreamlineFGPolicy::Reason::MULTIPLE_VIEWS || reason == StreamlineFGPolicy::Reason::OFFSCREEN)) {
+		WARN_PRINT(vformat("DLSS Frame Generation uses ordinary rendering for this viewport arrangement: %s.", StreamlineFGPolicy::reason_name(reason)));
+	}
+	frame_generation_reason = reason;
+	frame_generation_rendered_views = p_rendered_views;
+	frame_generation_requested_views = p_requested_views;
+	frame_generation_allowed = reason == StreamlineFGPolicy::Reason::READY;
+	if (!frame_generation_allowed && (uint32_t)dlssg_viewport != UINT_MAX) {
+		// Do not repeatedly reset SDK options or its enable delay for each
+		// offscreen context. An existing owner is disabled once on transition.
+		dlssg_disable();
+	}
+	publish_frame_generation_status();
+}
+
+void StreamlineContext::publish_frame_generation_status() {
+	const bool available = frame_generation_device_live && streamline_capabilities.dlss_g_available && slDLSSGSetOptions != nullptr;
+	uint64_t snapshot = static_cast<uint8_t>(frame_generation_reason);
+	snapshot |= uint64_t(std::min(frame_generation_rendered_views, 0xffffu)) << 8;
+	snapshot |= uint64_t(std::min(frame_generation_requested_views, 0xffffu)) << 24;
+	snapshot |= uint64_t(available) << 40;
+	snapshot |= uint64_t((uint32_t)dlssg_viewport != UINT_MAX) << 41;
+	frame_generation_snapshot.store(snapshot, std::memory_order_release);
 }
 
 void StreamlineContext::reflex_set_options(const sl::ReflexOptions &opts) {

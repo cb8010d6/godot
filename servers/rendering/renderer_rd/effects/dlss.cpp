@@ -160,6 +160,9 @@ static Vector<unsigned int> g_dlss_freeViewportIndices;
 static unsigned int g_dlss_viewportIndex = 1;
 
 DLSSContextInner::~DLSSContextInner() {
+	if (StreamlineContext::get().dlssg_viewport == viewport) {
+		StreamlineContext::get().dlssg_disable();
+	}
 	if (nis_initialized && StreamlineContext::get().slFreeResources != nullptr) {
 		// The NIS plugin clears its cached native-resource descriptions. Its
 		// kernels and coefficient textures remain owned by the plugin.
@@ -556,7 +559,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 	// Toggle DLSS Frame Generation (only enabled in game mode)
 	if (StreamlineContext::get().slDLSSGSetOptions != nullptr && StreamlineContext::get().is_game && StreamlineContext::get().streamline_capabilities.dlss_g_available) {
 		sl::DLSSGOptions dlssGOptions{};
-		bool wantActivateDLSSG = p_params.dlss_g;
+		bool wantActivateDLSSG = p_params.dlss_g && StreamlineContext::get().frame_generation_allowed;
 		bool canActivateDLSSG = StreamlineContext::get().dlssg_delay == 0;
 
 		// Disable previous DLSS-G context if needed
@@ -569,6 +572,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 			}
 
 			StreamlineContext::get().dlssg_viewport = sl::ViewportHandle(-1);
+			StreamlineContext::get().publish_frame_generation_status();
 		}
 
 		// Enable new DLSS-G context if needed
@@ -582,6 +586,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 			}
 
 			StreamlineContext::get().dlssg_viewport = context->viewport;
+			StreamlineContext::get().publish_frame_generation_status();
 		}
 	}
 

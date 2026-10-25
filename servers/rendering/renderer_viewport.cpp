@@ -877,6 +877,25 @@ void RendererViewport::draw_viewports(bool p_swap_buffers) {
 		}
 	}
 
+#ifdef STREAMLINE_ENABLED
+	uint32_t rendered_3d_views = 0;
+	uint32_t requested_3d_views = 0;
+	uint32_t requested_window_views = 0;
+	for (Viewport *vp : sorted_active_viewports) {
+		if (vp->last_pass != draw_viewports_pass || vp->disable_3d || (!vp->use_xr && !RSG::scene->is_camera(vp->camera))) {
+			continue;
+		}
+		rendered_3d_views += vp->view_count;
+		if (vp->frame_generation) {
+			requested_3d_views += vp->view_count;
+			if (!vp->use_xr && vp->viewport_to_screen != DisplayServerEnums::INVALID_WINDOW_ID) {
+				requested_window_views += vp->view_count;
+			}
+		}
+	}
+	StreamlineContext::get().update_frame_generation_policy(rendered_3d_views, requested_3d_views, requested_window_views);
+#endif
+
 	int vertices_drawn = 0;
 	int objects_drawn = 0;
 	int draw_calls_used = 0;

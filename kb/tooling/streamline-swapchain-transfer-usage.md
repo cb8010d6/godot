@@ -18,3 +18,10 @@ reports unsupported surfaces explicitly, and preserves normal no-SL usage and
 the host's valid presentation layout. It does not guess a private fake-image
 layout or patch proprietary libraries. Actual GPU comparison must distinguish
 the fixed usage obligation from remaining layout/present/internal hazards.
+
+At 6e157d1131 the standard editor build passed (39.828 s); all nine actual
+backend/scene/probe cases completed. Requested usage 0x13 is supported by
+surface flags 0x9f. VUID 01213/06663 disappear. SL2.14 retains fake-layout
+09600 (absent with SL2.10), and both retain some present/semaphore/teardown
+diagnostics. FG still reports SDK-owned clear/dispatch WAW/RAW and threading
+diagnostics. This is a verified usage fix, not strict Vulkan acceptance.

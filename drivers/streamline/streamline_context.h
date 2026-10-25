@@ -32,7 +32,10 @@
 
 #ifdef STREAMLINE_ENABLED
 #include "drivers/streamline/streamline_data.h"
+#include "drivers/streamline/streamline_frame_generation_policy.h"
 #include "drivers/streamline/streamline_headers.h"
+
+#include <atomic>
 class StreamlineContext {
 public:
 	// Interposer
@@ -102,6 +105,9 @@ public:
 	sl::FrameToken *get_new_frame_token();
 
 	void dlssg_disable();
+	void update_frame_generation_policy(uint32_t p_rendered_views, uint32_t p_requested_views, uint32_t p_requested_window_views);
+	void publish_frame_generation_status();
+	uint64_t get_frame_generation_status_snapshot() const { return frame_generation_snapshot.load(std::memory_order_acquire); }
 
 	static void initialize(bool d3d12);
 
@@ -112,6 +118,12 @@ public:
 
 	sl::ViewportHandle dlssg_viewport;
 	int dlssg_delay = 0;
+	bool frame_generation_allowed = false;
+	bool frame_generation_device_live = false;
+	StreamlineFGPolicy::Reason frame_generation_reason = StreamlineFGPolicy::Reason::UNAVAILABLE;
+	uint32_t frame_generation_rendered_views = 0;
+	uint32_t frame_generation_requested_views = 0;
+	std::atomic<uint64_t> frame_generation_snapshot{ 0 };
 
 #if STREAMLINE_ENABLED_VULKAN
 	StreamlineCapabilities enumerate_support_vulkan(void *vk_physical_device);

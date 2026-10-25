@@ -33,6 +33,7 @@
 #include "core/config/engine.h"
 #include "core/config/project_settings.h"
 #include "core/object/object.h"
+#include "drivers/streamline/streamline_frame_generation_policy.h"
 #ifdef STREAMLINE_ENABLED
 #include "drivers/streamline/streamline_context.h"
 #include "drivers/streamline/streamline_dlss_presets.h"
@@ -43,6 +44,7 @@ Streamline *Streamline::singleton = nullptr;
 void Streamline::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("set_parameter", "parameter_type", "value"), &Streamline::set_parameter);
 	ClassDB::bind_method(D_METHOD("get_capability", "capability_type"), &Streamline::get_capability);
+	ClassDB::bind_method(D_METHOD("get_frame_generation_status"), &Streamline::get_frame_generation_status);
 
 	BIND_ENUM_CONSTANT(STREAMLINE_PARAM_REFLEX_MODE);
 	BIND_ENUM_CONSTANT(STREAMLINE_PARAM_REFLEX_FRAME_LIMIT_US);
@@ -101,6 +103,7 @@ void Streamline::emit_marker(StreamlineMarkerType marker) {
 			return;
 		case StreamlineMarkerType::STREAMLINE_MARKER_AFTER_DEVICE_CREATION:
 			sl_context.load_functions_post_init();
+			sl_context.frame_generation_device_live = true;
 
 			if (sl_context.streamline_capabilities.pcl_available) {
 				sl::PCLOptions pcl_options = {};
@@ -123,6 +126,11 @@ void Streamline::emit_marker(StreamlineMarkerType marker) {
 			update_project_settings();
 			return;
 		case StreamlineMarkerType::STREAMLINE_MARKER_BEFORE_DEVICE_DESTROY:
+			sl_context.frame_generation_device_live = false;
+			sl_context.frame_generation_allowed = false;
+			sl_context.frame_generation_reason = StreamlineFGPolicy::Reason::UNAVAILABLE;
+			sl_context.dlssg_viewport = sl::ViewportHandle(-1);
+			sl_context.publish_frame_generation_status();
 			if (sl_context.slShutdown) {
 				sl_context.slShutdown();
 				sl_context.slShutdown = nullptr;
@@ -269,6 +277,24 @@ bool Streamline::get_capability(StreamlineCapabilityType p_capability_type) {
 #endif
 	return false;
 }
+
+Dictionary Streamline::get_frame_generation_status() const {
+	uint64_t snapshot = 0;
+#ifdef STREAMLINE_ENABLED
+	snapshot = StreamlineContext::get().get_frame_generation_status_snapshot();
+#endif
+	StreamlineFGPolicy::Reason reason = static_cast<StreamlineFGPolicy::Reason>(snapshot & 0xff);
+	Dictionary status;
+	status["available"] = bool((snapshot >> 40) & 1);
+	status["eligible"] = reason == StreamlineFGPolicy::Reason::READY;
+	status["reason"] = StreamlineFGPolicy::reason_name(reason);
+	status["rendered_3d_views"] = int((snapshot >> 8) & 0xffff);
+	status["requested_3d_views"] = int((snapshot >> 24) & 0xffff);
+	status["sdk_enabled"] = bool((snapshot >> 41) & 1);
+	status["supported_generated_frames"] = bool((snapshot >> 40) & 1) ? 1 : 0;
+	return status;
+}
+
 void Streamline::set_internal_parameter(const char *key, void *value) {
 #ifdef STREAMLINE_ENABLED
 	_THREAD_SAFE_METHOD_
