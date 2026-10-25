@@ -52,6 +52,29 @@ Each finding must identify its source commit, binaries and installed runtimes.
 
 ## 1. Pin the candidate before building
 
+The assembled candidate starts from native-code commit `5bc3884986`, with
+the previously reviewed camera corrections applied in the integration
+follow-up. Its source composition is:
+
+| Original correction | Applied integration commit |
+| --- | --- |
+| DLSS 4.5 SR policy and fixture | `1c9c9864b7` |
+| DLSS output write/state (`3e024c0a01`) | `2775e4384f` |
+| Abandoned RT pipeline ownership (`1050415573`) | `5507e26d7d` |
+| PT/RR storage formats (`fcca7536eb`) | `dc2ae21ba3` |
+| Clears and NIS tags (`e0c27964e8`) | `0b7a7f7758` |
+| External callback stage scope (`1381c32593`) | `147b47cae5` |
+| Vulkan promoted-feature chain (`b659925e67`) | `5bc3884986` |
+| Vertical FOV (`2ccecd2d10`) | Camera-input follow-up |
+| World-space camera axes (`0b50d914de`) | Camera-input follow-up |
+
+Compared with the measured regression branch, the graph, PT ownership,
+PT/RR formats, render-buffer allocations, build-isolation code and PhysX
+module are unchanged. Native source differences are limited to the new SR
+policy/logging, camera inputs and Vulkan feature-chain correction. Knowledge-base insertion
+conflicts retained both sets of findings. Documentation commits may follow;
+use the final received branch SHA for Windows build/test receipts.
+
 Preserve the original upgrade and review branches. The measured native
 engine was `1381c32593`, while the received SDK review head was `b88493491e`.
 They differ in graphics code; the old six-build/GPU results do not validate
@@ -116,6 +139,10 @@ backend check.
    resolution, exposure, camera path and settings. Include landscape,
    ultrawide and portrait windows. Preserve the default sharpness test;
    a separate `--sharpness=0.0` run is an isolation control for NIS.
+   Inspect the actual `slSetConstants` camera values during wide/portrait
+   and rotated-camera runs: vertical FOV in radians and world-space axes.
+   The original camera PR measurements do not automatically validate this
+   combined head; keep the check tied to its exact binaries.
 3. Record loaded DLL paths, signatures and hashes, `slGetFeatureVersion`,
    driver version, overrides and whether OTA is enabled. A separate process
    with `GODOT_STREAMLINE_DISABLE_OTA=1` isolates installed plugins; restore

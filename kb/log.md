@@ -1,5 +1,26 @@
 # Update log
 
+## 2026-10-25 (camera inputs in the model validation candidate)
+
+* **Applied in the integration candidate**: the existing reviewed FOV
+  correction `2ccecd2d10` and world-space basis correction `0b50d914de`,
+  preserving their independent original PR branches. Wide and rotating
+  camera comparisons should use the corrected inputs. The combined head
+  still requires actual `slSetConstants` checks on Windows.
+
+## 2026-10-25 (DLSS 4.5 Windows integration candidate)
+
+* **Assembled**: native-code candidate `5bc3884986` preserves all five
+  independently measured graphics corrections while adding the SR policy
+  and separate Vulkan feature-chain fix. Graph, PT formats/ownership,
+  render-buffer allocations, build isolation and PhysX match the measured
+  regression source. Knowledge-base conflicts retain both findings.
+* **Checked**: 85 SR request assertions / 18 typed captures, 15 manifest
+  tests, and actual enabled Windows DLSS client object compilation. The
+  Vulkan correction has an actual host driver-object compile. No full
+  Windows build, device creation or new model execution is claimed for the
+  assembled head. Exact-head Windows/RTX results remain the next gate.
+
 ## 2026-10-25 (external callback pipeline stages)
 
 * **Found**: callback stage masks were empty, so a GENERAL access declaration
