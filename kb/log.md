@@ -1,5 +1,15 @@
 # Update log
 
+## 2026-10-26 (D3D12 strict controls and resolved SR preset evidence)
+
+* **Measured at 1000baebda**: six real D3D12 debug rendering controls now have
+  zero D3D12/engine errors; FG has 103 foreground presented-two samples.
+  SDK2.10 retains separate OTA diagnostics. Visual FG/physical latency open.
+* **Observed in actual GPU readbacks**: [runtime indicator](/tooling/dlss-runtime-indicator-evidence.md)
+  shows M in Performance on both backends, while Recommended overrides a
+  Quality M request to K. After the user's switch to app settings, Quality
+  displays actual M/default. Ultra L still fails mode bounds and is not passed.
+
 ## 2026-10-26 (native callback comparison and marker protocol candidate)
 
 * **Measured at eb9cd21be9**: standard build 51.750 s; paired real D3D12

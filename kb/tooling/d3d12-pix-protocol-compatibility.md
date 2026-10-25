@@ -24,3 +24,11 @@ descriptor, with context implicit in the command-list call. Names and colors
 remain recorded; debug validation and markers stay enabled. No runtime DLL or
 new dependency is introduced. Actual legacy/factory debug comparison remains
 required before attributing or declaring the marker diagnostics fixed.
+
+At 1000baebda the standard editor builds in 54.813 s. All six real D3D12
+debug rendering controls pass with zero D3D12/engine diagnostics: no-SL native,
+SL2.14 SR/SR+NIS/FG and SL2.10 SR/SR+NIS. FG records 103 foreground
+presented-two samples. The unchanged SL2.10 controls retain separate OTA
+manifest warnings/errors; no SDK binary is modified or message suppressed.
+This validates compatible markers and host resource/binding corrections,
+not generated-frame visual quality or physical input latency.
