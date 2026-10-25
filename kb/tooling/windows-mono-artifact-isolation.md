@@ -3,7 +3,7 @@ type: Finding
 title: Keep native objects and archives distinct for module build variants
 description: Windows incremental standard/Mono builds selected a standard export template from a Mono editor.
 tags: [windows, mono, scons, export, incremental-build]
-status: draft
+status: stable
 generated: { by: codex, at: 2026-10-25T00:00:00Z }
 ---
 
@@ -31,4 +31,9 @@ Include the existing module version suffix in native object, static library
 and shared library targets as already done for executables. Standard output
 names and public editor/template names remain unchanged. A fresh Mono variant
 can then be built without deleting either cache or relying on stale standard
-objects. Rebuild and installed-TPZ regression are pending.
+objects. A cold Mono editor build passed, then all six targets at engine
+`1381c32593` built in 2436.610 seconds. The real installed-template lookup
+resolved `4.8.beta1.mono`; standard/Mono Debug/Release exports all ran.
+Self-contained C# games passed typed/dictionary PhysX assertions without SDK
+discovery. These are combined regression-build results, not a claim that an
+unbuilt, newly composed review-branch head has an identical binary hash.

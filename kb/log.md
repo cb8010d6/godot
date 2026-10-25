@@ -1,5 +1,16 @@
 # Update log
 
+## 2026-10-25 (native Windows acceptance)
+
+* **Measured**: six final MSVC targets, both smoke variants, four installed
+  template exports/runs, source generators and RTX feature matrix recorded.
+  [Acceptance record](../devtools/WINDOWS_ACCEPTANCE_2026_10_25.md) retains
+  strict Vulkan/D3D12 validation failures, unresolved active model identity,
+  separate graphics corrections and untested hardware/visual/latency limits.
+* **Corrected fixture**: allow official Microsoft runtime-pack feeds alongside
+  pinned local Godot packages for self-contained C# exports. Require game
+  assertions even when export exits zero.
+
 ## 2026-10-25 (installed Windows packages)
 
 * **Measured**: all four installed-template Debug/Release games exported and

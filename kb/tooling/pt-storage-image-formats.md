@@ -3,7 +3,7 @@ type: Finding
 title: PT and RR storage-image formats must match their allocations
 description: Real Vulkan validation found two inherited shader-image format mismatches despite apparently rendered screenshots.
 tags: [pathtracing, streamline, vulkan, formats]
-status: draft
+status: stable
 generated: { by: codex, at: 2026-10-25T00:00:00Z }
 ---
 
@@ -18,5 +18,6 @@ Match the raygen output declaration to the existing RGBA16F RT output, and
 allocate the RR world-normal/roughness guide as RGBA16F as declared by every
 hit shader. Albedo, specular distance, velocity and depth formats are unchanged.
 This is a local existing-defect correction, separate from the upgrade branches.
-Affected builds and validation regression are pending. A plausible screenshot
-alone did not establish a correct storage-image contract.
+All affected targets rebuilt; modern-layer runs no longer report these two
+engine format mismatches. Separate SDK NIS/FG diagnostics remain. A plausible
+screenshot alone did not establish a correct storage-image contract.
