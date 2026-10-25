@@ -24,7 +24,7 @@ function Run-Test([string]$Name, [string[]]$GodotArgs, [scriptblock]$Check) {
 	# The engine writes warnings to stderr; Windows PowerShell would turn them
 	# into terminating errors under "Stop". The output is checked below instead.
 	$ErrorActionPreference = "Continue"
-	$lines = & $editor @GodotArgs 2>&1 | ForEach-Object { "$_" }
+	$lines = & python (Join-Path $PSScriptRoot "run_native.py") $editor @GodotArgs 2>&1 | ForEach-Object { "$_" }
 	$code = $LASTEXITCODE
 	$lines | Set-Content (Join-Path $logs (($Name -replace '[^\w]+', '_') + ".log"))
 	$errors = Get-RealErrors $lines
