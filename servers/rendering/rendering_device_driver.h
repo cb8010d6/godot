@@ -854,6 +854,16 @@ public:
 
 	typedef void (*DriverCallback)(RenderingDeviceDriver *p_driver, CommandBufferID p_command_buffer, void *p_userdata);
 
+	struct DriverCallbackTexture {
+		TextureID texture;
+		TextureLayout layout;
+	};
+
+	// Native callbacks do not pass through shader uniform preparation. Drivers
+	// with implicit resource tracking must establish these declared states and
+	// invalidate cached command-list bindings changed by external code.
+	virtual void command_prepare_driver_callback(CommandBufferID p_cmd_buffer, VectorView<DriverCallbackTexture> p_textures) {}
+
 	/*****************/
 	/**** QUERIES ****/
 	/*****************/

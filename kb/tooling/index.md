@@ -1,5 +1,7 @@
 # Tooling
 
+* [D3D12 native callback state](/tooling/d3d12-native-callback-state.md) - prepare legacy texture states and invalidate external bindings
+
 * [D3D12 paired runtime layout](/tooling/d3d12-paired-runtime-layout.md) - isolate factory and legacy debug DLL lookup
 
 * [Frame Generation viewport policy](/tooling/streamline-fg-viewport-policy.md) - deterministic fallback and queryable cached SDK state

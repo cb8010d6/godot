@@ -1,5 +1,16 @@
 # Update log
 
+## 2026-10-26 (D3D12 actual evaluation regression)
+
+* **Failed at f9207b88db**: debug SR/SR+NIS/FG scenes exit zero but emit
+  3993/4999/6593 D3D12 diagnostics. No-SL control is clean. Paired device
+  initialization alone did not validate actual SDK resource/binding use.
+* **Implemented, pending build/GPU comparison**: [native callback preparation](/tooling/d3d12-native-callback-state.md),
+  using existing legacy subresource tracking and invalidating command bindings.
+* **Measured at f9207b88db**: all six Windows targets build in 552.063 s;
+  eighteen Python checks pass, seven Unix package fixtures explicitly skip;
+  six Windows build-orchestration cases pass. NuGet audit warnings retained.
+
 ## 2026-10-26 (FG policy measured and D3D12 layout correction)
 
 * **Measured at 99f59c8232**: standard editor build 77.984 s; twelve CPU policy

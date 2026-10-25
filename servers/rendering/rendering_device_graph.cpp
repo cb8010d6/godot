@@ -1153,6 +1153,7 @@ void RenderingDeviceGraph::_run_render_commands(int32_t p_level, const RecordedC
 			} break;
 			case RecordedCommand::TYPE_DRIVER_CALLBACK: {
 				const RecordedDriverCallbackCommand *driver_callback_command = reinterpret_cast<const RecordedDriverCallbackCommand *>(command);
+				driver->command_prepare_driver_callback(r_command_buffer, VectorView<RDD::DriverCallbackTexture>(driver_callback_command->textures(), driver_callback_command->texture_count));
 				driver_callback_command->callback(driver, r_command_buffer, driver_callback_command->userdata);
 			} break;
 			case RecordedCommand::TYPE_RAYTRACING_LIST: {
@@ -1997,12 +1998,20 @@ void RenderingDeviceGraph::add_driver_callback(RDD::DriverCallback p_callback, v
 	DEV_ASSERT(p_trackers.size() == p_usages.size());
 
 	int32_t command_index;
-	RecordedDriverCallbackCommand *command = static_cast<RecordedDriverCallbackCommand *>(_allocate_command(sizeof(RecordedDriverCallbackCommand), command_index));
+	RecordedDriverCallbackCommand *command = static_cast<RecordedDriverCallbackCommand *>(_allocate_command(sizeof(RecordedDriverCallbackCommand) + p_trackers.size() * sizeof(RDD::DriverCallbackTexture), command_index));
 	command->type = RecordedCommand::TYPE_DRIVER_CALLBACK;
 	// External callbacks can issue shader, transfer and clear commands.
 	command->self_stages = RDD::PIPELINE_STAGE_ALL_COMMANDS_BIT;
 	command->callback = p_callback;
 	command->userdata = p_userdata;
+	command->texture_count = 0;
+	for (uint32_t i = 0; i < p_trackers.size(); i++) {
+		if (p_trackers[i]->texture_driver_id) {
+			RDD::DriverCallbackTexture &texture = command->textures()[command->texture_count++];
+			texture.texture = p_trackers[i]->texture_driver_id;
+			texture.layout = _usage_to_image_layout(p_usages[i]);
+		}
+	}
 	_add_command_to_graph((ResourceTracker **)p_trackers.ptr(), (ResourceUsage *)p_usages.ptr(), p_trackers.size(), command_index, command);
 }
 

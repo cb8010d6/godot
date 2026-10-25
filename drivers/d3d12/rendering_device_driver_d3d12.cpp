@@ -5919,6 +5919,67 @@ void *RenderingDeviceDriverD3D12::command_buffer_get_native_handle(CommandBuffer
 	return cmd_buf_info->cmd_list.Get();
 }
 
+void RenderingDeviceDriverD3D12::command_prepare_driver_callback(CommandBufferID p_cmd_buffer, VectorView<DriverCallbackTexture> p_textures) {
+	CommandBufferInfo *cmd_buf_info = (CommandBufferInfo *)p_cmd_buffer.id;
+	if (!barrier_capabilities.enhanced_barriers_supported) {
+		for (const DriverCallbackTexture &texture : p_textures) {
+			D3D12_RESOURCE_STATES state;
+			switch (texture.layout) {
+				case TEXTURE_LAYOUT_GENERAL:
+					state = D3D12_RESOURCE_STATE_COMMON;
+					break;
+				case TEXTURE_LAYOUT_STORAGE_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_UNORDERED_ACCESS;
+					break;
+				case TEXTURE_LAYOUT_SHADER_READ_ONLY_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE;
+					break;
+				case TEXTURE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_RENDER_TARGET;
+					break;
+				case TEXTURE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_DEPTH_WRITE;
+					break;
+				case TEXTURE_LAYOUT_DEPTH_STENCIL_READ_ONLY_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_DEPTH_READ;
+					break;
+				case TEXTURE_LAYOUT_COPY_SRC_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_COPY_SOURCE;
+					break;
+				case TEXTURE_LAYOUT_COPY_DST_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_COPY_DEST;
+					break;
+				case TEXTURE_LAYOUT_RESOLVE_SRC_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_RESOLVE_SOURCE;
+					break;
+				case TEXTURE_LAYOUT_RESOLVE_DST_OPTIMAL:
+					state = D3D12_RESOURCE_STATE_RESOLVE_DEST;
+					break;
+				default:
+					ERR_FAIL_MSG("Unsupported native callback texture layout.");
+			}
+			TextureInfo *texture_info = (TextureInfo *)texture.texture.id;
+			uint32_t planes = (texture_info->desc.Flags & D3D12_RESOURCE_FLAG_ALLOW_DEPTH_STENCIL) ? format_get_plane_count(texture_info->format) : 1;
+			for (uint32_t layer = 0; layer < texture_info->layers; layer++) {
+				for (uint32_t mip = 0; mip < texture_info->mipmaps; mip++) {
+					uint32_t subresource = D3D12CalcSubresource(texture_info->base_mip + mip, texture_info->base_layer + layer, 0, texture_info->desc.MipLevels, texture_info->desc.ArraySize());
+					_resource_transition_batch(cmd_buf_info, texture_info, subresource, planes, state);
+				}
+			}
+		}
+		_resource_transitions_flush(cmd_buf_info);
+	}
+
+	// The external evaluator may replace both descriptor heaps, root signatures
+	// and the pipeline. The next Godot command must bind its own state again.
+	cmd_buf_info->graphics_pso = nullptr;
+	cmd_buf_info->graphics_root_signature_crc = 0;
+	cmd_buf_info->compute_pso = nullptr;
+	cmd_buf_info->compute_root_signature_crc = 0;
+	cmd_buf_info->pending_dyn_params = true;
+	cmd_buf_info->descriptor_heaps_set = false;
+}
+
 /********************/
 /**** SUBMISSION ****/
 /********************/
