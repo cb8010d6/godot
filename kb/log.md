@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-26 (first NIS GPU comparison)
+
+* **Measured at 94c27203b1**: standard build and nine short GPU cases complete;
+  NIS distinct RGBA16F/RGBA32F evaluations return eOk without the previous
+  NIS format/sync diagnostics. Other Vulkan VUIDs still fail strict acceptance.
+* **Corrected evidence boundary**: [fresh fixture probe omission](/mistakes/optional-native-probe-in-fresh-fixture.md)
+  leaves runtime/FG-state checks unverified; explicit loading and dependent
+  reruns follow. Lifetime/performance and presented-frame quality remain open.
+
 ## 2026-10-26 (NIS stabilization candidate)
 
 * **Reproduced**: the six real Vulkan controls at the unchanged native base;

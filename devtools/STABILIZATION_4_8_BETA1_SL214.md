@@ -58,6 +58,31 @@ corrections. Independent baseline/FG/SDK errors must remain visible.
 
 ## Acceptance boundary
 
+## First NIS hardware comparison
+
+Native source `94c27203b1bf9fb3095316c8020d9ad4727f7b15` built with the
+repository's standard-editor command in 38.344 s after removing the three
+new deprecated-API calls seen in the earlier build. The original ANGLE
+dependency warning remains.
+
+All nine short rendered cases completed on RTX 4060 Laptop / 610.88 with
+the requested actual backend: seven Vulkan controls (including no SL,
+SL2.14 NIS/FG request combinations and SL2.10 with NIS off/on), plus D3D12
+NIS off/on. The nonzero-sharpness cases logged actual formats 96/108
+(RGBA16F/RGBA32F), distinct resources and `sl::eOk` from NIS evaluation.
+NIS format-mismatch and sync diagnostics were zero in these runs; a real
+captured image was inspected. Existing platform/device/depth/present VUIDs
+remain, so **strict Vulkan acceptance still fails**.
+
+The fresh fixture copy did not auto-load its native GDExtension. Its optional
+probe silently skipped state capture; these runs establish the NIS API,
+format/graph and rendered-scene comparison, not foreground FG activation,
+runtime module provenance or generated-frame correctness. Correct the fixture
+to explicitly load/require its probe and repeat those dependent checks.
+Lifecycle/performance testing is still pending. The initial records remain.
+
+## Acceptance boundary
+
 SL 2.14.16, PhysX/CUDA/DDGI/Blast/Flow pins and public-runtime exclusion
 rules remain. RTX50, MFG 3X-6X, Dynamic MFG and newer Godot betas are outside
 this work. AI assistance covers implementation, diagnostics and reports;

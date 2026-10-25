@@ -32,3 +32,10 @@ The first local editor build passed but reported three new deprecated `free`
 calls; the candidate uses the current `free_rid` API instead. Keep that build
 receipt separate from the rebuilt final candidate. Verbose first-evaluation
 output records the actual resource formats, alias check and SDK result.
+
+At `94c27203b1` the rebuilt standard editor and nine short real GPU cases
+completed. Nonzero-sharpness evaluations logged actual RGBA16F/RGBA32F,
+non-aliased resources and eOk; NIS format and sync messages disappeared.
+The other Vulkan VUIDs remain, and lifecycle/performance is still pending.
+The copied fixture's optional native probe did not load, so no FG activation
+or runtime-module proof is claimed from its missing state file.

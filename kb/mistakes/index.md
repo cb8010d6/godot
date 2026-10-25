@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Optional native probe in a fresh fixture](/mistakes/optional-native-probe-in-fresh-fixture.md) - load and require the extension before accepting runtime/FG state evidence
+
 * [A legacy D3D12 control must retain loader initialization](/mistakes/d3d12-legacy-control-initialization.md) - skip only factory creation and verify the failure stage
 
 * [Class reference validation needs module inputs](/mistakes/class-docs-module-inputs.md) - include module XML before judging unresolved links
