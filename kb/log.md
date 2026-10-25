@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-26 (stale editor documentation cache shutdown)
+
+* An actual older editor cache reproduces an access violation during headless
+  import, with or without the native probe. Cold/current-cache controls pass.
+* [Deferred cache lifetime](/tooling/editor-help-stale-cache-shutdown.md):
+  a worker can enqueue script-doc loading while EditorNode is being destroyed.
+  Skip that editor-only callback after its consumer is gone; rebuild and
+  stale-cache/normal-editor regression remain required.
+
 ## 2026-10-26 (terminal Vulkan device wait candidate)
 
 * Host frame fences do not cover the SDK pacer queue. Register a main-device

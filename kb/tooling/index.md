@@ -1,5 +1,7 @@
 # Tooling
 
+* [Editor documentation cache shutdown](/tooling/editor-help-stale-cache-shutdown.md) - guard a deferred consumer after EditorNode teardown
+
 * [Streamline device ownership and shutdown](/tooling/streamline-terminal-shutdown.md) - local devices preserve the main SDK and terminal cleanup precedes native teardown
 
 * [DLSS input rounding](/tooling/dlss-ultra-performance-input-rounding.md) - reconcile one-pixel input differences before viewport allocation

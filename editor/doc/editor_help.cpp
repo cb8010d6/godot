@@ -3168,6 +3168,12 @@ static void _load_script_doc_cache(bool p_changes) {
 }
 
 void EditorHelp::load_script_doc_cache() {
+	// A documentation worker can defer this call while EditorNode is joining
+	// it during shutdown. Its script cache is no longer needed after teardown.
+	if (!EditorNode::get_singleton()) {
+		return;
+	}
+
 	if (!ProjectSettings::get_singleton()->is_project_loaded()) {
 		print_verbose("Skipping loading script doc cache since no project is open.");
 		return;
