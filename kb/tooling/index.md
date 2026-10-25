@@ -1,5 +1,7 @@
 # Tooling
 
+* [Windows Mono artifact isolation](/tooling/windows-mono-artifact-isolation.md) - keep module variants distinct and test installed templates, not only custom paths
+
 * [PT storage-image formats](/tooling/pt-storage-image-formats.md) - match output and RR normal/roughness declarations with real allocations
 
 * [Abandoned RT pipeline cleanup](/tooling/pt-abandoned-pipeline-cleanup.md) - release the dependent pipeline before its owned shaders

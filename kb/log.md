@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (Windows default .NET export)
+
+* **Found**: a Mono editor resolving the standard template directory after
+  mixed incremental builds. Isolate native object/archive module variants;
+  [build finding](/tooling/windows-mono-artifact-isolation.md).
+
 ## 2026-10-25 (DLSS output validation follow-up)
 
 * **Measured**: the one-frame motion phase correction on both Vulkan/D3D12.
