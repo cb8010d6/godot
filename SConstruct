@@ -1213,7 +1213,7 @@ if env.editor_build:
 
 env["PROGSUFFIX_WRAP"] = suffix + env.module_version_string + ".console" + env["PROGSUFFIX"]
 env["PROGSUFFIX"] = suffix + env.module_version_string + env["PROGSUFFIX"]
-env["OBJSUFFIX"] = suffix + env["OBJSUFFIX"]
+env["OBJSUFFIX"] = suffix + env.module_version_string + env["OBJSUFFIX"]
 # (SH)LIBSUFFIX will be used for our own built libraries
 # LIBSUFFIXES contains LIBSUFFIX and SHLIBSUFFIX by default,
 # so we need to append the default suffixes to keep the ability
@@ -1224,8 +1224,8 @@ if os.name == "nt":
     env["LIBSUFFIXES"] += [env["LIBSUFFIX"]]
 else:
     env["LIBSUFFIXES"] += [env["LIBSUFFIX"], env["SHLIBSUFFIX"]]
-env["LIBSUFFIX"] = suffix + env["LIBSUFFIX"]
-env["SHLIBSUFFIX"] = suffix + env["SHLIBSUFFIX"]
+env["LIBSUFFIX"] = suffix + env.module_version_string + env["LIBSUFFIX"]
+env["SHLIBSUFFIX"] = suffix + env.module_version_string + env["SHLIBSUFFIX"]
 
 env["OBJPREFIX"] = env["object_prefix"]
 env["SHOBJPREFIX"] = env["object_prefix"]

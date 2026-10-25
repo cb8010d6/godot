@@ -37,7 +37,8 @@ if ($custom -notmatch '^\d+\.\d+\.\d+$') { throw "CUSTOM_VERSION must be MAJOR.M
 $versionPy = Get-Content (Join-Path $root "version.py") -Raw
 $godotMajor = [regex]::Match($versionPy, '(?m)^major = (\d+)').Groups[1].Value
 $godotMinor = [regex]::Match($versionPy, '(?m)^minor = (\d+)').Groups[1].Value
-$godotStatus = [regex]::Match($versionPy, '(?m)^status = "(\w+)"').Groups[1].Value
+$godotStatus = [regex]::Match($version, '^\d+\.\d+(?:\.\d+)?\.([A-Za-z]+\d*)').Groups[1].Value
+if (-not $godotStatus) { throw "Unexpected editor version '$version'." }
 $tag = "godot$godotMajor.$godotMinor-$godotStatus-nvidia-rt-dlss-physx-v$custom"
 $variant = if ($WithNvidiaRuntime) { "_with-nvidia-runtime_PRIVATE" } else { "" }
 $flavorSuffix = if ($Mono) { "_mono" } else { "" }

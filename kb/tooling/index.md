@@ -2,6 +2,10 @@
 
 * [Streamline SDK upgrade validation](/tooling/streamline-sdk-validation.md) - release provenance, shared manifests, API compilation and runtime boundaries
 
+* [Windows package version](/tooling/windows-package-version.md) - preserve the built beta1 status in release metadata and test installed templates
+
+* [Windows Mono artifact isolation](/tooling/windows-mono-artifact-isolation.md) - keep module variants distinct and test installed templates, not only custom paths
+
 * [DDGI test protocol](/tooling/ddgi-test-protocol.md) - converged comparisons, step response, motion error, flicker spread, cost, a real game level, A/B builds
 * [Vulkan synchronization validation without the SDK](/tooling/vulkan-sync-validation.md) - load an existing Khronos layer DLL through a scratch manifest
 * [Reading PDFs for research](/tooling/pdf-text-extraction.md) - extract text with pypdf when page rendering isn't available

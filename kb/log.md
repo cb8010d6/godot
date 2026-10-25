@@ -1,5 +1,18 @@
 # Update log
 
+## 2026-10-25 (installed Windows packages)
+
+* **Measured**: all four installed-template Debug/Release games exported and
+  ran; self-contained Mono games passed without SDK discovery. Editor package
+  tags now read the actual beta1 status from the binary rather than version.py.
+  [Package version finding](/tooling/windows-package-version.md).
+
+## 2026-10-25 (Windows default .NET export)
+
+* **Found**: a Mono editor resolving the standard template directory after
+  mixed incremental builds. Isolate native object/archive module variants;
+  [build finding](/tooling/windows-mono-artifact-isolation.md).
+
 ## 2026-10-25 (Windows acceptance in progress)
 
 * **Added**: an opt-out for Streamline OTA during pinned offline validation;
