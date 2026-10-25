@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-25 (D3D12 startup attribution)
+
+* **Measured**: no-SL forced legacy reproduces the same debug-layer failure
+  as SL2.10/2.14. Early debug output identifies mismatched system Core and
+  application SDKLayers; the paired Agility factory path succeeds.
+  [Eight-row matrix](/tooling/d3d12-legacy-control.md). Diagnostic-only code
+  remains separate; this is attribution, not a production fix.
+
 ## 2026-10-25 (diagnostic adapter interface)
 
 * **Corrected**: the local D3D12 trace must use IDXGIAdapter::GetDesc,

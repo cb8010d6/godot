@@ -3,7 +3,7 @@ type: Finding
 title: Separate the D3D12 legacy runtime path from Streamline interposition
 description: Diagnostic-only startup tracing and a no-Streamline legacy control for the fixed Windows candidate.
 tags: [windows, d3d12, streamline, debugging, validation]
-status: draft
+status: stable
 generated: { by: codex, at: 2026-10-25T00:00:00Z }
 ---
 
@@ -37,3 +37,33 @@ The first instrumentation build used `GetDesc1` on the device driver's
 `IDXGIAdapter` and failed to compile. Correct the trace to `GetDesc` and
 `DXGI_ADAPTER_DESC`; both expose the same LUID. Keep this failed diagnostic
 receipt separate from the successful exact-candidate six-target build.
+
+## Measured startup comparison
+
+Diagnostic engine `a182f0c9f24411242f18b68aa5d91ece9acb983e` was built
+after correcting that trace. On Windows 10 19045 / RTX 4060 Laptop / 610.88:
+
+| Device path | Ordinary startup | Debug-layer startup |
+| --- | --- | --- |
+| No SL, Agility factory | D3D12, S_OK | D3D12, S_OK |
+| No SL, forced legacy | D3D12, S_OK | E_INVALIDARG, Vulkan fallback |
+| SL 2.10, legacy | D3D12, S_OK | E_INVALIDARG, Vulkan fallback |
+| SL 2.14, legacy | D3D12, S_OK | E_INVALIDARG, Vulkan fallback |
+
+All rows used the same adapter LUID, requested feature level 11_0 and
+IID_ID3D12Device. The reported D3D12 API capability was 12_0. Exit zero
+after Vulkan fallback does not count as a D3D12 validation pass.
+
+Early OutputDebugString in all three failing rows explicitly reported
+`SDKLayers dll does not match the D3D12SDKVersion of D3D12 Core dll`.
+Legacy debug startup selected system Core 10.0.19041.7291 and the application's
+Agility SDKLayers 1.618.5.0.20251205.1. The factory path selected the local
+Core/SDKLayers pair at 1.618.5.0.20251205.1. Function-owner and load-event
+records distinguish selection at device creation from modules loaded later.
+
+This reproduces the failure without Streamline and identifies a legacy
+runtime/layer version-selection problem. It is not evidence of a new 2.14
+interposer regression. No DLL was removed/replaced to manufacture a pass,
+and no production compatibility fix is claimed. A future fix must select a
+coherent runtime/layer pair and rerun this matrix, rather than only forwarding
+one debug-interface pointer.
