@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (external callback pipeline stages)
+
+* **Found**: callback stage masks were empty, so a GENERAL access declaration
+  alone did not protect SDK transfer clears. Declare external callback stages
+  as ALL_COMMANDS and recheck synchronization diagnostics.
+
 ## 2026-10-25 (Windows default .NET export)
 
 * **Found**: a Mono editor resolving the standard template directory after
