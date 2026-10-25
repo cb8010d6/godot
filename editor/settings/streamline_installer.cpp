@@ -36,6 +36,7 @@
 #include "core/object/callable_mp.h"
 #include "core/os/os.h"
 #include "core/os/time.h"
+#include "drivers/streamline/streamline_runtime.h"
 #include "editor/editor_node.h"
 #include "editor/editor_string_names.h"
 #include "editor/file_system/editor_paths.h"
@@ -52,45 +53,9 @@
 #include "scene/main/http_request.h"
 #include "scene/resources/style_box_flat.h"
 
-// The SDK version this source is built against (see thirdparty/streamline/include/sl_version.h).
-// When it changes, update the URLs, size and SHA-256 together.
-static const char *SL_SDK_VERSION = "2.10.0";
-static const char *SL_DOWNLOAD_URL = "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.10.0/streamline-sdk-v2.10.0.zip";
-static const char *SL_DOWNLOAD_FILE = "streamline-sdk-v2.10.0.zip";
-static const char *SL_DOWNLOAD_SHA256 = "b0cc810c86b0335d4fd76a02d35fff53e528d2fb66c29860565130f76c9383b0";
-static const int64_t SL_DOWNLOAD_SIZE = 213131430;
-static const char *SL_RELEASE_URL = "https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0";
 static const char *SL_PRODUCT_URL = "https://developer.nvidia.com/rtx/streamline";
-static const char *SL_LICENSE_URL = "https://github.com/NVIDIA-RTX/Streamline/blob/v2.10.0/license.txt";
-static const char *SL_THIRD_PARTY_URL = "https://github.com/NVIDIA-RTX/Streamline/blob/v2.10.0/3rd-party-licenses.md";
 static const char *DLSS_LICENSE_URL = "https://github.com/NVIDIA/DLSS/blob/main/LICENSE.txt";
 static const char *FORK_README_URL = "https://github.com/Diginaat/godot#5-optional-add-the-nvidia-streamline-dlls-only-for-dlss";
-
-// Folder inside the SDK zip with the signed release DLLs. bin/x64/development
-// holds unsigned debug builds and is never installed.
-static const char *SL_ZIP_DIR = "bin/x64/";
-static const char *SL_FILES[] = {
-	"sl.interposer.dll",
-	"sl.common.dll",
-	"sl.dlss.dll",
-	"sl.dlss_d.dll",
-	"sl.dlss_g.dll",
-	"sl.reflex.dll",
-	"sl.pcl.dll",
-	"sl.nis.dll",
-	"sl.deepdvc.dll",
-	"sl.directsr.dll",
-	"sl.nvperf.dll",
-	"nvngx_dlss.dll",
-	"nvngx_dlssd.dll",
-	"nvngx_dlssg.dll",
-	"nvngx_deepdvc.dll",
-	"NvLowLatencyVk.dll",
-	"nvngx_dlss.license.txt",
-	"reflex.license.txt",
-	"nis.license.txt",
-};
-static const int SL_FILE_COUNT = std_size(SL_FILES);
 
 VBoxContainer *StreamlineInstaller::_add_card(VBoxContainer *p_parent, const String &p_title, const StringName &p_icon, const StringName &p_color) {
 	Card card;
@@ -240,11 +205,11 @@ void StreamlineInstaller::_update_theme() {
 	};
 	add_step(TTR("Check the editor folder"), TTR("Makes sure the files can be written there, before anything is downloaded."), _code(_get_install_dir()));
 	add_step(TTR("Ask you to confirm the download"), TTR("A popup shows exactly what will be downloaded and from where. Nothing happens if you say no."), "");
-	add_step(vformat(TTR("Download the Streamline SDK %s (%s)"), SL_SDK_VERSION, String::humanize_size(SL_DOWNLOAD_SIZE)), TTR("A normal HTTPS download from NVIDIA's official GitHub account, NVIDIA-RTX. GitHub serves the file from its own download server. Nothing about you or your project is sent."), _code(SL_DOWNLOAD_URL));
+	add_step(vformat(TTR("Download the Streamline SDK %s (%s)"), StreamlineRuntime::SDK_VERSION, String::humanize_size(StreamlineRuntime::DOWNLOAD_SIZE)), TTR("A normal HTTPS download from NVIDIA's official GitHub account, NVIDIA-RTX. GitHub serves the file from its own download server. Nothing about you or your project is sent."), _code(StreamlineRuntime::DOWNLOAD_URL));
 	add_step(TTR("Keep it in the editor's cache folder for now"), TTR("A temporary copy, deleted at the end."), _code(_get_download_path()));
-	add_step(TTR("Check the file's SHA-256 fingerprint"), TTR("A fingerprint of every byte in the file. This build knows the fingerprint of NVIDIA's official release. If even one byte differs (a broken or tampered download), the file is deleted and nothing is installed."), _code(SL_DOWNLOAD_SHA256));
-	add_step(vformat(TTR("Copy %d files next to the editor"), SL_FILE_COUNT), vformat(TTR("Only the signed release files from the zip's \"%s\" folder (listed below). Documentation, source code and the \"development\" debug builds are skipped. A file that already exists is renamed to <name>.old, not deleted, so you can roll back."), SL_ZIP_DIR), "");
-	add_step(TTR("Delete the downloaded zip"), TTR("Frees the 203 MiB cache copy."), "");
+	add_step(TTR("Check the file's SHA-256 fingerprint"), TTR("A fingerprint of every byte in the file. This build knows the fingerprint of NVIDIA's official release. If even one byte differs (a broken or tampered download), the file is deleted and nothing is installed."), _code(StreamlineRuntime::DOWNLOAD_SHA256));
+	add_step(vformat(TTR("Copy %d files next to the editor"), StreamlineRuntime::FILE_COUNT), vformat(TTR("Only the signed release files from the zip's \"%s\" folder (listed below). Documentation, source code and the \"development\" debug builds are skipped. A file that already exists is renamed to <name>.old, not deleted, so you can roll back."), StreamlineRuntime::ZIP_DIR), "");
+	add_step(TTR("Delete the downloaded zip"), vformat(TTR("Frees the %s cache copy."), String::humanize_size(StreamlineRuntime::DOWNLOAD_SIZE)), "");
 	add_step(TTR("Restart the editor"), TTR("Streamline is loaded when the editor starts. Then pick DLSS in Project Settings > Rendering > Scaling 3D > Mode."), "");
 	steps += "[/table]";
 	steps_text->set_text(steps);
@@ -284,9 +249,9 @@ void StreamlineInstaller::_update_theme() {
 			TTR("Doesn't connect anywhere except GitHub, and only after you confirm.") + "[/ul]\n" +
 			"[color=" + dim + "]" + TTR("To undo it, delete the files listed above from the editor folder.") + "[/color]");
 
-	manual_text->set_text(vformat(TTR("Download the zip yourself, open its \"%s\" folder, and copy the files listed above into the editor folder. Then restart the editor."), SL_ZIP_DIR) + "\n" +
-			_link(vformat(TTR("Streamline SDK %s release page (GitHub)"), SL_SDK_VERSION), SL_RELEASE_URL) + "\n" +
-			_link(TTR("Direct download of the zip"), SL_DOWNLOAD_URL) + "\n" +
+	manual_text->set_text(vformat(TTR("Download the zip yourself, open its \"%s\" folder, and copy the files listed above into the editor folder. Then restart the editor."), StreamlineRuntime::ZIP_DIR) + "\n" +
+			_link(vformat(TTR("Streamline SDK %s release page (GitHub)"), StreamlineRuntime::SDK_VERSION), StreamlineRuntime::RELEASE_URL) + "\n" +
+			_link(TTR("Direct download of the zip"), StreamlineRuntime::DOWNLOAD_URL) + "\n" +
 			_link(TTR("NVIDIA Streamline product page"), SL_PRODUCT_URL) + "\n" +
 			_link(TTR("Step-by-step instructions (README of this build)"), FORK_README_URL));
 
@@ -296,14 +261,14 @@ void StreamlineInstaller::_update_theme() {
 			TTR("Among other things, they limit sharing the files with others and require you to be of legal age (or have a guardian's consent).") + "[/ul]\n" +
 			"[color=" + warning_html + "]" + TTR("Read them before you continue:") + "[/color]\n" +
 			_link(TTR("NVIDIA RTX SDKs License (DLSS)"), DLSS_LICENSE_URL) + "\n" +
-			_link(TTR("Streamline SDK license"), SL_LICENSE_URL) + "\n" +
-			_link(TTR("Streamline third-party licenses"), SL_THIRD_PARTY_URL));
+			_link(TTR("Streamline SDK license"), StreamlineRuntime::LICENSE_URL) + "\n" +
+			_link(TTR("Streamline third-party licenses"), StreamlineRuntime::THIRD_PARTY_URL));
 
 	download_confirm_text->set_text(TTR("You are about to [b]download a file from GitHub[/b].") + "\n\n" +
 			"[table=2]" +
 			"[cell padding=0,2,12,6][b]" + TTR("From") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + TTR("NVIDIA's official GitHub account [b]NVIDIA-RTX[/b], Streamline repository") + "[/cell]" +
-			"[cell padding=0,2,12,6][b]" + TTR("File") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + vformat("%s (%s)", SL_DOWNLOAD_FILE, String::humanize_size(SL_DOWNLOAD_SIZE)) + "[/cell]" +
-			"[cell padding=0,2,12,6][b]" + TTR("Address") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + _code(SL_DOWNLOAD_URL) + "[/cell]" +
+			"[cell padding=0,2,12,6][b]" + TTR("File") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + vformat("%s (%s)", StreamlineRuntime::DOWNLOAD_FILE, String::humanize_size(StreamlineRuntime::DOWNLOAD_SIZE)) + "[/cell]" +
+			"[cell padding=0,2,12,6][b]" + TTR("Address") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + _code(StreamlineRuntime::DOWNLOAD_URL) + "[/cell]" +
 			"[cell padding=0,2,12,6][b]" + TTR("Saved to") + "[/b][/cell][cell expand=1 padding=0,2,0,6]" + _code(_get_download_path()) + "[/cell]" +
 			"[/table]\n" +
 			"[color=" + dim + "]" + TTR("GitHub serves the file from its download server (githubusercontent.com). Before anything is installed, the file is checked against the SHA-256 fingerprint of NVIDIA's official release.") + "[/color]\n\n" +
@@ -317,7 +282,7 @@ String StreamlineInstaller::_get_install_dir() const {
 }
 
 String StreamlineInstaller::_get_download_path() const {
-	return EditorPaths::get_singleton()->get_cache_dir().path_join(SL_DOWNLOAD_FILE);
+	return EditorPaths::get_singleton()->get_cache_dir().path_join(StreamlineRuntime::DOWNLOAD_FILE);
 }
 
 bool StreamlineInstaller::_is_installed() const {
@@ -330,7 +295,7 @@ void StreamlineInstaller::_update_status() {
 	status_panel->add_theme_style_override(SceneStringName(panel), _make_card_style(color, 0.16));
 	status_icon->set_texture(get_editor_theme_icon(installed ? SNAME("StatusSuccess") : SNAME("StatusWarning")));
 	if (installed) {
-		status_label->set_text(vformat(TTR("DLSS is installed. Its files are in %s. You can install again to replace them with Streamline SDK %s."), _get_install_dir(), SL_SDK_VERSION));
+		status_label->set_text(vformat(TTR("DLSS is installed. Its files are in %s. You can install again to replace them with Streamline SDK %s."), _get_install_dir(), StreamlineRuntime::SDK_VERSION));
 	} else {
 		status_label->set_text(vformat(TTR("DLSS is not installed yet. Its files aren't in %s. DLSS, Ray Reconstruction, Frame Generation and Reflex are off until you add them; everything else works."), _get_install_dir()));
 	}
@@ -394,7 +359,7 @@ void StreamlineInstaller::_start_install() {
 	progress_bar->set_value(0);
 
 	const String install_dir = _get_install_dir();
-	_log(vformat(TTR("Installing NVIDIA Streamline SDK %s into %s"), SL_SDK_VERSION, install_dir));
+	_log(vformat(TTR("Installing NVIDIA Streamline SDK %s into %s"), StreamlineRuntime::SDK_VERSION, install_dir));
 
 	// Fail early when the editor folder isn't writable (for example under Program Files).
 	const String probe = install_dir.path_join(".streamline_write_test");
@@ -408,7 +373,7 @@ void StreamlineInstaller::_start_install() {
 	const String zip_path = _get_download_path();
 	DirAccess::make_dir_recursive_absolute(zip_path.get_base_dir());
 
-	if (FileAccess::exists(zip_path) && FileAccess::get_sha256(zip_path) == SL_DOWNLOAD_SHA256) {
+	if (FileAccess::exists(zip_path) && FileAccess::get_sha256(zip_path) == StreamlineRuntime::DOWNLOAD_SHA256) {
 		_log(vformat(TTR("Found a complete download from an earlier attempt: %s. Skipping the download."), zip_path));
 		state = STATE_VERIFYING;
 		_update_buttons();
@@ -416,10 +381,10 @@ void StreamlineInstaller::_start_install() {
 		return;
 	}
 
-	_log(vformat(TTR("Downloading %s (%s)"), SL_DOWNLOAD_URL, String::humanize_size(SL_DOWNLOAD_SIZE)));
+	_log(vformat(TTR("Downloading %s (%s)"), StreamlineRuntime::DOWNLOAD_URL, String::humanize_size(StreamlineRuntime::DOWNLOAD_SIZE)));
 	_log(vformat(TTR("Saving to %s"), zip_path));
 	downloader->set_download_file(zip_path);
-	const Error err = downloader->request(SL_DOWNLOAD_URL);
+	const Error err = downloader->request(StreamlineRuntime::DOWNLOAD_URL);
 	if (err != OK) {
 		_fail(vformat(TTR("Can't start the download (error %d)."), err));
 		return;
@@ -479,15 +444,42 @@ void StreamlineInstaller::_verify() {
 	const String zip_path = _get_download_path();
 	progress_label->set_text(TTR("Verifying checksum..."));
 	_log(TTR("Verifying the SHA-256 checksum of the download..."));
-	const String sha = FileAccess::get_sha256(zip_path);
-	if (sha != SL_DOWNLOAD_SHA256) {
+	Ref<FileAccess> archive_file = FileAccess::open(zip_path, FileAccess::READ);
+	if (archive_file.is_null() || archive_file->get_length() != StreamlineRuntime::DOWNLOAD_SIZE) {
+		archive_file.unref();
 		DirAccess::remove_absolute(zip_path);
-		_fail(vformat(TTR("Checksum mismatch: expected %s, got %s. The file was deleted and nothing was installed."), SL_DOWNLOAD_SHA256, sha));
+		_fail(TTR("The download has an unexpected size. The file was deleted and nothing was installed."));
+		return;
+	}
+	archive_file.unref();
+	const String sha = FileAccess::get_sha256(zip_path);
+	if (sha != StreamlineRuntime::DOWNLOAD_SHA256) {
+		DirAccess::remove_absolute(zip_path);
+		_fail(vformat(TTR("Checksum mismatch: expected %s, got %s. The file was deleted and nothing was installed."), StreamlineRuntime::DOWNLOAD_SHA256, sha));
 		return;
 	}
 	_log(vformat(TTR("Checksum OK: %s"), sha), get_theme_color(SNAME("success_color"), EditorStringName(Editor)));
 
-	_log(vformat(TTR("Extracting %d files from \"%s\" in the zip..."), SL_FILE_COUNT, SL_ZIP_DIR));
+	// Check the entire release manifest before replacing any installed file.
+	Ref<FileAccess> io_fa;
+	zlib_filefunc_def io = zipio_create_io(&io_fa);
+	unzFile pkg = unzOpen2(zip_path.utf8().get_data(), &io);
+	if (!pkg) {
+		_fail(TTR("Can't open the downloaded zip."));
+		return;
+	}
+	for (const char *file : StreamlineRuntime::RUNTIME_FILES) {
+		const String zip_name = String(StreamlineRuntime::ZIP_DIR) + file;
+		unz_file_info info;
+		if (unzLocateFile(pkg, zip_name.utf8().get_data(), 1) != UNZ_OK || unzGetCurrentFileInfo(pkg, &info, nullptr, 0, nullptr, 0, nullptr, 0) != UNZ_OK || info.uncompressed_size == 0) {
+			unzClose(pkg);
+			_fail(vformat(TTR("%s is missing or empty in the zip. Nothing was installed."), zip_name));
+			return;
+		}
+	}
+	unzClose(pkg);
+
+	_log(vformat(TTR("Extracting %d files from \"%s\" in the zip..."), StreamlineRuntime::FILE_COUNT, StreamlineRuntime::ZIP_DIR));
 	state = STATE_EXTRACTING;
 	progress_bar->set_value(0);
 	_update_buttons();
@@ -497,7 +489,7 @@ void StreamlineInstaller::_verify() {
 
 bool StreamlineInstaller::_extract_file(const String &p_name) {
 	const String dest = _get_install_dir().path_join(p_name);
-	const String zip_name = String(SL_ZIP_DIR) + p_name;
+	const String zip_name = String(StreamlineRuntime::ZIP_DIR) + p_name;
 
 	Ref<FileAccess> io_fa;
 	zlib_filefunc_def io = zipio_create_io(&io_fa);
@@ -549,7 +541,7 @@ bool StreamlineInstaller::_extract_file(const String &p_name) {
 }
 
 void StreamlineInstaller::_extract_next() {
-	if (extract_index >= SL_FILE_COUNT) {
+	if (extract_index >= StreamlineRuntime::FILE_COUNT) {
 		set_process_internal(false);
 		state = STATE_DONE;
 		DirAccess::remove_absolute(_get_download_path());
@@ -563,14 +555,14 @@ void StreamlineInstaller::_extract_next() {
 		return;
 	}
 
-	const String name = SL_FILES[extract_index];
-	progress_label->set_text(vformat(TTR("Extracting %s (%d/%d)"), name, extract_index + 1, SL_FILE_COUNT));
+	const String name = StreamlineRuntime::RUNTIME_FILES[extract_index];
+	progress_label->set_text(vformat(TTR("Extracting %s (%d/%d)"), name, extract_index + 1, StreamlineRuntime::FILE_COUNT));
 	if (!_extract_file(name)) {
 		return;
 	}
 	installed_count++;
 	extract_index++;
-	progress_bar->set_value(100.0 * extract_index / SL_FILE_COUNT);
+	progress_bar->set_value(100.0 * extract_index / StreamlineRuntime::FILE_COUNT);
 }
 
 void StreamlineInstaller::_notification(int p_what) {
@@ -580,7 +572,7 @@ void StreamlineInstaller::_notification(int p_what) {
 				const int64_t done = downloader->get_downloaded_bytes();
 				int64_t total = downloader->get_body_size();
 				if (total <= 0) {
-					total = SL_DOWNLOAD_SIZE;
+					total = StreamlineRuntime::DOWNLOAD_SIZE;
 				}
 				const double seconds = MAX(0.001, (OS::get_singleton()->get_ticks_msec() - download_start_msec) / 1000.0);
 				progress_bar->set_value(100.0 * done / total);
@@ -749,6 +741,7 @@ StreamlineInstaller::StreamlineInstaller() {
 
 	downloader = memnew(HTTPRequest);
 	downloader->set_use_threads(true);
+	downloader->set_body_size_limit(StreamlineRuntime::DOWNLOAD_SIZE);
 	downloader->connect("request_completed", callable_mp(this, &StreamlineInstaller::_download_completed));
 	add_child(downloader);
 }

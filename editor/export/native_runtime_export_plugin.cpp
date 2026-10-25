@@ -32,6 +32,7 @@
 
 #include "core/io/file_access.h"
 #include "core/os/os.h"
+#include "drivers/streamline/streamline_runtime.h"
 #include "editor/export/editor_export_platform.h"
 
 // PhysX GPU dynamics, NVIDIA Blast (destruction) and Flow (gas, fire). The
@@ -44,32 +45,6 @@ static const char *PHYSX_RUNTIME_FILES[] = {
 	"NvBlastExtShaders.dll",
 	"nvflow.dll",
 	"nvflowext.dll",
-};
-
-// The signed release files the DLSS installer puts next to the editor
-// (editor/settings/streamline_installer.cpp), with their license texts. They
-// are only shipped inside games made with this editor, never with the
-// editor or the export templates (NVIDIA's terms).
-static const char *STREAMLINE_RUNTIME_FILES[] = {
-	"sl.interposer.dll",
-	"sl.common.dll",
-	"sl.dlss.dll",
-	"sl.dlss_d.dll",
-	"sl.dlss_g.dll",
-	"sl.reflex.dll",
-	"sl.pcl.dll",
-	"sl.nis.dll",
-	"sl.deepdvc.dll",
-	"sl.directsr.dll",
-	"sl.nvperf.dll",
-	"nvngx_dlss.dll",
-	"nvngx_dlssd.dll",
-	"nvngx_dlssg.dll",
-	"nvngx_deepdvc.dll",
-	"NvLowLatencyVk.dll",
-	"nvngx_dlss.license.txt",
-	"reflex.license.txt",
-	"nis.license.txt",
 };
 
 bool NativeRuntimeExportPlugin::supports_platform(const Ref<EditorExportPlatform> &p_export_platform) const {
@@ -99,7 +74,7 @@ void NativeRuntimeExportPlugin::_export_begin(const HashSet<String> &p_features,
 			print_line("NVIDIA DLSS isn't installed next to the editor (use the editor's \"Get NVIDIA DLSS...\" button): the exported game runs without DLSS.");
 			return;
 		}
-		for (const char *file : STREAMLINE_RUNTIME_FILES) {
+		for (const char *file : StreamlineRuntime::RUNTIME_FILES) {
 			String path = editor_dir.path_join(file);
 			if (FileAccess::exists(path)) {
 				add_shared_object(path, tags);

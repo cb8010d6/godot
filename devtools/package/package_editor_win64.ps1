@@ -19,6 +19,9 @@ param(
 )
 $ErrorActionPreference = "Stop"
 $root = Resolve-Path "$PSScriptRoot\..\.."
+$manifestJson = & python (Join-Path $PSScriptRoot "streamline_manifest.py") --root $root
+if ($LASTEXITCODE -ne 0) { throw "Invalid Streamline runtime manifest." }
+$streamline = $manifestJson | ConvertFrom-Json
 $bin = Join-Path $root "bin"
 $suffix = if ($Mono) { ".mono" } else { "" }
 $exe = "godot.windows.editor.x86_64$suffix.exe"
@@ -66,10 +69,9 @@ Copy-Required (Join-Path $root "thirdparty\streamline\LICENSE.txt") (Join-Path $
 Get-ChildItem (Join-Path $root "misc\dist\licenses") -File | ForEach-Object { Copy-Item $_.FullName $licenses }
 
 if ($WithNvidiaRuntime) {
-	$nvidia = @(Get-ChildItem $bin -File -Filter "sl.*.dll" | Where-Object Name -ne "sl.nvperf.dll" | ForEach-Object Name) +
-		(Get-ChildItem $bin -File -Filter "nvngx_*.dll" | ForEach-Object Name) +
-		@("NvLowLatencyVk.dll", "nis.license.txt", "nvngx_dlss.license.txt", "reflex.license.txt")
-	foreach ($file in $nvidia) {
+	# Use the installer's pinned release set, not arbitrary old/debug DLLs in bin/.
+	# The manifest preserves the existing private package's sl.nvperf exclusion.
+	foreach ($file in $streamline.private_runtime_files) {
 		Copy-Required (Join-Path $bin $file) $stage
 	}
 } else {
@@ -98,8 +100,8 @@ A. From the editor: click "Get NVIDIA DLSS..." in the menu bar, after Help.
 
 B. By hand:
 
-1. Download NVIDIA Streamline SDK 2.10.0:
-   https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0
+1. Download NVIDIA Streamline SDK $($streamline.sdk_version):
+   $($streamline.release_url)
 2. From the SDK's bin\x64 folder (NOT bin\x64\development), copy these
    files next to ${exe}:
      sl.interposer.dll and the other sl.*.dll files
@@ -131,6 +133,13 @@ python -c $py $stage $zip
 if ($LASTEXITCODE -ne 0 -or -not (Test-Path $zip)) { throw "Writing $zip failed." }
 $bad = python -c "import sys, zipfile; print('\n'.join(n for n in zipfile.ZipFile(sys.argv[1]).namelist() if n.startswith(('.', '/')) or '\\' in n))" $zip
 if ($bad) { throw "Bad entry names in ${zip}: $bad" }
+if (-not $WithNvidiaRuntime) {
+	& python (Join-Path $PSScriptRoot "streamline_manifest.py") --root $root --public-package $zip
+	if ($LASTEXITCODE -ne 0) {
+		Remove-Item -Force $zip
+		throw "Public editor package failed NVIDIA runtime validation; the archive was deleted."
+	}
+}
 Remove-Item -Recurse -Force $stage
 Get-Item $zip | Select-Object Name, @{n = "MB"; e = { [math]::Round($_.Length / 1MB, 1) } }
 Write-Host "Engine version: $version"

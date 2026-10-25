@@ -1,0 +1,21 @@
+Streamline SDK headers
+=====================
+
+Upstream: https://github.com/NVIDIA-RTX/Streamline
+Version: v2.14.16
+Commit: 625db07d4bca5abc67d781c42af7e7fb0761f1b6
+
+Source archive:
+https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.16/streamline-sdk-v2.14.16.zip
+Size: 276016170 bytes
+SHA-256: 32041e51db0cab709a271b72a352281b690c2abbd669a827809401a5dd23956b
+
+The 24 include/*.h files and LICENSE.txt come from the verified official
+archive (LICENSE.txt is its license.txt). There are no local SDK patches.
+Git normalizes text line endings to LF according to the repository policy.
+No NVIDIA runtime DLLs or model binaries are vendored here.
+
+The engine still uses the existing global resource-tagging API. Its deprecated
+function type is aliased inside the SDK diagnostic scope in
+drivers/streamline/streamline_headers.h; no SDK declaration is modified.
+The new Neural Rendering and Dynamic MFG APIs are not enabled by this upgrade.

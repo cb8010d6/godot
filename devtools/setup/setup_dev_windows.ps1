@@ -6,7 +6,7 @@
 #      the .NET SDK for the C# editor (only with -Mono).
 #   2. Installs SCons (pip) and Godot's D3D12 build dependencies.
 #   3. Sets the git remotes the runbook (CUSTOM_BUILD.md) uses: upstream,
-#      origin (NVIDIA-RTX), physx and fork (Diginaat).
+#      origin (NVIDIA-RTX), physx and fork (the existing clone URL).
 #   4. Builds the PhysX, Blast and Flow SDKs once, in a physx-sdk folder next
 #      to this repository (about 20 minutes the first time).
 #   5. Writes custom.py (not tracked) with the SDK paths, so a build is just:
@@ -48,7 +48,7 @@ if (-not (Have git)) { Fail "Git is missing. Install it: winget install Git.Git"
 Ok (git --version)
 if (-not (Have python)) { Fail "Python 3 is missing. Install it: winget install Python.Python.3.12" }
 $pyVersion = (python -c "import sys; print('%d.%d' % sys.version_info[:2])")
-if ([version]$pyVersion -lt [version]"3.8") { Fail "Python $pyVersion is too old; Godot needs 3.8 or newer." }
+if ([version]$pyVersion -lt [version]"3.9") { Fail "Python $pyVersion is too old; Godot needs 3.9 or newer." }
 Ok "Python $pyVersion"
 
 $vswhere = Join-Path ${env:ProgramFiles(x86)} "Microsoft Visual Studio\Installer\vswhere.exe"
@@ -79,19 +79,33 @@ if ($gpu) {
 	}
 }
 if ($Mono) {
-	if (-not (Have dotnet)) { Fail ".NET SDK 8 or newer is missing (needed for -Mono). Install it: winget install Microsoft.DotNet.SDK.8" }
-	Ok ".NET SDK $(dotnet --version)"
+	if (-not (Have dotnet)) { Fail ".NET SDK 10 or newer is missing (needed for -Mono). Install it: winget install Microsoft.DotNet.SDK.10" }
+	# Resolve the SDK using the engine's global.json, not the repository root.
+	Push-Location (Join-Path $root "modules\mono")
+	try {
+		$sdkVersion = dotnet --version
+		$sdkExitCode = $LASTEXITCODE
+	} finally { Pop-Location }
+	if ($sdkExitCode -ne 0) { Fail "No compatible .NET SDK for modules/mono/global.json. Install .NET SDK 10 or newer: winget install Microsoft.DotNet.SDK.10" }
+	Ok ".NET SDK $sdkVersion"
 }
 
-# 2. SCons and the D3D12 dependencies.
-Step "Installing SCons and the D3D12 build dependencies"
-python -m SCons --version *> $null
+# 2. Python build modules and the D3D12 dependencies.
+Step "Installing Python build modules and the D3D12 build dependencies"
+python -c "import SCons; assert tuple(map(int, SCons.__version__.split('.')[:2])) >= (4, 4)" *> $null
 if ($LASTEXITCODE -ne 0) {
-	Info "Installing SCons"
-	python -m pip install --user scons
+	Info "Installing SCons 4.4 or newer"
+	python -m pip install --user "scons>=4.4"
 	if ($LASTEXITCODE -ne 0) { Fail "pip couldn't install SCons." }
 }
 Ok "SCons $((python -m SCons --version | Select-String 'SCons: v' | Select-Object -First 1) -replace '.*v', '')"
+python -c "import sys, importlib.util; sys.exit(0 if sys.version_info >= (3, 14) or importlib.util.find_spec('zstandard') else 1)" *> $null
+if ($LASTEXITCODE -ne 0) {
+	Info "Installing zstandard (required by Python versions before 3.14)"
+	python -m pip install --user zstandard
+	if ($LASTEXITCODE -ne 0) { Fail "pip couldn't install zstandard." }
+}
+Ok "Python build compression dependencies"
 $deps = Join-Path $env:LOCALAPPDATA "Godot\build_deps"
 if ((Test-Path (Join-Path $deps "agility_sdk")) -and (Get-ChildItem $deps -Directory -Filter "mesa-*" -ErrorAction SilentlyContinue)) {
 	Ok "D3D12 dependencies in $deps"
@@ -104,28 +118,7 @@ if ((Test-Path (Join-Path $deps "agility_sdk")) -and (Get-ChildItem $deps -Direc
 
 # 3. Remotes (names as in CUSTOM_BUILD.md).
 Step "Setting the git remotes"
-$want = [ordered]@{
-	"upstream" = "https://github.com/godotengine/godot.git"
-	"origin" = "https://github.com/NVIDIA-RTX/godot.git"
-	"physx" = "https://github.com/uno1982/godot.git"
-	"fork" = "https://github.com/Diginaat/godot.git"
-}
-$remotes = @(git remote)
-# A fresh clone of the fork calls it origin; the runbook calls it fork and
-# keeps origin for NVIDIA's repository.
-if (($remotes -contains "origin") -and -not ($remotes -contains "fork") -and ((git remote get-url origin) -match "Diginaat/godot")) {
-	git remote rename origin fork
-	Info "Renamed the remote 'origin' (Diginaat/godot) to 'fork'"
-	$remotes = @(git remote)
-}
-foreach ($name in $want.Keys) {
-	if ($remotes -contains $name) {
-		Ok "$name -> $(git remote get-url $name)"
-	} else {
-		git remote add $name $want[$name]
-		Ok "$name -> $($want[$name]) (added)"
-	}
-}
+& "$PSScriptRoot\setup_remotes.ps1" -Repository $root
 
 # 4. PhysX, Blast and Flow SDKs.
 Step "PhysX, Blast and Flow SDKs"
@@ -170,6 +163,7 @@ if ($Build) {
 		python -m SCons platform=windows target=editor production=yes module_mono_enabled=yes
 		if ($LASTEXITCODE -ne 0) { Fail "The .NET editor build failed." }
 		& bin\godot.windows.editor.x86_64.mono.console.exe --headless --generate-mono-glue modules\mono\glue
+		if ($LASTEXITCODE -ne 0) { Fail "Generating the C# glue failed." }
 		python modules/mono/build_scripts/build_assemblies.py --godot-output-dir=./bin --godot-platform=windows
 		if ($LASTEXITCODE -ne 0) { Fail "Building the C# assemblies failed." }
 		Ok "bin\godot.windows.editor.x86_64.mono.exe and bin\GodotSharp"

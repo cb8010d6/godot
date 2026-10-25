@@ -91,6 +91,7 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | 8 | Volumetric fog in the path tracer (B5): Environment volumetric fog first, then FogVolume, then light shafts | Done |
 | 9 | Glass (B6): path traced alpha blend, refraction and transmission instead of the raster overlay | Done |
 | 10 | Clean up, document, merge `dev` into `nvidia-pt-dlss` | Done (release 0.3.0) |
+| Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Native/API checks; Windows/RTX scene matrix pending |
 
 ## Known bugs
 
@@ -122,6 +123,15 @@ Other notes:
 ## Findings log
 
 Newest first. Note the date, the commit, the view and what you saw or changed.
+
+- 2026-10-24: Pinned 4.8 beta 1 sync preserves the PT renderer, fog and
+  lifetime fixes. Upstream compressed shader generation retains all five
+  ray-tracing stages; `devtools/test/test_raytracing_builders.py` checks
+  decompression, sizes and stage order. This is a CPU generator check, not
+  a GLSL compiler or rendered image test. Streamline's real Windows loader,
+  Vulkan and D3D12 adapter branches also cross-compile with the 2.14.16
+  headers. The native Windows/RTX scene matrix, RR/FG and missing-DLL
+  runtime checks remain pending; see `devtools/UPGRADE_4_8_BETA1.md`.
 
 - 2026-10-08: After syncing upstream `65e8d16951`, the fog path tracer smoke
   initially exited with `Attempted to free invalid ID` after saving the

@@ -77,6 +77,11 @@ if (Test-Path $tpz) { Remove-Item -Force $tpz }
 $py = "import os, sys, zipfile`nstage, out = sys.argv[1], sys.argv[2]`nwith zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:`n    for d, _, files in os.walk(os.path.join(stage, 'templates')):`n        for f in files:`n            p = os.path.join(d, f)`n            z.write(p, os.path.relpath(p, stage).replace(os.sep, '/'))`n"
 python -c $py $stage $tpz
 if ($LASTEXITCODE -ne 0 -or -not (Test-Path $tpz)) { throw "Writing $tpz failed." }
+& python (Join-Path $PSScriptRoot "streamline_manifest.py") --root $root --public-package $tpz
+if ($LASTEXITCODE -ne 0) {
+	Remove-Item -Force $tpz
+	throw "Export template package failed NVIDIA runtime validation; the archive was deleted."
+}
 Remove-Item -Recurse -Force $stage
 
 Write-Host "Template version: $templateVersion"

@@ -7,7 +7,7 @@
 </p>
 
 This is a fork of [Godot Engine](https://github.com/godotengine/godot) (`master`,
-4.8-dev) that combines three things in one source tree:
+4.8 beta 1, pinned to `4d10419cacd6d3009976e8f9fd3abd970fd58018`) that combines three things in one source tree:
 
 | Part | Source | What it adds |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ version: `godot4.8-dev-nvidia-rt-dlss-physx-v0.5.1` is build 0.5.1, on Godot
 >   explains each step, asks you to accept NVIDIA's license terms and to confirm
 >   the download from GitHub, checks the file's SHA-256, installs the DLLs next
 >   to the editor and offers to restart; or
-> - download the [NVIDIA Streamline SDK 2.10.0](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0)
+> - download the [NVIDIA Streamline SDK 2.14.16](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16)
 >   yourself and copy its DLLs next to the editor ([step 5 below](#5-optional-add-the-nvidia-streamline-dlls-only-for-dlss)).
 
 **Platform:** Windows 10/11 x64 with an NVIDIA RTX GPU. DLSS, Ray
@@ -195,12 +195,14 @@ The log shows `PhysX 5.10.0 initialized [GPU]` when GPU dynamics are active.
 
 - **Visual Studio 2022** (or Build Tools) with the "Desktop development with
   C++" workload and a Windows SDK.
-- **Python 3** and **SCons**: `python -m pip install scons`.
+- **Python 3.9+**, **SCons 4.4+**, and **zstandard** (with Python older than 3.14):
+  `python -m pip install "scons>=4.4" zstandard`.
 - **Git** and **CMake** (the PhysX SDK builds with CMake).
 - **CUDA Toolkit 12.8**, only for PhysX GPU dynamics:
   `winget install Nvidia.CUDA --version 12.8`. Open a new terminal afterwards
   so `CUDA_PATH` is set.
-- **.NET SDK 8 or newer**, only for the C# (.NET) editor.
+- **.NET SDK 10 or newer**, only for the C# (.NET) editor. The selected SDK
+  must satisfy `modules/mono/global.json`.
 - The **D3D12 build dependencies** (Mesa NIR and the Agility SDK), once:
   ```
   python misc/scripts/install_d3d12_sdk_windows.py
@@ -249,20 +251,26 @@ python -m SCons platform=windows target=editor production=yes
   `PhysXGpu_64.dll` and the Blast and Flow DLLs are copied next to it
   automatically.
 
+For this pinned beta, pass `-VersionStatus beta1` to `devtools\build\build.ps1`
+(or set `GODOT_VERSION_STATUS=beta1` for direct SCons builds), including when
+building .NET and export templates. `version.py` remains identical to upstream.
+Upgrade verification and the Windows/RTX handoff are in
+[`devtools/UPGRADE_4_8_BETA1.md`](devtools/UPGRADE_4_8_BETA1.md).
+
 ### 5. Optional: add the NVIDIA Streamline DLLs (only for DLSS)
 
 **Skip this step unless you want DLSS, Ray Reconstruction, Frame Generation or
 Reflex.** Everything else works without it.
 
 Streamline's runtime DLLs are not in this repository; NVIDIA distributes them
-in the Streamline SDK. This source is built against **Streamline SDK 2.10.0**
+in the Streamline SDK. This source is built against **Streamline SDK 2.14.16**
 (see `thirdparty/streamline/include/sl_version.h`).
 
 The easy way: in the editor, click **Get NVIDIA DLSS...** in the menu bar and
 follow the dialog. It does the steps below for you. To do them by hand:
 
-1. Download **Streamline SDK 2.10.0** from NVIDIA:
-   [github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0).
+1. Download **Streamline SDK 2.14.16** from NVIDIA:
+   [github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16).
    Product page: [developer.nvidia.com/rtx/streamline](https://developer.nvidia.com/rtx/streamline).
 2. From the SDK's `bin\x64` folder, copy these files into this repository's `bin\`
    folder, next to the editor:
@@ -288,6 +296,10 @@ devtools\build\build.ps1 -Mono
 
 This produces `bin\godot.windows.editor.x86_64.mono.exe` and the
 `bin\GodotSharp` folder with the C# API assemblies.
+
+The pinned 4.8 managed API targets `net10.0`. When migrating a C# project
+that still targets `net8.0`, update its target framework and rebuild it;
+installing SDK 10 alone does not retarget the project.
 
 ### 7. Optional: package a distributable zip
 
@@ -345,7 +357,7 @@ All components and their licenses are listed in
   [`thirdparty/streamline/LICENSE.txt`](thirdparty/streamline/LICENSE.txt).
 - NVIDIA DLSS, Reflex and the Streamline runtime DLLs: **not included**.
   They're under NVIDIA's own license terms, which come with the
-  [SDK download](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0).
+  [SDK download](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16).
 - Microsoft DirectX Agility SDK (`D3D12Core.dll`, `d3d12SDKLayers.dll`, in the
   release zips only): Microsoft DirectX license, see
   [`misc/dist/licenses/`](misc/dist/licenses/).

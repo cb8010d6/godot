@@ -63,7 +63,7 @@ Update this table after every sync.
 | 2026-10-07 | `e7b12e7492` | `135dff3887` | `2de7ea521f` (Flow builds pipelines on first use) | `4624c40df5` |
 | 2026-10-08 | `e7b12e7492` (no change) | `135dff3887` (no change) | `5681d7519a` (Flow on Linux, MIT license) | on `dev`, see log |
 | 2026-10-08 | `65e8d16951` | `135dff3887` (no change) | `5681d7519a` (no change) | `4495b586dd` |
-| 2026-10-24 | `4d10419cac` (4.8 beta 1, pinned) | `135dff3887` (no change) | `5681d7519a` (no change) | Merge pinned 4.8 beta 1; see branch history |
+| 2026-10-24 | `4d10419cac` (4.8 beta 1, pinned) | `135dff3887` (no change) | `5681d7519a` (no change) | Merge pinned 4.8 beta 1; Streamline 2.14.16; verification and pending Windows/GPU checks in `devtools/UPGRADE_4_8_BETA1.md` |
 
 ### History layout
 
@@ -258,7 +258,7 @@ powershell -File devtools/package/package_templates_win64.ps1 -Mono
 The `.tpz` holds the templates (release, debug and their console wrappers),
 the D3D12 Agility SDK DLLs (`D3D12Core.x86_64.dll`, as the Windows export
 expects) and the licenses; `version.txt` comes from the template binary
-(`4.8.dev`, `4.8.dev.mono`). PhysX GPU, Blast and Flow DLLs are not in the
+(`4.8.beta1`, `4.8.beta1.mono` for this integration). PhysX GPU, Blast and Flow DLLs are not in the
 templates: `NativeRuntimeExportPlugin`
 (`editor/export/native_runtime_export_plugin.cpp`) copies them from the
 editor's folder next to every exported Windows game, and the NVIDIA

@@ -1,14 +1,17 @@
 # Update log
 
-## 2026-10-24 (pinned engine synchronization)
+## 2026-10-24 (pinned engine and SDK upgrade)
 
-* **Added**: [4.8 beta 1 synchronization](/project/godot-4.8-beta1-sync.md)
-  and [sandbox socket test failure](/mistakes/sandbox-sockets-in-native-tests.md).
-* **Updated**: source sync log and fork ownership for the stricter upstream
-  validator; retained rendering, PhysX and native/managed ABI extensions.
-* **Validation**: the combined integration worktree passed the native engine
-  suite and headless API checks. Windows/GPU smoke remains a separate gate;
-  the subsequent SDK commit records the combined upgrade guide.
+* **Added**: [4.8 beta 1 synchronization](/project/godot-4.8-beta1-sync.md),
+  [Streamline SDK validation](/tooling/streamline-sdk-validation.md), and
+  mistakes for [sandbox sockets](/mistakes/sandbox-sockets-in-native-tests.md)
+  and [managed runtime discovery](/mistakes/managed-smoke-runtime-environment.md).
+* **Updated**: source sync log, build prerequisites and beta1 stamping,
+  shared SDK/runtime manifest, installer/export/package checks, PT/DDGI
+  compatibility notes, URL-based remote protection, and the local Windows/RTX handoff.
+* **Validation boundary**: CPU builds, native/headless/API tests and package
+  fixtures are recorded separately from unperformed Windows/GPU tests in
+  `devtools/UPGRADE_4_8_BETA1.md`. No image-quality or performance claim.
 
 ## 2026-10-12 (dark places)
 

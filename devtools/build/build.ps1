@@ -9,6 +9,7 @@
 #   devtools\build\build.ps1 -Target release    # everything a GitHub release needs
 #   ... -Jobs 10      parallel jobs (default: all cores)
 #   ... -KeepGoing    scons -k: report all compile errors in one pass
+#   ... -VersionStatus beta1  stamp a numbered upstream prerelease
 #
 # Run it from PowerShell or cmd, not Git Bash, and close any editor running
 # from bin\ first (the link fails with "Access is denied").
@@ -17,7 +18,8 @@ param(
 	[string]$Target = "editor",
 	[switch]$Mono,
 	[int]$Jobs = 0,
-	[switch]$KeepGoing
+	[switch]$KeepGoing,
+	[string]$VersionStatus = ""
 )
 . "$PSScriptRoot\..\common.ps1"
 Set-Location $RepoRoot
@@ -26,6 +28,19 @@ if (-not (Test-Path (Join-Path $RepoRoot "custom.py"))) {
 	Write-Host "No custom.py: building without PhysX, Blast and Flow. Run devtools\setup\setup_dev_windows.ps1 to set them up." -ForegroundColor Yellow
 }
 if ($Jobs -le 0) { $Jobs = [Environment]::ProcessorCount }
+
+if ($Mono -or $Target -eq "release") {
+	if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
+		throw ".NET SDK 10 or newer is required. Install it: winget install Microsoft.DotNet.SDK.10"
+	}
+	Push-Location (Join-Path $RepoRoot "modules\mono")
+	try {
+		$sdkVersion = dotnet --version
+		$sdkExitCode = $LASTEXITCODE
+	} finally { Pop-Location }
+	if ($sdkExitCode -ne 0) { throw "No compatible .NET SDK for modules/mono/global.json. Install .NET SDK 10 or newer: winget install Microsoft.DotNet.SDK.10" }
+	Write-Host ".NET SDK $sdkVersion" -ForegroundColor Green
+}
 
 function Invoke-Scons([string]$SconsTarget, [bool]$WithMono) {
 	$sconsArgs = @("-m", "SCons", "-j$Jobs", "platform=windows", "target=$SconsTarget", "production=yes")
@@ -41,29 +56,36 @@ function Invoke-Scons([string]$SconsTarget, [bool]$WithMono) {
 
 function Build-MonoAssemblies {
 	Write-Host "== C# glue and assemblies" -ForegroundColor Cyan
-	& (Join-Path $RepoRoot "bin\godot.windows.editor.x86_64.mono.console.exe") --headless --generate-mono-glue modules\mono\glue
+	& (Get-Editor -Mono) --headless --generate-mono-glue modules\mono\glue
 	if ($LASTEXITCODE -ne 0) { throw "Generating the C# glue failed." }
 	python modules/mono/build_scripts/build_assemblies.py --godot-output-dir=./bin --godot-platform=windows
 	if ($LASTEXITCODE -ne 0) { throw "Building the C# assemblies failed." }
 }
 
-switch ($Target) {
-	"editor" {
-		Invoke-Scons "editor" $Mono
-		if ($Mono) { Build-MonoAssemblies }
-	}
-	"templates" {
-		Invoke-Scons "template_release" $Mono
-		Invoke-Scons "template_debug" $Mono
-	}
-	"release" {
-		# Commit (and bump CUSTOM_VERSION) first: the version stamp is the commit.
-		foreach ($withMono in @($false, $true)) {
-			Invoke-Scons "editor" $withMono
-			Invoke-Scons "template_release" $withMono
-			Invoke-Scons "template_debug" $withMono
+$previousVersionStatus = $env:GODOT_VERSION_STATUS
+try {
+	if ($VersionStatus) { $env:GODOT_VERSION_STATUS = $VersionStatus }
+	switch ($Target) {
+		"editor" {
+			Invoke-Scons "editor" $Mono
+			if ($Mono) { Build-MonoAssemblies }
 		}
-		Build-MonoAssemblies
+		"templates" {
+			Invoke-Scons "template_release" $Mono
+			Invoke-Scons "template_debug" $Mono
+		}
+		"release" {
+			# Commit (and bump CUSTOM_VERSION) first: the version stamp is the commit.
+			foreach ($withMono in @($false, $true)) {
+				Invoke-Scons "editor" $withMono
+				Invoke-Scons "template_release" $withMono
+				Invoke-Scons "template_debug" $withMono
+			}
+			Build-MonoAssemblies
+		}
 	}
+	& (Get-Editor -Mono:$Mono) --version
+	if ($LASTEXITCODE -ne 0) { throw "Reading the editor version failed." }
+} finally {
+	if ($VersionStatus) { $env:GODOT_VERSION_STATUS = $previousVersionStatus }
 }
-& (Get-Editor) --version

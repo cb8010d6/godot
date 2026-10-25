@@ -9,8 +9,8 @@ repository** and the **editor builds on the Releases page**.
 > licensed by NVIDIA under terms that don't allow them to be redistributed
 > this way. **You only need them if you want DLSS**: everything else works
 > without them. If you do, download them yourself from the
-> [NVIDIA Streamline SDK releases](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0)
-> (version 2.10.0). Setup instructions are in
+> [NVIDIA Streamline SDK releases](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16)
+> (version 2.14.16). Setup instructions are in
 > [README.md](README.md#5-optional-add-the-nvidia-streamline-dlls-only-for-dlss).
 > By downloading them you accept NVIDIA's license terms.
 
@@ -58,7 +58,7 @@ in every release zip.
 
 ### NVIDIA Streamline SDK headers: MIT
 
-The Streamline API headers in `thirdparty/streamline/include` (SDK 2.10.0) are
+The Streamline API headers in `thirdparty/streamline/include` (SDK 2.14.16) are
 MIT-licensed by NVIDIA; see
 [`thirdparty/streamline/LICENSE.txt`](thirdparty/streamline/LICENSE.txt). That
 file also notes that the Nsight Perf parts of the SDK are under the separate
@@ -78,7 +78,7 @@ relicensing, required attribution, and notifying NVIDIA before commercial
 release).
 
 Only if you want DLSS, download the
-[Streamline SDK 2.10.0](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.10.0)
+[Streamline SDK 2.14.16](https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16)
 yourself and copy the DLLs from its `bin\x64` folder next to the editor, as the
 [README](README.md#5-optional-add-the-nvidia-streamline-dlls-only-for-dlss) explains. NVIDIA's license
 files come with that download and apply to your use of those files. If you ship

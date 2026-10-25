@@ -87,7 +87,7 @@ void StreamlineContext::load_functions(bool d3d12) {
 	this->slAllocateResources = SL_GETPROC(PFun_slAllocateResources, "slAllocateResources");
 	this->slFreeResources = SL_GETPROC(PFun_slFreeResources, "slFreeResources");
 	this->slEvaluateFeature = SL_GETPROC(PFun_slEvaluateFeature, "slEvaluateFeature");
-	this->slSetTag = SL_GETPROC(PFun_slSetTag, "slSetTag");
+	this->slSetTag = SL_GETPROC(StreamlineSetTagFunction, "slSetTag");
 	this->slSetConstants = SL_GETPROC(PFun_slSetConstants, "slSetConstants");
 #undef SL_GETPROC
 

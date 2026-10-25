@@ -43,6 +43,7 @@
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #elif defined(_MSC_VER)
 #pragma warning(push)
+#pragma warning(disable : 4996)
 #pragma warning(disable : 5257)
 #pragma warning(disable : 4471)
 #endif
@@ -55,6 +56,11 @@
 #include <thirdparty/streamline/include/sl_nis.h>
 #include <thirdparty/streamline/include/sl_pcl.h>
 #include <thirdparty/streamline/include/sl_reflex.h>
+
+// Keep global resource tagging until a separately validated migration to
+// frame-based tagging. SDK 2.14 deprecates this type, but still supports it.
+// Alias it inside the SDK diagnostic scope without changing its signature.
+using StreamlineSetTagFunction = PFun_slSetTag;
 
 #if defined(__clang__)
 #pragma clang diagnostic pop

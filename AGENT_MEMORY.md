@@ -189,6 +189,12 @@ Read with: [AGENTS.md](AGENTS.md) (entry point), [CUSTOM_BUILD.md](CUSTOM_BUILD.
 
 ## In-editor DLSS installer
 
-- `editor/settings/streamline_installer.cpp`. Pinned to Streamline SDK 2.10.0
-  with a SHA-256; update the URL, size and hash together when the SDK changes.
+- `editor/settings/streamline_installer.cpp` consumes the shared manifest in
+  `drivers/streamline/streamline_runtime.h`, pinned to SDK 2.14.16. Update
+  headers, URL, size and SHA-256 together; validate the actual release ZIP
+  with `devtools/package/streamline_manifest.py --archive <zip>`.
 - It must never connect or open a browser without the user confirming a popup.
+- Public editor/template packages must pass the manifest tool's runtime
+  exclusion check. Exported games may copy the installed release runtimes.
+- Godot 4.8 beta 1 requires .NET SDK 10 for managed builds and Python 3.9+ /
+  SCons 4.4+ for native builds. Python <3.14 also needs `zstandard`.

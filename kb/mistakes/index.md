@@ -1,5 +1,6 @@
 # Mistakes
 
+* [A managed smoke needs the managed runtime environment](/mistakes/managed-smoke-runtime-environment.md) - supply SDK discovery settings to fresh runtime commands
 * [Sandbox socket denial looked like an engine regression](/mistakes/sandbox-sockets-in-native-tests.md) - fix execution permissions before changing or excluding a network test
 
 Mistakes agents made in this project: what went wrong, why, and the rule

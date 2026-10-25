@@ -42,10 +42,15 @@ DLSS, RR, FG, Reflex, D3D12, GPU PhysX or rendered PT/DDGI correctness.
 
 The PhysX CPU, Blast and Flow SDKs were built at the existing pin and tested
 with real CPU simulation, fracture/serialization, and Flow CPU loader/device
-operations. Engine module integration is a separate build/run check. Full
-procedures and platform smoke requirements are maintained in
-[the runbook](../../CUSTOM_BUILD.md); the subsequent SDK commit supplies
-the combined integration's detailed validation guide.
+operations. The Mono editor and all four templates also built with those
+SDKs. Both standard templates passed 87 checks in real exported PCKs; both
+Mono templates passed 88. Managed Debug/Release assemblies and tooling built
+on .NET 10, 43 source-generator tests passed, and an actual C# scene verified
+dictionary and typed PhysX ray queries against known ground geometry.
+
+These are CPU/headless checks with Vulkan compiled in, not rendered GPU
+tests. Full procedures, flags and remaining platform checks are maintained
+in [the upgrade guide](../../devtools/UPGRADE_4_8_BETA1.md).
 
 [^godot-beta]: Official source version commit.
 [^runbook]: Source synchronization and conflict rules.

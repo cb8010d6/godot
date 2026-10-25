@@ -478,6 +478,7 @@ noise of the first updates doesn't linger.
 | 28 | Moving objects' light checked against the path tracer: direct light only, hidden light toward the object, smoothed | Done (branch `dev-ddgi-quality`) |
 | 29 | Moving objects of any shape: oriented boxes with exact face form factors, light averaged per side | Done (`dev-ddgi`, 0.7.1) |
 | 30 | No flicker or blotches in dark places: near-field history holds the correction to the probes, reset by the probes' own change; close hits use the block's probe light | Done (`dev-ddgi`) |
+| Sync | Godot 4.8 beta 1 compatibility | Native/headless checks; GPU image and bake checks pending |
 
 ## Test project
 
@@ -618,6 +619,15 @@ How to read them:
   view; it is shared with the path tracer.
 
 ## Findings log
+
+- 2026-10-24: The pinned Godot 4.8 beta 1 merge retains DDGI passes and
+  shader-cache reflection extensions without changing probe layout or the
+  GI algorithm. A real headless editor smoke verifies DDGI defaults,
+  saved-scene and baked-resource dictionary round trips, and volume entry,
+  enable/disable and removal behavior. It does not upload a bake or render
+  GI. Existing flicker, weather, scrolling, bake/load and raster/PT image
+  comparisons still require Windows/RTX validation; see
+  `devtools/UPGRADE_4_8_BETA1.md`.
 
 Newest first. Note the date, the commit, what you saw or changed.
 

@@ -45,7 +45,7 @@ public:
 	PFun_slAllocateResources *slAllocateResources = nullptr;
 	PFun_slFreeResources *slFreeResources = nullptr;
 	PFun_slEvaluateFeature *slEvaluateFeature = nullptr;
-	PFun_slSetTag *slSetTag = nullptr;
+	StreamlineSetTagFunction *slSetTag = nullptr;
 	PFun_slSetConstants *slSetConstants = nullptr;
 	PFun_slSetFeatureLoaded *slSetFeatureLoaded = nullptr;
 	PFun_slSetD3DDevice *slSetD3DDevice = nullptr;
