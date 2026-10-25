@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-25 (final source and managed exports)
+
+* **Verified**: both Linux editors and all four templates rebuilt at
+  integration code commit `0af58f0a62`; editor and real PCK checks passed again.
+* **Verified**: actual self-contained C# Debug/Release game exports and startup,
+  without SDK discovery. The Linux fixture supplies native SDK shared libraries;
+  Windows redistribution, embedded PCK and GPU checks remain pending.
+* **Added**: [incomplete managed export fixture](/mistakes/incomplete-managed-export-fixture.md).
+
 ## 2026-10-24 (pinned engine and SDK upgrade)
 
 * **Added**: [4.8 beta 1 synchronization](/project/godot-4.8-beta1-sync.md),

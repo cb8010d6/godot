@@ -47,6 +47,13 @@ SDKs. Both standard templates passed 87 checks in real exported PCKs; both
 Mono templates passed 88. Managed Debug/Release assemblies and tooling built
 on .NET 10, 43 source-generator tests passed, and an actual C# scene verified
 dictionary and typed PhysX ray queries against known ground geometry.
+All six binaries were rebuilt and rechecked at integration code commit
+`0af58f0a62f05a901e99dde96f1654c35a6bdbc1`.
+
+Real C# Debug and Release exports also passed self-contained publication
+and normal exported startup without SDK discovery. Their native Linux SDK
+shared libraries were supplied explicitly by the fixture. Windows runtime
+redistribution and embedded-PCK exports remain separate checks.
 
 These are CPU/headless checks with Vulkan compiled in, not rendered GPU
 tests. Full procedures, flags and remaining platform checks are maintained

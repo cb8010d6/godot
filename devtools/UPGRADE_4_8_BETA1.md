@@ -126,8 +126,25 @@ compiled Streamline stub; it does not simulate Windows DLL loading.
 The template mode exports an actual PCK and launches a copied production
 template by normal PCK autoload. The same fixture is a main scene in both
 modes and writes saved resources to isolated `user://`. Production path
-override protection is not disabled. This is a GDScript game check; C# game
-export and native Windows redistribution remain separate validations.
+override protection is not disabled. This is a GDScript game check; the
+managed game export below exercises a separate boundary.
+
+For the Linux managed export check, use the C# smoke's generated project,
+create its solution with `dotnet new sln --name ManagedSmoke --format sln`
+and `dotnet sln ManagedSmoke.sln add ManagedSmoke.csproj`, and allow NuGet.org
+alongside the local engine feed to restore self-contained runtime packs.
+Configure Linux Debug/Release presets with the matching custom Mono
+templates, `binary_format/embed_pck=false`, and
+`dotnet/embed_build_outputs=false`. Run the editor's `--export-debug` and
+`--export-release`, then launch each exported executable normally with the
+dummy renderer. Check the export log for errors as well as the exit code.
+
+Both exported managed games passed with SDK discovery removed from the
+runtime environment; `hostfxr` loaded from their exported data directories.
+The Linux fixture explicitly supplies the native SDK `.so` siblings from
+`bin/`. The existing runtime export plugin handles Windows libraries, so
+automatic Linux SDK redistribution is not established by this check.
+Windows distribution and embedded-PCK exports remain local Agent checks.
 
 An SDK header smoke compile, Windows cross-compile, package fixtures, and
 source-generator build cover distinct boundaries. None is a substitute
@@ -199,6 +216,13 @@ The source upgrade, portable checks, native builds and out-of-tree SDK checks
 are recorded here as they finish. Windows runtime and GPU checks remain
 pending; no image-quality or performance improvement is claimed.
 
+All six native binaries were rebuilt at integration code commit
+`0af58f0a62f05a901e99dde96f1654c35a6bdbc1`, report that revision in their
+version strings, and passed the editor/PCK checks again. Local build logs,
+binary hashes and results are in `devtools/out/upgrade/final-verification.json`.
+Managed export commands and logs are in
+`devtools/out/managed-export-validation/`.
+
 | Check | Observed result | Boundary |
 | --- | --- | --- |
 | Standard Linux editor | Built; 79 headless API checks | Optional native SDKs absent, actual non-Windows Streamline stub |
@@ -211,6 +235,7 @@ pending; no image-quality or performance improvement is claimed.
 | Managed API / GodotTools | Debug and Release assemblies and SDK packages built | .NET SDK 10.0.402; target net10.0 |
 | Source generators | 43/43 passed, no skips | Actual generated custom engine API |
 | C# engine smoke | Build/run passed, known geometry hit by both query APIs | Real PhysX CPU dispatcher; four custom managed bindings |
+| Linux C# game exports | Debug and Release export/run passed | Real self-contained publish and exported runtime; SDK `.so` dependencies supplied by fixture |
 | Ray-tracing shader builder | 3/3 passed | Decompression, five-stage ordering and sparse stages; no GPU shader evaluation |
 | Manifest / provenance | 15/15 passed; official ZIP comparison passed | Size, digest, release inventory, all 24 vendored headers and license |
 | Windows build workflow | 6/6 PowerShell fixture cases passed | SDK selection, all six targets, error handling and version environment |
