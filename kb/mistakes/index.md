@@ -1,5 +1,7 @@
 # Mistakes
 
+* [A legacy D3D12 control must retain loader initialization](/mistakes/d3d12-legacy-control-initialization.md) - skip only factory creation and verify the failure stage
+
 * [Class reference validation needs module inputs](/mistakes/class-docs-module-inputs.md) - include module XML before judging unresolved links
 
 * [NGX updater process accumulation](/mistakes/ngx-updater-process-accumulation.md) - contain test children and measure memory ownership before declaring an engine leak
