@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-25 (Vulkan 1.2 feature-chain exclusivity)
+
+* **Fixed source contract**: device creation now chooses the Vulkan 1.2
+  aggregate or individual promoted feature structs, satisfying
+  `VUID-VkDeviceCreateInfo-pNext-02830` without changing feature values.
+* **Verified**: actual Vulkan driver object compiled with GCC 14.2; formatting
+  and diff checks passed. GPU validation and legacy runtime coverage remain
+  pending. [Finding](/tooling/vulkan-12-feature-chain.md).
+
 ## 2026-10-25 (native Windows acceptance)
 
 * **Measured**: six final MSVC targets, both smoke variants, four installed

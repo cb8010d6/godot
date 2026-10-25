@@ -1402,16 +1402,21 @@ Error RenderingDeviceDriverVulkan::_initialize_device(const LocalVector<VkDevice
 		enabled_extension_names.push_back(extension_name.ptr());
 	}
 
+	const bool enable_1_2_features = physical_device_properties.apiVersion >= VK_API_VERSION_1_2;
 	void *create_info_next = nullptr;
+	// Vulkan 1.2 uses the aggregate feature struct below. Its promoted feature
+	// structs must not also appear in pNext (VUID-VkDeviceCreateInfo-pNext-02830).
 	VkPhysicalDeviceShaderFloat16Int8FeaturesKHR shader_features = {};
-	shader_features.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR;
-	shader_features.pNext = create_info_next;
-	shader_features.shaderFloat16 = shader_capabilities.shader_float16_is_supported;
-	shader_features.shaderInt8 = shader_capabilities.shader_int8_is_supported;
-	create_info_next = &shader_features;
+	if (!enable_1_2_features) {
+		shader_features.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR;
+		shader_features.pNext = create_info_next;
+		shader_features.shaderFloat16 = shader_capabilities.shader_float16_is_supported;
+		shader_features.shaderInt8 = shader_capabilities.shader_int8_is_supported;
+		create_info_next = &shader_features;
+	}
 
 	VkPhysicalDeviceBufferDeviceAddressFeaturesKHR buffer_device_address_features = {};
-	if (buffer_device_address_support) {
+	if (!enable_1_2_features && buffer_device_address_support) {
 		buffer_device_address_features.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_KHR;
 		buffer_device_address_features.pNext = create_info_next;
 		buffer_device_address_features.bufferDeviceAddress = buffer_device_address_support;
@@ -1419,7 +1424,7 @@ Error RenderingDeviceDriverVulkan::_initialize_device(const LocalVector<VkDevice
 	}
 
 	VkPhysicalDeviceVulkanMemoryModelFeaturesKHR vulkan_memory_model_features = {};
-	if (vulkan_memory_model_support && vulkan_memory_model_device_scope_support) {
+	if (!enable_1_2_features && vulkan_memory_model_support && vulkan_memory_model_device_scope_support) {
 		vulkan_memory_model_features.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_MEMORY_MODEL_FEATURES_KHR;
 		vulkan_memory_model_features.pNext = create_info_next;
 		vulkan_memory_model_features.vulkanMemoryModel = vulkan_memory_model_support;
@@ -1527,7 +1532,6 @@ Error RenderingDeviceDriverVulkan::_initialize_device(const LocalVector<VkDevice
 	VkPhysicalDeviceVulkan12Features vulkan_1_2_features = {};
 	VkPhysicalDevice16BitStorageFeaturesKHR storage_features = {};
 	VkPhysicalDeviceMultiviewFeatures multiview_features = {};
-	const bool enable_1_2_features = physical_device_properties.apiVersion >= VK_API_VERSION_1_2;
 	if (enable_1_2_features) {
 		// In Vulkan 1.2 and newer we use a newer struct to enable various features.
 		// Enable Vulkan 1.2 features (descriptor indexing, buffer device address, etc.).
