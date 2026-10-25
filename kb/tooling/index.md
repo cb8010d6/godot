@@ -1,5 +1,7 @@
 # Tooling
 
+* [Streamline Vulkan depth handoff](/tooling/streamline-vulkan-depth-handoff.md) - R32F input candidate with explicit graph dependency and precision boundary
+
 * [Streamline Vulkan device requirements](/tooling/streamline-vulkan-device-requirements.md) - supported privateData/presentId and explicit dependency provisioning
 
 * [Vulkan Win32 window instance](/tooling/vulkan-window-instance.md) - recover HWND module ownership when the Unicode entry point supplies no instance

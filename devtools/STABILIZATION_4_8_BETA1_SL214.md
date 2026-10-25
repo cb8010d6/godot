@@ -108,6 +108,23 @@ present-id extension (private-data extension only before core 1.3). The
 existing core-1.2 promoted-feature handling remains. Missing runtimes do not
 request these additional features. Real strict checks follow.
 
+At `59d1f2bd5e` the standard editor build passed in 38.907 s. All nine actual
+backend/scene/probe checks passed; the privateData and extension-dependency
+VUIDs disappeared and target pNext-02830 remained absent. Both foreground FG
+cases retained 239 presented-two/eOk samples; their internal sync errors
+remain. Old SL2.10 and missing-runtime controls were retained.
+
+## Vulkan depth handoff candidate
+
+The remaining SL depth-copy failures occur with both SL2.10/2.14: incompatible
+depth/color copy aspects, depth-only layouts on a color clone and unresolved
+clone layout state. The candidate samples native Vulkan depth/stencil input
+to a persistent R32F color image before the external evaluation. It preserves
+reversed-depth values and the 32-bit sampled precision, declares the new graph
+producer/input dependency, and leaves existing R32F PT/RR inputs and the D3D12
+path alone. This adds four bytes per internal-resolution pixel and one copy
+dispatch. Validation, image, timing and resize tests must establish its scope.
+
 ## Acceptance boundary
 
 SL 2.14.16, PhysX/CUDA/DDGI/Blast/Flow pins and public-runtime exclusion

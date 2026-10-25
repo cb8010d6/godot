@@ -22,3 +22,8 @@ structures when creating the device. PrivateData is core in 1.3; the existing
 1.2 aggregate/individual feature-chain correction is preserved. Missing DLLs
 leave the added features disabled. Vulkan 1.4 and older-runtime limitations
 must be recorded separately after actual GPU validation.
+
+At 59d1f2bd5e the real standard build and all nine backend/scene/probe cases
+passed. Both target device VUIDs and pNext-02830 are absent. No-SL stays clean;
+foreground FG still exposes its independent SDK-owned sync hazards. This is
+not an assertion of full strict validation or older Vulkan runtime coverage.

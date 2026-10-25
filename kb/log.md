@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (device requirements verified, depth handoff candidate)
+
+* **Measured at 59d1f2bd5e**: nine actual backend/scene/probe cases complete;
+  privateData/extension VUIDs disappear while pNext-02830 stays absent.
+  Remaining FG internal sync and depth/present diagnostics are not hidden.
+* **Implemented, pending GPU comparison**: [R32F Vulkan depth input](/tooling/streamline-vulkan-depth-handoff.md),
+  preserving sampled reversed depth and keeping D3D12/existing PT R32F paths.
+
 ## 2026-10-26 (surface verified, Vulkan device requirements candidate)
 
 * **Measured at 92dd424cf0**: no-SL Vulkan has no VUID/SYNC errors; all nine
