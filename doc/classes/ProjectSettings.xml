@@ -3588,6 +3588,8 @@
 		</member>
 		<member name="rendering/streamline/dlss_preset" type="String" setter="" getter="" default="&quot;?&quot;">
 			The default NVIDIA DLSS Super Resolution preset to use.
+			[code]?[/code] leaves model selection to the installed runtime. [code]Recommended[/code] requests NVIDIA's Streamline 2.14.16 policy: K for DLAA, Quality, and Balanced; M for Performance; L for Ultra Performance. L and M request the DLSS 4.5 second-generation Transformer model. K uses the earlier Transformer model.
+			An explicit preset letter such as [code]M[/code] or [code]L[/code] requests that preset for all Super Resolution modes, including DLAA. The supported runtime, GPU, and driver overrides determine which model actually runs. This setting does not select the Ray Reconstruction model or enable Multi Frame Generation.
 		</member>
 		<member name="rendering/streamline/dlss_ray_reconstruction_preset" type="String" setter="" getter="" default="&quot;?&quot;">
 			The default NVIDIA DLSS Ray Reconstruction preset to use.

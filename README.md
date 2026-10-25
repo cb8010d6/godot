@@ -257,6 +257,14 @@ building .NET and export templates. `version.py` remains identical to upstream.
 Upgrade verification and the Windows/RTX handoff are in
 [`devtools/UPGRADE_4_8_BETA1.md`](devtools/UPGRADE_4_8_BETA1.md).
 
+DLSS Super Resolution supports an optional `Recommended` preset policy
+(K for DLAA/Quality/Balanced, M for Performance, L for Ultra Performance).
+M/L request the DLSS 4.5 second-generation Transformer model; an explicit
+`M` or `L` can also be selected for the other modes. The default `?` stays
+runtime-controlled. Driver overrides can affect the actual model. Setup,
+validation and the Windows Agent work order are in
+[`devtools/DLSS_4_5_WINDOWS_HANDOFF.md`](devtools/DLSS_4_5_WINDOWS_HANDOFF.md).
+
 ### 5. Optional: add the NVIDIA Streamline DLLs (only for DLSS)
 
 **Skip this step unless you want DLSS, Ray Reconstruction, Frame Generation or

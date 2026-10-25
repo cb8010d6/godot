@@ -35,7 +35,9 @@
 #endif
 
 #ifdef ENABLE_DLSS
+#include "core/string/print_string.h"
 #include "drivers/streamline/streamline_context.h"
+#include "drivers/streamline/streamline_dlss_presets.h"
 #include "servers/rendering/renderer_rd/storage_rd/material_storage.h"
 #include "servers/rendering/renderer_rd/uniform_set_cache_rd.h"
 #endif
@@ -60,6 +62,8 @@ public:
 	// of constants per viewport and frame token.
 	uint32_t constants_frame = UINT32_MAX;
 	bool constants_set = false;
+	sl::DLSSMode last_logged_sr_mode = sl::DLSSMode::eCount;
+	char last_logged_sr_preset = '\0';
 
 	DLSSContextInner();
 	virtual ~DLSSContextInner();
@@ -349,6 +353,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 	bool use_dlss_rr = p_params.dlss_rr && StreamlineContext::get().slDLSSDSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.dlss_rr_available;
 
 	if (use_dlss_rr) {
+		context->last_logged_sr_mode = sl::DLSSMode::eCount;
 		// Set DLSS-RR (Ray Reconstruction) options
 		context->currentDlssDOptions.mode = context->currentDlssOptions.mode;
 		context->currentDlssDOptions.outputWidth = context->currentDlssOptions.outputWidth;
@@ -402,23 +407,16 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 			dlssPreset = StreamlineContext::get().dlss_default_preset;
 		}
 
-		if (dlssPreset == '?') {
-			context->currentDlssOptions.dlaaPreset = sl::DLSSPreset::eDefault;
-			context->currentDlssOptions.qualityPreset = sl::DLSSPreset::eDefault;
-			context->currentDlssOptions.balancedPreset = sl::DLSSPreset::eDefault;
-			context->currentDlssOptions.performancePreset = sl::DLSSPreset::eDefault;
-			context->currentDlssOptions.ultraPerformancePreset = sl::DLSSPreset::eDefault;
-		} else {
-			int presetNo = ((int)dlssPreset - (int)'F');
-			sl::DLSSPreset preset = (sl::DLSSPreset)((int)sl::DLSSPreset::ePresetF + presetNo);
-			context->currentDlssOptions.dlaaPreset = preset;
-			context->currentDlssOptions.qualityPreset = preset;
-			context->currentDlssOptions.balancedPreset = preset;
-			context->currentDlssOptions.performancePreset = preset;
-			context->currentDlssOptions.ultraPerformancePreset = preset;
+		sl::Result result = StreamlineDLSSPresets::submit_sr_options(StreamlineContext::get().slDLSSSetOptions, context->viewport, context->currentDlssOptions, dlssPreset);
+		if (context->last_logged_sr_mode != context->currentDlssOptions.mode || context->last_logged_sr_preset != dlssPreset) {
+			const sl::DLSSOptions &options = context->currentDlssOptions;
+			print_verbose(vformat("DLSS SR requested options: viewport=%d mode=%d selection=%s DLAA=%d Quality=%d Balanced=%d Performance=%d UltraPerformance=%d UltraQuality=%d result=%s (active model not queried)",
+					static_cast<uint32_t>(context->viewport), static_cast<int>(options.mode), dlssPreset == StreamlineDLSSPresets::RECOMMENDED ? String("Recommended") : String::chr(dlssPreset),
+					static_cast<int>(options.dlaaPreset), static_cast<int>(options.qualityPreset), static_cast<int>(options.balancedPreset), static_cast<int>(options.performancePreset), static_cast<int>(options.ultraPerformancePreset), static_cast<int>(options.ultraQualityPreset),
+					StreamlineContext::result_to_string(result)));
+			context->last_logged_sr_mode = options.mode;
+			context->last_logged_sr_preset = dlssPreset;
 		}
-
-		sl::Result result = StreamlineContext::get().slDLSSSetOptions(context->viewport, context->currentDlssOptions);
 		if (result != sl::Result::eOk) {
 			ERR_FAIL_MSG("Failed to call streamline slDLSSSetOptions. Result: " + String(StreamlineContext::result_to_string(result)));
 		}

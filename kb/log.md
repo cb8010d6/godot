@@ -1,5 +1,17 @@
 # Update log
 
+## 2026-10-25 (DLSS 4.5 SR follow-up)
+
+* **Added**: [DLSS 4.5 SR policy](/tooling/dlss-4.5-super-resolution.md),
+  opt-in Recommended preset requests, SDK submission-boundary tests and a
+  rendered Windows fixture. Runtime-controlled defaults, RR and ordinary
+  FG behavior remain intact.
+* **Prepared**: `devtools/DLSS_4_5_WINDOWS_HANDOFF.md`, including exact-head
+  builds, RTX40 active-model evidence, strict Vulkan controls and an
+  Agility-versus-legacy D3D12 debug-layer comparison. Hardware results remain
+  pending on the newly composed candidate; Dynamic MFG is excluded.
+* **Learned**: [class reference validation needs module inputs](/mistakes/class-docs-module-inputs.md).
+
 ## 2026-10-25 (native Windows acceptance)
 
 * **Measured**: six final MSVC targets, both smoke variants, four installed

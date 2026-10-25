@@ -76,7 +76,7 @@ struct StreamlineCapabilities {
 enum StreamlineParameterType {
 	STREAMLINE_PARAM_REFLEX_MODE, // [double] 0.0 = off, 1.0 = on, 2.0 = on with boost
 	STREAMLINE_PARAM_REFLEX_FRAME_LIMIT_US, // [double] frame limit in microseconds
-	STREAMLINE_PARAM_DLSS_PRESET, // [string] DLSS preset. Defaults to "?" (auto). Can be overridden to "J" or "K" for transformer models.
+	STREAMLINE_PARAM_DLSS_PRESET, // [string] "?" (runtime default), "Recommended" (K/M/L by mode), or a fixed F..O preset. L/M request DLSS 4.5 SR.
 	STREAMLINE_PARAM_DLSS_RR_PRESET, // [string] DLSS RR preset. Defaults to "?" (auto). Can be overridden to "D" or "E" for transformer models.
 	STREAMLINE_PARAM_COUNT,
 };

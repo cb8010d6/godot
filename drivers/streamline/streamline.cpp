@@ -35,6 +35,7 @@
 #include "core/object/object.h"
 #ifdef STREAMLINE_ENABLED
 #include "drivers/streamline/streamline_context.h"
+#include "drivers/streamline/streamline_dlss_presets.h"
 #endif
 
 Streamline *Streamline::singleton = nullptr;
@@ -64,7 +65,7 @@ void Streamline::register_singleton() {
 	GLOBAL_DEF("rendering/streamline/streamline_imgui", false);
 	GLOBAL_DEF(PropertyInfo(Variant::INT, "rendering/streamline/reflex_mode", PROPERTY_HINT_RANGE, "0,2,1"), 0);
 	GLOBAL_DEF(PropertyInfo(Variant::INT, "rendering/streamline/reflex_frame_limit_us", PROPERTY_HINT_RANGE, "0,1000000,1"), 0);
-	GLOBAL_DEF(PropertyInfo(Variant::STRING, "rendering/streamline/dlss_preset", PROPERTY_HINT_ENUM, "?,F,G,H,I,J,K,L,M,N,O"), "?");
+	GLOBAL_DEF(PropertyInfo(Variant::STRING, "rendering/streamline/dlss_preset", PROPERTY_HINT_ENUM, "?,Recommended,F,G,H,I,J,K,L,M,N,O"), "?");
 	GLOBAL_DEF(PropertyInfo(Variant::STRING, "rendering/streamline/dlss_ray_reconstruction_preset", PROPERTY_HINT_ENUM, "?,D,E,F,G,H,I,J,K,L,M,N,O"), "?");
 }
 
@@ -223,8 +224,12 @@ void Streamline::set_parameter(StreamlineParameterType p_parameter_type, const V
 		case StreamlineParameterType::STREAMLINE_PARAM_DLSS_PRESET: {
 			if (p_value.is_string()) {
 				String preset = p_value;
-				if (preset.length() == 1) {
+				if (preset == "Recommended") {
+					StreamlineContext::get().dlss_default_preset = StreamlineDLSSPresets::RECOMMENDED;
+				} else if (preset.length() == 1 && (preset.get(0) == '?' || StreamlineDLSSPresets::is_explicit_preset(preset.get(0)))) {
 					StreamlineContext::get().dlss_default_preset = (char)preset.get(0);
+				} else {
+					ERR_FAIL_MSG("Invalid DLSS Super Resolution preset. Use ?, Recommended, or a preset from F to O.");
 				}
 			}
 			break;

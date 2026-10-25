@@ -34,7 +34,8 @@
 		</constant>
 		<constant name="STREAMLINE_PARAM_DLSS_PRESET" value="2" enum="StreamlineParameterType">
 			The default DLSS preset to use.
-			Valid values: ?,F,G,H,I,J,K,L,M,N,O
+			Valid values: ?,Recommended,F,G,H,I,J,K,L,M,N,O.
+			[code]Recommended[/code] requests K for DLAA/Quality/Balanced, M for Performance, and L for Ultra Performance. M and L request DLSS 4.5 Super Resolution. Explicit letters apply to every Super Resolution mode. Driver overrides may change the active model. See [member ProjectSettings.rendering/streamline/dlss_preset].
 		</constant>
 		<constant name="STREAMLINE_PARAM_DLSS_RR_PRESET" value="3" enum="StreamlineParameterType">
 			The default DLSS Ray Reconstruction preset to use.

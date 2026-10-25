@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Class reference validation needs module inputs](/mistakes/class-docs-module-inputs.md) - include module XML before judging unresolved links
+
 * [NGX updater process accumulation](/mistakes/ngx-updater-process-accumulation.md) - contain test children and measure memory ownership before declaring an engine leak
 
 * [Unpinned physics example](/mistakes/unpinned-physics-example.md) - use a repository-owned physics fixture and preserve first-import failures
