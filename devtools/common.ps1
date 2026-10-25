@@ -16,7 +16,7 @@ function Get-Editor([switch]$Mono) {
 # Lines that start with ERROR, minus the ones every build of this fork prints
 # (AccessKit, the screen reader driver, is not part of the build).
 function Get-RealErrors([string[]]$Lines) {
-	return @($Lines | Where-Object { $_ -match "^ERROR" -and $_ -notmatch "screen reader support driver" })
+	return ,@($Lines | Where-Object { $_ -match "^\s*(ERROR:|SCRIPT ERROR:)" -and $_ -notmatch "screen reader support driver" })
 }
 
 function Write-Result([string]$Name, [bool]$Pass, [string]$Detail) {

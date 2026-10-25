@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-25 (Windows smoke fixture)
+
+* **Fixed**: first-import and unpinned-example ambiguity in the default
+  Windows smoke. The bundled scene checks a real PhysX body falling onto
+  a floor; script errors now fail the runner and single diagnostics retain
+  their full text. [Fixture finding](/mistakes/unpinned-physics-example.md).
+
 ## 2026-10-25 (installed Windows packages)
 
 * **Measured**: all four installed-template Debug/Release games exported and

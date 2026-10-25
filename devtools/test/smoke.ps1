@@ -5,17 +5,16 @@
 #   devtools\test\smoke.ps1 -Mono     # .NET editor
 #   ... -PhysXExample D:\godot-physx-example
 #
-# PhysX tests use Wild Ox Studios' example project
-# (git clone https://github.com/uno1982/godot-physx-example next to this
-# repository); they are skipped when it isn't there. The rendering tests use
-# misc\ddgi_test_project. Logs go to devtools\out\smoke.
+# PhysX uses the bundled fall-and-settle scene by default. An external
+# -PhysXExample must match the vendored module API and already be imported.
+# The rendering tests use misc\ddgi_test_project. Logs go to devtools\out\smoke.
 param(
 	[switch]$Mono,
 	[string]$PhysXExample = ""
 )
 . "$PSScriptRoot\..\common.ps1"
 $editor = Get-Editor -Mono:$Mono
-if (-not $PhysXExample) { $PhysXExample = Join-Path (Split-Path $RepoRoot -Parent) "godot-physx-example" }
+if (-not $PhysXExample) { $PhysXExample = Join-Path $RepoRoot "devtools\test\physics_smoke_project" }
 $project = Join-Path $RepoRoot "misc\ddgi_test_project"
 $logs = Join-Path $Out "smoke\$(if ($Mono) { 'mono' } else { 'standard' })"
 New-Item -ItemType Directory -Force $logs | Out-Null
@@ -41,7 +40,10 @@ Write-Host "Editor: $(& $editor --version 2>$null)"
 
 if (Test-Path (Join-Path $PhysXExample "project.godot")) {
 	$physxCheck = { param($l) $m = $l | Where-Object { $_ -match "PhysX 5.*initialized" } | Select-Object -First 1; if ($m) { $m.Trim() } else { "missing 'PhysX ... initialized'" } }
-	Run-Test "PhysX, game" @("--verbose", "--path", $PhysXExample, "--quit-after", "600") $physxCheck
+	$gameCheck = if ($PhysXExample -eq (Join-Path $RepoRoot "devtools\test\physics_smoke_project")) {
+		{ param($l) if ($l -match '^PHYSX_SMOKE_PASS ') { 'PhysX body fell and settled on the floor' } else { "missing PHYSX_SMOKE_PASS" } }
+	} else { $physxCheck }
+	Run-Test "PhysX, game" @("--verbose", "--path", $PhysXExample, "--quit-after", "600") $gameCheck
 	Run-Test "PhysX, editor" @("--editor", "--verbose", "--path", $PhysXExample, "--quit-after", "600") $physxCheck
 } else {
 	Write-Host "SKIP  PhysX tests: no example project at $PhysXExample" -ForegroundColor Yellow

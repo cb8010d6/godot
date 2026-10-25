@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Unpinned physics example](/mistakes/unpinned-physics-example.md) - use a repository-owned physics fixture and preserve first-import failures
+
 * [An editor fixture also needs a solution before managed export](/mistakes/incomplete-managed-export-fixture.md) - check complete export inputs, logs, outputs and actual game execution
 * [A managed smoke needs the managed runtime environment](/mistakes/managed-smoke-runtime-environment.md) - supply SDK discovery settings to fresh runtime commands
 * [Sandbox socket denial looked like an engine regression](/mistakes/sandbox-sockets-in-native-tests.md) - fix execution permissions before changing or excluding a network test
