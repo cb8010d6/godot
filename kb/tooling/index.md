@@ -2,6 +2,8 @@
 
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
 
+* [Abandoned RT pipeline cleanup](/tooling/pt-abandoned-pipeline-cleanup.md) - release the dependent pipeline before its owned shaders
+
 * [DLSS output dependency](/tooling/dlss-output-dependency.md) - local GPU reproduction and independent render-graph correction under test
 
 * [Streamline SDK upgrade validation](/tooling/streamline-sdk-validation.md) - release provenance, shared manifests, API compilation and runtime boundaries

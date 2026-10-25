@@ -30,6 +30,12 @@
   job lifetime regression recovered memory without changing drivers/caches.
   [Process finding](/mistakes/ngx-updater-process-accumulation.md).
 
+## 2026-10-25 (PT shutdown ownership)
+
+* **Found**: a timing-dependent invalid RID on glass-scene shutdown, with an
+  inherited shader-before-pipeline release order. Local dependency-order
+  correction and regression: [finding](/tooling/pt-abandoned-pipeline-cleanup.md).
+
 ## 2026-10-25 (Windows smoke fixture)
 
 * **Fixed**: first-import and unpinned-example ambiguity in the default
