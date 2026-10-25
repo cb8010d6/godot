@@ -2,6 +2,8 @@
 
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
 
+* [DLSS output dependency](/tooling/dlss-output-dependency.md) - local GPU reproduction and independent render-graph correction under test
+
 * [Streamline SDK upgrade validation](/tooling/streamline-sdk-validation.md) - release provenance, shared manifests, API compilation and runtime boundaries
 
 * [Windows package version](/tooling/windows-package-version.md) - preserve the built beta1 status in release metadata and test installed templates
