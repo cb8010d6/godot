@@ -1,5 +1,11 @@
 # Path tracer test and fix plan
 
+Windows acceptance (2026-10-25): a glass-view exit at `b0d582c9f9` logged a
+stale RID when abandoning an asynchronous build. The inherited cleanup freed
+hit-group shaders before their dependent pipeline. An independent local fix
+reverses that order; rebuild and repeated-exit verification are pending.
+See [ownership finding](kb/tooling/pt-abandoned-pipeline-cleanup.md).
+
 Working notes for making the NVIDIA path tracer (`RenderForwardClusteredPT`)
 handle PBR materials, lights, emission, custom shaders and fog natively. This
 file is the shared memory for humans and agents working on it: read it before

@@ -1398,6 +1398,12 @@ void SceneShaderRaytracing::_free_task_owned_outputs(PipelineBuildTask *p_task) 
 	if (!p_task) {
 		return;
 	}
+	// The pipeline depends on these shaders. Free it first, otherwise freeing a
+	// shader also frees the dependent pipeline and leaves new_pipeline stale.
+	if (p_task->new_pipeline.is_valid()) {
+		RD::get_singleton()->free_rid(p_task->new_pipeline);
+		p_task->new_pipeline = RID();
+	}
 	for (uint32_t i = 0; i < p_task->new_per_hg_shaders.size(); i++) {
 		if (i < p_task->slots.size() && p_task->slots[i].existing_per_hg_shader.is_valid()) {
 			continue;
@@ -1407,10 +1413,6 @@ void SceneShaderRaytracing::_free_task_owned_outputs(PipelineBuildTask *p_task) 
 			RD::get_singleton()->free_rid(shader);
 			p_task->new_per_hg_shaders[i] = RID();
 		}
-	}
-	if (p_task->new_pipeline.is_valid()) {
-		RD::get_singleton()->free_rid(p_task->new_pipeline);
-		p_task->new_pipeline = RID();
 	}
 }
 
