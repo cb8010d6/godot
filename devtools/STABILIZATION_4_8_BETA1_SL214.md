@@ -56,8 +56,6 @@ contexts, actual backend and runtime hashes. Roll back only the NIS fix commit
 to compare the alias/format behavior; do not drop the earlier graph/camera
 corrections. Independent baseline/FG/SDK errors must remain visible.
 
-## Acceptance boundary
-
 ## First NIS hardware comparison
 
 Native source `94c27203b1bf9fb3095316c8020d9ad4727f7b15` built with the
@@ -80,6 +78,17 @@ format/graph and rendered-scene comparison, not foreground FG activation,
 runtime module provenance or generated-frame correctness. Correct the fixture
 to explicitly load/require its probe and repeat those dependent checks.
 Lifecycle/performance testing is still pending. The initial records remain.
+
+## Acceptance boundary
+
+## Win32 surface candidate
+
+The no-SL control reports `VUID-VkWin32SurfaceCreateInfoKHR-hinstance-01307`.
+The Windows Unicode entry point passes null to OS_Windows; the surface path
+forwarded it as a Vulkan instance handle. When that optional instance is null,
+use `GWLP_HINSTANCE` from the actual owned window. Preserve a supplied instance
+and report a real failure if no valid window module can be obtained. This is
+independent of Streamline or NIS. Real no-SL/SL and launcher regressions follow.
 
 ## Acceptance boundary
 

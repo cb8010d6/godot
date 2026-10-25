@@ -57,6 +57,12 @@ RenderingContextDriver::SurfaceID RenderingContextDriverVulkanWindows::surface_c
 	VkWin32SurfaceCreateInfoKHR create_info = {};
 	create_info.sType = VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR;
 	create_info.hinstance = wpd->instance;
+	if (create_info.hinstance == nullptr) {
+		// The Unicode/console entry point initializes OS_Windows without an
+		// instance. Recover the module that owns the actual window class.
+		create_info.hinstance = reinterpret_cast<HINSTANCE>(GetWindowLongPtrW(wpd->window, GWLP_HINSTANCE));
+		ERR_FAIL_NULL_V_MSG(create_info.hinstance, SurfaceID(), "Cannot obtain the Vulkan window's HINSTANCE.");
+	}
 	create_info.hwnd = wpd->window;
 
 	VkSurfaceKHR vk_surface = VK_NULL_HANDLE;

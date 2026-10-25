@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-26 (Win32 surface validation candidate)
+
+* **Isolated**: the no-SL surface hinstance VUID follows a null optional
+  Windows entry-point instance. [Candidate](/tooling/vulkan-window-instance.md)
+  recovers ownership from HWND; independent GPU/launcher regression follows.
+
 ## 2026-10-26 (first NIS GPU comparison)
 
 * **Measured at 94c27203b1**: standard build and nine short GPU cases complete;

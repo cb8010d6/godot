@@ -1,5 +1,7 @@
 # Tooling
 
+* [Vulkan Win32 window instance](/tooling/vulkan-window-instance.md) - recover HWND module ownership when the Unicode entry point supplies no instance
+
 * [Separate NIS shader format and resource lifetime](/tooling/nis-separated-resources.md) - graph/format candidate and strict-validation acceptance boundary
 
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
