@@ -1,5 +1,16 @@
 # Update log
 
+## 2026-10-25 (native Windows acceptance)
+
+* **Measured**: six final MSVC targets, both smoke variants, four installed
+  template exports/runs, source generators and the RTX feature matrix.
+  [Acceptance record](../devtools/WINDOWS_ACCEPTANCE_2026_10_25.md) identifies
+  each tested revision and separate graphics corrections. Strict validation
+  failures, active-model uncertainty and untested visual/latency/hardware
+  cases remain. The newly composed review head has no exact-build claim.
+* **Corrected fixture**: self-contained Mono exports need official Microsoft
+  runtime-pack feeds as well as the pinned local Godot packages.
+
 ## 2026-10-25 (Windows test process lifetime)
 
 * **Measured**: delayed NGX updater/console children caused about 11 GiB of

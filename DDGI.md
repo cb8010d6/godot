@@ -478,7 +478,7 @@ noise of the first updates doesn't linger.
 | 28 | Moving objects' light checked against the path tracer: direct light only, hidden light toward the object, smoothed | Done (branch `dev-ddgi-quality`) |
 | 29 | Moving objects of any shape: oriented boxes with exact face form factors, light averaged per side | Done (`dev-ddgi`, 0.7.1) |
 | 30 | No flicker or blotches in dark places: near-field history holds the correction to the probes, reset by the probes' own change; close hits use the block's probe light | Done (`dev-ddgi`) |
-| Sync | Godot 4.8 beta 1 compatibility | Native/headless checks; GPU image and bake checks pending |
+| Sync | Godot 4.8 beta 1 compatibility | Vulkan dynamic, scroll, switch, bake/load and D3D12 baked-load GPU checks ran; equal-setting pre-upgrade/A/new comparison recorded in `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
 
 ## Test project
 

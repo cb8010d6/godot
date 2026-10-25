@@ -198,3 +198,9 @@ Read with: [AGENTS.md](AGENTS.md) (entry point), [CUSTOM_BUILD.md](CUSTOM_BUILD.
   exclusion check. Exported games may copy the installed release runtimes.
 - Godot 4.8 beta 1 requires .NET SDK 10 for managed builds and Python 3.9+ /
   SCons 4.4+ for native builds. Python <3.14 also needs `zstandard`.
+- Standard/Mono native objects and libraries must include the module-version
+  suffix, not only executables. Test installed TPZ lookup and actual exported
+  games; custom-template exports alone missed a cross-variant cache defect.
+- Repeated Windows GPU tests can leave delayed NGX updater children. Keep
+  native tests in a Job Object with a pre/post census, limit concurrency, and
+  correlate process ownership before cleanup or declaring an engine leak.

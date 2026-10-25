@@ -3,6 +3,14 @@
 This is an integration branch, not a release. Keep the published branches and
 `CUSTOM_VERSION` unchanged until the Windows hardware checks below pass.
 
+Native Windows follow-up on 2026-10-25 is recorded in
+[Windows acceptance](WINDOWS_ACCEPTANCE_2026_10_25.md). All six MSVC targets,
+both smoke variants and installed standard/.NET Debug/Release exports ran.
+Real RTX tests cover both backends, SR/DLAA, Vulkan PT/RR, ordinary 2X FG,
+Reflex, DDGI and native SDKs. Strict Vulkan and D3D12 debug-layer checks still
+fail, and active DLSS 4.5 model identity is unconfirmed. Read the tested commit
+and separate-regression boundaries before assigning those results to a PR.
+
 ## Source audit
 
 | Source | Locked revision | Role |
@@ -144,7 +152,8 @@ runtime environment; `hostfxr` loaded from their exported data directories.
 The Linux fixture explicitly supplies the native SDK `.so` siblings from
 `bin/`. The existing runtime export plugin handles Windows libraries, so
 automatic Linux SDK redistribution is not established by this check.
-Windows distribution and embedded-PCK exports remain local Agent checks.
+Windows distribution and embedded-PCK exports subsequently passed the local
+Agent checks described in the Windows acceptance record above.
 
 For a pinned, offline Windows runtime check, set
 `GODOT_STREAMLINE_DISABLE_OTA=1` in the test process environment before
@@ -215,8 +224,8 @@ not stub libraries. Do not overwrite a live editor's DLLs while testing.
    Public archives must pass the runtime exclusion check. Install the TPZs,
    export and run real projects, including an embedded PCK and C# game.
 
-Only after these results are recorded should the integration be marked
-release-ready or proposed upstream. Keep hardware-specific failures separate
+Only after the required checks pass should the integration be marked
+release-ready. Draft review must disclose the remaining failures. Keep hardware-specific failures separate
 from build failures and from unavailable tests.
 
 ## Recorded verification

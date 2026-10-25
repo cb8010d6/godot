@@ -20,3 +20,9 @@ Create the real solution and export presets before moving a fixture across
 the editor/export boundary. Require clean export logs, expected PCK and
 managed outputs, and successful execution of the exported game. Both Linux
 managed exports passed after fixing the fixture, without an engine change.
+
+The Windows fixture also needed Microsoft's runtime packs for self-contained
+publishing. A feed restricted to custom Godot packages builds an editor smoke
+but cannot publish those runtime packs. Keep Godot* packages pinned to the
+local custom feed while allowing Microsoft/System packages from official NuGet.
+Require an actual exported-game assertion even when the export process exits zero.

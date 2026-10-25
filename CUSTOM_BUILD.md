@@ -64,6 +64,7 @@ Update this table after every sync.
 | 2026-10-08 | `e7b12e7492` (no change) | `135dff3887` (no change) | `5681d7519a` (Flow on Linux, MIT license) | on `dev`, see log |
 | 2026-10-08 | `65e8d16951` | `135dff3887` (no change) | `5681d7519a` (no change) | `4495b586dd` |
 | 2026-10-24 | `4d10419cac` (4.8 beta 1, pinned) | `135dff3887` (no change) | `5681d7519a` (no change) | Merge pinned 4.8 beta 1; Streamline 2.14.16; verification and pending Windows/GPU checks in `devtools/UPGRADE_4_8_BETA1.md` |
+| 2026-10-25 | `4d10419cac` (unchanged) | `135dff3887` (unchanged) | `5681d7519a` (unchanged) | Windows/MSVC six-target and RTX acceptance recorded in `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md`; separate regression fixes, strict validation failures retained; no publication |
 
 ### History layout
 
