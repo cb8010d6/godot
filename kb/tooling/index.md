@@ -2,6 +2,8 @@
 
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
 
+* [PT storage-image formats](/tooling/pt-storage-image-formats.md) - match output and RR normal/roughness declarations with real allocations
+
 * [Abandoned RT pipeline cleanup](/tooling/pt-abandoned-pipeline-cleanup.md) - release the dependent pipeline before its owned shaders
 
 * [DLSS output dependency](/tooling/dlss-output-dependency.md) - local GPU reproduction and independent render-graph correction under test
