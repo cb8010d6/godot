@@ -69,7 +69,6 @@ public:
 	char last_logged_sr_preset = '\0';
 	RID nis_input;
 	RID nis_output;
-	RID vulkan_depth_input;
 	bool nis_initialized = false;
 
 	DLSSContextInner();
@@ -175,9 +174,6 @@ DLSSContextInner::~DLSSContextInner() {
 	if (nis_output.is_valid()) {
 		RD::get_singleton()->free_rid(nis_output);
 	}
-	if (vulkan_depth_input.is_valid()) {
-		RD::get_singleton()->free_rid(vulkan_depth_input);
-	}
 	g_dlss_freeViewportIndices.push_back((unsigned int)viewport);
 }
 
@@ -263,30 +259,6 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 
 	context->last_parameters = p_params;
 	context->last_effect = this;
-	if (!context->is_d3d12) {
-		RD::TextureFormat source_depth = RD::get_singleton()->texture_get_format(p_params.depth);
-		const bool depth_stencil_format = source_depth.format == RD::DATA_FORMAT_D16_UNORM || source_depth.format == RD::DATA_FORMAT_X8_D24_UNORM_PACK32 ||
-				source_depth.format == RD::DATA_FORMAT_D32_SFLOAT || source_depth.format == RD::DATA_FORMAT_D16_UNORM_S8_UINT ||
-				source_depth.format == RD::DATA_FORMAT_D24_UNORM_S8_UINT || source_depth.format == RD::DATA_FORMAT_D32_SFLOAT_S8_UINT;
-		if (depth_stencil_format) {
-			if (context->vulkan_depth_input.is_null()) {
-				RD::TextureFormat format;
-				format.format = RD::DATA_FORMAT_R32_SFLOAT;
-				format.width = source_depth.width;
-				format.height = source_depth.height;
-				format.usage_bits = RD::TEXTURE_USAGE_SAMPLING_BIT | RD::TEXTURE_USAGE_STORAGE_BIT | RD::TEXTURE_USAGE_CAN_COPY_FROM_BIT | RD::TEXTURE_USAGE_CAN_COPY_TO_BIT;
-				context->vulkan_depth_input = RD::get_singleton()->texture_create(format, RD::TextureView());
-				ERR_FAIL_COND(context->vulkan_depth_input.is_null());
-				RD::get_singleton()->set_resource_name(context->vulkan_depth_input, "DLSS R32F depth input");
-				print_verbose(vformat("DLSS Vulkan depth handoff: source_format=%d tagged_format=%d", static_cast<int>(source_depth.format), static_cast<int>(format.format)));
-			}
-			// Sample the actual reversed depth without linearizing or reducing
-			// precision. SL can consume/clone this color image without copying
-			// incompatible depth and color aspects or depth-only layouts.
-			CopyEffects::get_singleton()->copy_depth_to_rect(p_params.depth, context->vulkan_depth_input, Rect2i(Point2i(), Size2i(source_depth.width, source_depth.height)));
-			context->last_parameters.depth = context->vulkan_depth_input;
-		}
-	}
 	const bool use_nis = p_params.sharpness > 0.0f && StreamlineContext::get().slNISSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.nis_available;
 	if (use_nis) {
 		if (context->nis_input.is_null()) {
@@ -354,7 +326,7 @@ void DLSSEffect::upscale(const DLSSContext::Parameters &p_params) {
 	int num_resources = 0;
 	res[num_resources++].rid = p_params.color;
 	res[num_resources++].rid = context->last_parameters.output;
-	res[num_resources++].rid = context->last_parameters.depth;
+	res[num_resources++].rid = p_params.depth;
 	res[num_resources++].rid = p_params.velocity;
 
 	// Add DLSS-RR buffers if provided

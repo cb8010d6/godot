@@ -1,21 +1,18 @@
 ---
 type: Finding
-title: Give Streamline an R32F Vulkan depth input with explicit producer ordering
-description: Candidate avoids native depth-to-color clone errors while preserving sampled depth precision and the D3D12 path.
+title: Rejected depth interpretation of swapchain copy diagnostics
+description: The R32F candidate did not change the VUIDs; complete messages identify pacer transfer usage and fake swapchain layout instead.
 tags: [streamline, vulkan, depth, synchronization, testing]
-status: draft
+status: deprecated
 generated: { by: codex, at: 2026-10-26T00:00:00Z }
 ---
 
-The actual SL2.10/2.14 controls retain oldLayout-01213, copy-aspect-06663 and
-pending clone layout 09600. They concern SDK depth cloning, separately from
-the fixed NIS shader output and host device requirements. Full objects,
-command regions and messages remain in the raw logs.
+The c76e671d0d depth experiment built and ran nine actual cases without
+changing 01213/06663/09600. The VUID names were over-interpreted as depth
+issues. Full messages instead show the SL pacer's copy destination lacks
+TRANSFER_DST usage and a fake swapchain buffer has a layout mismatch.
 
-The candidate converts only Vulkan depth/stencil textures to a persistent
-R32F color input before external evaluation. A shader sample preserves the
-reversed, nonlinear depth, not a raw incompatible aspect copy or linearized
-depth. Graph dependencies cover the producer and SDK reader. Existing R32F
-PT depth and D3D12 inputs remain untouched. Cost is one dispatch and four
-bytes per internal-resolution pixel. Actual GPU comparison, lifecycle and
-performance are required before claiming resolution.
+The ineffective conversion is removed precisely, retaining all earlier
+NIS/depth/camera integrations and the experiment's logs. Use the complete
+message, resource identity, usage, command region and chronology before
+choosing a fix. Do not describe this as a resolved depth bug.

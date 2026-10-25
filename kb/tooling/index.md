@@ -1,6 +1,7 @@
 # Tooling
 
-* [Streamline Vulkan depth handoff](/tooling/streamline-vulkan-depth-handoff.md) - R32F input candidate with explicit graph dependency and precision boundary
+* [Rejected Vulkan depth hypothesis](/tooling/streamline-vulkan-depth-handoff.md) - full pacer/swapchain messages contradicted the depth interpretation
+* [Streamline swapchain transfer usage](/tooling/streamline-swapchain-transfer-usage.md) - real swapchain copy usage versus separate fake-layout/FG hazards
 
 * [Streamline Vulkan device requirements](/tooling/streamline-vulkan-device-requirements.md) - supported privateData/presentId and explicit dependency provisioning
 

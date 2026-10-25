@@ -4021,6 +4021,16 @@ Error RenderingDeviceDriverVulkan::swap_chain_resize(CommandQueueID p_cmd_queue,
 	swap_create_info.imageExtent = extent;
 	swap_create_info.imageArrayLayers = 1;
 	swap_create_info.imageUsage = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT;
+	if (streamline_device_features) {
+		// The SL pacer copies fake swapchain images into the real swapchain,
+		// even with interpolation off. Its copies need transfer image usage.
+		const VkImageUsageFlags transfer_usage = VK_IMAGE_USAGE_TRANSFER_SRC_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT;
+		swap_create_info.imageUsage |= surface_capabilities.supportedUsageFlags & transfer_usage;
+		if ((surface_capabilities.supportedUsageFlags & transfer_usage) != transfer_usage) {
+			WARN_PRINT("The Vulkan surface does not support all Streamline swapchain transfer usages.");
+		}
+		print_verbose(vformat("Streamline Vulkan swapchain usage: requested=0x%x supported=0x%x", swap_create_info.imageUsage, surface_capabilities.supportedUsageFlags));
+	}
 	swap_create_info.imageSharingMode = VK_SHARING_MODE_EXCLUSIVE;
 	swap_create_info.preTransform = surface_transform_bits;
 	switch (swap_create_info.preTransform) {

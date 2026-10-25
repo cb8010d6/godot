@@ -1,5 +1,7 @@
 # Mistakes
 
+* [VUID names without message context](/mistakes/vuid-name-without-message-context.md) - classify actual resources and commands before implementing an adapter
+
 * [Optional native probe in a fresh fixture](/mistakes/optional-native-probe-in-fresh-fixture.md) - load and require the extension before accepting runtime/FG state evidence
 
 * [A legacy D3D12 control must retain loader initialization](/mistakes/d3d12-legacy-control-initialization.md) - skip only factory creation and verify the failure stage

@@ -1,5 +1,14 @@
 # Update log
 
+## 2026-10-26 (corrected swapchain attribution)
+
+* **Rejected and removed**: c76e671d0d's depth experiment did not alter the
+  target diagnostics. Earlier depth interpretations below are superseded by
+  [complete pacer/swapchain messages](/tooling/streamline-swapchain-transfer-usage.md).
+* **Implemented, pending GPU validation**: supported real-swapchain transfer
+  usages; no private fake-layout assumption or validation suppression.
+  [Diagnosis lesson](/mistakes/vuid-name-without-message-context.md).
+
 ## 2026-10-26 (device requirements verified, depth handoff candidate)
 
 * **Measured at 59d1f2bd5e**: nine actual backend/scene/probe cases complete;
