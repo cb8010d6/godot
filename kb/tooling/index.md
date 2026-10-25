@@ -1,5 +1,7 @@
 # Tooling
 
+* [Fixed 08e Windows acceptance](/tooling/dlss45-windows-08e-acceptance.md) - exact-head GPU requests, target VUID and legacy runtime controls with model proof still missing
+
 * [DLSS 4.5 Super Resolution policy](/tooling/dlss-4.5-super-resolution.md) - request K/M/L by mode and verify active models separately
 
 * [PT storage-image formats](/tooling/pt-storage-image-formats.md) - match output and RR normal/roughness declarations with real allocations

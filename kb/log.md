@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-25 (fixed 08e Windows candidate)
+
+* **Measured**: six targets, two smoke variants, installed-template games and
+  30 real SR request/run cases; target Vulkan feature-chain VUID disappears.
+  Independent legacy D3D12 controls identify a runtime/layer mismatch.
+  [Record](/tooling/dlss45-windows-08e-acceptance.md) retains failures and
+  missing active-model proof; no full acceptance/release claim.
+
 ## 2026-10-25 (camera inputs in the model validation candidate)
 
 * **Applied in the integration candidate**: the existing reviewed FOV
