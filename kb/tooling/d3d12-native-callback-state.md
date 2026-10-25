@@ -29,3 +29,7 @@ validated by the Windows 10 legacy test. Current fix awaits build/GPU regression
 Reproduce with a paired runtime directory and the existing DLSS 4.5 scene under
 `--gpu-validation --rendering-driver d3d12`, sharpness zero/nonzero and FG on/off.
 Capture OutputDebugString from process creation, not just engine stdout.
+
+The first e627be688e standard build failed: VectorView has no range-for
+begin/end. Replace that traversal with indexed access; the failed compiler
+receipt is retained. No GPU result is attributed to that unbuilt revision.

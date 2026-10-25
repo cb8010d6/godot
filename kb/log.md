@@ -1,5 +1,10 @@
 # Update log
 
+## 2026-10-26 (native callback compile correction)
+
+* **Failed at e627be688e**: MSVC rejects range-for on VectorView. Use indexed
+  access, preserve the failed receipt and rebuild before any GPU claim.
+
 ## 2026-10-26 (D3D12 actual evaluation regression)
 
 * **Failed at f9207b88db**: debug SR/SR+NIS/FG scenes exit zero but emit

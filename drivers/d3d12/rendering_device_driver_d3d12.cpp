@@ -5922,7 +5922,8 @@ void *RenderingDeviceDriverD3D12::command_buffer_get_native_handle(CommandBuffer
 void RenderingDeviceDriverD3D12::command_prepare_driver_callback(CommandBufferID p_cmd_buffer, VectorView<DriverCallbackTexture> p_textures) {
 	CommandBufferInfo *cmd_buf_info = (CommandBufferInfo *)p_cmd_buffer.id;
 	if (!barrier_capabilities.enhanced_barriers_supported) {
-		for (const DriverCallbackTexture &texture : p_textures) {
+		for (uint32_t i = 0; i < p_textures.size(); i++) {
+			const DriverCallbackTexture &texture = p_textures[i];
 			D3D12_RESOURCE_STATES state;
 			switch (texture.layout) {
 				case TEXTURE_LAYOUT_GENERAL:
