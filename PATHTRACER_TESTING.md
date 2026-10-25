@@ -1,5 +1,10 @@
 # Path tracer test and fix plan
 
+The 2026-10-25 real Vulkan validation also found inherited RGBA32F/RGBA16F
+RT-output and RGBA16F/RGBA8_SNORM RR-guide mismatches. The declarations and
+allocations are corrected on a separate regression branch; validation is pending.
+See [format finding](kb/tooling/pt-storage-image-formats.md).
+
 Windows acceptance (2026-10-25): a glass-view exit at `b0d582c9f9` logged a
 stale RID when abandoning an asynchronous build. The inherited cleanup freed
 hit-group shaders before their dependent pipeline. An independent local fix

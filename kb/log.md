@@ -1,5 +1,11 @@
 # Update log
 
+## 2026-10-25 (PT/RR storage-image contract)
+
+* **Found**: two inherited image-format mismatches with the current official
+  Khronos layer. Correct the RT output declaration and RR guide allocation;
+  [format finding](/tooling/pt-storage-image-formats.md).
+
 ## 2026-10-25 (PT shutdown ownership)
 
 * **Found**: a timing-dependent invalid RID on glass-scene shutdown, with an
