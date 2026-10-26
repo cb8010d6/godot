@@ -1,5 +1,15 @@
 # Update log
 
+## 2026-10-26 (vertex displacement varying dependencies)
+
+* Candidate `21bc08eaa` built successfully with MSVC and restored all three
+  instance colors, but the same GPU test still failed its displaced-edge
+  assertions. Its compute shader lacked the vertex-to-fragment varying.
+* [Displacement code generation](/tooling/pt-instance-builtins.md) now generates
+  vertex-only dependencies, preserving varying assignments without importing
+  fragment-only helpers. The failed candidate remains recorded; a new build
+  and rendered result are required.
+
 ## 2026-10-26 (real-game PT material failure)
 
 * Replaying the C1 game's original closest-hit dumps confirmed undeclared

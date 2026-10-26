@@ -387,7 +387,7 @@ public:
 		bool uses_instance_id = false;
 		bool uses_instance_custom = false;
 		bool uses_vertex_color = false;
-		String vertex_globals; // Functions and globals the vertex stage uses
+		String vertex_globals; // Varyings and dependencies needed by compute vertex displacement
 		uint32_t alpha_texture_buffer_offset = UINT32_MAX; // Byte offset of hint_alpha texture index in CustomMaterialUniforms UBO; UINT32_MAX if absent
 		bool needs_per_instance_geometry() const {
 			// A merged BLAS bakes MultiMesh transforms into VERTEX and loses

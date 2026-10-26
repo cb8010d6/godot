@@ -43,6 +43,25 @@ semantics on affected custom shaders; no performance improvement is claimed.
 Failed closest-hit, any-hit and intersection compiles now report their actual
 compiler error as well as preserving the generated source dump.
 
+# Displacement code generation regression
+
+The first rebuilt candidate, `21bc08eaa`, rendered all three expected instance
+colors in the native Vulkan minimal regression, but failed its displaced-edge
+pixel assertions. The preserved compute shader failed on `m_v_tint` being
+undeclared. This is a separate pre-existing code generation defect exposed by
+the stricter displacement check, not evidence that matching colors prove correct
+geometry.
+
+With `suppress_varying_io`, ShaderCompiler places varying globals and vertex
+helper dependencies in its fragment-stage globals for hit-stage vertex replay.
+The displacement compiler incorrectly read its vertex-stage globals instead.
+For custom shaders that write `VERTEX`, a second preprocessing pass now uses
+only `vertex()` as an entry point and takes that pass's fragment globals.
+This retains the real varying assignments and vertex helpers without importing
+helpers used only by `fragment()`, which can depend on unavailable fragment
+built-ins. The vertex code itself and the actual instance data are unchanged.
+This correction still requires a rebuilt native rendered regression.
+
 # Regression boundary
 
 Rebuild and rendered regression are required: use multiple instances of one

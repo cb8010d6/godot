@@ -685,7 +685,22 @@ bool SceneShaderRaytracing::_preprocess_shader(RID p_material, bool p_is_procedu
 	r_entry.uses_instance_id = detected_instance_id;
 	r_entry.uses_instance_custom = detected_instance_custom;
 	r_entry.uses_vertex_color = detected_vertex_color;
-	r_entry.vertex_globals = gen_code.stage_globals[ShaderCompiler::STAGE_VERTEX];
+	if (detected_vertex_write && !p_is_procedural) {
+		// With suppress_varying_io, vertex varyings and function dependencies
+		// share the fragment globals used by hit-stage vertex replay. Generate
+		// them with only vertex() as an entry point for the compute pass, so
+		// fragment-only helpers and built-ins are not included there.
+		ShaderCompiler::IdentifierActions vertex_actions;
+		vertex_actions.entry_point_stages["vertex"] = ShaderCompiler::STAGE_VERTEX;
+		HashMap<StringName, ShaderLanguage::ShaderNode::Uniform> vertex_uniform_sink;
+		vertex_actions.uniforms = &vertex_uniform_sink;
+		ShaderCompiler::GeneratedCode vertex_gen_code;
+		if (compiler.compile(RSE::SHADER_SPATIAL, code, &vertex_actions, String(), vertex_gen_code) != OK) {
+			WARN_PRINT("RT: Failed to preprocess custom vertex displacement shader.");
+			return false;
+		}
+		r_entry.vertex_globals = vertex_gen_code.stage_globals[ShaderCompiler::STAGE_FRAGMENT];
+	}
 	r_entry.fragment_code = gen_code.code.has("fragment") ? gen_code.code["fragment"] : String();
 	r_entry.fragment_globals = gen_code.stage_globals[ShaderCompiler::STAGE_FRAGMENT];
 	if (p_is_procedural) {
