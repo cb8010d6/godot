@@ -1,5 +1,7 @@
 # Tooling
 
+* [RR resource ownership](/tooling/streamline-rr-resource-ownership.md) - correlate native image handles before changing host or SDK synchronization
+
 * [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md) - measured RTSS-isolated SR pacer-layout failure and a startup-only diagnostic control; candidate A/B still pending
 
 * [RT startup readiness](/tooling/pt-startup-readiness.md) - actual per-viewport live RT material/recorded trace state for a loading gate; candidate awaiting native/GPU checks

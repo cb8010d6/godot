@@ -1,5 +1,12 @@
 # Update log
 
+## 2026-10-27 (RR image ownership diagnostic; not a fix)
+
+* [RR resource ownership](/tooling/streamline-rr-resource-ownership.md): the
+  repeated 8a game strict run now has verified live process/module coverage;
+  no sampled RTSS or FG DLL, but WAW and 09600 remain. Preserve the FAIL and
+  add temporary exact host-tag logging to distinguish resource ownership.
+
 ## 2026-10-27 (isolated SDK214 SR strict baseline; diagnostic candidate)
 
 * [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md):
