@@ -1,0 +1,45 @@
+{
+  "scope": "Complete supplement data files, excluding this self manifest.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 159,
+      "sha256": "090cffdb5c042c3e41645b3762ed5f1a630591b9a051d08ff8ca20c223e1d5bd"
+    },
+    {
+      "path": "diagnostic.patch",
+      "bytes": 8319,
+      "sha256": "f77c4587f2ec5d3490ffc13391da5655e994a2c301f8b6e1b4b621073c37bef7"
+    },
+    {
+      "path": "local_tags-0.log",
+      "bytes": 80785,
+      "sha256": "999139182f43a00d8645896c75970307bcddd15071f58d5024f967f883364f74"
+    },
+    {
+      "path": "local_tags-1.log",
+      "bytes": 80784,
+      "sha256": "cb2d60a721698eca7b28064ee358ef59ba598ac844a0c55faf8fe7b69de1d9ec"
+    },
+    {
+      "path": "preallocation-0.log",
+      "bytes": 80530,
+      "sha256": "4cc73e9099458bdee3eb22d7f188ab7d7168372f9447acf1bbf0bb8f2a4d2d17"
+    },
+    {
+      "path": "preallocation-1.log",
+      "bytes": 81164,
+      "sha256": "753e214de163ae4ee957022d1ee38a51435100a48b1371aa76f27f8cac472d43"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3453,
+      "sha256": "eb33761856892080cc51ae2d46a40162ebc85610895740e1e4b03414d1988f1d"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 21972,
+      "sha256": "e9bc945b184c1512f8252cc590314866e4fdd70e1c4379e573354efd275f6bf2"
+    }
+  ]
+}

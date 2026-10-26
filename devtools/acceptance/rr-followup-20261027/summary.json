@@ -1,0 +1,773 @@
+{
+  "scope": "Bounded diagnostic supplement, not a production synchronization fix. Production native remains d29e706530.",
+  "source_base": "ce8ae17454f2c4ce43223d3a416a47492b182b1c",
+  "diagnostic_patch_sha256": "f77c4587f2ec5d3490ffc13391da5655e994a2c301f8b6e1b4b621073c37bef7",
+  "environment": {
+    "OS": "Windows 10 Pro 19045",
+    "GPU": "RTX 4060 Laptop GPU",
+    "driver": "610.88",
+    "Vulkan_device_API": "1.4.341",
+    "VVL": "1.4.366",
+    "Streamline": "2.14.16",
+    "NGX_RR": "310.9.16"
+  },
+  "builds": [
+    {
+      "local_commit": "74abe06d76d4c181ffcb5826bbe72dc8e6c211a4",
+      "editor_build_seconds": 103.406,
+      "exit": 0
+    },
+    {
+      "local_commit": "6467f55a260ba6ff48668d38ce7d414453d59507",
+      "editor_build_seconds": 38.656,
+      "exit": 0
+    }
+  ],
+  "cases": [
+    {
+      "kind": "preallocation",
+      "flag": 0,
+      "native_commit": "74abe06d76d4c181ffcb5826bbe72dc8e6c211a4",
+      "engine_sha256": "a14c0bb6e1116bd6618879902a7cdc569f1f7387107d1bddfa66397a06b094de",
+      "requested_rr_preset": "F",
+      "diagnostic_contract_verified": true,
+      "strict_status": "FAIL",
+      "native_exit": 0,
+      "runtime_completed": true,
+      "RR_evidence": {
+        "actual_evaluate_eok": true,
+        "one_viewport_eight_tags": true,
+        "actual_sdk_rr_state": true,
+        "all_49_pt_rr_fg_off_frames": true,
+        "tags": [
+          {
+            "viewport": 1,
+            "tag": 3,
+            "rid": 5248450035764,
+            "native": 2555265022953748,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 4,
+            "rid": 5519032975427,
+            "native": 3775722929786218,
+            "state": 1,
+            "width": 960,
+            "height": 540
+          },
+          {
+            "viewport": 1,
+            "tag": 0,
+            "rid": 5252745003061,
+            "native": 2557464046209302,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 1,
+            "rid": 5484673237058,
+            "native": 3765827325136225,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 7,
+            "rid": 5373004087352,
+            "native": 3687761999564058,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 8,
+            "rid": 5377299054649,
+            "native": 3689961022819612,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 14,
+            "rid": 5381594021946,
+            "native": 3692160046075166,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 42,
+            "rid": 5385888989243,
+            "native": 3694359069330720,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          }
+        ],
+        "evaluations": [
+          {
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "tag_viewports": [
+          1
+        ],
+        "scope": "Only observed native first RR call success/non-Off and actual SDK getter/version evidence; not model identity, every-frame success, visual quality or performance."
+      },
+      "validation_message_counts": {
+        "Loader Message": 9,
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 2
+      },
+      "frame_records": 49,
+      "native_sdk_samples": 160,
+      "infrastructure_verified": true,
+      "sampled_RTSS_absent": true,
+      "FG_plugin_absent": true,
+      "owned_job_assigned": true,
+      "job_close_reported_contained_PIDs": [
+        45756,
+        23376,
+        12704,
+        39304,
+        33708,
+        37140,
+        49456,
+        9336,
+        17788,
+        41404,
+        6844,
+        31068,
+        36044,
+        14608,
+        3052,
+        26112,
+        47468,
+        44560,
+        23840,
+        43836,
+        29648,
+        37604,
+        21584,
+        45880,
+        21932,
+        25164,
+        14888,
+        6728,
+        47712,
+        40296,
+        3224,
+        45636,
+        24592,
+        44336
+      ],
+      "NGX_updaters_immediately_after_close": [
+        45756,
+        12704,
+        33708,
+        37140,
+        9336,
+        41404,
+        36044,
+        3052,
+        26112,
+        44560,
+        43836,
+        37604,
+        21932,
+        25164,
+        6728,
+        40296,
+        24592
+      ],
+      "NGX_updaters_before": [],
+      "duration_seconds": 13.125,
+      "raw_matrix_sha256": "d472f766ea10e4341afeb39d4bca673d79544eb47eff1c933e870a0f7e4d1618",
+      "original_log_sha256": "5e62b441d234c204320d729642d66eecdefeb9c843b2316df6ecbb22c7c5f678",
+      "sanitized_log": "preallocation-0.log",
+      "sanitized_log_sha256": "4cc73e9099458bdee3eb22d7f188ab7d7168372f9447acf1bbf0bb8f2a4d2d17",
+      "markers": [
+        "RRDIAG_PREALLOCATE enabled=false viewport=1 frame=4",
+        "RRDIAG_EVALUATE_BEGIN",
+        "RRDIAG_EVALUATE_END result=sl::eOk",
+        "SL_RR_EVALUATE viewport=1 mode=3 result=0"
+      ]
+    },
+    {
+      "kind": "preallocation",
+      "flag": 1,
+      "native_commit": "74abe06d76d4c181ffcb5826bbe72dc8e6c211a4",
+      "engine_sha256": "a14c0bb6e1116bd6618879902a7cdc569f1f7387107d1bddfa66397a06b094de",
+      "requested_rr_preset": "F",
+      "diagnostic_contract_verified": false,
+      "strict_status": "FAIL",
+      "native_exit": 0,
+      "runtime_completed": true,
+      "RR_evidence": {
+        "actual_evaluate_eok": true,
+        "one_viewport_eight_tags": true,
+        "actual_sdk_rr_state": true,
+        "all_49_pt_rr_fg_off_frames": true,
+        "tags": [
+          {
+            "viewport": 1,
+            "tag": 3,
+            "rid": 5248450035764,
+            "native": 2555265022953748,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 4,
+            "rid": 5519032975427,
+            "native": 3775722929786218,
+            "state": 1,
+            "width": 960,
+            "height": 540
+          },
+          {
+            "viewport": 1,
+            "tag": 0,
+            "rid": 5252745003061,
+            "native": 2557464046209302,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 1,
+            "rid": 5484673237058,
+            "native": 3765827325136225,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 7,
+            "rid": 5373004087352,
+            "native": 3687761999564058,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 8,
+            "rid": 5377299054649,
+            "native": 3689961022819612,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 14,
+            "rid": 5381594021946,
+            "native": 3692160046075166,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 42,
+            "rid": 5385888989243,
+            "native": 3694359069330720,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          }
+        ],
+        "evaluations": [
+          {
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "tag_viewports": [
+          1
+        ],
+        "scope": "Only observed native first RR call success/non-Off and actual SDK getter/version evidence; not model identity, every-frame success, visual quality or performance."
+      },
+      "validation_message_counts": {
+        "Loader Message": 9,
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 2
+      },
+      "frame_records": 49,
+      "native_sdk_samples": 160,
+      "infrastructure_verified": true,
+      "sampled_RTSS_absent": true,
+      "FG_plugin_absent": true,
+      "owned_job_assigned": true,
+      "job_close_reported_contained_PIDs": [
+        47160,
+        11256,
+        31836,
+        25464,
+        14792,
+        22144,
+        48444,
+        49668,
+        11324,
+        32152,
+        5304,
+        43192,
+        23740,
+        45860,
+        47492,
+        6264,
+        33004,
+        35328,
+        33720,
+        19084,
+        6888,
+        20284,
+        14860,
+        49640,
+        35796,
+        41000,
+        40452,
+        24660,
+        39408,
+        25132,
+        13092,
+        47556,
+        24932,
+        42784
+      ],
+      "NGX_updaters_immediately_after_close": [
+        47160,
+        14792,
+        22144,
+        49668,
+        32152,
+        23740,
+        47492,
+        6264,
+        35328,
+        19084,
+        20284,
+        35796,
+        41000,
+        24660,
+        25132,
+        24932
+      ],
+      "NGX_updaters_before": [],
+      "duration_seconds": 11.813,
+      "raw_matrix_sha256": "b19921b5d52fc3c39aade82e2f98ed6e42d520b672cdbf9c3cde6a59f83afd50",
+      "original_log_sha256": "3def03b1058e27be87bda51b2daa2e683cdb6b6b9d68331363f75187efd0b702",
+      "sanitized_log": "preallocation-1.log",
+      "sanitized_log_sha256": "753e214de163ae4ee957022d1ee38a51435100a48b1371aa76f27f8cac472d43",
+      "markers": [
+        "RRDIAG_PREALLOCATE enabled=true viewport=1 frame=4",
+        "RRDIAG_ALLOC_BEGIN",
+        "RRDIAG_ALLOC_END result=sl::eErrorInvalidParameter",
+        "RRDIAG_PREALLOCATE enabled=true viewport=1 frame=5",
+        "RRDIAG_ALLOC_BEGIN",
+        "RRDIAG_ALLOC_END result=sl::eErrorInvalidParameter",
+        "RRDIAG_PREALLOCATE enabled=true viewport=1 frame=6",
+        "RRDIAG_ALLOC_BEGIN",
+        "RRDIAG_ALLOC_END result=sl::eOk",
+        "RRDIAG_EVALUATE_BEGIN",
+        "RRDIAG_EVALUATE_END result=sl::eOk",
+        "SL_RR_EVALUATE viewport=1 mode=3 result=0"
+      ]
+    },
+    {
+      "kind": "local_tags",
+      "flag": 0,
+      "native_commit": "6467f55a260ba6ff48668d38ce7d414453d59507",
+      "engine_sha256": "5e559325be962b57f2c3a3cc34c1239d5322ca30d8a4a8e2e5d43f821cc1a247",
+      "requested_rr_preset": "F",
+      "diagnostic_contract_verified": true,
+      "strict_status": "FAIL",
+      "native_exit": 0,
+      "runtime_completed": true,
+      "RR_evidence": {
+        "actual_evaluate_eok": true,
+        "one_viewport_eight_tags": true,
+        "actual_sdk_rr_state": true,
+        "all_49_pt_rr_fg_off_frames": true,
+        "tags": [
+          {
+            "viewport": 1,
+            "tag": 3,
+            "rid": 5248450035764,
+            "native": 2555265022953748,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 4,
+            "rid": 5519032975427,
+            "native": 3775722929786218,
+            "state": 1,
+            "width": 960,
+            "height": 540
+          },
+          {
+            "viewport": 1,
+            "tag": 0,
+            "rid": 5252745003061,
+            "native": 2557464046209302,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 1,
+            "rid": 5484673237058,
+            "native": 3765827325136225,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 7,
+            "rid": 5373004087352,
+            "native": 3687761999564058,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 8,
+            "rid": 5377299054649,
+            "native": 3689961022819612,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 14,
+            "rid": 5381594021946,
+            "native": 3692160046075166,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 42,
+            "rid": 5385888989243,
+            "native": 3694359069330720,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          }
+        ],
+        "evaluations": [
+          {
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "tag_viewports": [
+          1
+        ],
+        "scope": "Only observed native first RR call success/non-Off and actual SDK getter/version evidence; not model identity, every-frame success, visual quality or performance."
+      },
+      "validation_message_counts": {
+        "Loader Message": 9,
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 2
+      },
+      "frame_records": 49,
+      "native_sdk_samples": 160,
+      "infrastructure_verified": true,
+      "sampled_RTSS_absent": true,
+      "FG_plugin_absent": true,
+      "owned_job_assigned": true,
+      "job_close_reported_contained_PIDs": [
+        37168,
+        23976,
+        25296,
+        20508,
+        48472,
+        48724,
+        30668,
+        31168,
+        34468,
+        6192,
+        31356,
+        24024,
+        45696,
+        24100,
+        2104,
+        44256,
+        13592,
+        3464,
+        23156,
+        29568,
+        39228,
+        46388,
+        49216,
+        41540,
+        47108,
+        22948,
+        49884,
+        23784,
+        35792,
+        47588,
+        45236,
+        26504,
+        33236,
+        5260
+      ],
+      "NGX_updaters_immediately_after_close": [
+        37168,
+        25296,
+        48472,
+        48724,
+        31168,
+        6192,
+        45696,
+        2104,
+        44256,
+        3464,
+        29568,
+        46388,
+        47108,
+        22948,
+        23784,
+        47588,
+        33236
+      ],
+      "NGX_updaters_before": [],
+      "duration_seconds": 12.656,
+      "raw_matrix_sha256": "325d74bf3f6fd06c870b9ff31999618e43e167c0456b7f6c9520ec6076fd97dc",
+      "original_log_sha256": "6bf987db920dc73b7225e085f688ad3e3c95e169fe8a6f6acd4a834526928a7f",
+      "sanitized_log": "local_tags-0.log",
+      "sanitized_log_sha256": "999139182f43a00d8645896c75970307bcddd15071f58d5024f967f883364f74",
+      "markers": [
+        "RRDIAG_BOUNDS result=0 mode=3 preset=6 input_width=640 input_height=360 output_width=960 output_height=540 min_width=480 min_height=270 max_width=960 max_height=540 optimal_width=640 optimal_height=360",
+        "RRDIAG_LOCAL_TAGS enabled=false viewport=1 count=8",
+        "RRDIAG_PREALLOCATE enabled=false viewport=1 frame=4",
+        "RRDIAG_EVALUATE_BEGIN",
+        "RRDIAG_EVALUATE_END result=sl::eOk",
+        "SL_RR_EVALUATE viewport=1 mode=3 result=0"
+      ]
+    },
+    {
+      "kind": "local_tags",
+      "flag": 1,
+      "native_commit": "6467f55a260ba6ff48668d38ce7d414453d59507",
+      "engine_sha256": "5e559325be962b57f2c3a3cc34c1239d5322ca30d8a4a8e2e5d43f821cc1a247",
+      "requested_rr_preset": "F",
+      "diagnostic_contract_verified": true,
+      "strict_status": "FAIL",
+      "native_exit": 0,
+      "runtime_completed": true,
+      "RR_evidence": {
+        "actual_evaluate_eok": true,
+        "one_viewport_eight_tags": true,
+        "actual_sdk_rr_state": true,
+        "all_49_pt_rr_fg_off_frames": true,
+        "tags": [
+          {
+            "viewport": 1,
+            "tag": 3,
+            "rid": 5248450035764,
+            "native": 2555265022953748,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 4,
+            "rid": 5519032975427,
+            "native": 3775722929786218,
+            "state": 1,
+            "width": 960,
+            "height": 540
+          },
+          {
+            "viewport": 1,
+            "tag": 0,
+            "rid": 5252745003061,
+            "native": 2557464046209302,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 1,
+            "rid": 5484673237058,
+            "native": 3765827325136225,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 7,
+            "rid": 5373004087352,
+            "native": 3687761999564058,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 8,
+            "rid": 5377299054649,
+            "native": 3689961022819612,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 14,
+            "rid": 5381594021946,
+            "native": 3692160046075166,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          },
+          {
+            "viewport": 1,
+            "tag": 42,
+            "rid": 5385888989243,
+            "native": 3694359069330720,
+            "state": 5,
+            "width": 640,
+            "height": 360
+          }
+        ],
+        "evaluations": [
+          {
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "tag_viewports": [
+          1
+        ],
+        "scope": "Only observed native first RR call success/non-Off and actual SDK getter/version evidence; not model identity, every-frame success, visual quality or performance."
+      },
+      "validation_message_counts": {
+        "Loader Message": 9,
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 2
+      },
+      "frame_records": 49,
+      "native_sdk_samples": 160,
+      "infrastructure_verified": true,
+      "sampled_RTSS_absent": true,
+      "FG_plugin_absent": true,
+      "owned_job_assigned": true,
+      "job_close_reported_contained_PIDs": [
+        27364,
+        22748,
+        34672,
+        34012,
+        48848,
+        37044,
+        38164,
+        48172,
+        25392,
+        24792,
+        3692,
+        43672,
+        2900,
+        37088,
+        47272,
+        44792,
+        21960,
+        49844,
+        48048,
+        32312,
+        21488,
+        19104,
+        20832,
+        48056,
+        44688,
+        38632,
+        43380,
+        11164,
+        32272,
+        40340,
+        6488,
+        24440,
+        49688,
+        45032
+      ],
+      "NGX_updaters_immediately_after_close": [
+        27364,
+        34672,
+        48848,
+        37044,
+        48172,
+        24792,
+        2900,
+        47272,
+        44792,
+        49844,
+        32312,
+        19104,
+        44688,
+        38632,
+        11164,
+        40340,
+        49688
+      ],
+      "NGX_updaters_before": [],
+      "duration_seconds": 11.765,
+      "raw_matrix_sha256": "23fc67a4273ab764cf6a10ee97974ef5ee4280092cce3d3b1a5cd91e51a81dc0",
+      "original_log_sha256": "c631f6d6dc51a3e76d9015d77d63d3be32e6d0ac3e4632c4031394f9dc7c4c7e",
+      "sanitized_log": "local_tags-1.log",
+      "sanitized_log_sha256": "cb2d60a721698eca7b28064ee358ef59ba598ac844a0c55faf8fe7b69de1d9ec",
+      "markers": [
+        "RRDIAG_BOUNDS result=0 mode=3 preset=6 input_width=640 input_height=360 output_width=960 output_height=540 min_width=480 min_height=270 max_width=960 max_height=540 optimal_width=640 optimal_height=360",
+        "RRDIAG_LOCAL_TAGS enabled=true viewport=1 count=8",
+        "RRDIAG_PREALLOCATE enabled=false viewport=1 frame=4",
+        "RRDIAG_EVALUATE_BEGIN",
+        "RRDIAG_EVALUATE_END result=sl::eOk",
+        "SL_RR_EVALUATE viewport=1 mode=3 result=0"
+      ]
+    }
+  ],
+  "later_process_check": {
+    "checked_utc": "2026-10-26T21:40:01.2241564Z",
+    "matching_processes": [],
+    "free_ram_GiB": 11.55,
+    "workspace_free_GiB": 46.74,
+    "scope": "Independent later CIM census; does not replace immediate per-run census."
+  },
+  "cleanup_scope": "Job close was issued for the contained children. Immediate per-run census still lists terminating NGX children, so it is not proof of immediate zero. Next run before-lists and a later independent CIM census are empty.",
+  "redaction": "Only listed local path prefixes and UTF-8/BOM/newline serialization change in sanitized logs; original byte SHA-256 retained. Messages/IDs/markers are not filtered.",
+  "limits": [
+    "Preallocation flag1 is INVALID due to initial invalid-parameter returns; later success does not erase them.",
+    "Local-tag pair is valid but both strict FAIL. No safe host barrier repair established.",
+    "No model-weight identity, image-quality parity, generated frames, physical latency or long stress certified."
+  ]
+}

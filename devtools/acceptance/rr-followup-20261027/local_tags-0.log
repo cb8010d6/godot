@@ -1,0 +1,693 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <workspace>\toolchains\vulkan-validation-1.4.363\.\VkLayer_khronos_validation.dll
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll)
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] LAYER:                     Library:  <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1cb079732a0
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <workspace>\toolchains\vulkan-validation-1.4.363\.\VkLayer_khronos_validation.dll
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll)
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] LAYER:                     Library:  <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1cb079732a0
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <workspace>\toolchains\vulkan-validation-1.4.363\.\VkLayer_khronos_validation.dll
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll)
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] LAYER:                     Library:  <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1cb07b138d0
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.6467f55a2 (2026-10-26 21:33:26 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.RtxUpgradeGpuAcceptance.0'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayVkLayer-Win64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamOverlayVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\Steam\SteamFossilizeVulkanLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<program-files> (x86)\RivaTuner Statistics Server\Vulkan\RTSSVkLayer64.json" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 1971518205472
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <workspace>\toolchains\vulkan-validation-1.4.363\.\VkLayer_khronos_validation.dll
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll)
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] LAYER:                     Library:  <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Integrated
+Optional Vulkan device extension VK_EXT_fragment_density_map not found
+Optional Vulkan device extension VK_EXT_fragment_density_map2 not found
+Optional Vulkan device extension VK_QCOM_fragment_density_map_offset not found
+Optional Vulkan device extension VK_EXT_astc_decode_mode not found
+Optional Vulkan device extension VK_EXT_texture_compression_astc_hdr not found
+Optional Vulkan device extension VK_KHR_external_memory_fd not found
+Optional Vulkan device extension VK_EXT_debug_marker not found
+- Vulkan Fragment Shading Rate supported:
+  Pipeline fragment shading rate
+  Primitive fragment shading rate
+  Attachment fragment shading rate, min texel size: (16, 16), max texel size: (16, 16), max fragment size: (4, 4)
+- Vulkan Fragment Density Map not supported
+- Vulkan multiview supported:
+  max view count: 32
+  max instances: 134217727
+- Vulkan subgroup:
+  size: 32
+  min size: 32
+  max size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE, STAGE_RAYGEN_KHR, STAGE_ANY_HIT_KHR, STAGE_CLOSEST_HIT_KHR, STAGE_MISS_KHR, STAGE_INTERSECTION_KHR, STAGE_CALLABLE_KHR, STAGE_TASK_NV, STAGE_MESH_NV
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD, FEATURE_PARTITIONED_NV
+  quad operations in all stages
+- Vulkan Acceleration Structure supported
+  min acceleration structure scratch offset alignment: 128
+- Vulkan Raytracing supported
+  shader group handle size: 32
+  shader group handle alignment: 32
+  shader group handle size aligned: 32
+  shader group base alignment: 64
+Streamline Vulkan device features: privateData=1 presentId=1
+[Vulkan Loader] INFO | LAYER:   Inserted device layer "VK_LAYER_KHRONOS_validation" (<workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll)
+[Vulkan Loader] DRIVER:         vkCreateDevice layer callstack setup to:
+[Vulkan Loader] DRIVER:            <Application>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Loader>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.json
+[Vulkan Loader] LAYER:                     Library:  <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] DRIVER:            <Device>
+[Vulkan Loader] DRIVER:                Using "NVIDIA GeForce RTX 4060 Laptop GPU" with driver: "<system>\System32\DriverStore\FileRepository\nvamsi.inf_amd64_c6b56b3563369e53\nvoglv64.dll"
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+Startup PSO cache (0.0 MiB)
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Creating VMA small objects pool for memory type index 1
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: b6708067affc5d39a9ea76e01cd33fe2cc4726d6c691e647356836404107a00a
+Shader cache miss for CanvasSdfShaderRD/b6708067affc5d39a9ea76e01cd33fe2cc4726d6c691e647356836404107a00a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkeletonShaderRD' (group 0) SHA256: c1ac49a93c76af3e0411a90445391f1e9588a61f01e821d264f9832a6816b875
+Shader cache miss for SkeletonShaderRD/c1ac49a93c76af3e0411a90445391f1e9588a61f01e821d264f9832a6816b875/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SortShaderRD' (group 0) SHA256: d40351b214f80157fcf5a42cdd6bcbd44a19b1776ad805a2de70215145f6c534
+Shader cache miss for SortShaderRD/d40351b214f80157fcf5a42cdd6bcbd44a19b1776ad805a2de70215145f6c534/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ParticlesShaderRD' (group 0) SHA256: 67defd5539813d077bccac6dc6d8749554b45a12a64b6313244ad4bb7e84e48d
+Shader cache miss for ParticlesShaderRD/67defd5539813d077bccac6dc6d8749554b45a12a64b6313244ad4bb7e84e48d/07b5904b662900d90454c39c46885098de79aa4c
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: dba8869698f86fb9b7938b0e161a53a7cfbbb9ee1bfe248ae5685c29b01a750c
+Shader cache miss for ParticlesCopyShaderRD/dba8869698f86fb9b7938b0e161a53a7cfbbb9ee1bfe248ae5685c29b01a750c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasShaderRD' (group 0) SHA256: 6b02a0ac87d0a5de3d5f34c7e08d4ff4ae1de8e9cb18514f759d0a3bbec6e83c
+Shader cache miss for CanvasShaderRD/6b02a0ac87d0a5de3d5f34c7e08d4ff4ae1de8e9cb18514f759d0a3bbec6e83c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: ae60d32672908cab2c4c9fc1d94e47e9e873bd7ff94339d4dcf03655c41c9d56
+Shader cache miss for CanvasOcclusionShaderRD/ae60d32672908cab2c4c9fc1d94e47e9e873bd7ff94339d4dcf03655c41c9d56/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for CanvasShaderRD/6b02a0ac87d0a5de3d5f34c7e08d4ff4ae1de8e9cb18514f759d0a3bbec6e83c/90b96afad25c311837b639f3c9d81d610d9b7ee9
+Shader cache miss for CanvasShaderRD/6b02a0ac87d0a5de3d5f34c7e08d4ff4ae1de8e9cb18514f759d0a3bbec6e83c/8f9335de72e837eeead40640cc01fddc5baf5a7c
+Shader 'TexBlitShaderRD' (group 0) SHA256: 5b038afa1a5e377c031a4d0c607a4bfdc125fd9a9f1c94106ae3c7760be03d27
+Shader cache miss for TexBlitShaderRD/5b038afa1a5e377c031a4d0c607a4bfdc125fd9a9f1c94106ae3c7760be03d27/1e8995c9eb0e9b0b053035999de68595c521a33e
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: b12992464f6bdfb56518c6b903c1ae759314366000a07fb68079594c4c9fcb1e
+Shader cache miss for ClusterRenderShaderRD/b12992464f6bdfb56518c6b903c1ae759314366000a07fb68079594c4c9fcb1e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: a566ae099ce6fa8a3537dde75116287f0150d5b6a63c3bcb807dea9512e9ad8b
+Shader cache miss for ClusterStoreShaderRD/a566ae099ce6fa8a3537dde75116287f0150d5b6a63c3bcb807dea9512e9ad8b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: 1d5fd3be54a959a8450fe6f69d050d21c2dc3cd502a0100862bcae82c4759b79
+Shader cache miss for ClusterDebugShaderRD/1d5fd3be54a959a8450fe6f69d050d21c2dc3cd502a0100862bcae82c4759b79/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: 0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: 6c5168f6cd188569307d5c6572984b3710fd2cf6e48ef94eba64b0bb6e246dac
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: 2b53ce6c3e2a13909b605bea60c5d6b44ecc9fb071d2fe1af72f8b9f3cffb4ca
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/a784797763b72ce058effad41b273eb697df9814
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 3feda95e498dd195dbabcba06bfb34d5cc281464e1dae41eaae34a1cc30bc288
+Shader cache miss for BestFitNormalShaderRD/3feda95e498dd195dbabcba06bfb34d5cc281464e1dae41eaae34a1cc30bc288/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: 81391d768ce5433371c81a441f1108e0df975d21c080a6ad1487a79c4dca63e8
+Shader cache miss for IntegrateDfgShaderRD/81391d768ce5433371c81a441f1108e0df975d21c080a6ad1487a79c4dca63e8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TaaResolveShaderRD' (group 0) SHA256: 55a26d089f6753d737676973af6954af26396a5e70068bbb6a425be6a6a8182d
+Shader cache miss for TaaResolveShaderRD/55a26d089f6753d737676973af6954af26396a5e70068bbb6a425be6a6a8182d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: e87c2bf99d7d3b485399159f7c78322817d103f88083bc58cfffcc0d0f110483
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: 116a731ddc34403f067813e478bc94693108d4aa61925398ddc0f47bf1cd9a45
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: fd41608e6158593e82cbd1316215cebeb24214c7e4fe4c0a8b084a7b30d8fd2a
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: d69bacfdf717b90ab3f682c746a49576a3d9010303a40367fe0f827a3e8a8065
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: fca82bc65ceab976ae15d3e7e203c4d0f304117051c62a6f37719d73d88333b7
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: f77bb6500570cab8f8d3ad9a6fae8b020f4068308e46616dfed300aeac754e7a
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: 1531f51b0711e0d34afc0898fc71c0c65508687d1008eeb4025b9ea1efe48923
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: a0e7fa48ca2e0f1b40dc5ff50c9675a007cb3dfc01bdb2ca13638946e2daf6ca
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: ad7860b6b6a65ed7c313b1be8cc0172c7d70f1d79fe6e98a546b3f64dee52864
+Shader cache miss for MotionVectorDecodeShaderRD/ad7860b6b6a65ed7c313b1be8cc0172c7d70f1d79fe6e98a546b3f64dee52864/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: 96b67f42ff0207e75c7fbef68e04f626404e67ebcfc9e4c61fb08d690d59fd88
+Shader cache miss for SsEffectsDownsampleShaderRD/96b67f42ff0207e75c7fbef68e04f626404e67ebcfc9e4c61fb08d690d59fd88/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilShaderRD' (group 0) SHA256: b0ab83e083fea2d6db7197d7b722fa7278c638df86df329d149f9e98366d1659
+Shader cache miss for SsilShaderRD/b0ab83e083fea2d6db7197d7b722fa7278c638df86df329d149f9e98366d1659/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 84359f5b3367206e1a991a18b6da683149d53338171435f9ddf136c45753fb6f
+Shader cache miss for SsilImportanceMapShaderRD/84359f5b3367206e1a991a18b6da683149d53338171435f9ddf136c45753fb6f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 041f5c76612c0f27c2774965044809911137e250dd3cb6f7a5aebe0f73be92ec
+Shader cache miss for SsilBlurShaderRD/041f5c76612c0f27c2774965044809911137e250dd3cb6f7a5aebe0f73be92ec/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: a2a7b6aa2bf2a80f47283fea48da6ad4ad7f20862f5272128e4a4cd289caecc3
+Shader cache miss for SsilInterleaveShaderRD/a2a7b6aa2bf2a80f47283fea48da6ad4ad7f20862f5272128e4a4cd289caecc3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoShaderRD' (group 0) SHA256: 525c82c77135db69230d702d4ac6077654fec8c393ba8e5b67bd507cfb522dd8
+Shader cache miss for SsaoShaderRD/525c82c77135db69230d702d4ac6077654fec8c393ba8e5b67bd507cfb522dd8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: 1b42620b5e5312f8524efa3000b416a4bbb4fcdeac526d61399a103eb4a594f5
+Shader cache miss for SsaoImportanceMapShaderRD/1b42620b5e5312f8524efa3000b416a4bbb4fcdeac526d61399a103eb4a594f5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 01c74a06b4f915e1d47cb9b02bc2a7e0495f1cbe033c72beed2bf86ade89586a
+Shader cache miss for SsaoBlurShaderRD/01c74a06b4f915e1d47cb9b02bc2a7e0495f1cbe033c72beed2bf86ade89586a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: 3d02e645d0a0f30b6e9e6ce58dc98e10cae073e5841df8bd286f52dfcb1259c3
+Shader cache miss for SsaoInterleaveShaderRD/3d02e645d0a0f30b6e9e6ce58dc98e10cae073e5841df8bd286f52dfcb1259c3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: 69b8453b4b4f0083716764ec92b32c70000535dae2ee09ea184162b5e3a770ac
+Shader cache miss for ScreenSpaceReflectionDownsampleShaderRD/69b8453b4b4f0083716764ec92b32c70000535dae2ee09ea184162b5e3a770ac/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: 11ad5f47b339ffabcf94b4369a092fe04199e81a7ed58bc0a4c4b4daccc8d3c5
+Shader cache miss for ScreenSpaceReflectionHizShaderRD/11ad5f47b339ffabcf94b4369a092fe04199e81a7ed58bc0a4c4b4daccc8d3c5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: 69d8c9a770fe97c564a8aa5e7b21b972f79873c5bca6ed1e2f67cf24c6cc7e9f
+Shader cache miss for ScreenSpaceReflectionShaderRD/69d8c9a770fe97c564a8aa5e7b21b972f79873c5bca6ed1e2f67cf24c6cc7e9f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: f05d961086b2222ec36a0eb966765b38982c6b567f05270a17f6ec3f10caacb6
+Shader cache miss for ScreenSpaceReflectionFilterShaderRD/f05d961086b2222ec36a0eb966765b38982c6b567f05270a17f6ec3f10caacb6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: 3f8f3eb3c308527caaf6711e91069cf2519c5cfc056e6436f8d3a9aff0b540df
+Shader cache miss for ScreenSpaceReflectionResolveShaderRD/3f8f3eb3c308527caaf6711e91069cf2519c5cfc056e6436f8d3a9aff0b540df/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: bdf55c4ccfc1ee9d55f56e43fc49161f6cd35e2d126101aab825b3679b96dca8
+Shader cache miss for ScreenSpaceContactShadowsShaderRD/bdf55c4ccfc1ee9d55f56e43fc49161f6cd35e2d126101aab825b3679b96dca8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 3e9feb53088cbb807c63ca8308c774f889f413b53e4fc6c6ee9f59470a745890
+Shader cache miss for SubsurfaceScatteringShaderRD/3e9feb53088cbb807c63ca8308c774f889f413b53e4fc6c6ee9f59470a745890/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: 77451a2e95c33cb212fa1b64781d29406504aa401949fd4fba077b2a98894cd6
+Shader cache miss for MotionVectorsStoreShaderRD/77451a2e95c33cb212fa1b64781d29406504aa401949fd4fba077b2a98894cd6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkyShaderRD' (group 0) SHA256: be1136498a63b07c9dc4d6d7ce60e4252e1f7baf05930fab67d688e4e49c3a83
+Shader cache miss for SkyShaderRD/be1136498a63b07c9dc4d6d7ce60e4252e1f7baf05930fab67d688e4e49c3a83/0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701
+Shader cache miss for SkyShaderRD/be1136498a63b07c9dc4d6d7ce60e4252e1f7baf05930fab67d688e4e49c3a83/ff1961ca0c4c55a79eb12f819a7b6345801bbbaf
+Shader 'VoxelGiShaderRD' (group 0) SHA256: f7b08b8894ca43dd416c37671f24063d39445fe7d0bc6a49e0705d579c551ee5
+Shader cache miss for VoxelGiShaderRD/f7b08b8894ca43dd416c37671f24063d39445fe7d0bc6a49e0705d579c551ee5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: 5f1621fb2284089aa5a8bb161f0f9b0d4599083350d6d43eda6ef7daab1546e4
+Shader cache miss for VoxelGiDebugShaderRD/5f1621fb2284089aa5a8bb161f0f9b0d4599083350d6d43eda6ef7daab1546e4/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: 1334659db0602943b158b9f025ef5099fa1519c4714a4104a90a8108e071c782
+Shader cache miss for SdfgiPreprocessShaderRD/1334659db0602943b158b9f025ef5099fa1519c4714a4104a90a8108e071c782/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: 058ba9943f7d913c2e78ad70e2921b3071b12fb3ee72fca6975dfd87f3c5512e
+Shader cache miss for SdfgiDirectLightShaderRD/058ba9943f7d913c2e78ad70e2921b3071b12fb3ee72fca6975dfd87f3c5512e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: a4876fc69cbc86fa58b508e2982f734e1db685ef96bc618d3ddb2522f61b9036
+Shader cache miss for SdfgiIntegrateShaderRD/a4876fc69cbc86fa58b508e2982f734e1db685ef96bc618d3ddb2522f61b9036/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'GiShaderRD' (group 0) SHA256: 67d963692d7ff52eacb95fd0a7f7dca25a995aefbf5f33a2bd7541120847af41
+Shader 'GiShaderRD' (group 1) SHA256: 1df9979ce5060ab0be513b5cf0af09c7e299ec30e3e1a8f1436f6e5654dbdfa5
+Shader cache miss for GiShaderRD/67d963692d7ff52eacb95fd0a7f7dca25a995aefbf5f33a2bd7541120847af41/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for GiShaderRD/1df9979ce5060ab0be513b5cf0af09c7e299ec30e3e1a8f1436f6e5654dbdfa5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: a0d5d74114a71b149a3a3693923c2194591c3d29f058d31557d8e0deec0a051c
+Shader cache miss for SdfgiDebugShaderRD/a0d5d74114a71b149a3a3693923c2194591c3d29f058d31557d8e0deec0a051c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: 384e6514dd73cf9afc26c1321f7b9c97409fd3e3ae30397486dfc423bd8c4e02
+Shader cache miss for SdfgiDebugProbesShaderRD/384e6514dd73cf9afc26c1321f7b9c97409fd3e3ae30397486dfc423bd8c4e02/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 7009962f4d072007fe6ea7d0d924e55bcdeb2d6ea7b31c78f60568308d7fce12
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 666c4d828213cc84e498da7965daa456eb82bfebbd9a9c0d781eafa4aecb3211
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: 9afe6ec89c354adf3fd9fc0dd84aa98e772051b098f24432bbbb555b0a10632a
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: 22ae3e7e4ebcbe1794b0113f1fee54559002fdf2de5728ab1c45b64803844d0d
+Shader cache miss for VolumetricFogShaderRD/9afe6ec89c354adf3fd9fc0dd84aa98e772051b098f24432bbbb555b0a10632a/3377d4ca9d0fc2e16f62596ee37d619e8e7e3f54
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 41506470d765affd02dc7b9c2d7075f92c393f1cde8f7c9d88ed7a1a7000dcb0
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: fc28e58381564f4a4efd516a641aa19301d9f1d6b1e3a4715f88c2a132905312
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: a57bdcb23c7a8fecc3396e45d5fdc5734fdc070fe814133d16b4b03a604d8cb6
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: a1ae29539b51a614839afcea4a83d9d252698aacb32d765fa43e61f568adc671
+Shader cache miss for VolumetricFogProcessShaderRD/a57bdcb23c7a8fecc3396e45d5fdc5734fdc070fe814133d16b4b03a604d8cb6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BokehDofShaderRD' (group 0) SHA256: 3ef2b0e3f7a3dec5d11d770c6ba4c2bbc6c5f01a9627d229a51379c40d6300fc
+Shader cache miss for BokehDofShaderRD/3ef2b0e3f7a3dec5d11d770c6ba4c2bbc6c5f01a9627d229a51379c40d6300fc/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyShaderRD' (group 0) SHA256: 126df9535c213b1e3e9da65278174cc51be26d304613853389f22ec32a1b42d9
+Shader cache miss for CopyShaderRD/126df9535c213b1e3e9da65278174cc51be26d304613853389f22ec32a1b42d9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyToFbShaderRD' (group 0) SHA256: bc3587d5e7f633b8d1911ac013995e71901abde9624c580805fbc829f5f5a478
+Updated PSO cache (3.0 MiB)
+Shader cache miss for CopyToFbShaderRD/bc3587d5e7f633b8d1911ac013995e71901abde9624c580805fbc829f5f5a478/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToDpShaderRD' (group 0) SHA256: ff9d102dc8129e9c8c97f792a60f942ea824cc22b50a3e01d6896ed71ef42114
+Shader cache miss for CubeToDpShaderRD/ff9d102dc8129e9c8c97f792a60f942ea824cc22b50a3e01d6896ed71ef42114/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: 468acd82c86c0cfed8a12cef4cadd88e902a2e0681bccf2027e887fe2bbfc7d8
+Shader cache miss for CubeToOctmapShaderRD/468acd82c86c0cfed8a12cef4cadd88e902a2e0681bccf2027e887fe2bbfc7d8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: 6dc20fd691fefbe5d6775c3d8303e0e097d491da921e7fd4d5a1b59b2410eaa8
+Shader cache miss for OctmapDownsamplerShaderRD/6dc20fd691fefbe5d6775c3d8303e0e097d491da921e7fd4d5a1b59b2410eaa8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: 07b47165c3e45a41d526c361cf212aebfdaa821e11661be594949db0b6ef9335
+Shader cache miss for OctmapFilterShaderRD/07b47165c3e45a41d526c361cf212aebfdaa821e11661be594949db0b6ef9335/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: e2bdcad6e6ede1bcd04e1778f7340b118c1f714892c9ce3823d6ec08d248252b
+Shader cache miss for OctmapRoughnessShaderRD/e2bdcad6e6ede1bcd04e1778f7340b118c1f714892c9ce3823d6ec08d248252b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: 9eefd96d4694d2e2325f6566c466dae9d486b53c3c79873abfbb27a45e931dcf
+Shader cache miss for SpecularMergeShaderRD/9eefd96d4694d2e2325f6566c466dae9d486b53c3c79873abfbb27a45e931dcf/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: 9db4b25f445afb26322fefec0404b076ed0cd5b88e4c5457acda9ae2063d7846
+Shader cache miss for DepthReconstructShaderRD/9db4b25f445afb26322fefec0404b076ed0cd5b88e4c5457acda9ae2063d7846/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: 131211a9c7f5cca87bae528a6476b8f5d132a691b46dc5c0baea70c425bee83f
+Shader cache miss for ShadowFrustumShaderRD/131211a9c7f5cca87bae528a6476b8f5d132a691b46dc5c0baea70c425bee83f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 5a414351c439cd9241f73c9a27a1760856ffad6518a03faf9bef38aceb25fa77
+Shader cache miss for MotionVectorsShaderRD/5a414351c439cd9241f73c9a27a1760856ffad6518a03faf9bef38aceb25fa77/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: 50121149a2aec102b63dfc7241afccd14e78a211a711c2570a8a9ee2ed4ab205
+Shader cache miss for LuminanceReduceShaderRD/50121149a2aec102b63dfc7241afccd14e78a211a711c2570a8a9ee2ed4ab205/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 9fec6eff2d325674aadfcd3c54ddd36b016f02daecad79588662769c670a763d
+Shader cache miss for SmaaEdgeDetectionShaderRD/9fec6eff2d325674aadfcd3c54ddd36b016f02daecad79588662769c670a763d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 00db32181bc926ed8fcbcea641a9bfc57e021784baa44fc58e6c2b06243a4831
+Shader cache miss for SmaaWeightCalculationShaderRD/00db32181bc926ed8fcbcea641a9bfc57e021784baa44fc58e6c2b06243a4831/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: d76787d578b11383d75ccc22344abaa3e680cc08217b6e3d5670ac30f5f71d92
+Shader cache miss for SmaaBlendingShaderRD/d76787d578b11383d75ccc22344abaa3e680cc08217b6e3d5670ac30f5f71d92/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TonemapShaderRD' (group 0) SHA256: daf319a09fca32fa022a47a2cc7a44a28b90fa385b0ccfb351f6c5d6e1952dd3
+Shader cache miss for TonemapShaderRD/daf319a09fca32fa022a47a2cc7a44a28b90fa385b0ccfb351f6c5d6e1952dd3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VrsShaderRD' (group 0) SHA256: 1f54c06d8af4d3bc5e04f44c61362bd26aee25c1e8f14441a70e4b8f5955dfd2
+Shader cache miss for VrsShaderRD/1f54c06d8af4d3bc5e04f44c61362bd26aee25c1e8f14441a70e4b8f5955dfd2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: ee2006c2127392d1e70c0c7d1f2817500a288a529bf9aea4cad0f749a6a36bfb
+Shader cache miss for FsrUpscaleShaderRD/ee2006c2127392d1e70c0c7d1f2817500a288a529bf9aea4cad0f749a6a36bfb/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ResolveShaderRD' (group 0) SHA256: df1ae505c17eee3f0e36b53f9c33f9a32e5a4084a37064d162f3c889d9bdb731
+Shader cache miss for ResolveShaderRD/df1ae505c17eee3f0e36b53f9c33f9a32e5a4084a37064d162f3c889d9bdb731/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BlitShaderRD' (group 0) SHA256: bcc006e553538cab15be10a52217bd6d377c059e44a5546745a8c95e9fa7716f
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Shader cache miss for BlitShaderRD/bcc006e553538cab15be10a52217bd6d377c059e44a5546745a8c95e9fa7716f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/60fbb158a5f44670392b2322a8401a535c41dc72
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+Shader cache miss for CanvasShaderRD/6b02a0ac87d0a5de3d5f34c7e08d4ff4ae1de8e9cb18514f759d0a3bbec6e83c/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+CORE API HASH: 3336730360
+EDITOR API HASH: 3714769106
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://main.tscn remapped: res://main.tscn
+Loading resource: res://main.gd remapped: res://main.gd
+Completed load for: 'res://main.gd' remapped 'res://main.gd' at thread -1
+Completed load for: 'res://main.tscn' remapped 'res://main.tscn' at thread -1
+GPU_ACCEPTANCE_METADATA {"api":"1.4.341","capabilities":{"0":true,"1":false,"2":true,"3":true,"4":true,"5":true},"driver":"vulkan","editor_hint":false,"engine":{"build":"custom_build","hash":"6467f55a260ba6ff48668d38ce7d414453d59507","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1793050406},"frame_generation_status":{"available":false,"eligible":false,"reason":"unavailable","rendered_3d_views":0,"requested_3d_views":0,"sdk_enabled":false,"supported_generated_frames":0},"gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","mode":"rr","process_id":10976,"renderer":"forward_plus","requested_rr_preset":"F","requested_sr_preset":"Recommended","suite":"motion"}
+Shader cache miss for SceneForwardClusteredShaderRD/f46f6c4f3edab1c10e94a36ebdf79679597562daa5686f8b08cebdef014cbfaf/2437e70d0170ff8bb5719e2240323dedae7447ec
+GPU_ACCEPTANCE_NATIVE_PROBE_LOADED
+Shader 'MultimeshMergeShaderRD' (group 0) SHA256: 26ac85e60982b1d0229950bc6555f8e4b63c659cce0692c1696e1ab48da61f2a
+Shader cache miss for MultimeshMergeShaderRD/26ac85e60982b1d0229950bc6555f8e4b63c659cce0692c1696e1ab48da61f2a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+OpTypeForwardPointer is not supported yet.
+OpTypeForwardPointer is not supported yet.
+Shader 'SceneRaytracingRaygenShaderRD' (group 0) SHA256: e683cf6e280be981c12c8298abc184e738c822a3231dcaefe8cccefdf726a89f
+Shader 'RaytracingVertexDisplaceShaderRD' (group 0) SHA256: c42c18a00425fd83989f6de220269d55067135e34fb37a8aeb0885555cd74992
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/a784797763b72ce058effad41b273eb697df9814
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/0a449e39bc33715525bc0e74e034bbbebfee3835a02032e58f6e93672a0c26b9/2437e70d0170ff8bb5719e2240323dedae7447ec
+RRDIAG_BOUNDS result=0 mode=3 preset=6 input_width=640 input_height=360 output_width=960 output_height=540 min_width=480 min_height=270 max_width=960 max_height=540 optimal_width=640 optimal_height=360
+SL_RR_TAG viewport=1 tag=3 rid=5248450035764 native=2555265022953748 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=4 rid=5519032975427 native=3775722929786218 state=1 width=960 height=540
+SL_RR_TAG viewport=1 tag=0 rid=5252745003061 native=2557464046209302 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=1 rid=5484673237058 native=3765827325136225 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=7 rid=5373004087352 native=3687761999564058 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=8 rid=5377299054649 native=3689961022819612 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=14 rid=5381594021946 native=3692160046075166 state=5 width=640 height=360
+SL_RR_TAG viewport=1 tag=42 rid=5385888989243 native=3694359069330720 state=5 width=640 height=360
+RRDIAG_LOCAL_TAGS enabled=false viewport=1 count=8
+RRDIAG_PREALLOCATE enabled=false viewport=1 frame=4
+RRDIAG_EVALUATE_BEGIN
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdClearColorImage(): WRITE_AFTER_WRITE hazard detected. vkCmdClearColorImage writes to VkImage 0xdd90000000dd9[nv.ngx.dlssd.resource], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[Command Graph (L5) (Custom)::nv.ngx.dlssd.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_VERTEX_SHADER_BIT|VK_PIPELINE_STAGE_2_TESSELLATION_CONTROL_SHADER_BIT|VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT|VK_PIPELINE_STAGE_2_GEOMETRY_SHADER_BIT|VK_PIPELINE_STAGE_2_FRAGMENT_SHADER_BIT|VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR|VK_PIPELINE_STAGE_2_CLUSTER_CULLING_SHADER_BIT_HUAWEI, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Image clear subresource range 0: {
+  aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 1972662243536
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3897768720469465, Name "nv.ngx.dlssd.resource"
+	Command Buffer Labels - 2
+		Label[0] - nv.ngx.dlssd.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+		Label[1] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE
+	vkCmdClearColorImage(): WRITE_AFTER_WRITE hazard detected. vkCmdClearColorImage writes to VkImage 0xddc0000000ddc[nv.ngx.dlssd.resource], which was previously written during an image layout transition initiated by vkCmdPipelineBarrier[Command Graph (L5) (Custom)::nv.ngx.dlssd.Evaluate]. 
+The current synchronization allows VK_ACCESS_2_SHADER_READ_BIT accesses at VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR, VK_ACCESS_2_SHADER_READ_BIT|VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_VERTEX_SHADER_BIT|VK_PIPELINE_STAGE_2_TESSELLATION_CONTROL_SHADER_BIT|VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT|VK_PIPELINE_STAGE_2_GEOMETRY_SHADER_BIT|VK_PIPELINE_STAGE_2_FRAGMENT_SHADER_BIT|VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR|VK_PIPELINE_STAGE_2_CLUSTER_CULLING_SHADER_BIT_HUAWEI, but to prevent this hazard, it must allow VK_ACCESS_2_TRANSFER_WRITE_BIT accesses at VK_PIPELINE_STAGE_2_CLEAR_BIT.
+Image clear subresource range 0: {
+  aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, baseMipLevel = 0, levelCount = 1, baseArrayLayer = 0, layerCount = 1
+}
+
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 1972662243536
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3901067255352796, Name "nv.ngx.dlssd.resource"
+	Command Buffer Labels - 2
+		Label[0] - nv.ngx.dlssd.Evaluate{ 1.0, 1.0, 0.0, 1.0 }
+		Label[1] - Command Graph (L5) (Custom){ 1.0, 1.0, 1.0, 1.0 }
+RRDIAG_EVALUATE_END result=sl::eOk
+SL_RR_EVALUATE viewport=1 mode=3 result=0
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	[ Debug region: Command Graph (L5) (Custom)::nv.ngx.dlssd.Evaluate ] vkQueueSubmit(): pSubmits[0] command buffer VkCommandBuffer 0x1cb4bd510d0 expects VkImage 0xde10000000de1[nv.ngx.dlssd.resource] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_GENERAL--instead, current layout is VK_IMAGE_LAYOUT_UNDEFINED.
+The expected layout comes from the oldLayout of an image memory barrier in vkCmdPipelineBarrier, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 1972662243536
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3906564813491681, Name "nv.ngx.dlssd.resource"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L8) (Draw){ 1.0, 1.0, 1.0, 1.0 }
+ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600
+	[ Debug region: Command Graph (L5) (Custom)::nv.ngx.dlssd.Evaluate ] vkQueueSubmit(): pSubmits[0] command buffer VkCommandBuffer 0x1cb4bd510d0 expects VkImage 0xde40000000de4[nv.ngx.dlssd.resource] (subresource: aspectMask = VK_IMAGE_ASPECT_COLOR_BIT, mipLevel = 0, arrayLayer = 0) to be in layout VK_IMAGE_LAYOUT_GENERAL--instead, current layout is VK_IMAGE_LAYOUT_UNDEFINED.
+The expected layout comes from the oldLayout of an image memory barrier in vkCmdPipelineBarrier, the first command recorded in the command buffer to use this subresource.
+The Vulkan spec states: If a descriptor with type equal to any of VK_DESCRIPTOR_TYPE_SAMPLE_WEIGHT_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_BLOCK_MATCH_IMAGE_QCOM, VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, or VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT is accessed as a result of this command, all image subresources identified by that descriptor must be in the image layout identified when the descriptor was written (https://docs.vulkan.org/spec/latest/chapters/drawing.html#VUID-vkCmdDraw-None-09600)
+	Objects - 2
+		Object[0] - VK_OBJECT_TYPE_COMMAND_BUFFER, Handle 1972662243536
+		Object[1] - VK_OBJECT_TYPE_IMAGE, Handle 3909863348375012, Name "nv.ngx.dlssd.resource"
+	Command Buffer Labels - 1
+		Label[0] - Command Graph (L8) (Draw){ 1.0, 1.0, 1.0, 1.0 }
+GPU_ACCEPTANCE_FINISHED actual_viewport_captures=49
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <workspace>\toolchains\vulkan-validation-1.4.363\VkLayer_khronos_validation.dll
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline terminal Vulkan device wait starting.
+Streamline terminal Vulkan device idle completed (VkResult 0).
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+Updated PSO cache (4.1 MiB)
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<workspace>\shader-warmup-20261027\builds\editor-6467f55a26-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

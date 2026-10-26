@@ -12,6 +12,11 @@ Read with: [AGENTS.md](AGENTS.md) (entry point), [CUSTOM_BUILD.md](CUSTOM_BUILD.
 
 ## Working rules
 
+- RR first-use diagnostics are separate from production: identical global/local
+  tags and exact RR-optimal dimensions still reproduce F's internal errors.
+  Preserve the invalid allocation arm. Job.close receipt success alone is not
+  immediate child-process absence; retain instant census and later checks.
+
 - **Branches.** New work goes on `dev` first. `nvidia-pt-dlss` (published as
   `nvidia-dlss-physx`) only gets tested work: build plus smoke tests passing,
   and the maintainer's OK. After publishing, fast-forward `dev` and push both.

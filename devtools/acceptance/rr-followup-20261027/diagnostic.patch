@@ -1,0 +1,134 @@
+diff --git a/servers/rendering/renderer_rd/effects/dlss.cpp b/servers/rendering/renderer_rd/effects/dlss.cpp
+index c349dc50c6..631ff1eaf6 100644
+--- a/servers/rendering/renderer_rd/effects/dlss.cpp
++++ b/servers/rendering/renderer_rd/effects/dlss.cpp
+@@ -35,7 +35,9 @@
+ #endif
+ 
+ #ifdef ENABLE_DLSS
++#include "core/os/os.h"
+ #include "core/string/print_string.h"
++#include "core/templates/hash_set.h"
+ #include "drivers/streamline/streamline_context.h"
+ #include "drivers/streamline/streamline_dlss_presets.h"
+ #include "servers/rendering/renderer_rd/effects/copy_effects.h"
+@@ -70,6 +72,7 @@ public:
+ 	RID nis_input;
+ 	RID nis_output;
+ 	bool nis_initialized = false;
++	bool rr_diagnostic_first_evaluation = true;
+ 
+ 	DLSSContextInner();
+ 	virtual ~DLSSContextInner();
+@@ -415,6 +418,16 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 			return;
+ 		}
+ 		resources[numResources] = sl_texture_resource(textureRID, context->is_d3d12, textureRID == p_params.output);
++		if (p_params.dlss_rr && OS::get_singleton()->get_environment("GODOT_STREAMLINE_TRACE_RR_RESOURCES") == "1") {
++			thread_local HashSet<String> traced_resources;
++			const sl::Resource &resource = resources[numResources];
++			const uint64_t native_image = reinterpret_cast<uint64_t>(resource.native);
++			const String key = vformat("%d/%d/%d/%d", static_cast<uint32_t>(context->viewport), bufferType, textureRID.get_id(), native_image);
++			if (!traced_resources.has(key)) {
++				traced_resources.insert(key);
++				print_line(vformat("SL_RR_TAG viewport=%d tag=%d rid=%d native=%d state=%d width=%d height=%d", static_cast<uint32_t>(context->viewport), bufferType, textureRID.get_id(), native_image, resource.state, resource.width, resource.height));
++			}
++		}
+ 
+ 		resourceTags[numResources] = sl::ResourceTag(resources + numResources, bufferType, lifecycle, nullptr);
+ 		++numResources;
+@@ -422,6 +435,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 
+ 	// Set DLSS or DLSS-RR options depending on mode
+ 	bool use_dlss_rr = p_params.dlss_rr && StreamlineContext::get().slDLSSDSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.dlss_rr_available;
++	const bool local_rr_tags = use_dlss_rr && !context->is_d3d12 && OS::get_singleton()->get_environment("GODOT_RR_DIAG_LOCAL_TAGS") == "1";
+ 
+ 	if (use_dlss_rr) {
+ 		context->last_logged_sr_mode = sl::DLSSMode::eCount;
+@@ -460,6 +474,14 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 			context->currentDlssDOptions.ultraPerformancePreset = preset;
+ 		}
+ 
++		if (context->rr_diagnostic_first_evaluation && StreamlineContext::get().slDLSSDGetOptimalSettings != nullptr) {
++			sl::DLSSDOptimalSettings settings = {};
++			const sl::Result query_result = StreamlineContext::get().slDLSSDGetOptimalSettings(context->currentDlssDOptions, settings);
++			const RD::TextureFormat input_format = RD::get_singleton()->texture_get_format(p_params.color);
++			print_line(vformat("RRDIAG_BOUNDS result=%d mode=%d preset=%d input_width=%d input_height=%d output_width=%d output_height=%d min_width=%d min_height=%d max_width=%d max_height=%d optimal_width=%d optimal_height=%d",
++					static_cast<int>(query_result), static_cast<int>(context->currentDlssDOptions.mode), static_cast<int>(context->currentDlssDOptions.qualityPreset), input_format.width, input_format.height,
++					context->currentDlssDOptions.outputWidth, context->currentDlssDOptions.outputHeight, settings.renderWidthMin, settings.renderHeightMin, settings.renderWidthMax, settings.renderHeightMax, settings.optimalRenderWidth, settings.optimalRenderHeight));
++		}
+ 		sl::Result result = StreamlineContext::get().slDLSSDSetOptions(context->viewport, context->currentDlssDOptions);
+ 		if (result != sl::Result::eOk) {
+ 			ERR_FAIL_MSG("Failed to call streamline slDLSSDSetOptions. Result: " + String(StreamlineContext::result_to_string(result)));
+@@ -530,10 +552,10 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 	}
+ 
+ 	// Tag resources
+-	if (StreamlineContext::get().slSetTag != nullptr) {
+-		sl::Resource resources[10];
+-		sl::ResourceTag resourceTags[10];
+-		int numResources = 0;
++	sl::Resource resources[10];
++	sl::ResourceTag resourceTags[10];
++	int numResources = 0;
++	if (StreamlineContext::get().slSetTag != nullptr || local_rr_tags) {
+ 
+ 		assignResource(resources, resourceTags, numResources, p_params.color, sl::kBufferTypeScalingInputColor, sl::ResourceLifecycle::eValidUntilPresent);
+ 		assignResource(resources, resourceTags, numResources, p_params.output, sl::kBufferTypeScalingOutputColor, sl::ResourceLifecycle::eValidUntilPresent);
+@@ -550,9 +572,14 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 			assignResource(resources, resourceTags, numResources, p_params.dlss_rr_specular_hit_dist, sl::kBufferTypeSpecularHitDistance, sl::ResourceLifecycle::eValidUntilPresent);
+ 		}
+ 
+-		sl::Result result = StreamlineContext::get().slSetTag(context->viewport, resourceTags, numResources, nativeCmdlist);
+-		if (result != sl::Result::eOk) {
+-			ERR_FAIL_MSG("Failed to call streamline slSetTag. Result: " + String(StreamlineContext::result_to_string(result)));
++		if (use_dlss_rr && context->rr_diagnostic_first_evaluation) {
++			print_line(vformat("RRDIAG_LOCAL_TAGS enabled=%s viewport=%d count=%d", local_rr_tags ? "true" : "false", static_cast<uint32_t>(context->viewport), numResources));
++		}
++		if (!local_rr_tags) {
++			sl::Result result = StreamlineContext::get().slSetTag(context->viewport, resourceTags, numResources, nativeCmdlist);
++			if (result != sl::Result::eOk) {
++				ERR_FAIL_MSG("Failed to call streamline slSetTag. Result: " + String(StreamlineContext::result_to_string(result)));
++			}
+ 		}
+ 	}
+ 
+@@ -592,12 +619,36 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
+ 
+ 	// Evaluate DLSS Super Resolution or DLSS Ray Reconstruction
+ 	if (context->currentDlssOptions.mode != sl::DLSSMode::eOff) {
+-		const sl::BaseStructure *inputs[] = { &context->viewport };
++		const sl::BaseStructure *inputs[11] = { &context->viewport };
++		uint32_t num_inputs = 1;
++		if (local_rr_tags) {
++			for (int i = 0; i < numResources; i++) {
++				inputs[num_inputs++] = &resourceTags[i];
++			}
++		}
+ 		sl::Result result;
+ 
+ 		if (use_dlss_rr && StreamlineContext::get().streamline_capabilities.dlss_rr_available) {
+ 			// Use DLSS Ray Reconstruction
+-			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
++			const bool first_evaluation = context->rr_diagnostic_first_evaluation;
++			const bool preallocate = OS::get_singleton()->get_environment("GODOT_RR_DIAG_PREALLOCATE") == "1";
++			if (first_evaluation) {
++				print_line(vformat("RRDIAG_PREALLOCATE enabled=%s viewport=%d frame=%d", preallocate ? "true" : "false", static_cast<uint32_t>(context->viewport), uint32_t(*StreamlineContext::get().last_token)));
++				if (preallocate) {
++					ERR_FAIL_NULL(StreamlineContext::get().slAllocateResources);
++					print_line("RRDIAG_ALLOC_BEGIN");
++					const sl::Result allocate_result = StreamlineContext::get().slAllocateResources(nativeCmdlist, sl::kFeatureDLSS_RR, context->viewport);
++					print_line(vformat("RRDIAG_ALLOC_END result=%s", StreamlineContext::result_to_string(allocate_result)));
++					ERR_FAIL_COND_MSG(allocate_result != sl::Result::eOk, "RR diagnostic preallocation failed; control is invalid.");
++				}
++				print_line("RRDIAG_EVALUATE_BEGIN");
++			}
++			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, num_inputs, nativeCmdlist);
++			if (first_evaluation) {
++				print_line(vformat("RRDIAG_EVALUATE_END result=%s", StreamlineContext::result_to_string(result)));
++				print_line(vformat("SL_RR_EVALUATE viewport=%d mode=%d result=%d", static_cast<uint32_t>(context->viewport), static_cast<int>(context->currentDlssOptions.mode), static_cast<int>(result)));
++				context->rr_diagnostic_first_evaluation = false;
++			}
+ 			if (result != sl::Result::eOk) {
+ 				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for DLSS Ray Reconstruction. Result: " + String(StreamlineContext::result_to_string(result)));
+ 			}

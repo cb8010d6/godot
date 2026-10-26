@@ -1,5 +1,11 @@
 # Path tracer test and fix plan
 
+2026-10-27 RR follow-up: local/global Evaluate tags and exact RR-specific
+optimal dimensions retain strict errors; initial explicit allocation fails and
+is not an accepted fix. Production d29 remains unchanged. See the separate
+[diagnostic report](devtools/VULKAN_RR_DIAGNOSTIC_2026_10_27.md) and source-only
+instrumentation patch; do not merge it as a synchronization repair.
+
 The 2026-10-25 real Vulkan validation also found inherited RGBA32F/RGBA16F
 RT-output and RGBA16F/RGBA8_SNORM RR-guide mismatches. The declarations and
 allocations are corrected on a separate regression branch; validation is pending.

@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-27 (bounded RR first-use diagnostics)
+
+* [RR follow-up](../devtools/VULKAN_RR_DIAGNOSTIC_2026_10_27.md): two small
+  diagnostic editor builds pass; four real runs retain strict errors. The
+  allocation arm is invalid, while the valid local/global-tag pair narrows
+  cache and exact-size hypotheses. No production native change or blanket
+  barrier is shipped. Separate immediate child lists from later absence.
+
 ## 2026-10-27 (final RT warm-up acceptance and RR-D compatibility)
 
 * [Final measured report](../devtools/RT_WARMUP_ACCEPTANCE_2026_10_27.md): native

@@ -105,3 +105,12 @@ SDK lazy retention until plugin unload is documented and alone does not prove
 a leak. ID reuse/history and mid-session VRAM reclamation remain unmeasured;
 explicit frees require GPU completion and careful shutdown order. No redundant
 reset, unsafe destructor free or broad RD refactor was added.
+# Additional first-use controls — 2026-10-27
+
+See [the measured diagnostic follow-up](../../devtools/VULKAN_RR_DIAGNOSTIC_2026_10_27.md).
+Same-binary global tags versus identical local Evaluate tags both retain WAW2
+and original09600x2. RR F/Quality input640x360 exactly matches its queried optimum
+and lies in range for output960x540. A separate preallocation arm initially
+fails and is INVALID. No host synchronization repair is established; diagnostic
+changes remain outside production source. Immediate NGX census after Job close
+is not zero-process proof; later independent process census is a separate check.

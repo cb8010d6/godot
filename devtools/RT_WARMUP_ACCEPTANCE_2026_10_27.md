@@ -4,6 +4,11 @@
 with the automatic/F preset still fails strict validation.** This is an
 experimental candidate, not complete RTX or release sign-off.
 
+The subsequent [RR first-use diagnostics](VULKAN_RR_DIAGNOSTIC_2026_10_27.md)
+retain all failures: a preallocation arm is invalid; a valid global/local-tag
+pair stays red with the exact RR-optimal input dimensions. Production native
+remains d29; diagnostic source is supplied only as a separate reproducer patch.
+
 ## Identities and environment
 
 | Item | Actual identity |
