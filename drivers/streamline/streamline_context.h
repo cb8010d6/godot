@@ -84,6 +84,8 @@ public:
 	PFun_slDLSSDSetOptions *slDLSSDSetOptions = nullptr;
 
 	// DLSS Frame Generation
+	// Startup-only diagnostic override; does not change the runtime FG option.
+	bool dlssg_plugin_disabled = false;
 	PFun_slDLSSGGetState *slDLSSGGetState = nullptr;
 	PFun_slDLSSGSetOptions *slDLSSGSetOptions = nullptr;
 

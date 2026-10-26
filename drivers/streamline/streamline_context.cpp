@@ -120,8 +120,13 @@ void StreamlineContext::load_functions_post_init() {
 		slGetFeatureFunction(sl::kFeatureDLSS, "slDLSSGetState", (void *&)this->slDLSSGetState);
 		slGetFeatureFunction(sl::kFeatureDLSS, "slDLSSSetOptions", (void *&)this->slDLSSSetOptions);
 
-		slGetFeatureFunction(sl::kFeatureDLSS_G, "slDLSSGGetState", (void *&)this->slDLSSGGetState);
-		slGetFeatureFunction(sl::kFeatureDLSS_G, "slDLSSGSetOptions", (void *&)this->slDLSSGSetOptions);
+		if (!dlssg_plugin_disabled) {
+			slGetFeatureFunction(sl::kFeatureDLSS_G, "slDLSSGGetState", (void *&)this->slDLSSGGetState);
+			slGetFeatureFunction(sl::kFeatureDLSS_G, "slDLSSGSetOptions", (void *&)this->slDLSSGSetOptions);
+		} else {
+			slDLSSGGetState = nullptr;
+			slDLSSGSetOptions = nullptr;
+		}
 
 		// DLSS Ray Reconstruction (DLSS-RR)
 		slGetFeatureFunction(sl::kFeatureDLSS_RR, "slDLSSDGetOptimalSettings", (void *&)this->slDLSSDGetOptimalSettings);
@@ -135,7 +140,7 @@ void StreamlineContext::load_functions_post_init() {
 static void _enumerate_support(StreamlineContext *self, sl::AdapterInfo &adapterInfo, StreamlineCapabilities &outSupport) {
 	if (self->slIsFeatureSupported) {
 		outSupport.dlss_available = self->slIsFeatureSupported(sl::kFeatureDLSS, adapterInfo) == sl::Result::eOk;
-		outSupport.dlss_g_available = self->slIsFeatureSupported(sl::kFeatureDLSS_G, adapterInfo) == sl::Result::eOk;
+		outSupport.dlss_g_available = !self->dlssg_plugin_disabled && self->slIsFeatureSupported(sl::kFeatureDLSS_G, adapterInfo) == sl::Result::eOk;
 		outSupport.dlss_rr_available = self->slIsFeatureSupported(sl::kFeatureDLSS_RR, adapterInfo) == sl::Result::eOk;
 		outSupport.reflex_available = self->slIsFeatureSupported(sl::kFeatureReflex, adapterInfo) == sl::Result::eOk;
 		outSupport.pcl_available = self->slIsFeatureSupported(sl::kFeaturePCL, adapterInfo) == sl::Result::eOk;
@@ -448,6 +453,13 @@ void StreamlineContext::initialize(bool d3d12) {
 		return;
 	}
 
+	// Latch before slInit and native device/swapchain creation. Runtime
+	// FG Off still loads the pacer; this control omits the plugin entirely.
+	StreamlineContext::get().dlssg_plugin_disabled = OS::get_singleton()->get_environment("GODOT_STREAMLINE_DISABLE_DLSS_G") == "1";
+	if (StreamlineContext::get().dlssg_plugin_disabled) {
+		print_line("Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.");
+	}
+
 	sl::Preferences pref;
 
 	Vector<sl::Feature> featuresToLoad;
@@ -455,7 +467,9 @@ void StreamlineContext::initialize(bool d3d12) {
 	if (StreamlineContext::get().is_game) {
 		featuresToLoad.push_back(sl::kFeaturePCL);
 		featuresToLoad.push_back(sl::kFeatureReflex);
-		featuresToLoad.push_back(sl::kFeatureDLSS_G);
+		if (!StreamlineContext::get().dlssg_plugin_disabled) {
+			featuresToLoad.push_back(sl::kFeatureDLSS_G);
+		}
 
 		if (bool(GLOBAL_GET("rendering/streamline/streamline_imgui"))) {
 			featuresToLoad.push_back(sl::kFeatureImGUI);

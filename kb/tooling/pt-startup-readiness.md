@@ -1,4 +1,13 @@
-# RT startup readiness (implementation pending native/GPU validation)
+---
+type: Finding
+title: Viewport RT startup readiness uses live shaders and recorded trace commands
+description: Bounded editor and real-GPU checks cover a loading gate; release and full integration validation remain pending.
+tags: [pathtracing, shaders, startup, testing]
+status: draft
+generated: { by: codex, at: 2026-10-26T17:06:08Z }
+---
+
+# RT startup readiness
 
 The loading gate requires the actual selected viewport/camera/environment and
 current RT pipeline variant to render. Resource preloading alone does not
@@ -54,7 +63,7 @@ apply a whole-run zero-error rule to this explicit negative case.
 `pending_observed=false` on a warm run
 must not be described as a reproduced cold transition. Inspect real PNGs too.
 
-Additional private fault/interaction regressions required before acceptance:
+Further fault/interaction coverage to track separately:
 
 - Inject the previous `INV_VIEW_MATRIX` helper-front-end error and a pipeline
   publication failure: each must fail, never become HG0
@@ -67,6 +76,25 @@ Additional private fault/interaction regressions required before acceptance:
   actual RT serials must still advance. Exercise 1/2/4 players and production
   PCK entry, standard/Mono and official 4.7.2 compatibility.
 
-No GPU/build has run for this change yet. Existing A738 material evidence stays
-frozen and does not prove this new gate. No new DLSS model, FG, latency, strict
-validation or long-term performance result is claimed.
+## First bounded measurements
+
+Native commit `5470fe8dde76c43c16f67db64020319ea82ce788` builds the Windows
+standard editor in 1178.422 seconds with Jobs 2. Its independent visible Vulkan
+fixture passes in 19.406 seconds on RTX 4060 Laptop GPU. A real pending
+transition is observed; both views have fresh live-ready serials, green/blue
+pixels pass after source and variant changes, and the intentional RT-only
+invalid identifier reports failed=1 instead of ready. Its expected compiler
+errors remain in the log. This is not a whole-run zero-error test.
+
+Game commit `3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8` passes seven sequential
+CPU checks, official 4.7.2 import and candidate import. The first private real
+skating observation passes: two actual gates complete before PLAY, independent
+viewport readbacks confirm readiness, clocks and physics have no observed
+pause violation, and the first near PNG restores the building/ground/awning
+details. This observer selects the real catalog scene and demo roster before
+ready; it is not the production CLI/export entry test.
+
+Cancellation, timeout, bad-shader recovery, more layouts/scenes, standard/Mono
+smoke and installed release-template checks remain separate pending work at
+this checkpoint. Existing A738 evidence stays frozen. No new model, FG,
+latency, strict-clean or long-term performance result is claimed.

@@ -1,5 +1,18 @@
 # Update log
 
+## 2026-10-27 (isolated SDK214 SR strict baseline; diagnostic candidate)
+
+* [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md):
+  frozen A738 SDK214 Vulkan Quality/Recommended/NIS0 completes all 49 captures,
+  native exit 0, with only actual VVL 1.4.366 and no sampled RTSS module.
+  Strict validation still fails: 10 original 09600 pacer/fake-swapchain layout
+  messages (20 VUID text tokens); 03868 is not observed in this bounded run.
+  NvSPcap64 remains observed, not claimed removed. Original failures persist.
+* Prepare a startup-only exact-opt-in diagnostic that omits DLSS_G, its function
+  queries and capability while retaining SR/RR/NIS/PCL/Reflex and default behavior.
+  Same-candidate A/B build/GPU verification and a common guarded native probe
+  remain pending here; this is not a claimed fix or FG/model/latency pass.
+
 ## 2026-10-27 (RT startup readiness candidate; unbuilt)
 
 * [RT startup readiness](/tooling/pt-startup-readiness.md) appends release-visible

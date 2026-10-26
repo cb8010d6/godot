@@ -1,5 +1,7 @@
 # Tooling
 
+* [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md) - measured RTSS-isolated SR pacer-layout failure and a startup-only diagnostic control; candidate A/B still pending
+
 * [RT startup readiness](/tooling/pt-startup-readiness.md) - actual per-viewport live RT material/recorded trace state for a loading gate; candidate awaiting native/GPU checks
 
 * [Opaque StandardMaterial vertex colors](/tooling/pt-opaque-standard-vertex-colors.md) - retain generated COLOR/sRGB semantics for ordinary opaque materials while preserving existing transparency and emissive sampling paths
