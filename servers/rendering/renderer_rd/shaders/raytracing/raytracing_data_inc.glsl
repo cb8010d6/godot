@@ -12,7 +12,7 @@ layout(buffer_reference, std430) readonly buffer Uint32Buffer {
 };
 
 // ============================================================================
-// GEOMETRY DATA (matches C++ RT_GeometryData, 128 bytes)
+// GEOMETRY DATA (matches C++ RT_GeometryData, 144 bytes)
 // ============================================================================
 struct GeometryData {
 	uint64_t vertex_address;
@@ -48,7 +48,9 @@ struct GeometryData {
 	uint prev_vertex_address_lo;
 	uint prev_vertex_address_hi;
 
-	uint _pad[5];
+	uint instance_id;
+	vec4 instance_custom;
+	vec4 instance_color;
 };
 
 void get_aabb_compression_xforms(GeometryData geom, out mat4 aabb_xform, out mat4 inv_aabb_xform) {

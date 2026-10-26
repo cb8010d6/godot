@@ -57,10 +57,8 @@ params;
 float global_prev_time = 0.0;
 vec4 position = vec4(0.0);
 float rt_point_size = 1.0;
-int rt_instance_id = 0;
 int rt_vertex_id = 0;
 mat3 model_normal_matrix = mat3(1.0);
-vec4 instance_custom = vec4(0.0);
 vec4 custom0_attrib = vec4(0.0);
 vec4 custom1_attrib = vec4(0.0);
 vec4 custom2_attrib = vec4(0.0);
@@ -119,6 +117,11 @@ void main() {
 	uv_interp = fetch_uv(g, v, v, v, vec3(1.0, 0.0, 0.0));
 	uv2_interp = uv_interp;
 	color_interp = fetch_color(g, v, v, v, vec3(1.0, 0.0, 0.0));
+	if ((g.flags & FLAG_INSTANCE_DATA) != 0u) {
+		rt_instance_id = int(g.instance_id);
+		instance_custom = g.instance_custom;
+		color_interp *= g.instance_color;
+	}
 	read_model_matrix = params.model_matrix;
 	model_normal_matrix = mat3(params.model_matrix);
 	read_view_matrix = params.view_matrix;

@@ -660,6 +660,12 @@ bool SceneShaderRaytracing::_preprocess_shader(RID p_material, bool p_is_procedu
 	bool detected_vertex_write = false;
 	actions.write_flag_pointers["VERTEX"] = &detected_vertex_write;
 	actions.usage_flag_pointers["ALPHA_HASH_SCALE"] = &detected_alpha_clip;
+	bool detected_instance_id = false;
+	bool detected_instance_custom = false;
+	bool detected_vertex_color = false;
+	actions.usage_flag_pointers["INSTANCE_ID"] = &detected_instance_id;
+	actions.usage_flag_pointers["INSTANCE_CUSTOM"] = &detected_instance_custom;
+	actions.usage_flag_pointers["COLOR"] = &detected_vertex_color;
 
 	HashMap<StringName, ShaderLanguage::ShaderNode::Uniform> uniform_sink;
 	actions.uniforms = &uniform_sink;
@@ -676,6 +682,9 @@ bool SceneShaderRaytracing::_preprocess_shader(RID p_material, bool p_is_procedu
 	r_entry.uses_alpha_clip = detected_alpha_clip;
 	r_entry.vertex_code = gen_code.code.has("vertex") ? gen_code.code["vertex"] : String();
 	r_entry.writes_vertex = detected_vertex_write;
+	r_entry.uses_instance_id = detected_instance_id;
+	r_entry.uses_instance_custom = detected_instance_custom;
+	r_entry.uses_vertex_color = detected_vertex_color;
 	r_entry.vertex_globals = gen_code.stage_globals[ShaderCompiler::STAGE_VERTEX];
 	r_entry.fragment_code = gen_code.code.has("fragment") ? gen_code.code["fragment"] : String();
 	r_entry.fragment_globals = gen_code.stage_globals[ShaderCompiler::STAGE_FRAGMENT];
@@ -1191,10 +1200,12 @@ void SceneShaderRaytracing::_build_pipeline_worker(PipelineBuildTask *p_task) {
 		Vector<uint8_t> ch_spirv;
 		{
 			MutexLock lock(spirv_compile_mutex);
+			error = String();
 			ch_spirv = RD::get_singleton()->shader_compile_spirv_from_source(
 					RD::SHADER_STAGE_CLOSEST_HIT, si.ch_src, RD::SHADER_LANGUAGE_GLSL, &error);
 		}
 		if (ch_spirv.is_empty()) {
+			ERR_PRINT(vformat("RT: Hit group %d, variant 0x%x closest-hit compilation failed:\n%s", i, p_task->rt_flags, error));
 			_dump_failed_shader(si.ch_src, vformat("hg%d_v%x_closest_hit", i, p_task->rt_flags));
 			p_task->new_per_hg_shaders[i] = RID();
 			p_task->new_ready_mask[i] = false;
@@ -1211,10 +1222,12 @@ void SceneShaderRaytracing::_build_pipeline_worker(PipelineBuildTask *p_task) {
 			Vector<uint8_t> ah_spirv;
 			{
 				MutexLock lock(spirv_compile_mutex);
+				error = String();
 				ah_spirv = RD::get_singleton()->shader_compile_spirv_from_source(
 						RD::SHADER_STAGE_ANY_HIT, si.ah_src, RD::SHADER_LANGUAGE_GLSL, &error);
 			}
 			if (ah_spirv.is_empty()) {
+				ERR_PRINT(vformat("RT: Hit group %d, variant 0x%x any-hit compilation failed:\n%s", i, p_task->rt_flags, error));
 				_dump_failed_shader(si.ah_src, vformat("hg%d_v%x_any_hit", i, p_task->rt_flags));
 				p_task->new_per_hg_shaders[i] = RID();
 				p_task->new_ready_mask[i] = false;
@@ -1232,10 +1245,12 @@ void SceneShaderRaytracing::_build_pipeline_worker(PipelineBuildTask *p_task) {
 			Vector<uint8_t> is_spirv;
 			{
 				MutexLock lock(spirv_compile_mutex);
+				error = String();
 				is_spirv = RD::get_singleton()->shader_compile_spirv_from_source(
 						RD::SHADER_STAGE_INTERSECTION, si.is_src, RD::SHADER_LANGUAGE_GLSL, &error);
 			}
 			if (is_spirv.is_empty()) {
+				ERR_PRINT(vformat("RT: Hit group %d, variant 0x%x intersection compilation failed:\n%s", i, p_task->rt_flags, error));
 				_dump_failed_shader(si.is_src, vformat("hg%d_v%x_intersection", i, p_task->rt_flags));
 				p_task->new_per_hg_shaders[i] = RID();
 				p_task->new_ready_mask[i] = false;

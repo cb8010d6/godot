@@ -1,5 +1,17 @@
 # Update log
 
+## 2026-10-26 (real-game PT material failure)
+
+* Replaying the C1 game's original closest-hit dumps confirmed undeclared
+  instance built-ins for crowd/foliage and unsupported screen derivatives for
+  facade/terrain. The no-RR variants also fail; these are distinct from SDK
+  synchronization diagnostics.
+* [Instance built-ins](/tooling/pt-instance-builtins.md): candidate carries
+  actual MultiMesh ID/custom/color and gives displaced instances separate
+  cached geometry. A real GPU regression samples three distinct colors and
+  displaced edge locations; C1 fails while its raster/standard controls pass.
+  Candidate rebuild and full rendered regression remain required.
+
 ## 2026-10-26 (measured Windows RTX acceptance)
 
 * [Acceptance snapshot](/tooling/windows-rtx-acceptance-20261026.md) links the

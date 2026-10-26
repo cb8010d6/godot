@@ -186,6 +186,7 @@ const uint FLAG_VERTEX_DISPLACED = 16u;
 const uint FLAG_DOUBLE_SIDED = 32u;
 // The instance keeps moving (TLAS instance mask 0x80, see rt_cull_mask()).
 const uint FLAG_MOVING = 64u;
+const uint FLAG_INSTANCE_DATA = 128u;
 
 // ============================================================================
 // RANDOM NUMBER GENERATION - PCG (Permuted Congruential Generator)

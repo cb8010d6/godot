@@ -420,6 +420,7 @@ void RenderRaytracing::cleanup_caches() {
 		}
 	}
 	mm_handles.clear();
+	mm_deformed_handles.clear();
 	deformed_active_this_frame.clear();
 	merged_mm_active_this_frame.clear();
 
@@ -525,6 +526,68 @@ RTDeformedCacheEntry *RenderRaytracing::_access_deformed_slot(RID &r_handle) {
 	}
 	deformed_active_this_frame.push_back(r_handle);
 	return entry;
+}
+
+void RenderRaytracing::_free_deformed_slot(RID &r_handle) {
+	RTDeformedCacheEntry *entry = deformed_pool.get_or_null(r_handle);
+	if (entry) {
+		RD *rd = RD::get_singleton();
+		if (entry->ptr) {
+			if (entry->ptr->blas.is_valid() && rd->acceleration_structure_is_valid(entry->ptr->blas)) {
+				rd->free_rid(entry->ptr->blas);
+			}
+			memdelete(entry->ptr);
+		}
+		if (entry->displace_uniform_set.is_valid() && rd->uniform_set_is_valid(entry->displace_uniform_set)) {
+			rd->free_rid(entry->displace_uniform_set);
+		}
+		for (RID buffer : { entry->owned_vb_full, entry->prev_pos_vb, entry->displaced_vb, entry->displace_params }) {
+			if (buffer.is_valid()) {
+				rd->free_rid(buffer);
+			}
+		}
+		deformed_pool.free(r_handle);
+	}
+	r_handle = RID();
+}
+
+RenderRaytracing::MMDeformedSurfaceHandles *RenderRaytracing::_prepare_mm_deformed_handles(RID p_multimesh, uint32_t p_count, bool p_create) {
+	const uint32_t index = p_multimesh.get_local_index();
+	if (index >= mm_deformed_handles.size()) {
+		if (!p_create) {
+			return nullptr;
+		}
+		mm_deformed_handles.resize(index + 1);
+	}
+	MMDeformedSurfaceHandles &handles = mm_deformed_handles[index];
+	RendererRD::MeshStorage *mesh_storage = RendererRD::MeshStorage::get_singleton();
+	RID mesh = mesh_storage->multimesh_get_mesh(p_multimesh);
+	const uint32_t validator = static_cast<uint32_t>(p_multimesh.get_id() >> 32);
+	if (handles.mm_validator != validator || handles.mesh != mesh) {
+		for (LocalVector<RID> &surface : handles.per_surface) {
+			for (RID &handle : surface) {
+				_free_deformed_slot(handle);
+			}
+		}
+		handles.per_surface.clear();
+		handles.mm_validator = validator;
+		handles.mesh = mesh;
+	}
+	const uint32_t surface_count = mesh.is_valid() ? mesh_storage->mesh_get_surface_count(mesh) : 0;
+	for (uint32_t surface_index = 0; surface_index < handles.per_surface.size(); surface_index++) {
+		LocalVector<RID> &surface = handles.per_surface[surface_index];
+		const uint32_t kept_count = surface_index < surface_count ? p_count : 0;
+		for (uint32_t instance = kept_count; instance < surface.size(); instance++) {
+			_free_deformed_slot(surface[instance]);
+		}
+		if (surface.size() > kept_count) {
+			surface.resize(kept_count);
+		}
+	}
+	if (handles.per_surface.size() > surface_count || p_create) {
+		handles.per_surface.resize(surface_count);
+	}
+	return &handles;
 }
 
 RTMergedMMEntry *RenderRaytracing::_access_merged_mm_slot(RID &r_handle) {
@@ -731,7 +794,8 @@ RTSurfaceData *RenderRaytracing::process_deformed_surface(
 		void *p_mesh_surface,
 		const RTDeformedGeometrySource &p_source,
 		LocalVector<RID> &r_dirty_blas_list,
-		LocalVector<RID> &r_dirty_blas_update_list) {
+		LocalVector<RID> &r_dirty_blas_update_list,
+		RID *p_deformed_handle) {
 	const RenderForwardClustered::GeometryInstanceSurfaceDataCache *surf =
 			static_cast<const RenderForwardClustered::GeometryInstanceSurfaceDataCache *>(p_surf);
 
@@ -761,7 +825,8 @@ RTSurfaceData *RenderRaytracing::process_deformed_surface(
 	uint32_t current_frame = RSG::rasterizer->get_frame_number();
 	uint64_t buffer_id = p_source.current_vb.get_id();
 
-	RTDeformedCacheEntry *entry_ptr = _access_deformed_slot(surf->rt_deformed_handle);
+	RID &deformed_handle = p_deformed_handle ? *p_deformed_handle : surf->rt_deformed_handle;
+	RTDeformedCacheEntry *entry_ptr = _access_deformed_slot(deformed_handle);
 	ERR_FAIL_NULL_V(entry_ptr, nullptr);
 	RTDeformedCacheEntry &entry = *entry_ptr;
 
@@ -1883,7 +1948,7 @@ struct alignas(16) RT_VertexDisplaceParams {
 	float viewport_size[2];
 	uint32_t _pad[2];
 };
-static_assert(sizeof(RT_VertexDisplaceParams) == 496, "RT_VertexDisplaceParams must match the GLSL DisplaceParams layout");
+static_assert(sizeof(RT_VertexDisplaceParams) == 512, "RT_VertexDisplaceParams must match the GLSL DisplaceParams layout");
 
 RTSurfaceData *RenderRaytracing::process_displaced_surface(
 		const void *p_surf,
@@ -1893,7 +1958,9 @@ RTSurfaceData *RenderRaytracing::process_displaced_surface(
 		const Transform3D &p_transform,
 		const RenderDataRD *p_render_data,
 		LocalVector<RID> &r_dirty_blas_list,
-		LocalVector<RID> &r_dirty_blas_update_list) {
+		LocalVector<RID> &r_dirty_blas_update_list,
+		RID *p_deformed_handle,
+		const RT_GeometryData *p_instance_data) {
 	const RenderForwardClustered::GeometryInstanceSurfaceDataCache *surf =
 			static_cast<const RenderForwardClustered::GeometryInstanceSurfaceDataCache *>(p_surf);
 
@@ -1927,7 +1994,8 @@ RTSurfaceData *RenderRaytracing::process_displaced_surface(
 	uint32_t tbn_words = has_n ? (has_t ? 2u : 1u) : 0u;
 	uint32_t full_size = (3u + tbn_words) * 4u * vertex_count;
 
-	RTDeformedCacheEntry *entry = _access_deformed_slot(surf->rt_deformed_handle);
+	RID &deformed_handle = p_deformed_handle ? *p_deformed_handle : surf->rt_deformed_handle;
+	RTDeformedCacheEntry *entry = _access_deformed_slot(deformed_handle);
 	ERR_FAIL_NULL_V(entry, nullptr);
 
 	RD *rd = RD::get_singleton();
@@ -1955,6 +2023,12 @@ RTSurfaceData *RenderRaytracing::process_displaced_surface(
 		RID src_vb, src_attr, src_idx;
 		_fill_surface_geometry_data(p_mesh_surface, false, &source, &src_vb, &src_attr, &src_idx);
 		params.src = source.geometry;
+		if (p_instance_data) {
+			params.src.flags |= RT_GEOM_FLAG_INSTANCE_DATA;
+			params.src.instance_id = p_instance_data->instance_id;
+			memcpy(params.src.instance_custom, p_instance_data->instance_custom, sizeof(params.src.instance_custom));
+			memcpy(params.src.instance_color, p_instance_data->instance_color, sizeof(params.src.instance_color));
+		}
 		ERR_FAIL_COND_V(!src_vb.is_valid(), nullptr);
 		params.src.vertex_buffer_address = rd->buffer_get_device_address(src_vb);
 		params.src.attribute_buffer_address = src_attr.is_valid() ? rd->buffer_get_device_address(src_attr) : 0;
@@ -2010,10 +2084,10 @@ RTSurfaceData *RenderRaytracing::process_displaced_surface(
 	RTDeformedGeometrySource src;
 	src.current_vb = entry->displaced_vb;
 	src.change_stamp = current_frame; // Re-run every frame (TIME, uniforms).
-	src.cache_key = (uint64_t)(uintptr_t)p_surf;
+	src.cache_key = p_deformed_handle ? deformed_handle.get_id() : (uint64_t)(uintptr_t)p_surf;
 	src.cache_version = 0;
 	src.surface_counter = p_surface_invalidation_counter;
-	RTSurfaceData *result = process_deformed_surface(p_surf, p_mesh_surface, src, r_dirty_blas_list, r_dirty_blas_update_list);
+	RTSurfaceData *result = process_deformed_surface(p_surf, p_mesh_surface, src, r_dirty_blas_list, r_dirty_blas_update_list, p_deformed_handle);
 	if (result) {
 		// Tells the hit shader the geometry already carries the vertex() result.
 		result->geometry.flags |= RT_GEOM_FLAG_VERTEX_DISPLACED;
@@ -2561,6 +2635,9 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 		Transform3D prev_instance_transform;
 		bool transform_moved;
 		RTMaterialData *mat_data;
+		RID material_rid;
+		bool needs_per_instance_geometry;
+		bool writes_vertex;
 		uint32_t inst_flags;
 	};
 	LocalVector<PendingMMSurface> pending_mm_surfaces;
@@ -2656,12 +2733,9 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 		// Compute dispatches and TLAS assembly are deferred to Phase 2.
 		if (inst->data->base_type == RSE::INSTANCE_MULTIMESH) {
 			RID mm_rid = inst->data->base;
-
-			if (mesh_storage->multimesh_get_transform_format(mm_rid) != RSE::MULTIMESH_TRANSFORM_3D) {
-				continue;
-			}
-
-			uint32_t mm_count = mesh_storage->multimesh_get_instances_to_draw(mm_rid);
+			const bool is_3d = mesh_storage->multimesh_get_transform_format(mm_rid) == RSE::MULTIMESH_TRANSFORM_3D;
+			uint32_t mm_count = is_3d ? mesh_storage->multimesh_get_instances_to_draw(mm_rid) : 0;
+			MMDeformedSurfaceHandles *deformed_handles = _prepare_mm_deformed_handles(mm_rid, mm_count, false);
 			if (mm_count == 0) {
 				continue;
 			}
@@ -2747,6 +2821,17 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 				pending.prev_instance_transform = prev_instance_transform;
 				pending.transform_moved = transform_moved;
 				pending.mat_data = mat_data;
+				pending.material_rid = material_rid;
+				const SceneShaderRaytracing::CustomShaderEntry *custom = rt_shader_singleton->get_custom_shader_entry(mat_data->rt_sbt_offset);
+				pending.needs_per_instance_geometry = custom && custom->needs_per_instance_geometry();
+				pending.writes_vertex = custom && custom->writes_vertex;
+				if (!pending.writes_vertex && deformed_handles && pending.surface_index < deformed_handles->per_surface.size()) {
+					LocalVector<RID> &handles = deformed_handles->per_surface[pending.surface_index];
+					for (RID &handle : handles) {
+						_free_deformed_slot(handle);
+					}
+					handles.clear();
+				}
 				pending.inst_flags = inst_flags;
 				pending_mm_surfaces.push_back(pending);
 
@@ -2973,18 +3058,20 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 	// -----------------------------------------------------------------------
 	// Phase 2: GPU compute — merged MultiMesh BLAS dispatches.
 	// -----------------------------------------------------------------------
-	RD::ComputeListID compute_list = RD::get_singleton()->compute_list_begin();
-
 	for (const PendingMMSurface &pending : pending_mm_surfaces) {
 #ifdef TOOLS_ENABLED
 		uint32_t mm_pre_build_size = dirty_blas_list.size();
 		uint32_t mm_pre_refit_size = dirty_blas_update_list.size();
 #endif
 		RTSurfaceData merged_sd;
-		bool use_merged = pending.mm_gpu_buffer.is_valid() &&
-				_build_merged_mm_blas(pending.mm_rid, pending.mm_gpu_buffer, pending.mesh_surface,
-						pending.mm_count, pending.surface_index, pending.surface_counter,
-						compute_list, dirty_blas_list, dirty_blas_update_list, &merged_sd);
+		bool use_merged = false;
+		if (!pending.needs_per_instance_geometry && pending.mm_gpu_buffer.is_valid()) {
+			RD::ComputeListID compute_list = RD::get_singleton()->compute_list_begin();
+			use_merged = _build_merged_mm_blas(pending.mm_rid, pending.mm_gpu_buffer, pending.mesh_surface,
+					pending.mm_count, pending.surface_index, pending.surface_counter,
+					compute_list, dirty_blas_list, dirty_blas_update_list, &merged_sd);
+			RD::get_singleton()->compute_list_end();
+		}
 
 		if (use_merged) {
 			blass.push_back(merged_sd.blas);
@@ -3018,6 +3105,15 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 
 			const uint32_t mm_stride = mesh_storage->multimesh_get_stride(pending.mm_rid);
 			const uint32_t mm_cur_offset = mesh_storage->multimesh_get_current_instance_offset(pending.mm_rid);
+			const bool mm_has_color = mesh_storage->multimesh_uses_colors(pending.mm_rid);
+			const bool mm_has_custom = mesh_storage->multimesh_uses_custom_data(pending.mm_rid);
+			LocalVector<RID> *deformed_handles = nullptr;
+			if (pending.writes_vertex) {
+				MMDeformedSurfaceHandles *handles = _prepare_mm_deformed_handles(pending.mm_rid, pending.mm_count, true);
+				ERR_CONTINUE(!handles || pending.surface_index >= handles->per_surface.size());
+				deformed_handles = &handles->per_surface[pending.surface_index];
+				deformed_handles->resize(pending.mm_count);
+			}
 
 			RTSurfaceData *surf_data = process_surface(pending.mm_surf, pending.mesh_surface,
 					pending.surface_counter, pending.instance_transform, dirty_blas_list);
@@ -3027,6 +3123,13 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 
 			for (uint32_t mi = 0; mi < pending.mm_count; mi++) {
 				const float *d = mm_data + (mm_cur_offset + mi) * mm_stride;
+				RT_GeometryData instance_data = {};
+				instance_data.flags = RT_GEOM_FLAG_INSTANCE_DATA;
+				instance_data.instance_id = mi;
+				for (uint32_t component = 0; component < 4; component++) {
+					instance_data.instance_color[component] = mm_has_color ? d[12 + component] : 1.0f;
+					instance_data.instance_custom[component] = mm_has_custom ? d[12 + (mm_has_color ? 4 : 0) + component] : 0.0f;
+				}
 				Transform3D mm_xform;
 				mm_xform.basis.rows[0][0] = d[0];
 				mm_xform.basis.rows[0][1] = d[1];
@@ -3041,22 +3144,37 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 				mm_xform.basis.rows[2][2] = d[10];
 				mm_xform.origin.z = d[11];
 
-				Transform3D final_transform = pending.instance_transform * mm_xform;
-				if (surf_data->is_compressed) {
-					final_transform = final_transform * surf_data->aabb_transform;
+				const Transform3D instance_transform = pending.instance_transform * mm_xform;
+				RTSurfaceData *instance_surface = surf_data;
+				if (deformed_handles) {
+					RTSurfaceData *displaced = process_displaced_surface(pending.mm_surf, pending.mesh_surface,
+							pending.material_rid, pending.surface_counter, instance_transform, p_render_data,
+							dirty_blas_list, dirty_blas_update_list, &(*deformed_handles)[mi], &instance_data);
+					if (displaced) {
+						instance_surface = displaced;
+					}
+				}
+				Transform3D final_transform = instance_transform;
+				if (instance_surface->is_compressed) {
+					final_transform = final_transform * instance_surface->aabb_transform;
 				}
 
-				blass.push_back(surf_data->blas);
+				blass.push_back(instance_surface->blas);
 				blas_transforms.push_back(final_transform);
-				geometry_data.push_back(surf_data->geometry);
+				RT_GeometryData geometry = instance_surface->geometry;
+				geometry.flags |= RT_GEOM_FLAG_INSTANCE_DATA;
+				geometry.instance_id = mi;
+				memcpy(geometry.instance_custom, instance_data.instance_custom, sizeof(geometry.instance_custom));
+				memcpy(geometry.instance_color, instance_data.instance_color, sizeof(geometry.instance_color));
+				geometry_data.push_back(geometry);
 				const bool hg_pending = _rt_hit_group_pending(pending.mat_data, rt_shader_singleton, p_rt_flags);
 				sbt_offsets.push_back(hg_pending ? 0u : pending.mat_data->rt_sbt_offset);
 				material_data.push_back(hg_pending ? _rt_pending_material(pending.mat_data->data) : pending.mat_data->data);
 
 				if (pending.transform_moved) {
 					Transform3D prev_final = pending.prev_instance_transform * mm_xform;
-					if (surf_data->is_compressed) {
-						prev_final = prev_final * surf_data->aabb_transform;
+					if (instance_surface->is_compressed) {
+						prev_final = prev_final * instance_surface->aabb_transform;
 					}
 					motion_indices.push_back((int32_t)motion_transforms.size());
 					RT_InstanceMotionData motion = {};
@@ -3101,8 +3219,6 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 #endif
 
 	SceneShaderRaytracing::get_singleton()->finalize_custom_shaders();
-
-	RD::get_singleton()->compute_list_end();
 
 	build_acceleration_structures(state, dirty_blas_list, dirty_blas_update_list);
 	finalize_buffers(state);

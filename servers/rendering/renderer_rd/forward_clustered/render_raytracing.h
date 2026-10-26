@@ -40,6 +40,8 @@
 #include "servers/rendering/renderer_rd/shaders/raytracing/multimesh_merge.glsl.gen.h"
 #include "servers/rendering/rendering_device.h"
 
+#include <cstddef>
+
 #define RB_TEX_RAYTRACING SNAME("raytracing")
 #define RB_TEX_RT_DEPTH SNAME("rt_depth")
 
@@ -62,7 +64,7 @@ struct RTDDGIBindings;
 // all other bits (raytracing_inc.glsl rt_cull_mask()).
 static constexpr uint8_t RT_INSTANCE_MASK_MOVING = 0x80;
 
-// Must match GLSL GeometryData (std430, 128 bytes).
+// Must match GLSL GeometryData (std430, 144 bytes).
 struct alignas(16) RT_GeometryData {
 	uint64_t vertex_buffer_address;
 	uint64_t attribute_buffer_address;
@@ -89,9 +91,14 @@ struct alignas(16) RT_GeometryData {
 	// For deformed geometry: previous-frame position buffer used for motion vectors.
 	uint32_t prev_vertex_buffer_address_lo;
 	uint32_t prev_vertex_buffer_address_hi;
-	uint32_t _pad[5];
+	uint32_t instance_id;
+	float instance_custom[4];
+	float instance_color[4];
 };
-static_assert(sizeof(RT_GeometryData) == 128, "RT_GeometryData must be 128 bytes for std430");
+static_assert(sizeof(RT_GeometryData) == 144, "RT_GeometryData must be 144 bytes for std430");
+static_assert(offsetof(RT_GeometryData, instance_id) == 108);
+static_assert(offsetof(RT_GeometryData, instance_custom) == 112);
+static_assert(offsetof(RT_GeometryData, instance_color) == 128);
 
 /// Per-instance motion data for velocity computation (matches GLSL InstanceMotionData, 48 bytes).
 struct RT_InstanceMotionData {
@@ -213,6 +220,8 @@ enum {
 	// The instance keeps moving (RT_INSTANCE_MASK_MOVING): DDGI near-field
 	// rays that hit it let go of their history faster.
 	RT_GEOM_FLAG_MOVING = 64u,
+	// Expanded MultiMesh geometry carries real logical instance shader inputs.
+	RT_GEOM_FLAG_INSTANCE_DATA = 128u,
 };
 
 /// Per-instance state for procedural RT geometry. Heap-allocated, only exists for procedural instances.
@@ -410,6 +419,14 @@ class RenderRaytracing {
 		}
 	};
 	LocalVector<MMSurfaceHandles> mm_handles;
+	// Each displaced MultiMesh instance needs its own vertex buffers and BLAS.
+	// These are ordinary deformed_pool slots, including its TTL/exit cleanup.
+	struct MMDeformedSurfaceHandles {
+		uint32_t mm_validator = 0;
+		RID mesh;
+		LocalVector<LocalVector<RID>> per_surface;
+	};
+	LocalVector<MMDeformedSurfaceHandles> mm_deformed_handles;
 
 	RID_Owner<RTDeformedCacheEntry> deformed_pool;
 	LocalVector<RID> deformed_active_this_frame;
@@ -418,6 +435,8 @@ class RenderRaytracing {
 	LocalVector<RID> merged_mm_active_this_frame;
 
 	RTDeformedCacheEntry *_access_deformed_slot(RID &r_handle);
+	void _free_deformed_slot(RID &r_handle);
+	MMDeformedSurfaceHandles *_prepare_mm_deformed_handles(RID p_multimesh, uint32_t p_count, bool p_create);
 	RTMergedMMEntry *_access_merged_mm_slot(RID &r_handle);
 
 	// Stand-ins for set 0 resources a dispatch doesn't use: DDGI (34-39) when
@@ -518,7 +537,8 @@ class RenderRaytracing {
 			void *p_mesh_surface,
 			const struct RTDeformedGeometrySource &p_source,
 			LocalVector<RID> &r_dirty_blas_list,
-			LocalVector<RID> &r_dirty_blas_update_list);
+			LocalVector<RID> &r_dirty_blas_update_list,
+			RID *p_deformed_handle = nullptr);
 	RTSurfaceData *process_displaced_surface(
 			const void *p_surf,
 			void *p_mesh_surface,
@@ -527,7 +547,9 @@ class RenderRaytracing {
 			const Transform3D &p_transform,
 			const RenderDataRD *p_render_data,
 			LocalVector<RID> &r_dirty_blas_list,
-			LocalVector<RID> &r_dirty_blas_update_list);
+			LocalVector<RID> &r_dirty_blas_update_list,
+			RID *p_deformed_handle = nullptr,
+			const RT_GeometryData *p_instance_data = nullptr);
 	void _populate_surface_blas(
 			void *p_mesh_surface,
 			RID p_vertex_buffer_override,

@@ -106,6 +106,15 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 
 ## Known bugs
 
+2026-10-26 real-game follow-up: C1 closest-hit shader replays fail for
+`INSTANCE_CUSTOM` / `INSTANCE_ID`, and for screen-space derivative functions.
+The instance-data candidate and colored/deformed MultiMesh regression are
+tracked in [instance built-ins](kb/tooling/pt-instance-builtins.md). Candidate
+build/GPU results are pending. Derivative-dependent application materials
+need a separate RT path; successful short opening captures did not establish
+full material compatibility during gameplay. The retained C1 results are not
+rewritten as comprehensive PT acceptance.
+
 Found in the step 3 baseline (2026-10-08, commit `a6a531899a`, 4 spp, 3
 bounces, no denoiser). Screenshots were taken with `--shot` for every view in
 both modes.

@@ -23,6 +23,14 @@ mat4 rt_view_matrix = transpose(mat4(scene_data_block.data.view_matrix[0],
 		vec4(0.0, 0.0, 0.0, 1.0)));
 
 GeometryData rt_geom = geometries[rt_geometry_idx];
+rt_instance_id = 0;
+instance_custom = vec4(0.0);
+vec4 rt_instance_color = vec4(1.0);
+if ((rt_geom.flags & FLAG_INSTANCE_DATA) != 0u) {
+	rt_instance_id = int(rt_geom.instance_id);
+	instance_custom = rt_geom.instance_custom;
+	rt_instance_color = rt_geom.instance_color;
+}
 mat4 rt_aabb_xform;
 mat4 rt_inv_aabb_xform;
 get_aabb_compression_xforms(rt_geom, rt_aabb_xform, rt_inv_aabb_xform);
@@ -46,7 +54,7 @@ tangent = mat3(rt_world_to_object_decomp) * rt_tangent;
 binormal = mat3(rt_world_to_object_decomp) * rt_bitangent;
 uv_interp = rt_uv;
 uv2_interp = rt_uv;
-color_interp = rt_color;
+color_interp = rt_color * rt_instance_color;
 view = -gl_WorldRayDirectionEXT;
 rt_front_facing = rt_front_face;
 rt_screen_uv = vec2(gl_LaunchIDEXT.xy) / vec2(gl_LaunchSizeEXT.xy);

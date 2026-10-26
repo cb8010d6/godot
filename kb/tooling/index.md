@@ -1,5 +1,7 @@
 # Tooling
 
+* [Path-traced instance built-ins](/tooling/pt-instance-builtins.md) - preserve real MultiMesh inputs and per-instance displacement instead of dropping failed hit groups
+
 * [Windows RTX acceptance snapshot](/tooling/windows-rtx-acceptance-20261026.md) - C1 functional results and separate d37 strict failures, with original evidence hashes
 
 * [Editor documentation cache shutdown](/tooling/editor-help-stale-cache-shutdown.md) - guard a deferred consumer after EditorNode teardown

@@ -384,8 +384,16 @@ public:
 		bool uses_alpha_clip = false; // Writes ALPHA_SCISSOR_THRESHOLD; needs per-HG any-hit
 		bool is_procedural = false; // Uses intersection shader instead of triangle geometry
 		bool writes_vertex = false; // vertex() assigns VERTEX; the path tracer displaces the mesh in a compute pass
+		bool uses_instance_id = false;
+		bool uses_instance_custom = false;
+		bool uses_vertex_color = false;
 		String vertex_globals; // Functions and globals the vertex stage uses
 		uint32_t alpha_texture_buffer_offset = UINT32_MAX; // Byte offset of hint_alpha texture index in CustomMaterialUniforms UBO; UINT32_MAX if absent
+		bool needs_per_instance_geometry() const {
+			// A merged BLAS bakes MultiMesh transforms into VERTEX and loses
+			// logical instance inputs. Keep these shaders on the expanded path.
+			return uses_instance_id || uses_instance_custom || uses_vertex_color || !vertex_code.is_empty();
+		}
 	};
 
 	// 128-bit identity (dual hash64 with distinct salt). Treated as source equality.
