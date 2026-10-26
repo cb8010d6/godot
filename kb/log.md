@@ -1,5 +1,18 @@
 # Update log
 
+## 2026-10-26 (shared MultiMesh deformation owner isolation)
+
+* BCC's real Vulkan shared-owner regression exits 1: two TLAS entries exist,
+  but opposite material/world-transform displacements share one owner's vertex
+  buffer. The [owner-isolation candidate](/tooling/pt-instance-builtins.md)
+  uses validated per-geometry owner RIDs, owner-scoped invalidation and explicit
+  node/renderer cleanup. Rebuild and native GPU regression remain required.
+* Separate synchronous compilation controls pass eight of nine lifecycle pixel
+  phases. The Standard merged MultiMesh color gap remains independent, and
+  `PRESENT_AFTER_WRITE` diagnostics persist in both controls; the attempted
+  overlay-disable setting still loaded RTSS and did not isolate its contribution. Neither
+  control is a strict-validation pass; original failed records are preserved.
+
 ## 2026-10-26 (vertex displacement varying dependencies)
 
 * Candidate `21bc08eaa` built successfully with MSVC and restored all three

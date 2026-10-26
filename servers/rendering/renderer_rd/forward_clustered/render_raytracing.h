@@ -419,14 +419,15 @@ class RenderRaytracing {
 		}
 	};
 	LocalVector<MMSurfaceHandles> mm_handles;
-	// Each displaced MultiMesh instance needs its own vertex buffers and BLAS.
-	// These are ordinary deformed_pool slots, including its TTL/exit cleanup.
+	// Displacement depends on the geometry owner's material and transform, even
+	// when multiple owners share one MultiMesh. The owner RID validates identity;
+	// each logical instance retains ordinary deformed_pool TTL/exit cleanup.
 	struct MMDeformedSurfaceHandles {
-		uint32_t mm_validator = 0;
+		RID multimesh;
 		RID mesh;
 		LocalVector<LocalVector<RID>> per_surface;
 	};
-	LocalVector<MMDeformedSurfaceHandles> mm_deformed_handles;
+	RID_Owner<MMDeformedSurfaceHandles> mm_deformed_owners;
 
 	RID_Owner<RTDeformedCacheEntry> deformed_pool;
 	LocalVector<RID> deformed_active_this_frame;
@@ -436,7 +437,8 @@ class RenderRaytracing {
 
 	RTDeformedCacheEntry *_access_deformed_slot(RID &r_handle);
 	void _free_deformed_slot(RID &r_handle);
-	MMDeformedSurfaceHandles *_prepare_mm_deformed_handles(RID p_multimesh, uint32_t p_count, bool p_create);
+	void _free_mm_deformed_owner(RID &r_owner_handle);
+	MMDeformedSurfaceHandles *_prepare_mm_deformed_handles(RID &r_owner_handle, RID p_multimesh, uint32_t p_count, bool p_create);
 	RTMergedMMEntry *_access_merged_mm_slot(RID &r_handle);
 
 	// Stand-ins for set 0 resources a dispatch doesn't use: DDGI (34-39) when

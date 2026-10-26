@@ -350,6 +350,15 @@ void RenderRaytracing::cleanup_caches() {
 
 	RD *rd = RD::get_singleton();
 
+	// Release owner records before draining any remaining deformed slots. This
+	// also handles geometry owners that outlive the renderer during shutdown.
+	{
+		LocalVector<RID> live = mm_deformed_owners.get_owned_list();
+		for (RID &handle : live) {
+			_free_mm_deformed_owner(handle);
+		}
+	}
+
 	// Free all cached deformed surface data.
 	{
 		LocalVector<RID> live = deformed_pool.get_owned_list();
@@ -420,7 +429,6 @@ void RenderRaytracing::cleanup_caches() {
 		}
 	}
 	mm_handles.clear();
-	mm_deformed_handles.clear();
 	deformed_active_this_frame.clear();
 	merged_mm_active_this_frame.clear();
 
@@ -551,31 +559,44 @@ void RenderRaytracing::_free_deformed_slot(RID &r_handle) {
 	r_handle = RID();
 }
 
-RenderRaytracing::MMDeformedSurfaceHandles *RenderRaytracing::_prepare_mm_deformed_handles(RID p_multimesh, uint32_t p_count, bool p_create) {
-	const uint32_t index = p_multimesh.get_local_index();
-	if (index >= mm_deformed_handles.size()) {
-		if (!p_create) {
-			return nullptr;
-		}
-		mm_deformed_handles.resize(index + 1);
-	}
-	MMDeformedSurfaceHandles &handles = mm_deformed_handles[index];
-	RendererRD::MeshStorage *mesh_storage = RendererRD::MeshStorage::get_singleton();
-	RID mesh = mesh_storage->multimesh_get_mesh(p_multimesh);
-	const uint32_t validator = static_cast<uint32_t>(p_multimesh.get_id() >> 32);
-	if (handles.mm_validator != validator || handles.mesh != mesh) {
-		for (LocalVector<RID> &surface : handles.per_surface) {
+void RenderRaytracing::_free_mm_deformed_owner(RID &r_owner_handle) {
+	MMDeformedSurfaceHandles *handles = mm_deformed_owners.get_or_null(r_owner_handle);
+	if (handles) {
+		for (LocalVector<RID> &surface : handles->per_surface) {
 			for (RID &handle : surface) {
 				_free_deformed_slot(handle);
 			}
 		}
-		handles.per_surface.clear();
-		handles.mm_validator = validator;
-		handles.mesh = mesh;
+		mm_deformed_owners.free(r_owner_handle);
+	}
+	r_owner_handle = RID();
+}
+
+RenderRaytracing::MMDeformedSurfaceHandles *RenderRaytracing::_prepare_mm_deformed_handles(RID &r_owner_handle, RID p_multimesh, uint32_t p_count, bool p_create) {
+	MMDeformedSurfaceHandles *handles = mm_deformed_owners.get_or_null(r_owner_handle);
+	if (!handles) {
+		if (!p_create) {
+			return nullptr;
+		}
+		r_owner_handle = mm_deformed_owners.make_rid();
+		handles = mm_deformed_owners.get_or_null(r_owner_handle);
+		ERR_FAIL_NULL_V(handles, nullptr);
+	}
+	RendererRD::MeshStorage *mesh_storage = RendererRD::MeshStorage::get_singleton();
+	RID mesh = mesh_storage->multimesh_get_mesh(p_multimesh);
+	if (handles->multimesh != p_multimesh || handles->mesh != mesh) {
+		for (LocalVector<RID> &surface : handles->per_surface) {
+			for (RID &handle : surface) {
+				_free_deformed_slot(handle);
+			}
+		}
+		handles->per_surface.clear();
+		handles->multimesh = p_multimesh;
+		handles->mesh = mesh;
 	}
 	const uint32_t surface_count = mesh.is_valid() ? mesh_storage->mesh_get_surface_count(mesh) : 0;
-	for (uint32_t surface_index = 0; surface_index < handles.per_surface.size(); surface_index++) {
-		LocalVector<RID> &surface = handles.per_surface[surface_index];
+	for (uint32_t surface_index = 0; surface_index < handles->per_surface.size(); surface_index++) {
+		LocalVector<RID> &surface = handles->per_surface[surface_index];
 		const uint32_t kept_count = surface_index < surface_count ? p_count : 0;
 		for (uint32_t instance = kept_count; instance < surface.size(); instance++) {
 			_free_deformed_slot(surface[instance]);
@@ -584,10 +605,10 @@ RenderRaytracing::MMDeformedSurfaceHandles *RenderRaytracing::_prepare_mm_deform
 			surface.resize(kept_count);
 		}
 	}
-	if (handles.per_surface.size() > surface_count || p_create) {
-		handles.per_surface.resize(surface_count);
+	if (handles->per_surface.size() > surface_count || p_create) {
+		handles->per_surface.resize(surface_count);
 	}
-	return &handles;
+	return handles;
 }
 
 RTMergedMMEntry *RenderRaytracing::_access_merged_mm_slot(RID &r_handle) {
@@ -2735,7 +2756,7 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 			RID mm_rid = inst->data->base;
 			const bool is_3d = mesh_storage->multimesh_get_transform_format(mm_rid) == RSE::MULTIMESH_TRANSFORM_3D;
 			uint32_t mm_count = is_3d ? mesh_storage->multimesh_get_instances_to_draw(mm_rid) : 0;
-			MMDeformedSurfaceHandles *deformed_handles = _prepare_mm_deformed_handles(mm_rid, mm_count, false);
+			MMDeformedSurfaceHandles *deformed_handles = _prepare_mm_deformed_handles(inst->rt_multimesh_deformed_owner, mm_rid, mm_count, false);
 			if (mm_count == 0) {
 				continue;
 			}
@@ -3109,7 +3130,7 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 			const bool mm_has_custom = mesh_storage->multimesh_uses_custom_data(pending.mm_rid);
 			LocalVector<RID> *deformed_handles = nullptr;
 			if (pending.writes_vertex) {
-				MMDeformedSurfaceHandles *handles = _prepare_mm_deformed_handles(pending.mm_rid, pending.mm_count, true);
+				MMDeformedSurfaceHandles *handles = _prepare_mm_deformed_handles(pending.mm_surf->owner->rt_multimesh_deformed_owner, pending.mm_rid, pending.mm_count, true);
 				ERR_CONTINUE(!handles || pending.surface_index >= handles->per_surface.size());
 				deformed_handles = &handles->per_surface[pending.surface_index];
 				deformed_handles->resize(pending.mm_count);

@@ -32,8 +32,8 @@ come from the current MultiMesh data, using the same optional color/custom
 offsets as raster rendering. Ordinary mesh inputs retain their actual defaults.
 
 Custom vertex displacement uses a separate deformed-pool handle for each
-MultiMesh surface and logical instance. Both compute displacement and hit-stage
-vertex replay receive the same real inputs. Shrinking the visible instance
+geometry owner, MultiMesh surface and logical instance. Both compute displacement
+and hit-stage vertex replay receive the same real inputs. Shrinking the visible instance
 count releases unused tail slots; RID recycling and mesh changes release old
 slots. Unused entries still have the existing TTL and shutdown cleanup.
 The merged compute list ends before per-instance displacement starts, avoiding
@@ -60,7 +60,65 @@ only `vertex()` as an entry point and takes that pass's fragment globals.
 This retains the real varying assignments and vertex helpers without importing
 helpers used only by `fragment()`, which can depend on unavailable fragment
 built-ins. The vertex code itself and the actual instance data are unchanged.
-This correction still requires a rebuilt native rendered regression.
+At `bcc08cc81cc71e3c02b800b055f21fd11634d448`, the rebuilt native Vulkan
+regression on RTX 4060 / driver 610.88 renders the three expected colors and
+their displaced edges. This verifies the varying-dependency correction within
+that fixture; it does not establish full game material compatibility.
+
+# Shared-owner displacement cache
+
+A second real Vulkan regression at the same BCC revision shares one MultiMesh
+between two MultiMeshInstance3D nodes. Distinct material overrides request
+opposite Y displacements. A second phase shares the same material RID and uses
+each owner's `MODEL_MATRIX.x` to request opposite displacements. Both phases
+observe two TLAS instances and the required configuration, but fail their pixel
+assertions: the left object's expected center is empty and its red pixels appear
+at the other owner's displacement. The native process exits 1 in 10.891 seconds.
+
+The cache was keyed by MultiMesh RID, surface and logical instance alone.
+The `displaced_frame` guard then let the first processed owner supply the second
+owner's vertex buffer. Sharing a mesh or material does not make these results
+interchangeable. Keying only by material RID would still fail the second phase.
+
+The owner-isolation candidate gives each native geometry instance a validated
+owner RID. Its RID_Owner entry retains the full MultiMesh/mesh RIDs and this
+owner's per-surface/per-instance deformed handles. Shrink, material changes and
+mesh replacement resolve the same owner record. The PT renderer releases the
+record before freeing the geometry instance, and renderer shutdown drains any
+remaining records. Existing deformed-pool TTL and stale-RID checks remain.
+This candidate has not yet been rebuilt or GPU-regressed; it is not a passed fix.
+
+The repository reproduction is
+`misc/pathtracer_test_project/shared_owner_regression/`. Its shader script SHA-256
+is `99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037`.
+It requires a visible native Vulkan run, captures both phases' actual pixels and
+node/MM/material RIDs, and exits 1 on failed pixel, configuration, TLAS or write
+checks. Async shader compilation is explicitly disabled from project startup,
+isolating geometry sharing from pending hit-group placeholders.
+
+# Lifecycle controls and remaining boundaries
+
+The original BCC lifecycle run passed seven of nine rendered phases. Its newly
+selected non-displacing custom material was grey after 180 post-draws (about
+three seconds): TLAS presence alone did not prove that the new hit group was
+ready. Separate controls with
+`rendering/pathtracing/async_shader_compilation=false` passed this phase and
+eight of nine phases overall. The attempted process-only overlay-disable control
+still loaded RTSS; it did not isolate the overlay's contribution.
+The original failed evidence is retained, rather than relabeled as passed.
+
+The remaining phase uses StandardMaterial3D with
+`vertex_color_use_as_albedo=true` on a merged MultiMesh. It observes the expected
+single TLAS instance but white pixels instead of the three instance colors.
+HG0 does not fetch/use COLOR, and the merge compute copies mesh attributes
+without applying MultiMesh colors. This inherited color support gap is separate
+from custom shader instance built-ins and the new owner-isolation correction.
+
+Both strict synchronous controls still report `vkQueuePresentKHR`
+`PRESENT_AFTER_WRITE` hazards, including the attempted overlay-disable control
+that still loaded RTSS.
+Eight successful pixel phases are not a clean Vulkan validation result. RR is
+off in these controls, and no RR/DLSS/FG acceptance is inferred.
 
 # Regression boundary
 

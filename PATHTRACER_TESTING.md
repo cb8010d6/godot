@@ -60,6 +60,30 @@ All user arguments (after `--`):
 | `--linear` | off | Linear tonemap with `--exposure=` (default 0.25), for brightness measurements |
 | `--shot=` | none | Save a PNG and quit |
 
+### Shared MultiMesh displacement regression
+
+The isolated project
+[`misc/pathtracer_test_project/shared_owner_regression/`](misc/pathtracer_test_project/shared_owner_regression/)
+tests two geometry owners sharing one MultiMesh. Run a tools/editor binary as
+a game in a visible Vulkan window, with a new writable evidence directory:
+
+```powershell
+& $Engine --rendering-driver vulkan --rendering-method forward_plus `
+  --path misc/pathtracer_test_project/shared_owner_regression `
+  --script res://shared_owner.gd -- --output=$EvidenceDirectory
+```
+
+Use an external 180-second process-tree timeout and preserve the full native
+log and exit code. The project disables async shader compilation at startup;
+RR, DDGI and DLSS are off. It captures real PNG/JSON after 300 post-draws with
+distinct material overrides, then 120 post-draws with the same material and
+owner-dependent `MODEL_MATRIX` displacement. Both phases require actual colored
+centers/displaced edges, empty opposite-displacement locations and two TLAS
+instances. Any failed assertion or evidence write exits 1. The tested script
+SHA-256 is `99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037`.
+After a repair, also test geometry owner deletion/recreation and instance-count
+shrink/grow; compile success alone does not verify cache lifetime.
+
 ## What the path tracer supports today
 
 Audited on 2026-10-08 at commit `ca52415e30`. Shader sources are in
@@ -103,17 +127,31 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | 9 | Glass (B6): path traced alpha blend, refraction and transmission instead of the raster overlay | Done |
 | 10 | Clean up, document, merge `dev` into `nvidia-pt-dlss` | Done (release 0.3.0) |
 | Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Windows RTX Vulkan PT/RR scenes rendered on a separate regression build; strict validation still fails; see `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
+| Regression | Shared MultiMesh vertex displacement | BCC real GPU baseline fails both owner-isolation phases; validated owner-cache candidate and repository fixture added, rebuild/GPU regression pending |
 
 ## Known bugs
 
 2026-10-26 real-game follow-up: C1 closest-hit shader replays fail for
 `INSTANCE_CUSTOM` / `INSTANCE_ID`, and for screen-space derivative functions.
 The instance-data candidate and colored/deformed MultiMesh regression are
-tracked in [instance built-ins](kb/tooling/pt-instance-builtins.md). Candidate
-build/GPU results are pending. Derivative-dependent application materials
+tracked in [instance built-ins](kb/tooling/pt-instance-builtins.md). BCC restores
+real instance colors and displacement in the minimal Vulkan fixture, but a
+separate shared-owner test reproduces aliased deformation buffers. Its
+owner-isolation correction is a candidate awaiting rebuild/GPU regression.
+Derivative-dependent application materials
 need a separate RT path; successful short opening captures did not establish
 full material compatibility during gameplay. The retained C1 results are not
 rewritten as comprehensive PT acceptance.
+
+Separate BCC synchronous-compilation lifecycle controls pass eight of nine
+pixel phases. The remaining StandardMaterial3D merged MultiMesh phase renders
+white instead of instance colors despite `vertex_color_use_as_albedo=true`;
+this inherited gap is outside the custom-shader owner-cache correction.
+Strict controls still log `PRESENT_AFTER_WRITE` at swapchain presentation. The
+attempted process-only overlay-disable control still loaded the RTSS layer,
+so it does not isolate the overlay's contribution. Pixel checks and native exit codes must remain
+separate from clean Vulkan validation; these results do not establish RR/FG
+acceptance.
 
 Found in the step 3 baseline (2026-10-08, commit `a6a531899a`, 4 spp, 3
 bounces, no denoiser). Screenshots were taken with `--shot` for every view in
@@ -143,6 +181,15 @@ Other notes:
 ## Findings log
 
 Newest first. Note the date, the commit, the view and what you saw or changed.
+
+- 2026-10-26: At `bcc08cc81cc71e3c02b800b055f21fd11634d448`, a visible
+  Vulkan run on RTX 4060 / driver 610.88 reproduces both shared-owner displacement
+  failures (native exit 1, 10.891 seconds). Expected left-owner centers are empty;
+  red pixels occupy the other owner's displacement. New validated owner-RID
+  cache isolation includes node and renderer cleanup; candidate rebuild and GPU
+  regression are pending. Separate synchronous lifecycle controls pass 8/9 pixel
+  phases but retain the Standard merged-color gap and strict presentation
+  synchronization errors. See [instance findings](kb/tooling/pt-instance-builtins.md).
 
 - 2026-10-24: Pinned 4.8 beta 1 sync preserves the PT renderer, fog and
   lifetime fixes. Upstream compressed shader generation retains all five

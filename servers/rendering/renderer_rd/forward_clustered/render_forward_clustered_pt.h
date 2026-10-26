@@ -60,6 +60,7 @@ protected:
 	virtual bool _ddgi_get_fog_resources(RenderSceneBuffersRD *p_render_buffers, RID &r_data_buffer, RID &r_probe_buffer, RID &r_irradiance_atlas, RID &r_distance_atlas) override;
 
 public:
+	virtual void geometry_instance_free(RenderGeometryInstance *p_geometry_instance) override;
 	virtual Dictionary ddgi_get_probe_data(const Ref<RenderSceneBuffers> &p_render_buffers) override;
 
 	RenderForwardClusteredPT();

@@ -594,6 +594,8 @@ protected:
 	public:
 		/// Heap-allocated procedural RT state. Only created when the instance is procedural.
 		RTProceduralState *rt_procedural = nullptr;
+		// Validated owner identity for per-instance MultiMesh displacement.
+		RID rt_multimesh_deformed_owner;
 
 		// lightmap
 		RID lightmap_instance;

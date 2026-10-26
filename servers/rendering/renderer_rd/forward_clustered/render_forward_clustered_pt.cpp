@@ -40,6 +40,15 @@
 
 using namespace RendererSceneRenderImplementation;
 
+void RenderForwardClusteredPT::geometry_instance_free(RenderGeometryInstance *p_geometry_instance) {
+	GeometryInstanceForwardClustered *ginstance = static_cast<GeometryInstanceForwardClustered *>(p_geometry_instance);
+	ERR_FAIL_NULL(ginstance);
+	if (raytracing) {
+		raytracing->_free_mm_deformed_owner(ginstance->rt_multimesh_deformed_owner);
+	}
+	RenderForwardClustered::geometry_instance_free(p_geometry_instance);
+}
+
 void RenderForwardClusteredPT::_render_scene(RenderDataRD *p_render_data, const Color &p_default_bg_color) {
 	ERR_FAIL_NULL(p_render_data);
 
