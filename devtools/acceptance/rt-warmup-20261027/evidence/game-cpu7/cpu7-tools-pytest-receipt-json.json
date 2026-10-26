@@ -1,0 +1,21 @@
+{
+  "name": "tools-pytest",
+  "command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "tools/tests",
+    "-o",
+    "cache_dir=<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\pytest-tools"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:21:00.866308+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\tools-pytest.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 100.906,
+  "finished_utc": "2026-10-26T16:22:41.767214+00:00",
+  "log_sha256": "3e93ddff1b2bd889279dae51d540bd48cc4a27923baba7072a132cffdaa82f96",
+  "status": "PASS"
+}

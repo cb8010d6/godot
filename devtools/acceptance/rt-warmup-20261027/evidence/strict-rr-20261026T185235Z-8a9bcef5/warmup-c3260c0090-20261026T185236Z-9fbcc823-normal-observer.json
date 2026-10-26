@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "action": "catalog_scene_before_ready",
+      "demo_override": 1,
+      "map_override": 0,
+      "scene": "res://scenes/skate/skate_game.tscn"
+    }
+  ],
+  "api": "vulkan",
+  "case": "normal",
+  "elapsed_msec": 6289,
+  "engine": {
+    "build": "custom_build",
+    "hash": "c3260c00904c7e3fa7b22811ef4bd5ccd950ebfa",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1793039509
+  },
+  "gate_events": [
+    {
+      "event": "created",
+      "id": 205806113377,
+      "ordinal": 1,
+      "wall_msec": 6289
+    }
+  ],
+  "gates": [
+    {
+      "baseline": {},
+      "completed": false,
+      "id": 205806113377,
+      "observer_serials": {},
+      "samples": []
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "physics": "Jolt Physics",
+  "requested_players": 1,
+  "scope": "Actual game gate observer, private physics probe, first-camera near-pose override after PLAY; not natural gameplay/performance",
+  "shots": [],
+  "status": "RUNNING",
+  "violations": []
+}

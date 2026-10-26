@@ -1,0 +1,16 @@
+{
+  "name": "privacy-only",
+  "command": [
+    "<program-files>\\nodejs\\node.exe",
+    "tools/publication_audit.mjs",
+    "--privacy-only"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:20:58.679736+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\privacy-only.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 2.11,
+  "finished_utc": "2026-10-26T16:21:00.774212+00:00",
+  "log_sha256": "6ea0601ddc181b31583d1b0d274b59b4fbaebb434655ca176c8f706de12a7abc",
+  "status": "PASS"
+}

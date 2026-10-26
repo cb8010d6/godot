@@ -1,0 +1,18 @@
+{
+  "scope": ".",
+  "scannedFiles": 1457,
+  "binaryAssets": 273,
+  "binaryBytes": 788754599,
+  "findings": [],
+  "trackedExcluded": [],
+  "gitHistoryChecked": false,
+  "rightsReviewOutstanding": 0,
+  "maintainerDeclaredOriginals": 39,
+  "assetsNotMaterialized": 0,
+  "publishReady": true,
+  "limitations": [
+    "Pattern and embedded-metadata scan; not proof that no personal data or unrecognised credentials exist.",
+    "Does not inspect image appearance, spoken audio, all binary formats, or historical commits.",
+    "Documented sources and maintainer originality declarations are recorded separately; neither is an independent legal guarantee."
+  ]
+}

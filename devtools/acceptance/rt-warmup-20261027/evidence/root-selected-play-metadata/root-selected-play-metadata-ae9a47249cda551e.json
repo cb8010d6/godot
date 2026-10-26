@@ -1,0 +1,15 @@
+{
+  "status": "CREATED_AND_REREAD",
+  "shortcut": "<host-user>\\Desktop\\<game> NVIDIA Vulkan RR-D.lnk",
+  "arguments": "-NoProfile -ExecutionPolicy Bypass -File \"<previous-evidence>\\launch_nvidia.ps1\" -EnginePath \"<evidence>\\builds\\editor-d29e706530-sdk214\\godot.windows.editor.x86_64.exe\" -AllowedEngineSha d29e7065306d670a643ca0ea7a362c4b38cea3c5 -ExpectedBinarySha256 edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3 -ProjectPath \"<workspace>\\play-warmup-d29e706530\\game-rrd\" -Renderer vulkan -ProfileName rr-compat -DisableStreamlineFG",
+  "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "game_sha": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+  "default_auto_project_unchanged": true,
+  "normal_shortcut_unchanged": true,
+  "rr_compat_project": "<workspace>\\play-warmup-d29e706530\\game-rrd",
+  "rr_compat_profile": "<previous-evidence>\\nvidia-play-profile-rr-compat",
+  "fg_plugin_disabled": true,
+  "rr_preset_requested": "D",
+  "ota_disabled_for_reproducible_runtime": true,
+  "shortcut_sha256": "9b7fb530f154d704ccde8bc9953323b4e8b886341dc0681ba79af5c92b72bdf9"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_sha": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "native_release_expected": {
+    "file": "godot.windows.template_release.x86_64.exe",
+    "bytes": 80790016,
+    "sha256": "d3a592fa9f079a34e6150c54aaab9fc89ccacc5f034e815494e568d27b9486a0"
+  },
+  "source_script": {
+    "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\readiness.gd",
+    "bytes": 8543,
+    "sha256": "13f0d4b5e78178957e2d400fdab1d1a1f26efd950d71afb515bf01660fa1b3c1"
+  },
+  "source_project": {
+    "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\project.godot",
+    "bytes": 338,
+    "sha256": "6965601374958189d8ceead15628523ca6e186e0e0389c274504f858984dd672"
+  },
+  "script_change": "One prepended class_name RTReadinessRegression line only",
+  "project_change": "One application/run/main_loop_type setting only",
+  "script_body_identical": true,
+  "original_five_phase_assertions_unchanged": true,
+  "runtime_linked": false,
+  "import": "NOT_EXECUTED",
+  "export": "NOT_EXECUTED",
+  "gpu": "NOT_EXECUTED",
+  "pck": "NOT_CREATED",
+  "files": [
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\readiness.gd",
+      "bytes": 8576,
+      "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\project.godot",
+      "bytes": 381,
+      "sha256": "f0ff1dd75a9f42b493d0aa40df9e921e2fc50cc7274ed8a5561becf146ec1424"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\export_presets.cfg",
+      "bytes": 262,
+      "sha256": "f3d3e3f1dba8a4ac9b7f389b223270b11dd78970f3d5d6aff9fc4fba0d39d6fb"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\link-runtime.ps1",
+      "bytes": 2554,
+      "sha256": "b1502b8f620afba05acf2b9f7e46ac0ae29c12e637d0ca014e29e096730857cc"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\commands.json",
+      "bytes": 4088,
+      "sha256": "8037d91782ba44d9e84f7855b938c427337bf5119d5ca0daad416cee05c5091b"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\README.md",
+      "bytes": 4380,
+      "sha256": "ab7e39fbeaa00a68d13cdb6122dbf3e5e02aa9b0b078afe5f33dba96c4097eda"
+    }
+  ]
+}

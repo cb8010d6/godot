@@ -1,0 +1,20 @@
+{
+  "name": "hub-pytest",
+  "command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "cache_dir=<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\pytest-hub"
+  ],
+  "cwd": "<game>\\hub",
+  "started_utc": "2026-10-26T16:22:42.090520+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\hub-pytest.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 4.797,
+  "finished_utc": "2026-10-26T16:22:46.894216+00:00",
+  "log_sha256": "2fed2e918e6b2eb0eeb54736a24bc2fdfcf380a13eca653e97b1dd3bf15104e1",
+  "status": "PASS"
+}

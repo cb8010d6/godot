@@ -1,0 +1,16 @@
+{
+  "name": "i18n",
+  "command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "tools/i18n_check.py"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:20:58.215700+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\i18n.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 0.391,
+  "finished_utc": "2026-10-26T16:20:58.607525+00:00",
+  "log_sha256": "e96866a89da241ab2f223f8b8f628d75648661871486e1c2289abd99495b8aa1",
+  "status": "PASS"
+}

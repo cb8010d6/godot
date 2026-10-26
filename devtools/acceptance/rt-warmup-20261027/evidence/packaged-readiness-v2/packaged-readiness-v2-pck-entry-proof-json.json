@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "scope": "CPU audit of actual PCK and existing parent-executed GPU receipts; this audit launched no native process",
+  "reader_original": {
+    "file": "<prior-evidence>\\<game>-a738-export\\pck_inventory.py",
+    "bytes": 3836,
+    "sha256": "8998956e80b60336dbf0232c7a7b3788c96503c354b82c081bcafa5df73fe3c9"
+  },
+  "v1_adapter_read_only": {
+    "file": "<evidence>\\packaged-readiness\\verify_pack.py",
+    "bytes": 2078,
+    "sha256": "5494eb5d48b7a944d88ad345d682b2ee05c6cbeaa98572b4bb6b9cd33956c13b"
+  },
+  "reader_adaptation": "Target readiness.gd; original layout/MD5/source-byte checks retained; all payload MD5s additionally checked",
+  "global_class_registration_verified": true,
+  "project_binary_strings": {
+    "application/config/name": "RT Readiness Regression",
+    "application/run/main_scene": "res://bootstrap.tscn",
+    "application/run/main_loop_type": "RTReadinessRegression"
+  },
+  "bootstrap_remap_target": "res://.godot/exported/133200997/export-119bc78e9a79af8941f2f0178e74e6ab-bootstrap.scn",
+  "bootstrap_resource_header": "52535243",
+  "all_payload_md5_verified": true,
+  "script_payload_matches_source": true,
+  "pack": {
+    "file": "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.pck",
+    "bytes": 10444,
+    "sha256": "2be2f51a61cf4461bac7656cd05c13cf58ebe408535de24ef1008c7026fa36c2"
+  },
+  "release_executable_unchanged": {
+    "file": "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.exe",
+    "bytes": 80790016,
+    "sha256": "d3a592fa9f079a34e6150c54aaab9fc89ccacc5f034e815494e568d27b9486a0"
+  },
+  "receipts": {
+    "import": {
+      "artifact": {
+        "file": "<previous-evidence>\\packaged-readiness-v2-8a7364-import.json",
+        "bytes": 1659,
+        "sha256": "4626ca2ff3bce3841ec4d7b61b50f912bec548d3935087211324e0744d6869e7"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\packaged-readiness-v2-8a7364-import.log",
+        "bytes": 1060,
+        "sha256": "ac8490b68fbf658a212fb2f6f47a380e91bf5f3da0fa69a8dd54bc79de3ee6c5"
+      },
+      "duration_seconds": 5.187,
+      "checkout_sha_at_execution": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+      "command": [
+        "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\packaged-readiness-v2\\project",
+        "--import"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+          "bytes": 161809408,
+          "sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    },
+    "export": {
+      "artifact": {
+        "file": "<previous-evidence>\\packaged-readiness-v2-8a7364-export.json",
+        "bytes": 1807,
+        "sha256": "496a74a4da7071a944dad3c313844f772d754adc888b9a5b7e00a6e9dd78adba"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\packaged-readiness-v2-8a7364-export.log",
+        "bytes": 1577,
+        "sha256": "554f0d24402ce1bcc71ce3dd4472d5a0d500956505553ed9eb83317ef9b9c599"
+      },
+      "duration_seconds": 4.985,
+      "checkout_sha_at_execution": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+      "command": [
+        "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\packaged-readiness-v2\\project",
+        "--export-pack",
+        "Release readiness",
+        "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.pck"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+          "bytes": 161809408,
+          "sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    },
+    "run": {
+      "artifact": {
+        "file": "<previous-evidence>\\packaged-readiness-v2-8a7364-run.json",
+        "bytes": 1754,
+        "sha256": "012c3b3c687886e72677a6798b66c3802b18baffc775a3bdfba892bb5daf0a9e"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\packaged-readiness-v2-8a7364-run.log",
+        "bytes": 28719,
+        "sha256": "a64d17d989d0951156458e83a33c05a73b1bbf57d3346d3d35a7c3ece7756a6c"
+      },
+      "duration_seconds": 21.531,
+      "checkout_sha_at_execution": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+      "command": [
+        "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.exe",
+        "--rendering-driver",
+        "vulkan",
+        "--rendering-method",
+        "forward_plus",
+        "--verbose",
+        "--",
+        "--output=<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.exe",
+          "bytes": 80790016,
+          "sha256": "d3a592fa9f079a34e6150c54aaab9fc89ccacc5f034e815494e568d27b9486a0"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    }
+  },
+  "summary": {
+    "file": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5\\summary.json",
+    "bytes": 3479,
+    "sha256": "7fb353c1e0936b9967da4f052d21d3fefe04d128a352c0a6f97f56929171df5a"
+  },
+  "actual_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "actual_api": "vulkan",
+  "actual_native_sha": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "summary_elapsed_msec": 15042,
+  "pending_observed": true,
+  "five_phases_verified": true,
+  "four_original_pngs": [
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5\\first_view_only.png",
+      "bytes": 2209,
+      "sha256": "7528c47ddd8fe310e6f7a613b847437566f63417800fbc2c904e4b6ab750ae05"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5\\both_views.png",
+      "bytes": 3226,
+      "sha256": "59555e5dc394fe495a1d17c7809a9ee52e1492cc31c953bccb9383aa74dcabc5"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5\\changed_source.png",
+      "bytes": 3309,
+      "sha256": "485cdb6d770c6d8d1a89a0ddf3576a6b707c83056296f72c535c66370963a0a5"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5\\changed_variant.png",
+      "bytes": 3077,
+      "sha256": "43e11a46b49cad0ff932f149919b8b5a1f339e62a7ef6ac8e3b114840b33b6fc"
+    }
+  ],
+  "intentional_bad_shader_error_retained": true,
+  "limits": "Recorded-command/live RT statistics; no RR/DLSS/FG, presentation, GPU-fence or strict-validation acceptance"
+}

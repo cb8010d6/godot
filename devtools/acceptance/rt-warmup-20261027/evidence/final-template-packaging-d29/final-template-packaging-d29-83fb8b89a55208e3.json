@@ -1,0 +1,37 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "<evidence>\\validation-final\\package_templates_win64.ps1",
+    "-ExpectedSha",
+    "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "-SourceRoot",
+    "<source>",
+    "-BinDirectory",
+    "<evidence>\\builds\\native-six-d29e706530",
+    "-DistDirectory",
+    "<evidence>\\packages-d29e706530"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:27:56.890393+00:00",
+  "log": "<previous-evidence>\\logs\\warmup-package-standard-d29.log",
+  "pid": 29304,
+  "exit_code": 0,
+  "duration_seconds": 9.421,
+  "finished_utc": "2026-10-26T19:28:06.248820+00:00"
+}

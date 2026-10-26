@@ -1,5 +1,16 @@
 # Update log
 
+## 2026-10-27 (final RT warm-up acceptance and RR-D compatibility)
+
+* [Final measured report](../devtools/RT_WARMUP_ACCEPTANCE_2026_10_27.md): native
+  d29 six Windows targets, two repository smokes, four installed-template games,
+  exact public readiness PCK and actual game production Vulkan/D3D12 entry pass.
+* [RR ownership](/tooling/streamline-rr-resource-ownership.md): D is strict-CLEAN
+  in primitive and bounded actual-game 1/4-player scenes with FG plugin omitted.
+  Automatic/F remains red. Native 8b, working d29 and game 3d remain distinct;
+  no direct preset/model readback is invented. SDK automatic first reset and
+  legal lazy retention are confirmed; ID-reuse/history remains unmeasured.
+
 ## 2026-10-27 (minimal RR reproduction and diagnostic cleanup)
 
 * [RR ownership](/tooling/streamline-rr-resource-ownership.md): actual RR calls

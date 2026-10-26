@@ -1,0 +1,81 @@
+{
+  "external_strict_verdict": "NOT_ESTABLISHED",
+  "external_coverage_established": false,
+  "external_coverage_checks": {
+    "recorder_pid_identity_bound": false,
+    "frozen_inputs_unchanged": true,
+    "module_samples_obtained": false,
+    "sampled_engine_module_exact_path": false,
+    "only_explicit_vvl_inserted": false,
+    "sync_validation_enabled_readback": false,
+    "actual_frozen_vvl_dll_path": false,
+    "no_rtss_modules_observed": true,
+    "no_fg_plugin_observed": true,
+    "actual_streamline_interposer_and_sr_plugins": false,
+    "streamline_modules_from_frozen_runtime": false,
+    "actual_startup_diagnostic_marker": false,
+    "observer_fg_probe_api": false,
+    "observer_fg_status_matches_its_probe": false,
+    "observer_actual_fg_unavailable": false,
+    "actual_engine_sha_readback": false,
+    "actual_vulkan_gpu": false
+  },
+  "observer_case_completed": false,
+  "observer_runtime_checks": {
+    "observer_matrix_pass": false,
+    "native_exit_zero": false,
+    "observer_all_checks_pass": false,
+    "observer_status_pass": false,
+    "case_log_policy": true
+  },
+  "diagnostic_token_occurrences": {},
+  "all_native_error_lines": [],
+  "observer_original_validation": null,
+  "observer_original_status": null,
+  "native_exit_code": null,
+  "module_summary": {
+    "successful_samples": 0,
+    "rtss_module_names": null,
+    "known_overlay_module_names": null,
+    "streamline_module_names": null
+  },
+  "log_analysis": {
+    "inserted_layer_names": [],
+    "forced_disabled_lines": [],
+    "explicit_vvl_inserted": false,
+    "rtss_layer_inserted": false,
+    "synchronization_validation_reported_enabled": false,
+    "diagnostic_token_occurrences": {},
+    "engine_error_line_count": 0,
+    "api_header": null
+  },
+  "sdk_request_lines": [],
+  "module_absence_scope": "Only actual samples of this PID; no guarantee about transients between one-second samples. No global overlay configuration changed.",
+  "scope": "External strict proof for this bounded observer run only. Original Observer NOT_ESTABLISHED/requested fields remain unchanged; no actual model identity, FG or latency pass.",
+  "wrapper_execution_checks": {
+    "owned_observer_job_assigned": true,
+    "no_launcher_exception": true,
+    "not_timed_out": true,
+    "cleanup_complete": true,
+    "module_sampling_finished": true
+  },
+  "wrapper": {
+    "path": "<evidence>\\strict-game\\runs\\20261026T174855Z-09d08ed8\\wrapper.json",
+    "bytes": 14197,
+    "sha256": "7b858b771278da4d5222545d206f3c3daded5fa9f775cb615a6713a1bc561d92"
+  },
+  "module_samples": {
+    "path": "<evidence>\\strict-game\\runs\\20261026T174855Z-09d08ed8\\module-samples.json",
+    "bytes": 47,
+    "sha256": "42d76349065bf139c3ff9b6012b708027ebfc45eeccba14a7a792613ad19c236"
+  },
+  "original_observer_matrix": null,
+  "original_native_receipt": null,
+  "original_native_log": null,
+  "observer_launch_log": {
+    "path": "<evidence>\\strict-game\\runs\\20261026T174855Z-09d08ed8\\observer-launch.stdout-and-stderr.log",
+    "bytes": 929,
+    "sha256": "74bb692bf761eb2a8cdf4eaef070ecf1930b8868e2d7e477e77d9d992dc93cf1"
+  },
+  "pid_binding": {}
+}

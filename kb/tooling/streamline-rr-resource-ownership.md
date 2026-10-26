@@ -83,3 +83,25 @@ allocation/transition implementation remains unverified. A vendor runtime fix
 or a separately verified host-contract correction is still required before
 calling SDK214 Vulkan RR strict-clean. No unrelated post-device-loss recovery
 refactor is mixed into this upgrade.
+
+## Preset discriminator and bounded compatibility
+
+The same 8b diagnostic/SDK214 motion fixture with requested RR D is strictly
+CLEAN; requested F retains two WAW and two original 09600 messages. Both have
+actual non-Off RR evaluation eOk, eight tags and 160 SDK samples/49 frame records.
+This is not an RR-disabled control or a direct readback of model weights.
+
+D plus startup FG omission also passes strict actual-game 1/4-player checks.
+Native trace IDs are 1/2 and 1..5 respectively; every traced context has eight
+tags and a first successful evaluation. Four actual game views independently
+have fresh ready RT serials. Probe getters cover only 1/2; no direct SL-handle
+to Godot-path join, per-frame or model proof is claimed. Automatic/F failures
+remain; D is an optional compatibility choice, not a default-policy change.
+
+The pinned SDK already forces common reset=true on feature creation or
+mode/size/preset change; its endEvent forwards the same constants to NGX.
+That weakens host-first-reset as an explanation of fresh-process F errors.
+SDK lazy retention until plugin unload is documented and alone does not prove
+a leak. ID reuse/history and mid-session VRAM reclamation remain unmeasured;
+explicit frees require GPU completion and careful shutdown order. No redundant
+reset, unsafe destructor free or broad RD refactor was added.

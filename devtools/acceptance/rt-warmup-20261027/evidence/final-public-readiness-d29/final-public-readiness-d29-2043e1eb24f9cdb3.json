@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "CPU-only committed-source provenance; no native launched",
+  "audited_utc": "2026-10-26T19:30:00.101893+00:00",
+  "source_head": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "input_commit": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "four_exact_committed_inputs": [
+    {
+      "name": "readiness.gd",
+      "committed_bytes": 8576,
+      "committed_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+      "source_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+      "snapshot_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+      "exact_bytes_equal": true
+    },
+    {
+      "name": "project.godot",
+      "committed_bytes": 419,
+      "committed_sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8",
+      "source_sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8",
+      "snapshot_sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8",
+      "exact_bytes_equal": true
+    },
+    {
+      "name": "bootstrap.tscn",
+      "committed_bytes": 57,
+      "committed_sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67",
+      "source_sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67",
+      "snapshot_sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67",
+      "exact_bytes_equal": true
+    },
+    {
+      "name": "export_presets.cfg",
+      "committed_bytes": 250,
+      "committed_sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4",
+      "source_sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4",
+      "snapshot_sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4",
+      "exact_bytes_equal": true
+    }
+  ],
+  "existing_pck_proof": {
+    "file": "<evidence>\\public-readiness-d29e706530\\pck-entry-proof.json",
+    "sha256": "f34acc9620ffcab878cb861ea01ff50e713e3413796b149ea91c49623c87a2a3"
+  },
+  "actual_pending_observed": true,
+  "limits": "Pending was actually observed; no claim that driver cache was independently cold."
+}

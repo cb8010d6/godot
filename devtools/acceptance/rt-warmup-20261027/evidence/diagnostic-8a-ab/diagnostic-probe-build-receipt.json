@@ -1,0 +1,29 @@
+{
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "<evidence>\\fg-init-isolation\\probe\\build-probe.cmd"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "5470fe8dde76c43c16f67db64020319ea82ce788",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T16:56:58.393506+00:00",
+  "log": "<previous-evidence>\\logs\\dlssg-isolation-probe-build-01.log",
+  "pid": 38092,
+  "exit_code": 0,
+  "duration_seconds": 2.531,
+  "finished_utc": "2026-10-26T16:57:00.861292+00:00"
+}

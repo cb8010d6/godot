@@ -1,0 +1,319 @@
+{
+  "actual_tlas_instances": 3,
+  "completed_elapsed_ms": 13848,
+  "config_passed": true,
+  "displaced": false,
+  "drawn_frame_delta": 180,
+  "expected_tlas_instances": 3,
+  "frames_drawn": 779,
+  "image_save_error": 0,
+  "instance_count": 3,
+  "mesh_size": 1.0,
+  "path_passed": true,
+  "phase": "04_material_without_vertex_displacement",
+  "phase_passed": true,
+  "pixels_passed": true,
+  "post_draw_waits_total": 780,
+  "rids": {
+    "material": 8697308774411,
+    "mesh": 7808250544129,
+    "multimesh": 5171140624384,
+    "phase": "04_material_without_vertex_displacement"
+  },
+  "runtime": {
+    "api": "vulkan",
+    "api_version": "1.4.341",
+    "camera_fov": 30.0,
+    "camera_position": [
+      0.0,
+      0.0,
+      8.0
+    ],
+    "ddgi": false,
+    "deform_shader": "shader_type spatial;\nrender_mode cull_disabled;\nvarying vec3 v_tint;\nvoid vertex() {\n\tvec3 basis = INSTANCE_ID == 0 ? vec3(1, 0, 0) : (INSTANCE_ID == 1 ? vec3(0, 1, 0) : vec3(0, 0, 1));\n\tbool inputs_match = distance(COLOR.rgb, basis) < 0.01 && distance(INSTANCE_CUSTOM.rgb, basis * 0.6 + vec3(0.2)) < 0.01;\n\tv_tint = inputs_match ? basis : vec3(1);\n\tVERTEX.y += INSTANCE_CUSTOM.a * 0.5;\n\n}\nvoid fragment() {\n\tALBEDO = v_tint;\n\tEMISSION = v_tint * 0.5;\n\tROUGHNESS = 1.0;\n}\n",
+    "driver": [
+      "NVIDIA",
+      "32.0.16.1088"
+    ],
+    "engine": {
+      "build": "custom_build",
+      "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793020156
+    },
+    "fixture_sha256": "430f09f2d186c3bd2388a5098fa07fdf0c8c09537136c4ff068ebe0d7c1351ab",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "instance_inputs": [
+      {
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "custom": [
+          0.8,
+          0.2,
+          0.2,
+          -1
+        ],
+        "id": 0
+      },
+      {
+        "color": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "custom": [
+          0.2,
+          0.8,
+          0.2,
+          0
+        ],
+        "id": 1
+      },
+      {
+        "color": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "custom": [
+          0.2,
+          0.2,
+          0.8,
+          1
+        ],
+        "id": 2
+      }
+    ],
+    "max_bounces": 2,
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "pt": true,
+    "rendering_method": "forward_plus",
+    "resolution": [
+      640,
+      360
+    ],
+    "rr": 0,
+    "samples_per_pixel": 2,
+    "scaling_mode": 0,
+    "scaling_scale": 1.0,
+    "static_shader": "shader_type spatial;\nrender_mode cull_disabled;\nvarying vec3 v_tint;\nvoid vertex() {\n\tvec3 basis = INSTANCE_ID == 0 ? vec3(1, 0, 0) : (INSTANCE_ID == 1 ? vec3(0, 1, 0) : vec3(0, 0, 1));\n\tbool inputs_match = distance(COLOR.rgb, basis) < 0.01 && distance(INSTANCE_CUSTOM.rgb, basis * 0.6 + vec3(0.2)) < 0.01;\n\tv_tint = inputs_match ? basis : vec3(1);\n\n}\nvoid fragment() {\n\tALBEDO = v_tint;\n\tEMISSION = v_tint * 0.5;\n\tROUGHNESS = 1.0;\n}\n"
+  },
+  "samples": [
+    {
+      "expected": "rgb_channel_0",
+      "instance": 0,
+      "label": "center",
+      "passed": true,
+      "pixel": [
+        152,
+        180
+      ],
+      "rgb": [
+        0.952941179275513,
+        0.0549019612371922,
+        0.0549019612371922
+      ],
+      "world": [
+        -2.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected": "rgb_channel_0",
+      "instance": 0,
+      "label": "outer_edge",
+      "passed": true,
+      "pixel": [
+        152,
+        213
+      ],
+      "rgb": [
+        0.952941179275513,
+        0.0588235296308994,
+        0.0588235296308994
+      ],
+      "world": [
+        -2.0,
+        -0.400000005960464,
+        0.0
+      ]
+    },
+    {
+      "expected": "background_max_rgb_below_0.25",
+      "instance": 0,
+      "label": "displacement_only_edge_must_be_empty",
+      "passed": true,
+      "pixel": [
+        152,
+        255
+      ],
+      "rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": [
+        -2.0,
+        -0.899999976158142,
+        0.0
+      ]
+    },
+    {
+      "expected": "background_max_rgb_below_0.25",
+      "instance": 0,
+      "label": "old_mesh_width_must_be_empty",
+      "passed": true,
+      "pixel": [
+        204,
+        180
+      ],
+      "rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": [
+        -1.37000000476837,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected": "rgb_channel_1",
+      "instance": 1,
+      "label": "center",
+      "passed": true,
+      "pixel": [
+        320,
+        180
+      ],
+      "rgb": [
+        0.0549019612371922,
+        0.952941179275513,
+        0.0549019612371922
+      ],
+      "world": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected": "background_max_rgb_below_0.25",
+      "instance": 1,
+      "label": "old_mesh_width_must_be_empty",
+      "passed": true,
+      "pixel": [
+        372,
+        180
+      ],
+      "rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": [
+        0.629999995231628,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected": "rgb_channel_2",
+      "instance": 2,
+      "label": "center",
+      "passed": true,
+      "pixel": [
+        487,
+        180
+      ],
+      "rgb": [
+        0.0549019612371922,
+        0.0549019612371922,
+        0.952941179275513
+      ],
+      "world": [
+        2.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected": "rgb_channel_2",
+      "instance": 2,
+      "label": "outer_edge",
+      "passed": true,
+      "pixel": [
+        487,
+        146
+      ],
+      "rgb": [
+        0.0588235296308994,
+        0.0588235296308994,
+        0.952941179275513
+      ],
+      "world": [
+        2.0,
+        0.400000005960464,
+        0.0
+      ]
+    },
+    {
+      "expected": "background_max_rgb_below_0.25",
+      "instance": 2,
+      "label": "displacement_only_edge_must_be_empty",
+      "passed": true,
+      "pixel": [
+        487,
+        104
+      ],
+      "rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": [
+        2.0,
+        0.899999976158142,
+        0.0
+      ]
+    },
+    {
+      "expected": "background_max_rgb_below_0.25",
+      "instance": 2,
+      "label": "old_mesh_width_must_be_empty",
+      "passed": true,
+      "pixel": [
+        540,
+        180
+      ],
+      "rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": [
+        2.63000011444092,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "standard_material": false,
+  "started_elapsed_ms": 10646,
+  "visible_instance_count": 3,
+  "waited_post_draws": 180
+}

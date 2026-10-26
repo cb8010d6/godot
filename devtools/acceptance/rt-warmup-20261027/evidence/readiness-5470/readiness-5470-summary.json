@@ -1,0 +1,212 @@
+{
+  "api": "vulkan",
+  "elapsed_msec": 13944,
+  "engine": {
+    "build": "custom_build",
+    "hash": "5470fe8dde76c43c16f67db64020319ea82ce788",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1793031181
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "intentional_rt_error_phase": true,
+  "pending_observed": true,
+  "phases": [
+    {
+      "fresh_ready_counts": {
+        "0": 2
+      },
+      "phase": "first_view_only",
+      "pixels": [
+        {
+          "expected": "green",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            1.0,
+            0.623529434204102
+          ],
+          "view": 0
+        }
+      ],
+      "pixels_passed": true,
+      "png_error": 0,
+      "samples": [
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 583,
+          "tlas": 1
+        }
+      ]
+    },
+    {
+      "fresh_ready_counts": {
+        "0": 2,
+        "1": 2
+      },
+      "phase": "both_views",
+      "pixels": [
+        {
+          "expected": "green",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            1.0,
+            0.623529434204102
+          ],
+          "view": 0
+        },
+        {
+          "expected": "green",
+          "passed": true,
+          "rgb": [
+            0.552941203117371,
+            1.0,
+            0.623529434204102
+          ],
+          "view": 1
+        }
+      ],
+      "pixels_passed": true,
+      "png_error": 0,
+      "samples": [
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 585,
+          "tlas": 1
+        },
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 2,
+          "tlas": 1
+        }
+      ]
+    },
+    {
+      "fresh_ready_counts": {
+        "0": 2,
+        "1": 800
+      },
+      "phase": "changed_source",
+      "pixels": [
+        {
+          "expected": "blue",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            0.682352960109711,
+            1.0
+          ],
+          "view": 0
+        },
+        {
+          "expected": "green",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            1.0,
+            0.623529434204102
+          ],
+          "view": 1
+        }
+      ],
+      "pixels_passed": true,
+      "png_error": 0,
+      "samples": [
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 1385,
+          "tlas": 1
+        },
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 802,
+          "tlas": 1
+        }
+      ]
+    },
+    {
+      "fresh_ready_counts": {
+        "0": 2,
+        "1": 420
+      },
+      "phase": "changed_variant",
+      "pixels": [
+        {
+          "expected": "blue",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            0.682352960109711,
+            1.0
+          ],
+          "view": 0
+        },
+        {
+          "expected": "green",
+          "passed": true,
+          "rgb": [
+            0.556862771511078,
+            1.0,
+            0.623529434204102
+          ],
+          "view": 1
+        }
+      ],
+      "pixels_passed": true,
+      "png_error": 0,
+      "samples": [
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 1805,
+          "tlas": 1
+        },
+        {
+          "coherent": true,
+          "dispatches": 1,
+          "failed": 0,
+          "pending": 0,
+          "serial": 1222,
+          "tlas": 1
+        }
+      ]
+    },
+    {
+      "failed_detected": true,
+      "phase": "intentional_rt_frontend_failure",
+      "sample": {
+        "coherent": true,
+        "dispatches": 1,
+        "failed": 1,
+        "pending": 0,
+        "serial": 1806,
+        "tlas": 1
+      }
+    }
+  ],
+  "reason": "",
+  "scope": "Recorded RT commands/live pipeline, not GPU fence, present, DLSS or FG verification",
+  "status": "PASS"
+}

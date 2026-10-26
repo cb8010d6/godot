@@ -1,0 +1,53 @@
+{
+  "command": [
+    "<windows>\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "<previous-evidence>\\launch_nvidia.ps1",
+    "-EnginePath",
+    "<evidence>\\builds\\editor-d29e706530-sdk214\\godot.windows.editor.x86_64.exe",
+    "-AllowedEngineSha",
+    "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "-ExpectedBinarySha256",
+    "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3",
+    "-Renderer",
+    "vulkan",
+    "-ProjectPath",
+    "<workspace>\\play-warmup-d29e706530\\game",
+    "-ValidateOnly"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<windows>\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "bytes": 455680,
+      "sha256": "9785001b0dcf755eddb8af294a373c0b87b2498660f724e76c4d53f9c217c7a3"
+    },
+    {
+      "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T20:15:18.700266+00:00",
+  "log": "<previous-evidence>\\logs\\launcher-d29-preflight-vulkan.log",
+  "pid": 24556,
+  "exit_code": 0,
+  "duration_seconds": 4.078,
+  "finished_utc": "2026-10-26T20:15:22.546597+00:00"
+}

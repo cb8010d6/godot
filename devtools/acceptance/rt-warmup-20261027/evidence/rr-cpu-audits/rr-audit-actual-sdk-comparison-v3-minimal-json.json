@@ -1,0 +1,377 @@
+{
+  "scope": "CPU audit of finalized root-executed GPU evidence; no native process launched by auditor",
+  "native_sha": "8b1055662793954959fe5ce8b11843437af0adc3",
+  "actual_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "actual_driver": "vulkan",
+  "strict_validation_status": "FAIL",
+  "infrastructure_verified": true,
+  "isolation_verified": true,
+  "runtime_completed": true,
+  "native_exit_code": 0,
+  "rr_evidence": {
+    "actual_evaluate_eok": true,
+    "one_viewport_eight_tags": true,
+    "actual_sdk_rr_state": true,
+    "all_49_pt_rr_fg_off_frames": true,
+    "tags": [
+      {
+        "viewport": 1,
+        "tag": 3,
+        "rid": 5248450035764,
+        "native": 2555265022953748,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 4,
+        "rid": 5519032975427,
+        "native": 3775722929786218,
+        "state": 1,
+        "width": 960,
+        "height": 540
+      },
+      {
+        "viewport": 1,
+        "tag": 0,
+        "rid": 5252745003061,
+        "native": 2557464046209302,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 1,
+        "rid": 5484673237058,
+        "native": 3765827325136225,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 7,
+        "rid": 5373004087352,
+        "native": 3687761999564058,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 8,
+        "rid": 5377299054649,
+        "native": 3689961022819612,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 14,
+        "rid": 5381594021946,
+        "native": 3692160046075166,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      },
+      {
+        "viewport": 1,
+        "tag": 42,
+        "rid": 5385888989243,
+        "native": 3694359069330720,
+        "state": 5,
+        "width": 640,
+        "height": 360
+      }
+    ],
+    "evaluations": [
+      {
+        "viewport": 1,
+        "mode": 3,
+        "result": 0
+      }
+    ],
+    "tag_viewports": [
+      1
+    ],
+    "scope": "Only observed native first RR call success/non-Off and actual SDK getter/version evidence; not model identity, every-frame success, visual quality or performance."
+  },
+  "metadata": {
+    "api": "1.4.341",
+    "capabilities": {
+      "0": true,
+      "1": false,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    },
+    "driver": "vulkan",
+    "editor_hint": false,
+    "engine": {
+      "build": "custom_build",
+      "hash": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793040887
+    },
+    "frame_generation_status": {
+      "available": false,
+      "eligible": false,
+      "reason": "unavailable",
+      "rendered_3d_views": 0,
+      "requested_3d_views": 0,
+      "sdk_enabled": false,
+      "supported_generated_frames": 0
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "mode": "rr",
+    "process_id": 36412,
+    "renderer": "forward_plus",
+    "requested_rr_preset": "?",
+    "requested_sr_preset": "Recommended",
+    "suite": "motion"
+  },
+  "frame_count": 49,
+  "sdk_state_sample_count": 160,
+  "actual_sdk_feature_versions": [
+    {
+      "feature": 0.0,
+      "sl": "2.14.16",
+      "ngx": "310.9.16",
+      "result": 0.0
+    },
+    {
+      "feature": 3.0,
+      "sl": "2.14.16",
+      "ngx": "0.0.0",
+      "result": 0.0
+    },
+    {
+      "feature": 4.0,
+      "sl": "2.14.16",
+      "ngx": "0.0.0",
+      "result": 0.0
+    },
+    {
+      "feature": 1001.0,
+      "sl": "2.14.16",
+      "ngx": "310.9.16",
+      "result": 0.0
+    }
+  ],
+  "actual_rr_getter_eok_samples": 160,
+  "validation_message_id_counts": {
+    "Loader Message": 9,
+    "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+    "VUID-vkCmdDraw-None-09600": 2
+  },
+  "validation_token_occurrences": {
+    "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+    "VUID-vkCmdDraw-None-09600": 4
+  },
+  "loaded_runtime": [
+    {
+      "name": "nvngx_deepdvc.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_deepdvc.dll",
+      "bytes_in_memory": 3211264,
+      "first_seen_utc": "2026-10-26T19:04:07.713644+00:00",
+      "last_seen_utc": "2026-10-26T19:04:17.918991+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_deepdvc.dll",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "nvngx_dlss.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlss.dll",
+      "bytes_in_memory": 59068416,
+      "first_seen_utc": "2026-10-26T19:04:06.706643+00:00",
+      "last_seen_utc": "2026-10-26T19:04:17.918991+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlss.dll",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "nvngx_dlssd.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssd.dll",
+      "bytes_in_memory": 48455680,
+      "first_seen_utc": "2026-10-26T19:04:07.713644+00:00",
+      "last_seen_utc": "2026-10-26T19:04:17.918991+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssd.dll",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "nvngx_dlssg.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssg.dll",
+      "bytes_in_memory": 7618560,
+      "first_seen_utc": "2026-10-26T19:04:07.713644+00:00",
+      "last_seen_utc": "2026-10-26T19:04:17.918991+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssg.dll",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.common.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.common.dll",
+      "bytes_in_memory": 925696,
+      "first_seen_utc": "2026-10-26T19:04:06.706643+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.common.dll",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.dlss.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss.dll",
+      "bytes_in_memory": 430080,
+      "first_seen_utc": "2026-10-26T19:04:06.706643+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss.dll",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.dlss_d.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_d.dll",
+      "bytes_in_memory": 446464,
+      "first_seen_utc": "2026-10-26T19:04:07.713644+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_d.dll",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.interposer.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.interposer.dll",
+      "bytes_in_memory": 663552,
+      "first_seen_utc": "2026-10-26T19:04:06.706643+00:00",
+      "last_seen_utc": "2026-10-26T19:04:17.918991+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.interposer.dll",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.nis.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nis.dll",
+      "bytes_in_memory": 1159168,
+      "first_seen_utc": "2026-10-26T19:04:08.720142+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nis.dll",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.pcl.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.pcl.dll",
+      "bytes_in_memory": 360448,
+      "first_seen_utc": "2026-10-26T19:04:08.720142+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.pcl.dll",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      },
+      "matches_frozen_hash": true
+    },
+    {
+      "name": "sl.reflex.dll",
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.reflex.dll",
+      "bytes_in_memory": 389120,
+      "first_seen_utc": "2026-10-26T19:04:08.720142+00:00",
+      "last_seen_utc": "2026-10-26T19:04:16.897443+00:00",
+      "frozen_file": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.reflex.dll",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      },
+      "matches_frozen_hash": true
+    }
+  ],
+  "all_loaded_runtime_hashes_match": true,
+  "sl_dlss_g_plugin_sampled": false,
+  "nvngx_dlssg_library_sampled": true,
+  "rtss_modules_observed": [],
+  "evidence_refs": [
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\result.json",
+      "bytes": 35257,
+      "sha256": "e9d79f5e2ca256c470ed296ff9761ab566cc5f508ab7c12539d5ea2ece0ed559"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\inventory.json",
+      "bytes": 4731,
+      "sha256": "cf54f6015349e00b75fc8ace95e664884dd43926883d10d5bd5bbebacf7cc049"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\godot.stdout-and-stderr.log",
+      "bytes": 80353,
+      "sha256": "351eaa154cbef3792f1eb3fb9ab3d444bf4bf3faf4a3e700bffd9632d8cb3221"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\module-samples.json",
+      "bytes": 37018,
+      "sha256": "6cdf74c5ebc44a17d4196a24d475b1f56b4fc37496bbb7ce49234bf9d71fb718"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\capture\\metadata.json",
+      "bytes": 825,
+      "sha256": "95b23e0fbe23a7679b93fee52041d635be49e4816aa317b3aa3c9597624ff0d1"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\capture\\sdk-state.json",
+      "bytes": 306109,
+      "sha256": "d88c463e42e5a5048ac6feb231198f8bbe634ca6ae367f163c624969fb14c087"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\capture\\frames.json",
+      "bytes": 15213,
+      "sha256": "3ee0ad0ae6cd94c3b955f06526429b5f9b1ec8a98b4af2b3f52baa48c3e25b54"
+    },
+    {
+      "path": "<evidence>\\rr-minimal\\runs\\rr_sdk214_no_dlss_g-20261026T190405Z-3bfadd41\\receipt.json",
+      "bytes": 26518,
+      "sha256": "4db9ad06fe1d3d0e5356415a24596616a4a4379b9606ecf6f2507e8c4f6a38b9"
+    }
+  ],
+  "bounds": [
+    "A single native first RR call returned non-Off/eOk; no actual model-weight or full visual-quality proof.",
+    "Same public primitive motion fixture reproduces strict diagnostics without private game assets.",
+    "Original SDK210 device-lost repeat remains a failure; this is not a downgrade recommendation.",
+    "MessageId event counts and all-text diagnostic token counts are different measures and are both preserved."
+  ]
+}

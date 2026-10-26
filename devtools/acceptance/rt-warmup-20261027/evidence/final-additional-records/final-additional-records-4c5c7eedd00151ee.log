@@ -1,0 +1,13 @@
+{
+    "EngineVersion":  "4.8.beta1.custom_build.d29e70653",
+    "BinarySha256":  "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3",
+    "Renderer":  "vulkan",
+    "ReuseExistingHub":  false,
+    "Python":  "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "GamePortOccupied":  false,
+    "Profile":  "<previous-evidence>\\nvidia-play-profile",
+    "GameProject":  "<workspace>\\play-warmup-d29e706530\\game",
+    "LaunchPerformed":  false,
+    "GameJob":  "KILL_ON_JOB_CLOSE",
+    "QuitAfterFrames":  0
+}

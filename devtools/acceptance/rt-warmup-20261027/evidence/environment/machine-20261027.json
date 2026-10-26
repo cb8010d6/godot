@@ -1,0 +1,18 @@
+{
+  "captured_utc": "2026-10-26T18:46:03.8322018Z",
+  "windows_caption": "Microsoft Windows 10 Pro",
+  "windows_version": "10.0.19045",
+  "build": "19045",
+  "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics     ",
+  "ram_bytes": 33524641792,
+  "free_ram_bytes": 13017366528,
+  "gpu_csv": [
+    "NVIDIA GeForce RTX 4060 Laptop GPU, 610.88, 8188 MiB"
+  ],
+  "dotnet_sdk": "10.0.402",
+  "visual_studio_version": "17.14.37824.6",
+  "visual_studio_display_version": "17.14.43",
+  "vulkan_sdk_env": null,
+  "free_f_bytes": 69809795072,
+  "free_c_bytes": 13507387392
+}

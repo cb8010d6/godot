@@ -1,0 +1,61 @@
+{
+  "scope": "Actual standalone PCK directory and include payload; no engine execution",
+  "pack": "<evidence>\\packaged-readiness\\runtime\\godot.windows.template_release.x86_64.pck",
+  "pack_bytes": 9480,
+  "pack_sha256": "beda87fe92f00b2f381cb4c3c2c160f4a1964ef23980c87ba00b473895cdd80b",
+  "format": 4,
+  "engine_version_header": [
+    4,
+    8,
+    0
+  ],
+  "flags": 2,
+  "directory_offset": 9232,
+  "entry_count": 4,
+  "entries": [
+    {
+      "resource": "res://.godot/global_script_class_cache.cfg",
+      "offset": 8688,
+      "bytes": 174,
+      "md5_directory": "f67e31dc78181616863bf61b36871ea3",
+      "flags": 0
+    },
+    {
+      "resource": "res://.godot/uid_cache.bin",
+      "offset": 8864,
+      "bytes": 34,
+      "md5_directory": "ea7b64b89d6e34daf11c47e60bd0bda0",
+      "flags": 0
+    },
+    {
+      "resource": "res://project.binary",
+      "offset": 8912,
+      "bytes": 313,
+      "md5_directory": "e17f754ff555026d8fcd44432cc8c53c",
+      "flags": 0
+    },
+    {
+      "resource": "res://readiness.gd",
+      "offset": 112,
+      "bytes": 8576,
+      "md5_directory": "343d655eb819b2c8bf1b05b08c4a7853",
+      "flags": 0
+    }
+  ],
+  "packaged_script": {
+    "resource": "res://readiness.gd",
+    "offset": 112,
+    "bytes": 8576,
+    "md5_directory": "343d655eb819b2c8bf1b05b08c4a7853",
+    "flags": 0,
+    "source": "<evidence>\\packaged-readiness\\project\\readiness.gd",
+    "source_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+    "payload_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+    "checks": {
+      "include_present": true,
+      "payload_matches_source_bytes": true,
+      "payload_md5_matches_directory": true
+    }
+  },
+  "passed": true
+}

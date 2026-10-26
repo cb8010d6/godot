@@ -194,7 +194,7 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Windows RTX Vulkan PT/RR scenes rendered on a separate regression build; strict validation still fails; see `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
 | Regression | Shared MultiMesh vertex displacement | A738 real GPU owner 2/2 and extended lifetime 6/6 pass; A028 partial successes, BCC red and first MSVC failure remain retained |
 | Regression | Opaque StandardMaterial vertex colors | A738 native 4/4 and independent actual game 6+4+2 pass within the scoped route; A028/merged-07 failures and strict-validation failures retained |
-| Startup | Per-viewport live RT readiness | Editor and private packed release fixtures pass; new public PCK entry and complete game fault/split coverage pending; see `kb/tooling/pt-startup-readiness.md` |
+| Startup | Per-viewport live RT readiness | d29 public release PCK, six targets, standard/Mono smoke, installed templates and production game entry pass; bounded game fault/split checks pass at 8a. RR automatic/F strict failure remains separate; see `devtools/RT_WARMUP_ACCEPTANCE_2026_10_27.md` |
 
 ## Known bugs
 
@@ -263,6 +263,14 @@ Other notes:
 ## Findings log
 
 Newest first. Note the date, the commit, the view and what you saw or changed.
+
+- 2026-10-27: Final d29 six Windows targets, standard/Mono smoke, four installed
+  template fixtures and exact public readiness release PCK pass. Actual game
+  production Vulkan/D3D12 entries capture three frames each and exit naturally.
+  Separate 8b SDK214 RR-D/FG-omitted single/four-player strict controls are CLEAN;
+  automatic/F still has WAW/layout errors. No default preset change or neural
+  weight readback follows. Exact identities/scope are recorded in
+  `devtools/RT_WARMUP_ACCEPTANCE_2026_10_27.md`.
 
 - 2026-10-27: Added release-capable per-viewport shader pending/failed, recorded
   RT dispatch and serial statistics (old enum values 0..7 unchanged). Invalid RT

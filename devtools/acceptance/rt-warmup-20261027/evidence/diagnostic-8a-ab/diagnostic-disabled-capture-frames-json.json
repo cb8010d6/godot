@@ -1,0 +1,835 @@
+[
+  {
+    "expected_xy": [
+      480.0,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "static.png",
+    "frame": 99,
+    "height": 540,
+    "label": "static",
+    "marker_x": 0.0,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      339.703887939453,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_000.png",
+    "frame": 100,
+    "height": 540,
+    "label": "motion_000",
+    "marker_x": -1.79999995231628,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      345.549560546875,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_001.png",
+    "frame": 101,
+    "height": 540,
+    "label": "motion_001",
+    "marker_x": -1.72500002384186,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      351.395233154297,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_002.png",
+    "frame": 102,
+    "height": 540,
+    "label": "motion_002",
+    "marker_x": -1.64999997615814,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      357.240905761719,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_003.png",
+    "frame": 103,
+    "height": 540,
+    "label": "motion_003",
+    "marker_x": -1.57500004768372,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      363.086578369141,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_004.png",
+    "frame": 104,
+    "height": 540,
+    "label": "motion_004",
+    "marker_x": -1.5,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      368.932250976562,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_005.png",
+    "frame": 105,
+    "height": 540,
+    "label": "motion_005",
+    "marker_x": -1.42499995231628,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      374.777893066406,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_006.png",
+    "frame": 106,
+    "height": 540,
+    "label": "motion_006",
+    "marker_x": -1.35000002384186,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      380.623596191406,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_007.png",
+    "frame": 107,
+    "height": 540,
+    "label": "motion_007",
+    "marker_x": -1.27499997615814,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      386.46923828125,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_008.png",
+    "frame": 108,
+    "height": 540,
+    "label": "motion_008",
+    "marker_x": -1.20000004768372,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      392.31494140625,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_009.png",
+    "frame": 109,
+    "height": 540,
+    "label": "motion_009",
+    "marker_x": -1.125,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      398.160614013672,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_010.png",
+    "frame": 110,
+    "height": 540,
+    "label": "motion_010",
+    "marker_x": -1.04999995231628,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      404.006286621094,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_011.png",
+    "frame": 111,
+    "height": 540,
+    "label": "motion_011",
+    "marker_x": -0.975000023841858,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      409.851959228516,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_012.png",
+    "frame": 112,
+    "height": 540,
+    "label": "motion_012",
+    "marker_x": -0.899999976158142,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      415.697601318359,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_013.png",
+    "frame": 113,
+    "height": 540,
+    "label": "motion_013",
+    "marker_x": -0.824999988079071,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      421.543273925781,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_014.png",
+    "frame": 114,
+    "height": 540,
+    "label": "motion_014",
+    "marker_x": -0.75,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      427.388946533203,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_015.png",
+    "frame": 115,
+    "height": 540,
+    "label": "motion_015",
+    "marker_x": -0.675000011920929,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      433.234619140625,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_016.png",
+    "frame": 116,
+    "height": 540,
+    "label": "motion_016",
+    "marker_x": -0.600000023841858,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      439.080291748047,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_017.png",
+    "frame": 117,
+    "height": 540,
+    "label": "motion_017",
+    "marker_x": -0.524999976158142,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      444.925964355469,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_018.png",
+    "frame": 118,
+    "height": 540,
+    "label": "motion_018",
+    "marker_x": -0.449999988079071,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      450.771636962891,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_019.png",
+    "frame": 119,
+    "height": 540,
+    "label": "motion_019",
+    "marker_x": -0.375,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      456.617309570312,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_020.png",
+    "frame": 120,
+    "height": 540,
+    "label": "motion_020",
+    "marker_x": -0.300000011920929,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      462.462982177734,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_021.png",
+    "frame": 121,
+    "height": 540,
+    "label": "motion_021",
+    "marker_x": -0.224999994039536,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      468.308654785156,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_022.png",
+    "frame": 122,
+    "height": 540,
+    "label": "motion_022",
+    "marker_x": -0.150000005960464,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      474.154327392578,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_023.png",
+    "frame": 123,
+    "height": 540,
+    "label": "motion_023",
+    "marker_x": -0.0750000029802322,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      480.0,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_024.png",
+    "frame": 124,
+    "height": 540,
+    "label": "motion_024",
+    "marker_x": -2.22044604925031e-16,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      485.845672607422,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_025.png",
+    "frame": 125,
+    "height": 540,
+    "label": "motion_025",
+    "marker_x": 0.0750000029802322,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      491.691345214844,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_026.png",
+    "frame": 126,
+    "height": 540,
+    "label": "motion_026",
+    "marker_x": 0.150000005960464,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      497.537017822266,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_027.png",
+    "frame": 127,
+    "height": 540,
+    "label": "motion_027",
+    "marker_x": 0.224999994039536,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      503.382690429688,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_028.png",
+    "frame": 128,
+    "height": 540,
+    "label": "motion_028",
+    "marker_x": 0.300000011920929,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      509.228363037109,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_029.png",
+    "frame": 129,
+    "height": 540,
+    "label": "motion_029",
+    "marker_x": 0.375,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      515.074035644531,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_030.png",
+    "frame": 130,
+    "height": 540,
+    "label": "motion_030",
+    "marker_x": 0.449999988079071,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      520.919677734375,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_031.png",
+    "frame": 131,
+    "height": 540,
+    "label": "motion_031",
+    "marker_x": 0.524999976158142,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      526.765380859375,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_032.png",
+    "frame": 132,
+    "height": 540,
+    "label": "motion_032",
+    "marker_x": 0.600000023841858,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      532.611022949219,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_033.png",
+    "frame": 133,
+    "height": 540,
+    "label": "motion_033",
+    "marker_x": 0.675000011920929,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      538.456726074219,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_034.png",
+    "frame": 134,
+    "height": 540,
+    "label": "motion_034",
+    "marker_x": 0.75,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      544.302368164062,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_035.png",
+    "frame": 135,
+    "height": 540,
+    "label": "motion_035",
+    "marker_x": 0.824999988079071,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      550.148071289062,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_036.png",
+    "frame": 136,
+    "height": 540,
+    "label": "motion_036",
+    "marker_x": 0.899999976158142,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      555.993713378906,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_037.png",
+    "frame": 137,
+    "height": 540,
+    "label": "motion_037",
+    "marker_x": 0.975000023841858,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      561.839416503906,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_038.png",
+    "frame": 138,
+    "height": 540,
+    "label": "motion_038",
+    "marker_x": 1.04999995231628,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      567.68505859375,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_039.png",
+    "frame": 139,
+    "height": 540,
+    "label": "motion_039",
+    "marker_x": 1.125,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      573.53076171875,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_040.png",
+    "frame": 140,
+    "height": 540,
+    "label": "motion_040",
+    "marker_x": 1.20000004768372,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      579.376403808594,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_041.png",
+    "frame": 141,
+    "height": 540,
+    "label": "motion_041",
+    "marker_x": 1.27499997615814,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      585.222106933594,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_042.png",
+    "frame": 142,
+    "height": 540,
+    "label": "motion_042",
+    "marker_x": 1.35000002384186,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      591.067749023438,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_043.png",
+    "frame": 143,
+    "height": 540,
+    "label": "motion_043",
+    "marker_x": 1.42499995231628,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      596.913452148438,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_044.png",
+    "frame": 144,
+    "height": 540,
+    "label": "motion_044",
+    "marker_x": 1.5,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      602.759094238281,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_045.png",
+    "frame": 145,
+    "height": 540,
+    "label": "motion_045",
+    "marker_x": 1.57500004768372,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      608.604797363281,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_046.png",
+    "frame": 146,
+    "height": 540,
+    "label": "motion_046",
+    "marker_x": 1.64999997615814,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  },
+  {
+    "expected_xy": [
+      614.450439453125,
+      270.0
+    ],
+    "fg_requested": false,
+    "file": "motion_047.png",
+    "frame": 147,
+    "height": 540,
+    "label": "motion_047",
+    "marker_x": 1.72500002384186,
+    "mode": 6,
+    "pt_requested": false,
+    "requested_mode": "quality",
+    "scale": 0.666666686534882,
+    "width": 960
+  }
+]

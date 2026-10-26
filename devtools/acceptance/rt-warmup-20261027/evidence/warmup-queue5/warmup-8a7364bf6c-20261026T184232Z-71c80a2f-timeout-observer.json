@@ -1,0 +1,4128 @@
+{
+  "actions": [
+    {
+      "action": "catalog_scene_before_ready",
+      "demo_override": 2,
+      "map_override": 0,
+      "scene": "res://scenes/skate/skate_game.tscn"
+    },
+    {
+      "action": "accelerate_failure_deadline",
+      "deadline_msec": 120000,
+      "gate": 246591525597,
+      "old_started": 16695
+    },
+    {
+      "action": "recover_failed_gate_via_cancel",
+      "gate": 246591525597
+    }
+  ],
+  "actual_game": {
+    "id": "skate",
+    "map": 0
+  },
+  "api": "vulkan",
+  "case": "timeout",
+  "elapsed_msec": 11574,
+  "engine": {
+    "build": "custom_build",
+    "hash": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1793034641
+  },
+  "gate_events": [
+    {
+      "event": "created",
+      "id": 208238809810,
+      "ordinal": 1,
+      "wall_msec": 5650
+    },
+    {
+      "event": "completed",
+      "id": 208238809810,
+      "paused": false,
+      "result": {
+        "elapsed_msec": 3311,
+        "ready_submissions": {
+          "46170899084": 2
+        },
+        "state": "ready",
+        "views": [
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 29,
+            "state": "ready",
+            "tlas": 1924
+          }
+        ]
+      }
+    },
+    {
+      "event": "created",
+      "id": 246591525597,
+      "ordinal": 2,
+      "wall_msec": 9774
+    },
+    {
+      "event": "completed",
+      "id": 246591525597,
+      "paused": true,
+      "result": {
+        "elapsed_msec": 120004,
+        "ready_submissions": {
+          "201242710491": 1,
+          "205655118435": 1
+        },
+        "reason": "timeout",
+        "state": "timeout",
+        "views": [
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 1,
+            "state": "ready",
+            "tlas": 1976
+          },
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 1,
+            "state": "ready",
+            "tlas": 1976
+          }
+        ]
+      }
+    },
+    {
+      "event": "cancelled",
+      "id": 246591525597,
+      "paused": false
+    }
+  ],
+  "gates": [
+    {
+      "baseline": {
+        "clock": 0.0,
+        "drawn": 0,
+        "gate_result": {
+          "state": "pending",
+          "views": 1
+        },
+        "paused": true,
+        "phase": 0,
+        "phase_time": 0.0,
+        "physics_probe": [
+          0.0,
+          1000.0,
+          0.0
+        ],
+        "players": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 1
+          },
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 2
+          }
+        ],
+        "views": [
+          {
+            "mode": -1,
+            "path": "/root",
+            "previous_observer_serial": 0,
+            "snapshot": {
+              "dispatches": 0,
+              "failed": 0,
+              "pending": 0,
+              "serial": 0,
+              "state": "not_rendered",
+              "tlas": 0
+            }
+          }
+        ]
+      },
+      "completed": true,
+      "completion_sample": {
+        "clock": 0.0,
+        "drawn": 28,
+        "gate_result": {
+          "elapsed_msec": 3311,
+          "ready_submissions": {
+            "46170899084": 2
+          },
+          "state": "ready",
+          "views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 29,
+              "state": "ready",
+              "tlas": 1924
+            }
+          ]
+        },
+        "paused": false,
+        "phase": 0,
+        "phase_time": 0.0,
+        "physics_probe": [
+          0.0,
+          1000.0,
+          0.0
+        ],
+        "players": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 1
+          },
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 2
+          }
+        ],
+        "views": [
+          {
+            "mode": -1,
+            "path": "/root",
+            "previous_observer_serial": 28,
+            "snapshot": {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 29,
+              "state": "ready",
+              "tlas": 1924
+            }
+          }
+        ]
+      },
+      "id": 208238809810,
+      "observer_serials": {
+        "46170899084": 29
+      },
+      "result": {
+        "elapsed_msec": 3311,
+        "ready_submissions": {
+          "46170899084": 2
+        },
+        "state": "ready",
+        "views": [
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 29,
+            "state": "ready",
+            "tlas": 1924
+          }
+        ]
+      },
+      "samples": [
+        {
+          "clock": 0.0,
+          "drawn": 0,
+          "gate_result": {
+            "state": "pending",
+            "views": 1
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 0,
+              "snapshot": {
+                "dispatches": 0,
+                "failed": 0,
+                "pending": 0,
+                "serial": 0,
+                "state": "not_rendered",
+                "tlas": 0
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 0,
+          "gate_result": {
+            "elapsed_msec": 2834,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 1,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 0,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 1,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 1,
+          "gate_result": {
+            "elapsed_msec": 2834,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 1,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 1,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 1,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 1,
+          "gate_result": {
+            "elapsed_msec": 2849,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 2,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 1,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 2,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 2,
+          "gate_result": {
+            "elapsed_msec": 2849,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 2,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 2,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 2,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 2,
+          "gate_result": {
+            "elapsed_msec": 2863,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 3,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 2,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 3,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 3,
+          "gate_result": {
+            "elapsed_msec": 2863,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 3,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 3,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 3,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 3,
+          "gate_result": {
+            "elapsed_msec": 2875,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 4,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 3,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 4,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 4,
+          "gate_result": {
+            "elapsed_msec": 2875,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 4,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 4,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 4,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 4,
+          "gate_result": {
+            "elapsed_msec": 2934,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 5,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 4,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 5,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 5,
+          "gate_result": {
+            "elapsed_msec": 2934,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 5,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 5,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 5,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 5,
+          "gate_result": {
+            "elapsed_msec": 2944,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 6,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 5,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 6,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 6,
+          "gate_result": {
+            "elapsed_msec": 2944,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 6,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 6,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 6,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 6,
+          "gate_result": {
+            "elapsed_msec": 2954,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 7,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 6,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 7,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 7,
+          "gate_result": {
+            "elapsed_msec": 2954,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 7,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 7,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 7,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 7,
+          "gate_result": {
+            "elapsed_msec": 2963,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 8,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 7,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 8,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 8,
+          "gate_result": {
+            "elapsed_msec": 2963,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 8,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 8,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 8,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 8,
+          "gate_result": {
+            "elapsed_msec": 2978,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 9,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 8,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 9,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 9,
+          "gate_result": {
+            "elapsed_msec": 2978,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 9,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 9,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 9,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 9,
+          "gate_result": {
+            "elapsed_msec": 2996,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 10,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 9,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 10,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 10,
+          "gate_result": {
+            "elapsed_msec": 2996,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 10,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 10,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 10,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 10,
+          "gate_result": {
+            "elapsed_msec": 3015,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 11,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 10,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 11,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 11,
+          "gate_result": {
+            "elapsed_msec": 3015,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 11,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 11,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 11,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 11,
+          "gate_result": {
+            "elapsed_msec": 3030,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 12,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 11,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 12,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 12,
+          "gate_result": {
+            "elapsed_msec": 3030,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 12,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 12,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 12,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 12,
+          "gate_result": {
+            "elapsed_msec": 3054,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 13,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 12,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 13,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 13,
+          "gate_result": {
+            "elapsed_msec": 3054,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 13,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 13,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 13,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 13,
+          "gate_result": {
+            "elapsed_msec": 3063,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 14,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 13,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 14,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 14,
+          "gate_result": {
+            "elapsed_msec": 3063,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 14,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 14,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 14,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 14,
+          "gate_result": {
+            "elapsed_msec": 3077,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 15,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 14,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 15,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 15,
+          "gate_result": {
+            "elapsed_msec": 3077,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 15,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 15,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 15,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 15,
+          "gate_result": {
+            "elapsed_msec": 3093,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 16,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 15,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 16,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 16,
+          "gate_result": {
+            "elapsed_msec": 3093,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 16,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 16,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 16,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 16,
+          "gate_result": {
+            "elapsed_msec": 3110,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 17,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 16,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 17,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 17,
+          "gate_result": {
+            "elapsed_msec": 3110,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 17,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 17,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 17,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 17,
+          "gate_result": {
+            "elapsed_msec": 3127,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 18,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 17,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 18,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 18,
+          "gate_result": {
+            "elapsed_msec": 3127,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 18,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 18,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 18,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 18,
+          "gate_result": {
+            "elapsed_msec": 3145,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 19,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 18,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 19,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 19,
+          "gate_result": {
+            "elapsed_msec": 3145,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 19,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 19,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 19,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 19,
+          "gate_result": {
+            "elapsed_msec": 3161,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 20,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 19,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 20,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 20,
+          "gate_result": {
+            "elapsed_msec": 3161,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 20,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 20,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 20,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 20,
+          "gate_result": {
+            "elapsed_msec": 3178,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 21,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 20,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 21,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 21,
+          "gate_result": {
+            "elapsed_msec": 3178,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 21,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 21,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 21,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 21,
+          "gate_result": {
+            "elapsed_msec": 3194,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 22,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 21,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 22,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 22,
+          "gate_result": {
+            "elapsed_msec": 3194,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 22,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 22,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 22,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 22,
+          "gate_result": {
+            "elapsed_msec": 3211,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 23,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 22,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 23,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 23,
+          "gate_result": {
+            "elapsed_msec": 3211,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 23,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 23,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 23,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 23,
+          "gate_result": {
+            "elapsed_msec": 3227,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 24,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 23,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 24,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 24,
+          "gate_result": {
+            "elapsed_msec": 3227,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 24,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 24,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 24,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 24,
+          "gate_result": {
+            "elapsed_msec": 3244,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 25,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 24,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 25,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 25,
+          "gate_result": {
+            "elapsed_msec": 3244,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 25,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 25,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 25,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 25,
+          "gate_result": {
+            "elapsed_msec": 3261,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 26,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 25,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 26,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 26,
+          "gate_result": {
+            "elapsed_msec": 3261,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 26,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 26,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 26,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 26,
+          "gate_result": {
+            "elapsed_msec": 3278,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 27,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 26,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 27,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 27,
+          "gate_result": {
+            "elapsed_msec": 3278,
+            "ready_submissions": {
+              "46170899084": 0
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 27,
+                "state": "pending",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 27,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 147,
+                "serial": 27,
+                "state": "pending",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 27,
+          "gate_result": {
+            "elapsed_msec": 3297,
+            "ready_submissions": {
+              "46170899084": 1
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 28,
+                "state": "ready",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 27,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 28,
+                "state": "ready",
+                "tlas": 1924
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.0,
+          "drawn": 28,
+          "gate_result": {
+            "elapsed_msec": 3297,
+            "ready_submissions": {
+              "46170899084": 1
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 28,
+                "state": "ready",
+                "tlas": 1924
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 0,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": -1,
+              "path": "/root",
+              "previous_observer_serial": 28,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 28,
+                "state": "not_rendered",
+                "tlas": 1924
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baseline": {
+        "clock": 0.816625333333334,
+        "drawn": 77,
+        "gate_result": {
+          "state": "pending",
+          "views": 2
+        },
+        "paused": true,
+        "phase": 1,
+        "phase_time": 0.0,
+        "physics_probe": [
+          0.0,
+          996.85009765625,
+          0.0
+        ],
+        "players": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 1
+          },
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 2
+          }
+        ],
+        "views": [
+          {
+            "mode": 4,
+            "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898",
+            "previous_observer_serial": 0,
+            "snapshot": {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "ready",
+              "tlas": 1976
+            }
+          },
+          {
+            "mode": 4,
+            "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@941/@SubViewportContainer@942/@SubViewport@943",
+            "previous_observer_serial": 0,
+            "snapshot": {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "ready",
+              "tlas": 1976
+            }
+          }
+        ]
+      },
+      "completed": true,
+      "completion_sample": {
+        "clock": 0.816625333333334,
+        "drawn": 78,
+        "gate_result": {
+          "elapsed_msec": 120004,
+          "ready_submissions": {
+            "201242710491": 1,
+            "205655118435": 1
+          },
+          "reason": "timeout",
+          "state": "timeout",
+          "views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "ready",
+              "tlas": 1976
+            },
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "ready",
+              "tlas": 1976
+            }
+          ]
+        },
+        "paused": true,
+        "phase": 1,
+        "phase_time": 0.0,
+        "physics_probe": [
+          0.0,
+          996.85009765625,
+          0.0
+        ],
+        "players": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 1
+          },
+          {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "slot": 2
+          }
+        ],
+        "views": [
+          {
+            "mode": 4,
+            "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898",
+            "previous_observer_serial": 1,
+            "snapshot": {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "not_rendered",
+              "tlas": 1976
+            }
+          },
+          {
+            "mode": 4,
+            "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@941/@SubViewportContainer@942/@SubViewport@943",
+            "previous_observer_serial": 1,
+            "snapshot": {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 1,
+              "state": "not_rendered",
+              "tlas": 1976
+            }
+          }
+        ]
+      },
+      "id": 246591525597,
+      "observer_serials": {
+        "201242710491": 1,
+        "205655118435": 1
+      },
+      "result": {
+        "elapsed_msec": 120004,
+        "ready_submissions": {
+          "201242710491": 1,
+          "205655118435": 1
+        },
+        "reason": "timeout",
+        "state": "timeout",
+        "views": [
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 1,
+            "state": "ready",
+            "tlas": 1976
+          },
+          {
+            "dispatches": 1,
+            "failed": 0,
+            "pending": 0,
+            "serial": 1,
+            "state": "ready",
+            "tlas": 1976
+          }
+        ]
+      },
+      "samples": [
+        {
+          "clock": 0.816625333333334,
+          "drawn": 77,
+          "gate_result": {
+            "state": "pending",
+            "views": 2
+          },
+          "paused": true,
+          "phase": 1,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            996.85009765625,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": 4,
+              "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898",
+              "previous_observer_serial": 0,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "ready",
+                "tlas": 1976
+              }
+            },
+            {
+              "mode": 4,
+              "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@941/@SubViewportContainer@942/@SubViewport@943",
+              "previous_observer_serial": 0,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "ready",
+                "tlas": 1976
+              }
+            }
+          ]
+        },
+        {
+          "clock": 0.816625333333334,
+          "drawn": 78,
+          "gate_result": {
+            "elapsed_msec": 120002,
+            "ready_submissions": {
+              "201242710491": 1,
+              "205655118435": 1
+            },
+            "state": "pending",
+            "views": [
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "ready",
+                "tlas": 1976
+              },
+              {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "ready",
+                "tlas": 1976
+              }
+            ]
+          },
+          "paused": true,
+          "phase": 1,
+          "phase_time": 0.0,
+          "physics_probe": [
+            0.0,
+            996.85009765625,
+            0.0
+          ],
+          "players": [
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 1
+            },
+            {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "slot": 2
+            }
+          ],
+          "views": [
+            {
+              "mode": 4,
+              "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898",
+              "previous_observer_serial": 1,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "not_rendered",
+                "tlas": 1976
+              }
+            },
+            {
+              "mode": 4,
+              "path": "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@941/@SubViewportContainer@942/@SubViewport@943",
+              "previous_observer_serial": 1,
+              "snapshot": {
+                "dispatches": 1,
+                "failed": 0,
+                "pending": 0,
+                "serial": 1,
+                "state": "not_rendered",
+                "tlas": 1976
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "physics": "Jolt Physics",
+  "probe_scope": "Private invisible collision-only Jolt rigid body, no contacts; actual game player positions also sampled",
+  "reason": "recovered_to_menu_without_late_start",
+  "recovery_menu": {
+    "paused": false,
+    "scene": "res://scenes/menu/main_menu.tscn"
+  },
+  "requested_players": 2,
+  "scope": "Actual game gate observer, private physics probe, first-camera near-pose override after PLAY; not natural gameplay/performance",
+  "shots": [],
+  "status": "PASS",
+  "streamline_fg_probe": {
+    "disable_dlss_g_env": "1",
+    "method_present": true,
+    "singleton_present": true,
+    "status": {
+      "available": false,
+      "eligible": false,
+      "reason": "unavailable",
+      "rendered_3d_views": 1,
+      "requested_3d_views": 0,
+      "sdk_enabled": false,
+      "supported_generated_frames": 0
+    }
+  },
+  "violations": []
+}

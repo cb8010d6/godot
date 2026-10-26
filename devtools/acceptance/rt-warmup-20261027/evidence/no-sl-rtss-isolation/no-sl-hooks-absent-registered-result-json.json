@@ -1,0 +1,154 @@
+{
+  "label": "A_registered_implicit",
+  "infrastructure_verified": true,
+  "infrastructure_checks": {
+    "fixture_summary_written": true,
+    "job_assigned": true,
+    "not_timed_out": true,
+    "no_launcher_exception": true,
+    "job_cleanup_complete": true,
+    "frozen_reference_inputs_unchanged": true,
+    "copied_project_assertions_unchanged": true,
+    "all_original_phase_records_present": true,
+    "actual_engine_a738": true,
+    "actual_fixture_hash": true,
+    "actual_gpu_4060": true,
+    "actual_api_vulkan": true,
+    "renderer_header_without_streamline": true,
+    "module_samples_obtained": true,
+    "no_streamline_modules_observed": true,
+    "explicit_vvl_inserted": true,
+    "sync_validation_enabled_readback": true,
+    "vvl_module_from_frozen_path": true
+  },
+  "cancelled": false,
+  "fixture_status": "FAIL",
+  "fixture_native_exit_code": 1,
+  "fixture_passed_phases": 8,
+  "fixture_total_phases": 9,
+  "fixture_phase_results": [
+    {
+      "phase": "00_initial_deformed",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "01_visible_count_zero",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 0,
+      "expected_tlas_instances": 0
+    },
+    {
+      "phase": "02_visible_count_grow_three",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "03_replace_mesh_rid_smaller",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "04_material_without_vertex_displacement",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "05_restore_vertex_displacement",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "06_replace_multimesh_rid",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    },
+    {
+      "phase": "07_standard_vertex_color_merged",
+      "passed": false,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 1
+    },
+    {
+      "phase": "08_restore_custom_expanded",
+      "passed": true,
+      "config_passed": true,
+      "pixels_passed": true,
+      "actual_tlas_instances": 3,
+      "expected_tlas_instances": 3
+    }
+  ],
+  "strict_validation_status": "CLEAN",
+  "log_analysis": {
+    "inserted_layer_names": [
+      "VK_LAYER_KHRONOS_validation",
+      "VK_LAYER_NV_optimus",
+      "VK_LAYER_NV_present",
+      "VK_LAYER_RTSS"
+    ],
+    "forced_disabled_lines": [],
+    "explicit_vvl_inserted": true,
+    "rtss_layer_inserted": true,
+    "synchronization_validation_reported_enabled": true,
+    "diagnostic_token_occurrences": {},
+    "engine_error_line_count": 0,
+    "api_header": "Vulkan 1.4.341 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "filtered_layer_chain_verified": null,
+  "remaining_inserted_non_vvl_layers": [
+    "VK_LAYER_NV_optimus",
+    "VK_LAYER_NV_present",
+    "VK_LAYER_RTSS"
+  ],
+  "rtss_modules_observed": [
+    "rtssvklayer64.dll"
+  ],
+  "other_overlay_modules_observed": [
+    "nvspcap64.dll",
+    "rtssvklayer64.dll"
+  ],
+  "rtss_completely_absent_from_sampled_process": false,
+  "scope": "Observed module samples and loader chain only. No global overlay settings were changed; absence between samples is not guaranteed.",
+  "raw_log": {
+    "file": "<evidence>\\strict-controls\\runs\\20261026T162306Z-d4b8faab\\A_registered_implicit\\godot.stdout-and-stderr.log",
+    "bytes": 71360,
+    "sha256": "ffb997e80b094279337d2515820bfbeb0bd28c7a92f6066b45ba8ff580ff967b"
+  },
+  "module_samples": {
+    "file": "<evidence>\\strict-controls\\runs\\20261026T162306Z-d4b8faab\\A_registered_implicit\\module-samples.json",
+    "bytes": 33272,
+    "sha256": "c658e3b87174bae0c128493df12661c7fd9fbcd4281ec42876c79a405e7648b7"
+  },
+  "fixture_summary": {
+    "file": "<evidence>\\strict-controls\\runs\\20261026T162306Z-d4b8faab\\A_registered_implicit\\capture\\summary.json",
+    "bytes": 58015,
+    "sha256": "aecbc694f64e2a62cd9c0a0fa133ed224db49ecad3426e84f2924245d6ac5571"
+  },
+  "receipt": {
+    "file": "<evidence>\\strict-controls\\runs\\20261026T162306Z-d4b8faab\\A_registered_implicit\\receipt.json",
+    "bytes": 8131,
+    "sha256": "845cc2771666257181ed6bba84ef8fb366e4b77f9f190aa6e8b04669d4fad0f3"
+  }
+}

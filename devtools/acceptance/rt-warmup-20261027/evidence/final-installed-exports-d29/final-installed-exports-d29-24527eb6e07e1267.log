@@ -1,0 +1,45 @@
+{
+  "command": [
+    "<workspace>\\toolchains\\dotnet10\\dotnet.exe",
+    "build",
+    "ManagedSmoke.csproj",
+    "--no-restore",
+    "--disable-build-servers",
+    "-m:1",
+    "-p:UseSharedCompilation=false"
+  ],
+  "cwd": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-debug\\project",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<workspace>\\toolchains\\dotnet10\\dotnet.exe",
+      "bytes": 167208,
+      "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:30:02.412861+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-mono-debug-build.log",
+  "pid": 24856,
+  "exit_code": 0,
+  "duration_seconds": 2.688,
+  "finished_utc": "2026-10-26T19:30:05.037959+00:00"
+}
+  ManagedSmoke -> <evidence>\validation-final\final-exports-d29e706530-20261026T192855Z-c9bb338b\cases\mono-debug\project\.godot\mono\temp\bin\Debug\win-x64\ManagedSmoke.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.41

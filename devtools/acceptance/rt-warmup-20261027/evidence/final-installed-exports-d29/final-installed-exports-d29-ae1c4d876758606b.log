@@ -1,0 +1,38 @@
+{
+  "command": [
+    "<evidence>\\builds\\native-six-d29e706530\\godot.windows.editor.x86_64.exe",
+    "--version"
+  ],
+  "cwd": "<evidence>\\builds\\native-six-d29e706530",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\native-six-d29e706530\\godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\standard\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\standard\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:29:00.110912+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-standard-editor-version.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 35540,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 0.563,
+  "finished_utc": "2026-10-26T19:29:00.450267+00:00"
+}
+4.8.beta1.custom_build.d29e70653

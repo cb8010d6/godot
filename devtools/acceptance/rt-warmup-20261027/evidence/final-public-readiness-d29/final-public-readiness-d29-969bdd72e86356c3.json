@@ -1,0 +1,62 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "source_four_files_before_after_unchanged": [
+    {
+      "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\project.godot",
+      "bytes": 419,
+      "sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8"
+    },
+    {
+      "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\readiness.gd",
+      "bytes": 8576,
+      "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+    },
+    {
+      "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\bootstrap.tscn",
+      "bytes": 57,
+      "sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67"
+    },
+    {
+      "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\export_presets.cfg",
+      "bytes": 250,
+      "sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4"
+    }
+  ],
+  "copied_files": [
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\project\\project.godot",
+      "bytes": 419,
+      "sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\project\\readiness.gd",
+      "bytes": 8576,
+      "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\project\\bootstrap.tscn",
+      "bytes": 57,
+      "sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\project\\export_presets.cfg",
+      "bytes": 250,
+      "sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4"
+    }
+  ],
+  "runtime": "NOT_LINKED",
+  "runtime_precondition": "template_release-d29e706530-no-sl inventory must exist and match full SHA",
+  "frozen_release_available_now": true,
+  "native_import_export_gpu": "NOT_EXECUTED",
+  "commands": {
+    "file": "<evidence>\\public-readiness-d29e706530\\commands.json",
+    "bytes": 4464,
+    "sha256": "c7f19b6b90aa1c3bccd9d573734069651d3bebbc3b1e64ca19f3bc791303dc97"
+  },
+  "link_script": {
+    "file": "<evidence>\\public-readiness-d29e706530\\link-runtime.ps1",
+    "bytes": 2579,
+    "sha256": "0f4695419e44dee82ccd17be65b55dbc8a8ecd5f069a59d9965fe4bf74e21490"
+  }
+}

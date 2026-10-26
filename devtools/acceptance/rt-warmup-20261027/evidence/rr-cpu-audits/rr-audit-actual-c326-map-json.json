@@ -1,0 +1,63 @@
+{
+  "scope": "Handle correlation only; no ownership conclusion from an NGX debug name or missing sample",
+  "observed_host_images": 0,
+  "observed_tag_images": 16,
+  "validation_images": [
+    {
+      "native": 34371832995936797,
+      "native_hex": "0x7a1d0000007a1d",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34375131530820128,
+      "native_hex": "0x7a200000007a20",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34380629088959013,
+      "native_hex": "0x7a250000007a25",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34383927623842344,
+      "native_hex": "0x7a280000007a28",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34958972205169715,
+      "native_hex": "0x7c330000007c33",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34962270740053046,
+      "native_hex": "0x7c360000007c36",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34967768298191931,
+      "native_hex": "0x7c3b0000007c3b",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    },
+    {
+      "native": 34971066833075262,
+      "native_hex": "0x7c3e0000007c3e",
+      "host_matches": [],
+      "tag_matches": [],
+      "observation": "NO_MATCH_IN_OBSERVED_SET_NOT_OWNERSHIP_PROOF"
+    }
+  ]
+}

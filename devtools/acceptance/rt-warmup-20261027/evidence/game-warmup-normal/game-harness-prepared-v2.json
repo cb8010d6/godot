@@ -1,0 +1,22 @@
+{
+  "scope": "private observer review v2, before files archived; no engine/import/GPU execution",
+  "python_ast": "PASS",
+  "gdscript_parse": "NOT_EXECUTED",
+  "files": [
+    {
+      "file": "observe_warmup.gd",
+      "bytes": 16221,
+      "sha256": "c08f797cd074026c363442c206ed698f9541fc2e84b97697c7dd3a98934bfe04"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3629,
+      "sha256": "c41502b03cc27539390bb47c072a90f2dce8371a61afea404b12b0a09e377ccb"
+    },
+    {
+      "file": "run_observer.py",
+      "bytes": 8001,
+      "sha256": "6beeed909f35b053627ea2159bb83ba340578ecd2210a4afa3c2a714699a0e4a"
+    }
+  ]
+}

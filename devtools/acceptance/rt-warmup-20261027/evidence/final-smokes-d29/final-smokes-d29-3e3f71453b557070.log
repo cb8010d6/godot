@@ -1,0 +1,8 @@
+Godot Engine v4.8.beta1.mono.custom_build.d29e70653 (2026-10-26 19:09:02 UTC) - https://godotengine.org
+Vulkan 1.4.341 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+OpTypeForwardPointer is not supported yet.
+OpTypeForwardPointer is not supported yet.
+OpTypeRayQueryKHR is not supported yet.
+OpTypeRayQueryKHR is not supported yet.
+MEASURE view=interior gi=ddgi quality=1 anim=0 frames=30  mean_linear=0.0124  flicker_std=0.049  flicker_px=0.00%

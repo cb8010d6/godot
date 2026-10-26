@@ -1,0 +1,22 @@
+{
+  "name": "ruff-hub-tools",
+  "command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "ruff",
+    "check",
+    "--config",
+    "hub/pyproject.toml",
+    "hub",
+    "tools"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:22:41.836294+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\ruff-hub-tools.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 0.187,
+  "finished_utc": "2026-10-26T16:22:42.023547+00:00",
+  "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+  "status": "PASS"
+}

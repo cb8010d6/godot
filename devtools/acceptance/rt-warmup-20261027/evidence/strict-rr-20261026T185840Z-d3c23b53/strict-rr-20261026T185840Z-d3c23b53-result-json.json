@@ -1,0 +1,315 @@
+{
+  "external_strict_verdict": "CLEAN",
+  "external_coverage_status": "ESTABLISHED",
+  "observed_diagnostics_status": "NO_UNEXPECTED_DIAGNOSTICS_OBSERVED",
+  "external_coverage_established": true,
+  "external_coverage_checks": {
+    "recorder_pid_identity_bound": true,
+    "frozen_inputs_unchanged": true,
+    "module_samples_obtained": true,
+    "sampled_engine_module_exact_path": true,
+    "only_explicit_vvl_inserted": true,
+    "sync_validation_enabled_readback": true,
+    "actual_frozen_vvl_dll_path": true,
+    "no_rtss_modules_observed": true,
+    "no_fg_plugin_observed": true,
+    "actual_streamline_interposer_and_sr_plugins": true,
+    "streamline_modules_from_frozen_runtime": true,
+    "actual_startup_diagnostic_marker": true,
+    "observer_fg_probe_api": true,
+    "observer_fg_status_matches_its_probe": true,
+    "observer_actual_fg_unavailable": true,
+    "actual_engine_sha_readback": true,
+    "actual_vulkan_gpu": true
+  },
+  "observer_case_completed": true,
+  "observer_runtime_checks": {
+    "observer_matrix_pass": true,
+    "native_exit_zero": true,
+    "observer_all_checks_pass": true,
+    "observer_status_pass": true,
+    "case_log_policy": true
+  },
+  "diagnostic_token_occurrences": {},
+  "all_native_error_lines": [],
+  "observer_original_validation": {
+    "requested": true,
+    "diagnostic_token_counts": {},
+    "count_scope": "Every raw VUID/SYNC-HAZARD token occurrence, including repeated message/spec references; not unique events",
+    "log_observation": "NO_DIAGNOSTIC_TOKENS_OBSERVED",
+    "strict_validation_verdict": "NOT_ESTABLISHED_EXTERNAL_LAYER_AND_READBACK_PROOF_REQUIRED",
+    "module_sampling": "EXTERNAL_NOT_PERFORMED"
+  },
+  "observer_original_status": "PASS",
+  "native_exit_code": 0,
+  "module_summary": {
+    "successful_samples": 35,
+    "rtss_module_names": [],
+    "known_overlay_module_names": [
+      "nvspcap64.dll"
+    ],
+    "streamline_module_names": [
+      "sl.common.dll",
+      "sl.dlss.dll",
+      "sl.dlss_d.dll",
+      "sl.interposer.dll",
+      "sl.nis.dll",
+      "sl.pcl.dll",
+      "sl.reflex.dll"
+    ]
+  },
+  "log_analysis": {
+    "inserted_layer_names": [
+      "VK_LAYER_KHRONOS_validation"
+    ],
+    "forced_disabled_lines": [
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'."
+    ],
+    "explicit_vvl_inserted": true,
+    "rtss_layer_inserted": false,
+    "synchronization_validation_reported_enabled": true,
+    "diagnostic_token_occurrences": {},
+    "engine_error_line_count": 0,
+    "api_header": "Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "sdk_request_lines": [],
+  "module_absence_scope": "Only actual samples of this PID; no guarantee about transients between one-second samples. No global overlay configuration changed.",
+  "scope": "External strict proof for this bounded observer run only. Original Observer NOT_ESTABLISHED/requested fields remain unchanged; no actual model identity, FG or latency pass.",
+  "final_output_attribution": {
+    "verified": true,
+    "method": "exact_matrix_path_printed_by_our_frozen_observer_child",
+    "launch_report": {
+      "status": "PASS",
+      "matrix": "<evidence>\\game-runs\\warmup-8b10556627-20261026T185841Z-98f092cd-normal\\matrix.json",
+      "checks": {
+        "wrapper_exit_zero": true,
+        "engine_exit_zero": true,
+        "actual_native_sha": true,
+        "observer_passed": true,
+        "no_pause_or_physics_violation": true,
+        "actual_api_gpu": true,
+        "actual_game_and_map": true,
+        "job_owned": true,
+        "job_cleanup_recorded": true,
+        "ngx_empty_after_job_cleanup": true,
+        "frozen_inputs_unchanged": true,
+        "runtime_inventory_unchanged": true,
+        "actual_disable_dlss_g_env": true,
+        "startup_marker_matches_request": true,
+        "native_fg_status_api": true,
+        "fg_stays_disabled": true,
+        "no_validation_diagnostic_tokens": true,
+        "fg_status_matches_plugin_selection": true,
+        "log_policy": true,
+        "actual_play_original_png": true,
+        "png_sha_original": true
+      }
+    },
+    "scope": "Final output/log attribution only; does not substitute for missing live PID/module proof."
+  },
+  "live_candidate_observations": {
+    "warmup-8b10556627-20261026T185841Z-98f092cd-normal": {
+      "first_seen_utc": "2026-10-26T18:58:42.229684+00:00",
+      "last_seen_utc": "2026-10-26T18:58:42.229684+00:00",
+      "observations": 1,
+      "last_identity": {
+        "checks": {
+          "matching_new_observer_matrix": true,
+          "recorder_command_exactly_matches_matrix": true,
+          "recorder_engine_path_exact": true,
+          "recorder_native_sha": true,
+          "recorder_engine_binary_sha": true,
+          "recorder_cwd_project": true,
+          "recorder_job_assigned": true,
+          "exact_owned_native_ancestor_chain": true
+        },
+        "verified": true,
+        "engine_pid": 35660,
+        "observer_pid": 45192,
+        "ancestry": {
+          "verified": true,
+          "chain": [
+            35660,
+            38172,
+            42628,
+            38300,
+            45192
+          ],
+          "depth_limit": 12,
+          "observed_edges": {
+            "35660": 38172,
+            "38172": 42628,
+            "42628": 38300,
+            "38300": 45192,
+            "45192": 12540
+          },
+          "scope": "Exact native PID from recorder, bounded live Windows ancestry to this Observer Popen root; supports Python venv redirectors, never process-name/latest-PID guessing."
+        }
+      }
+    }
+  },
+  "wrapper_execution_checks": {
+    "owned_observer_job_assigned": true,
+    "no_launcher_exception": true,
+    "not_timed_out": true,
+    "cleanup_complete": true,
+    "module_sampling_finished": true,
+    "own_observer_final_output_attributed": true
+  },
+  "wrapper": {
+    "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\wrapper.json",
+    "bytes": 15712,
+    "sha256": "dd531e2c38ab4c721a8104b7cdd20d5b0a4b4167df2ea392960a35a8fb43ac81"
+  },
+  "module_samples": {
+    "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\module-samples.json",
+    "bytes": 37518,
+    "sha256": "9da7bdc3e4b199827cb0d8ad42f9ffe25c28b1f10162b91c769802e4fef9bbe7"
+  },
+  "original_observer_matrix": {
+    "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T185841Z-98f092cd-normal\\matrix.json",
+    "bytes": 84212,
+    "sha256": "3ab443eab5b97a6564c098952a4c56e7b24c109def260ade8755c374f7afba57"
+  },
+  "original_native_receipt": {
+    "path": "<previous-evidence>\\warmup-8b10556627-20261026T185841Z-98f092cd-normal.json",
+    "bytes": 2658,
+    "sha256": "c799b8dd126a291938740f0a1e4612c527b044a8fd9a1ca0ef952937e25893fc"
+  },
+  "original_native_log": {
+    "path": "<previous-evidence>\\logs\\warmup-8b10556627-20261026T185841Z-98f092cd-normal.log",
+    "bytes": 200731,
+    "sha256": "5b0861b92362de41a5b30d8399298679d68dd9078619c850f8e2c7e6a566ad4a"
+  },
+  "observer_launch_log": {
+    "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\observer-launch.stdout-and-stderr.log",
+    "bytes": 927,
+    "sha256": "74b223dd8c961fbbdecf2e0e419488291a1345a3357d528b491ec3ebf6a3441f"
+  },
+  "pid_binding": {
+    "checks": {
+      "matching_new_observer_matrix": true,
+      "recorder_command_exactly_matches_matrix": true,
+      "recorder_engine_path_exact": true,
+      "recorder_native_sha": true,
+      "recorder_engine_binary_sha": true,
+      "recorder_cwd_project": true,
+      "recorder_job_assigned": true,
+      "exact_owned_native_ancestor_chain": true
+    },
+    "verified": true,
+    "engine_pid": 35660,
+    "observer_pid": 45192,
+    "ancestry": {
+      "verified": true,
+      "chain": [
+        35660,
+        38172,
+        42628,
+        38300,
+        45192
+      ],
+      "depth_limit": 12,
+      "observed_edges": {
+        "35660": 38172,
+        "38172": 42628,
+        "42628": 38300,
+        "38300": 45192,
+        "45192": 12540
+      },
+      "scope": "Exact native PID from recorder, bounded live Windows ancestry to this Observer Popen root; supports Python venv redirectors, never process-name/latest-PID guessing."
+    }
+  }
+}

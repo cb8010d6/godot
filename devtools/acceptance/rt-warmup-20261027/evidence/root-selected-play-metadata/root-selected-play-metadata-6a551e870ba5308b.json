@@ -1,0 +1,26 @@
+{
+  "status": "UPDATED_AND_REREAD",
+  "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "game_sha": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+  "original_shortcut_unchanged": true,
+  "original_sha256": "d78160bf218622c7e29f04f9965ad82bef73ad2305aee8ef393357a3389b2de9",
+  "backup": "<evidence>\\launcher-before-d29",
+  "shortcuts": [
+    {
+      "path": "<host-user>\\Desktop\\<game> NVIDIA.lnk",
+      "renderer": "d3d12",
+      "target": "<windows>\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "arguments": "-NoProfile -ExecutionPolicy Bypass -File \"<previous-evidence>\\launch_nvidia.ps1\" -EnginePath \"<evidence>\\builds\\editor-d29e706530-sdk214\\godot.windows.editor.x86_64.exe\" -AllowedEngineSha d29e7065306d670a643ca0ea7a362c4b38cea3c5 -ExpectedBinarySha256 edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3 -ProjectPath \"<workspace>\\play-warmup-d29e706530\\game\" -Renderer d3d12",
+      "sha256": "13d2ca290c3549e52db8f032598221e0d23e342aa6b245c34b920e8df6cf4c96",
+      "verified_reread": true
+    },
+    {
+      "path": "<host-user>\\Desktop\\<game> NVIDIA Vulkan.lnk",
+      "renderer": "vulkan",
+      "target": "<windows>\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "arguments": "-NoProfile -ExecutionPolicy Bypass -File \"<previous-evidence>\\launch_nvidia.ps1\" -EnginePath \"<evidence>\\builds\\editor-d29e706530-sdk214\\godot.windows.editor.x86_64.exe\" -AllowedEngineSha d29e7065306d670a643ca0ea7a362c4b38cea3c5 -ExpectedBinarySha256 edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3 -ProjectPath \"<workspace>\\play-warmup-d29e706530\\game\" -Renderer vulkan",
+      "sha256": "af155bad82f619d12f6b3d474813e2035fc84745bf4ccbd1048db8665f4aeece",
+      "verified_reread": true
+    }
+  ]
+}

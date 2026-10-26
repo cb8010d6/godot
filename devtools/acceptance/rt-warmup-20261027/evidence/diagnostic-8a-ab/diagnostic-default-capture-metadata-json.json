@@ -1,0 +1,40 @@
+{
+  "api": "1.4.341",
+  "capabilities": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "driver": "vulkan",
+  "editor_hint": false,
+  "engine": {
+    "build": "custom_build",
+    "hash": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1793034641
+  },
+  "frame_generation_status": {
+    "available": true,
+    "eligible": false,
+    "reason": "unavailable",
+    "rendered_3d_views": 0,
+    "requested_3d_views": 0,
+    "sdk_enabled": false,
+    "supported_generated_frames": 1
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "mode": "quality",
+  "process_id": 2244,
+  "renderer": "forward_plus",
+  "requested_rr_preset": "?",
+  "requested_sr_preset": "Recommended",
+  "suite": "motion"
+}

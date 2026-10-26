@@ -1,0 +1,43 @@
+{
+  "command": [
+    "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<evidence>\\public-readiness-d29e706530\\project",
+    "--export-pack",
+    "Release readiness",
+    "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.pck"
+  ],
+  "cwd": "<evidence>\\public-readiness-d29e706530\\project",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\public-readiness-d29e706530\\profile-export\\local",
+    "TEMP": "<evidence>\\public-readiness-d29e706530\\profile-export\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:15:27.841254+00:00",
+  "log": "<previous-evidence>\\logs\\public-readiness-d29e706530-export.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 24424,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 5.265,
+  "finished_utc": "2026-10-26T19:15:32.881382+00:00"
+}

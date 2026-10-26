@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "label": "natural-20261026T194234Z-25a084cb-vulkan-skate1",
+      "command": [
+        "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\RTXAcceptance.exe",
+        "--verbose",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--at=15,30,45",
+        "--shots=<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\capture\\frame"
+      ],
+      "environment_requested": {
+        "APPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\roaming",
+        "LOCALAPPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\local",
+        "TEMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\tmp",
+        "TMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\tmp",
+        "XDG_CACHE_HOME": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\cache",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\receipts\\natural-20261026T194234Z-25a084cb-vulkan-skate1.json",
+        "bytes": 2296,
+        "sha256": "7f8868882bb18fc3444da292bf277990639e619b4207c59b4461ad7f27fb2cce"
+      },
+      "log": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\receipts\\natural-20261026T194234Z-25a084cb-vulkan-skate1.log",
+        "bytes": 148102,
+        "sha256": "b3f47017287c2aaf13fb17817657852180df40c209009867293d053b041d23b5"
+      },
+      "duration_seconds": 40.875,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true,
+        "correct_version": true,
+        "correct_api": true,
+        "gpu_4060": true,
+        "actual_cli_game": true,
+        "three_real_screenshots": true,
+        "disable_g_startup_marker": true,
+        "no_forced_frame_guard": true
+      },
+      "passed": true,
+      "images": [
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\capture\\frame_0.png",
+          "bytes": 1719251,
+          "sha256": "3c4d4b4fa89abacac537b8f2da8b645a8768d6b277a0dd4f8142ea79c1b76540",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\capture\\frame_1.png",
+          "bytes": 1737877,
+          "sha256": "d557784377915a30c195d110886d0300d409ec9fe6254b9faac51a806a906df0",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\capture\\frame_2.png",
+          "bytes": 1852017,
+          "sha256": "2b3f9036534b3f338da3e28336b800be6a86b2d30f29f1ec9cbdfb5f5c8e3ccf",
+          "size": [
+            1600,
+            900
+          ]
+        }
+      ],
+      "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "requested_settings": {
+        "lighting": 2,
+        "upscaling": 7,
+        "quality": 2,
+        "nis_sharpness": 0,
+        "fg": false,
+        "hdr": false,
+        "players": 1,
+        "map": 0,
+        "at": [
+          15,
+          30,
+          45
+        ]
+      },
+      "settings_before": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\roaming\\Godot\\app_userdata\\<game>\\settings.cfg",
+        "bytes": 167,
+        "sha256": "4c8b72eb54b07100d9350dfd6a597694b93f92f85607b614d838977a3c13a61f"
+      },
+      "settings_after": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\roaming\\Godot\\app_userdata\\<game>\\settings.cfg",
+        "bytes": 167,
+        "sha256": "4c8b72eb54b07100d9350dfd6a597694b93f92f85607b614d838977a3c13a61f"
+      },
+      "scope": "Production --shots captures at simulation times and exits through RSExit after final shot; no independent RR-state/model, FG, strict-validation, image-quality or wall-clock performance claim."
+    },
+    {
+      "label": "natural-20261026T194234Z-25a084cb-d3d12-skate1",
+      "command": [
+        "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\RTXAcceptance.exe",
+        "--verbose",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "d3d12",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--at=15,30,45",
+        "--shots=<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\capture\\frame"
+      ],
+      "environment_requested": {
+        "APPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\roaming",
+        "LOCALAPPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\local",
+        "TEMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\tmp",
+        "TMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\tmp",
+        "XDG_CACHE_HOME": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\cache",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\receipts\\natural-20261026T194234Z-25a084cb-d3d12-skate1.json",
+        "bytes": 2363,
+        "sha256": "6545361e5a36bfd437e052e58d1ed53a1711106a001646dcfc7f201e42df736a"
+      },
+      "log": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\receipts\\natural-20261026T194234Z-25a084cb-d3d12-skate1.log",
+        "bytes": 146512,
+        "sha256": "911af2cbb343a974d61c84898f0e8876ce5ea446e29e5ce069314edfbb3c817b"
+      },
+      "duration_seconds": 47.109,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true,
+        "correct_version": true,
+        "correct_api": true,
+        "gpu_4060": true,
+        "actual_cli_game": true,
+        "three_real_screenshots": true,
+        "disable_g_startup_marker": true,
+        "no_forced_frame_guard": true
+      },
+      "passed": true,
+      "images": [
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\capture\\frame_0.png",
+          "bytes": 1510161,
+          "sha256": "fd0473ee987524a512d80502eed0ca0cf90a904615dc4cdec6d36bf07c816c99",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\capture\\frame_1.png",
+          "bytes": 1597981,
+          "sha256": "45dd3dbf4df77af198eab45ac237702f54b97579324756d59e004cf863f0f553",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\capture\\frame_2.png",
+          "bytes": 1719256,
+          "sha256": "1795b937260921517ca97118371e0714ddd6d9517183710f2d841e3e3ea7ce1c",
+          "size": [
+            1600,
+            900
+          ]
+        }
+      ],
+      "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "requested_settings": {
+        "lighting": 0,
+        "upscaling": 7,
+        "quality": 2,
+        "nis_sharpness": 0,
+        "fg": false,
+        "hdr": false,
+        "players": 1,
+        "map": 0,
+        "at": [
+          15,
+          30,
+          45
+        ]
+      },
+      "settings_before": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\roaming\\Godot\\app_userdata\\<game>\\settings.cfg",
+        "bytes": 167,
+        "sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106"
+      },
+      "settings_after": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\d3d12\\roaming\\Godot\\app_userdata\\<game>\\settings.cfg",
+        "bytes": 167,
+        "sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106"
+      },
+      "scope": "Production --shots captures at simulation times and exits through RSExit after final shot; no independent RR-state/model, FG, strict-validation, image-quality or wall-clock performance claim."
+    }
+  ],
+  "requested_apis": [
+    "vulkan",
+    "d3d12"
+  ],
+  "harnesses": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_natural_d29.py",
+      "bytes": 6082,
+      "sha256": "dc1957e71fa5f86254c80857c2227b452e3061391545ef2cad01efbdbb20962f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_common.py",
+      "bytes": 5248,
+      "sha256": "8972481a03a80b86f92b7da3d5cdb07a5afd5673502d155225f41e2ecb23c72f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\pck_inventory_d29.py",
+      "bytes": 5610,
+      "sha256": "f93ec163c61e055343a838469b349d416866dc4c18ddae6ae96e88fb050a9b1f"
+    }
+  ]
+}

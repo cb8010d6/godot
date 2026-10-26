@@ -1,0 +1,169 @@
+{
+  "scope": "Seven sequential CPU repository checks only; no Godot/import/build/GPU/pip/project-copy commands",
+  "status": "PASS",
+  "head": "06f5216131452210df1e40b02fca194c042567d9",
+  "started_utc": "2026-10-26T16:20:57.383429+00:00",
+  "input_sha256_before": {
+    "game/shaders/facade.gdshader": "b9eacb7e0c937f59db0c9cad0b98c044584667f5587ee512be451c67b3db3ec7",
+    "game/shaders/ski_terrain.gdshader": "e5e59c43b4bf0c9c986ad29f7346c4522ea9d72bcf4b57897b3576404a30551d",
+    "game/shaders/rt_pixel_footprint.gdshaderinc": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+    "game/shaders/rt_pixel_footprint.gdshaderinc.uid": "8fb6343f13e9ca7cc33d72f3d3dc2204d0ea19a8024f0442734927e9dfc8ce9d",
+    "docs/PT_MATERIAL_COMPATIBILITY.md": "56377b0631c87e058b2004c47580739a88bb95561af2fb67baa85c6912f98465",
+    "game/core/nvidia.gd": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+    "game/core/party_game.gd": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+    "game/core/render_warmup.gd": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+    "game/core/render_warmup.gd.uid": "8d1a8a88cefabf8e8d022dc0132a2b6a79b9596d5d97d90698c58a0bba2a054d",
+    "game/i18n/en.json": "281335274a5d07d7d7c1303705f5a826abcdccfd0cdccec5c1a804f58f34c43c",
+    "docs/RT_STARTUP_WARMUP.md": "f2843e720e6aff6c11f8a3a5121d765b1aa4f102279419b62e6188680a4f6e5e",
+    "tools/rtx_engine.json": "1d1eb1178d7bfb743b6908f65a61537b1b4bdb20583ed158378008df7784551d"
+  },
+  "results": [
+    {
+      "name": "conventions",
+      "command": [
+        "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+        "-B",
+        "tools/check_conventions.py"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:20:57.436787+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\conventions.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 0.719,
+      "finished_utc": "2026-10-26T16:20:58.153360+00:00",
+      "log_sha256": "ab7a77b78e6a990f599d01d7db41881bde5694b87621cd69e511e7bdc9e06a7b",
+      "status": "PASS"
+    },
+    {
+      "name": "i18n",
+      "command": [
+        "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+        "-B",
+        "tools/i18n_check.py"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:20:58.215700+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\i18n.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 0.391,
+      "finished_utc": "2026-10-26T16:20:58.607525+00:00",
+      "log_sha256": "e96866a89da241ab2f223f8b8f628d75648661871486e1c2289abd99495b8aa1",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy-only",
+      "command": [
+        "<program-files>\\nodejs\\node.exe",
+        "tools/publication_audit.mjs",
+        "--privacy-only"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:20:58.679736+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\privacy-only.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 2.11,
+      "finished_utc": "2026-10-26T16:21:00.774212+00:00",
+      "log_sha256": "6ea0601ddc181b31583d1b0d274b59b4fbaebb434655ca176c8f706de12a7abc",
+      "status": "PASS"
+    },
+    {
+      "name": "tools-pytest",
+      "command": [
+        "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "tools/tests",
+        "-o",
+        "cache_dir=<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\pytest-tools"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:21:00.866308+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\tools-pytest.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 100.906,
+      "finished_utc": "2026-10-26T16:22:41.767214+00:00",
+      "log_sha256": "3e93ddff1b2bd889279dae51d540bd48cc4a27923baba7072a132cffdaa82f96",
+      "status": "PASS"
+    },
+    {
+      "name": "ruff-hub-tools",
+      "command": [
+        "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "--config",
+        "hub/pyproject.toml",
+        "hub",
+        "tools"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:22:41.836294+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\ruff-hub-tools.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 0.187,
+      "finished_utc": "2026-10-26T16:22:42.023547+00:00",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "status": "PASS"
+    },
+    {
+      "name": "hub-pytest",
+      "command": [
+        "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-o",
+        "cache_dir=<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\pytest-hub"
+      ],
+      "cwd": "<game>\\hub",
+      "started_utc": "2026-10-26T16:22:42.090520+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\hub-pytest.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 4.797,
+      "finished_utc": "2026-10-26T16:22:46.894216+00:00",
+      "log_sha256": "2fed2e918e6b2eb0eeb54736a24bc2fdfcf380a13eca653e97b1dd3bf15104e1",
+      "status": "PASS"
+    },
+    {
+      "name": "node-asset-sync",
+      "command": [
+        "<program-files>\\nodejs\\node.exe",
+        "--test",
+        "tools/tests/asset_sync.test.mjs"
+      ],
+      "cwd": "<game>",
+      "started_utc": "2026-10-26T16:22:46.960218+00:00",
+      "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\node-asset-sync.stdout.log",
+      "exit_code": 0,
+      "duration_seconds": 0.296,
+      "finished_utc": "2026-10-26T16:22:47.256371+00:00",
+      "log_sha256": "262ed34136f5ec5095f14cc5398966a5095c3336e7de3625353ade979f494444",
+      "status": "PASS"
+    }
+  ],
+  "output": "<evidence>\\cpu\\20261026T162057Z-serial-f07523",
+  "input_sha256_after": {
+    "game/shaders/facade.gdshader": "b9eacb7e0c937f59db0c9cad0b98c044584667f5587ee512be451c67b3db3ec7",
+    "game/shaders/ski_terrain.gdshader": "e5e59c43b4bf0c9c986ad29f7346c4522ea9d72bcf4b57897b3576404a30551d",
+    "game/shaders/rt_pixel_footprint.gdshaderinc": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+    "game/shaders/rt_pixel_footprint.gdshaderinc.uid": "8fb6343f13e9ca7cc33d72f3d3dc2204d0ea19a8024f0442734927e9dfc8ce9d",
+    "docs/PT_MATERIAL_COMPATIBILITY.md": "56377b0631c87e058b2004c47580739a88bb95561af2fb67baa85c6912f98465",
+    "game/core/nvidia.gd": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+    "game/core/party_game.gd": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+    "game/core/render_warmup.gd": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+    "game/core/render_warmup.gd.uid": "8d1a8a88cefabf8e8d022dc0132a2b6a79b9596d5d97d90698c58a0bba2a054d",
+    "game/i18n/en.json": "281335274a5d07d7d7c1303705f5a826abcdccfd0cdccec5c1a804f58f34c43c",
+    "docs/RT_STARTUP_WARMUP.md": "f2843e720e6aff6c11f8a3a5121d765b1aa4f102279419b62e6188680a4f6e5e",
+    "tools/rtx_engine.json": "1d1eb1178d7bfb743b6908f65a61537b1b4bdb20583ed158378008df7784551d"
+  },
+  "frozen_inputs_unchanged": true,
+  "working_tree_patch_sha256_after": "47b3183b9bd7c6741c92b183e7461377909ebdb3396fc7c62d0869546d38577b",
+  "working_tree_patch_unchanged": true,
+  "worktree_after": " M game/core/nvidia.gd\n M game/core/party_game.gd\n M game/i18n/en.json\n?? docs/RT_STARTUP_WARMUP.md\n?? game/core/render_warmup.gd\n?? game/core/render_warmup.gd.uid\n",
+  "finished_utc": "2026-10-26T16:22:47.428349+00:00"
+}

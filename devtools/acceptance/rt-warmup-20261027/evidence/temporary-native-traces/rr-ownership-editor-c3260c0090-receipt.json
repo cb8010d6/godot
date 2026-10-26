@@ -1,0 +1,33 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/build/build.ps1",
+    "-Jobs",
+    "2",
+    "-VersionStatus",
+    "beta1"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "c3260c00904c7e3fa7b22811ef4bd5ccd950ebfa",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T18:32:44.700150+00:00",
+  "log": "<previous-evidence>\\logs\\rr-ownership-editor-c3260c0090.log",
+  "pid": 24108,
+  "exit_code": 0,
+  "duration_seconds": 61.204,
+  "finished_utc": "2026-10-26T18:33:45.823876+00:00"
+}

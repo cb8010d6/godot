@@ -1,0 +1,12 @@
+{
+  "scope": "Actual PCK/unchanged release executable only, no GPU claim",
+  "reader_original": "<prior-evidence>\\<game>-a738-export\\pck_inventory.py",
+  "reader_original_sha256": "8998956e80b60336dbf0232c7a7b3788c96503c354b82c081bcafa5df73fe3c9",
+  "reader_adaptation": "Target resource changed to readiness.gd; layout/MD5/source-byte checks unchanged",
+  "global_class_cache_present": true,
+  "main_loop_registration_in_payload": true,
+  "project_binary_present": true,
+  "script_payload_matches_source": true,
+  "template_executable_original_sha256_verified": true,
+  "pack": "beda87fe92f00b2f381cb4c3c2c160f4a1964ef23980c87ba00b473895cdd80b"
+}

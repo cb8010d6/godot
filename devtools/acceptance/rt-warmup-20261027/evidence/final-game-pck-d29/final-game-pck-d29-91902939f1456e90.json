@@ -1,0 +1,631 @@
+{
+  "status": "PASS",
+  "native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+  "project": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+  "project_copied": false,
+  "steps": [
+    {
+      "label": "run-d29-20261026T193953Z-3dfadb2a-import",
+      "command": [
+        "<evidence>\\builds\\native-six-d29e706530\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--rendering-driver",
+        "dummy",
+        "--rendering-method",
+        "dummy",
+        "--path",
+        "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+        "--import"
+      ],
+      "environment_requested": {
+        "APPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\roaming",
+        "LOCALAPPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\local",
+        "TEMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\tmp",
+        "TMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\tmp",
+        "XDG_CACHE_HOME": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\cache",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\receipts\\run-d29-20261026T193953Z-3dfadb2a-import.json",
+        "bytes": 1830,
+        "sha256": "c08de1e3087a76e42fce197d2208e2755bc2eb654903c94b431172a4e3038fb2"
+      },
+      "log": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\receipts\\run-d29-20261026T193953Z-3dfadb2a-import.log",
+        "bytes": 1370,
+        "sha256": "f859f4b4189493b35af249fcb2e6fa65136cae259379156e447c31192d6bbc68"
+      },
+      "duration_seconds": 6.485,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true
+      },
+      "passed": true
+    },
+    {
+      "label": "run-d29-20261026T193953Z-3dfadb2a-export-release",
+      "command": [
+        "<evidence>\\builds\\native-six-d29e706530\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--rendering-driver",
+        "dummy",
+        "--rendering-method",
+        "dummy",
+        "--path",
+        "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+        "--export-release",
+        "Windows Desktop",
+        "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\RTXAcceptance.exe"
+      ],
+      "environment_requested": {
+        "APPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\roaming",
+        "LOCALAPPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\local",
+        "TEMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\tmp",
+        "TMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\tmp",
+        "XDG_CACHE_HOME": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\build-profile\\cache",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\receipts\\run-d29-20261026T193953Z-3dfadb2a-export-release.json",
+        "bytes": 1975,
+        "sha256": "c8f0ab4f8ad142c74e8932aa3a37beb8a2dc6c11b7a884d4fd1e2b6c9cea14f7"
+      },
+      "log": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\receipts\\run-d29-20261026T193953Z-3dfadb2a-export-release.log",
+        "bytes": 149944,
+        "sha256": "47bff487be37dbcbe2f893ac6db9a3ce408115627e2ee8c0588f9a14da402c98"
+      },
+      "duration_seconds": 18.312,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true
+      },
+      "passed": true
+    }
+  ],
+  "runtime_pending": true,
+  "frozen_inputs": {
+    "native_six": {
+      "file": "<evidence>\\builds\\native-six-d29e706530\\inventory.json",
+      "bytes": 51975,
+      "sha256": "3f440c3bfe6cc4ae63f590e8422880a63cb7102ceebafae36b9080b211c6b096"
+    },
+    "sdk": {
+      "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\inventory.json",
+      "bytes": 4731,
+      "sha256": "437d13b6f857b3c6cfa2e77c1ceae02a94f4b5cfe3e6517e5530c44ad5c3aaf2"
+    }
+  },
+  "critical_game_commit_matches": [
+    {
+      "file": "shaders/rt_pixel_footprint.gdshaderinc",
+      "bytes": 1654,
+      "committed_sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+      "snapshot": {
+        "file": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\shaders\\rt_pixel_footprint.gdshaderinc",
+        "bytes": 1654,
+        "sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1"
+      }
+    },
+    {
+      "file": "core/render_warmup.gd",
+      "bytes": 5771,
+      "committed_sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+      "snapshot": {
+        "file": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\render_warmup.gd",
+        "bytes": 5771,
+        "sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c"
+      }
+    },
+    {
+      "file": "core/nvidia.gd",
+      "bytes": 6969,
+      "committed_sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+      "snapshot": {
+        "file": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\nvidia.gd",
+        "bytes": 6969,
+        "sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126"
+      }
+    },
+    {
+      "file": "core/party_game.gd",
+      "bytes": 37752,
+      "committed_sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+      "snapshot": {
+        "file": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\party_game.gd",
+        "bytes": 37752,
+        "sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864"
+      }
+    }
+  ],
+  "harnesses": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_export_d29.py",
+      "bytes": 8944,
+      "sha256": "bdbe237809b02e982e36eceeabd9d166ba63c2fafffaff55664f0fe5f9117136"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_common.py",
+      "bytes": 5248,
+      "sha256": "8972481a03a80b86f92b7da3d5cdb07a5afd5673502d155225f41e2ecb23c72f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\pck_inventory_d29.py",
+      "bytes": 5610,
+      "sha256": "f93ec163c61e055343a838469b349d416866dc4c18ddae6ae96e88fb050a9b1f"
+    },
+    {
+      "file": "<evidence>\\validation-final\\final_exports.py",
+      "bytes": 31978,
+      "sha256": "e5604ff1a258c2400382b3bd1489bd9e1fd1be6492d60f0a63fe54a6bcbc7659"
+    },
+    {
+      "file": "<previous-evidence>\\run_logged.py",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+    },
+    {
+      "file": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    }
+  ],
+  "space_budget": {
+    "estimated_output_and_install_bytes": 2477632849,
+    "free_bytes_before": 60862431232,
+    "project_copy_bytes": 0,
+    "basis": "Conservative source bytes + installed TPZ + SDK DLLs + 256 MiB margin"
+  },
+  "archive": {
+    "file": "<evidence>\\packages-d29e706530\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64.tpz",
+    "bytes": 66914391,
+    "sha256": "79f1e353f359d5307031d724c2183ec025fc8bc5302cac8e3696cb93a8172d85"
+  },
+  "sdk_dll_copies": [
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\NvBlast.dll",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\NvBlast.dll",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\NvBlastExtAuthoring.dll",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\NvBlastExtAuthoring.dll",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\NvBlastExtShaders.dll",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\NvBlastExtShaders.dll",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\NvBlastGlobals.dll",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\NvBlastGlobals.dll",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvflow.dll",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvflow.dll",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvflowext.dll",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvflowext.dll",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvngx_deepdvc.dll",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvngx_deepdvc.dll",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvngx_dlss.dll",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvngx_dlss.dll",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvngx_dlssd.dll",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvngx_dlssd.dll",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\nvngx_dlssg.dll",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\nvngx_dlssg.dll",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\PhysXGpu_64.dll",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\PhysXGpu_64.dll",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.common.dll",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.common.dll",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.deepdvc.dll",
+        "bytes": 376448,
+        "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.deepdvc.dll",
+        "bytes": 376448,
+        "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.directsr.dll",
+        "bytes": 369792,
+        "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.directsr.dll",
+        "bytes": 369792,
+        "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.dlss.dll",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.dlss.dll",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.dlss_d.dll",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.dlss_d.dll",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.dlss_g.dll",
+        "bytes": 637056,
+        "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.dlss_g.dll",
+        "bytes": 637056,
+        "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.interposer.dll",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.interposer.dll",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.nis.dll",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.nis.dll",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.nvperf.dll",
+        "bytes": 761472,
+        "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.nvperf.dll",
+        "bytes": 761472,
+        "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.pcl.dll",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.pcl.dll",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\sl.reflex.dll",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\sl.reflex.dll",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\x86_64\\D3D12Core.dll",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\x86_64\\D3D12Core.dll",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      }
+    },
+    {
+      "source": {
+        "file": "<evidence>\\builds\\editor-d29e706530-sdk214\\x86_64\\d3d12SDKLayers.dll",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      },
+      "target": {
+        "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\x86_64\\d3d12SDKLayers.dll",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      }
+    }
+  ],
+  "pck_include_and_warmup_passed": true,
+  "runtime_inventory": [
+    {
+      "file": "NvBlast.dll",
+      "bytes": 60416,
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+    },
+    {
+      "file": "NvBlastExtAuthoring.dll",
+      "bytes": 823296,
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+    },
+    {
+      "file": "NvBlastExtShaders.dll",
+      "bytes": 37376,
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+    },
+    {
+      "file": "NvBlastGlobals.dll",
+      "bytes": 24064,
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+    },
+    {
+      "file": "nvflow.dll",
+      "bytes": 2066944,
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+    },
+    {
+      "file": "nvflowext.dll",
+      "bytes": 10371072,
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+    },
+    {
+      "file": "nvngx_deepdvc.dll",
+      "bytes": 3104880,
+      "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+    },
+    {
+      "file": "nvngx_dlss.dll",
+      "bytes": 58956912,
+      "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+    },
+    {
+      "file": "nvngx_dlssd.dll",
+      "bytes": 48343664,
+      "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+    },
+    {
+      "file": "nvngx_dlssg.dll",
+      "bytes": 7506544,
+      "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+    },
+    {
+      "file": "PhysXGpu_64.dll",
+      "bytes": 346725888,
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+    },
+    {
+      "file": "RTXAcceptance.exe",
+      "bytes": 80688128,
+      "sha256": "b48f0fd118b2d792eea3e039539929ff1bf4035c109ec000b461b921b931791b"
+    },
+    {
+      "file": "RTXAcceptance.pck",
+      "bytes": 1660185676,
+      "sha256": "4415969e935cbcec05c8c4d3df574dee80367ab953205f6f43558400bf8e4c20"
+    },
+    {
+      "file": "sl.common.dll",
+      "bytes": 843904,
+      "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+    },
+    {
+      "file": "sl.deepdvc.dll",
+      "bytes": 376448,
+      "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+    },
+    {
+      "file": "sl.directsr.dll",
+      "bytes": 369792,
+      "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+    },
+    {
+      "file": "sl.dlss.dll",
+      "bytes": 422016,
+      "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+    },
+    {
+      "file": "sl.dlss_d.dll",
+      "bytes": 437376,
+      "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+    },
+    {
+      "file": "sl.dlss_g.dll",
+      "bytes": 637056,
+      "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+    },
+    {
+      "file": "sl.interposer.dll",
+      "bytes": 652928,
+      "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+    },
+    {
+      "file": "sl.nis.dll",
+      "bytes": 1155712,
+      "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+    },
+    {
+      "file": "sl.nvperf.dll",
+      "bytes": 761472,
+      "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+    },
+    {
+      "file": "sl.pcl.dll",
+      "bytes": 360064,
+      "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+    },
+    {
+      "file": "sl.reflex.dll",
+      "bytes": 388736,
+      "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+    },
+    {
+      "file": "x86_64/D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "file": "x86_64/d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    }
+  ],
+  "source_changes": [],
+  "generated_import_metadata_changes": [],
+  "code_assets_unchanged": true
+}

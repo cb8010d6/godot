@@ -1,0 +1,43 @@
+{
+  "command": [
+    "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\standard-debug\\game\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--rendering-method",
+    "forward_plus",
+    "--fixed-fps",
+    "60",
+    "--verbose"
+  ],
+  "cwd": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\standard-debug\\game",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\standard-debug\\game\\RTXAcceptance.exe",
+      "bytes": 95498248,
+      "sha256": "14f5d25d3d850a794343a21d612237069fb0f1ce640dfea259c8f081b57f3552"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\standard\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\standard\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:29:14.657632+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-standard-debug-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 19260,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 7.016,
+  "finished_utc": "2026-10-26T19:29:21.513231+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Seven sequential CPU repository checks only; no Godot/import/build/GPU/pip/project-copy commands",
+  "head": "06f5216131452210df1e40b02fca194c042567d9",
+  "worktree_before": " M game/core/nvidia.gd\n M game/core/party_game.gd\n M game/i18n/en.json\n?? docs/RT_STARTUP_WARMUP.md\n?? game/core/render_warmup.gd\n?? game/core/render_warmup.gd.uid\n",
+  "candidate_sha256_before": {
+    "game/shaders/facade.gdshader": "b9eacb7e0c937f59db0c9cad0b98c044584667f5587ee512be451c67b3db3ec7",
+    "game/shaders/ski_terrain.gdshader": "e5e59c43b4bf0c9c986ad29f7346c4522ea9d72bcf4b57897b3576404a30551d",
+    "game/shaders/rt_pixel_footprint.gdshaderinc": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+    "game/shaders/rt_pixel_footprint.gdshaderinc.uid": "8fb6343f13e9ca7cc33d72f3d3dc2204d0ea19a8024f0442734927e9dfc8ce9d",
+    "docs/PT_MATERIAL_COMPATIBILITY.md": "56377b0631c87e058b2004c47580739a88bb95561af2fb67baa85c6912f98465",
+    "game/core/nvidia.gd": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+    "game/core/party_game.gd": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+    "game/core/render_warmup.gd": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+    "game/core/render_warmup.gd.uid": "8d1a8a88cefabf8e8d022dc0132a2b6a79b9596d5d97d90698c58a0bba2a054d",
+    "game/i18n/en.json": "281335274a5d07d7d7c1303705f5a826abcdccfd0cdccec5c1a804f58f34c43c",
+    "docs/RT_STARTUP_WARMUP.md": "f2843e720e6aff6c11f8a3a5121d765b1aa4f102279419b62e6188680a4f6e5e",
+    "tools/rtx_engine.json": "1d1eb1178d7bfb743b6908f65a61537b1b4bdb20583ed158378008df7784551d"
+  },
+  "working_tree_patch_sha256": "47b3183b9bd7c6741c92b183e7461377909ebdb3396fc7c62d0869546d38577b",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "TEMP": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\tmp",
+    "TMP": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\tmp",
+    "RUFF_CACHE_DIR": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\ruff",
+    "XDG_CACHE_HOME": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\xdg",
+    "PIP_CACHE_DIR": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\cache\\pip",
+    "PIP_NO_INDEX": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PYTEST_ADDOPTS": ""
+  },
+  "runner_sha256": "8bc3de92e4e2c682a571a510d63146167d362bf1547794bbbfef8b5582af05ab",
+  "python_executable": "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+  "python_executable_sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14",
+  "node_executable": "<program-files>\\nodejs\\node.exe",
+  "node_executable_sha256": "d702daa815eabbff763c7d3808e235cf031cf2ca70211b56847bc72f51e240e5"
+}

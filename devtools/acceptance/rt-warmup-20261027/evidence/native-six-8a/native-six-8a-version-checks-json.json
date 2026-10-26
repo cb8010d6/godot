@@ -1,0 +1,15 @@
+[
+  {
+    "file": "godot.windows.editor.x86_64.console.exe",
+    "command": [
+      "<evidence>\\builds\\native-six-8a7364bf6c\\godot.windows.editor.x86_64.console.exe",
+      "--version"
+    ],
+    "exit_code": 3221225781,
+    "stdout": "",
+    "stderr": "",
+    "duration_seconds": 0.5,
+    "version_matches_expected_commit": false,
+    "sha256": "e4dd3f151758ec19696017e5ddf548f725c61213baec54845ff90ef39c12ba84"
+  }
+]

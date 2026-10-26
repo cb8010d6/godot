@@ -1,0 +1,66 @@
+{
+  "command": [
+    "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\RTXAcceptance.exe",
+    "--verbose",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1600x900",
+    "--fixed-fps",
+    "60",
+    "--",
+    "--game=skate",
+    "--demo=1",
+    "--map=0",
+    "--at=15,30,45",
+    "--shots=<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\capture\\frame"
+  ],
+  "cwd": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\game\\RTXAcceptance.exe",
+      "bytes": 80688128,
+      "sha256": "b48f0fd118b2d792eea3e039539929ff1bf4035c109ec000b461b921b931791b"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\local",
+    "TEMP": "<evidence>\\<game>-d29-export\\run-d29-20261026T193953Z-3dfadb2a\\natural-20261026T194234Z-25a084cb\\vulkan\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:42:34.822289+00:00",
+  "log": "<previous-evidence>\\logs\\natural-20261026T194234Z-25a084cb-vulkan-skate1.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 32800,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    38356,
+    21128,
+    22236,
+    44036,
+    26816,
+    47952,
+    16684,
+    35136,
+    32344,
+    4484,
+    27884,
+    30996,
+    18628,
+    33464
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 40.875,
+  "finished_utc": "2026-10-26T19:43:15.546548+00:00"
+}

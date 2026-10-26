@@ -1,0 +1,43 @@
+{
+  "command": [
+    "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-release\\game\\RTXAcceptance.exe",
+    "--rendering-driver",
+    "d3d12",
+    "--rendering-method",
+    "forward_plus",
+    "--fixed-fps",
+    "60",
+    "--verbose"
+  ],
+  "cwd": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-release\\game",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-release\\game\\RTXAcceptance.exe",
+      "bytes": 80851456,
+      "sha256": "ced49e888278bdeab4bee20422e079f53d38247cfc51292f826a15f79a507c71"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": null,
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:30:54.706683+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-mono-release-run.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 27996,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 3.891,
+  "finished_utc": "2026-10-26T19:30:58.452546+00:00"
+}

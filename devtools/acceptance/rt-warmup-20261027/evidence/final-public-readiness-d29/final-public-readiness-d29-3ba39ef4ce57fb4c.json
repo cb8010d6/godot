@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "scope": "CPU audit of actual final public-source PCK and existing parent-executed GPU receipts; this audit launched no native process",
+  "reader_original": {
+    "file": "<prior-evidence>\\<game>-a738-export\\pck_inventory.py",
+    "bytes": 3836,
+    "sha256": "8998956e80b60336dbf0232c7a7b3788c96503c354b82c081bcafa5df73fe3c9"
+  },
+  "v1_adapter_read_only": {
+    "file": "<evidence>\\packaged-readiness\\verify_pack.py",
+    "bytes": 2078,
+    "sha256": "5494eb5d48b7a944d88ad345d682b2ee05c6cbeaa98572b4bb6b9cd33956c13b"
+  },
+  "reader_adaptation": "Target readiness.gd; original layout/MD5/source-byte checks retained; all payload MD5s additionally checked",
+  "exact_public_source_four_files": [
+    {
+      "name": "readiness.gd",
+      "source": {
+        "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\readiness.gd",
+        "bytes": 8576,
+        "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+      },
+      "runtime_project_input": {
+        "file": "<evidence>\\public-readiness-d29e706530\\project\\readiness.gd",
+        "bytes": 8576,
+        "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+      },
+      "matches_exact_source_bytes": true
+    },
+    {
+      "name": "project.godot",
+      "source": {
+        "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\project.godot",
+        "bytes": 419,
+        "sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8"
+      },
+      "runtime_project_input": {
+        "file": "<evidence>\\public-readiness-d29e706530\\project\\project.godot",
+        "bytes": 419,
+        "sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8"
+      },
+      "matches_exact_source_bytes": true
+    },
+    {
+      "name": "bootstrap.tscn",
+      "source": {
+        "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\bootstrap.tscn",
+        "bytes": 57,
+        "sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67"
+      },
+      "runtime_project_input": {
+        "file": "<evidence>\\public-readiness-d29e706530\\project\\bootstrap.tscn",
+        "bytes": 57,
+        "sha256": "2412c47a8f8f32ea0bb9634e3e1f3e33a9cc9ca8323e8f3f783f4db8e6986e67"
+      },
+      "matches_exact_source_bytes": true
+    },
+    {
+      "name": "export_presets.cfg",
+      "source": {
+        "file": "<source>\\misc\\pathtracer_test_project\\readiness_regression\\export_presets.cfg",
+        "bytes": 250,
+        "sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4"
+      },
+      "runtime_project_input": {
+        "file": "<evidence>\\public-readiness-d29e706530\\project\\export_presets.cfg",
+        "bytes": 250,
+        "sha256": "d901dab7441ba05e501c8a93660e0eaa66562479383685bfbbd6c88ef1c803e4"
+      },
+      "matches_exact_source_bytes": true
+    }
+  ],
+  "global_class_registration_verified": true,
+  "project_binary_strings": {
+    "application/config/name": "RT Readiness Regression",
+    "application/run/main_scene": "res://bootstrap.tscn",
+    "application/run/main_loop_type": "RTReadinessRegression"
+  },
+  "bootstrap_remap_target": "res://.godot/exported/133200997/export-119bc78e9a79af8941f2f0178e74e6ab-bootstrap.scn",
+  "bootstrap_resource_header": "52535243",
+  "all_payload_md5_verified": true,
+  "script_payload_matches_source": true,
+  "pack": {
+    "file": "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.pck",
+    "bytes": 10444,
+    "sha256": "c17ac07442c3546fc8a66be6b0fc25d22fd6314793ed4e7d0a9e10e5b226e919"
+  },
+  "release_executable_unchanged": {
+    "file": "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.exe",
+    "bytes": 80790016,
+    "sha256": "affa480e5a19f3e39b644035ac9c1938471ec7017a7f50db12f30e4257c26c53"
+  },
+  "receipts": {
+    "import": {
+      "artifact": {
+        "file": "<previous-evidence>\\public-readiness-d29e706530-import.json",
+        "bytes": 1681,
+        "sha256": "d2889edcd20801c23737d61a4c60e3b9ecee02d1509ae169a633cee8e67c8222"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\public-readiness-d29e706530-import.log",
+        "bytes": 1060,
+        "sha256": "66da59ca7eb1c1a6ebddb8fb878eef66b5bd62198f7980cb641ca4e8334e4c29"
+      },
+      "duration_seconds": 6.25,
+      "checkout_sha_at_execution": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "command": [
+        "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\public-readiness-d29e706530\\project",
+        "--import"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+          "bytes": 161809408,
+          "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    },
+    "export": {
+      "artifact": {
+        "file": "<previous-evidence>\\public-readiness-d29e706530-export.json",
+        "bytes": 1836,
+        "sha256": "d64b3b0ae026e5f08cbc7bd6ca0e4a604a6394148ffbf4b5c878e3b306e28e18"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\public-readiness-d29e706530-export.log",
+        "bytes": 1577,
+        "sha256": "936889494a95abd5118c87d3a91671bb4b7aa3f5e9a486c0cd1966f6e5293ef7"
+      },
+      "duration_seconds": 5.265,
+      "checkout_sha_at_execution": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "command": [
+        "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\public-readiness-d29e706530\\project",
+        "--export-pack",
+        "Release readiness",
+        "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.pck"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\builds\\editor-d29e706530-no-sl\\godot.windows.editor.x86_64.exe",
+          "bytes": 161809408,
+          "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    },
+    "run": {
+      "artifact": {
+        "file": "<previous-evidence>\\public-readiness-d29e706530-run.json",
+        "bytes": 1788,
+        "sha256": "09a180336a0fc91979ecc0304bf959495a0125dbb4071bd4866f0fa6a502fa7f"
+      },
+      "log": {
+        "file": "<previous-evidence>\\logs\\public-readiness-d29e706530-run.log",
+        "bytes": 28719,
+        "sha256": "1e0874e36f173ff936ab9285a35e0ea9966677930e94c289f5ba9828e337eae5"
+      },
+      "duration_seconds": 5.281,
+      "checkout_sha_at_execution": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "command": [
+        "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.exe",
+        "--rendering-driver",
+        "vulkan",
+        "--rendering-method",
+        "forward_plus",
+        "--verbose",
+        "--",
+        "--output=<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7"
+      ],
+      "native_input_binaries": [
+        {
+          "file": "<evidence>\\public-readiness-d29e706530\\runtime\\godot.windows.template_release.x86_64.exe",
+          "bytes": 80790016,
+          "sha256": "affa480e5a19f3e39b644035ac9c1938471ec7017a7f50db12f30e4257c26c53"
+        }
+      ],
+      "exit_code": 0,
+      "job_cleanup": [],
+      "ngx_after": []
+    }
+  },
+  "summary": {
+    "file": "<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7\\summary.json",
+    "bytes": 3465,
+    "sha256": "283e684f8823592729ca942b4384ef18586b168411945840ad2386d4876f2583"
+  },
+  "actual_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "actual_api": "vulkan",
+  "actual_native_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "summary_elapsed_msec": 1017,
+  "pending_observed": true,
+  "five_phases_verified": true,
+  "four_original_pngs": [
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7\\first_view_only.png",
+      "bytes": 2169,
+      "sha256": "b34a1fcadc87a7b244667e23d8ef057da557c2ae9fa1b24b2bae7f7bea75aabd"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7\\both_views.png",
+      "bytes": 3234,
+      "sha256": "72611e657a75270bd2b6762018ac7e044275c2525ef2cd1e40da5540ba68f492"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7\\changed_source.png",
+      "bytes": 3314,
+      "sha256": "547ca9d0d686b5c13aae084ea5dc2098ad19486c22d9406e26b02ddbd892a0e5"
+    },
+    {
+      "file": "<evidence>\\public-readiness-d29e706530\\capture-20261026T191340Z-91f259e7\\changed_variant.png",
+      "bytes": 3105,
+      "sha256": "0d0270468210daa80265d15f823056eaf6dbb24eb83beccdddfd1826a149bd8b"
+    }
+  ],
+  "intentional_bad_shader_error_retained": true,
+  "limits": "Recorded-command/live RT statistics; no RR/DLSS/FG, presentation, GPU-fence or strict-validation acceptance"
+}

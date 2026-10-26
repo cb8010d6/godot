@@ -1,0 +1,20 @@
+✔ verified local files need no network request (7.4427ms)
+✔ a download is installed only after its size and SHA-256 match (25.4021ms)
+✔ wrong content leaves a changed local file intact and removes temporary files (9.0216ms)
+✔ oversized and interrupted responses never install partial data (6.9336ms)
+✔ paths and redirects cannot escape approved destinations (1.3368ms)
+✔ API selectors include the exact requested model dependency (0.2777ms)
+✔ processing-history cleanup preserves copyright and compressed pixel bytes (0.6313ms)
+✔ sanitized downloads must match the final hash before installation (9.4595ms)
+✔ only patched Node lines are supported (#51) (0.3469ms)
+✔ shared asset library files are documented CC0 sources (#58) (0.2873ms)
+✔ asset policy rules point at existing evidence and none is shadowed (2.0013ms)
+✔ locked entries may carry a planned-use note, but only as text (83.5091ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 234.5796

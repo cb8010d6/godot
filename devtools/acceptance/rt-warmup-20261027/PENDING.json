@@ -1,0 +1,25 @@
+{
+  "scope": "Release checks or unsupported claims remain open; diagnostic evidence is not a release acceptance declaration.",
+  "pending": [
+    {
+      "id": "rr-strict-acceptance",
+      "state": "DEFAULT_F_FAIL_D_COMPATIBILITY_CONTROLS_CLEAN_SEPARATE_SCOPE",
+      "reason": "Default/F requested RR retains WAW/09600. A supported D request is clean in the recorded primitive control and, when separately listed above, bounded one/four-player game controls. Their native8b/checkoutD29 provenance remains distinct. No default model change, full model identity, or equivalent-quality repair is inferred."
+    },
+    {
+      "id": "sdk210-production-qualification",
+      "state": "NOT_QUALIFIED",
+      "reason": "Two bounded clean runs and one earlier device-loss failure; no stable downgrade recommendation or SDK/header ABI certification."
+    },
+    {
+      "id": "ordinary-fg-mfg-model-identity-performance",
+      "state": "NOT_EXECUTED_IN_THIS_SLICE",
+      "reason": "No new ordinary FG, MFG, actual AI model-weight identity or performance/latency acceptance."
+    },
+    {
+      "id": "repository-stage-push-or-release",
+      "state": "NOT_PERFORMED_BY_CURATOR",
+      "reason": "Only private F-drive assembly is authorized to this agent; root owns repository review and publication."
+    }
+  ]
+}

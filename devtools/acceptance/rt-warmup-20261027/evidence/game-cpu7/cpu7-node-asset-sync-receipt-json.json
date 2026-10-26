@@ -1,0 +1,16 @@
+{
+  "name": "node-asset-sync",
+  "command": [
+    "<program-files>\\nodejs\\node.exe",
+    "--test",
+    "tools/tests/asset_sync.test.mjs"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:22:46.960218+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\node-asset-sync.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 0.296,
+  "finished_utc": "2026-10-26T16:22:47.256371+00:00",
+  "log_sha256": "262ed34136f5ec5095f14cc5398966a5095c3336e7de3625353ade979f494444",
+  "status": "PASS"
+}

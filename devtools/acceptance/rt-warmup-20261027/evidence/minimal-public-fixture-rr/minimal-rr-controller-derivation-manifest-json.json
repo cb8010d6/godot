@@ -1,0 +1,33 @@
+{
+  "scope": "CPU derivation only; default plan-only, no native execution, originals untouched",
+  "originals": [
+    {
+      "file": "<evidence>\\fg-init-isolation\\ab-control\\candidate_case.py",
+      "sha256": "1e3d317d9359cfc91213b08b6624c07f18f5bdc57a3b3c0449668dc4b68c632c"
+    },
+    {
+      "file": "<evidence>\\fg-init-isolation\\ab-control\\ab_runner.py",
+      "sha256": "4a4d1581df782d4d65d4d995ef695ac4a133912ffb3d5a218309b716d11aa49d"
+    }
+  ],
+  "derived": [
+    {
+      "file": "<evidence>\\rr-minimal\\rr_candidate_case.py",
+      "sha256": "0aeaf22f61ffedbf6a99002b03c48f3a056cfe754111a670c95b9cbc7b283984"
+    },
+    {
+      "file": "<evidence>\\rr-minimal\\rr_minimal.py",
+      "sha256": "5ab626be6fdc28ab156816c739c6df75e1164a9026dd7e99926080cf313f484d"
+    },
+    {
+      "file": "<evidence>\\rr-minimal\\rr_trace_evidence.py",
+      "sha256": "6127825c30968c04f615d145ea8f85c7e8b12f260566ccc45d7c9bc796e64369"
+    },
+    {
+      "file": "<evidence>\\rr-minimal\\derivation.patch",
+      "sha256": "6120de46a1960d4ddde6d0f9bcfd7ffa5330273860aa3e4b1fe31b3e9c320ec2"
+    }
+  ],
+  "native_command_change": "Only --mode=quality to --mode=rr; retains Recommended SR preset metadata, RR preset default ?, motion100/NIS0/49captures. Explicit startup FG omission and RR trace enabled in environment.",
+  "syntax_files_checked": 3
+}

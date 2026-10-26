@@ -1,0 +1,175 @@
+{
+  "label": "A_registered_implicit",
+  "status": "COMPLETE",
+  "command": [
+    "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\godot.windows.editor.x86_64.exe",
+    "--rendering-driver",
+    "vulkan",
+    "--rendering-method",
+    "forward_plus",
+    "--gpu-validation",
+    "--path",
+    "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\project",
+    "--script",
+    "res://lifecycle.gd",
+    "--",
+    "--output=<evidence>/strict-controls/runs/20261026T155502Z-7ed47312/A_registered_implicit/capture"
+  ],
+  "cwd": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\project",
+  "runner": {
+    "file": "<evidence>\\strict-controls\\strict_controls.py",
+    "bytes": 23372,
+    "sha256": "fce0c87db218e1cead54fc96af672d69527584a46c35e4669a0c1b5ae2d8f2e0"
+  },
+  "started_utc": "2026-10-26T15:55:02.906005+00:00",
+  "environment_overrides": {
+    "VK_LOADER_DEBUG": "error,warn,layer",
+    "VK_INSTANCE_LAYERS": "VK_LAYER_KHRONOS_validation",
+    "VK_LAYER_PATH": "<workspace>\\toolchains\\vulkan-validation-1.4.363",
+    "VK_LAYER_SETTINGS_PATH": "<evidence>\\strict-controls\\settings",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "APPDATA": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\profile\\roaming",
+    "LOCALAPPDATA": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\profile\\local",
+    "TEMP": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\profile\\tmp",
+    "TMP": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\profile\\tmp",
+    "XDG_CACHE_HOME": "<evidence>\\strict-controls\\runs\\20261026T155502Z-7ed47312\\A_registered_implicit\\profile\\cache",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cleared_inherited_layer_filters": [
+    "VK_LOADER_LAYERS_DISABLE",
+    "VK_LOADER_LAYERS_ENABLE",
+    "VK_LOADER_LAYERS_ALLOW",
+    "VK_ADD_LAYER_PATH"
+  ],
+  "before": {
+    "engine_commit_from_prior_build": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+    "engine_directory_files": [
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\godot.windows.editor.x86_64.console.exe",
+        "bytes": 301056,
+        "sha256": "0b477823552fc923a86736970ff2b2e48e8628cd4f3d6a724f0f5874b13254fa"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\godot.windows.editor.x86_64.exe",
+        "bytes": 161806336,
+        "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\inventory.json",
+        "bytes": 1641,
+        "sha256": "2e9dedf59ba804fbce0a1a43f1e9f27c2719e0332411294bcce4396b8e04b3ca"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\NvBlast.dll",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\NvBlastExtAuthoring.dll",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\NvBlastExtShaders.dll",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\NvBlastGlobals.dll",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\nvflow.dll",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\nvflowext.dll",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\PhysXGpu_64.dll",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\x86_64\\D3D12Core.dll",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      },
+      {
+        "file": "<prior-evidence>\\builds\\editor-a73826e8c0-no-sl\\x86_64\\d3d12SDKLayers.dll",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      }
+    ],
+    "original_fixture": {
+      "project.godot": {
+        "file": "<prior-evidence>\\lifecycle\\sync-control\\project.godot",
+        "bytes": 551,
+        "sha256": "3588342605e19ce013a81dca165052475c0499d2e9a4e47855d6db47a7fbcfb4"
+      },
+      "lifecycle.gd": {
+        "file": "<prior-evidence>\\lifecycle\\sync-control\\lifecycle.gd",
+        "bytes": 13262,
+        "sha256": "430f09f2d186c3bd2388a5098fa07fdf0c8c09537136c4ff068ebe0d7c1351ab"
+      }
+    },
+    "old_summary": {
+      "file": "<prior-evidence>\\lifecycle\\evidence-bcc-sync-strict-01\\summary.json",
+      "bytes": 58011,
+      "sha256": "54908119eeb585fa046b3e92aa4ed12b4b62186cf3f453f3eb0f9faad6984cee"
+    },
+    "old_failed_overlay_control_log": {
+      "file": "<previous-evidence>\\logs\\pt-materials-lifecycle-bcc-sync-no-rtss.log",
+      "bytes": 60790,
+      "sha256": "4f41aaf1941f8d781f61018c9040f4063ca0f4094e42e1c9ee4a718df54a9e41"
+    },
+    "vvl_manifest": {
+      "file": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.json",
+      "bytes": 132861,
+      "sha256": "9bdb274c944957ad454968c567d2d2b1883436a88de476200e688be1a36e23da"
+    },
+    "vvl_dll": {
+      "file": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.dll",
+      "bytes": 20870656,
+      "sha256": "f0353be5c5339433f5616a242919c724aeba046eca5b08531573818223b9e45a"
+    },
+    "vvl_actual_manifest_api_version": "1.4.366",
+    "job_helper_original": {
+      "file": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    },
+    "staged_fixture": {
+      "project.godot": {
+        "file": "<evidence>\\strict-controls\\inputs\\project.godot",
+        "bytes": 551,
+        "sha256": "3588342605e19ce013a81dca165052475c0499d2e9a4e47855d6db47a7fbcfb4"
+      },
+      "lifecycle.gd": {
+        "file": "<evidence>\\strict-controls\\inputs\\lifecycle.gd",
+        "bytes": 13262,
+        "sha256": "430f09f2d186c3bd2388a5098fa07fdf0c8c09537136c4ff068ebe0d7c1351ab"
+      }
+    },
+    "settings": {
+      "file": "<evidence>\\strict-controls\\settings\\vk_layer_settings.txt",
+      "bytes": 197,
+      "sha256": "f7a75fc3cdf45810831ac12af4ad1bc0267fac718bed1f230011a6567c8f66e4"
+    }
+  },
+  "ngx_before": [],
+  "pid": 40744,
+  "test_job_assigned": true,
+  "native_exit_code": 1,
+  "timed_out": false,
+  "test_job_descendants_closed": [],
+  "duration_seconds": 36.672,
+  "finished_utc": "2026-10-26T15:55:39.598771+00:00",
+  "ngx_after": [],
+  "inputs_unchanged": true,
+  "project_assertions_unchanged": true
+}

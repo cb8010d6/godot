@@ -1,0 +1,2 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Error: Can't run project: no main scene defined in the project.

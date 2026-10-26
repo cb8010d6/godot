@@ -1,0 +1,32 @@
+{
+  "command": [
+    "<workspace>\\acceptance-20261025\\drs_readonly.exe"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<workspace>\\acceptance-20261025\\drs_readonly.exe",
+      "bytes": 287232,
+      "sha256": "0282de02b4fbc7a24bae6177229c2446f72fbed830cbb13e9eb0b401df8fbf1c"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:49:16.904441+00:00",
+  "log": "<previous-evidence>\\logs\\driver-overrides-d29-readonly.log",
+  "pid": 48088,
+  "exit_code": 0,
+  "duration_seconds": 0.281,
+  "finished_utc": "2026-10-26T19:49:17.122944+00:00"
+}

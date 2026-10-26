@@ -1,0 +1,72 @@
+{
+  "command": [
+    "<evidence>\\builds\\editor-c3260c0090-sdk214\\godot.windows.editor.x86_64.exe",
+    "--path",
+    "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+    "--script",
+    "<evidence>\\game-runs\\warmup-c3260c0090-20261026T185156Z-ebeabf3e-normal\\observe_warmup_fg_probe.gd",
+    "--rendering-driver",
+    "vulkan",
+    "--rendering-method",
+    "forward_plus",
+    "--resolution",
+    "1600x900",
+    "--verbose",
+    "--gpu-validation",
+    "--",
+    "--warm-game=skate",
+    "--warm-players=1",
+    "--warm-map=0",
+    "--warm-output=<evidence>\\game-runs\\warmup-c3260c0090-20261026T185156Z-ebeabf3e-normal\\capture",
+    "--warm-case=normal",
+    "--warm-gate=1"
+  ],
+  "cwd": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+  "checkout_sha": "c3260c00904c7e3fa7b22811ef4bd5ccd950ebfa",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\editor-c3260c0090-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161810944,
+      "sha256": "b336f429537ec0fb453c9ed8d44c10a3e3c83f4e6300ef538311e38a3604d048"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\game-runs\\warmup-c3260c0090-20261026T185156Z-ebeabf3e-normal\\profile\\local",
+    "TEMP": "<evidence>\\game-runs\\warmup-c3260c0090-20261026T185156Z-ebeabf3e-normal\\profile\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T18:51:57.246714+00:00",
+  "log": "<previous-evidence>\\logs\\warmup-c3260c0090-20261026T185156Z-ebeabf3e-normal.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 39108,
+  "exit_code": 0,
+  "test_job_descendants_closed": [
+    32500,
+    41924,
+    47144,
+    36812,
+    44284,
+    41292,
+    32676,
+    47868,
+    47244,
+    3472,
+    35824,
+    9788,
+    7272,
+    47000,
+    46104,
+    5212
+  ],
+  "ngx_updaters_after": [],
+  "duration_seconds": 37.031,
+  "finished_utc": "2026-10-26T18:52:34.057550+00:00"
+}

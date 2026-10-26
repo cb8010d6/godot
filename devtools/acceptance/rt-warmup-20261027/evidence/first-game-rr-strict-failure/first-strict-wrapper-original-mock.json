@@ -1,0 +1,35 @@
+{
+  "scope": "CPU_MOCK_ONLY: no native/GPU run. Simulated envelopes/PIDs exercise rejection and classification; not real game proof.",
+  "checks": {
+    "python_syntax": true,
+    "default_is_cpu_preparation_only": true,
+    "exact_mock_pid_chain_accepted": true,
+    "unrelated_mock_pid_chain_rejected": true,
+    "wrong_mock_command_engine_rejected": true,
+    "wrong_mock_recorded_binary_hash_rejected": true,
+    "complete_cpu_mock_can_establish_clean": true,
+    "observer_original_verdict_preserved": true,
+    "silence_without_modules_is_not_established": true,
+    "rtss_even_without_summary_flag_rejects_coverage": true,
+    "fg_module_even_without_summary_flag_rejects_coverage": true,
+    "mock_vuid_cannot_be_clean": true,
+    "mock_normal_engine_error_cannot_be_clean": true,
+    "no_gpu_runs_created": true
+  },
+  "all_cpu_checks_passed": true,
+  "source": {
+    "path": "<evidence>\\strict-game\\strict_game.py",
+    "bytes": 21921,
+    "sha256": "46964d39b1d74d1b7bac3792bce5d1264cae29b1638268809ce02c195cfa410b"
+  },
+  "test": {
+    "path": "<evidence>\\strict-game\\cpu_preflight.py",
+    "bytes": 5896,
+    "sha256": "a90ee7d8ad7dd75930e1e28e1fd6ce32d8e27ede4179036ed1ced4f4c3eb70d8"
+  },
+  "actual_b_log_reference": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\B_disabled_fg_plugin-20261026T171722Z-1939031f\\godot.stdout-and-stderr.log",
+    "bytes": 73325,
+    "sha256": "46e205e1e2c39a29f9490eb01600eb58bda5cf213dc442b5a492943e5818d95d"
+  }
+}

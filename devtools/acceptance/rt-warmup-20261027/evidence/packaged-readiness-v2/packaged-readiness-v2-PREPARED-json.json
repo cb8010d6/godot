@@ -1,0 +1,74 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_sha": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "v1_failure_preserved": true,
+  "correction": "Main::setup at main/main.cpp:2368 checks main_scene before Main::start selects custom MainLoop; v1 static review omitted this guard",
+  "v1_inputs_before_after_unchanged": [
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\readiness.gd",
+      "bytes": 8576,
+      "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\project.godot",
+      "bytes": 381,
+      "sha256": "f0ff1dd75a9f42b493d0aa40df9e921e2fc50cc7274ed8a5561becf146ec1424"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\project\\export_presets.cfg",
+      "bytes": 262,
+      "sha256": "f3d3e3f1dba8a4ac9b7f389b223270b11dd78970f3d5d6aff9fc4fba0d39d6fb"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\PREPARED.json",
+      "bytes": 2440,
+      "sha256": "3a70e7b740c4801d4638c18150c6f3eb300e6286218d330c749b0c5e751e0184"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness\\commands.json",
+      "bytes": 4088,
+      "sha256": "8037d91782ba44d9e84f7855b938c427337bf5119d5ca0daad416cee05c5091b"
+    }
+  ],
+  "assertions_identical_to_v1": true,
+  "readiness_script_identical_to_v1": true,
+  "settings_change": "Only run/main_scene=res://bootstrap.tscn appended; custom main_loop_type retained",
+  "new_scene": "Empty Node with no script or rendering nodes",
+  "runtime_linked": false,
+  "import": "NOT_EXECUTED",
+  "export": "NOT_EXECUTED",
+  "gpu": "NOT_EXECUTED",
+  "expected_release_exe_sha256": "d3a592fa9f079a34e6150c54aaab9fc89ccacc5f034e815494e568d27b9486a0",
+  "files": [
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\project\\readiness.gd",
+      "bytes": 8576,
+      "sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\project\\project.godot",
+      "bytes": 419,
+      "sha256": "bdcb11ee07fd5836cd00a07b070fe523c0078fc92834b628a18a8bdd43f1a0f8"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\project\\bootstrap.tscn",
+      "bytes": 60,
+      "sha256": "f3ac0312f7308a477a86db037b69962ef94b270cac16430ca040f120e0a87baa"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\project\\export_presets.cfg",
+      "bytes": 262,
+      "sha256": "f3d3e3f1dba8a4ac9b7f389b223270b11dd78970f3d5d6aff9fc4fba0d39d6fb"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\link-runtime.ps1",
+      "bytes": 2554,
+      "sha256": "b1502b8f620afba05acf2b9f7e46ac0ae29c12e637d0ca014e29e096730857cc"
+    },
+    {
+      "file": "<evidence>\\packaged-readiness-v2\\commands.json",
+      "bytes": 4305,
+      "sha256": "5afde088816f225e238466276edc13bfa3a5c8f35512b1e8024da41359bfa52a"
+    }
+  ]
+}

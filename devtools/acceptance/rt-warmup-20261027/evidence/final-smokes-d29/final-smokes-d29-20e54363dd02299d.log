@@ -1,0 +1,41 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "<evidence>\\validation-final\\smoke.ps1",
+    "-SourceRoot",
+    "<source>",
+    "-EditorDirectory",
+    "<evidence>\\builds\\native-six-d29e706530",
+    "-OutputDirectory",
+    "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\local",
+    "TEMP": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:24:04.937045+00:00",
+  "log": "<previous-evidence>\\logs\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard.log",
+  "pid": 24792,
+  "exit_code": 0,
+  "duration_seconds": 30.672,
+  "finished_utc": "2026-10-26T19:24:35.549478+00:00"
+}
+Editor: 4.8.beta1.custom_build.d29e70653
+PASS  PhysX, game                        PhysX body fell and settled on the floor
+PASS  PhysX, editor                      PhysX 5.10.0 initialized [GPU].
+PASS  Path tracer, Vulkan                screenshot <evidence>\validation-final\smokes-d29e706530-20261026T192403Z-9eb8cbc2\cases\standard\smoke\standard\path_tracer.png
+PASS  DDGI, interior                     view=interior gi=ddgi quality=1 anim=0 frames=30  mean_linear=0.0124  flicker_std=0.045  flicker_px=0.00%
+All smoke tests passed.

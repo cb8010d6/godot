@@ -1,0 +1,41 @@
+[
+  {
+    "file": "godot.windows.editor.x86_64.console.exe",
+    "command": [
+      "<evidence>\\builds\\native-six-8a7364bf6c\\godot.windows.editor.x86_64.console.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "4.8.beta1.custom_build.8a7364bf6\r\n",
+    "stderr": "",
+    "version_matches_expected_commit": true,
+    "sha256": "e4dd3f151758ec19696017e5ddf548f725c61213baec54845ff90ef39c12ba84",
+    "duration_seconds": 0.094
+  },
+  {
+    "file": "godot.windows.editor.x86_64.exe",
+    "command": [
+      "<evidence>\\builds\\native-six-8a7364bf6c\\godot.windows.editor.x86_64.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "4.8.beta1.custom_build.8a7364bf6\r\n",
+    "stderr": "",
+    "version_matches_expected_commit": true,
+    "sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070",
+    "duration_seconds": 0.141
+  },
+  {
+    "file": "godot.windows.editor.x86_64.mono.console.exe",
+    "command": [
+      "<evidence>\\builds\\native-six-8a7364bf6c\\godot.windows.editor.x86_64.mono.console.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "4.8.beta1.mono.custom_build.8a7364bf6\r\n",
+    "stderr": "",
+    "version_matches_expected_commit": false,
+    "sha256": "96692d609f02f3f27963079eedc8526c10ca99da51bc7535fc25d0302a91a420",
+    "duration_seconds": 0.547
+  }
+]

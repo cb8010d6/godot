@@ -1,0 +1,73 @@
+{
+  "status": "CPU_PREPARED_NOT_RUN",
+  "native_import_export_gpu": "NOT_EXECUTED_BY_THIS_PREPARATION",
+  "checks": [
+    "All private Python tools parse; originals archived byte-identically",
+    "Both default invocations are plan-only and create no project/output/native process",
+    "No full-project copy; production command has no path/script/frame override",
+    "Synthetic CPU PCK remap/global-class/selected-payload checks pass; not native evidence",
+    "Corrupted selected PCK payload is rejected"
+  ],
+  "frozen_tools": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_export_d29.py",
+      "bytes": 8944,
+      "sha256": "bdbe237809b02e982e36eceeabd9d166ba63c2fafffaff55664f0fe5f9117136"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_natural_d29.py",
+      "bytes": 6082,
+      "sha256": "dc1957e71fa5f86254c80857c2227b452e3061391545ef2cad01efbdbb20962f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_common.py",
+      "bytes": 5248,
+      "sha256": "8972481a03a80b86f92b7da3d5cdb07a5afd5673502d155225f41e2ecb23c72f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\pck_inventory_d29.py",
+      "bytes": 5610,
+      "sha256": "f93ec163c61e055343a838469b349d416866dc4c18ddae6ae96e88fb050a9b1f"
+    }
+  ],
+  "originals": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\pck_inventory.py.original",
+      "bytes": 3836,
+      "sha256": "8998956e80b60336dbf0232c7a7b3788c96503c354b82c081bcafa5df73fe3c9"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_export_a738.py.original",
+      "bytes": 3859,
+      "sha256": "0dfbf4eef9ca66d8d00119bbd2bd562f525eb9a93ba079e2541cb18c755078a5"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_natural_a738.py.original",
+      "bytes": 4048,
+      "sha256": "caa347131e89e4f62920836f066f56902313c14c452ba3513980ea93ee12811a"
+    }
+  ],
+  "diffs": [
+    {
+      "file": "<evidence>\\<game>-d29-export\\pck_inventory_d29.py.patch",
+      "bytes": 8410,
+      "sha256": "d651786d1f48324b912a9ea303b95b54d38897a6c4b95f879120fb1c154f379f"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_export_d29.py.patch",
+      "bytes": 13165,
+      "sha256": "3cbc33b43af46231c4bbffa460fa42372f0df5000fcbb62b3c3a13079afbe8be"
+    },
+    {
+      "file": "<evidence>\\<game>-d29-export\\<game>_natural_d29.py.patch",
+      "bytes": 10401,
+      "sha256": "80b3012689012ecec375c6f4b27be147803fb84912e964b360abd8948517c2c7"
+    }
+  ],
+  "synthetic_fixture_scope": "CPU framing checks only; fake token bytes are clearly not engine or GPU evidence",
+  "limits": [
+    "Only parent executes native/GPU steps",
+    "Production shots do not independently sample RR/readiness/model state",
+    "All large PCK hashing is streamed"
+  ]
+}

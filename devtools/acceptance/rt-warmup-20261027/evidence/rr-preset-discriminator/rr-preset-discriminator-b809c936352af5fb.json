@@ -1,0 +1,316 @@
+{
+  "status": "PASS_CPU_AUDIT_OF_REAL_RUNS",
+  "native_execution_by_this_audit": false,
+  "cases": [
+    {
+      "preset": "D",
+      "matrix": {
+        "path": "<evidence>\\rr-preset-discriminator\\preset-D\\experiments\\20261026T194830Z-26c35a4b\\matrix.json",
+        "bytes": 39272,
+        "sha256": "ad7ae07f3f2e394a9a4f7a1f4cd82458dbc0a3702967c2c13c7e689f5dbc1026"
+      },
+      "artifacts": {
+        "raw_log": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-D\\runs\\rr_sdk214_no_dlss_g_preset_D-20261026T194817Z-04f2e310\\godot.stdout-and-stderr.log",
+          "bytes": 74391,
+          "sha256": "258e0b13b917db9eafd46a7c58e60ae999625060b3b37495e29409ff24b6da9f"
+        },
+        "metadata": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-D\\runs\\rr_sdk214_no_dlss_g_preset_D-20261026T194817Z-04f2e310\\capture\\metadata.json",
+          "bytes": 825,
+          "sha256": "9a4b32ff0e3dc96dcf034d494648ce53290ff92434c370837008e7c9e0759995"
+        },
+        "sdk_state": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-D\\runs\\rr_sdk214_no_dlss_g_preset_D-20261026T194817Z-04f2e310\\capture\\sdk-state.json",
+          "bytes": 306109,
+          "sha256": "949dc4c150fc962a8c5d90f3803ba7b2c0eee88f0229f2c57172cd83fa8dcc7b"
+        },
+        "frames": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-D\\runs\\rr_sdk214_no_dlss_g_preset_D-20261026T194817Z-04f2e310\\capture\\frames.json",
+          "bytes": 15213,
+          "sha256": "3ee0ad0ae6cd94c3b955f06526429b5f9b1ec8a98b4af2b3f52baa48c3e25b54"
+        },
+        "module_samples": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-D\\runs\\rr_sdk214_no_dlss_g_preset_D-20261026T194817Z-04f2e310\\module-samples.json",
+          "bytes": 37050,
+          "sha256": "f2b37abfb7778a421e684aea04648db28e7eb080ebeaadabda00feccf4b8264d"
+        }
+      },
+      "strict_verdict": "CLEAN",
+      "infrastructure_all_checks": true,
+      "native_evaluations": [
+        {
+          "viewport": 1,
+          "mode": 3,
+          "result": 0
+        }
+      ],
+      "exact_tag_ids": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        14,
+        42
+      ],
+      "sdk_samples": 160,
+      "frames": 49,
+      "original_png_count_and_hashes_verified": 49,
+      "actual_rr_feature_versions": [
+        [
+          1001.0,
+          "2.14.16",
+          "310.9.16",
+          0.0
+        ]
+      ],
+      "sampled_overlay_names": [
+        "nvspcap64.dll"
+      ],
+      "diagnostic_token_occurrences": {},
+      "validation_message_counts": {
+        "Loader Message": 9
+      },
+      "fg_initialization_checks": {
+        "checks": {
+          "diagnostic_marker_present": true,
+          "fg_capability_false": true,
+          "fg_status_available_false": true,
+          "fg_status_sdk_enabled_false": true,
+          "fg_plugin_not_sampled": true,
+          "all_probe_samples_report_module_absent": true,
+          "all_fg_version_queries_explicitly_skipped": true,
+          "all_fg_getters_explicitly_skipped_without_fake_result": true,
+          "guarded_probe_schema": true,
+          "sr_capability_true": true,
+          "sr_state_samples_preserved": true,
+          "reflex_state_samples_preserved": true,
+          "real_pcl_version_samples_preserved": true
+        },
+        "all_expected_fg_init_observations": true,
+        "actual_fg_capability": false,
+        "cached_fg_status": {
+          "available": false,
+          "eligible": false,
+          "reason": "unavailable",
+          "rendered_3d_views": 0,
+          "requested_3d_views": 0,
+          "sdk_enabled": false,
+          "supported_generated_frames": 0
+        },
+        "fg_module_sampled": false,
+        "scope": "Plugin initialization evidence only; ordinary FG rendering was not enabled or validated."
+      },
+      "metadata_request": "D",
+      "getter_limits": "Existing SDK probe queries viewport1/2; getters return eOk with zero estimated VRAM even for unrendered viewport2. Getter eOk alone is not active RR proof; the non-Off native RR Evaluate and guide tags establish execution."
+    },
+    {
+      "preset": "F",
+      "matrix": {
+        "path": "<evidence>\\rr-preset-discriminator\\preset-F\\experiments\\20261026T194844Z-b95f71c5\\matrix.json",
+        "bytes": 39870,
+        "sha256": "1c5bbdbe830f0a36acba7edad38500ffaeeef2140cdc1ca900ada50ce5745eac"
+      },
+      "artifacts": {
+        "raw_log": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-F\\runs\\rr_sdk214_no_dlss_g_preset_F-20261026T194831Z-1b3435f0\\godot.stdout-and-stderr.log",
+          "bytes": 80353,
+          "sha256": "c95db98f7c04a93a975251ff815aceaea08242cb5d59bea193ce5800f2bdebdb"
+        },
+        "metadata": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-F\\runs\\rr_sdk214_no_dlss_g_preset_F-20261026T194831Z-1b3435f0\\capture\\metadata.json",
+          "bytes": 825,
+          "sha256": "9c19ccca2b486525f5879c5595372ea615e020c79b1a06b00f4f18c5f935e062"
+        },
+        "sdk_state": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-F\\runs\\rr_sdk214_no_dlss_g_preset_F-20261026T194831Z-1b3435f0\\capture\\sdk-state.json",
+          "bytes": 306109,
+          "sha256": "a9040f76acc953a1849eaebd8316366eafef2e7575c53d8f061a1bd7699ee5de"
+        },
+        "frames": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-F\\runs\\rr_sdk214_no_dlss_g_preset_F-20261026T194831Z-1b3435f0\\capture\\frames.json",
+          "bytes": 15213,
+          "sha256": "3ee0ad0ae6cd94c3b955f06526429b5f9b1ec8a98b4af2b3f52baa48c3e25b54"
+        },
+        "module_samples": {
+          "path": "<evidence>\\rr-preset-discriminator\\preset-F\\runs\\rr_sdk214_no_dlss_g_preset_F-20261026T194831Z-1b3435f0\\module-samples.json",
+          "bytes": 36866,
+          "sha256": "32d8bc353c4b21de7871a29835b658e2c58d6c37ea2b6a715b3a887408cbd548"
+        }
+      },
+      "strict_verdict": "FAIL",
+      "infrastructure_all_checks": true,
+      "native_evaluations": [
+        {
+          "viewport": 1,
+          "mode": 3,
+          "result": 0
+        }
+      ],
+      "exact_tag_ids": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        14,
+        42
+      ],
+      "sdk_samples": 160,
+      "frames": 49,
+      "original_png_count_and_hashes_verified": 49,
+      "actual_rr_feature_versions": [
+        [
+          1001.0,
+          "2.14.16",
+          "310.9.16",
+          0.0
+        ]
+      ],
+      "sampled_overlay_names": [
+        "nvspcap64.dll"
+      ],
+      "diagnostic_token_occurrences": {
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 4
+      },
+      "validation_message_counts": {
+        "Loader Message": 9,
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 2,
+        "VUID-vkCmdDraw-None-09600": 2
+      },
+      "fg_initialization_checks": {
+        "checks": {
+          "diagnostic_marker_present": true,
+          "fg_capability_false": true,
+          "fg_status_available_false": true,
+          "fg_status_sdk_enabled_false": true,
+          "fg_plugin_not_sampled": true,
+          "all_probe_samples_report_module_absent": true,
+          "all_fg_version_queries_explicitly_skipped": true,
+          "all_fg_getters_explicitly_skipped_without_fake_result": true,
+          "guarded_probe_schema": true,
+          "sr_capability_true": true,
+          "sr_state_samples_preserved": true,
+          "reflex_state_samples_preserved": true,
+          "real_pcl_version_samples_preserved": true
+        },
+        "all_expected_fg_init_observations": true,
+        "actual_fg_capability": false,
+        "cached_fg_status": {
+          "available": false,
+          "eligible": false,
+          "reason": "unavailable",
+          "rendered_3d_views": 0,
+          "requested_3d_views": 0,
+          "sdk_enabled": false,
+          "supported_generated_frames": 0
+        },
+        "fg_module_sampled": false,
+        "scope": "Plugin initialization evidence only; ordinary FG rendering was not enabled or validated."
+      },
+      "metadata_request": "F",
+      "getter_limits": "Existing SDK probe queries viewport1/2; getters return eOk with zero estimated VRAM even for unrendered viewport2. Getter eOk alone is not active RR proof; the non-Off native RR Evaluate and guide tags establish execution."
+    }
+  ],
+  "compiled_source_review": [
+    {
+      "commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "file": "drivers/streamline/streamline.cpp",
+      "committed_sha256": "b2179e9ad97947168fa8447b3c26b15b1288f08b0fa4fd5b70e47e4b29d21b53",
+      "selected_lines": [
+        {
+          "line": 45,
+          "text": "\tClassDB::bind_method(D_METHOD(\"set_parameter\", \"parameter_type\", \"value\"), &Streamline::set_parameter);"
+        },
+        {
+          "line": 46,
+          "text": "\tClassDB::bind_method(D_METHOD(\"get_capability\", \"capability_type\"), &Streamline::get_capability);"
+        },
+        {
+          "line": 47,
+          "text": "\tClassDB::bind_method(D_METHOD(\"get_frame_generation_status\"), &Streamline::get_frame_generation_status);"
+        },
+        {
+          "line": 244,
+          "text": "\t\tcase StreamlineParameterType::STREAMLINE_PARAM_DLSS_RR_PRESET: {"
+        },
+        {
+          "line": 248,
+          "text": "\t\t\t\t\tStreamlineContext::get().dlss_rr_default_preset = (char)preset.get(0);"
+        }
+      ]
+    },
+    {
+      "commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "file": "servers/rendering/renderer_rd/effects/dlss.cpp",
+      "committed_sha256": "78a0f977f28cb006523723f8270f7f29c437cac3475c8986b1e7934be23ba0c4",
+      "selected_lines": [
+        {
+          "line": 438,
+          "text": "\tbool use_dlss_rr = p_params.dlss_rr && StreamlineContext::get().slDLSSDSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.dlss_rr_available;"
+        },
+        {
+          "line": 458,
+          "text": "\t\t\tdlssPreset = StreamlineContext::get().dlss_rr_default_preset;"
+        },
+        {
+          "line": 468,
+          "text": "\t\t\tint presetNo = ((int)dlssPreset - (int)'D');"
+        },
+        {
+          "line": 471,
+          "text": "\t\t\tcontext->currentDlssDOptions.qualityPreset = preset;"
+        },
+        {
+          "line": 477,
+          "text": "\t\tsl::Result result = StreamlineContext::get().slDLSSDSetOptions(context->viewport, context->currentDlssDOptions);"
+        },
+        {
+          "line": 479,
+          "text": "\t\t\tERR_FAIL_MSG(\"Failed to call streamline slDLSSDSetOptions. Result: \" + String(StreamlineContext::result_to_string(result)));"
+        },
+        {
+          "line": 614,
+          "text": "\t\t\tresult = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);"
+        },
+        {
+          "line": 620,
+          "text": "\t\t\t\t\tprint_line(vformat(\"SL_RR_EVALUATE viewport=%d mode=%d result=%d\", viewport, static_cast<uint32_t>(context->currentDlssOptions.mode), static_cast<uint32_t>(result)));"
+        }
+      ]
+    },
+    {
+      "commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "file": "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp",
+      "committed_sha256": "6535a23ffe226e43ccf5a94a7960fd7c5bb8eb47931cb4fd9846e8fd97b1ca53",
+      "selected_lines": [
+        {
+          "line": 1954,
+          "text": "\t\t\tparams.preset = '?'; // FIXME: Unique preset per viewport? Does anyone need this?"
+        }
+      ]
+    },
+    {
+      "commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "file": "thirdparty/streamline/include/sl_dlss_d.h",
+      "committed_sha256": "cd49f7388c5b5263034b013edfccbe7a748059452b2c54a1412ae7676dada9a3",
+      "selected_lines": [
+        {
+          "line": 37,
+          "text": "    ePresetD = 4,   // Transformer model"
+        },
+        {
+          "line": 39,
+          "text": "    ePresetF = 6,   // Latest and default transformer model"
+        }
+      ]
+    }
+  ],
+  "conclusion": "D really called the RR path (non-Off RR Evaluate eOk plus eight tags), and was strict CLEAN in this bounded minimal fixture. F called the same path and retained WAW/09600. This supports a preset-dependent compatibility workaround, not proof of general RR correctness or model-weight identity.",
+  "preset_identity_boundary": "D/F metadata is an explicit request. This engine has no get_parameter API; exact compiled source maps the RR global request D->SDK ePresetD4, F->ePresetF6 and submits DLSSD options. No SDK runtime preset/model getter was captured, so no direct active-preset/model readback is claimed.",
+  "other_limits": "Independent fresh process profiles; driver caches may be warm. NVIDIA overlay nvspcap64 was observed in both sampled processes; only actual VVL layer-chain and RTSS absence are established. Original ? failures remain immutable. No performance/image-quality conclusion or full-game extrapolation."
+}

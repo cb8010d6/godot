@@ -1,0 +1,669 @@
+{
+  "status": "PASS_CPU_AUDIT_OF_ACTUAL_GAME_RR_D_RUNS",
+  "native_execution_by_this_audit": false,
+  "cases": [
+    {
+      "players": 1,
+      "run": "20261026T202525Z-173685cc",
+      "result": {
+        "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202525Z-173685cc\\result.json",
+        "bytes": 26830,
+        "sha256": "9a92944a70e378c99a1479d73564efbc33781be438c689c1cdcdae84f7785a64"
+      },
+      "artifacts": {
+        "original_observer_matrix": {
+          "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T202526Z-e29e7037-normal\\matrix.json",
+          "bytes": 426104,
+          "sha256": "8c01e637b3b678390f7fc41d51331823490c3f273d449c3b39b45f0208ed4f94"
+        },
+        "original_native_receipt": {
+          "path": "<previous-evidence>\\warmup-8b10556627-20261026T202526Z-e29e7037-normal.json",
+          "bytes": 2515,
+          "sha256": "abd17dc9c2515def4a0ebc174746d2e70bd03fe5f6d4f6cc7937a8f91471dd5b"
+        },
+        "original_native_log": {
+          "path": "<previous-evidence>\\logs\\warmup-8b10556627-20261026T202526Z-e29e7037-normal.log",
+          "bytes": 200496,
+          "sha256": "557762354a895fc64783e489f5cee48d7289ff24d53cd228f77e2ea2dc6cd72d"
+        },
+        "module_samples": {
+          "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202525Z-173685cc\\module-samples.json",
+          "bytes": 37624,
+          "sha256": "36089247e7bcc410c314bdd36805da29fe4ca32e844c6ec36048e3493c2f5297"
+        },
+        "wrapper": {
+          "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202525Z-173685cc\\wrapper.json",
+          "bytes": 16315,
+          "sha256": "c123f47c915b91c74d043c9af41b3da9fb11e46f3e8400c60abe77aabb51bdbf"
+        }
+      },
+      "verdict": "CLEAN",
+      "external_coverage": "ESTABLISHED",
+      "native_commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "checkout_commit": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "actual_exe_sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9",
+      "tag_count": 16,
+      "trace_viewport_ids": [
+        1,
+        2
+      ],
+      "native_evaluations": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "tag_dimensions_by_viewport": {
+        "1": [
+          [
+            0,
+            1067,
+            600
+          ],
+          [
+            1,
+            1067,
+            600
+          ],
+          [
+            3,
+            1067,
+            600
+          ],
+          [
+            4,
+            1600,
+            900
+          ],
+          [
+            7,
+            1067,
+            600
+          ],
+          [
+            8,
+            1067,
+            600
+          ],
+          [
+            14,
+            1067,
+            600
+          ],
+          [
+            42,
+            1067,
+            600
+          ]
+        ],
+        "2": [
+          [
+            0,
+            1067,
+            600
+          ],
+          [
+            1,
+            1067,
+            600
+          ],
+          [
+            3,
+            1067,
+            600
+          ],
+          [
+            4,
+            1600,
+            900
+          ],
+          [
+            7,
+            1067,
+            600
+          ],
+          [
+            8,
+            1067,
+            600
+          ],
+          [
+            14,
+            1067,
+            600
+          ],
+          [
+            42,
+            1067,
+            600
+          ]
+        ]
+      },
+      "actual_gates": [
+        {
+          "elapsed_msec": 6686,
+          "actual_view_count": 1,
+          "final_views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 16,
+              "state": "ready",
+              "tlas": 1924
+            }
+          ],
+          "independent_fresh_serials": {
+            "/root": {
+              "15": true,
+              "16": true
+            }
+          }
+        },
+        {
+          "elapsed_msec": 197,
+          "actual_view_count": 1,
+          "final_views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 2,
+              "state": "ready",
+              "tlas": 1950
+            }
+          ],
+          "independent_fresh_serials": {
+            "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898": {
+              "1": true,
+              "2": true
+            }
+          }
+        }
+      ],
+      "actual_sdk_samples": 130,
+      "sdk_getter_viewports": [
+        1.0,
+        2.0
+      ],
+      "preset_request": {
+        "get_parameter_available": false,
+        "requested": "D",
+        "scope": "Host request; no getter is exposed in this build",
+        "setter_called_before_scene": true
+      },
+      "owned_native_pid": 22804,
+      "owned_ancestry": [
+        22804,
+        44588,
+        48736,
+        43908,
+        42920
+      ],
+      "module_samples": 34,
+      "sampled_overlay_names": [
+        "nvspcap64.dll"
+      ],
+      "actual_PLAY_original_png": {
+        "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T202526Z-e29e7037-normal\\capture\\play_near.png",
+        "bytes": 1848398,
+        "sha256": "f64a28595be183d984e3a206f561e2cefe70b877f05d46711a0fd5b16ba50923"
+      },
+      "all_prepared_input_hashes_verified": 48
+    },
+    {
+      "players": 4,
+      "run": "20261026T202918Z-454dbe42",
+      "result": {
+        "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202918Z-454dbe42\\result.json",
+        "bytes": 30026,
+        "sha256": "712e033df3a3ac99bf2ac911125efcd07a345d8ffb322dd0aa783d6380b85652"
+      },
+      "artifacts": {
+        "original_observer_matrix": {
+          "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T202919Z-0759fbf9-normal\\matrix.json",
+          "bytes": 455868,
+          "sha256": "302e3a264f8076418dfce21ba521c3409238a9be6f6f324ec5c8ee71dbb53278"
+        },
+        "original_native_receipt": {
+          "path": "<previous-evidence>\\warmup-8b10556627-20261026T202919Z-0759fbf9-normal.json",
+          "bytes": 2398,
+          "sha256": "c75461f9412dd3bff635e230ddbccb847ed81a74746fefe966b4f9a1d5681c2f"
+        },
+        "original_native_log": {
+          "path": "<previous-evidence>\\logs\\warmup-8b10556627-20261026T202919Z-0759fbf9-normal.log",
+          "bytes": 208284,
+          "sha256": "750376c7961195ab8725d486d48ec5f5d3881aa08802581cbd7088a64a131361"
+        },
+        "module_samples": {
+          "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202918Z-454dbe42\\module-samples.json",
+          "bytes": 37447,
+          "sha256": "59dca9c56e0e87e38087b012ebdbf135e54cdc5a591b103c7754aeeb5cad951c"
+        },
+        "wrapper": {
+          "path": "<evidence>\\strict-game-rr-d\\runs-trace\\20261026T202918Z-454dbe42\\wrapper.json",
+          "bytes": 16373,
+          "sha256": "130c1f71cfe6de334da2b1c381ac2433aac9c0631a3d48e859f134ddf933048e"
+        }
+      },
+      "verdict": "CLEAN",
+      "external_coverage": "ESTABLISHED",
+      "native_commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "checkout_commit": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+      "actual_exe_sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9",
+      "tag_count": 40,
+      "trace_viewport_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "native_evaluations": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "tag_dimensions_by_viewport": {
+        "1": [
+          [
+            0,
+            1067,
+            600
+          ],
+          [
+            1,
+            1067,
+            600
+          ],
+          [
+            3,
+            1067,
+            600
+          ],
+          [
+            4,
+            1600,
+            900
+          ],
+          [
+            7,
+            1067,
+            600
+          ],
+          [
+            8,
+            1067,
+            600
+          ],
+          [
+            14,
+            1067,
+            600
+          ],
+          [
+            42,
+            1067,
+            600
+          ]
+        ],
+        "2": [
+          [
+            0,
+            531,
+            298
+          ],
+          [
+            1,
+            531,
+            298
+          ],
+          [
+            3,
+            531,
+            298
+          ],
+          [
+            4,
+            796,
+            446
+          ],
+          [
+            7,
+            531,
+            298
+          ],
+          [
+            8,
+            531,
+            298
+          ],
+          [
+            14,
+            531,
+            298
+          ],
+          [
+            42,
+            531,
+            298
+          ]
+        ],
+        "3": [
+          [
+            0,
+            531,
+            298
+          ],
+          [
+            1,
+            531,
+            298
+          ],
+          [
+            3,
+            531,
+            298
+          ],
+          [
+            4,
+            796,
+            446
+          ],
+          [
+            7,
+            531,
+            298
+          ],
+          [
+            8,
+            531,
+            298
+          ],
+          [
+            14,
+            531,
+            298
+          ],
+          [
+            42,
+            531,
+            298
+          ]
+        ],
+        "4": [
+          [
+            0,
+            531,
+            298
+          ],
+          [
+            1,
+            531,
+            298
+          ],
+          [
+            3,
+            531,
+            298
+          ],
+          [
+            4,
+            796,
+            446
+          ],
+          [
+            7,
+            531,
+            298
+          ],
+          [
+            8,
+            531,
+            298
+          ],
+          [
+            14,
+            531,
+            298
+          ],
+          [
+            42,
+            531,
+            298
+          ]
+        ],
+        "5": [
+          [
+            0,
+            531,
+            298
+          ],
+          [
+            1,
+            531,
+            298
+          ],
+          [
+            3,
+            531,
+            298
+          ],
+          [
+            4,
+            796,
+            446
+          ],
+          [
+            7,
+            531,
+            298
+          ],
+          [
+            8,
+            531,
+            298
+          ],
+          [
+            14,
+            531,
+            298
+          ],
+          [
+            42,
+            531,
+            298
+          ]
+        ]
+      },
+      "actual_gates": [
+        {
+          "elapsed_msec": 6869,
+          "actual_view_count": 1,
+          "final_views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 16,
+              "state": "ready",
+              "tlas": 1924
+            }
+          ],
+          "independent_fresh_serials": {
+            "/root": {
+              "15": true,
+              "16": true
+            }
+          }
+        },
+        {
+          "elapsed_msec": 332,
+          "actual_view_count": 4,
+          "final_views": [
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 2,
+              "state": "ready",
+              "tlas": 2028
+            },
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 2,
+              "state": "ready",
+              "tlas": 2028
+            },
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 2,
+              "state": "ready",
+              "tlas": 2028
+            },
+            {
+              "dispatches": 1,
+              "failed": 0,
+              "pending": 0,
+              "serial": 2,
+              "state": "ready",
+              "tlas": 2028
+            }
+          ],
+          "independent_fresh_serials": {
+            "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@1031/@SubViewportContainer@1032/@SubViewport@1033": {
+              "1": true,
+              "2": true
+            },
+            "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@896/@SubViewportContainer@897/@SubViewport@898": {
+              "1": true,
+              "2": true
+            },
+            "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@941/@SubViewportContainer@942/@SubViewport@943": {
+              "1": true,
+              "2": true
+            },
+            "/root/SkateGame/@CanvasLayer@840/@Control@841/@Control@842/@Control@986/@SubViewportContainer@987/@SubViewport@988": {
+              "1": true,
+              "2": true
+            }
+          }
+        }
+      ],
+      "actual_sdk_samples": 130,
+      "sdk_getter_viewports": [
+        1.0,
+        2.0
+      ],
+      "preset_request": {
+        "get_parameter_available": false,
+        "requested": "D",
+        "scope": "Host request; no getter is exposed in this build",
+        "setter_called_before_scene": true
+      },
+      "owned_native_pid": 23796,
+      "owned_ancestry": [
+        23796,
+        12572,
+        36524,
+        44424,
+        47516
+      ],
+      "module_samples": 50,
+      "sampled_overlay_names": [
+        "nvspcap64.dll"
+      ],
+      "actual_PLAY_original_png": {
+        "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T202919Z-0759fbf9-normal\\capture\\play_near.png",
+        "bytes": 1962561,
+        "sha256": "2d3aeba574744bf22009f1bbc4f3372aee9e2835bf6adc42e745f61c7a286ae7"
+      },
+      "all_prepared_input_hashes_verified": 48
+    }
+  ],
+  "game_source_provenance": [
+    {
+      "file": "core/render_warmup.gd",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "committed_sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+      "snapshot": {
+        "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\render_warmup.gd",
+        "bytes": 5771,
+        "sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c"
+      }
+    },
+    {
+      "file": "core/nvidia.gd",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "committed_sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+      "snapshot": {
+        "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\nvidia.gd",
+        "bytes": 6969,
+        "sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126"
+      }
+    },
+    {
+      "file": "core/party_game.gd",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "committed_sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+      "snapshot": {
+        "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\party_game.gd",
+        "bytes": 37752,
+        "sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864"
+      }
+    },
+    {
+      "file": "shaders/rt_pixel_footprint.gdshaderinc",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "committed_sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+      "snapshot": {
+        "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\shaders\\rt_pixel_footprint.gdshaderinc",
+        "bytes": 1654,
+        "sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1"
+      }
+    }
+  ],
+  "scope": "Two bounded private game Observer runs, actual 8b compiled binary with D29 checkout separately recorded, unchanged game3d critical source. Explicit D request, native non-Off RR Evaluate/tag proof, actual game fresh RT readiness, sampled SDK/VVL/modules and owned PID attribution.",
+  "limits": [
+    "No runtime preset getter exists; D is an explicitly recorded host request and compiled-source inference, not direct active-preset or model-weight readback.",
+    "SDK getters only cover viewport1/2. Four-player evidence is five native trace viewports plus four independent game RT-ready views, not four-player SDK getter coverage.",
+    "SL viewport handles and Godot node paths lack a direct exposed join; lobby-sized and four split-sized trace groups plus render topology support attribution without claiming a direct handle mapping.",
+    "Native Evaluate markers capture first real non-Off eOk per viewport, not every frame's SDK status.",
+    "Near-camera override affects first player after PLAY; original screenshot capture is not unmodified natural production gameplay/performance.",
+    "Live-ready serials mean recorded RT commands/live pipelines, not GPU-fence or physical-present completion.",
+    "Sampled RTSS/FG module absence and VVL chain apply to this owned PID only; no model/FG/latency or general overlay absence claim.",
+    "Default ? and F strict failures remain preserved. This is a bounded D compatibility result, not a default-path or general SDK fix."
+  ]
+}

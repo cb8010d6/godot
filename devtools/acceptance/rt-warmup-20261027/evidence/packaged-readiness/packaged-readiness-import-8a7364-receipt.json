@@ -1,0 +1,41 @@
+{
+  "command": [
+    "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<evidence>\\packaged-readiness\\project",
+    "--import"
+  ],
+  "cwd": "<evidence>\\packaged-readiness\\project",
+  "checkout_sha": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\packaged-readiness\\profile-import\\local",
+    "TEMP": "<evidence>\\packaged-readiness\\profile-import\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T18:06:08.094303+00:00",
+  "log": "<previous-evidence>\\logs\\packaged-readiness-import-8a7364.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 49312,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 6.0,
+  "finished_utc": "2026-10-26T18:06:13.825712+00:00"
+}

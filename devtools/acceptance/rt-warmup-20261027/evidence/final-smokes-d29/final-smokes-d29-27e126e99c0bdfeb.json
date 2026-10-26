@@ -1,0 +1,889 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "expected_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "output": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2",
+  "steps": [
+    {
+      "name": "smoke-standard",
+      "status": "PASS",
+      "wrapper": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "--cwd",
+        "<source>",
+        "--timeout",
+        "1500",
+        "--set-env",
+        "APPDATA=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\local",
+        "--set-env",
+        "TEMP=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\tmp",
+        "--set-env",
+        "XDG_DATA_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\data",
+        "--set-env",
+        "XDG_CONFIG_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\config",
+        "--set-env",
+        "XDG_CACHE_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\cache",
+        "--set-env",
+        "DOTNET_CLI_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\dotnet-home",
+        "--set-env",
+        "NUGET_HTTP_CACHE_PATH=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\nuget-http",
+        "--set-env",
+        "NUGET_PLUGINS_CACHE_PATH=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\nuget-plugins",
+        "--set-env",
+        "NUGET_PACKAGES=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "--set-env",
+        "DOTNET_MULTILEVEL_LOOKUP=0",
+        "--set-env",
+        "DOTNET_CLI_TELEMETRY_OPTOUT=1",
+        "--set-env",
+        "DOTNET_CLI_UI_LANGUAGE=en",
+        "--set-env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "--set-env",
+        "NUGET_FALLBACK_PACKAGES=",
+        "smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard",
+        "--",
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "<evidence>\\validation-final\\smoke.ps1",
+        "-SourceRoot",
+        "<source>",
+        "-EditorDirectory",
+        "<evidence>\\builds\\native-six-d29e706530",
+        "-OutputDirectory",
+        "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard"
+      ],
+      "label": "smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard",
+      "wrapper_exit_code": 0,
+      "raw_evidence": [
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard.json",
+          "bytes": 1617,
+          "sha256": "592968063058c149d5ab4d74f15d2988c29b7dd4bd2a50d89e5d69e93f8925df"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard.log",
+          "bytes": 564,
+          "sha256": "e5e9331a20c29360f7b7f90fb2d41b16411f629b548ad39175851bb8177c49cd"
+        }
+      ],
+      "receipt": {
+        "command": [
+          "pwsh",
+          "-NoProfile",
+          "-File",
+          "<evidence>\\validation-final\\smoke.ps1",
+          "-SourceRoot",
+          "<source>",
+          "-EditorDirectory",
+          "<evidence>\\builds\\native-six-d29e706530",
+          "-OutputDirectory",
+          "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard"
+        ],
+        "cwd": "<source>",
+        "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "worktree_status": "",
+        "command_input_binaries": [],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\local",
+          "TEMP": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\standard\\tmp",
+          "NUGET_PACKAGES": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T19:24:04.937045+00:00",
+        "log": "<previous-evidence>\\logs\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard.log",
+        "pid": 24792,
+        "exit_code": 0,
+        "duration_seconds": 30.672,
+        "finished_utc": "2026-10-26T19:24:35.549478+00:00"
+      },
+      "errors": [],
+      "driver_log": {
+        "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-standard.driver.log",
+        "bytes": 2183,
+        "sha256": "bbd9870121bc6e04adc1f2b8240d17b96db954ec0a7999051a1a3b7969053d6c"
+      }
+    },
+    {
+      "name": "smoke-mono",
+      "status": "PASS",
+      "wrapper": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "--cwd",
+        "<source>",
+        "--timeout",
+        "1500",
+        "--set-env",
+        "APPDATA=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\local",
+        "--set-env",
+        "TEMP=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\tmp",
+        "--set-env",
+        "XDG_DATA_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\data",
+        "--set-env",
+        "XDG_CONFIG_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\config",
+        "--set-env",
+        "XDG_CACHE_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\cache",
+        "--set-env",
+        "DOTNET_CLI_HOME=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\dotnet-home",
+        "--set-env",
+        "NUGET_HTTP_CACHE_PATH=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\nuget-http",
+        "--set-env",
+        "NUGET_PLUGINS_CACHE_PATH=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\nuget-plugins",
+        "--set-env",
+        "NUGET_PACKAGES=<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "--set-env",
+        "DOTNET_MULTILEVEL_LOOKUP=0",
+        "--set-env",
+        "DOTNET_CLI_TELEMETRY_OPTOUT=1",
+        "--set-env",
+        "DOTNET_CLI_UI_LANGUAGE=en",
+        "--set-env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "--set-env",
+        "NUGET_FALLBACK_PACKAGES=",
+        "smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono",
+        "--",
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "<evidence>\\validation-final\\smoke.ps1",
+        "-SourceRoot",
+        "<source>",
+        "-EditorDirectory",
+        "<evidence>\\builds\\native-six-d29e706530",
+        "-OutputDirectory",
+        "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono",
+        "-Mono"
+      ],
+      "label": "smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono",
+      "wrapper_exit_code": 0,
+      "raw_evidence": [
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono.json",
+          "bytes": 1615,
+          "sha256": "9b36f3acc3b31acea7ad9d63abc31bf4fa940837e5f2228a3a643858cfa5a5b2"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono.log",
+          "bytes": 561,
+          "sha256": "f7951386abea61320c6bb486b573e4ff628d9650430f04b6416af3edc3691f1d"
+        }
+      ],
+      "receipt": {
+        "command": [
+          "pwsh",
+          "-NoProfile",
+          "-File",
+          "<evidence>\\validation-final\\smoke.ps1",
+          "-SourceRoot",
+          "<source>",
+          "-EditorDirectory",
+          "<evidence>\\builds\\native-six-d29e706530",
+          "-OutputDirectory",
+          "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono",
+          "-Mono"
+        ],
+        "cwd": "<source>",
+        "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+        "worktree_status": "",
+        "command_input_binaries": [],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\local",
+          "TEMP": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\profiles\\mono\\tmp",
+          "NUGET_PACKAGES": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T19:24:35.871120+00:00",
+        "log": "<previous-evidence>\\logs\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono.log",
+        "pid": 46756,
+        "exit_code": 0,
+        "duration_seconds": 27.078,
+        "finished_utc": "2026-10-26T19:25:02.882768+00:00"
+      },
+      "errors": [],
+      "driver_log": {
+        "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\receipts\\smokes-d29e706530-20261026T192403Z-9eb8cbc2-smoke-mono.driver.log",
+        "bytes": 2178,
+        "sha256": "67a19679e86920abf617ad53e8eb33385fcc30a6e4fda523b3ab02d2512526a6"
+      }
+    }
+  ],
+  "editor_directory": "<evidence>\\builds\\native-six-d29e706530",
+  "checkout_sha_requested": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "fixture_source": "<workspace>\\acceptance-08e97fb8a6-20261025\\exports",
+  "nuget_cache": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "nuget_cache_preexisting": false,
+  "started_utc": "2026-10-26T19:24:04.706439+00:00",
+  "harnesses": [
+    {
+      "file": "<evidence>\\validation-final\\final_exports.py",
+      "bytes": 31978,
+      "sha256": "e5604ff1a258c2400382b3bd1489bd9e1fd1be6492d60f0a63fe54a6bcbc7659"
+    },
+    {
+      "file": "<previous-evidence>\\run_logged.py",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+    },
+    {
+      "file": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    }
+  ],
+  "limitations": [
+    "Mono run removes dotnet SDK from the process environment; the machine still has an SDK installed.",
+    "Rendered smoke proves backend and fixture markers, not image quality, gameplay, or performance."
+  ],
+  "cases": [
+    {
+      "variant": "standard",
+      "status": "PASS",
+      "actual_version": "4.8.beta1.custom_build.d29e70653",
+      "artifacts": [
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard\\smoke\\standard\\PhysX_game.log",
+          "bytes": 25238,
+          "sha256": "b340b7639170275a006129d7d0a15716c2c4465ba2e7b1bc3a39a0d4a8700065"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard\\smoke\\standard\\PhysX_editor.log",
+          "bytes": 56325,
+          "sha256": "3c7346f8901c603632cc9bd0a80d00d1b36dd3f54ced5de59a15d7e66b071302"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard\\smoke\\standard\\Path_tracer_Vulkan.log",
+          "bytes": 435,
+          "sha256": "ea43e2d02740c9c59649c0dfa8613ca444af0eeb95958106915759fa182df095"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard\\smoke\\standard\\DDGI_interior.log",
+          "bytes": 477,
+          "sha256": "40253c339c8abbc8b9530644ddbda7b5de02295859ac07ed6f3a32439aaf1887"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\standard\\smoke\\standard\\path_tracer.png",
+          "bytes": 592250,
+          "sha256": "27f934f10c919a364dd610b012a0ffda5ccff9cbf8480316a6c0b20fbdf1714c"
+        }
+      ]
+    },
+    {
+      "variant": "mono",
+      "status": "PASS",
+      "actual_version": "4.8.beta1.mono.custom_build.d29e70653",
+      "artifacts": [
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono\\smoke\\mono\\PhysX_game.log",
+          "bytes": 14056,
+          "sha256": "15b358aa0eadd57e034de82dbede113889c763f83e4f51bee14bfbc5c4fe1be8"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono\\smoke\\mono\\PhysX_editor.log",
+          "bytes": 41412,
+          "sha256": "faaa3f7e51cd919e06d0cfeaadc0ea372c48fddb2ee5b6db315bb04d0f637f2d"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono\\smoke\\mono\\Path_tracer_Vulkan.log",
+          "bytes": 432,
+          "sha256": "930cff03d957d99d37cd969619392a9b92e3a0c709b1ed86b2ef64dc0edb5d5b"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono\\smoke\\mono\\DDGI_interior.log",
+          "bytes": 482,
+          "sha256": "e07eca56aa4a150996c190e668761e6a031561870f4c6980832e7360f12208b6"
+        },
+        {
+          "file": "<evidence>\\validation-final\\smokes-d29e706530-20261026T192403Z-9eb8cbc2\\cases\\mono\\smoke\\mono\\path_tracer.png",
+          "bytes": 592250,
+          "sha256": "27f934f10c919a364dd610b012a0ffda5ccff9cbf8480316a6c0b20fbdf1714c"
+        }
+      ]
+    }
+  ],
+  "scope": "Two unchanged smoke criteria sets, private path-relocated PS copy",
+  "inputs": [
+    {
+      "file": "freeze.running.json",
+      "bytes": 27096,
+      "sha256": "aa159503cc0b2d07a588da4d277b5411f9b20aefb10c2c6e7c50cbd6e4885aae"
+    },
+    {
+      "file": "godot.windows.editor.x86_64.console.exe",
+      "bytes": 301056,
+      "sha256": "25a87aae12c82f130c83fb9b8d1744b6f4c25e879ce875b02380de218310a2df"
+    },
+    {
+      "file": "godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "edd4a8ed792502736cddf79a10d524e6a9001a6d8138abd3eb008d953e92afd3"
+    },
+    {
+      "file": "godot.windows.editor.x86_64.mono.console.exe",
+      "bytes": 301056,
+      "sha256": "da64f3b7acdccaccefde12d2e2e4f618d3504385161e954cea5f397cfc3471f9"
+    },
+    {
+      "file": "godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162379264,
+      "sha256": "447e78abad47f788041eaa5f959326eb3404f063e8b38b6f534cbbcb1213c84d"
+    },
+    {
+      "file": "godot.windows.template_debug.x86_64.console.exe",
+      "bytes": 300544,
+      "sha256": "6e8ca8fe950f71ea96e8d9b6e5a017a58cdeffc8cbab719b4fd6678890b24ac9"
+    },
+    {
+      "file": "godot.windows.template_debug.x86_64.exe",
+      "bytes": 95635456,
+      "sha256": "50f407af3f7cae48de29ab627627b242ccd92739f81b88fd9f24de6da3c4fd47"
+    },
+    {
+      "file": "godot.windows.template_debug.x86_64.mono.console.exe",
+      "bytes": 300544,
+      "sha256": "6e8e9775badda967be9473e50168821ec242d963b47956a44f2166c30c3800c0"
+    },
+    {
+      "file": "godot.windows.template_debug.x86_64.mono.exe",
+      "bytes": 95868416,
+      "sha256": "2b3053b472a8dbfdbdc9074caf97d871cf5e686e776f04e625cc26c8847acdcf"
+    },
+    {
+      "file": "godot.windows.template_release.x86_64.console.exe",
+      "bytes": 292864,
+      "sha256": "cafc6b0b0b34a6a7db275df298ac1a1387f44064f4c4ba08a7952f0788170250"
+    },
+    {
+      "file": "godot.windows.template_release.x86_64.exe",
+      "bytes": 80790016,
+      "sha256": "affa480e5a19f3e39b644035ac9c1938471ec7017a7f50db12f30e4257c26c53"
+    },
+    {
+      "file": "godot.windows.template_release.x86_64.mono.console.exe",
+      "bytes": 292864,
+      "sha256": "58b65963f43adddc53d14427bb534b4dc1031fac86d378774dc726b342a646a3"
+    },
+    {
+      "file": "godot.windows.template_release.x86_64.mono.exe",
+      "bytes": 80992256,
+      "sha256": "83db991a38a4f09eca732c2e25d9ba42125a8034eecf28022b777e1f3c902bb9"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotPlugins.dll",
+      "bytes": 12288,
+      "sha256": "0b486a3ffb92bc6da7e9cf23e41c731b57ecc5169b8510486e50dac8a5a2ec5e"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotPlugins.pdb",
+      "bytes": 13972,
+      "sha256": "976910afbb42c18a31e4c71be4b52de03c8ccf50bcff2f3f26f5153aaf080885"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotPlugins.runtimeconfig.json",
+      "bytes": 305,
+      "sha256": "081c69e1e6d509644770b95b9aeab8cc8bed0123d7f3c7a971d4da3a678926b4"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharp.dll",
+      "bytes": 6773760,
+      "sha256": "75564f9221a1caa94405f5339960e1ab19f8a40634d19230394dbce8ad9070fe"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharp.pdb",
+      "bytes": 6464372,
+      "sha256": "a53004ed60f08c46518f81f36f872fd73a0a1085295661fe303d9e79e89b3a4e"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharp.xml",
+      "bytes": 17781459,
+      "sha256": "c34d14e65c4cefbaf2b0f1a09abbb0a889761266f723952c9d92ecf1dcc8b950"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharpEditor.dll",
+      "bytes": 332288,
+      "sha256": "9bcfae4f4dbfec9944362b6eed7b16db6139b16adc216e63909015901301d9cb"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharpEditor.pdb",
+      "bytes": 367424,
+      "sha256": "c4002e11957d858a1f0c17ab3e2c4855dd0dcbdebabe60664e499b2a0dc1201d"
+    },
+    {
+      "file": "GodotSharp/Api/Debug/GodotSharpEditor.xml",
+      "bytes": 814838,
+      "sha256": "1afe40f879ffae0110fc2c120d793a9344f42e44d8d2d3bebde60a75906c9064"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotPlugins.dll",
+      "bytes": 11776,
+      "sha256": "f30c18c5a54717abb9c0cca722f87f5b3ff1fc8b82c113a8475f0fb20e8642a8"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotPlugins.pdb",
+      "bytes": 13340,
+      "sha256": "306e971793b71806218f80e37cd1d12b3b265584e447ef8733e9382b12226b3b"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotPlugins.runtimeconfig.json",
+      "bytes": 377,
+      "sha256": "f769b0d6f9c3e5fa0d5b6d5946d8e6ac17ac1e4c6070bc17e8b4445b9cce5d54"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharp.dll",
+      "bytes": 6310400,
+      "sha256": "6386a1ba292e070cbee3d8932ac166e75e9cc8d522994f9d28e8761eedf22fb7"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharp.pdb",
+      "bytes": 5846664,
+      "sha256": "e4a129c2be981d4fd337afddbc3fc9d462d298ec5a55873bc0cc141adaa3c6ae"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharp.xml",
+      "bytes": 17781459,
+      "sha256": "c34d14e65c4cefbaf2b0f1a09abbb0a889761266f723952c9d92ecf1dcc8b950"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharpEditor.dll",
+      "bytes": 309760,
+      "sha256": "767f4a19005dce919575c8872bc81cd68d8cef3b4780877efe7c515ec5522d9a"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharpEditor.pdb",
+      "bytes": 335852,
+      "sha256": "29bc29dec50d4f5cfc2d8dfb78679fe0eb2761c004a39eb86c82c80124c3b234"
+    },
+    {
+      "file": "GodotSharp/Api/Release/GodotSharpEditor.xml",
+      "bytes": 814838,
+      "sha256": "1afe40f879ffae0110fc2c120d793a9344f42e44d8d2d3bebde60a75906c9064"
+    },
+    {
+      "file": "GodotSharp/Tools/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 431776,
+      "sha256": "b770a8c39ded76ee883149128c0b343a23c4930e8c0599a61ea4a189d468a52c"
+    },
+    {
+      "file": "GodotSharp/Tools/cs/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 47880,
+      "sha256": "4dd085aa3824c42e69d24b45ddbca9cf7f9fcad7dc3ee956be79922fa60a4e51"
+    },
+    {
+      "file": "GodotSharp/Tools/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 462600,
+      "sha256": "0f3bae26e249638ca2c9204cbbbbce2b1ccfeaf784f6bd77b7121d148f671f29"
+    },
+    {
+      "file": "GodotSharp/Tools/de/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "49d491534fbde2485ed66bd14a28b6dfa1a961782dde0e536df9e8e0f0c5cbdf"
+    },
+    {
+      "file": "GodotSharp/Tools/envdte.dll",
+      "bytes": 28192,
+      "sha256": "7cae2269c6dc59edb16a1fd16672f184a4690c6d720c1faae9616fe0c8d5cb46"
+    },
+    {
+      "file": "GodotSharp/Tools/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 452360,
+      "sha256": "aeba908aa1132fa3a6297a24f52683db4fa6bd7e7f0b4eac2eb89f22c53492b1"
+    },
+    {
+      "file": "GodotSharp/Tools/es/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49416,
+      "sha256": "0de25f386025993a0a0315a94f0347067d977975cae6dca2bd045ec0033a6ae0"
+    },
+    {
+      "file": "GodotSharp/Tools/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464144,
+      "sha256": "3c6348490e9ac51209c8105c30181c3f7985cb68e9cb917e6f391c068f4583dc"
+    },
+    {
+      "file": "GodotSharp/Tools/fr/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "21a58fa053094b95ab9a9ac3ae8215633c4ec278b062e3c1b06ae69f45f95223"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.BuildLogger.dll",
+      "bytes": 9216,
+      "sha256": "da2762b99b2c211a747871e29cf23c0a39f707f4ad0c4b7952bbac9534885162"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.BuildLogger.pdb",
+      "bytes": 12388,
+      "sha256": "072da4085b66ad78c89d3584df73173fa05ba458a3136e7370c3e914485e31b0"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.Core.dll",
+      "bytes": 8192,
+      "sha256": "afae2e3cb1840ed5d8da11b99fb381d87fec13a40883e6bfe793f4879a6f0ac0"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.Core.pdb",
+      "bytes": 12388,
+      "sha256": "049eb74a5fd248ec72af4441bfca3ea8065ce6c7ad817e3a72378f0ed148cb89"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.deps.json",
+      "bytes": 11414,
+      "sha256": "21805917eab958871bb9f0925d6d7ba1e58b8fab109b86c558731837b8fba481"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.dll",
+      "bytes": 213504,
+      "sha256": "ebeb75918c25c7adc3a76383dcad583438420a8332ddc8d0c59f3ac9ab430d0c"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.IdeMessaging.dll",
+      "bytes": 44544,
+      "sha256": "38dc809ddadb4f6a4f2a6e2f1c081984c5590f4372c0e83bf5c237b534f7f17b"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.IdeMessaging.pdb",
+      "bytes": 18672,
+      "sha256": "846bdf726f6899e834f240a0581d99103efe4349db56f9e35be7e95d99e6f1ed"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.OpenVisualStudio.deps.json",
+      "bytes": 1783,
+      "sha256": "018e1efe52742279ac20a19a62964b5c8efdeeb6ea106921e77c010b0f4f4dc9"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.OpenVisualStudio.dll",
+      "bytes": 11264,
+      "sha256": "4ead0f7ff61e8d8f3e8c46380ad64491c00040308cefeaadd0fffc7c9f9dac8a"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.OpenVisualStudio.exe",
+      "bytes": 162816,
+      "sha256": "3b4efdf5f5acda9d1b25fec5fcd510b57dcced1f9288b498fcbfb2fa0fcbf057"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.OpenVisualStudio.pdb",
+      "bytes": 12832,
+      "sha256": "b7fb76035ba53b3cf7eca5124c1c46f6dd28db0f7ef46e27d1874d77ed8a22d5"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.OpenVisualStudio.runtimeconfig.json",
+      "bytes": 434,
+      "sha256": "cb2502fdd7e45e7345d2b2a741a72c1935a42fe28d77237460f9d64ca86e0989"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.pdb",
+      "bytes": 131700,
+      "sha256": "f5343a526261fa184d78b06caf044d6be5e2b49d66d18da3cf6742f9a530f115"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.ProjectEditor.dll",
+      "bytes": 23040,
+      "sha256": "a2787b8badbfb07aca7df481abd2cc5879dbc33aa519935758c3976a6b53d85d"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.ProjectEditor.pdb",
+      "bytes": 19472,
+      "sha256": "78781bd313d8543f1515aa3507ebe2998a14639fbdf64f63e8d9f07dc44b1dc2"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.runtimeconfig.json",
+      "bytes": 377,
+      "sha256": "2e1693f8326910b07be4292d78dceba9cb49952c500afab1860d09b4d5e54047"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.Shared.dll",
+      "bytes": 4096,
+      "sha256": "035b3549353dbfd6a28518a024b0659df4901875a509d6b9a3b942483657d2c0"
+    },
+    {
+      "file": "GodotSharp/Tools/GodotTools.Shared.pdb",
+      "bytes": 11484,
+      "sha256": "9ab4cba7241ea7416886102a25aa7ccca0b93a776147102ab4c8e8918f22538c"
+    },
+    {
+      "file": "GodotSharp/Tools/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 457992,
+      "sha256": "90e447f763e50bfed0936e10f6c1f079446e982a9079e26095e91aca479421fa"
+    },
+    {
+      "file": "GodotSharp/Tools/it/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49936,
+      "sha256": "c7d7366236036bb7d44a4950d58915b9dff48235ecf17b38f7d9564743fd4ede"
+    },
+    {
+      "file": "GodotSharp/Tools/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 506144,
+      "sha256": "168a4471831f7db588eb1e610740c5e8d8a76b0f82566a98fcb42ef8bb755ad1"
+    },
+    {
+      "file": "GodotSharp/Tools/ja/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 53512,
+      "sha256": "819bc27aecd1d40a954ed59505ced8798b37dc6471ca4186508876c70396b3c7"
+    },
+    {
+      "file": "GodotSharp/Tools/JetBrains.Lifetimes.dll",
+      "bytes": 272896,
+      "sha256": "93ab87c36b4a6dacd45b48a2effb982724ecb8b868db0995c438d90da6d93219"
+    },
+    {
+      "file": "GodotSharp/Tools/JetBrains.RdFramework.dll",
+      "bytes": 203264,
+      "sha256": "05b454e30510940eddd4d75689052fc79e6618a4d52025e08979fa5f5f56d3f4"
+    },
+    {
+      "file": "GodotSharp/Tools/JetBrains.Rider.PathLocator.dll",
+      "bytes": 20480,
+      "sha256": "ea69b571eb3ec3c831377bcdf6c002679007654be903591f13c036bc8c35ae9d"
+    },
+    {
+      "file": "GodotSharp/Tools/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 463648,
+      "sha256": "a8eaaf9ea2979975be5d223f5fbfc582d426c2c23990e02acdc76bbc0d1d3ffb"
+    },
+    {
+      "file": "GodotSharp/Tools/ko/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "b4b9fb05e0cea71f79f1101408ea2b55e75f53d32d34260c34c609d22a96218b"
+    },
+    {
+      "file": "GodotSharp/Tools/Microsoft.Build.Locator.dll",
+      "bytes": 27512,
+      "sha256": "ec3d31e3bde953231228853e7a31df2fcd2cafb30380b0148c3e7e38aeb607ca"
+    },
+    {
+      "file": "GodotSharp/Tools/Microsoft.CodeAnalysis.CSharp.dll",
+      "bytes": 6523664,
+      "sha256": "c46e884a3f2910fd6098b104131cae600c1716ae14b27ffe2d22c54c7f71ff11"
+    },
+    {
+      "file": "GodotSharp/Tools/Microsoft.CodeAnalysis.dll",
+      "bytes": 2985224,
+      "sha256": "8d919bcf3e2f0e74dc1e79c713f06934201cd2338ad23b9a430e53944ebc0408"
+    },
+    {
+      "file": "GodotSharp/Tools/Microsoft.VisualStudio.Interop.dll",
+      "bytes": 2422200,
+      "sha256": "9775451527b8f71836a6a86182fb889098254a5fff55e64a02da3029af49632c"
+    },
+    {
+      "file": "GodotSharp/Tools/Microsoft.VisualStudio.SolutionPersistence.dll",
+      "bytes": 172072,
+      "sha256": "a1150f4a162d9c9992b6e99b2949e2de092017182264218b7b5666ceebbc16d4"
+    },
+    {
+      "file": "GodotSharp/Tools/Newtonsoft.Json.dll",
+      "bytes": 695336,
+      "sha256": "72cf291d4bab0edd08a9b07c6173e1e7ad1abb7ab727fd7044bf6305d7515661"
+    },
+    {
+      "file": "GodotSharp/Tools/NuGet.Frameworks.dll",
+      "bytes": 123944,
+      "sha256": "42972564d5632852fddf484c6badb1f91cd5167b4f540b23e30663aa84f795f0"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/Godot.NET.Sdk.4.8.0-beta.1.nupkg",
+      "bytes": 6856,
+      "sha256": "6735b8914bf8f84554cd17e13a38c48d466eb160fcdea9abc806189d57dc330f"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/Godot.SourceGenerators.4.8.0-beta.1.nupkg",
+      "bytes": 48644,
+      "sha256": "e90ec939d2adae215fa98b7391fc8f0f0bea53653177118d6b89535353fdc20a"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/GodotSharp.4.8.0-beta.1.nupkg",
+      "bytes": 3472701,
+      "sha256": "7bfa8abe85a8a1043c984d3f8b9189317c1e20321e1992969e7ecc3a92e91383"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/GodotSharp.4.8.0-beta.1.snupkg",
+      "bytes": 4451557,
+      "sha256": "b01f86e5d616104193e7c48566416e7632b60a2b7316a183715ad536ce686274"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/GodotSharpEditor.4.8.0-beta.1.nupkg",
+      "bytes": 183134,
+      "sha256": "16273160e925006958a2d68b56b264f92a79508514e0c3efcc47b0d88ec3639e"
+    },
+    {
+      "file": "GodotSharp/Tools/nupkgs/GodotSharpEditor.4.8.0-beta.1.snupkg",
+      "bytes": 267240,
+      "sha256": "5356ac748e7ca10b4e90ed4e5a569d0a4071392a2b12f5884bd234fd32db8783"
+    },
+    {
+      "file": "GodotSharp/Tools/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464160,
+      "sha256": "f368012ee07c6edd49df17a11dc52524516877a2afa444600c76297cd23b8a35"
+    },
+    {
+      "file": "GodotSharp/Tools/pl/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "d12771a7017bd996edd50de8b34dd9de02474eeb3b9bf1b62d04a14178b4c059"
+    },
+    {
+      "file": "GodotSharp/Tools/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 444680,
+      "sha256": "96f67f5e846bddfde6e958d450bae72943816b0800a5ee1844b4c69b9593a343"
+    },
+    {
+      "file": "GodotSharp/Tools/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48928,
+      "sha256": "ade69198534b8c6149ad2160cbc0d66ce8c9e7f65cdf4525abd4b3084f2dd935"
+    },
+    {
+      "file": "GodotSharp/Tools/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 609032,
+      "sha256": "25093104d71c3c980bc0baf6c01c072f42f5d7d918e275d2601d41ba21c3c612"
+    },
+    {
+      "file": "GodotSharp/Tools/ru/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 60192,
+      "sha256": "f624329c45687998a2f7000182be4dab3c33f07fcbdf482505a0472fed01dee4"
+    },
+    {
+      "file": "GodotSharp/Tools/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 440584,
+      "sha256": "76c1f8a8bd7d748170cf0e9b93039fb2bc2ee074ba19eedc10f9a9bc026ec197"
+    },
+    {
+      "file": "GodotSharp/Tools/tr/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48408,
+      "sha256": "660fa2661a524dd05402991750509edb72c5cce4ddec9cdc56126c1e1c50bcdc"
+    },
+    {
+      "file": "GodotSharp/Tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391944,
+      "sha256": "eb9fd086af40d5d6ec24123c25a6a5e9f69b45e9db4f1a85269b62774c87f4b4"
+    },
+    {
+      "file": "GodotSharp/Tools/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44824,
+      "sha256": "966487734ddbd371ccfadd6521a8a7e36ba74a5ad777c749df90ea26118212bb"
+    },
+    {
+      "file": "GodotSharp/Tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391448,
+      "sha256": "1f4bcaed17f6b189a0a68813a8cf5f3d8d31b6269fd10bcc824b9dd45c2b9a8d"
+    },
+    {
+      "file": "GodotSharp/Tools/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44808,
+      "sha256": "537fd03e590ca4502980dfe08d5163a4a115d7b33040cd495a795818dbde315f"
+    },
+    {
+      "file": "NvBlast.dll",
+      "bytes": 60416,
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+    },
+    {
+      "file": "NvBlastExtAuthoring.dll",
+      "bytes": 823296,
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+    },
+    {
+      "file": "NvBlastExtShaders.dll",
+      "bytes": 37376,
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+    },
+    {
+      "file": "NvBlastGlobals.dll",
+      "bytes": 24064,
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+    },
+    {
+      "file": "nvflow.dll",
+      "bytes": 2066944,
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+    },
+    {
+      "file": "nvflowext.dll",
+      "bytes": 10371072,
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+    },
+    {
+      "file": "PhysXGpu_64.dll",
+      "bytes": 346725888,
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+    },
+    {
+      "file": "version-checks.json",
+      "bytes": 5333,
+      "sha256": "0040656b3a4e7ebabd480769fa976913e6ac2b181e1de43143f908ab878186b7"
+    },
+    {
+      "file": "x86_64/D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "file": "x86_64/d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    }
+  ],
+  "script_inputs": [
+    {
+      "file": "<evidence>\\validation-final\\smoke.ps1",
+      "bytes": 4132,
+      "sha256": "df7e643e8d123a44594dc3830d34f0053c798aa8dff35c07daaf579d71268157"
+    },
+    {
+      "file": "<evidence>\\validation-final\\run_smokes.py",
+      "bytes": 6242,
+      "sha256": "b4d3ec7db740769d17848542c98b53d0eff4115937923b6cf75a28308439fb84"
+    },
+    {
+      "file": "<evidence>\\validation-final\\final_exports.py",
+      "bytes": 31978,
+      "sha256": "e5604ff1a258c2400382b3bd1489bd9e1fd1be6492d60f0a63fe54a6bcbc7659"
+    },
+    {
+      "file": "<source>\\devtools\\common.ps1",
+      "bytes": 1225,
+      "sha256": "59c42c876e39cb7a6b4837f2bbe875f52d975688224dc215c0cae4c4fdcf17ac"
+    },
+    {
+      "file": "<source>\\devtools\\test\\smoke.ps1",
+      "bytes": 3537,
+      "sha256": "6543c2be2c80ecd2977846599c0aba9b8b65e4e32a73457c532175bc79a949c9"
+    },
+    {
+      "file": "<source>\\devtools\\test\\run_native.py",
+      "bytes": 2206,
+      "sha256": "d1518f69d5b3b3833d06586e4b401c7e4deaa4642436d1b922713439763e93a3"
+    },
+    {
+      "file": "<source>\\devtools\\test\\windows_process_job.py",
+      "bytes": 4583,
+      "sha256": "5a634b8179e555885086a2e7815870c1a6fb86e493bb4e5cb9c1444f844a56de"
+    }
+  ],
+  "input_integrity_after": {
+    "frozen_inputs_unchanged": true,
+    "scripts_unchanged": true
+  },
+  "finished_utc": "2026-10-26T19:25:03.841962+00:00"
+}

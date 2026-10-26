@@ -1,0 +1,36 @@
+{
+  "command": [
+    "<workspace>\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import os,shutil; assert not shutil.which(\"dotnet\"); assert not any(os.environ.get(k) for k in (\"DOTNET_ROOT\",\"DOTNET_ROOT_X64\",\"DOTNET_HOST_PATH\")); print(\"PROCESS_ENV_WITHOUT_DOTNET_SDK_PASS\")"
+  ],
+  "cwd": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-debug\\game",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<workspace>\\.venv\\Scripts\\python.exe",
+      "bytes": 274424,
+      "sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": null,
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:30:24.679009+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-mono-debug-runtime-environment.log",
+  "pid": 47812,
+  "exit_code": 0,
+  "duration_seconds": 0.187,
+  "finished_utc": "2026-10-26T19:30:24.804276+00:00"
+}
+PROCESS_ENV_WITHOUT_DOTNET_SDK_PASS

@@ -1,0 +1,263 @@
+{
+  "status": "COMPLETE_RUNTIME_STAGED_VERSION_ONLY_NOT_GPU_TESTED",
+  "source_commit": "c3260c00904c7e3fa7b22811ef4bd5ccd950ebfa",
+  "engine_sha256": "b336f429537ec0fb453c9ed8d44c10a3e3c83f4e6300ef538311e38a3604d048",
+  "scope": "Diagnostic SDK2.10.0/NGX310.5.0 package comparison only; current production candidate is not downgraded. No engine headers, source, original dirs or old records changed.",
+  "source_inventory_refs": [
+    {
+      "path": "<evidence>\\builds\\editor-c3260c0090-sdk214\\inventory.json",
+      "bytes": 4731,
+      "sha256": "ce8ad2d51f1dba7ee2d8d559c3fb25d37e56412ca6255aea5be24fbff9819dfb"
+    },
+    {
+      "path": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\inventory.json",
+      "bytes": 3880,
+      "sha256": "e2a90ee2fd8e003f61285ac22881d04035592f2bff923602b6c688d9e99a0f91"
+    },
+    {
+      "path": "<workspace>\\acceptance-08e97fb8a6-20261025\\builds\\sdk210\\inventory.json",
+      "bytes": 4460,
+      "sha256": "601d1f66d52118fe2860cd86b59b2e7f5c117b539bdb707923ea3493ba8fc82a"
+    }
+  ],
+  "local_original_zip": {
+    "path": "<workspace>\\sdk\\streamline-sdk-v2.10.0.zip",
+    "bytes": 213131430,
+    "sha256": "b0cc810c86b0335d4fd76a02d35fff53e528d2fb66c29860565130f76c9383b0"
+  },
+  "provenance_scope": "Every bin/x64 release member hash matches the original local SDK2.10.0 ZIP and historical complete SDK210 inventory. No newly refreshed independent publisher digest is claimed.",
+  "complete_release_members": [
+    {
+      "file": "nis.license.txt",
+      "bytes": 1199,
+      "sha256": "f80ecfbce8a84a5b4c1c59dc5a9f0ee9cf5a989c9fba3a9486ee874f7595a454",
+      "zip_member": "bin/x64/nis.license.txt",
+      "origin": "<workspace>\\acceptance-08e97fb8a6-20261025\\builds\\sdk210\\nis.license.txt"
+    },
+    {
+      "file": "NvLowLatencyVk.dll",
+      "bytes": 57840,
+      "sha256": "2a77dc3e1c724b7eea5755be0ae7423752e79a2459fae72181a9f00e3507e5d6",
+      "zip_member": "bin/x64/NvLowLatencyVk.dll",
+      "origin": "<workspace>\\acceptance-08e97fb8a6-20261025\\builds\\sdk210\\NvLowLatencyVk.dll"
+    },
+    {
+      "file": "nvngx_deepdvc.dll",
+      "bytes": 3144304,
+      "sha256": "60ac1e9f32ab31a8dcda3e875fd3dc2d3bcffeca3c6ca33551d6dc6871dbfd1b",
+      "zip_member": "bin/x64/nvngx_deepdvc.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\nvngx_deepdvc.dll"
+    },
+    {
+      "file": "nvngx_dlss.dll",
+      "bytes": 54778992,
+      "sha256": "22c4660249da5b352cde0ce4d95178c3761223dd6ac096d0b88e5c03d7a5cdd1",
+      "zip_member": "bin/x64/nvngx_dlss.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\nvngx_dlss.dll"
+    },
+    {
+      "file": "nvngx_dlss.license.txt",
+      "bytes": 26727,
+      "sha256": "3027f23ca5a46dd9cb8183fbd522983a86f64d7daac5982912bf9f214671f294",
+      "zip_member": "bin/x64/nvngx_dlss.license.txt",
+      "origin": "<workspace>\\acceptance-08e97fb8a6-20261025\\builds\\sdk210\\nvngx_dlss.license.txt"
+    },
+    {
+      "file": "nvngx_dlssd.dll",
+      "bytes": 28590704,
+      "sha256": "4d53f6114edc61bd41fc293008aa818ab092bb8286830e61c98453da92d936d0",
+      "zip_member": "bin/x64/nvngx_dlssd.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\nvngx_dlssd.dll"
+    },
+    {
+      "file": "nvngx_dlssg.dll",
+      "bytes": 7518320,
+      "sha256": "5685c065e6c048f673d70f5dda5b23570c8570642e4e284216f59c2e85583016",
+      "zip_member": "bin/x64/nvngx_dlssg.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\nvngx_dlssg.dll"
+    },
+    {
+      "file": "reflex.license.txt",
+      "bytes": 20504,
+      "sha256": "ebf83c07fb3b2939908c3795d887afde3161c89a28ba391724efc784ce1bdabe",
+      "zip_member": "bin/x64/reflex.license.txt",
+      "origin": "<workspace>\\acceptance-08e97fb8a6-20261025\\builds\\sdk210\\reflex.license.txt"
+    },
+    {
+      "file": "sl.common.dll",
+      "bytes": 674432,
+      "sha256": "be50a4c89177abb3695de92c57cc41662bfb7598ec447707b0d6efb77256d977",
+      "zip_member": "bin/x64/sl.common.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.common.dll"
+    },
+    {
+      "file": "sl.deepdvc.dll",
+      "bytes": 190592,
+      "sha256": "c68fc648313c1b5403fb7130d6775540867b7088b0ac280b04e33b47b47b12f7",
+      "zip_member": "bin/x64/sl.deepdvc.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.deepdvc.dll"
+    },
+    {
+      "file": "sl.directsr.dll",
+      "bytes": 183424,
+      "sha256": "6b80b92c356a113393a6f6ea349d133b45d45c2bdd8dd75ae9db934332818ee5",
+      "zip_member": "bin/x64/sl.directsr.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.directsr.dll"
+    },
+    {
+      "file": "sl.dlss_d.dll",
+      "bytes": 254080,
+      "sha256": "1a65ae1656d7aab4cb1025e14bc14a92330a3a3008a05aafae803c4fe508c260",
+      "zip_member": "bin/x64/sl.dlss_d.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.dlss_d.dll"
+    },
+    {
+      "file": "sl.dlss_g.dll",
+      "bytes": 459392,
+      "sha256": "e07fd38310805e34265929d1999f33ed5566cf30176c082ca84ef63992f6c7d7",
+      "zip_member": "bin/x64/sl.dlss_g.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.dlss_g.dll"
+    },
+    {
+      "file": "sl.dlss.dll",
+      "bytes": 240256,
+      "sha256": "2dbee8cb45af3de640f98ee68b4955d1fd90e772784e843f00951ac53ab908f6",
+      "zip_member": "bin/x64/sl.dlss.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.dlss.dll"
+    },
+    {
+      "file": "sl.interposer.dll",
+      "bytes": 569472,
+      "sha256": "c2397e96e35c1e78c0b351b0d2b070c6529ccc990f4cc73f04722db24dc2acce",
+      "zip_member": "bin/x64/sl.interposer.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.interposer.dll"
+    },
+    {
+      "file": "sl.nis.dll",
+      "bytes": 967808,
+      "sha256": "4629c778ea65cf0676583936a0da61204c035bc4e1994e7736bc07e0114e42cb",
+      "zip_member": "bin/x64/sl.nis.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.nis.dll"
+    },
+    {
+      "file": "sl.nvperf.dll",
+      "bytes": 618624,
+      "sha256": "e9459f193e85e91034b39aea5e624c8dd20e30469f63e981c851106256767ca6",
+      "zip_member": "bin/x64/sl.nvperf.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.nvperf.dll"
+    },
+    {
+      "file": "sl.pcl.dll",
+      "bytes": 176256,
+      "sha256": "d6cd931f8db74978aa9159a41af288ae1480ffbeae59e64f4ea447074d861bc0",
+      "zip_member": "bin/x64/sl.pcl.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.pcl.dll"
+    },
+    {
+      "file": "sl.reflex.dll",
+      "bytes": 198784,
+      "sha256": "42c45991b8f2972d4f341d379bd9be093c408b59d01f22b338f505f476617cc5",
+      "zip_member": "bin/x64/sl.reflex.dll",
+      "origin": "<previous-evidence>\\builds\\final-d37b63e72b-sdk210\\sl.reflex.dll"
+    }
+  ],
+  "historical_d37_omissions_completed_from_same_zip_verified_inventory": [
+    "nis.license.txt",
+    "NvLowLatencyVk.dll",
+    "nvngx_dlss.license.txt",
+    "reflex.license.txt"
+  ],
+  "same_c326_common_files": [
+    {
+      "file": "godot.windows.editor.x86_64.console.exe",
+      "bytes": 301056,
+      "sha256": "a870c8c045737039491279b31fe95c3b2128b28ff0c359588706ff86592e8ece",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\godot.windows.editor.x86_64.console.exe"
+    },
+    {
+      "file": "godot.windows.editor.x86_64.exe",
+      "bytes": 161810944,
+      "sha256": "b336f429537ec0fb453c9ed8d44c10a3e3c83f4e6300ef538311e38a3604d048",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\godot.windows.editor.x86_64.exe"
+    },
+    {
+      "file": "NvBlast.dll",
+      "bytes": 60416,
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\NvBlast.dll"
+    },
+    {
+      "file": "NvBlastExtAuthoring.dll",
+      "bytes": 823296,
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\NvBlastExtAuthoring.dll"
+    },
+    {
+      "file": "NvBlastExtShaders.dll",
+      "bytes": 37376,
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\NvBlastExtShaders.dll"
+    },
+    {
+      "file": "NvBlastGlobals.dll",
+      "bytes": 24064,
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\NvBlastGlobals.dll"
+    },
+    {
+      "file": "nvflow.dll",
+      "bytes": 2066944,
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\nvflow.dll"
+    },
+    {
+      "file": "nvflowext.dll",
+      "bytes": 10371072,
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\nvflowext.dll"
+    },
+    {
+      "file": "PhysXGpu_64.dll",
+      "bytes": 346725888,
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\PhysXGpu_64.dll"
+    },
+    {
+      "file": "x86_64\\D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\x86_64\\D3D12Core.dll"
+    },
+    {
+      "file": "x86_64\\d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd",
+      "origin": "<evidence>\\builds\\editor-c3260c0090-sdk214\\x86_64\\d3d12SDKLayers.dll"
+    }
+  ],
+  "version_checks": [
+    {
+      "file": "godot.windows.editor.x86_64.console.exe",
+      "command": [
+        "<evidence>\\builds\\editor-c3260c0090-sdk210-diagnostic\\godot.windows.editor.x86_64.console.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "4.8.beta1.custom_build.c3260c009\r\n",
+      "stderr": ""
+    },
+    {
+      "file": "godot.windows.editor.x86_64.exe",
+      "command": [
+        "<evidence>\\builds\\editor-c3260c0090-sdk210-diagnostic\\godot.windows.editor.x86_64.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "4.8.beta1.custom_build.c3260c009\r\n",
+      "stderr": ""
+    }
+  ],
+  "gpu": "NOT_EXECUTED",
+  "directory": "<evidence>\\builds\\editor-c3260c0090-sdk210-diagnostic",
+  "created_utc": "2026-10-26T18:48:32.287501+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "EXECUTED",
+  "cases": [
+    {
+      "preset": "D",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<evidence>\\rr-preset-discriminator\\preset-D\\rr_minimal.py",
+        "--engine",
+        "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.exe",
+        "--engine-sha",
+        "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9",
+        "--commit",
+        "8b1055662793954959fe5ce8b11843437af0adc3",
+        "--probe",
+        "<evidence>\\fg-init-isolation\\probe\\rtx_probe.dll",
+        "--rr-preset",
+        "D",
+        "--run"
+      ],
+      "controller_exit_code": 0,
+      "matrix": "<evidence>\\rr-preset-discriminator\\preset-D\\experiments\\20261026T194830Z-26c35a4b\\matrix.json",
+      "matrix_sha256": "ad7ae07f3f2e394a9a4f7a1f4cd82458dbc0a3702967c2c13c7e689f5dbc1026",
+      "diagnostic_experiment_completed": true,
+      "strict_clean": true
+    },
+    {
+      "preset": "F",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<evidence>\\rr-preset-discriminator\\preset-F\\rr_minimal.py",
+        "--engine",
+        "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.exe",
+        "--engine-sha",
+        "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9",
+        "--commit",
+        "8b1055662793954959fe5ce8b11843437af0adc3",
+        "--probe",
+        "<evidence>\\fg-init-isolation\\probe\\rtx_probe.dll",
+        "--rr-preset",
+        "F",
+        "--run"
+      ],
+      "controller_exit_code": 1,
+      "matrix": "<evidence>\\rr-preset-discriminator\\preset-F\\experiments\\20261026T194844Z-b95f71c5\\matrix.json",
+      "matrix_sha256": "1c5bbdbe830f0a36acba7edad38500ffaeeef2140cdc1ca900ada50ce5745eac",
+      "diagnostic_experiment_completed": true,
+      "strict_clean": false
+    }
+  ],
+  "all_requested_experiments_completed": true,
+  "all_strict_clean": false,
+  "scope": "Supported RR preset request control only; strict failures are preserved independently of functional completion. No model identity inference."
+}

@@ -1,0 +1,282 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "observer_command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "<evidence>\\game-harness\\run_observer.py",
+    "--engine",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\godot.windows.editor.x86_64.exe",
+    "--engine-sha256",
+    "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070",
+    "--sha",
+    "8a7364bf6c52022eab78ed33298e7539449e8c88",
+    "--project",
+    "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+    "--game",
+    "skate",
+    "--players",
+    "1",
+    "--map",
+    "0",
+    "--case",
+    "normal",
+    "--gate",
+    "1",
+    "--disable-dlss-g",
+    "--gpu-validation"
+  ],
+  "expected_engine": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\godot.windows.editor.x86_64.exe",
+  "expected_engine_sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070",
+  "expected_native_commit": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "project": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game",
+  "game": "skate",
+  "players": 1,
+  "map": 0,
+  "case": "normal",
+  "gate": 1,
+  "inputs": [
+    {
+      "path": "<evidence>\\strict-game\\strict_game_v2.py",
+      "bytes": 25581,
+      "sha256": "41fee5716fc98c2b57e10cfac65a639bd7bb1631a29f51b6926fceab441bdb12"
+    },
+    {
+      "path": "<evidence>\\game-harness\\run_observer.py",
+      "bytes": 14126,
+      "sha256": "08646296ffc7fcb68595a322ac844488caa25f0afa849b7640d2156c5e68208e"
+    },
+    {
+      "path": "<evidence>\\game-harness\\observe_warmup.gd",
+      "bytes": 16221,
+      "sha256": "c08f797cd074026c363442c206ed698f9541fc2e84b97697c7dd3a98934bfe04"
+    },
+    {
+      "path": "<evidence>\\game-harness\\PREPARED-v3.json",
+      "bytes": 1968,
+      "sha256": "e3891a96bb0d3c2f65df5da1b7d33fac527a40165c5a15582078063de9a6f206"
+    },
+    {
+      "path": "<previous-evidence>\\run_logged.py",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+    },
+    {
+      "path": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    },
+    {
+      "path": "<evidence>\\strict-controls\\strict_controls.py",
+      "bytes": 23372,
+      "sha256": "fce0c87db218e1cead54fc96af672d69527584a46c35e4669a0c1b5ae2d8f2e0"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\settings\\vk_layer_settings.txt",
+      "bytes": 197,
+      "sha256": "f7a75fc3cdf45810831ac12af4ad1bc0267fac718bed1f230011a6567c8f66e4"
+    },
+    {
+      "path": "<evidence>\\strict-game\\reference_strict_controls.py",
+      "bytes": 23372,
+      "sha256": "fce0c87db218e1cead54fc96af672d69527584a46c35e4669a0c1b5ae2d8f2e0"
+    },
+    {
+      "path": "<evidence>\\strict-game\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    },
+    {
+      "path": "<evidence>\\strict-game\\settings\\vk_layer_settings.txt",
+      "bytes": 197,
+      "sha256": "f7a75fc3cdf45810831ac12af4ad1bc0267fac718bed1f230011a6567c8f66e4"
+    },
+    {
+      "path": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.json",
+      "bytes": 132861,
+      "sha256": "9bdb274c944957ad454968c567d2d2b1883436a88de476200e688be1a36e23da"
+    },
+    {
+      "path": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.dll",
+      "bytes": 20870656,
+      "sha256": "f0353be5c5339433f5616a242919c724aeba046eca5b08531573818223b9e45a"
+    },
+    {
+      "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\project.godot",
+      "bytes": 2096,
+      "sha256": "77c4b82a2c8f693064dc787b0635f5e03d44df241152221bf34e7ff325ebbf36"
+    },
+    {
+      "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\.godot\\global_script_class_cache.cfg",
+      "bytes": 15028,
+      "sha256": "cf29635bc7888f62c8eee547373c625c73af60d68c16876b2402e113ea5fce41"
+    },
+    {
+      "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\render_warmup.gd",
+      "bytes": 5771,
+      "sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c"
+    },
+    {
+      "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\party_game.gd",
+      "bytes": 37752,
+      "sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864"
+    },
+    {
+      "path": "<evidence>\\project-prep-20261026T163031Z-a90d7958\\game\\core\\nvidia.gd",
+      "bytes": 6969,
+      "sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\NvBlast.dll",
+      "bytes": 60416,
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\NvBlastExtAuthoring.dll",
+      "bytes": 823296,
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\NvBlastExtShaders.dll",
+      "bytes": 37376,
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\NvBlastGlobals.dll",
+      "bytes": 24064,
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\PhysXGpu_64.dll",
+      "bytes": 346725888,
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\godot.windows.editor.x86_64.console.exe",
+      "bytes": 301056,
+      "sha256": "e4dd3f151758ec19696017e5ddf548f725c61213baec54845ff90ef39c12ba84"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\godot.windows.editor.x86_64.exe",
+      "bytes": 161809408,
+      "sha256": "63c5a66750306c2306a868d52678adf79e129441e7f31ef811e7568fbde03070"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvflow.dll",
+      "bytes": 2066944,
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvflowext.dll",
+      "bytes": 10371072,
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_deepdvc.dll",
+      "bytes": 3104880,
+      "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlss.dll",
+      "bytes": 58956912,
+      "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlssd.dll",
+      "bytes": 48343664,
+      "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlssg.dll",
+      "bytes": 7506544,
+      "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.common.dll",
+      "bytes": 843904,
+      "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.deepdvc.dll",
+      "bytes": 376448,
+      "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.directsr.dll",
+      "bytes": 369792,
+      "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss.dll",
+      "bytes": 422016,
+      "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss_d.dll",
+      "bytes": 437376,
+      "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss_g.dll",
+      "bytes": 637056,
+      "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.interposer.dll",
+      "bytes": 652928,
+      "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.nis.dll",
+      "bytes": 1155712,
+      "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.nvperf.dll",
+      "bytes": 761472,
+      "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.pcl.dll",
+      "bytes": 360064,
+      "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.reflex.dll",
+      "bytes": 388736,
+      "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\x86_64\\D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "path": "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\x86_64\\d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    }
+  ],
+  "environment_overrides": {
+    "VK_LOADER_LAYERS_DISABLE": "~implicit~",
+    "VK_LOADER_DEBUG": "error,warn,layer",
+    "VK_INSTANCE_LAYERS": "VK_LAYER_KHRONOS_validation",
+    "VK_LAYER_PATH": "<workspace>\\toolchains\\vulkan-validation-1.4.363",
+    "VK_LAYER_SETTINGS_PATH": "<evidence>\\strict-game\\settings",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cleared_inherited_environment_keys": [
+    "VK_LOADER_LAYERS_DISABLE",
+    "VK_LOADER_LAYERS_ENABLE",
+    "VK_LOADER_LAYERS_ALLOW",
+    "VK_ADD_LAYER_PATH",
+    "VK_LAYER_ENABLES",
+    "VK_KHRONOS_VALIDATION_VALIDATE_SYNC",
+    "VK_ADD_DRIVER_FILES",
+    "VK_DRIVER_FILES",
+    "VK_ICD_FILENAMES"
+  ],
+  "actual_vvl_api_version": "1.4.366",
+  "scope": "Single serial observer invocation; wrapper adds external strict proof only. No image/model/FG success is inferred from requested settings."
+}

@@ -210,3 +210,12 @@ Read with: [AGENTS.md](AGENTS.md) (entry point), [CUSTOM_BUILD.md](CUSTOM_BUILD.
 - See the [Windows RTX acceptance snapshot](kb/tooling/windows-rtx-acceptance-20261026.md)
   for C1 functional results and the separate d37 strict Vulkan failures;
   documentation-only descendants do not imply another native/GPU test run.
+
+- RT readiness needs live variant shaders and fresh recorded trace serials for
+  each actual view. Test production templates through an exported PCK/bootstrap,
+  retain intentional shader-error logs, and distinguish recorded work from a
+  GPU fence or physical present.
+- Streamline resource names alone do not prove ownership. Correlate actual host
+  tags and evaluation results. Bounded RR-D plus startup FG omission can be
+  clean while automatic/F fails; this does not identify model weights. Explicit
+  frees require GPU-safe completion; SDK lazy retention alone is not a leak.

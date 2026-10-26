@@ -1,0 +1,43 @@
+{
+  "command": [
+    "<workspace>\\toolchains\\dotnet10\\dotnet.exe",
+    "restore",
+    "ManagedSmoke.csproj",
+    "--configfile",
+    "NuGet.Config",
+    "--runtime",
+    "win-x64",
+    "--force",
+    "--no-cache",
+    "--disable-parallel"
+  ],
+  "cwd": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\cases\\mono-release\\project",
+  "checkout_sha": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<workspace>\\toolchains\\dotnet10\\dotnet.exe",
+      "bytes": 167208,
+      "sha256": "abce6623a6729059cf39bb0f728c4a7804f625895099c88c17e6e704661e09eb"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\local",
+    "TEMP": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\profiles\\mono\\tmp",
+    "NUGET_PACKAGES": "<evidence>\\validation-final\\final-exports-d29e706530-20261026T192855Z-c9bb338b\\nuget\\d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T19:30:32.532833+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-d29e706530-20261026T192855Z-c9bb338b-mono-release-restore.log",
+  "pid": 22524,
+  "exit_code": 0,
+  "duration_seconds": 1.281,
+  "finished_utc": "2026-10-26T19:30:33.751925+00:00"
+}
+  Determining projects to restore...
+  Restored <evidence>\validation-final\final-exports-d29e706530-20261026T192855Z-c9bb338b\cases\mono-release\project\ManagedSmoke.csproj (in 297 ms).

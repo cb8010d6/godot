@@ -1,0 +1,468 @@
+{
+  "case_label": "A_default_fg_plugin",
+  "diagnostic_dlss_g_disabled_requested": false,
+  "case": {
+    "driver": "vulkan",
+    "mode": "quality",
+    "preset": "Recommended",
+    "sharpness": 0,
+    "suite": "motion",
+    "warmup": 100,
+    "gpu_validation": true
+  },
+  "engine_commit": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "infrastructure_verified": true,
+  "infrastructure_checks": {
+    "job_assigned": true,
+    "not_timed_out": true,
+    "no_launcher_exception": true,
+    "cleanup_complete": true,
+    "frozen_inputs_unchanged": true,
+    "project_bytes_unchanged": true,
+    "actual_engine_candidate": true,
+    "actual_driver_vulkan": true,
+    "actual_gpu_4060": true,
+    "quality_recommended_metadata": true,
+    "native_probe_loaded": true,
+    "sdk_state_obtained": true,
+    "sdk_interposer_reported_loaded": true,
+    "sdk_request_lines_present": true,
+    "sampled_modules": true,
+    "streamline_modules_from_frozen_directory": true,
+    "native_probe_runtime_paths_from_frozen_directory": true,
+    "explicit_vvl_inserted": true,
+    "sync_validation_enabled_readback": true,
+    "actual_vvl_module_path": true
+  },
+  "filtered_layer_chain_and_rtss_module_absence_verified": true,
+  "remaining_inserted_non_vvl_layers": [],
+  "rtss_modules_observed": [],
+  "other_overlay_modules_observed": [
+    "nvspcap64.dll"
+  ],
+  "runtime_completed": true,
+  "native_exit_code": 0,
+  "strict_validation_status": "FAIL",
+  "log_analysis": {
+    "inserted_layer_names": [
+      "VK_LAYER_KHRONOS_validation"
+    ],
+    "forced_disabled_lines": [
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'."
+    ],
+    "explicit_vvl_inserted": true,
+    "rtss_layer_inserted": false,
+    "synchronization_validation_reported_enabled": true,
+    "diagnostic_token_occurrences": {
+      "VUID-vkCmdDraw-None-09600": 20
+    },
+    "engine_error_line_count": 10,
+    "api_header": "Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "validation_message_counts": {
+    "Loader Message": 9,
+    "VUID-vkCmdDraw-None-09600": 10
+  },
+  "engine_errors": [
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600",
+    "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+  ],
+  "sdk_request_log": [
+    "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+  ],
+  "size_adjustments": [],
+  "native_sdk_samples": 160,
+  "native_sdk_loaded_paths": [
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_deepdvc.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlss.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlssd.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\nvngx_dlssg.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.common.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss_d.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.dlss_g.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.interposer.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.nis.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.pcl.dll",
+    "<evidence>\\builds\\editor-8a7364bf6c-sdk214\\sl.reflex.dll"
+  ],
+  "frame_records": 49,
+  "raw_log": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\godot.stdout-and-stderr.log",
+    "bytes": 86955,
+    "sha256": "06b612ca1244a80953864c9a18f491a4cac0aab1c153f23a2ec068fe84d7a0db"
+  },
+  "module_samples": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\module-samples.json",
+    "bytes": 37353,
+    "sha256": "54d5b852357142e28883fdfbe132d372aa24a2bd1da640d3589bf85912313964"
+  },
+  "metadata": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\metadata.json",
+    "bytes": 827,
+    "sha256": "89c7c343928b281f1c45f212af1d414ebee350a1a863e28f14127f82fbe7a62d"
+  },
+  "sdk_state": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\sdk-state.json",
+    "bytes": 327196,
+    "sha256": "0915edaff873849d6f1195f5f65d63d1097790958e4cb0f1db7ccb0a3b29ab45"
+  },
+  "frames": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\frames.json",
+    "bytes": 15507,
+    "sha256": "d0b12a1e806177fef8b6671c98f62b44342e8bf76a947100a68d022e581d5b57"
+  },
+  "images": [
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_000.png",
+      "bytes": 3823,
+      "sha256": "976c4e134202a9fc01103a8f6ac14e5a6d55d2cc73cac7bca0e7b3d5c451f1a5"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_001.png",
+      "bytes": 4048,
+      "sha256": "49dead03ec2889241d0c85ad4a6ddb08d58f66e510dc5ca3ca2a42a6ac8fe1b3"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_002.png",
+      "bytes": 4044,
+      "sha256": "ef07e0b4cc7887e7c23646c22ef6c67bd8d08def63969fa7340b422cb6d3cee2"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_003.png",
+      "bytes": 3731,
+      "sha256": "7bb465eef089d8152ddf14b18be2891e47cad1a57dece2eb6cbdaa559ab3a935"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_004.png",
+      "bytes": 4574,
+      "sha256": "e43d9b5d632f57b8663046aa61d3927bb279f19847e825ad2604c5de59985021"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_005.png",
+      "bytes": 4720,
+      "sha256": "996a5a82754e49aee83cd3d1782dea856cb05ef53dc9aae3b4bc49a101f60773"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_006.png",
+      "bytes": 3841,
+      "sha256": "5e1f9a8c65446007f660ed6b08ecac09ab295e4308a9b137d7bfd21cabe35154"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_007.png",
+      "bytes": 3814,
+      "sha256": "d4091599748f2954c5065ccf2547269bfe9c78438815ac4eb4414f4dd584385e"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_008.png",
+      "bytes": 4645,
+      "sha256": "8c9ba613e671a82891e53569cafad0cb551f65bab531332b24eaaad4cb888aec"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_009.png",
+      "bytes": 4784,
+      "sha256": "34a96137f5f488109043f2c0987f891a9f90047df49fa233d6118cd5e9669910"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_010.png",
+      "bytes": 4507,
+      "sha256": "fcdca2c81d503b315a29fb1a64092b021db54a2fcde4cb6da38571576eef0734"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_011.png",
+      "bytes": 3813,
+      "sha256": "9185649912e24c640503762164a9eaddca7b18ee542314d3f012d746518e0607"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_012.png",
+      "bytes": 3881,
+      "sha256": "7e91c5879c6e97fe317d25d527c4dc65f6fc32fd31c8a5a464ec271396e3506f"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_013.png",
+      "bytes": 3786,
+      "sha256": "2ae902d8d8eb57d2459151f6924bf5e55f47a6a98b4d9d9e74ddd1b92127915d"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_014.png",
+      "bytes": 3841,
+      "sha256": "8d746958bad757fa1ebb9183e89dc92c7f3e3ccf7c80c218f776ca45e7dc00f0"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_015.png",
+      "bytes": 3826,
+      "sha256": "d57bd43b15410ea8f9f40f43706c2a373b1d470c42337902a644d099c828d9cf"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_016.png",
+      "bytes": 3754,
+      "sha256": "31f26031b7a379e335ace9d1328c80824c105aa9b575b8f881cf215ee597ad50"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_017.png",
+      "bytes": 3658,
+      "sha256": "b08eb54b7c11525b76bb3bddffa1af99fb8c0992fffd41cabc4a3bce7253cf55"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_018.png",
+      "bytes": 3744,
+      "sha256": "3b850cf2041cf1c7942eb781c65cebd14a8b30a715c80d567af38086a794a9ce"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_019.png",
+      "bytes": 3779,
+      "sha256": "0a66ea999a42cfab4df6d6debbafadb2a34edee9ea65d81cf5bae378201f57ab"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_020.png",
+      "bytes": 4015,
+      "sha256": "b1943f4e98927f7d9096a9dab82b288e56f7c20fdb11192dc201ad9fa5778328"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_021.png",
+      "bytes": 3723,
+      "sha256": "80e44fcde3ee197ad8eb6cd4e2deafaf5931900d35edaa03b076a59391fb0122"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_022.png",
+      "bytes": 3950,
+      "sha256": "d449b43a270047fc12830bcda9703ff01d5c801db0c4d07ef3e24866b7ade0b3"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_023.png",
+      "bytes": 3650,
+      "sha256": "dff34701b14f5e8ce28ba6bce4f239676b22193009344d2983c2b77d656eb3d0"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_024.png",
+      "bytes": 3647,
+      "sha256": "6650b16e5f872f09ed01f420fc90377a9b85999ec30418779ef4a82f3b8c5268"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_025.png",
+      "bytes": 3702,
+      "sha256": "7c5fab2c9dba2b9741c2327edf476740abdade09ba3d2fac0303580a735bf293"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_026.png",
+      "bytes": 4061,
+      "sha256": "41c061f7a178af06d880ea9b1c026e92a7ecf9eaa6a58c8329cce3c2283b58c3"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_027.png",
+      "bytes": 3921,
+      "sha256": "195e7fb9a1826d887fa86f2014a46252210dab3b4d6143c92e0184269f4611a1"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_028.png",
+      "bytes": 3739,
+      "sha256": "39fc182fafb8d9f7f87a5a15321b150c28e137c8163d423838e5fe00e2dcbe47"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_029.png",
+      "bytes": 3674,
+      "sha256": "4add39e0f2a73daf0ae72171663b24035f0142589dcff601adeb0bf9f7c107e9"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_030.png",
+      "bytes": 3811,
+      "sha256": "3fa4645ea12c5bb5b76d424d2ee43ceaea1e19564bf57adaaaecefa0d0a27dca"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_031.png",
+      "bytes": 3864,
+      "sha256": "f9c8955a6dcbc1454d356ef19f569de1ffeb34700fef6cd2dcd976505d364008"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_032.png",
+      "bytes": 3735,
+      "sha256": "75fd54b2232667c409fcff0b6e25446a7ff1b202b2de1ca1339f49b97102de75"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_033.png",
+      "bytes": 3806,
+      "sha256": "53bd0d8bb404fcb46970ab6c1350a729052844fe0613e6fe842e3c74c09dc23d"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_034.png",
+      "bytes": 3612,
+      "sha256": "8df5600110e80d720dde4c181c2e3c0273034e7875695fffebca9866191d4031"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_035.png",
+      "bytes": 3655,
+      "sha256": "69b9ccc1ddcdab1effda95b5ee1de350738adafa5b2fe2ba3dd988ce15ece9cb"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_036.png",
+      "bytes": 3767,
+      "sha256": "218c8431bb942aa80a48be1f14cb5eee214d67088f52d006fc902bf8844a866e"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_037.png",
+      "bytes": 3756,
+      "sha256": "3b36b058762000490316f24b53bc708fc1229a0550351ffe1dfec82aeaeab5f2"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_038.png",
+      "bytes": 3941,
+      "sha256": "9de222e6dbdb87446b222f72afbafdb8317ff2ef70bd3fac09b132a8c614d1a2"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_039.png",
+      "bytes": 3678,
+      "sha256": "051fbba732389fdab9e39fbb17e5037d8ae9e3e9ede0449858e2d451236c5780"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_040.png",
+      "bytes": 3890,
+      "sha256": "368b08bbaa3a77221af44f9fd3b723528cd7bf318d9b6113a778ca0091dca79d"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_041.png",
+      "bytes": 3544,
+      "sha256": "f39ae1987236c938f5285285d584bc78ee50c45a5a3abb2ce116b7d1c2175282"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_042.png",
+      "bytes": 3660,
+      "sha256": "157d900ec1ffc464e291e83199f326e50c59e23314665a377ead83cf5a67e623"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_043.png",
+      "bytes": 3660,
+      "sha256": "8de37397652b75989c0592792b6ff5038cb2f5cc2398ac764d69276ef7e4bef9"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_044.png",
+      "bytes": 3894,
+      "sha256": "7ee98d9b7d827fff2d4ef81778fd7cea2a0703349360aecb807be9c037999327"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_045.png",
+      "bytes": 3879,
+      "sha256": "4c564b16be0cd08dc29de7e1a7f39b0bd5330ea0df2d81ee08a2028526ebbd29"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_046.png",
+      "bytes": 3735,
+      "sha256": "9f2ee49b42eb9778e584a4360b0312f7c74ba01c0638812830e844dc8ab807bd"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\motion_047.png",
+      "bytes": 3772,
+      "sha256": "db6e53f840404bd9940455832bec1cfbc85b4fd1ea3f62cc4f83e0fb91ccebf7"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\capture\\static.png",
+      "bytes": 3720,
+      "sha256": "7046f5cfbe3faa5db7f750bb7d514a020ff95c1d971de378f79d4781ac0bbf12"
+    }
+  ],
+  "scope": "SR control with same candidate/probe, FG option Off. Startup plugin selection is the explicit A/B variable; actual module and capability checks are reported separately. Actual AI model identity is not inferred. RTSS absence applies to sampled owned process only.",
+  "receipt": {
+    "path": "<evidence>\\fg-init-isolation\\ab-control\\runs\\A_default_fg_plugin-20261026T171707Z-f8bef441\\receipt.json",
+    "bytes": 26166,
+    "sha256": "f5020226ecd1b749b45a6e955f10d7a2d6d4819d4d766baa664dfb985b4a7828"
+  }
+}

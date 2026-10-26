@@ -1,0 +1,175 @@
+{
+  "status": "SOURCE_PREPARED_NOT_COMPILED",
+  "checks": {
+    "source_original_unchanged": true,
+    "fg_getter_inside_module_guard": true,
+    "fg_version_skipped_without_module": true,
+    "sr_rr_reflex_getters_preserved": true,
+    "pcl_real_version_query_included": true,
+    "optimal_settings_copy_exact": true,
+    "not_compiled": true
+  },
+  "all_static_checks_passed": true,
+  "originals": [
+    {
+      "file": "<previous-evidence>\\agent-ultra\\rtx_probe.cpp",
+      "bytes": 10582,
+      "sha256": "99ce782d40f659a3d4888684e9b05bfa8c03a95a9aa0928bca5e854559e5e8fe"
+    },
+    {
+      "file": "<previous-evidence>\\agent-ultra\\optimal_settings_probe.h",
+      "bytes": 5768,
+      "sha256": "107ba20c427d03a6d5460e1859be49ab188ae81870628fa6d8d28ad335efcb83"
+    }
+  ],
+  "prepared": [
+    {
+      "file": "<evidence>\\fg-init-isolation\\probe\\rtx_probe.cpp",
+      "bytes": 11092,
+      "sha256": "57892265026473f8df626a8f0a870ff5a1164e800aec464eabd30ed8abb48bd1"
+    },
+    {
+      "file": "<evidence>\\fg-init-isolation\\probe\\optimal_settings_probe.h",
+      "bytes": 5768,
+      "sha256": "107ba20c427d03a6d5460e1859be49ab188ae81870628fa6d8d28ad335efcb83"
+    },
+    {
+      "file": "<evidence>\\fg-init-isolation\\probe\\fg-module-guard.patch",
+      "bytes": 3289,
+      "sha256": "b9cc877f22c610c58cddbd0f66376558b4e2aaf12ffe6fe32bf3034d794e2ca2"
+    },
+    {
+      "file": "<evidence>\\fg-init-isolation\\probe\\build-probe.cmd",
+      "bytes": 516,
+      "sha256": "18c768af25524adf3cec5a01879e032044175dc356896893cc0f9ded4481e4ce"
+    }
+  ],
+  "header_inputs": [
+    {
+      "file": "<source>\\core\\extension\\gdextension_interface.gen.h",
+      "bytes": 142360,
+      "sha256": "46a7175af4aa400d37ab6945ca9dec59ba9696df4129c15a837575c93aef9ad0"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl.h",
+      "bytes": 2155,
+      "sha256": "e8efb374ab4d68cfca92ed7664f70173cf4158caceb5b7837ebfa0c5b6ec71ec"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_appidentity.h",
+      "bytes": 186,
+      "sha256": "5e130035fb687de0fd6a0d266b804c979678afda7c3eabf52da631c3c9226a67"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_consts.h",
+      "bytes": 12554,
+      "sha256": "56d2ced0319ac2086e9032bea2c0b42601cd309e2db5d60343f9044a3797e7cb"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_core_api.h",
+      "bytes": 16799,
+      "sha256": "227ce30af8b64b932ce3a37f07e53b07c9c4b5d814b52829fca9199ced05201b"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_core_types.h",
+      "bytes": 33502,
+      "sha256": "2f614c47638b9ea7173b49ef5b3bce528aba536a6a8fb7a29a14d60caac8f2d8"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_deepdvc.h",
+      "bytes": 3787,
+      "sha256": "bf5411e9ee2fc1d46d3afb5c8d915b508c73ca7c1b1862c7577a336b1ad9433d"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_device_wrappers.h",
+      "bytes": 185,
+      "sha256": "d7a0cfa144895fe00987af89e81ec8ef46bd49507ad6bd70f5a18a60d4be13d6"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_directsr.h",
+      "bytes": 6363,
+      "sha256": "1cd45d5c6042017116d3db6a411dee377cef14d9d825686493adfa532e33500e"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_dlss.h",
+      "bytes": 8296,
+      "sha256": "00a26ea060f67c7ea03ced3efde83479ac9e088a5c024625a291be4b17aaf09b"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_dlss_d.h",
+      "bytes": 8034,
+      "sha256": "cd49f7388c5b5263034b013edfccbe7a748059452b2c54a1412ae7676dada9a3"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_dlss_g.h",
+      "bytes": 10719,
+      "sha256": "075bc65a5d30a59e158d3c1ea4dff34f8335bc16486c31b33394e9270ee59e8c"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_helpers.h",
+      "bytes": 16465,
+      "sha256": "c513e471967ba567b0729e89737d2fa91efa633d6470242e5e76e8b1cab7f401"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_helpers_vk.h",
+      "bytes": 14844,
+      "sha256": "36de94fa0339232a2c50d449eed639d2c6831c18409a580aa95ead903297b301"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_hooks.h",
+      "bytes": 4365,
+      "sha256": "6953da2aafbb33b80ca953e72af14aaf95f7e3fe8f1a4a7bafe31e7702c3984e"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_matrix_helpers.h",
+      "bytes": 12184,
+      "sha256": "c3520f0c249a0eb0ced474e0c55734e1e86f197bb521500dda834b13b96bed33"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_nis.h",
+      "bytes": 3703,
+      "sha256": "5264c7271f5d31f505b29d3935b7388e2614c9ce1b3baa3f101b194409eb36a7"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_nvperf.h",
+      "bytes": 2924,
+      "sha256": "02f8f9209dbf989d14b93eec0ae1ea13efb6fbefd680727f408952a43aaf3f8b"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_pcl.h",
+      "bytes": 5563,
+      "sha256": "a9c37fa9a99c4eb06cd0843968e33e278aae61759f59e46fcb80f489660a2d7e"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_reflex.h",
+      "bytes": 10332,
+      "sha256": "0afbacef659231077626506c7ff8a6a1f2dff90703f96ac889bc777facba25ef"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_result.h",
+      "bytes": 2458,
+      "sha256": "8219c300c7084b55f2cc2e095bef21b03db91e3189014f6281cbc942313d8fee"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_security.h",
+      "bytes": 20038,
+      "sha256": "249a1a568a756db35ff126ef37f27dd2164695a329cc0145956c5df7e28622c7"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_struct.h",
+      "bytes": 4697,
+      "sha256": "0af81b9f0be3e9928b81eb229df36aa0776d79bf06335cb2d398b11e124f7917"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_template.h",
+      "bytes": 2296,
+      "sha256": "106c62a7e31d2b182bb46be3faddfff59b3fd50aa9c5c49bdc392a13be727411"
+    },
+    {
+      "file": "<source>\\thirdparty\\streamline\\include\\sl_version.h",
+      "bytes": 3542,
+      "sha256": "0057db82adaf7181bc5dd3a084ef173b890589ed80a2d30526ab8d3828291301"
+    }
+  ],
+  "scope": "Private probe source preparation only; this preparing agent performed no native build/GPU. Missing FG module records a skip, not a fabricated SDK result. PCL is observed through its real feature version and original fixture capability; slPCLGetState is not added to this probe."
+}

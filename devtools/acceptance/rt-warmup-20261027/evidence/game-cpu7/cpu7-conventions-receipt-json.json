@@ -1,0 +1,16 @@
+{
+  "name": "conventions",
+  "command": [
+    "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+    "-B",
+    "tools/check_conventions.py"
+  ],
+  "cwd": "<game>",
+  "started_utc": "2026-10-26T16:20:57.436787+00:00",
+  "stdout_and_stderr": "<evidence>\\cpu\\20261026T162057Z-serial-f07523\\conventions.stdout.log",
+  "exit_code": 0,
+  "duration_seconds": 0.719,
+  "finished_utc": "2026-10-26T16:20:58.153360+00:00",
+  "log_sha256": "ab7a77b78e6a990f599d01d7db41881bde5694b87621cd69e511e7bdc9e06a7b",
+  "status": "PASS"
+}

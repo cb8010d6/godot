@@ -1,0 +1,75 @@
+{
+  "scope": "Actual standalone PCK directory and include payload; no engine execution",
+  "pack": "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.pck",
+  "pack_bytes": 10444,
+  "pack_sha256": "2be2f51a61cf4461bac7656cd05c13cf58ebe408535de24ef1008c7026fa36c2",
+  "format": 4,
+  "engine_version_header": [
+    4,
+    8,
+    0
+  ],
+  "flags": 2,
+  "directory_offset": 10016,
+  "entry_count": 6,
+  "entries": [
+    {
+      "resource": "res://.godot/exported/133200997/export-119bc78e9a79af8941f2f0178e74e6ab-bootstrap.scn",
+      "offset": 112,
+      "bytes": 604,
+      "md5_directory": "39fc52ba73f65398a51b5e0a13b1445b",
+      "flags": 0
+    },
+    {
+      "resource": "res://.godot/global_script_class_cache.cfg",
+      "offset": 9408,
+      "bytes": 174,
+      "md5_directory": "f67e31dc78181616863bf61b36871ea3",
+      "flags": 0
+    },
+    {
+      "resource": "res://.godot/uid_cache.bin",
+      "offset": 9584,
+      "bytes": 34,
+      "md5_directory": "ea7b64b89d6e34daf11c47e60bd0bda0",
+      "flags": 0
+    },
+    {
+      "resource": "res://bootstrap.tscn.remap",
+      "offset": 9296,
+      "bytes": 102,
+      "md5_directory": "a36676971578c160fc661d1a899934db",
+      "flags": 0
+    },
+    {
+      "resource": "res://project.binary",
+      "offset": 9632,
+      "bytes": 375,
+      "md5_directory": "fd30cc81efee7e541ca9fd584b3bac7d",
+      "flags": 0
+    },
+    {
+      "resource": "res://readiness.gd",
+      "offset": 720,
+      "bytes": 8576,
+      "md5_directory": "343d655eb819b2c8bf1b05b08c4a7853",
+      "flags": 0
+    }
+  ],
+  "packaged_script": {
+    "resource": "res://readiness.gd",
+    "offset": 720,
+    "bytes": 8576,
+    "md5_directory": "343d655eb819b2c8bf1b05b08c4a7853",
+    "flags": 0,
+    "source": "<evidence>\\packaged-readiness-v2\\project\\readiness.gd",
+    "source_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+    "payload_sha256": "a25549223095e60868fb5eddc58a21cf704c486088111c43f96aadffddf96571",
+    "checks": {
+      "include_present": true,
+      "payload_matches_source_bytes": true,
+      "payload_md5_matches_directory": true
+    }
+  },
+  "passed": true
+}

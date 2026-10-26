@@ -1,7 +1,7 @@
 ---
 type: Finding
 title: Viewport RT startup readiness uses live shaders and recorded trace commands
-description: Editor and private packaged release fixtures pass; the new public packaging entry and complete game integration require rerun.
+description: Six final Windows targets, public release PCK, bounded game recovery controls and production entry pass; automatic/F RR strict failures remain separate.
 tags: [pathtracing, shaders, startup, testing]
 status: draft
 generated: { by: codex, at: 2026-10-26T19:02:46Z }
@@ -152,3 +152,19 @@ cancel/window-close stress test. The diagnostic startup FG opt-out is explicit.
 RR's independent strict validation FAIL remains recorded separately. Tests run
 on frozen native bytes retain their original native SHA even if the working
 checkout later moves to a diagnostic/documentation commit.
+
+## Final Windows acceptance
+
+Final native `d29e7065306d670a643ca0ea7a362c4b38cea3c5` passes all six Windows
+targets (352.344 s, Jobs 2), standard/Mono repository smoke (30.672/27.078 s),
+and four installed standard/Mono Debug/Release template exports and real D3D12
+runs. The exact committed public fixture imports/exports/runs through the
+unmodified production template with all five phases, true pending observation,
+four pixel stages and the intentional shader failure correctly detected.
+
+The actual game PCK includes the compiled warm-up scripts/classes/remaps and
+exact RT material include. Production Vulkan and D3D12 entries each capture
+three original images and exit through the game's own flow. Separate RR-D
+compatibility runs pass actual-game 1/4-player strict checks; automatic/F remains
+a failure. See the [complete measured report](../../devtools/RT_WARMUP_ACCEPTANCE_2026_10_27.md)
+for native/game identities, historical failures and precise scope restrictions.

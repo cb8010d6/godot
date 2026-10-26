@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "matrix": "<evidence>\\game-runs\\warmup-8b10556627-20261026T202919Z-0759fbf9-normal\\matrix.json",
+  "checks": {
+    "wrapper_exit_zero": true,
+    "engine_exit_zero": true,
+    "actual_native_sha": true,
+    "recorded_checkout_sha": true,
+    "recorded_engine_binary_sha256": true,
+    "observer_passed": true,
+    "no_pause_or_physics_violation": true,
+    "actual_api_gpu": true,
+    "actual_game_and_map": true,
+    "job_owned": true,
+    "job_cleanup_recorded": true,
+    "ngx_empty_after_job_cleanup": true,
+    "frozen_inputs_unchanged": true,
+    "runtime_inventory_unchanged": true,
+    "actual_disable_dlss_g_env": true,
+    "startup_marker_matches_request": true,
+    "native_fg_status_api": true,
+    "fg_stays_disabled": true,
+    "no_validation_diagnostic_tokens": true,
+    "fg_status_matches_plugin_selection": true,
+    "log_policy": true,
+    "actual_play_original_png": true,
+    "png_sha_original": true
+  }
+}

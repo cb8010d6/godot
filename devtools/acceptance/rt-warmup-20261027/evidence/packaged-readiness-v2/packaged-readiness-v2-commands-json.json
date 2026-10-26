@@ -1,0 +1,87 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_sha": "8a7364bf6c52022eab78ed33298e7539449e8c88",
+  "runtime_prepare_command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "<evidence>\\packaged-readiness-v2\\link-runtime.ps1"
+  ],
+  "capture_directory_must_not_exist": "<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5",
+  "stages": [
+    {
+      "stage": "import",
+      "status": "NOT_EXECUTED",
+      "cwd": "<evidence>\\packaged-readiness-v2\\project",
+      "timeout_seconds": 180,
+      "command": [
+        "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\packaged-readiness-v2\\project",
+        "--import"
+      ],
+      "environment": {
+        "APPDATA": "<evidence>\\packaged-readiness-v2\\profile-import\\roaming",
+        "LOCALAPPDATA": "<evidence>\\packaged-readiness-v2\\profile-import\\local",
+        "TEMP": "<evidence>\\packaged-readiness-v2\\profile-import\\tmp",
+        "TMP": "<evidence>\\packaged-readiness-v2\\profile-import\\tmp",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "0"
+      },
+      "execution_contract": "Parent serial native queue with Windows Job and receipts; no native command launched during preparation"
+    },
+    {
+      "stage": "export",
+      "status": "NOT_EXECUTED",
+      "cwd": "<evidence>\\packaged-readiness-v2\\project",
+      "timeout_seconds": 180,
+      "command": [
+        "<evidence>\\builds\\editor-8a7364bf6c-no-sl\\godot.windows.editor.x86_64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "<evidence>\\packaged-readiness-v2\\project",
+        "--export-pack",
+        "Release readiness",
+        "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.pck"
+      ],
+      "environment": {
+        "APPDATA": "<evidence>\\packaged-readiness-v2\\profile-export\\roaming",
+        "LOCALAPPDATA": "<evidence>\\packaged-readiness-v2\\profile-export\\local",
+        "TEMP": "<evidence>\\packaged-readiness-v2\\profile-export\\tmp",
+        "TMP": "<evidence>\\packaged-readiness-v2\\profile-export\\tmp",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "0"
+      },
+      "execution_contract": "Parent serial native queue with Windows Job and receipts; no native command launched during preparation"
+    },
+    {
+      "stage": "run",
+      "status": "NOT_EXECUTED",
+      "cwd": "<evidence>\\packaged-readiness-v2\\runtime",
+      "timeout_seconds": 180,
+      "command": [
+        "<evidence>\\packaged-readiness-v2\\runtime\\godot.windows.template_release.x86_64.exe",
+        "--rendering-driver",
+        "vulkan",
+        "--rendering-method",
+        "forward_plus",
+        "--verbose",
+        "--",
+        "--output=<evidence>\\packaged-readiness-v2\\capture-20261026T182742Z-6d961fb5"
+      ],
+      "environment": {
+        "APPDATA": "<evidence>\\packaged-readiness-v2\\profile-run\\roaming",
+        "LOCALAPPDATA": "<evidence>\\packaged-readiness-v2\\profile-run\\local",
+        "TEMP": "<evidence>\\packaged-readiness-v2\\profile-run\\tmp",
+        "TMP": "<evidence>\\packaged-readiness-v2\\profile-run\\tmp",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "0"
+      },
+      "execution_contract": "Parent serial native queue with Windows Job and receipts; no native command launched during preparation"
+    }
+  ],
+  "scope": "v2 adds bootstrap main_scene for the earlier Main::setup guard; custom MainLoop/assertions unchanged; no native executed in preparation"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "CPU_PREPARED_NOT_EXECUTED",
+  "native_gpu_execution": false,
+  "tools": [
+    {
+      "path": "<evidence>\\strict-game-rr-d\\strict_game_trace.py",
+      "bytes": 28516,
+      "sha256": "88089b0391fa28f6b8e700f9f9cbd73c97f5468ad4a472bc2a0d78a00ce8812e"
+    },
+    {
+      "path": "<evidence>\\strict-game-rr-d\\observer\\run_observer.py",
+      "bytes": 15162,
+      "sha256": "f4012b4c4d79300cd86fb4c71995492afd6038dba3ede60f2ca381cca297ffa9"
+    },
+    {
+      "path": "<evidence>\\strict-game-rr-d\\observe_warmup.gd",
+      "bytes": 18473,
+      "sha256": "881bf7f0e621d657de5c37c97bd729850cd89149e7fb9dc1ae985aeefb5b9f7c"
+    },
+    {
+      "path": "<evidence>\\strict-game-rr-d\\rtx_probe.gdextension",
+      "bytes": 191,
+      "sha256": "62e073a674352a5171f37a80b32807a1b024699e52f4731d5b2edcc581fe3bf1"
+    },
+    {
+      "path": "<evidence>\\fg-init-isolation\\probe\\rtx_probe.dll",
+      "bytes": 73728,
+      "sha256": "dc4956f86ed21afa6fffb2f29165bf0ee826eec91eb9ddfc1a47e8667fe6ce85"
+    }
+  ],
+  "originals": [
+    {
+      "path": "<evidence>\\strict-game-rr-d\\observe_warmup.gd.original",
+      "bytes": 16221,
+      "sha256": "c08f797cd074026c363442c206ed698f9541fc2e84b97697c7dd3a98934bfe04"
+    },
+    {
+      "path": "<evidence>\\strict-game-rr-d\\run_observer.py.original",
+      "bytes": 15162,
+      "sha256": "f4012b4c4d79300cd86fb4c71995492afd6038dba3ede60f2ca381cca297ffa9"
+    },
+    {
+      "path": "<evidence>\\strict-game-rr-d\\strict_game_trace.py.original",
+      "bytes": 25648,
+      "sha256": "d74f756ccd80bb5f993cc2d38f98e5a3f39eba060e128fedbbfd3f6b00fd425f"
+    }
+  ],
+  "python_AST": "PASS",
+  "GDScript_parse": "PENDING_PARENT_NATIVE_CHECK_ONLY",
+  "limits": "Original SDK probe getters cover viewport1/2 only; all active game views require independent live readiness and native trace tags/eOk. No get_parameter API exists; do not claim preset/model getter identity."
+}

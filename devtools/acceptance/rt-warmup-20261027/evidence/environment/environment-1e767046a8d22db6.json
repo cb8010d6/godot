@@ -1,0 +1,14 @@
+{
+  "captured_utc": "2026-10-26T19:22:01.4121701Z",
+  "msvc_tools_version": "14.44.35207",
+  "installed_windows_sdk_versions": [
+    "10.0.19041.0",
+    "10.0.26100.0"
+  ],
+  "effective_sdk_scope": "Selected version and compiler recovered from final SCons environment snapshot; not inferred only from installed versions",
+  "scons_selected_windows_sdk": "10.0.26100.0",
+  "scons_msvc_family": "14.3",
+  "scons_compiler_executable": "<program-files>\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe",
+  "scons_compiler_file_version": "19.44.35229.0",
+  "scons_compiler_sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619"
+}

@@ -1,0 +1,543 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "engine": "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.exe",
+  "engine_sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9",
+  "engine_commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+  "probe": {
+    "path": "<evidence>\\fg-init-isolation\\probe\\rtx_probe.dll",
+    "bytes": 73728,
+    "sha256": "dc4956f86ed21afa6fffb2f29165bf0ee826eec91eb9ddfc1a47e8667fe6ce85"
+  },
+  "inputs": {
+    "originals": [
+      {
+        "path": "<evidence>\\fg-init-isolation\\ab-control\\ab_runner.py",
+        "bytes": 13787,
+        "sha256": "4a4d1581df782d4d65d4d995ef695ac4a133912ffb3d5a218309b716d11aa49d"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\ab-control\\candidate_case.py",
+        "bytes": 12847,
+        "sha256": "1e3d317d9359cfc91213b08b6624c07f18f5bdc57a3b3c0449668dc4b68c632c"
+      },
+      {
+        "path": "<evidence>\\sdk-strict-control\\sdk_strict_control.py",
+        "bytes": 16881,
+        "sha256": "c3e547ca697b0ce1644e954c76d92660b45dfabffa951f24e1c4826fab4be954"
+      },
+      {
+        "path": "<evidence>\\sdk-strict-control\\prepared.json",
+        "bytes": 16445,
+        "sha256": "8fb0ad0a350a0e15c6370e363c52c8a9735f2c4d8de1b1cf1aa7b7cb4cad1d75"
+      },
+      {
+        "path": "<evidence>\\sdk-strict-control\\runs\\20261026T164512Z-eb66acab\\result.json",
+        "bytes": 33088,
+        "sha256": "cedb5a74195f9349d360470410d82c9d401a4930488259eb8a37ce885ada1f32"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\main.gd",
+        "bytes": 10747,
+        "sha256": "3a20aead002d73b8625ee800a8f557510b0b9f5f0540a6d593983fafe653be8d"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\main.gd.uid",
+        "bytes": 19,
+        "sha256": "362717d2226433e22d7d0b09f2acf52a41c4a1abffd7b8a46f6fadf165a039dd"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\main.tscn",
+        "bytes": 160,
+        "sha256": "58ae403be5d28e6a7021d86ab700b1c2e15ed4359f1ff5e6be16c039901e02ed"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\project.godot",
+        "bytes": 431,
+        "sha256": "e1a75c658991dfd38a2182a1cda67137fc3e33616e52700b725ff381ef0946e1"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\rtx_probe.gdextension",
+        "bytes": 141,
+        "sha256": "f7858378075f9bc11ab362a4cf5dbb324b0e4b519f999cbf63cd1ac4c400cbe2"
+      },
+      {
+        "path": "<previous-evidence>\\gpu-fixture\\rtx_probe.gdextension.uid",
+        "bytes": 20,
+        "sha256": "abdb96a78a60a858b35de72b05c00d85357747bbcf57fadb9cc099c67c168c54"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\probe\\rtx_probe.cpp",
+        "bytes": 11092,
+        "sha256": "57892265026473f8df626a8f0a870ff5a1164e800aec464eabd30ed8abb48bd1"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\probe\\optimal_settings_probe.h",
+        "bytes": 5768,
+        "sha256": "107ba20c427d03a6d5460e1859be49ab188ae81870628fa6d8d28ad335efcb83"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\probe\\source-manifest.json",
+        "bytes": 7164,
+        "sha256": "e1cb0b15605d7c6e36af6646230b2eb6964037dece41320853daa5a8d8ea6b54"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\probe\\build-probe.cmd",
+        "bytes": 516,
+        "sha256": "18c768af25524adf3cec5a01879e032044175dc356896893cc0f9ded4481e4ce"
+      },
+      {
+        "path": "<evidence>\\fg-init-isolation\\probe\\rtx_probe.dll",
+        "bytes": 73728,
+        "sha256": "dc4956f86ed21afa6fffb2f29165bf0ee826eec91eb9ddfc1a47e8667fe6ce85"
+      },
+      {
+        "path": "<prior-evidence>\\summary-runtime-file-versions.json",
+        "bytes": 2901,
+        "sha256": "d87553649bfc97ea86d53ece926d7f3b4a3e81bb9b035b12159e32464492b997"
+      },
+      {
+        "path": "<source>\\core\\extension\\gdextension_interface.gen.h",
+        "bytes": 142360,
+        "sha256": "46a7175af4aa400d37ab6945ca9dec59ba9696df4129c15a837575c93aef9ad0"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl.h",
+        "bytes": 2155,
+        "sha256": "e8efb374ab4d68cfca92ed7664f70173cf4158caceb5b7837ebfa0c5b6ec71ec"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_appidentity.h",
+        "bytes": 186,
+        "sha256": "5e130035fb687de0fd6a0d266b804c979678afda7c3eabf52da631c3c9226a67"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_consts.h",
+        "bytes": 12554,
+        "sha256": "56d2ced0319ac2086e9032bea2c0b42601cd309e2db5d60343f9044a3797e7cb"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_core_api.h",
+        "bytes": 16799,
+        "sha256": "227ce30af8b64b932ce3a37f07e53b07c9c4b5d814b52829fca9199ced05201b"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_core_types.h",
+        "bytes": 33502,
+        "sha256": "2f614c47638b9ea7173b49ef5b3bce528aba536a6a8fb7a29a14d60caac8f2d8"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_deepdvc.h",
+        "bytes": 3787,
+        "sha256": "bf5411e9ee2fc1d46d3afb5c8d915b508c73ca7c1b1862c7577a336b1ad9433d"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_device_wrappers.h",
+        "bytes": 185,
+        "sha256": "d7a0cfa144895fe00987af89e81ec8ef46bd49507ad6bd70f5a18a60d4be13d6"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_directsr.h",
+        "bytes": 6363,
+        "sha256": "1cd45d5c6042017116d3db6a411dee377cef14d9d825686493adfa532e33500e"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_dlss.h",
+        "bytes": 8296,
+        "sha256": "00a26ea060f67c7ea03ced3efde83479ac9e088a5c024625a291be4b17aaf09b"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_dlss_d.h",
+        "bytes": 8034,
+        "sha256": "cd49f7388c5b5263034b013edfccbe7a748059452b2c54a1412ae7676dada9a3"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_dlss_g.h",
+        "bytes": 10719,
+        "sha256": "075bc65a5d30a59e158d3c1ea4dff34f8335bc16486c31b33394e9270ee59e8c"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_helpers.h",
+        "bytes": 16465,
+        "sha256": "c513e471967ba567b0729e89737d2fa91efa633d6470242e5e76e8b1cab7f401"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_helpers_vk.h",
+        "bytes": 14844,
+        "sha256": "36de94fa0339232a2c50d449eed639d2c6831c18409a580aa95ead903297b301"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_hooks.h",
+        "bytes": 4365,
+        "sha256": "6953da2aafbb33b80ca953e72af14aaf95f7e3fe8f1a4a7bafe31e7702c3984e"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_matrix_helpers.h",
+        "bytes": 12184,
+        "sha256": "c3520f0c249a0eb0ced474e0c55734e1e86f197bb521500dda834b13b96bed33"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_nis.h",
+        "bytes": 3703,
+        "sha256": "5264c7271f5d31f505b29d3935b7388e2614c9ce1b3baa3f101b194409eb36a7"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_nvperf.h",
+        "bytes": 2924,
+        "sha256": "02f8f9209dbf989d14b93eec0ae1ea13efb6fbefd680727f408952a43aaf3f8b"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_pcl.h",
+        "bytes": 5563,
+        "sha256": "a9c37fa9a99c4eb06cd0843968e33e278aae61759f59e46fcb80f489660a2d7e"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_reflex.h",
+        "bytes": 10332,
+        "sha256": "0afbacef659231077626506c7ff8a6a1f2dff90703f96ac889bc777facba25ef"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_result.h",
+        "bytes": 2458,
+        "sha256": "8219c300c7084b55f2cc2e095bef21b03db91e3189014f6281cbc942313d8fee"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_security.h",
+        "bytes": 20038,
+        "sha256": "249a1a568a756db35ff126ef37f27dd2164695a329cc0145956c5df7e28622c7"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_struct.h",
+        "bytes": 4697,
+        "sha256": "0af81b9f0be3e9928b81eb229df36aa0776d79bf06335cb2d398b11e124f7917"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_template.h",
+        "bytes": 2296,
+        "sha256": "106c62a7e31d2b182bb46be3faddfff59b3fd50aa9c5c49bdc392a13be727411"
+      },
+      {
+        "path": "<source>\\thirdparty\\streamline\\include\\sl_version.h",
+        "bytes": 3542,
+        "sha256": "0057db82adaf7181bc5dd3a084ef173b890589ed80a2d30526ab8d3828291301"
+      }
+    ],
+    "staged": [
+      {
+        "path": "<evidence>\\rr-minimal\\rr_minimal.py",
+        "bytes": 13030,
+        "sha256": "5ab626be6fdc28ab156816c739c6df75e1164a9026dd7e99926080cf313f484d"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\rr_candidate_case.py",
+        "bytes": 13311,
+        "sha256": "0aeaf22f61ffedbf6a99002b03c48f3a056cfe754111a670c95b9cbc7b283984"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\reference_strict_controls.py",
+        "bytes": 23372,
+        "sha256": "fce0c87db218e1cead54fc96af672d69527584a46c35e4669a0c1b5ae2d8f2e0"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\windows_job.py",
+        "bytes": 3753,
+        "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\rr_trace_evidence.py",
+        "bytes": 1791,
+        "sha256": "6127825c30968c04f615d145ea8f85c7e8b12f260566ccc45d7c9bc796e64369"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\settings\\vk_layer_settings.txt",
+        "bytes": 197,
+        "sha256": "f7a75fc3cdf45810831ac12af4ad1bc0267fac718bed1f230011a6567c8f66e4"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\main.gd",
+        "bytes": 10816,
+        "sha256": "e94fa6282ad37a763abf4261c81f7a63ec96293e4e1e1961dc0c33995b0bf03e"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\main.gd.uid",
+        "bytes": 19,
+        "sha256": "362717d2226433e22d7d0b09f2acf52a41c4a1abffd7b8a46f6fadf165a039dd"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\main.tscn",
+        "bytes": 160,
+        "sha256": "58ae403be5d28e6a7021d86ab700b1c2e15ed4359f1ff5e6be16c039901e02ed"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\project.godot",
+        "bytes": 431,
+        "sha256": "e1a75c658991dfd38a2182a1cda67137fc3e33616e52700b725ff381ef0946e1"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\rtx_probe.gdextension",
+        "bytes": 141,
+        "sha256": "f7858378075f9bc11ab362a4cf5dbb324b0e4b519f999cbf63cd1ac4c400cbe2"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\rtx_probe.gdextension.uid",
+        "bytes": 20,
+        "sha256": "abdb96a78a60a858b35de72b05c00d85357747bbcf57fadb9cc099c67c168c54"
+      },
+      {
+        "path": "<evidence>\\rr-minimal\\inputs\\rtx_probe.dll",
+        "bytes": 73728,
+        "sha256": "dc4956f86ed21afa6fffb2f29165bf0ee826eec91eb9ddfc1a47e8667fe6ce85"
+      },
+      {
+        "path": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.json",
+        "bytes": 132861,
+        "sha256": "9bdb274c944957ad454968c567d2d2b1883436a88de476200e688be1a36e23da"
+      },
+      {
+        "path": "<workspace>\\toolchains\\vulkan-validation-1.4.363\\VkLayer_khronos_validation.dll",
+        "bytes": 20870656,
+        "sha256": "f0353be5c5339433f5616a242919c724aeba046eca5b08531573818223b9e45a"
+      }
+    ],
+    "frozen_runtime": [
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\NvBlast.dll",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\NvBlastExtAuthoring.dll",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\NvBlastExtShaders.dll",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\NvBlastGlobals.dll",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\PhysXGpu_64.dll",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.console.exe",
+        "bytes": 301056,
+        "sha256": "a57f7d25496b72291afbd718ebadd644f8bb43ddb48db732448e6e97207275c0"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.exe",
+        "bytes": 161812480,
+        "sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvflow.dll",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvflowext.dll",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_deepdvc.dll",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlss.dll",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssd.dll",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssg.dll",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.common.dll",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.deepdvc.dll",
+        "bytes": 376448,
+        "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.directsr.dll",
+        "bytes": 369792,
+        "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss.dll",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_d.dll",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_g.dll",
+        "bytes": 637056,
+        "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.interposer.dll",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nis.dll",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nvperf.dll",
+        "bytes": 761472,
+        "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.pcl.dll",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.reflex.dll",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\x86_64\\D3D12Core.dll",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      },
+      {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\x86_64\\d3d12SDKLayers.dll",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      }
+    ]
+  },
+  "case": {
+    "driver": "vulkan",
+    "mode": "rr",
+    "preset": "Recommended",
+    "sharpness": 0,
+    "suite": "motion",
+    "warmup": 100,
+    "gpu_validation": true
+  },
+  "actual_vvl_api_version": "1.4.366",
+  "sdk_versions_reference": {
+    "path": "<prior-evidence>\\summary-runtime-file-versions.json",
+    "bytes": 2901,
+    "sha256": "d87553649bfc97ea86d53ece926d7f3b4a3e81bb9b035b12159e32464492b997"
+  },
+  "sdk_binary_versions": [
+    {
+      "name": "nvngx_deepdvc.dll",
+      "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419",
+      "fileVersion": "310,9,16,0",
+      "productVersion": "310,9,16,0"
+    },
+    {
+      "name": "nvngx_dlss.dll",
+      "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e",
+      "fileVersion": "310,9,16,0",
+      "productVersion": "310,9,16,0"
+    },
+    {
+      "name": "nvngx_dlssd.dll",
+      "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee",
+      "fileVersion": "310,9,16,0",
+      "productVersion": "310,9,16,0"
+    },
+    {
+      "name": "nvngx_dlssg.dll",
+      "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7",
+      "fileVersion": "310,9,16,0",
+      "productVersion": "310,9,16,0"
+    },
+    {
+      "name": "sl.common.dll",
+      "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.deepdvc.dll",
+      "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.directsr.dll",
+      "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.dlss_d.dll",
+      "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.dlss_g.dll",
+      "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.dlss.dll",
+      "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.interposer.dll",
+      "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.nis.dll",
+      "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.nvperf.dll",
+      "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.pcl.dll",
+      "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    },
+    {
+      "name": "sl.reflex.dll",
+      "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122",
+      "fileVersion": "2,14,16,0",
+      "productVersion": "2,14,16,0"
+    }
+  ],
+  "fixture_change": "Original scripts/assertions preserved; main.gd only additionally records existing cached FG status in metadata. Same guarded probe DLL used for A and B.",
+  "prepared_utc": "2026-10-26T19:02:47.067545+00:00"
+}

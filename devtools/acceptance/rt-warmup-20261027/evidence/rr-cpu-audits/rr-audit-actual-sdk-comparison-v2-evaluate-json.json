@@ -1,0 +1,1079 @@
+{
+  "scope": "Private CPU audit of finalized bounded GPU evidence. No new GPU execution or whole-SDK verdict.",
+  "created_utc": "2026-10-26T19:03:52.852442+00:00",
+  "parser_cpu_assertions": 3,
+  "runs": [
+    {
+      "run": "20261026T185714Z-677016e9",
+      "result_verdict": "FAIL",
+      "coverage": "ESTABLISHED",
+      "native_exit_code": 0,
+      "observer_original_status": "FAIL",
+      "module_summary": {
+        "successful_samples": 36,
+        "rtss_module_names": [],
+        "known_overlay_module_names": [
+          "nvspcap64.dll"
+        ],
+        "streamline_module_names": [
+          "sl.common.dll",
+          "sl.dlss.dll",
+          "sl.dlss_d.dll",
+          "sl.interposer.dll",
+          "sl.nis.dll",
+          "sl.pcl.dll",
+          "sl.reflex.dll"
+        ]
+      },
+      "external_coverage_checks": {
+        "recorder_pid_identity_bound": true,
+        "frozen_inputs_unchanged": true,
+        "module_samples_obtained": true,
+        "sampled_engine_module_exact_path": true,
+        "only_explicit_vvl_inserted": true,
+        "sync_validation_enabled_readback": true,
+        "actual_frozen_vvl_dll_path": true,
+        "no_rtss_modules_observed": true,
+        "no_fg_plugin_observed": true,
+        "actual_streamline_interposer_and_sr_plugins": true,
+        "streamline_modules_from_frozen_runtime": true,
+        "actual_startup_diagnostic_marker": true,
+        "observer_fg_probe_api": true,
+        "observer_fg_status_matches_its_probe": true,
+        "observer_actual_fg_unavailable": true,
+        "actual_engine_sha_readback": true,
+        "actual_vulkan_gpu": true
+      },
+      "diagnostic_token_occurrences": {
+        "SYNC-HAZARD-WRITE-AFTER-WRITE": 4,
+        "VUID-vkCmdDraw-None-09600": 8
+      },
+      "first_error": {
+        "line": 1284,
+        "text": "ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE"
+      },
+      "errors_in_original_order": [
+        {
+          "line": 1284,
+          "text": "ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE"
+        },
+        {
+          "line": 1297,
+          "text": "ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE"
+        },
+        {
+          "line": 1311,
+          "text": "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+        },
+        {
+          "line": 1320,
+          "text": "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+        },
+        {
+          "line": 1341,
+          "text": "ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE"
+        },
+        {
+          "line": 1354,
+          "text": "ERROR: VALIDATION - Message Id Number: 1544472022 | Message Id Name: SYNC-HAZARD-WRITE-AFTER-WRITE"
+        },
+        {
+          "line": 1368,
+          "text": "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+        },
+        {
+          "line": 1377,
+          "text": "ERROR: VALIDATION - Message Id Number: 1180184443 | Message Id Name: VUID-vkCmdDraw-None-09600"
+        }
+      ],
+      "breadcrumb_lines": [],
+      "loaded_runtime": [
+        {
+          "name": "nvngx_deepdvc.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_deepdvc.dll",
+          "bytes_in_memory": 3211264,
+          "first_seen_utc": "2026-10-26T18:57:18.796985+00:00",
+          "last_seen_utc": "2026-10-26T18:57:52.477045+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_deepdvc.dll",
+            "bytes": 3104880,
+            "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+          },
+          "pe_fixed_file_version": "310.9.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlss.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlss.dll",
+          "bytes_in_memory": 59068416,
+          "first_seen_utc": "2026-10-26T18:57:17.791482+00:00",
+          "last_seen_utc": "2026-10-26T18:57:52.477045+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlss.dll",
+            "bytes": 58956912,
+            "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+          },
+          "pe_fixed_file_version": "310.9.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlssd.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssd.dll",
+          "bytes_in_memory": 48455680,
+          "first_seen_utc": "2026-10-26T18:57:18.796985+00:00",
+          "last_seen_utc": "2026-10-26T18:57:52.477045+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssd.dll",
+            "bytes": 48343664,
+            "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+          },
+          "pe_fixed_file_version": "310.9.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlssg.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssg.dll",
+          "bytes_in_memory": 7618560,
+          "first_seen_utc": "2026-10-26T18:57:18.796985+00:00",
+          "last_seen_utc": "2026-10-26T18:57:52.477045+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\nvngx_dlssg.dll",
+            "bytes": 7506544,
+            "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+          },
+          "pe_fixed_file_version": "310.9.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.common.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.common.dll",
+          "bytes_in_memory": 925696,
+          "first_seen_utc": "2026-10-26T18:57:17.791482+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.common.dll",
+            "bytes": 843904,
+            "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.dlss.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss.dll",
+          "bytes_in_memory": 430080,
+          "first_seen_utc": "2026-10-26T18:57:17.791482+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss.dll",
+            "bytes": 422016,
+            "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.dlss_d.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_d.dll",
+          "bytes_in_memory": 446464,
+          "first_seen_utc": "2026-10-26T18:57:19.803986+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.dlss_d.dll",
+            "bytes": 437376,
+            "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.interposer.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.interposer.dll",
+          "bytes_in_memory": 663552,
+          "first_seen_utc": "2026-10-26T18:57:16.773102+00:00",
+          "last_seen_utc": "2026-10-26T18:57:52.477045+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.interposer.dll",
+            "bytes": 652928,
+            "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.nis.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nis.dll",
+          "bytes_in_memory": 1159168,
+          "first_seen_utc": "2026-10-26T18:57:19.803986+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.nis.dll",
+            "bytes": 1155712,
+            "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.pcl.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.pcl.dll",
+          "bytes_in_memory": 360448,
+          "first_seen_utc": "2026-10-26T18:57:19.803986+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.pcl.dll",
+            "bytes": 360064,
+            "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.reflex.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.reflex.dll",
+          "bytes_in_memory": 389120,
+          "first_seen_utc": "2026-10-26T18:57:19.803986+00:00",
+          "last_seen_utc": "2026-10-26T18:57:51.468839+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\sl.reflex.dll",
+            "bytes": 388736,
+            "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+          },
+          "pe_fixed_file_version": "2.14.16.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        }
+      ],
+      "trace": {
+        "tags": [
+          {
+            "line": 1276,
+            "viewport": 1,
+            "tag": 3,
+            "rid": 58879706660910,
+            "native": 16631212881754902,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1277,
+            "viewport": 1,
+            "tag": 4,
+            "rid": 87415469375921,
+            "native": 34124442879686972,
+            "state": 1,
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "line": 1278,
+            "viewport": 1,
+            "tag": 0,
+            "rid": 58884001628205,
+            "native": 16633411905010456,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1279,
+            "viewport": 1,
+            "tag": 1,
+            "rid": 86874303496624,
+            "native": 33979307344820408,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1280,
+            "viewport": 1,
+            "tag": 7,
+            "rid": 60417304952876,
+            "native": 21687866857901325,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1281,
+            "viewport": 1,
+            "tag": 8,
+            "rid": 60421599920250,
+            "native": 21691165392784656,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1282,
+            "viewport": 1,
+            "tag": 14,
+            "rid": 60425894887547,
+            "native": 21694463927667987,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1283,
+            "viewport": 1,
+            "tag": 42,
+            "rid": 60430189854838,
+            "native": 21696662950923541,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1333,
+            "viewport": 2,
+            "tag": 3,
+            "rid": 88467736363391,
+            "native": 34608227995908852,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1334,
+            "viewport": 2,
+            "tag": 4,
+            "rid": 88764089106824,
+            "native": 34743467926125423,
+            "state": 1,
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "line": 1335,
+            "viewport": 2,
+            "tag": 0,
+            "rid": 88472031330688,
+            "native": 34610427019164406,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1336,
+            "viewport": 2,
+            "tag": 1,
+            "rid": 88734024335751,
+            "native": 34734671833103207,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1337,
+            "viewport": 2,
+            "tag": 7,
+            "rid": 88519275970945,
+            "native": 34623621158697730,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1338,
+            "viewport": 2,
+            "tag": 8,
+            "rid": 88523570938242,
+            "native": 34625820181953284,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1339,
+            "viewport": 2,
+            "tag": 14,
+            "rid": 88527865905539,
+            "native": 34628019205208838,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1340,
+            "viewport": 2,
+            "tag": 42,
+            "rid": 88532160872836,
+            "native": 34630218228464392,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          }
+        ],
+        "viewports": [
+          {
+            "viewport": 1,
+            "observed_tag_types": [
+              0,
+              1,
+              3,
+              4,
+              7,
+              8,
+              14,
+              42
+            ],
+            "eight_expected_tag_types_observed": true,
+            "first_observed_evaluation": {
+              "line": 1310,
+              "viewport": 1,
+              "mode": 3,
+              "result": 0
+            },
+            "actual_non_off_eok_first_call_observed": true
+          },
+          {
+            "viewport": 2,
+            "observed_tag_types": [
+              0,
+              1,
+              3,
+              4,
+              7,
+              8,
+              14,
+              42
+            ],
+            "eight_expected_tag_types_observed": true,
+            "first_observed_evaluation": {
+              "line": 1367,
+              "viewport": 2,
+              "mode": 3,
+              "result": 0
+            },
+            "actual_non_off_eok_first_call_observed": true
+          }
+        ],
+        "evaluations": [
+          {
+            "line": 1310,
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          },
+          {
+            "line": 1367,
+            "viewport": 2,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "evaluation_scope": "At most first call per viewport token in this private trace; no every-frame, model-weight or visual-quality proof.",
+        "distinct_tag_images": 16,
+        "distinct_validation_ngx_images": 8,
+        "validation_ngx_images": [
+          {
+            "native": 34371832995936797,
+            "hex": "0x7a1d0000007a1d",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34375131530820128,
+            "hex": "0x7a200000007a20",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34380629088959013,
+            "hex": "0x7a250000007a25",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34383927623842344,
+            "hex": "0x7a280000007a28",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34958972205169715,
+            "hex": "0x7c330000007c33",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34962270740053046,
+            "hex": "0x7c360000007c36",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34967768298191931,
+            "hex": "0x7c3b0000007c3b",
+            "matched_supplied_tag": false
+          },
+          {
+            "native": 34971066833075262,
+            "hex": "0x7c3e0000007c3e",
+            "matched_supplied_tag": false
+          }
+        ],
+        "ownership_scope": "Missing exact handle match excludes only these supplied tags in this process; it is not exclusive allocation/ownership proof."
+      },
+      "native_engine": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\godot.windows.editor.x86_64.exe",
+        "bytes": 161812480,
+        "sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9"
+      },
+      "requested_native_commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "run_frozen_inputs_unchanged": true,
+      "module_proof_scope": "Toolhelp module paths sampled live; SHA/version read from their frozen files and compared to inventory, not hashing mapped process bytes. Transients between samples may be missed.",
+      "raw_refs": [
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185714Z-677016e9\\result.json",
+          "bytes": 24186,
+          "sha256": "ad023a6fea4801c591d4996d5fa28d03a143e720000493ef1573e67a08ec2d77"
+        },
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185714Z-677016e9\\wrapper.json",
+          "bytes": 15092,
+          "sha256": "8d636050a74e85fe646274cd99e1a4ab1b86af4361620eef4f4a7fc402ce5183"
+        },
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185714Z-677016e9\\module-samples.json",
+          "bytes": 37028,
+          "sha256": "5ff20c2d417ebb5817ef5ae7962c24c105ee5a76ba87a52e3e1202505eb4910d"
+        },
+        {
+          "path": "<previous-evidence>\\logs\\warmup-8b10556627-20261026T185716Z-28eb071e-normal.log",
+          "bytes": 212452,
+          "sha256": "0514fc3b4d6ffbee3bd957c98d099c7e217983b9c755df002ba3098095f43eb1"
+        },
+        {
+          "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T185716Z-28eb071e-normal\\matrix.json",
+          "bytes": 83570,
+          "sha256": "8e1e9b7887f27c119f0e466b51fbd700bcc7d081ebd84ef418e482da1a13b536"
+        },
+        {
+          "path": "<previous-evidence>\\warmup-8b10556627-20261026T185716Z-28eb071e-normal.json",
+          "bytes": 2516,
+          "sha256": "e7a5402a4c543b44a9ce004b8a45ab7c93f2a717698d21ef344330d95b44c714"
+        },
+        {
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk214\\inventory.json",
+          "bytes": 4731,
+          "sha256": "cf54f6015349e00b75fc8ace95e664884dd43926883d10d5bd5bbebacf7cc049"
+        }
+      ]
+    },
+    {
+      "run": "20261026T185840Z-d3c23b53",
+      "result_verdict": "CLEAN",
+      "coverage": "ESTABLISHED",
+      "native_exit_code": 0,
+      "observer_original_status": "PASS",
+      "module_summary": {
+        "successful_samples": 35,
+        "rtss_module_names": [],
+        "known_overlay_module_names": [
+          "nvspcap64.dll"
+        ],
+        "streamline_module_names": [
+          "sl.common.dll",
+          "sl.dlss.dll",
+          "sl.dlss_d.dll",
+          "sl.interposer.dll",
+          "sl.nis.dll",
+          "sl.pcl.dll",
+          "sl.reflex.dll"
+        ]
+      },
+      "external_coverage_checks": {
+        "recorder_pid_identity_bound": true,
+        "frozen_inputs_unchanged": true,
+        "module_samples_obtained": true,
+        "sampled_engine_module_exact_path": true,
+        "only_explicit_vvl_inserted": true,
+        "sync_validation_enabled_readback": true,
+        "actual_frozen_vvl_dll_path": true,
+        "no_rtss_modules_observed": true,
+        "no_fg_plugin_observed": true,
+        "actual_streamline_interposer_and_sr_plugins": true,
+        "streamline_modules_from_frozen_runtime": true,
+        "actual_startup_diagnostic_marker": true,
+        "observer_fg_probe_api": true,
+        "observer_fg_status_matches_its_probe": true,
+        "observer_actual_fg_unavailable": true,
+        "actual_engine_sha_readback": true,
+        "actual_vulkan_gpu": true
+      },
+      "diagnostic_token_occurrences": {},
+      "first_error": null,
+      "errors_in_original_order": [],
+      "breadcrumb_lines": [],
+      "loaded_runtime": [
+        {
+          "name": "NvLowLatencyVk.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\NvLowLatencyVk.dll",
+          "bytes_in_memory": 77824,
+          "first_seen_utc": "2026-10-26T18:58:45.271641+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\NvLowLatencyVk.dll",
+            "bytes": 57840,
+            "sha256": "2a77dc3e1c724b7eea5755be0ae7423752e79a2459fae72181a9f00e3507e5d6"
+          },
+          "pe_fixed_file_version": null,
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_deepdvc.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_deepdvc.dll",
+          "bytes_in_memory": 3248128,
+          "first_seen_utc": "2026-10-26T18:58:44.250082+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_deepdvc.dll",
+            "bytes": 3144304,
+            "sha256": "60ac1e9f32ab31a8dcda3e875fd3dc2d3bcffeca3c6ca33551d6dc6871dbfd1b"
+          },
+          "pe_fixed_file_version": "310.5.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlss.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlss.dll",
+          "bytes_in_memory": 54923264,
+          "first_seen_utc": "2026-10-26T18:58:43.243079+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlss.dll",
+            "bytes": 54778992,
+            "sha256": "22c4660249da5b352cde0ce4d95178c3761223dd6ac096d0b88e5c03d7a5cdd1"
+          },
+          "pe_fixed_file_version": "310.5.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlssd.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlssd.dll",
+          "bytes_in_memory": 28733440,
+          "first_seen_utc": "2026-10-26T18:58:44.250082+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlssd.dll",
+            "bytes": 28590704,
+            "sha256": "4d53f6114edc61bd41fc293008aa818ab092bb8286830e61c98453da92d936d0"
+          },
+          "pe_fixed_file_version": "310.5.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "nvngx_dlssg.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlssg.dll",
+          "bytes_in_memory": 7622656,
+          "first_seen_utc": "2026-10-26T18:58:44.250082+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\nvngx_dlssg.dll",
+            "bytes": 7518320,
+            "sha256": "5685c065e6c048f673d70f5dda5b23570c8570642e4e284216f59c2e85583016"
+          },
+          "pe_fixed_file_version": "310.5.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.common.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.common.dll",
+          "bytes_in_memory": 753664,
+          "first_seen_utc": "2026-10-26T18:58:43.243079+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.common.dll",
+            "bytes": 674432,
+            "sha256": "be50a4c89177abb3695de92c57cc41662bfb7598ec447707b0d6efb77256d977"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.dlss.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.dlss.dll",
+          "bytes_in_memory": 241664,
+          "first_seen_utc": "2026-10-26T18:58:43.243079+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.dlss.dll",
+            "bytes": 240256,
+            "sha256": "2dbee8cb45af3de640f98ee68b4955d1fd90e772784e843f00951ac53ab908f6"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.dlss_d.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.dlss_d.dll",
+          "bytes_in_memory": 253952,
+          "first_seen_utc": "2026-10-26T18:58:45.271641+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.dlss_d.dll",
+            "bytes": 254080,
+            "sha256": "1a65ae1656d7aab4cb1025e14bc14a92330a3a3008a05aafae803c4fe508c260"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.interposer.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.interposer.dll",
+          "bytes_in_memory": 577536,
+          "first_seen_utc": "2026-10-26T18:58:42.230685+00:00",
+          "last_seen_utc": "2026-10-26T18:59:17.030630+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.interposer.dll",
+            "bytes": 569472,
+            "sha256": "c2397e96e35c1e78c0b351b0d2b070c6529ccc990f4cc73f04722db24dc2acce"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.nis.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.nis.dll",
+          "bytes_in_memory": 966656,
+          "first_seen_utc": "2026-10-26T18:58:45.271641+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.nis.dll",
+            "bytes": 967808,
+            "sha256": "4629c778ea65cf0676583936a0da61204c035bc4e1994e7736bc07e0114e42cb"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.pcl.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.pcl.dll",
+          "bytes_in_memory": 180224,
+          "first_seen_utc": "2026-10-26T18:58:45.271641+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.pcl.dll",
+            "bytes": 176256,
+            "sha256": "d6cd931f8db74978aa9159a41af288ae1480ffbeae59e64f4ea447074d861bc0"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        },
+        {
+          "name": "sl.reflex.dll",
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.reflex.dll",
+          "bytes_in_memory": 200704,
+          "first_seen_utc": "2026-10-26T18:58:45.271641+00:00",
+          "last_seen_utc": "2026-10-26T18:59:16.009595+00:00",
+          "current_disk_file": {
+            "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\sl.reflex.dll",
+            "bytes": 198784,
+            "sha256": "42c45991b8f2972d4f341d379bd9be093c408b59d01f22b338f505f476617cc5"
+          },
+          "pe_fixed_file_version": "2.10.0.0",
+          "exact_frozen_runtime_path": true,
+          "disk_matches_frozen_inventory": true
+        }
+      ],
+      "trace": {
+        "tags": [
+          {
+            "line": 1276,
+            "viewport": 1,
+            "tag": 3,
+            "rid": 58879706660910,
+            "native": 16619118253849355,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1277,
+            "viewport": 1,
+            "tag": 4,
+            "rid": 87415469375921,
+            "native": 34112348251781425,
+            "state": 1,
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "line": 1278,
+            "viewport": 1,
+            "tag": 0,
+            "rid": 58884001628205,
+            "native": 16621317277104909,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1279,
+            "viewport": 1,
+            "tag": 1,
+            "rid": 86874303496624,
+            "native": 33967212716914861,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1280,
+            "viewport": 1,
+            "tag": 7,
+            "rid": 60417304952876,
+            "native": 21680170276506886,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1281,
+            "viewport": 1,
+            "tag": 8,
+            "rid": 60421599920250,
+            "native": 21682369299762440,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1282,
+            "viewport": 1,
+            "tag": 14,
+            "rid": 60425894887547,
+            "native": 21684568323017994,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1283,
+            "viewport": 1,
+            "tag": 42,
+            "rid": 60430189854838,
+            "native": 21686767346273548,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1288,
+            "viewport": 2,
+            "tag": 3,
+            "rid": 88467736363391,
+            "native": 34618123600558845,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1289,
+            "viewport": 2,
+            "tag": 4,
+            "rid": 88764089106824,
+            "native": 34753363530775416,
+            "state": 1,
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "line": 1290,
+            "viewport": 2,
+            "tag": 0,
+            "rid": 88472031330688,
+            "native": 34620322623814399,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1291,
+            "viewport": 2,
+            "tag": 1,
+            "rid": 88734024335751,
+            "native": 34744567437753200,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1292,
+            "viewport": 2,
+            "tag": 7,
+            "rid": 88519275970945,
+            "native": 34633516763347723,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1293,
+            "viewport": 2,
+            "tag": 8,
+            "rid": 88523570938242,
+            "native": 34635715786603277,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1294,
+            "viewport": 2,
+            "tag": 14,
+            "rid": 88527865905539,
+            "native": 34637914809858831,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          },
+          {
+            "line": 1295,
+            "viewport": 2,
+            "tag": 42,
+            "rid": 88532160872836,
+            "native": 34640113833114385,
+            "state": 5,
+            "width": 1067,
+            "height": 600
+          }
+        ],
+        "viewports": [
+          {
+            "viewport": 1,
+            "observed_tag_types": [
+              0,
+              1,
+              3,
+              4,
+              7,
+              8,
+              14,
+              42
+            ],
+            "eight_expected_tag_types_observed": true,
+            "first_observed_evaluation": {
+              "line": 1284,
+              "viewport": 1,
+              "mode": 3,
+              "result": 0
+            },
+            "actual_non_off_eok_first_call_observed": true
+          },
+          {
+            "viewport": 2,
+            "observed_tag_types": [
+              0,
+              1,
+              3,
+              4,
+              7,
+              8,
+              14,
+              42
+            ],
+            "eight_expected_tag_types_observed": true,
+            "first_observed_evaluation": {
+              "line": 1296,
+              "viewport": 2,
+              "mode": 3,
+              "result": 0
+            },
+            "actual_non_off_eok_first_call_observed": true
+          }
+        ],
+        "evaluations": [
+          {
+            "line": 1284,
+            "viewport": 1,
+            "mode": 3,
+            "result": 0
+          },
+          {
+            "line": 1296,
+            "viewport": 2,
+            "mode": 3,
+            "result": 0
+          }
+        ],
+        "evaluation_scope": "At most first call per viewport token in this private trace; no every-frame, model-weight or visual-quality proof.",
+        "distinct_tag_images": 16,
+        "distinct_validation_ngx_images": 0,
+        "validation_ngx_images": [],
+        "ownership_scope": "Missing exact handle match excludes only these supplied tags in this process; it is not exclusive allocation/ownership proof."
+      },
+      "native_engine": {
+        "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\godot.windows.editor.x86_64.exe",
+        "bytes": 161812480,
+        "sha256": "e5d7ee0d0635ec9796917d4fcc15e2166b3783d0b0bd3817bc3c96c7718dd1c9"
+      },
+      "requested_native_commit": "8b1055662793954959fe5ce8b11843437af0adc3",
+      "run_frozen_inputs_unchanged": true,
+      "module_proof_scope": "Toolhelp module paths sampled live; SHA/version read from their frozen files and compared to inventory, not hashing mapped process bytes. Transients between samples may be missed.",
+      "raw_refs": [
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\result.json",
+          "bytes": 23140,
+          "sha256": "32ecf0f387fe0e5a15912d020af3e87d63c6fe5c50b73c7636b3bc87120035e0"
+        },
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\wrapper.json",
+          "bytes": 15712,
+          "sha256": "dd531e2c38ab4c721a8104b7cdd20d5b0a4b4167df2ea392960a35a8fb43ac81"
+        },
+        {
+          "path": "<evidence>\\strict-game\\runs-trace\\20261026T185840Z-d3c23b53\\module-samples.json",
+          "bytes": 37518,
+          "sha256": "9da7bdc3e4b199827cb0d8ad42f9ffe25c28b1f10162b91c769802e4fef9bbe7"
+        },
+        {
+          "path": "<previous-evidence>\\logs\\warmup-8b10556627-20261026T185841Z-98f092cd-normal.log",
+          "bytes": 200731,
+          "sha256": "5b0861b92362de41a5b30d8399298679d68dd9078619c850f8e2c7e6a566ad4a"
+        },
+        {
+          "path": "<evidence>\\game-runs\\warmup-8b10556627-20261026T185841Z-98f092cd-normal\\matrix.json",
+          "bytes": 84212,
+          "sha256": "3ab443eab5b97a6564c098952a4c56e7b24c109def260ade8755c374f7afba57"
+        },
+        {
+          "path": "<previous-evidence>\\warmup-8b10556627-20261026T185841Z-98f092cd-normal.json",
+          "bytes": 2658,
+          "sha256": "c799b8dd126a291938740f0a1e4612c527b044a8fd9a1ca0ef952937e25893fc"
+        },
+        {
+          "path": "<evidence>\\builds\\editor-8b10556627-sdk210-diagnostic\\inventory.json",
+          "bytes": 11541,
+          "sha256": "4898d3e14d23dc24aa10e540446d977799c6d799718c77b7fe3695a5d9b6053c"
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "Supplied RR guide tag set establishes RR options/tag branch, not alone the later Evaluate call beyond its mode!=Off guard.",
+    "SL_RR_EVALUATE mode!=0 and result=0 proves only the recorded first non-Off native RR call returned eOk.",
+    "SDK210 diagnostic changes complete SL/NGX bundle, not a single DLL; header/runtime ABI is not separately certified.",
+    "A later early device-lost run cannot be called stable CLEAN or used to recommend a production downgrade.",
+    "No actual AI model identity or full-playthrough image quality is established by this audit."
+  ]
+}

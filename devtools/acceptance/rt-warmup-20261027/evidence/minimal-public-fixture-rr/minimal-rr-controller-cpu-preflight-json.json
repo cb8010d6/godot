@@ -1,0 +1,29 @@
+{
+  "scope": "CPU only; subprocess execution forbidden, no native/GPU test",
+  "checks": {
+    "syntax_rr_minimal.py": true,
+    "syntax_rr_candidate_case.py": true,
+    "syntax_rr_trace_evidence.py": true,
+    "command_only_quality_to_rr": true,
+    "motion_warmup100_nis0_retained": true,
+    "actual_rr_success_positive": true,
+    "no_marker_never_establishes_rr": true,
+    "off_mode_never_establishes_rr": true,
+    "error_result_never_establishes_rr": true,
+    "wrong_viewport_never_establishes_rr": true,
+    "missing_rr_guide_never_establishes": true,
+    "multiple_viewports_rejected": true,
+    "missing_sdk_state_rejected": true,
+    "missing_frame_rejected": true,
+    "fg_enabled_frame_rejected": true,
+    "old_ab_sources_unchanged": true,
+    "derived_sources_match_prepared_manifest": true,
+    "no_gpu_run_dir_created": true,
+    "prepared_rr_mode": true,
+    "exact_guarded_probe_sha": true
+  },
+  "checks_passed": 20,
+  "checks_total": 20,
+  "all_passed": true,
+  "prepared_sha256": "a68e9790754462b38ef41eadc0e932e305ab7013f10dc20099993eacb0fe2474"
+}

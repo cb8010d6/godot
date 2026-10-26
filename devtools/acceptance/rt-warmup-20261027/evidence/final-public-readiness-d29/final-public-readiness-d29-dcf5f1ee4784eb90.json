@@ -1,0 +1,83 @@
+{
+  "scope": "CPU package preparation only; linked files must never be edited, patched or overwritten",
+  "native_execution": "NOT_EXECUTED",
+  "files": [
+    {
+      "file": "godot.windows.template_release.x86_64.console.exe",
+      "sha256": "cafc6b0b0b34a6a7db275df298ac1a1387f44064f4c4ba08a7952f0788170250",
+      "bytes": 292864,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\godot.windows.template_release.x86_64.console.exe"
+    },
+    {
+      "file": "godot.windows.template_release.x86_64.exe",
+      "sha256": "affa480e5a19f3e39b644035ac9c1938471ec7017a7f50db12f30e4257c26c53",
+      "bytes": 80790016,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\godot.windows.template_release.x86_64.exe"
+    },
+    {
+      "file": "NvBlast.dll",
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25",
+      "bytes": 60416,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\NvBlast.dll"
+    },
+    {
+      "file": "NvBlastExtAuthoring.dll",
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9",
+      "bytes": 823296,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\NvBlastExtAuthoring.dll"
+    },
+    {
+      "file": "NvBlastExtShaders.dll",
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce",
+      "bytes": 37376,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\NvBlastExtShaders.dll"
+    },
+    {
+      "file": "NvBlastGlobals.dll",
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d",
+      "bytes": 24064,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\NvBlastGlobals.dll"
+    },
+    {
+      "file": "nvflow.dll",
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d",
+      "bytes": 2066944,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\nvflow.dll"
+    },
+    {
+      "file": "nvflowext.dll",
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d",
+      "bytes": 10371072,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\nvflowext.dll"
+    },
+    {
+      "file": "PhysXGpu_64.dll",
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b",
+      "bytes": 346725888,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\PhysXGpu_64.dll"
+    },
+    {
+      "file": "x86_64\\D3D12Core.dll",
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c",
+      "bytes": 4821064,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\x86_64\\D3D12Core.dll"
+    },
+    {
+      "file": "x86_64\\d3d12SDKLayers.dll",
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd",
+      "bytes": 4932640,
+      "method": "hardlink_to_frozen_runtime",
+      "source": "<evidence>\\builds\\template_release-d29e706530-no-sl\\x86_64\\d3d12SDKLayers.dll"
+    }
+  ]
+}
