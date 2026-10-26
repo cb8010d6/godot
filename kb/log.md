@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-27 (RR evaluation proof and old-SDK counterexample)
+
+* [RR ownership](/tooling/streamline-rr-resource-ownership.md): c326 maps 16
+  host tags outside all eight error image handles. SDK214 repeats the same
+  strict failure. SDK210's first CLEAN is qualified by a later pre-RR device
+  loss. Add a temporary actual-evaluation result marker before drawing a
+  version comparison; no stable downgrade or verified synchronization fix.
+
 ## 2026-10-27 (RR image ownership diagnostic; not a fix)
 
 * [RR resource ownership](/tooling/streamline-rr-resource-ownership.md): the

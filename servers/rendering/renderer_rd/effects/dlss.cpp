@@ -612,6 +612,14 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 		if (use_dlss_rr && StreamlineContext::get().streamline_capabilities.dlss_rr_available) {
 			// Use DLSS Ray Reconstruction
 			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
+			if (OS::get_singleton()->get_environment("GODOT_STREAMLINE_TRACE_RR_RESOURCES") == "1") {
+				thread_local HashSet<uint32_t> evaluated_viewports;
+				const uint32_t viewport = static_cast<uint32_t>(context->viewport);
+				if (!evaluated_viewports.has(viewport)) {
+					evaluated_viewports.insert(viewport);
+					print_line(vformat("SL_RR_EVALUATE viewport=%d mode=%d result=%d", viewport, static_cast<uint32_t>(context->currentDlssOptions.mode), static_cast<uint32_t>(result)));
+				}
+			}
 			if (result != sl::Result::eOk) {
 				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for DLSS Ray Reconstruction. Result: " + String(StreamlineContext::result_to_string(result)));
 			}

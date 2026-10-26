@@ -34,6 +34,20 @@ feature selection. The per-thread set is appropriate only for a bounded
 private experiment and must be removed before final delivery. Compilation,
 GPU mapping and a verified RR correction are pending at preparation.
 
+The subsequent c326 diagnostic build/run mapped all 16 host tags in two RR
+contexts; none matched the eight error images. This rejects the direct
+host-tag-identity explanation for these particular images, not all host-induced
+SDK faults. The repeated SDK214 run retained four WAW and eight 09600 tokens.
+
+A same-binary complete-SDK210 comparison first reported strict CLEAN, but its
+repeat lost the device before any RR tags appeared. Subsequent command-pool
+VUIDs followed the fence error -4. Preserve both runs; old SDK stability and a
+safe downgrade are not established. The first clean run's tags demonstrate RR
+options/resources, but the outer non-Off mode guard leaves an evaluation-proof
+gap. A temporary once-per-context `SL_RR_EVALUATE` marker after the actual RR SDK
+call now records mode/result to close that gap. This second probe remains
+unbuilt/unrun at preparation; it is not model or output-quality evidence.
+
 Hypotheses: incorrect host tag/dependency; stale state after context/resource
 reuse; or SDK-private first-evaluation initialization. A matched native image
 can localize a host problem. Unmatched images are inconclusive until all real
