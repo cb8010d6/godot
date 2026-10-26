@@ -1,0 +1,68 @@
+{
+  "scope": "Prepared scripts only; no engine/import/export/GPU/project copy executed",
+  "source_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "planned_unique_output": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86",
+  "ast_checked": [
+    "regina_export_a738.py",
+    "regina_natural_a738.py",
+    "pck_inventory.py",
+    "prepare_scripts.py"
+  ],
+  "files": [
+    {
+      "file": "original\\regina_export_final.py",
+      "bytes": 4527,
+      "sha256": "778455fb0a4eb4b90d22481b51874e6fcd0dc0210ef6b87ffa3e86f9365715c9"
+    },
+    {
+      "file": "original\\regina_export_natural.py",
+      "bytes": 820,
+      "sha256": "864388bb952fe82e7262ed7ea685791c82394b53388ef9da75f6cb4bc49f9e21"
+    },
+    {
+      "file": "original\\regina_export_production.py",
+      "bytes": 3332,
+      "sha256": "fb53bad099ee09a1b9ab58a6df191c6f4ccda56cd4b299d9955277ebb34d384d"
+    },
+    {
+      "file": "original\\regina_natural_expanded.py",
+      "bytes": 3445,
+      "sha256": "f06818705a275694aca131cd17471f4ca3263be825235625fbec3858336fed4a"
+    },
+    {
+      "file": "pck_inventory.py",
+      "bytes": 3836,
+      "sha256": "8998956e80b60336dbf0232c7a7b3788c96503c354b82c081bcafa5df73fe3c9"
+    },
+    {
+      "file": "prepare_scripts.py",
+      "bytes": 7645,
+      "sha256": "52e46034ead8f5985ced7953b278e79f1cd7b065999a6eb76ae53223b348005a"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3380,
+      "sha256": "eaf83d51573d526a48a4e435a6372cb1a816f77a81b0e08106c9a08c246ff7ea"
+    },
+    {
+      "file": "regina_export_a738.py",
+      "bytes": 3944,
+      "sha256": "6305c9c509b1dcb3fb7389a7f7216c8d604eb92e169b25567dd30ebf41998824"
+    },
+    {
+      "file": "regina_export_a738.py.patch",
+      "bytes": 4234,
+      "sha256": "f604197bedbafb734820fc19ee7d881730545ef63f7e2762bcda8339b9fadb9d"
+    },
+    {
+      "file": "regina_natural_a738.py",
+      "bytes": 4082,
+      "sha256": "9ef57e41c3f6a4a425cd67b33d1d3199e9713e08f601de74505295d387e5f60a"
+    },
+    {
+      "file": "regina_natural_a738.py.patch",
+      "bytes": 5912,
+      "sha256": "8037b385aea53ec6bfd46439be287ae6af759435ad2982959e61f265affa5a3c"
+    }
+  ]
+}

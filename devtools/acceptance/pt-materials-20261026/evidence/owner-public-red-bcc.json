@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<evidence>\\builds\\editor-bcc08cc81c-no-sl\\godot.windows.editor.x86_64.exe",
+    "--rendering-driver",
+    "vulkan",
+    "--rendering-method",
+    "forward_plus",
+    "--path",
+    "<source>\\misc\\pathtracer_test_project\\shared_owner_regression",
+    "--script",
+    "res://shared_owner.gd",
+    "--",
+    "--output=<evidence>/shared-owner/evidence-public-red-bcc-01"
+  ],
+  "cwd": "<source>\\misc\\pathtracer_test_project\\shared_owner_regression",
+  "checkout_sha": "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+  "worktree_status": "M  PATHTRACER_TESTING.md\nM  kb/log.md\nM  kb/tooling/pt-instance-builtins.md\nAM misc/pathtracer_test_project/shared_owner_regression/project.godot\nAM misc/pathtracer_test_project/shared_owner_regression/shared_owner.gd\nM  servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.h\nM  servers/rendering/renderer_rd/forward_clustered/render_forward_clustered_pt.cpp\nM  servers/rendering/renderer_rd/forward_clustered/render_forward_clustered_pt.h\nM  servers/rendering/renderer_rd/forward_clustered/render_raytracing.cpp\nM  servers/rendering/renderer_rd/forward_clustered/render_raytracing.h\n",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\editor-bcc08cc81c-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161802752,
+      "sha256": "158a37b906f3b7449e8914d43175d9669442d18d6c29db57eb34100c434f88fc"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T11:34:13.045915+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-owner-public-red-bcc.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 6696,
+  "exit_code": 1,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 10.891,
+  "finished_utc": "2026-10-26T11:34:23.742199+00:00"
+}

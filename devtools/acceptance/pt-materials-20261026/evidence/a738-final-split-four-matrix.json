@@ -1,0 +1,1010 @@
+{
+  "status": "PASS",
+  "expected_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "output": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36",
+  "project_snapshot": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+  "cases": [
+    {
+      "name": "skate0-pt_rr-p2",
+      "game": "skate",
+      "map": 0,
+      "mode": "pt_rr",
+      "players": 2,
+      "sync_rt_compilation": false,
+      "status": "PASS",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "--cwd",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-a73826e8c0-20261026T134109Z-fbfa36-skate0-pt_rr-p2",
+        "--",
+        "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=skate",
+        "--demo=2",
+        "--map=0",
+        "--material-players=2",
+        "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=skate",
+          "--demo=2",
+          "--map=0",
+          "--material-players=2",
+          "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161806336,
+            "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T13:42:05.533778+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-a73826e8c0-20261026T134109Z-fbfa36-skate0-pt_rr-p2.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 31592,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          25584,
+          24856,
+          24960,
+          48664,
+          13288,
+          9280,
+          27736,
+          40180,
+          32808,
+          23708,
+          35188,
+          12400,
+          9340,
+          40916,
+          34468,
+          42140,
+          45568,
+          21592,
+          29452,
+          49856,
+          16264,
+          30128
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 60.844,
+        "finished_utc": "2026-10-26T13:43:06.157479+00:00"
+      },
+      "error_lines": [],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message"
+      ],
+      "images": [
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near.png",
+          "bytes": 1751894,
+          "sha256": "329cec63adb96206a12b730413d4a6626004546612fb34ff6aa1b65c36cdfa39",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_near.png",
+          "bytes": 1649603,
+          "sha256": "af428797dcd183679bc0ad831659bee37df35b70b2dbecfbe73ab2081e469fc7",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_far.png",
+          "bytes": 1848723,
+          "sha256": "58b6171ba9b25fb079e819d8ce19d3b99fcf75ed362fa1c5e350d97b13d179c7",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_far.png",
+          "bytes": 1744031,
+          "sha256": "6bc181935ce176078ac567e98738e81cc251f14daaad9bf53113b3d8d9be2e96",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near_revisit.png",
+          "bytes": 1749505,
+          "sha256": "098b4a0681a3bfe270ad52277739bf137a9a55c76850ac78a6a7b63875be9ccf",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        }
+      ],
+      "capture_sha256": "0d857b47e727955daa01f85791da5cec210d3ef0bc7228477f8ec743d2eae56d",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\capture.json": {
+          "bytes": 125383,
+          "sha256": "0d857b47e727955daa01f85791da5cec210d3ef0bc7228477f8ec743d2eae56d"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_far.json": {
+          "bytes": 6181,
+          "sha256": "f10153eb17e4e764536f275b9567466acb5ee666690ac1cf6ce6cb275c9a2baa"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_far.png": {
+          "bytes": 1848723,
+          "sha256": "58b6171ba9b25fb079e819d8ce19d3b99fcf75ed362fa1c5e350d97b13d179c7"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near.json": {
+          "bytes": 6195,
+          "sha256": "20a27f1c4882e09e409a8fdcea9ef88b4314e83b5219f8b4a56a001df96114e1"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near.png": {
+          "bytes": 1751894,
+          "sha256": "329cec63adb96206a12b730413d4a6626004546612fb34ff6aa1b65c36cdfa39"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near_revisit.json": {
+          "bytes": 6188,
+          "sha256": "e218a17aa3c196e8a685665b0b69a1b03cc9023309bb2493f17c075001baeb4f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\left_near_revisit.png": {
+          "bytes": 1749505,
+          "sha256": "098b4a0681a3bfe270ad52277739bf137a9a55c76850ac78a6a7b63875be9ccf"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_far.json": {
+          "bytes": 6194,
+          "sha256": "bed0b2e4a9e813b01418a102b23d053d7eb854dddf9acd9b592da90228d0cdfb"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_far.png": {
+          "bytes": 1744031,
+          "sha256": "6bc181935ce176078ac567e98738e81cc251f14daaad9bf53113b3d8d9be2e96"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_near.json": {
+          "bytes": 6156,
+          "sha256": "0e09197d9e6bc9cdbd86c95b97925511b1c7032d0d02803ffda5620d72c12bf0"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture\\right_near.png": {
+          "bytes": 1649603,
+          "sha256": "af428797dcd183679bc0ad831659bee37df35b70b2dbecfbe73ab2081e469fc7"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\godot.stdout.log": {
+          "bytes": 178465,
+          "sha256": "6394101dd37d096939b531aced8032b1464d44c788b2b3ce2909c11e2fd71f40"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\raw-receipt.json": {
+          "bytes": 2692,
+          "sha256": "1d83d741962772167f0a0814c86c54b885db4e51bf8a88657a16112aacf25029"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\wrapper.stdout.log": {
+          "bytes": 5326,
+          "sha256": "f9cfb03293aa9ddf5c5f0c03802a56347297e06ab0b5a5eedcc44811ad1dd03f"
+        }
+      }
+    },
+    {
+      "name": "skate0-pt_rr-p4",
+      "game": "skate",
+      "map": 0,
+      "mode": "pt_rr",
+      "players": 4,
+      "sync_rt_compilation": false,
+      "status": "PASS",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "--cwd",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-a73826e8c0-20261026T134109Z-fbfa36-skate0-pt_rr-p4",
+        "--",
+        "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=skate",
+        "--demo=4",
+        "--map=0",
+        "--material-players=4",
+        "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=skate",
+          "--demo=4",
+          "--map=0",
+          "--material-players=4",
+          "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161806336,
+            "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T13:43:32.989690+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-a73826e8c0-20261026T134109Z-fbfa36-skate0-pt_rr-p4.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 39856,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          24436,
+          41468,
+          48972,
+          48720,
+          40136,
+          14284,
+          49496,
+          28840,
+          8096,
+          38088,
+          37672,
+          40868,
+          43872,
+          6348
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 80.156,
+        "finished_utc": "2026-10-26T13:44:52.938492+00:00"
+      },
+      "error_lines": [],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message"
+      ],
+      "images": [
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near.png",
+          "bytes": 1814012,
+          "sha256": "d08707c9f453e8f94fc18f8d062c4eed170f4d6396d455b659d91dd23a479cf0",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_near.png",
+          "bytes": 1879257,
+          "sha256": "a1fd70ffc95c5b18ea1c755e80977afb72fd8f68f6ed5acf3b0eb296fc547aa0",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_far.png",
+          "bytes": 1987527,
+          "sha256": "2ec40a8af6e0cbb29986c8305fdeeee2ecaff189aeae31e4faf9d1fde2b4e88a",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_far.png",
+          "bytes": 1873330,
+          "sha256": "00b5fabde048f5063687f29667f1deacedbefda8d884af05082577531030c61e",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near_revisit.png",
+          "bytes": 1743160,
+          "sha256": "8da54574675c446ade658b97faa24b1aa0a41cc022cb840b9f5aa3de9aa4e17e",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        }
+      ],
+      "capture_sha256": "b1ede5ac1bb59ea34a396ea30fa0893e181a34a0e85c6ef75b12fa94dd6fd403",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\capture.json": {
+          "bytes": 213541,
+          "sha256": "b1ede5ac1bb59ea34a396ea30fa0893e181a34a0e85c6ef75b12fa94dd6fd403"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_far.json": {
+          "bytes": 8525,
+          "sha256": "c04dc7195a93cdce8a245a2226dc0096460cf48802cfb8dfe4d7d102d59e0f38"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_far.png": {
+          "bytes": 1987527,
+          "sha256": "2ec40a8af6e0cbb29986c8305fdeeee2ecaff189aeae31e4faf9d1fde2b4e88a"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near.json": {
+          "bytes": 8537,
+          "sha256": "f6a9f23d3dd5d6c8ab81e13cb4a7e5fa348ff27d96fd996ca16fddc2a250ca6b"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near.png": {
+          "bytes": 1814012,
+          "sha256": "d08707c9f453e8f94fc18f8d062c4eed170f4d6396d455b659d91dd23a479cf0"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near_revisit.json": {
+          "bytes": 8532,
+          "sha256": "f00226ae7080a445c451cfd015a31ae5dc3681d2037f82e3ca139df69252820d"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\left_near_revisit.png": {
+          "bytes": 1743160,
+          "sha256": "8da54574675c446ade658b97faa24b1aa0a41cc022cb840b9f5aa3de9aa4e17e"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_far.json": {
+          "bytes": 8539,
+          "sha256": "18fe072ce8781e23199e4f819fc47c7c911a141a7eba9a707c88185b657a2055"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_far.png": {
+          "bytes": 1873330,
+          "sha256": "00b5fabde048f5063687f29667f1deacedbefda8d884af05082577531030c61e"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_near.json": {
+          "bytes": 8499,
+          "sha256": "f10d441a40f58ec4a37dd0ad6d3cbabba5bfb2ffd923b8a556b03445e7cf7914"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\capture\\right_near.png": {
+          "bytes": 1879257,
+          "sha256": "a1fd70ffc95c5b18ea1c755e80977afb72fd8f68f6ed5acf3b0eb296fc547aa0"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\godot.stdout.log": {
+          "bytes": 198496,
+          "sha256": "398db43dce77bd5af14c02901e0c8c5c6ad1b4dbd251c6044daa6af2726cafe3"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\raw-receipt.json": {
+          "bytes": 2596,
+          "sha256": "1cf1142d78acf7aebcb5e51b0a8f6081ec46ef5a2ce4c883107975e0b623851f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p4\\wrapper.stdout.log": {
+          "bytes": 5230,
+          "sha256": "9548dc48678a322e97d05a62f87e0865710a4820ecd6a729b18a9d4a39529ccb"
+        }
+      }
+    },
+    {
+      "name": "ski0-pt_rr-p2",
+      "game": "ski",
+      "map": 0,
+      "mode": "pt_rr",
+      "players": 2,
+      "sync_rt_compilation": false,
+      "status": "PASS",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "--cwd",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-a73826e8c0-20261026T134109Z-fbfa36-ski0-pt_rr-p2",
+        "--",
+        "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=ski",
+        "--demo=2",
+        "--map=0",
+        "--material-players=2",
+        "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=ski",
+          "--demo=2",
+          "--map=0",
+          "--material-players=2",
+          "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161806336,
+            "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T13:45:19.556288+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-a73826e8c0-20261026T134109Z-fbfa36-ski0-pt_rr-p2.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 38300,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          50156,
+          45044,
+          13816,
+          27628,
+          40124,
+          21036,
+          9512,
+          16196,
+          25936,
+          19232,
+          45072,
+          27544,
+          37368,
+          24232,
+          29188,
+          32948,
+          21632,
+          43036,
+          38000,
+          40920,
+          46448,
+          36416,
+          43856,
+          41204
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 44.328,
+        "finished_utc": "2026-10-26T13:46:03.673085+00:00"
+      },
+      "error_lines": [],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message"
+      ],
+      "images": [
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_near.png",
+          "bytes": 1451431,
+          "sha256": "363a93828fa53379a455c8653759b1035642b6badcd4542d4809f4374e9c2c2c",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_far.png",
+          "bytes": 1672185,
+          "sha256": "c2f2a9658db655cdabdb0c15b5eee4aaca6ca4d0181588414fb6962c004b5206",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\tree_band.png",
+          "bytes": 1584428,
+          "sha256": "972751c3aea01f8868a399043e4deb08c18bf4f0bb9f9f443978ad15093c4566",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        }
+      ],
+      "capture_sha256": "a419094603026d3ee69ec97a88d60e8305cc7bdf4d87ef1dffa0612dd8634413",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\capture.json": {
+          "bytes": 81759,
+          "sha256": "a419094603026d3ee69ec97a88d60e8305cc7bdf4d87ef1dffa0612dd8634413"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_far.json": {
+          "bytes": 6206,
+          "sha256": "628111a9eae3e29805f3d154a40569ca8e0b03fa6e1de2aedc7c5bcb257c70c9"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_far.png": {
+          "bytes": 1672185,
+          "sha256": "c2f2a9658db655cdabdb0c15b5eee4aaca6ca4d0181588414fb6962c004b5206"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_near.json": {
+          "bytes": 6230,
+          "sha256": "5bf09c642d7f0c13a9894b8efaa2c2c87eb9f789bff67fee9314cb1d94838697"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\snow_near.png": {
+          "bytes": 1451431,
+          "sha256": "363a93828fa53379a455c8653759b1035642b6badcd4542d4809f4374e9c2c2c"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\tree_band.json": {
+          "bytes": 6486,
+          "sha256": "26d36b5139b2fc770a87f61897f6e05546af5150987b18df5ecee49c5fff5679"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\capture\\tree_band.png": {
+          "bytes": 1584428,
+          "sha256": "972751c3aea01f8868a399043e4deb08c18bf4f0bb9f9f443978ad15093c4566"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\godot.stdout.log": {
+          "bytes": 85792,
+          "sha256": "f478468abaf1bda3b991a1c6c493ea00f5d2749ce1f7a9996c2ee54743f8dd4f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\raw-receipt.json": {
+          "bytes": 2707,
+          "sha256": "f31a4bb6c40945926ff76310ebbedcbaaa5206c6fba977854b68cacd22a8e998"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p2\\wrapper.stdout.log": {
+          "bytes": 5341,
+          "sha256": "866d7f305b335f086c0c0dce47ffe6c10feb5e3f00cdf105ac2143651f748d21"
+        }
+      }
+    },
+    {
+      "name": "ski0-pt_rr-p4",
+      "game": "ski",
+      "map": 0,
+      "mode": "pt_rr",
+      "players": 4,
+      "sync_rt_compilation": false,
+      "status": "PASS",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "--cwd",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-a73826e8c0-20261026T134109Z-fbfa36-ski0-pt_rr-p4",
+        "--",
+        "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=ski",
+        "--demo=4",
+        "--map=0",
+        "--material-players=4",
+        "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=ski",
+          "--demo=4",
+          "--map=0",
+          "--material-players=4",
+          "--material-output=<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\project",
+        "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-a73826e8c0-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161806336,
+            "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T13:46:30.195406+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-a73826e8c0-20261026T134109Z-fbfa36-ski0-pt_rr-p4.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 15396,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          27408,
+          16560,
+          49108,
+          46696,
+          32460,
+          31228,
+          46348,
+          9928,
+          34880,
+          24148,
+          17864,
+          48684,
+          11448,
+          19072,
+          25688,
+          33060,
+          48916,
+          2668,
+          32528,
+          44792
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 52.125,
+        "finished_utc": "2026-10-26T13:47:22.104300+00:00"
+      },
+      "error_lines": [],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message"
+      ],
+      "images": [
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_near.png",
+          "bytes": 1588943,
+          "sha256": "1f897c024c09666345df2722ed382629a67a2ee30c434bd0e30c339a8db8c53a",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_far.png",
+          "bytes": 1717588,
+          "sha256": "b7a3cdfb7b37c6a9e2afb528555ed684e8112a139e6c418a1a178bc899575c1f",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        },
+        {
+          "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\tree_band.png",
+          "bytes": 1709211,
+          "sha256": "74187f982000362e32eee1cddb6429453bfb1059d5b44894fdd2b0f8b88fa866",
+          "size": [
+            1600,
+            900
+          ],
+          "all_chunk_crc_valid": true
+        }
+      ],
+      "capture_sha256": "7a205b0a3db79b065cd7c068f587ee2a4507241b6ca2801f39b73d5641e9c939",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\capture.json": {
+          "bytes": 135980,
+          "sha256": "7a205b0a3db79b065cd7c068f587ee2a4507241b6ca2801f39b73d5641e9c939"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_far.json": {
+          "bytes": 8508,
+          "sha256": "1ddcefc83ef35bae872434d520e4c87da704b27ba4aa6c28d5610bda6932ed7f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_far.png": {
+          "bytes": 1717588,
+          "sha256": "b7a3cdfb7b37c6a9e2afb528555ed684e8112a139e6c418a1a178bc899575c1f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_near.json": {
+          "bytes": 8531,
+          "sha256": "50cf2f6c66f7cd005b848bfde1f28225c256a2d5baef192367339d82ab51a0c2"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\snow_near.png": {
+          "bytes": 1588943,
+          "sha256": "1f897c024c09666345df2722ed382629a67a2ee30c434bd0e30c339a8db8c53a"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\tree_band.json": {
+          "bytes": 8790,
+          "sha256": "d498210351967520dca53959e78865fd1aa9bf05536203e55b981350e3546c91"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\capture\\tree_band.png": {
+          "bytes": 1709211,
+          "sha256": "74187f982000362e32eee1cddb6429453bfb1059d5b44894fdd2b0f8b88fa866"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\godot.stdout.log": {
+          "bytes": 101649,
+          "sha256": "e3c14b48bfa77b3e77a839a0514b4cc1526d70713a0e65c2b204661bfa20253d"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\raw-receipt.json": {
+          "bytes": 2658,
+          "sha256": "9b2a79732bf3925116f9415c64c94243d20598f0149d41cb644fad32b3bab64f"
+        },
+        "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\ski0-pt_rr-p4\\wrapper.stdout.log": {
+          "bytes": 5292,
+          "sha256": "fa09de0306a49a57cacfc782661c478e95fbe28cfc8b0f6a1130c82f885f84ff"
+        }
+      }
+    }
+  ],
+  "requested_scenes": [
+    "skate:0",
+    "ski:0"
+  ],
+  "requested_modes": [
+    "pt_rr"
+  ],
+  "requested_players": [
+    2,
+    4
+  ],
+  "planned_case_count": 4,
+  "plan_only": false,
+  "sync_rt_compilation": false,
+  "requested_async_rt_compilation": true,
+  "snapshot_overrides": [],
+  "limitations": [
+    "Controlled first-player camera sweeps during real PLAY; other player cameras remain game-owned. This is not full gameplay or natural-camera acceptance.",
+    "No active DLSS model or generated-frame image is verified; fixed timestep is not an FPS benchmark.",
+    "pt0 directly overrides Environment in process memory to isolate PT without DLSS; the normal game UI intentionally gates that combination.",
+    "Raster/native MSAA follows the unchanged game quality tier; actual MSAA is recorded.",
+    "Images require visual review; error-free execution alone does not prove restored material appearance.",
+    "Synchronous RT shader compilation is an explicit snapshot-only diagnostic, not the normal asynchronous path or a performance result."
+  ],
+  "copy_budget": {
+    "snapshot_file_count": 2195,
+    "snapshot_file_bytes": 3182253111,
+    "destination_free_bytes": 97947873280,
+    "minimum_free_after_copy_bytes": 2147483648,
+    "required_free_bytes": 5329736759
+  },
+  "source_game_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "finished_utc": "2026-10-26T13:48:02.968009+00:00"
+}

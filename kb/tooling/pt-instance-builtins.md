@@ -1,9 +1,9 @@
 ---
 type: Finding
 title: Path-traced custom materials need real MultiMesh shader inputs
-description: Missing instance built-ins and a shared displacement cache broke custom materials in an actual Vulkan game.
+description: Actual Vulkan pixel and lifetime regressions verify real MultiMesh inputs and geometry-owner isolation; original failures and strict-validation limits remain retained.
 tags: [pathtracing, shaders, multimesh, regression]
-status: draft
+status: stable
 generated: { by: codex, at: 2026-10-26T00:00:00Z }
 ---
 
@@ -80,7 +80,7 @@ The `displaced_frame` guard then let the first processed owner supply the second
 owner's vertex buffer. Sharing a mesh or material does not make these results
 interchangeable. Keying only by material RID would still fail the second phase.
 
-The owner-isolation candidate gives each native geometry instance a validated
+The owner-isolation correction gives each native geometry instance a validated
 owner RID. Its RID_Owner entry retains the full MultiMesh/mesh RIDs and this
 owner's per-surface/per-instance deformed handles. Shrink, material changes and
 mesh replacement resolve the same owner record. The PT renderer releases the
@@ -125,7 +125,7 @@ HG0 does not fetch/use COLOR, and the merge compute copies mesh attributes
 without applying MultiMesh colors. This inherited color support gap is separate
 from custom shader instance built-ins and the new owner-isolation correction.
 Actual A028 awning captures now show that the same color omission also affects
-ordinary Standard-material ArrayMeshes. The separately scoped candidate is
+ordinary Standard-material ArrayMeshes. The separately scoped correction is
 tracked in [opaque Standard vertex colors](pt-opaque-standard-vertex-colors.md).
 
 Both strict synchronous controls still report `vkQueuePresentKHR`
@@ -134,9 +134,51 @@ that still loaded RTSS.
 Eight successful pixel phases are not a clean Vulkan validation result. RR is
 off in these controls, and no RR/DLSS/FG acceptance is inferred.
 
+# Measured A738 follow-up
+
+At `a73826e8c0fd90351a1bae5095ce87bc6210be7f`, the unchanged public owner fixture
+passes both phases (native exit 0, 11.547 seconds). The independent extended
+lifetime fixture passes all six phases (exit 0, 14.860 seconds): distinct
+materials, shared material with world-transform-dependent displacement, delete
+one owner, recreate it, shared visible count zero and grow to one. These actual
+colored-center, displaced-edge, empty-opposite-location and TLAS checks run on
+RTX 4060 Laptop GPU / Vulkan 1.4.341 / Windows driver 32.0.16.1088. The owner
+fixtures disable asynchronous compilation, RR, DDGI and DLSS to isolate the
+cache behavior. Their baseline BCC failures and A028 partial successes remain
+retained independently.
+
+The A738 standard editor build passes in 145.687 seconds; all six Windows
+editor/template targets pass in 454.266 seconds. Standard/Mono repository
+smoke tests pass separately in 31.031/27.078 seconds. Four matching installed
+template physics fixtures export/run through D3D12. Separately, the actual
+application release EXE/PCK passes D3D12 raster-request and Vulkan PT/RR-request
+production runs, each with three real 1600x900 PNGs, native exit 0 and natural
+RSExit. No `--path`, external script or engine frame guard is supplied. The
+packed RT include is byte-identical to its source, with matching directory MD5
+and SHA-256. These bounded startup/capture/exit and packaging checks do not
+establish production PT/RR state readback, active model identity or full
+gameplay/material quality. Preparation-time runtime-pending evidence remains
+unchanged, distinct from the later completed receipts.
+
+Separate SDK-enabled real-game PLAY matrices pass six PT-without/with-RR,
+four split-screen PT/RR and two DDGI cases on A738. Their shader inputs and
+native receipts are distinct from the no-RR cache fixtures and from later
+metadata-only edits. These bounded controlled-camera runs do not establish
+complete gameplay, actual DLSS model identity, FG presentation or performance.
+The [A738 validation summary](https://github.com/cb8010d6/sport-games/blob/migration/4.8-beta1-sl214-209897f/docs/validation/rtx-a73826e8c0.json)
+retains original receipt, image and input hashes.
+
+The separate opaque-color fixture now passes four identical pixel assertions
+on the expanded generated-shader route. Its explicit TLAS expectations change
+from baseline 1/1/2/2 to repaired 1/3/4/4; this does not relabel old lifecycle
+phase 07, which still requires the original merged count of one and remains a
+preserved failure. Alpha, emissive and advanced-material exclusions, increased
+expanded-TLAS work, cold asynchronous grey placeholders and non-clean strict
+Vulkan diagnostics all remain documented in the color finding.
+
 # Regression boundary
 
-Rebuild and rendered regression are required: use multiple instances of one
+For further changes, rebuild and rerun rendered regression: use multiple instances of one
 mesh with distinct nonzero ID/custom/color inputs, a custom-alpha-dependent
 vertex displacement, count shrink/grow, mesh/material replacement and exit.
 Compare a normal MeshInstance default-input control. A successful compile alone

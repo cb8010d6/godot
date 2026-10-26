@@ -26,3 +26,7 @@ misc/msvs/* eol=crlf
 devtools/acceptance/stabilization-20261026/** -text whitespace=cr-at-eol
 # Captured diagnostics retain their original trailing whitespace.
 devtools/acceptance/stabilization-20261026/logs/*.log -whitespace
+
+# Preserve the independently hashed PT material regression evidence.
+devtools/acceptance/pt-materials-20261026/** -text whitespace=cr-at-eol
+devtools/acceptance/pt-materials-20261026/logs/*.log -whitespace

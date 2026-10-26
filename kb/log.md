@@ -1,6 +1,35 @@
 # Update log
 
-## 2026-10-27 (opaque StandardMaterial vertex-color candidate)
+## 2026-10-27 (measured A738 material acceptance)
+
+* Native source `a73826e8c0fd90351a1bae5095ce87bc6210be7f` passes the standard
+  MSVC editor build in 145.687 s and six Windows editor/template targets in
+  454.266 s. Both repository smoke variants pass independently in
+  31.031/27.078 s. Four matching installed-template physics fixtures export/run
+  through D3D12. Separately, an actual application release EXE/PCK passes two
+  production startup/capture/natural-exit runs (D3D12 raster request / Vulkan
+  PT/RR request), three real PNGs each and exit 0. Its packed RT include
+  payload/source/MD5/SHA match; preparation-time pending evidence stays unchanged.
+  These are not full-game or production PT/RR state/model readback results, and
+  Mono's process-local SDK removal is not a fresh-computer test.
+* [Opaque color routing](/tooling/pt-opaque-standard-vertex-colors.md): the
+  identical four native pixel assertions fail at A028 and pass at A738.
+  Explicit merged/expanded TLAS expectations are 1/1/2/2 versus 1/3/4/4.
+  Old lifecycle phase 07 remains its original merged-route white-pixel failure;
+  no old test was rewritten to pass the new generated-shader route.
+* [Owner isolation](/tooling/pt-instance-builtins.md): A738 public owner 2/2
+  and independent lifetime 6/6 pass actual pixels/configuration/TLAS, exit 0
+  in 11.547/14.860 s. BCC red and first MSVC failure remain retained.
+* Independent real-game PLAY captures pass six PT-without/with-RR, four
+  split-screen PT/RR and two DDGI cases on RTX 4060 Laptop GPU / Vulkan 1.4.341 /
+  Windows driver 32.0.16.1088. These bounded controlled-camera runs preserve
+  frozen shader hashes separately from later metadata-only pin/doc edits.
+* Cold asynchronous grey placeholders, alpha/emissive/advanced-material
+  exclusions, expanded-TLAS work and non-clean strict Vulkan presentation/SDK
+  diagnostics remain explicit. These results do not prove active model identity,
+  generated-frame presentation, latency, full gameplay or performance.
+
+## 2026-10-27 (opaque vertex-color red control before A738)
 
 * A028 real PT/RR captures still show white awnings where raster/DDGI show
   vertex-color stripes. The earlier merged-MultiMesh phase 07 is a separate
@@ -9,7 +38,8 @@
   the narrow generated-shader candidate and independent four-phase fixture.
   Transparent, clipped, emissive and advanced geometry/parallax materials keep
   their old paths; COLOR MultiMeshes trade merged geometry for expanded TLAS.
-  Rebuild, new native fixture results and actual awning regression are pending.
+  At this checkpoint rebuild, fixture and awning results were pending; the
+  independent measured A738 follow-up above does not overwrite these failures.
 * A028's unchanged shared-owner two-phase test and extended six-phase lifecycle
   both exit 0 (11.469 s / 14.859 s). These measured owner-cache results do not
   convert the remaining material-color or strict-validation failures into passes.

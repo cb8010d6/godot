@@ -1,0 +1,516 @@
+{
+  "all_checks_passed": true,
+  "elapsed_ms_before_teardown": 7297,
+  "phases": [
+    {
+      "actual_tlas_instances": 2,
+      "config_passed": true,
+      "drawn_frame_delta": 299,
+      "elapsed_ms": 5303,
+      "expected_tlas_instances": 2,
+      "expected_y": [
+        0.65,
+        -0.65
+      ],
+      "image_save_error": 0,
+      "owners": [
+        {
+          "material_rid": 5012226834442,
+          "material_y": 0.65,
+          "multimesh_rid": 4982162063360,
+          "node_rid": 5007931867137,
+          "position": [
+            -1.5,
+            0.0,
+            0.0
+          ],
+          "world_x_scale": 0.0
+        },
+        {
+          "material_rid": 5020816769035,
+          "material_y": -0.65,
+          "multimesh_rid": 4982162063360,
+          "node_rid": 5016521801730,
+          "position": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "world_x_scale": 0.0
+        }
+      ],
+      "phase": "00_distinct_materials_shared_multimesh",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "camera_fov": 30.0,
+        "camera_position": [
+          0,
+          0,
+          8
+        ],
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "logical_instances_per_owner": 1,
+        "max_bounces": 2,
+        "mesh_rid": 4977867096064,
+        "mesh_size": [
+          1.0,
+          1.0
+        ],
+        "os": "Windows",
+        "os_version": "10.0.19045",
+        "pt": true,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0,
+        "samples_per_pixel": 2,
+        "shader": "shader_type spatial;\nrender_mode cull_disabled;\nuniform float material_y = 0.0;\nuniform float world_x_scale = 0.0;\nvarying vec3 v_tint;\nvoid vertex() {\n\tv_tint = MODEL_MATRIX[3].x < 0.0 ? vec3(1, 0, 0) : vec3(0, 0, 1);\n\tVERTEX.y += material_y + MODEL_MATRIX[3].x * world_x_scale;\n}\nvoid fragment() {\n\tALBEDO = v_tint;\n\tEMISSION = v_tint * 0.5;\n\tROUGHNESS = 1.0;\n}\n"
+      },
+      "samples": [
+        {
+          "expected": "dominant_channel_0",
+          "label": "center",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            125
+          ],
+          "rgb": [
+            0.745098054409027,
+            0.0352941192686558,
+            0.0352941192686558
+          ],
+          "world": [
+            -1.5,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_0",
+          "label": "outer_deformed_edge",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            96
+          ],
+          "rgb": [
+            0.745098054409027,
+            0.0509803928434849,
+            0.0509803928434849
+          ],
+          "world": [
+            -1.5,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "opposite_owner_displacement_must_be_empty",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            234
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            -1.5,
+            -0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "undeformed_center_must_be_empty",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            180
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            -1.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_2",
+          "label": "center",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            234
+          ],
+          "rgb": [
+            0.0980392172932625,
+            0.0980392172932625,
+            0.749019622802734
+          ],
+          "world": [
+            1.5,
+            -0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_2",
+          "label": "outer_deformed_edge",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            263
+          ],
+          "rgb": [
+            0.0980392172932625,
+            0.0980392172932625,
+            0.749019622802734
+          ],
+          "world": [
+            1.5,
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "opposite_owner_displacement_must_be_empty",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            125
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            1.5,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "undeformed_center_must_be_empty",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            180
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 300
+    },
+    {
+      "actual_tlas_instances": 2,
+      "config_passed": true,
+      "drawn_frame_delta": 120,
+      "elapsed_ms": 7294,
+      "expected_tlas_instances": 2,
+      "expected_y": [
+        -0.5,
+        0.5
+      ],
+      "image_save_error": 0,
+      "owners": [
+        {
+          "material_rid": 5012226834442,
+          "material_y": 0.0,
+          "multimesh_rid": 4982162063360,
+          "node_rid": 5007931867137,
+          "position": [
+            -1.5,
+            0.0,
+            0.0
+          ],
+          "world_x_scale": 0.333333333333333
+        },
+        {
+          "material_rid": 5012226834442,
+          "material_y": 0.0,
+          "multimesh_rid": 4982162063360,
+          "node_rid": 5016521801730,
+          "position": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "world_x_scale": 0.333333333333333
+        }
+      ],
+      "phase": "01_same_material_owner_world_transform",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "camera_fov": 30.0,
+        "camera_position": [
+          0,
+          0,
+          8
+        ],
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "logical_instances_per_owner": 1,
+        "max_bounces": 2,
+        "mesh_rid": 4977867096064,
+        "mesh_size": [
+          1.0,
+          1.0
+        ],
+        "os": "Windows",
+        "os_version": "10.0.19045",
+        "pt": true,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0,
+        "samples_per_pixel": 2,
+        "shader": "shader_type spatial;\nrender_mode cull_disabled;\nuniform float material_y = 0.0;\nuniform float world_x_scale = 0.0;\nvarying vec3 v_tint;\nvoid vertex() {\n\tv_tint = MODEL_MATRIX[3].x < 0.0 ? vec3(1, 0, 0) : vec3(0, 0, 1);\n\tVERTEX.y += material_y + MODEL_MATRIX[3].x * world_x_scale;\n}\nvoid fragment() {\n\tALBEDO = v_tint;\n\tEMISSION = v_tint * 0.5;\n\tROUGHNESS = 1.0;\n}\n"
+      },
+      "samples": [
+        {
+          "expected": "dominant_channel_0",
+          "label": "center",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            221
+          ],
+          "rgb": [
+            0.745098054409027,
+            0.0196078438311815,
+            0.0196078438311815
+          ],
+          "world": [
+            -1.5,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_0",
+          "label": "outer_deformed_edge",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            251
+          ],
+          "rgb": [
+            0.745098054409027,
+            0.0156862754374743,
+            0.0156862754374743
+          ],
+          "world": [
+            -1.5,
+            -0.850000023841858,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "opposite_owner_displacement_must_be_empty",
+          "owner": 0,
+          "passed": true,
+          "pixel": [
+            194,
+            138
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            -1.5,
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_2",
+          "label": "center",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            138
+          ],
+          "rgb": [
+            0.0980392172932625,
+            0.0980392172932625,
+            0.749019622802734
+          ],
+          "world": [
+            1.5,
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_2",
+          "label": "outer_deformed_edge",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            108
+          ],
+          "rgb": [
+            0.0980392172932625,
+            0.0980392172932625,
+            0.749019622802734
+          ],
+          "world": [
+            1.5,
+            0.850000023841858,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "label": "opposite_owner_displacement_must_be_empty",
+          "owner": 1,
+          "passed": true,
+          "pixel": [
+            445,
+            221
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            1.5,
+            -0.5,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 120
+    }
+  ],
+  "requested_exit_code": 0,
+  "runtime": {
+    "api": "vulkan",
+    "api_version": "1.4.341",
+    "async_shader_compilation": false,
+    "camera_fov": 30.0,
+    "camera_position": [
+      0,
+      0,
+      8
+    ],
+    "ddgi": false,
+    "driver": [
+      "NVIDIA",
+      "32.0.16.1088"
+    ],
+    "engine": {
+      "build": "custom_build",
+      "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793020156
+    },
+    "fixture_sha256": "99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "logical_instances_per_owner": 1,
+    "max_bounces": 2,
+    "mesh_rid": 4977867096064,
+    "mesh_size": [
+      1.0,
+      1.0
+    ],
+    "os": "Windows",
+    "os_version": "10.0.19045",
+    "pt": true,
+    "rendering_method": "forward_plus",
+    "resolution": [
+      640,
+      360
+    ],
+    "rr": 0,
+    "samples_per_pixel": 2,
+    "shader": "shader_type spatial;\nrender_mode cull_disabled;\nuniform float material_y = 0.0;\nuniform float world_x_scale = 0.0;\nvarying vec3 v_tint;\nvoid vertex() {\n\tv_tint = MODEL_MATRIX[3].x < 0.0 ? vec3(1, 0, 0) : vec3(0, 0, 1);\n\tVERTEX.y += material_y + MODEL_MATRIX[3].x * world_x_scale;\n}\nvoid fragment() {\n\tALBEDO = v_tint;\n\tEMISSION = v_tint * 0.5;\n\tROUGHNESS = 1.0;\n}\n"
+  }
+}

@@ -1,0 +1,918 @@
+{
+  "captured_utc": "2026-10-26T13:36:28.722187+00:00",
+  "source_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "status": "FROZEN",
+  "conditions": {
+    "full_build_receipt_matches": true,
+    "clean_source_a738": true,
+    "scripts_match_prepared_hashes": true,
+    "six_main_exe_versions_match": true,
+    "binary_hashes_stable_during_audit": true,
+    "godotsharp_stable_during_audit": true,
+    "feed_stable_during_audit": true,
+    "old_dist_matches_recorded_c1_hashes": true,
+    "old_dist_stable_during_audit": true,
+    "a028_packages_stable_during_audit": true
+  },
+  "full_build_receipt": {
+    "file": "<previous-evidence>\\pt-materials-six-build-a738.json",
+    "bytes": 1084,
+    "sha256": "0a1a9fa8924388c9037db26d7abf9854256e150a3f3b1f600ffe24033f44a9ae",
+    "mtime_ns": 1793021173439428900,
+    "duration_seconds": 454.266,
+    "exit_code": 0
+  },
+  "binary_files": [
+    {
+      "file": "<source>\\bin\\godot.windows.editor.x86_64.exe",
+      "bytes": 161806336,
+      "sha256": "a73a3555c39d0b1bdce13cb3fd6f793788d0c27fbd677f6d81108cdbebf9abfc",
+      "mtime_ns": 1793020329094390500
+    },
+    {
+      "file": "<source>\\bin\\godot.windows.template_debug.x86_64.exe",
+      "bytes": 95631360,
+      "sha256": "9ecbcc22ec5e9302e9a6864ac5d64e0ec277a8482c9def89a72c53d203707069",
+      "mtime_ns": 1793020867090927400
+    },
+    {
+      "file": "<source>\\bin\\godot.windows.template_release.x86_64.exe",
+      "bytes": 80785920,
+      "sha256": "a13e02c97ecdce16e1f6c20737bb24d7d0c1930b82a411180cc307683c044619",
+      "mtime_ns": 1793020804803554300
+    },
+    {
+      "file": "<source>\\bin\\godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162375680,
+      "sha256": "9d3631e81aa56adfe2d89bfc3ab52a3947937719b158bd64e26b5ce45a3c51a9",
+      "mtime_ns": 1793020948105002900
+    },
+    {
+      "file": "<source>\\bin\\godot.windows.template_debug.x86_64.mono.exe",
+      "bytes": 95863808,
+      "sha256": "5f05e811a5cd9e914d4d6221fb423dcd824f8062d817dfeb733804890af04552",
+      "mtime_ns": 1793021058750033900
+    },
+    {
+      "file": "<source>\\bin\\godot.windows.template_release.x86_64.mono.exe",
+      "bytes": 80988160,
+      "sha256": "494183760b242d346c4ea08a461a9de2c7b0ff4143aaf4c7812219f62b8d6c17",
+      "mtime_ns": 1793021004779134800
+    },
+    {
+      "file": "<source>\\bin\\D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c",
+      "mtime_ns": 1792905918229156500
+    },
+    {
+      "file": "<source>\\bin\\d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd",
+      "mtime_ns": 1792905917791418600
+    }
+  ],
+  "dll_pe_versions": [
+    {
+      "Name": "godot.windows.editor.x86_64.exe",
+      "Bytes": 161806336,
+      "FileVersion": "4.8",
+      "ProductVersion": "4.8.beta1.custom_build"
+    },
+    {
+      "Name": "godot.windows.template_debug.x86_64.exe",
+      "Bytes": 95631360,
+      "FileVersion": "4.8",
+      "ProductVersion": ""
+    },
+    {
+      "Name": "godot.windows.template_release.x86_64.exe",
+      "Bytes": 80785920,
+      "FileVersion": "4.8",
+      "ProductVersion": ""
+    },
+    {
+      "Name": "godot.windows.editor.x86_64.mono.exe",
+      "Bytes": 162375680,
+      "FileVersion": "4.8",
+      "ProductVersion": "4.8.beta1.mono.custom_build"
+    },
+    {
+      "Name": "godot.windows.template_debug.x86_64.mono.exe",
+      "Bytes": 95863808,
+      "FileVersion": "4.8",
+      "ProductVersion": ""
+    },
+    {
+      "Name": "godot.windows.template_release.x86_64.mono.exe",
+      "Bytes": 80988160,
+      "FileVersion": "4.8",
+      "ProductVersion": ""
+    },
+    {
+      "Name": "D3D12Core.dll",
+      "Bytes": 4821064,
+      "FileVersion": "1.618.5.0.20251205.1",
+      "ProductVersion": "1.618.5.0.20251205.1"
+    },
+    {
+      "Name": "d3d12SDKLayers.dll",
+      "Bytes": 4932640,
+      "FileVersion": "1.618.5.0.20251205.1",
+      "ProductVersion": "1.618.5.0.20251205.1"
+    }
+  ],
+  "version_only_commands": [
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.editor.x86_64.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    },
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.template_debug.x86_64.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    },
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.template_release.x86_64.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    },
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.editor.x86_64.mono.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.mono.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    },
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.template_debug.x86_64.mono.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.mono.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    },
+    {
+      "command": [
+        "<source>\\bin\\godot.windows.template_release.x86_64.mono.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.8.beta1.mono.custom_build.a73826e8c\r\n",
+      "matches_a738_and_flavor": true
+    }
+  ],
+  "scripts": [
+    {
+      "file": "<source>\\devtools\\package\\package_templates_win64.ps1",
+      "bytes": 5073,
+      "sha256": "c07820081f2d2938c4286e8a4aa2bdf33639a1f9dc6aa4282d78982c2b7cb591",
+      "mtime_ns": 1792923426291769000,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<evidence>\\validation-a738\\package_templates_win64.original.ps1",
+      "bytes": 5073,
+      "sha256": "c07820081f2d2938c4286e8a4aa2bdf33639a1f9dc6aa4282d78982c2b7cb591",
+      "mtime_ns": 1793021020665821000,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<evidence>\\validation-a738\\package_templates_win64.ps1",
+      "bytes": 5102,
+      "sha256": "373133945425435502a66142e973754bdb83417cb05c4f6ad4202bb01b09cb75",
+      "mtime_ns": 1793021020666723700,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<previous-evidence>\\final_exports.py",
+      "bytes": 28387,
+      "sha256": "9c0f66347be496fec271bbf95b10ed09028038b3f46441446a8a7f6c2c4141e3",
+      "mtime_ns": 1792956871577932800,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<evidence>\\validation-a738\\final_exports.original.py",
+      "bytes": 28387,
+      "sha256": "9c0f66347be496fec271bbf95b10ed09028038b3f46441446a8a7f6c2c4141e3",
+      "mtime_ns": 1793021020668724600,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<evidence>\\validation-a738\\final_exports.py",
+      "bytes": 28477,
+      "sha256": "a50db584c90dd8b853aa6f6451aecced2e6f89168068038dc804c831c18e3b03",
+      "mtime_ns": 1793021020668724600,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<source>\\devtools\\package\\streamline_manifest.py",
+      "bytes": 8834,
+      "sha256": "4e30f7fe7bf0b9f0f0fd0b51d356c3ea242e65deca28332582043a1cfe109bfe",
+      "mtime_ns": 1792923426292768200,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<previous-evidence>\\run_logged.py",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8",
+      "mtime_ns": 1792937901505498600,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020",
+      "mtime_ns": 1792937901516000700,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<source>\\CUSTOM_VERSION",
+      "bytes": 6,
+      "sha256": "9c788a838dc1f6bfd80fa39757a95f94260071c35011c9a05301da1c73507657",
+      "mtime_ns": 1792905106065997300,
+      "matches_prepared_sha256": true
+    },
+    {
+      "file": "<source>\\version.py",
+      "bytes": 160,
+      "sha256": "4e85928ca6d3b243c3d825d88d036c99354188cca8a8eff0e15e1fafc1c8988c",
+      "mtime_ns": 1792912956208301900,
+      "matches_prepared_sha256": true
+    }
+  ],
+  "godotsharp": [
+    {
+      "relative": "Api/Debug/GodotPlugins.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotPlugins.dll",
+      "bytes": 12288,
+      "sha256": "cf23189ec1cd636f94aa7cec0267ca9a5fab974f335c8e8a4aed535af3281f76",
+      "mtime_ns": 1793021116268717700
+    },
+    {
+      "relative": "Api/Debug/GodotPlugins.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotPlugins.pdb",
+      "bytes": 13972,
+      "sha256": "417f4f63364691736e63f0108ec61904667cb43676dc3b53b682cdea36058d00",
+      "mtime_ns": 1793021116276319700
+    },
+    {
+      "relative": "Api/Debug/GodotPlugins.runtimeconfig.json",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotPlugins.runtimeconfig.json",
+      "bytes": 305,
+      "sha256": "081c69e1e6d509644770b95b9aeab8cc8bed0123d7f3c7a971d4da3a678926b4",
+      "mtime_ns": 1793021116283541000
+    },
+    {
+      "relative": "Api/Debug/GodotSharp.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharp.dll",
+      "bytes": 6773760,
+      "sha256": "6cdf7b58784fa0ce9aca70de8cd6a30a59fc756bf362817a931619b59302c0ef",
+      "mtime_ns": 1793021116224293500
+    },
+    {
+      "relative": "Api/Debug/GodotSharp.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharp.pdb",
+      "bytes": 6463636,
+      "sha256": "958d9a0b102347940a588d96b717be7609e769d0885235acea0287e8a6d32fe3",
+      "mtime_ns": 1793021116227297100
+    },
+    {
+      "relative": "Api/Debug/GodotSharp.xml",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharp.xml",
+      "bytes": 17778609,
+      "sha256": "1895819f3b463a3dbcd0a9b2028e1902921d8fe50c4b3d3aa55339f0c1a53fd7",
+      "mtime_ns": 1793021116235642900
+    },
+    {
+      "relative": "Api/Debug/GodotSharpEditor.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharpEditor.dll",
+      "bytes": 332288,
+      "sha256": "3acae3725c61c2fb8f6ec59f0c64e249e989fdb2513cea63a850d03f16a64015",
+      "mtime_ns": 1793021116236293300
+    },
+    {
+      "relative": "Api/Debug/GodotSharpEditor.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharpEditor.pdb",
+      "bytes": 367424,
+      "sha256": "11ede1795743b1731d5d0328da341d75da75e9e68b35efa69362cbc338304ab8",
+      "mtime_ns": 1793021116237292600
+    },
+    {
+      "relative": "Api/Debug/GodotSharpEditor.xml",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Debug\\GodotSharpEditor.xml",
+      "bytes": 814838,
+      "sha256": "1afe40f879ffae0110fc2c120d793a9344f42e44d8d2d3bebde60a75906c9064",
+      "mtime_ns": 1793021116239292600
+    },
+    {
+      "relative": "Api/Release/GodotPlugins.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotPlugins.dll",
+      "bytes": 11776,
+      "sha256": "12bfd1b89f28208aea4a524a31f2c970e7c02a79a6467b50344bc1d6b29b6951",
+      "mtime_ns": 1793021155074248700
+    },
+    {
+      "relative": "Api/Release/GodotPlugins.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotPlugins.pdb",
+      "bytes": 13340,
+      "sha256": "4d2621d8bd95f8285a0b984214930f16a349f2a14da8957ea64c47c022007423",
+      "mtime_ns": 1793021155081936400
+    },
+    {
+      "relative": "Api/Release/GodotPlugins.runtimeconfig.json",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotPlugins.runtimeconfig.json",
+      "bytes": 377,
+      "sha256": "f769b0d6f9c3e5fa0d5b6d5946d8e6ac17ac1e4c6070bc17e8b4445b9cce5d54",
+      "mtime_ns": 1793021155089113300
+    },
+    {
+      "relative": "Api/Release/GodotSharp.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharp.dll",
+      "bytes": 6310400,
+      "sha256": "284e11c68d53468d59029df2aff146500ffd79ac0bc60ffb7b1ec315271a4a18",
+      "mtime_ns": 1793021155030405500
+    },
+    {
+      "relative": "Api/Release/GodotSharp.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharp.pdb",
+      "bytes": 5845952,
+      "sha256": "f1de2295f0521b45928e1ed4596baeeb30b0709dd1e846ef0ac7949783c44f35",
+      "mtime_ns": 1793021155033649500
+    },
+    {
+      "relative": "Api/Release/GodotSharp.xml",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharp.xml",
+      "bytes": 17778609,
+      "sha256": "1895819f3b463a3dbcd0a9b2028e1902921d8fe50c4b3d3aa55339f0c1a53fd7",
+      "mtime_ns": 1793021155040663900
+    },
+    {
+      "relative": "Api/Release/GodotSharpEditor.dll",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharpEditor.dll",
+      "bytes": 309760,
+      "sha256": "75fde8647ea9991706b169d8dc851af09dd68042636de779a1d0de2c1b2fe387",
+      "mtime_ns": 1793021155042716400
+    },
+    {
+      "relative": "Api/Release/GodotSharpEditor.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharpEditor.pdb",
+      "bytes": 335856,
+      "sha256": "b119baa19c96b9dbfd58f723ef0b1033e1da0c5768847fc1392bb9d4a7122dff",
+      "mtime_ns": 1793021155043665000
+    },
+    {
+      "relative": "Api/Release/GodotSharpEditor.xml",
+      "file": "<source>\\bin\\GodotSharp\\Api\\Release\\GodotSharpEditor.xml",
+      "bytes": 814838,
+      "sha256": "1afe40f879ffae0110fc2c120d793a9344f42e44d8d2d3bebde60a75906c9064",
+      "mtime_ns": 1793021155044663700
+    },
+    {
+      "relative": "Tools/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\cs\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 431776,
+      "sha256": "b770a8c39ded76ee883149128c0b343a23c4930e8c0599a61ea4a189d468a52c",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/cs/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\cs\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 47880,
+      "sha256": "4dd085aa3824c42e69d24b45ddbca9cf7f9fcad7dc3ee956be79922fa60a4e51",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\de\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 462600,
+      "sha256": "0f3bae26e249638ca2c9204cbbbbce2b1ccfeaf784f6bd77b7121d148f671f29",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/de/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\de\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "49d491534fbde2485ed66bd14a28b6dfa1a961782dde0e536df9e8e0f0c5cbdf",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/envdte.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\envdte.dll",
+      "bytes": 28192,
+      "sha256": "7cae2269c6dc59edb16a1fd16672f184a4690c6d720c1faae9616fe0c8d5cb46",
+      "mtime_ns": 1699506264000000000
+    },
+    {
+      "relative": "Tools/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\es\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 452360,
+      "sha256": "aeba908aa1132fa3a6297a24f52683db4fa6bd7e7f0b4eac2eb89f22c53492b1",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/es/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\es\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49416,
+      "sha256": "0de25f386025993a0a0315a94f0347067d977975cae6dca2bd045ec0033a6ae0",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\fr\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464144,
+      "sha256": "3c6348490e9ac51209c8105c30181c3f7985cb68e9cb917e6f391c068f4583dc",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/fr/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\fr\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "21a58fa053094b95ab9a9ac3ae8215633c4ec278b062e3c1b06ae69f45f95223",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/GodotTools.BuildLogger.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.BuildLogger.dll",
+      "bytes": 9216,
+      "sha256": "8e37aebde294fb70048ae7827b95f80748ffc578df38b5ff07f8f55f9ecb71e0",
+      "mtime_ns": 1793021159261376400
+    },
+    {
+      "relative": "Tools/GodotTools.BuildLogger.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.BuildLogger.pdb",
+      "bytes": 12388,
+      "sha256": "3c6825448756414efa1a3485e0834631feff3a6dcba90903e532e3ad9891a70e",
+      "mtime_ns": 1793021159247250500
+    },
+    {
+      "relative": "Tools/GodotTools.Core.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.Core.dll",
+      "bytes": 8192,
+      "sha256": "31d8cb9e76f6bdb6a936aaaba7f1d2f816ba96ba800634154f108fe3e1378ad0",
+      "mtime_ns": 1793021159162091800
+    },
+    {
+      "relative": "Tools/GodotTools.Core.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.Core.pdb",
+      "bytes": 12392,
+      "sha256": "06c5c08bfe90e4145e3bbf497c248b4d15d824c67d2d66f73795775b19fc2a9c",
+      "mtime_ns": 1793021159148302600
+    },
+    {
+      "relative": "Tools/GodotTools.deps.json",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.deps.json",
+      "bytes": 11414,
+      "sha256": "21805917eab958871bb9f0925d6d7ba1e58b8fab109b86c558731837b8fba481",
+      "mtime_ns": 1792909278624360400
+    },
+    {
+      "relative": "Tools/GodotTools.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.dll",
+      "bytes": 213504,
+      "sha256": "4ebdb7d6b42442dd6995e2f26194f9432f620b4d4b38349ba8735961de912136",
+      "mtime_ns": 1793021165474377200
+    },
+    {
+      "relative": "Tools/GodotTools.IdeMessaging.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.IdeMessaging.dll",
+      "bytes": 44544,
+      "sha256": "765d2724c4646942969e4f688ac73263a09a6c72048ce3d4bda8ce08f6428e31",
+      "mtime_ns": 1793021158231507500
+    },
+    {
+      "relative": "Tools/GodotTools.IdeMessaging.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.IdeMessaging.pdb",
+      "bytes": 18672,
+      "sha256": "0e3c8fb3f889d8d08438d5c2497c8dbc15c2c0aec8d762a8e39c9c23b618b6e5",
+      "mtime_ns": 1793021158218073500
+    },
+    {
+      "relative": "Tools/GodotTools.OpenVisualStudio.deps.json",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.deps.json",
+      "bytes": 1783,
+      "sha256": "018e1efe52742279ac20a19a62964b5c8efdeeb6ea106921e77c010b0f4f4dc9",
+      "mtime_ns": 1792909275939362100
+    },
+    {
+      "relative": "Tools/GodotTools.OpenVisualStudio.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.dll",
+      "bytes": 11264,
+      "sha256": "b1d4d24e15f92e1b06fe3a982cf6fc013c7cc72f338a9570bc0de99044fe987e",
+      "mtime_ns": 1793021159421926500
+    },
+    {
+      "relative": "Tools/GodotTools.OpenVisualStudio.exe",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.exe",
+      "bytes": 162816,
+      "sha256": "33242d8ed3b5902550e89e08414f6d5a49fee1d61db08f3a28748c7dcac72daa",
+      "mtime_ns": 1793021159514289000
+    },
+    {
+      "relative": "Tools/GodotTools.OpenVisualStudio.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.pdb",
+      "bytes": 12832,
+      "sha256": "b922269025d7cb7f2d7ce4f58b25028999ad54f04a5506f59dff1d2c05ce5f6d",
+      "mtime_ns": 1793021159408915700
+    },
+    {
+      "relative": "Tools/GodotTools.OpenVisualStudio.runtimeconfig.json",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.OpenVisualStudio.runtimeconfig.json",
+      "bytes": 434,
+      "sha256": "cb2502fdd7e45e7345d2b2a741a72c1935a42fe28d77237460f9d64ca86e0989",
+      "mtime_ns": 1792909276001865600
+    },
+    {
+      "relative": "Tools/GodotTools.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.pdb",
+      "bytes": 131700,
+      "sha256": "1e27037bd9485021b0235bf2598992cd590ed332a1ecce70230147a6158aa3a8",
+      "mtime_ns": 1793021165463838200
+    },
+    {
+      "relative": "Tools/GodotTools.ProjectEditor.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.ProjectEditor.dll",
+      "bytes": 23040,
+      "sha256": "e5121b1d73b4fb6d9d08751c002b637e8e7e21c8ae4a9c003ebbda8ae8fd688e",
+      "mtime_ns": 1793021161722404000
+    },
+    {
+      "relative": "Tools/GodotTools.ProjectEditor.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.ProjectEditor.pdb",
+      "bytes": 19472,
+      "sha256": "7f3ae82fa3f381ac097fb9b533be0ecf391978a259b917137c0cba4b8f21ac66",
+      "mtime_ns": 1793021161708231500
+    },
+    {
+      "relative": "Tools/GodotTools.runtimeconfig.json",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.runtimeconfig.json",
+      "bytes": 377,
+      "sha256": "2e1693f8326910b07be4292d78dceba9cb49952c500afab1860d09b4d5e54047",
+      "mtime_ns": 1792909278684861500
+    },
+    {
+      "relative": "Tools/GodotTools.Shared.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.Shared.dll",
+      "bytes": 4096,
+      "sha256": "89c06f74e7629d257f2b3f7420df7f6123eb7e638e266e1ab85aa4290a739cdb",
+      "mtime_ns": 1793021158951888400
+    },
+    {
+      "relative": "Tools/GodotTools.Shared.pdb",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\GodotTools.Shared.pdb",
+      "bytes": 11484,
+      "sha256": "c2abddee9e71103f4523cc7cba0326c4041d4707896afbffe3a8e7f1543fb1f6",
+      "mtime_ns": 1793021158935684800
+    },
+    {
+      "relative": "Tools/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\it\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 457992,
+      "sha256": "90e447f763e50bfed0936e10f6c1f079446e982a9079e26095e91aca479421fa",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/it/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\it\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49936,
+      "sha256": "c7d7366236036bb7d44a4950d58915b9dff48235ecf17b38f7d9564743fd4ede",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ja\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 506144,
+      "sha256": "168a4471831f7db588eb1e610740c5e8d8a76b0f82566a98fcb42ef8bb755ad1",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/ja/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ja\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 53512,
+      "sha256": "819bc27aecd1d40a954ed59505ced8798b37dc6471ca4186508876c70396b3c7",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/JetBrains.Lifetimes.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\JetBrains.Lifetimes.dll",
+      "bytes": 272896,
+      "sha256": "93ab87c36b4a6dacd45b48a2effb982724ecb8b868db0995c438d90da6d93219",
+      "mtime_ns": 1726763876000000000
+    },
+    {
+      "relative": "Tools/JetBrains.RdFramework.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\JetBrains.RdFramework.dll",
+      "bytes": 203264,
+      "sha256": "05b454e30510940eddd4d75689052fc79e6618a4d52025e08979fa5f5f56d3f4",
+      "mtime_ns": 1726763878000000000
+    },
+    {
+      "relative": "Tools/JetBrains.Rider.PathLocator.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\JetBrains.Rider.PathLocator.dll",
+      "bytes": 20480,
+      "sha256": "ea69b571eb3ec3c831377bcdf6c002679007654be903591f13c036bc8c35ae9d",
+      "mtime_ns": 1739442470000000000
+    },
+    {
+      "relative": "Tools/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ko\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 463648,
+      "sha256": "a8eaaf9ea2979975be5d223f5fbfc582d426c2c23990e02acdc76bbc0d1d3ffb",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/ko/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ko\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49944,
+      "sha256": "b4b9fb05e0cea71f79f1101408ea2b55e75f53d32d34260c34c609d22a96218b",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/Microsoft.Build.Locator.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Microsoft.Build.Locator.dll",
+      "bytes": 27512,
+      "sha256": "ec3d31e3bde953231228853e7a31df2fcd2cafb30380b0148c3e7e38aeb607ca",
+      "mtime_ns": 1565388870000000000
+    },
+    {
+      "relative": "Tools/Microsoft.CodeAnalysis.CSharp.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Microsoft.CodeAnalysis.CSharp.dll",
+      "bytes": 6523664,
+      "sha256": "c46e884a3f2910fd6098b104131cae600c1716ae14b27ffe2d22c54c7f71ff11",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/Microsoft.CodeAnalysis.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Microsoft.CodeAnalysis.dll",
+      "bytes": 2985224,
+      "sha256": "8d919bcf3e2f0e74dc1e79c713f06934201cd2338ad23b9a430e53944ebc0408",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/Microsoft.VisualStudio.Interop.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Microsoft.VisualStudio.Interop.dll",
+      "bytes": 2422200,
+      "sha256": "9775451527b8f71836a6a86182fb889098254a5fff55e64a02da3029af49632c",
+      "mtime_ns": 1699505926000000000
+    },
+    {
+      "relative": "Tools/Microsoft.VisualStudio.SolutionPersistence.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Microsoft.VisualStudio.SolutionPersistence.dll",
+      "bytes": 172072,
+      "sha256": "a1150f4a162d9c9992b6e99b2949e2de092017182264218b7b5666ceebbc16d4",
+      "mtime_ns": 1741114946000000000
+    },
+    {
+      "relative": "Tools/Newtonsoft.Json.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\Newtonsoft.Json.dll",
+      "bytes": 695336,
+      "sha256": "72cf291d4bab0edd08a9b07c6173e1e7ad1abb7ab727fd7044bf6305d7515661",
+      "mtime_ns": 1616011416000000000
+    },
+    {
+      "relative": "Tools/NuGet.Frameworks.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\NuGet.Frameworks.dll",
+      "bytes": 123944,
+      "sha256": "42972564d5632852fddf484c6badb1f91cd5167b4f540b23e30663aa84f795f0",
+      "mtime_ns": 1729816362000000000
+    },
+    {
+      "relative": "Tools/nupkgs/Godot.NET.Sdk.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\Godot.NET.Sdk.4.8.0-beta.1.nupkg",
+      "bytes": 6856,
+      "sha256": "6735b8914bf8f84554cd17e13a38c48d466eb160fcdea9abc806189d57dc330f",
+      "mtime_ns": 1792914978059955000
+    },
+    {
+      "relative": "Tools/nupkgs/Godot.SourceGenerators.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\Godot.SourceGenerators.4.8.0-beta.1.nupkg",
+      "bytes": 48645,
+      "sha256": "00988d966bee00420b1193aa87fdf58f778a6d63648fcd131e2a09aa0ba7f77a",
+      "mtime_ns": 1793021160985923800
+    },
+    {
+      "relative": "Tools/nupkgs/GodotSharp.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.8.0-beta.1.nupkg",
+      "bytes": 3471868,
+      "sha256": "9391c8cb45c95126786ded0007eb875c1bf2c63fe73df701fcb34d9fc8130bb8",
+      "mtime_ns": 1793021154801919300
+    },
+    {
+      "relative": "Tools/nupkgs/GodotSharp.4.8.0-beta.1.snupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.8.0-beta.1.snupkg",
+      "bytes": 4450999,
+      "sha256": "74e0fe49e893f1dd996783b6700dc71b5de7fcb52e9d7bfee1f0c5137c46aad1",
+      "mtime_ns": 1793021154985619000
+    },
+    {
+      "relative": "Tools/nupkgs/GodotSharpEditor.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.8.0-beta.1.nupkg",
+      "bytes": 183142,
+      "sha256": "b051c8fc8bce727d4825586855f029bbddc6f56a361fb9273106e468561a2588",
+      "mtime_ns": 1793021154768042600
+    },
+    {
+      "relative": "Tools/nupkgs/GodotSharpEditor.4.8.0-beta.1.snupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.8.0-beta.1.snupkg",
+      "bytes": 267237,
+      "sha256": "85e57175e72624403a3ee416953cc60a9a4a670651cf8cbc305918a31938cad5",
+      "mtime_ns": 1793021154833625700
+    },
+    {
+      "relative": "Tools/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\pl\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 464160,
+      "sha256": "f368012ee07c6edd49df17a11dc52524516877a2afa444600c76297cd23b8a35",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/pl/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\pl\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 49928,
+      "sha256": "d12771a7017bd996edd50de8b34dd9de02474eeb3b9bf1b62d04a14178b4c059",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\pt-BR\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 444680,
+      "sha256": "96f67f5e846bddfde6e958d450bae72943816b0800a5ee1844b4c69b9593a343",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\pt-BR\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48928,
+      "sha256": "ade69198534b8c6149ad2160cbc0d66ce8c9e7f65cdf4525abd4b3084f2dd935",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ru\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 609032,
+      "sha256": "25093104d71c3c980bc0baf6c01c072f42f5d7d918e275d2601d41ba21c3c612",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/ru/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\ru\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 60192,
+      "sha256": "f624329c45687998a2f7000182be4dab3c33f07fcbdf482505a0472fed01dee4",
+      "mtime_ns": 1722031766000000000
+    },
+    {
+      "relative": "Tools/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\tr\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 440584,
+      "sha256": "76c1f8a8bd7d748170cf0e9b93039fb2bc2ee074ba19eedc10f9a9bc026ec197",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/tr/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\tr\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 48408,
+      "sha256": "660fa2661a524dd05402991750509edb72c5cce4ddec9cdc56126c1e1c50bcdc",
+      "mtime_ns": 1722031768000000000
+    },
+    {
+      "relative": "Tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\zh-Hans\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391944,
+      "sha256": "eb9fd086af40d5d6ec24123c25a6a5e9f69b45e9db4f1a85269b62774c87f4b4",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\zh-Hans\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44824,
+      "sha256": "966487734ddbd371ccfadd6521a8a7e36ba74a5ad777c749df90ea26118212bb",
+      "mtime_ns": 1722031768000000000
+    },
+    {
+      "relative": "Tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\zh-Hant\\Microsoft.CodeAnalysis.CSharp.resources.dll",
+      "bytes": 391448,
+      "sha256": "1f4bcaed17f6b189a0a68813a8cf5f3d8d31b6269fd10bcc824b9dd45c2b9a8d",
+      "mtime_ns": 1722032650000000000
+    },
+    {
+      "relative": "Tools/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\zh-Hant\\Microsoft.CodeAnalysis.resources.dll",
+      "bytes": 44808,
+      "sha256": "537fd03e590ca4502980dfe08d5163a4a115d7b33040cd495a795818dbde315f",
+      "mtime_ns": 1722031768000000000
+    }
+  ],
+  "local_feed": [
+    {
+      "relative": "Godot.NET.Sdk.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\Godot.NET.Sdk.4.8.0-beta.1.nupkg",
+      "bytes": 6856,
+      "sha256": "6735b8914bf8f84554cd17e13a38c48d466eb160fcdea9abc806189d57dc330f",
+      "mtime_ns": 1792914978059955000
+    },
+    {
+      "relative": "Godot.SourceGenerators.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\Godot.SourceGenerators.4.8.0-beta.1.nupkg",
+      "bytes": 48645,
+      "sha256": "00988d966bee00420b1193aa87fdf58f778a6d63648fcd131e2a09aa0ba7f77a",
+      "mtime_ns": 1793021160985923800
+    },
+    {
+      "relative": "GodotSharp.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.8.0-beta.1.nupkg",
+      "bytes": 3471868,
+      "sha256": "9391c8cb45c95126786ded0007eb875c1bf2c63fe73df701fcb34d9fc8130bb8",
+      "mtime_ns": 1793021154801919300
+    },
+    {
+      "relative": "GodotSharp.4.8.0-beta.1.snupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharp.4.8.0-beta.1.snupkg",
+      "bytes": 4450999,
+      "sha256": "74e0fe49e893f1dd996783b6700dc71b5de7fcb52e9d7bfee1f0c5137c46aad1",
+      "mtime_ns": 1793021154985619000
+    },
+    {
+      "relative": "GodotSharpEditor.4.8.0-beta.1.nupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.8.0-beta.1.nupkg",
+      "bytes": 183142,
+      "sha256": "b051c8fc8bce727d4825586855f029bbddc6f56a361fb9273106e468561a2588",
+      "mtime_ns": 1793021154768042600
+    },
+    {
+      "relative": "GodotSharpEditor.4.8.0-beta.1.snupkg",
+      "file": "<source>\\bin\\GodotSharp\\Tools\\nupkgs\\GodotSharpEditor.4.8.0-beta.1.snupkg",
+      "bytes": 267237,
+      "sha256": "85e57175e72624403a3ee416953cc60a9a4a670651cf8cbc305918a31938cad5",
+      "mtime_ns": 1793021154833625700
+    }
+  ],
+  "old_dist": [
+    {
+      "file": "<source>\\dist\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-editor_windows_amd64.zip",
+      "bytes": 183616774,
+      "sha256": "a44108f390707f682d41bf2f9d2fe0a24d2999cc8e49ae2874899e9c2c240f6e",
+      "mtime_ns": 1792960742215760400,
+      "matches_c1_recorded_sha256": true
+    },
+    {
+      "file": "<source>\\dist\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-editor_windows_amd64_mono.zip",
+      "bytes": 215916863,
+      "sha256": "0acdaf02b0a2437631ec661102c46fd66a4f12caf1074499fb437366fbf244e7",
+      "mtime_ns": 1792960789521901100,
+      "matches_c1_recorded_sha256": true
+    },
+    {
+      "file": "<source>\\dist\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64.tpz",
+      "bytes": 66895565,
+      "sha256": "2797cf6e4dd6ad67450b6b0b2cbd475f9a030d6ab1224ae54e45c50a5aa29e31",
+      "mtime_ns": 1792960798936634900,
+      "matches_c1_recorded_sha256": true
+    },
+    {
+      "file": "<source>\\dist\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64_mono.tpz",
+      "bytes": 67091314,
+      "sha256": "7785841aeb612e1236924174d7824274963b226bf3758294add1071f5d7c9744",
+      "mtime_ns": 1792960808143623900,
+      "matches_c1_recorded_sha256": true
+    }
+  ],
+  "a028_packages": [
+    {
+      "file": "<evidence>\\packages-a028\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64.tpz",
+      "bytes": 66909806,
+      "sha256": "5cc015de9822f672ccda57479a8bfa8d6960467e713bbc8ba7fccf7eef5fe90f",
+      "mtime_ns": 1793017055637715100
+    },
+    {
+      "file": "<evidence>\\packages-a028\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64_mono.tpz",
+      "bytes": 67098826,
+      "sha256": "9f6d7a23bed2c2119b5eae5c2148efc198694c93bd6de4c03e2ecd656d91f131",
+      "mtime_ns": 1793017157675439500
+    }
+  ],
+  "a028_historical_archive_hash_comparison": {
+    "status": "PENDING_BASELINE_LOCATION",
+    "note": "Current hashes and stability across this audit are recorded; historical archive-byte identity is not inferred."
+  },
+  "limits": [
+    "Hash/version audit only; no package/export/rendering test has run here.",
+    "Eight binaries means six main engine executables plus two Agility DLLs; DLLs are not engines and cannot report an A738 source SHA."
+  ]
+}

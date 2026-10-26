@@ -1,0 +1,41 @@
+{
+  "command": [
+    "<source>\\bin\\godot.windows.editor.x86_64.mono.exe",
+    "--headless",
+    "--editor",
+    "--path",
+    "<previous-evidence>\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5\\cases\\mono-release\\project",
+    "--import"
+  ],
+  "cwd": "<previous-evidence>\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5\\cases\\mono-release\\project",
+  "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<source>\\bin\\godot.windows.editor.x86_64.mono.exe",
+      "bytes": 162375680,
+      "sha256": "9d3631e81aa56adfe2d89bfc3ab52a3947937719b158bd64e26b5ce45a3c51a9"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<previous-evidence>\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5\\profiles\\mono\\local",
+    "TEMP": "<previous-evidence>\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5\\profiles\\mono\\tmp",
+    "NUGET_PACKAGES": "<previous-evidence>\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5\\nuget\\a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T14:13:17.359696+00:00",
+  "log": "<previous-evidence>\\logs\\final-exports-a73826e8c0-20261026T140940Z-ac63c1c5-mono-release-import.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 21924,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 4.375,
+  "finished_utc": "2026-10-26T14:13:21.513857+00:00"
+}

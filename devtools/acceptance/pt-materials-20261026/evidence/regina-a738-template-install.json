@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "archive": {
+    "file": "<evidence>\\packages-a738\\godot_4.8-nvidia-rt-dlss-physx_v0.7.3-export_templates_windows_amd64.tpz",
+    "bytes": 66909930,
+    "sha256": "0d6109204658deff67348dd916c31a5e597af333268ae8022a924b6fb868369e"
+  },
+  "version": "4.8.beta1",
+  "install_directory": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1",
+  "installed_files": [
+    {
+      "relative_file": "D3D12Core.x86_64.dll",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\D3D12Core.x86_64.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "relative_file": "d3d12SDKLayers.x86_64.dll",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\d3d12SDKLayers.x86_64.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    },
+    {
+      "relative_file": "version.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\version.txt",
+      "bytes": 9,
+      "sha256": "d6da91c16889ae943f94f1af5368a7bd8edb073a4e909ae90a48d38f5a415f84"
+    },
+    {
+      "relative_file": "windows_debug_x86_64.exe",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\windows_debug_x86_64.exe",
+      "bytes": 95631360,
+      "sha256": "9ecbcc22ec5e9302e9a6864ac5d64e0ec277a8482c9def89a72c53d203707069"
+    },
+    {
+      "relative_file": "windows_debug_x86_64_console.exe",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\windows_debug_x86_64_console.exe",
+      "bytes": 300544,
+      "sha256": "3de7841a0e8a15ab90217436614dedb7afb3f06c293c3f6bd065ef3452d6840e"
+    },
+    {
+      "relative_file": "windows_release_x86_64.exe",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\windows_release_x86_64.exe",
+      "bytes": 80785920,
+      "sha256": "a13e02c97ecdce16e1f6c20737bb24d7d0c1930b82a411180cc307683c044619"
+    },
+    {
+      "relative_file": "windows_release_x86_64_console.exe",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\windows_release_x86_64_console.exe",
+      "bytes": 292864,
+      "sha256": "c0552804e64b5c44c04860123ae38edb502256a08741d69517809326c1d0c50b"
+    },
+    {
+      "relative_file": "licenses/BOOST-LICENSE-BLAST.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\BOOST-LICENSE-BLAST.md",
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "relative_file": "licenses/GODOT-COPYRIGHT.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\GODOT-COPYRIGHT.txt",
+      "bytes": 100327,
+      "sha256": "d5aeff0741d5cb7a566befd8867667549c8bb46399a0e93091273b632bbefd96"
+    },
+    {
+      "relative_file": "licenses/GODOT-LICENSE.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\GODOT-LICENSE.txt",
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+    },
+    {
+      "relative_file": "licenses/MICROSOFT-DIRECTX-AGILITY-SDK-DISTRIBUTABLE-FILES.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\MICROSOFT-DIRECTX-AGILITY-SDK-DISTRIBUTABLE-FILES.txt",
+      "bytes": 88,
+      "sha256": "133ca866af6b6d1d549e3ec48dbe1d36fa3c40ccbb971c4d3b52480817c935e2"
+    },
+    {
+      "relative_file": "licenses/MICROSOFT-DIRECTX-AGILITY-SDK-LICENSE.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\MICROSOFT-DIRECTX-AGILITY-SDK-LICENSE.txt",
+      "bytes": 12989,
+      "sha256": "95598665ca96fc6a9355e57be75fe3afcdf2501bb39f3b40ac6b91d0ed85915c"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-BLAST-LICENSE.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\NVIDIA-BLAST-LICENSE.md",
+      "bytes": 1562,
+      "sha256": "3f9ab13f4b26908285c8b86ae264d98916afaeeaf5bb0108190305cad7679273"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-FLOW-LICENSE.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\NVIDIA-FLOW-LICENSE.md",
+      "bytes": 1517,
+      "sha256": "eb3e67b17b48c56ef26d8bf6634c0837503fefc28a916f98d4f02272eda50011"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-STREAMLINE-SDK-HEADERS-LICENSE.txt",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\NVIDIA-STREAMLINE-SDK-HEADERS-LICENSE.txt",
+      "bytes": 1559,
+      "sha256": "c7782fdc4dfc64f7e6b09f37a694dcfa64034b712903986d252b13a08d5849cd"
+    },
+    {
+      "relative_file": "licenses/PHYSX-LICENSE.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\PHYSX-LICENSE.md",
+      "bytes": 1876,
+      "sha256": "fa50dbc177f13614eae256384c1c129d59a9d674178cd73b181e80c94c09e6fb"
+    },
+    {
+      "relative_file": "licenses/THIRD_PARTY_LICENSES.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\THIRD_PARTY_LICENSES.md",
+      "bytes": 6658,
+      "sha256": "e4b42b407b967fdedb6ce06c02b59c874003c74371b4673cd1ea0428fc6dac82"
+    },
+    {
+      "relative_file": "licenses/VHACD-LICENSE-BLAST.md",
+      "file": "<evidence>\\regina-a738-export\\run-a738-20261026T142935Z-b7656a86\\build-profile\\roaming\\Godot\\export_templates\\4.8.beta1\\licenses\\VHACD-LICENSE-BLAST.md",
+      "bytes": 1468,
+      "sha256": "88ba67796d63e1e7f8fc54293d7bf8277e390e219cfd203d1718676a57285bd9"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "status": "FINAL_INPUTS_FROZEN_PACKAGING_NOT_RUN",
+  "expected_source_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "recorder_root": "<previous-evidence>",
+  "archive_output": "<evidence>\\packages-a738",
+  "editor_directory": "<source>\\bin",
+  "copies": [
+    {
+      "original": "<source>\\devtools\\package\\package_templates_win64.ps1",
+      "original_copy": "package_templates_win64.original.ps1",
+      "original_sha256": "c07820081f2d2938c4286e8a4aa2bdf33639a1f9dc6aa4282d78982c2b7cb591",
+      "candidate": "package_templates_win64.ps1",
+      "candidate_sha256": "373133945425435502a66142e973754bdb83417cb05c4f6ad4202bb01b09cb75",
+      "diff": "package_templates_win64.ps1.patch",
+      "inverse_relocation_restores_exact_original_bytes": true,
+      "allowed_relocations": [
+        {
+          "old": "$root = Resolve-Path \"$PSScriptRoot\\..\\..\"",
+          "new": "$root = Resolve-Path \"<source>\""
+        },
+        {
+          "old": "$dist = Join-Path $root \"dist\"",
+          "new": "$dist = \"<evidence>\\packages-a738\""
+        },
+        {
+          "old": "(Join-Path $PSScriptRoot \"streamline_manifest.py\")",
+          "new": "(Join-Path $root \"devtools\\package\\streamline_manifest.py\")"
+        }
+      ]
+    },
+    {
+      "original": "<previous-evidence>\\final_exports.py",
+      "original_copy": "final_exports.original.py",
+      "original_sha256": "9c0f66347be496fec271bbf95b10ed09028038b3f46441446a8a7f6c2c4141e3",
+      "candidate": "final_exports.py",
+      "candidate_sha256": "a50db584c90dd8b853aa6f6451aecced2e6f89168068038dc804c831c18e3b03",
+      "diff": "final_exports.py.patch",
+      "inverse_relocation_restores_exact_original_bytes": true,
+      "allowed_relocations": [
+        {
+          "old": "ROOT = Path(__file__).resolve().parent",
+          "new": "ROOT = Path(r\"<previous-evidence>\")"
+        },
+        {
+          "old": "candidates = [p for p in (SOURCE / \"dist\").glob(\"*export_templates_windows_amd64*.tpz\")",
+          "new": "candidates = [p for p in Path(r\"<evidence>\\packages-a738\").glob(\"*export_templates_windows_amd64*.tpz\")"
+        },
+        {
+          "old": "template = editors / f\"godot.windows.template_{target}.x86_64{suffix}.exe\"",
+          "new": "template = SOURCE / \"bin\" / f\"godot.windows.template_{target}.x86_64{suffix}.exe\""
+        },
+        {
+          "old": "\"archive_source\": str(SOURCE / \"dist\")",
+          "new": "\"archive_source\": str(Path(r\"<evidence>\\packages-a738\"))"
+        }
+      ]
+    }
+  ],
+  "observed_input_files": [
+    {
+      "file": "<source>\\devtools\\package\\streamline_manifest.py",
+      "bytes": 8834,
+      "sha256": "4e30f7fe7bf0b9f0f0fd0b51d356c3ea242e65deca28332582043a1cfe109bfe"
+    },
+    {
+      "file": "<previous-evidence>\\run_logged.py",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+    },
+    {
+      "file": "<previous-evidence>\\windows_job.py",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    },
+    {
+      "file": "<source>\\CUSTOM_VERSION",
+      "bytes": 6,
+      "sha256": "9c788a838dc1f6bfd80fa39757a95f94260071c35011c9a05301da1c73507657"
+    },
+    {
+      "file": "<source>\\version.py",
+      "bytes": 160,
+      "sha256": "4e85928ca6d3b243c3d825d88d036c99354188cca8a8eff0e15e1fafc1c8988c"
+    }
+  ],
+  "final_build_input_audit": {
+    "status": "FROZEN",
+    "conditions": {
+      "full_build_receipt_matches": true,
+      "clean_source_a738": true,
+      "scripts_match_prepared_hashes": true,
+      "six_main_exe_versions_match": true,
+      "binary_hashes_stable_during_audit": true,
+      "godotsharp_stable_during_audit": true,
+      "feed_stable_during_audit": true,
+      "old_dist_matches_recorded_c1_hashes": true,
+      "old_dist_stable_during_audit": true,
+      "a028_packages_stable_during_audit": true
+    },
+    "record": {
+      "file": "<evidence>\\validation-a738\\final-build-inputs.json",
+      "bytes": 38832,
+      "sha256": "62c1f14a53d2d3c7543c459c08d7c3825ea831a7e86097d4a669ad125a4adf11",
+      "mtime_ns": 1793021788724173700
+    },
+    "binary_file_count": 8,
+    "version_command_count": 6,
+    "godotsharp_file_count": 80,
+    "feed_file_count": 6,
+    "historical_a028_archive_comparison": {
+      "status": "PENDING_BASELINE_LOCATION",
+      "note": "Current hashes and stability across this audit are recorded; historical archive-byte identity is not inferred."
+    },
+    "a028_template_payload_comparison": {
+      "status": "MATCH",
+      "file": "<evidence>\\validation-a738\\a028-template-content-comparison.json",
+      "sha256": "e029081242b56d0253572a93e78662281079a05b8462d5db470e3331f00f9af6",
+      "comparison_scope": "Four main template payloads versus previously frozen A028 binary hashes; not historical archive-byte identity"
+    }
+  },
+  "python_syntax_compiles_without_execution": true,
+  "old_scripts_and_source_dist_not_modified": true
+}

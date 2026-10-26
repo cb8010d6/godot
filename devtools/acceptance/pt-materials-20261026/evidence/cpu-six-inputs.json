@@ -1,0 +1,31 @@
+{
+  "scope": "Six sequential CPU repository checks only; no Godot/import/build/GPU/pip/project-copy commands",
+  "head": "979778df7b2d89b9ebce7abc8737bd3389c4bb6e",
+  "worktree_before": " M game/shaders/facade.gdshader\n M game/shaders/ski_terrain.gdshader\n?? docs/PT_MATERIAL_COMPATIBILITY.md\n?? game/shaders/rt_pixel_footprint.gdshaderinc\n?? game/shaders/rt_pixel_footprint.gdshaderinc.uid\n",
+  "candidate_sha256_before": {
+    "game/shaders/facade.gdshader": "b9eacb7e0c937f59db0c9cad0b98c044584667f5587ee512be451c67b3db3ec7",
+    "game/shaders/ski_terrain.gdshader": "e5e59c43b4bf0c9c986ad29f7346c4522ea9d72bcf4b57897b3576404a30551d",
+    "game/shaders/rt_pixel_footprint.gdshaderinc": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+    "game/shaders/rt_pixel_footprint.gdshaderinc.uid": "8fb6343f13e9ca7cc33d72f3d3dc2204d0ea19a8024f0442734927e9dfc8ce9d",
+    "docs/PT_MATERIAL_COMPATIBILITY.md": "61959071b33c65997973677b6a72759b34019450d29615fcca3414206171c9a6"
+  },
+  "working_tree_patch_sha256": "3eec8b570cda7988a2df9f00849114565a27f2d22845501ada674ffb9d401ad7",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "TEMP": "<evidence>\\game-cpu\\20261026T114123Z-serial-60a41f\\tmp",
+    "TMP": "<evidence>\\game-cpu\\20261026T114123Z-serial-60a41f\\tmp",
+    "RUFF_CACHE_DIR": "<evidence>\\game-cpu\\20261026T114123Z-serial-60a41f\\cache\\ruff",
+    "XDG_CACHE_HOME": "<evidence>\\game-cpu\\20261026T114123Z-serial-60a41f\\cache\\xdg",
+    "PIP_CACHE_DIR": "<evidence>\\game-cpu\\20261026T114123Z-serial-60a41f\\cache\\pip",
+    "PIP_NO_INDEX": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PYTEST_ADDOPTS": ""
+  },
+  "runner_sha256": "a9f8401d20d389eeff816df619fde8b7b494ef5f060d43905235e6c0ec17a8f2",
+  "python_executable": "<original-installation>\\hub\\.venv\\Scripts\\python.exe",
+  "python_executable_sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14",
+  "node_executable": "<program-files>\\nodejs\\node.exe",
+  "node_executable_sha256": "d702daa815eabbff763c7d3808e235cf031cf2ca70211b56847bc72f51e240e5"
+}

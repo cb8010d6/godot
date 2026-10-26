@@ -1,0 +1,8107 @@
+{
+  "errors": [],
+  "mode": "pt_rr",
+  "overrides": [
+    {
+      "bus": 0,
+      "kind": "process_audio_mute",
+      "value": true
+    },
+    {
+      "kind": "viewport_sharpness",
+      "reason": "Disable sharpening in all comparison modes",
+      "value": 0.0
+    }
+  ],
+  "reached_play": {
+    "actual_players": 2,
+    "async_shader_compilation": true,
+    "async_shader_compilation_setting_present": true,
+    "camera": {
+      "far": 3000.0,
+      "forward": [
+        0.0,
+        -0.1271643191576,
+        -0.991881668567657
+      ],
+      "fov": 66.0,
+      "near": 0.0500000007450581,
+      "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+      "position": [
+        -1.29999995231628,
+        1.89999997615814,
+        0.599999904632568
+      ]
+    },
+    "camera_control": {
+      "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+      "other_players": "game_owned",
+      "player_id": 1,
+      "scope": "first_player_only"
+    },
+    "dlss_available": true,
+    "dlss_mode": 6,
+    "driver": "vulkan",
+    "engine": {
+      "build": "custom_build",
+      "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793020156
+    },
+    "engine_frames_drawn": 433,
+    "environments": [
+      {
+        "ddgi": false,
+        "denoiser": 1,
+        "path": "/root/SkateGame/@WorldEnvironment@318",
+        "pt": true,
+        "samples_per_pixel": 1
+      }
+    ],
+    "fg_status": {
+      "available": true,
+      "eligible": false,
+      "reason": "no_request",
+      "rendered_3d_views": 2,
+      "requested_3d_views": 0,
+      "sdk_enabled": false,
+      "supported_generated_frames": 1
+    },
+    "game": "skate",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "map": 0,
+    "native_mode": 0,
+    "paused": false,
+    "phase": 2,
+    "phase_time": 0.0,
+    "physics": "Jolt Physics",
+    "players": [
+      {
+        "body_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "camera_forward": [
+          0.0,
+          -0.1271643191576,
+          -0.991881668567657
+        ],
+        "camera_fov": 66.0,
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "camera_position": [
+          -1.29999995231628,
+          1.89999997615814,
+          0.599999904632568
+        ],
+        "fake": true,
+        "id": 1,
+        "selected_for_override": true,
+        "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+      },
+      {
+        "body_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "camera_forward": [
+          0.0,
+          -0.1271643191576,
+          -0.991881668567657
+        ],
+        "camera_fov": 66.0,
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+        "camera_position": [
+          1.29999995231628,
+          1.89999997615814,
+          0.599999904632568
+        ],
+        "fake": true,
+        "id": 2,
+        "selected_for_override": false,
+        "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+      }
+    ],
+    "post_draw_samples": 434,
+    "process_environment": {
+      "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+      "GODOT_STREAMLINE_DISABLE_OTA": "1",
+      "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+      "RS_TEST_MODE": "1",
+      "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+      "VK_INSTANCE_LAYERS": ""
+    },
+    "rendering_method": "forward_plus",
+    "requested_players": 2,
+    "rr_denoiser": 1,
+    "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+    "settings": {
+      "effective_upscale": 7,
+      "fg": false,
+      "hdr": false,
+      "lighting": 2,
+      "preset": 0,
+      "sharpness": 0,
+      "upscale": 7
+    },
+    "ticks": 120,
+    "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+    "viewports": [
+      {
+        "camera": false,
+        "camera_path": "",
+        "disable_3d": false,
+        "frame_generation": false,
+        "msaa": 0,
+        "path": "/root",
+        "scale": 0.666666686534882,
+        "scaling": 6,
+        "sharpness": 0.0,
+        "size": [
+          1600.0,
+          900.0
+        ],
+        "tlas_instances": 0,
+        "xr": false
+      },
+      {
+        "camera": true,
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "disable_3d": false,
+        "frame_generation": false,
+        "msaa": 0,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+        "scale": 0.666666686534882,
+        "scaling": 6,
+        "sharpness": 0.0,
+        "size": [
+          796.0,
+          896.0
+        ],
+        "tlas_instances": 1976,
+        "xr": false
+      },
+      {
+        "camera": true,
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+        "disable_3d": false,
+        "frame_generation": false,
+        "msaa": 0,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+        "scale": 0.666666686534882,
+        "scaling": 6,
+        "sharpness": 0.0,
+        "size": [
+          796.0,
+          896.0
+        ],
+        "tlas_instances": 1976,
+        "xr": false
+      }
+    ]
+  },
+  "requested_players": 2,
+  "shots": [
+    {
+      "actual_players": 2,
+      "async_shader_compilation": true,
+      "async_shader_compilation_setting_present": true,
+      "camera": {
+        "far": 3000.0,
+        "forward": [
+          -0.898999273777008,
+          0.0507499612867832,
+          -0.434999704360962
+        ],
+        "fov": 65.0,
+        "near": 0.0500000007450581,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "position": [
+          -2.0,
+          1.0,
+          -80.0
+        ]
+      },
+      "camera_control": {
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "other_players": "game_owned",
+        "player_id": 1,
+        "scope": "first_player_only"
+      },
+      "camera_override": {
+        "before": {
+          "forward": [
+            0.184686064720154,
+            -0.125064432621002,
+            -0.974807679653168
+          ],
+          "fov": 66.0,
+          "position": [
+            -1.81223511695862,
+            1.89999997615814,
+            -1.12721431255341
+          ]
+        },
+        "eye": [
+          -2.0,
+          1.0,
+          -80.0
+        ],
+        "fov": 65.0,
+        "player_id": 1,
+        "player_physics_teleported": false,
+        "process_priority": 10000,
+        "scope": "first_player_only",
+        "selected_tree": null,
+        "settle_post_draw_frames": 600,
+        "target": [
+          -14.3999996185303,
+          1.70000004768372,
+          -86.0
+        ]
+      },
+      "dlss_available": true,
+      "dlss_mode": 6,
+      "driver": "vulkan",
+      "engine": {
+        "build": "custom_build",
+        "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "hex": 264192,
+        "major": 4,
+        "minor": 8,
+        "patch": 0,
+        "status": "beta1",
+        "string": "4.8-beta1 (custom_build)",
+        "timestamp": 1793020156
+      },
+      "engine_frames_drawn": 1093,
+      "environments": [
+        {
+          "ddgi": false,
+          "denoiser": 1,
+          "path": "/root/SkateGame/@WorldEnvironment@318",
+          "pt": true,
+          "samples_per_pixel": 1
+        }
+      ],
+      "fg_status": {
+        "available": true,
+        "eligible": false,
+        "reason": "no_request",
+        "rendered_3d_views": 2,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 1
+      },
+      "game": "skate",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "map": 0,
+      "name": "left_near",
+      "native_mode": 0,
+      "paused": false,
+      "phase": 2,
+      "phase_time": 11.0000000000001,
+      "physics": "Jolt Physics",
+      "players": [
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.898999273777008,
+            0.0507499612867832,
+            -0.434999704360962
+          ],
+          "camera_fov": 65.0,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera_position": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "fake": true,
+          "id": 1,
+          "selected_for_override": true,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+        },
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            0.74127072095871,
+            -0.17675755918026,
+            -0.64751410484314
+          ],
+          "camera_fov": 67.5959167480469,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "camera_position": [
+            -4.27438545227051,
+            0.448242366313934,
+            -67.0153503417969
+          ],
+          "fake": true,
+          "id": 2,
+          "selected_for_override": false,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+        }
+      ],
+      "png": {
+        "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture/left_near.png",
+        "height": 900,
+        "sha256": "329cec63adb96206a12b730413d4a6626004546612fb34ff6aa1b65c36cdfa39",
+        "width": 1600
+      },
+      "post_draw_samples": 1094,
+      "process_environment": {
+        "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "RS_TEST_MODE": "1",
+        "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "VK_INSTANCE_LAYERS": ""
+      },
+      "rendering_method": "forward_plus",
+      "requested_players": 2,
+      "rr_denoiser": 1,
+      "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 2,
+        "preset": 0,
+        "sharpness": 0,
+        "upscale": 7
+      },
+      "ticks": 120,
+      "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+      "viewports": [
+        {
+          "camera": false,
+          "camera_path": "",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            1600.0,
+            900.0
+          ],
+          "tlas_instances": 0,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        }
+      ]
+    },
+    {
+      "actual_players": 2,
+      "async_shader_compilation": true,
+      "async_shader_compilation_setting_present": true,
+      "camera": {
+        "far": 3000.0,
+        "forward": [
+          0.898999273777008,
+          0.0507499612867832,
+          -0.434999704360962
+        ],
+        "fov": 65.0,
+        "near": 0.0500000007450581,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "position": [
+          2.0,
+          1.0,
+          -80.0
+        ]
+      },
+      "camera_control": {
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "other_players": "game_owned",
+        "player_id": 1,
+        "scope": "first_player_only"
+      },
+      "camera_override": {
+        "before": {
+          "forward": [
+            -0.898999273777008,
+            0.0507499612867832,
+            -0.434999704360962
+          ],
+          "fov": 65.0,
+          "position": [
+            -2.0,
+            1.0,
+            -80.0
+          ]
+        },
+        "eye": [
+          2.0,
+          1.0,
+          -80.0
+        ],
+        "fov": 65.0,
+        "player_id": 1,
+        "player_physics_teleported": false,
+        "process_priority": 10000,
+        "scope": "first_player_only",
+        "selected_tree": null,
+        "settle_post_draw_frames": 600,
+        "target": [
+          14.3999996185303,
+          1.70000004768372,
+          -86.0
+        ]
+      },
+      "dlss_available": true,
+      "dlss_mode": 6,
+      "driver": "vulkan",
+      "engine": {
+        "build": "custom_build",
+        "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "hex": 264192,
+        "major": 4,
+        "minor": 8,
+        "patch": 0,
+        "status": "beta1",
+        "string": "4.8-beta1 (custom_build)",
+        "timestamp": 1793020156
+      },
+      "engine_frames_drawn": 1693,
+      "environments": [
+        {
+          "ddgi": false,
+          "denoiser": 1,
+          "path": "/root/SkateGame/@WorldEnvironment@318",
+          "pt": true,
+          "samples_per_pixel": 1
+        }
+      ],
+      "fg_status": {
+        "available": true,
+        "eligible": false,
+        "reason": "no_request",
+        "rendered_3d_views": 2,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 1
+      },
+      "game": "skate",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "map": 0,
+      "name": "right_near",
+      "native_mode": 0,
+      "paused": false,
+      "phase": 2,
+      "phase_time": 21.0000000000001,
+      "physics": "Jolt Physics",
+      "players": [
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            0.898999273777008,
+            0.0507499612867832,
+            -0.434999704360962
+          ],
+          "camera_fov": 65.0,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera_position": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "fake": true,
+          "id": 1,
+          "selected_for_override": true,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+        },
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.192463412880898,
+            -0.161834925413132,
+            -0.967867374420166
+          ],
+          "camera_fov": 68.8049774169922,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "camera_position": [
+            1.69765794277191,
+            -3.01203536987305,
+            -123.05354309082
+          ],
+          "fake": true,
+          "id": 2,
+          "selected_for_override": false,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+        }
+      ],
+      "png": {
+        "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture/right_near.png",
+        "height": 900,
+        "sha256": "af428797dcd183679bc0ad831659bee37df35b70b2dbecfbe73ab2081e469fc7",
+        "width": 1600
+      },
+      "post_draw_samples": 1694,
+      "process_environment": {
+        "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "RS_TEST_MODE": "1",
+        "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "VK_INSTANCE_LAYERS": ""
+      },
+      "rendering_method": "forward_plus",
+      "requested_players": 2,
+      "rr_denoiser": 1,
+      "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 2,
+        "preset": 0,
+        "sharpness": 0,
+        "upscale": 7
+      },
+      "ticks": 120,
+      "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+      "viewports": [
+        {
+          "camera": false,
+          "camera_path": "",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            1600.0,
+            900.0
+          ],
+          "tlas_instances": 0,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        }
+      ]
+    },
+    {
+      "actual_players": 2,
+      "async_shader_compilation": true,
+      "async_shader_compilation_setting_present": true,
+      "camera": {
+        "far": 3000.0,
+        "forward": [
+          -0.214425981044769,
+          -0.131150916218758,
+          0.967895090579987
+        ],
+        "fov": 65.0,
+        "near": 0.0500000007450581,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "position": [
+          0.0,
+          11.8075761795044,
+          -165.0
+        ]
+      },
+      "camera_control": {
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "other_players": "game_owned",
+        "player_id": 1,
+        "scope": "first_player_only"
+      },
+      "camera_override": {
+        "before": {
+          "forward": [
+            0.898999273777008,
+            0.0507499612867832,
+            -0.434999704360962
+          ],
+          "fov": 65.0,
+          "position": [
+            2.0,
+            1.0,
+            -80.0
+          ]
+        },
+        "eye": [
+          0.0,
+          11.8075761795044,
+          -165.0
+        ],
+        "fov": 65.0,
+        "player_id": 1,
+        "player_physics_teleported": false,
+        "process_priority": 10000,
+        "scope": "first_player_only",
+        "selected_tree": null,
+        "settle_post_draw_frames": 600,
+        "target": [
+          -14.3999996185303,
+          3.0,
+          -100.0
+        ]
+      },
+      "dlss_available": true,
+      "dlss_mode": 6,
+      "driver": "vulkan",
+      "engine": {
+        "build": "custom_build",
+        "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "hex": 264192,
+        "major": 4,
+        "minor": 8,
+        "patch": 0,
+        "status": "beta1",
+        "string": "4.8-beta1 (custom_build)",
+        "timestamp": 1793020156
+      },
+      "engine_frames_drawn": 2293,
+      "environments": [
+        {
+          "ddgi": false,
+          "denoiser": 1,
+          "path": "/root/SkateGame/@WorldEnvironment@318",
+          "pt": true,
+          "samples_per_pixel": 1
+        }
+      ],
+      "fg_status": {
+        "available": true,
+        "eligible": false,
+        "reason": "no_request",
+        "rendered_3d_views": 2,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 1
+      },
+      "game": "skate",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "map": 0,
+      "name": "left_far",
+      "native_mode": 0,
+      "paused": false,
+      "phase": 2,
+      "phase_time": 30.9999999999995,
+      "physics": "Jolt Physics",
+      "players": [
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.214425981044769,
+            -0.131150916218758,
+            0.967895090579987
+          ],
+          "camera_fov": 65.0,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera_position": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "fake": true,
+          "id": 1,
+          "selected_for_override": true,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+        },
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.0909575819969177,
+            -0.12428842484951,
+            -0.988068401813507
+          ],
+          "camera_fov": 66.4366226196289,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "camera_position": [
+            4.86035346984863,
+            -4.4910249710083,
+            -174.098602294922
+          ],
+          "fake": true,
+          "id": 2,
+          "selected_for_override": false,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+        }
+      ],
+      "png": {
+        "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture/left_far.png",
+        "height": 900,
+        "sha256": "58b6171ba9b25fb079e819d8ce19d3b99fcf75ed362fa1c5e350d97b13d179c7",
+        "width": 1600
+      },
+      "post_draw_samples": 2294,
+      "process_environment": {
+        "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "RS_TEST_MODE": "1",
+        "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "VK_INSTANCE_LAYERS": ""
+      },
+      "rendering_method": "forward_plus",
+      "requested_players": 2,
+      "rr_denoiser": 1,
+      "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 2,
+        "preset": 0,
+        "sharpness": 0,
+        "upscale": 7
+      },
+      "ticks": 120,
+      "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+      "viewports": [
+        {
+          "camera": false,
+          "camera_path": "",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            1600.0,
+            900.0
+          ],
+          "tlas_instances": 0,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        }
+      ]
+    },
+    {
+      "actual_players": 2,
+      "async_shader_compilation": true,
+      "async_shader_compilation_setting_present": true,
+      "camera": {
+        "far": 3000.0,
+        "forward": [
+          0.214425981044769,
+          -0.131150916218758,
+          0.967895090579987
+        ],
+        "fov": 65.0,
+        "near": 0.0500000007450581,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "position": [
+          0.0,
+          11.8075761795044,
+          -165.0
+        ]
+      },
+      "camera_control": {
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "other_players": "game_owned",
+        "player_id": 1,
+        "scope": "first_player_only"
+      },
+      "camera_override": {
+        "before": {
+          "forward": [
+            -0.214425981044769,
+            -0.131150916218758,
+            0.967895090579987
+          ],
+          "fov": 65.0,
+          "position": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ]
+        },
+        "eye": [
+          0.0,
+          11.8075761795044,
+          -165.0
+        ],
+        "fov": 65.0,
+        "player_id": 1,
+        "player_physics_teleported": false,
+        "process_priority": 10000,
+        "scope": "first_player_only",
+        "selected_tree": null,
+        "settle_post_draw_frames": 600,
+        "target": [
+          14.3999996185303,
+          3.0,
+          -100.0
+        ]
+      },
+      "dlss_available": true,
+      "dlss_mode": 6,
+      "driver": "vulkan",
+      "engine": {
+        "build": "custom_build",
+        "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "hex": 264192,
+        "major": 4,
+        "minor": 8,
+        "patch": 0,
+        "status": "beta1",
+        "string": "4.8-beta1 (custom_build)",
+        "timestamp": 1793020156
+      },
+      "engine_frames_drawn": 2893,
+      "environments": [
+        {
+          "ddgi": false,
+          "denoiser": 1,
+          "path": "/root/SkateGame/@WorldEnvironment@318",
+          "pt": true,
+          "samples_per_pixel": 1
+        }
+      ],
+      "fg_status": {
+        "available": true,
+        "eligible": false,
+        "reason": "no_request",
+        "rendered_3d_views": 2,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 1
+      },
+      "game": "skate",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "map": 0,
+      "name": "right_far",
+      "native_mode": 0,
+      "paused": false,
+      "phase": 2,
+      "phase_time": 40.999999999999,
+      "physics": "Jolt Physics",
+      "players": [
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            0.214425981044769,
+            -0.131150916218758,
+            0.967895090579987
+          ],
+          "camera_fov": 65.0,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera_position": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "fake": true,
+          "id": 1,
+          "selected_for_override": true,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+        },
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.117629855871201,
+            -0.11497949808836,
+            -0.986378729343414
+          ],
+          "camera_fov": 69.2103576660156,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "camera_position": [
+            -6.85121011734009,
+            -7.19837093353271,
+            -253.874282836914
+          ],
+          "fake": true,
+          "id": 2,
+          "selected_for_override": false,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+        }
+      ],
+      "png": {
+        "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture/right_far.png",
+        "height": 900,
+        "sha256": "6bc181935ce176078ac567e98738e81cc251f14daaad9bf53113b3d8d9be2e96",
+        "width": 1600
+      },
+      "post_draw_samples": 2894,
+      "process_environment": {
+        "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "RS_TEST_MODE": "1",
+        "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "VK_INSTANCE_LAYERS": ""
+      },
+      "rendering_method": "forward_plus",
+      "requested_players": 2,
+      "rr_denoiser": 1,
+      "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 2,
+        "preset": 0,
+        "sharpness": 0,
+        "upscale": 7
+      },
+      "ticks": 120,
+      "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+      "viewports": [
+        {
+          "camera": false,
+          "camera_path": "",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            1600.0,
+            900.0
+          ],
+          "tlas_instances": 0,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        }
+      ]
+    },
+    {
+      "actual_players": 2,
+      "async_shader_compilation": true,
+      "async_shader_compilation_setting_present": true,
+      "camera": {
+        "far": 3000.0,
+        "forward": [
+          -0.898999273777008,
+          0.0507499612867832,
+          -0.434999704360962
+        ],
+        "fov": 65.0,
+        "near": 0.0500000007450581,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "position": [
+          -2.0,
+          1.0,
+          -80.0
+        ]
+      },
+      "camera_control": {
+        "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "other_players": "game_owned",
+        "player_id": 1,
+        "scope": "first_player_only"
+      },
+      "camera_override": {
+        "before": {
+          "forward": [
+            0.214425981044769,
+            -0.131150916218758,
+            0.967895090579987
+          ],
+          "fov": 65.0,
+          "position": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ]
+        },
+        "eye": [
+          -2.0,
+          1.0,
+          -80.0
+        ],
+        "fov": 65.0,
+        "player_id": 1,
+        "player_physics_teleported": false,
+        "process_priority": 10000,
+        "scope": "first_player_only",
+        "selected_tree": null,
+        "settle_post_draw_frames": 600,
+        "target": [
+          -14.3999996185303,
+          1.70000004768372,
+          -86.0
+        ]
+      },
+      "dlss_available": true,
+      "dlss_mode": 6,
+      "driver": "vulkan",
+      "engine": {
+        "build": "custom_build",
+        "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+        "hex": 264192,
+        "major": 4,
+        "minor": 8,
+        "patch": 0,
+        "status": "beta1",
+        "string": "4.8-beta1 (custom_build)",
+        "timestamp": 1793020156
+      },
+      "engine_frames_drawn": 3493,
+      "environments": [
+        {
+          "ddgi": false,
+          "denoiser": 1,
+          "path": "/root/SkateGame/@WorldEnvironment@318",
+          "pt": true,
+          "samples_per_pixel": 1
+        }
+      ],
+      "fg_status": {
+        "available": true,
+        "eligible": false,
+        "reason": "no_request",
+        "rendered_3d_views": 2,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 1
+      },
+      "game": "skate",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "map": 0,
+      "name": "left_near_revisit",
+      "native_mode": 0,
+      "paused": false,
+      "phase": 2,
+      "phase_time": 50.9999999999984,
+      "physics": "Jolt Physics",
+      "players": [
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            -0.898999273777008,
+            0.0507499612867832,
+            -0.434999704360962
+          ],
+          "camera_fov": 65.0,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera_position": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "fake": true,
+          "id": 1,
+          "selected_for_override": true,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392"
+        },
+        {
+          "body_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera_forward": [
+            0.0613834671676159,
+            -0.161653429269791,
+            -0.984936654567719
+          ],
+          "camera_fov": 67.0766143798828,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "camera_position": [
+            4.80679607391357,
+            -11.6849517822266,
+            -303.405029296875
+          ],
+          "fake": true,
+          "id": 2,
+          "selected_for_override": false,
+          "viewport_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437"
+        }
+      ],
+      "png": {
+        "file": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\capture/left_near_revisit.png",
+        "height": 900,
+        "sha256": "098b4a0681a3bfe270ad52277739bf137a9a55c76850ac78a6a7b63875be9ccf",
+        "width": 1600
+      },
+      "post_draw_samples": 3494,
+      "process_environment": {
+        "APPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\roaming",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1",
+        "LOCALAPPDATA": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\local",
+        "RS_TEST_MODE": "1",
+        "TEMP": "<evidence>\\harness\\runs\\a73826e8c0-20261026T134109Z-fbfa36\\cases\\skate0-pt_rr-p2\\profile\\tmp",
+        "VK_INSTANCE_LAYERS": ""
+      },
+      "rendering_method": "forward_plus",
+      "requested_players": 2,
+      "rr_denoiser": 1,
+      "scope": "Real PLAY plus controlled first-player camera poses; other cameras remain game-owned. Not natural-camera/gameplay completion or performance evidence",
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 2,
+        "preset": 0,
+        "sharpness": 0,
+        "upscale": 7
+      },
+      "ticks": 120,
+      "user_data_dir": "<evidence>/harness/runs/a73826e8c0-20261026T134109Z-fbfa36/cases/skate0-pt_rr-p2/profile/roaming/Godot/app_userdata/Regina Sports",
+      "viewports": [
+        {
+          "camera": false,
+          "camera_path": "",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            1600.0,
+            900.0
+          ],
+          "tlas_instances": 0,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        },
+        {
+          "camera": true,
+          "camera_path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+          "disable_3d": false,
+          "frame_generation": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "sharpness": 0.0,
+          "size": [
+            796.0,
+            896.0
+          ],
+          "tlas_instances": 1976,
+          "xr": false
+        }
+      ]
+    }
+  ],
+  "status": "COMPLETE",
+  "trajectory": [
+    {
+      "frame": 434,
+      "phase": 2,
+      "phase_time": 0.0166666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.30042469501495,
+            1.89999997615814,
+            0.598973095417023
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.30042469501495,
+            1.89999997615814,
+            0.598973095417023
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 449,
+      "phase": 2,
+      "phase_time": 0.266666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.44143521785736,
+            1.89999997615814,
+            0.480482429265976
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.44143521785736,
+            1.89999997615814,
+            0.480482429265976
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 464,
+      "phase": 2,
+      "phase_time": 0.516666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.68450462818146,
+            1.89999997615814,
+            0.061629880219698
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.68450462818146,
+            1.89999997615814,
+            0.061629880219698
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 479,
+      "phase": 2,
+      "phase_time": 0.766666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.83226919174194,
+            1.89999997615814,
+            -0.454616844654083
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.83226919174194,
+            1.89999997615814,
+            -0.454616844654083
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 494,
+      "phase": 2,
+      "phase_time": 1.01666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.80573904514313,
+            1.89999997615814,
+            -1.18103170394897
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 509,
+      "phase": 2,
+      "phase_time": 1.26666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.65822803974152,
+            1.89999997615814,
+            -2.01230239868164
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 524,
+      "phase": 2,
+      "phase_time": 1.51666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.43442630767822,
+            1.89999997615814,
+            -3.00084757804871
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 539,
+      "phase": 2,
+      "phase_time": 1.76666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.17338573932648,
+            1.89999997615814,
+            -4.16139888763428
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 554,
+      "phase": 2,
+      "phase_time": 2.01666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.917342960834503,
+            1.89999997615814,
+            -5.43433094024658
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 569,
+      "phase": 2,
+      "phase_time": 2.26666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.677279889583588,
+            1.89999997615814,
+            -6.93322944641113
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 584,
+      "phase": 2,
+      "phase_time": 2.51666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.478436261415482,
+            1.89999997615814,
+            -8.4844446182251
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 599,
+      "phase": 2,
+      "phase_time": 2.76666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.325651168823242,
+            1.89999997615814,
+            -10.0404767990112
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 614,
+      "phase": 2,
+      "phase_time": 3.01666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.18619404733181,
+            2.13177704811096,
+            -12.0369853973389
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 629,
+      "phase": 2,
+      "phase_time": 3.26666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0908546522259712,
+            2.26972007751465,
+            -14.0527582168579
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 644,
+      "phase": 2,
+      "phase_time": 3.51666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0434894897043705,
+            2.32046675682068,
+            -15.93967628479
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 659,
+      "phase": 2,
+      "phase_time": 3.76666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0206558927893639,
+            2.33913540840149,
+            -17.7663345336914
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 674,
+      "phase": 2,
+      "phase_time": 4.01666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.00977940019220114,
+            2.34600305557251,
+            -19.5460510253906
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 689,
+      "phase": 2,
+      "phase_time": 4.26666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.00462384382262826,
+            2.34852933883667,
+            -21.281400680542
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 704,
+      "phase": 2,
+      "phase_time": 4.51666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.00218501244671643,
+            2.34945869445801,
+            -22.9728755950928
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 719,
+      "phase": 2,
+      "phase_time": 4.76666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.00103229691740125,
+            2.34980082511902,
+            -24.6205902099609
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 734,
+      "phase": 2,
+      "phase_time": 5.01666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.000487656070617959,
+            2.35730051994324,
+            -26.2165851593018
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 749,
+      "phase": 2,
+      "phase_time": 5.26666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.000230358986300416,
+            2.21106624603271,
+            -27.7946395874023
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 764,
+      "phase": 2,
+      "phase_time": 5.51666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.135859861969948,
+            2.01443481445312,
+            -29.3407039642334
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 779,
+      "phase": 2,
+      "phase_time": 5.76666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.42840588092804,
+            1.94209814071655,
+            -30.8745555877686
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 794,
+      "phase": 2,
+      "phase_time": 6.01666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.399885386228561,
+            1.91548717021942,
+            -32.3998908996582
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 809,
+      "phase": 2,
+      "phase_time": 6.26666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -0.128724485635757,
+            1.90569746494293,
+            -33.8500061035156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 824,
+      "phase": 2,
+      "phase_time": 6.51666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.09481084346771,
+            1.90167284011841,
+            -35.3291625976562
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 839,
+      "phase": 2,
+      "phase_time": 6.76666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.16277980804443,
+            1.8633486032486,
+            -36.818920135498
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 854,
+      "phase": 2,
+      "phase_time": 7.01666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.15403509140015,
+            1.79279172420502,
+            -38.3884887695312
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 869,
+      "phase": 2,
+      "phase_time": 7.26666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.98069930076599,
+            1.70230937004089,
+            -40.1026802062988
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 884,
+      "phase": 2,
+      "phase_time": 7.51666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.67153549194336,
+            1.59749436378479,
+            -42.1696968078613
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 899,
+      "phase": 2,
+      "phase_time": 7.76666666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.17119359970093,
+            1.48653936386108,
+            -44.3697128295898
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 914,
+      "phase": 2,
+      "phase_time": 8.01666666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.50397300720215,
+            1.37872612476349,
+            -46.6350059509277
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 929,
+      "phase": 2,
+      "phase_time": 8.26666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.71530342102051,
+            1.5085129737854,
+            -48.9593658447266
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 944,
+      "phase": 2,
+      "phase_time": 8.51666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.84049558639526,
+            1.88105022907257,
+            -51.1871223449707
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 959,
+      "phase": 2,
+      "phase_time": 8.76666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.91157722473145,
+            2.23127889633179,
+            -53.3460235595703
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 974,
+      "phase": 2,
+      "phase_time": 9.01666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.95431280136108,
+            2.15038394927979,
+            -55.4919548034668
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 989,
+      "phase": 2,
+      "phase_time": 9.26666666666671,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.98754453659058,
+            1.47943103313446,
+            -57.625186920166
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1004,
+      "phase": 2,
+      "phase_time": 9.51666666666672,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.05368947982788,
+            0.965224802494049,
+            -59.7665214538574
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1019,
+      "phase": 2,
+      "phase_time": 9.76666666666673,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.20224285125732,
+            0.710394024848938,
+            -61.8207092285156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1034,
+      "phase": 2,
+      "phase_time": 10.0166666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.04955387115479,
+            0.569598019123077,
+            -63.823413848877
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1049,
+      "phase": 2,
+      "phase_time": 10.2666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.28214073181152,
+            0.478473901748657,
+            -65.6865234375
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1064,
+      "phase": 2,
+      "phase_time": 10.5166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.40935468673706,
+            0.498991072177887,
+            -66.9787979125977
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1079,
+      "phase": 2,
+      "phase_time": 10.7666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.31697607040405,
+            0.420151114463806,
+            -66.9505920410156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1094,
+      "phase": 2,
+      "phase_time": 11.0166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.26862525939941,
+            0.44888699054718,
+            -67.0209045410156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1109,
+      "phase": 2,
+      "phase_time": 11.2666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.17109823226929,
+            0.458114832639694,
+            -67.1133193969727
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1124,
+      "phase": 2,
+      "phase_time": 11.5166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.06014680862427,
+            0.466704994440079,
+            -67.2165451049805
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1139,
+      "phase": 2,
+      "phase_time": 11.7666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.94632244110107,
+            0.474928706884384,
+            -67.3218765258789
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1154,
+      "phase": 2,
+      "phase_time": 12.0166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.83564519882202,
+            0.482971429824829,
+            -67.4243927001953
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1169,
+      "phase": 2,
+      "phase_time": 12.2666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.57240390777588,
+            0.371012359857559,
+            -69.658317565918
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1184,
+      "phase": 2,
+      "phase_time": 12.5166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.16761291027069,
+            0.194683581590652,
+            -71.795036315918
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1199,
+      "phase": 2,
+      "phase_time": 12.7666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.36907434463501,
+            0.0901291146874428,
+            -73.1174087524414
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1214,
+      "phase": 2,
+      "phase_time": 13.0166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.19160556793213,
+            0.0112530309706926,
+            -74.3668212890625
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1229,
+      "phase": 2,
+      "phase_time": 13.2666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.95966744422913,
+            -0.0599535033106804,
+            -75.6109237670898
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1244,
+      "phase": 2,
+      "phase_time": 13.5166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.76313734054565,
+            -0.137072071433067,
+            -77.0618515014648
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1259,
+      "phase": 2,
+      "phase_time": 13.7666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            5.5255012512207,
+            -0.223168954253197,
+            -78.7156372070312
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1274,
+      "phase": 2,
+      "phase_time": 14.0166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            6.14855003356934,
+            -0.313948571681976,
+            -80.4767150878906
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1289,
+      "phase": 2,
+      "phase_time": 14.266666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            6.61250877380371,
+            -0.407391548156738,
+            -82.3132781982422
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1304,
+      "phase": 2,
+      "phase_time": 14.516666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            6.93341493606567,
+            -0.327092975378036,
+            -84.2017059326172
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1319,
+      "phase": 2,
+      "phase_time": 14.766666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.2223482131958,
+            -0.182503461837769,
+            -86.1132659912109
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1334,
+      "phase": 2,
+      "phase_time": 15.016666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.42524385452271,
+            -0.256024390459061,
+            -88.0034027099609
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1349,
+      "phase": 2,
+      "phase_time": 15.266666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.51815938949585,
+            -0.341048061847687,
+            -89.8453674316406
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1364,
+      "phase": 2,
+      "phase_time": 15.516666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.56147956848145,
+            -0.428427785634995,
+            -91.6310501098633
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1379,
+      "phase": 2,
+      "phase_time": 15.766666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.58183145523071,
+            -0.514798581600189,
+            -93.3581924438477
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1394,
+      "phase": 2,
+      "phase_time": 16.016666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59142255783081,
+            -0.598922610282898,
+            -95.0261764526367
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1409,
+      "phase": 2,
+      "phase_time": 16.266666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59594917297363,
+            -0.680344581604004,
+            -96.6348724365234
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1424,
+      "phase": 2,
+      "phase_time": 16.516666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.5980863571167,
+            -0.758896827697754,
+            -98.1842422485352
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1439,
+      "phase": 2,
+      "phase_time": 16.766666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59909582138062,
+            -0.834517657756805,
+            -99.6742630004883
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1454,
+      "phase": 2,
+      "phase_time": 17.016666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59957313537598,
+            -0.907184541225433,
+            -101.104942321777
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1469,
+      "phase": 2,
+      "phase_time": 17.266666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59979867935181,
+            -0.97688901424408,
+            -102.476287841797
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1484,
+      "phase": 2,
+      "phase_time": 17.516666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59990453720093,
+            -1.04362821578979,
+            -103.788276672363
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1499,
+      "phase": 2,
+      "phase_time": 17.7666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.5999550819397,
+            -1.10740089416504,
+            -105.04093170166
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1514,
+      "phase": 2,
+      "phase_time": 18.0166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.59997844696045,
+            -1.16820645332336,
+            -106.234237670898
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1529,
+      "phase": 2,
+      "phase_time": 18.2666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.60026407241821,
+            -1.22144484519958,
+            -107.34733581543
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1544,
+      "phase": 2,
+      "phase_time": 18.5166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.60526037216187,
+            -1.47638690471649,
+            -108.453170776367
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1559,
+      "phase": 2,
+      "phase_time": 18.7666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.83968591690063,
+            -1.69321632385254,
+            -109.601356506348
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1574,
+      "phase": 2,
+      "phase_time": 19.0166666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            8.16775226593018,
+            -1.81063222885132,
+            -111.021423339844
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1589,
+      "phase": 2,
+      "phase_time": 19.2666666666669,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            8.10279941558838,
+            -1.88669502735138,
+            -112.520141601562
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1604,
+      "phase": 2,
+      "phase_time": 19.5166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            7.52811574935913,
+            -1.94728255271912,
+            -113.888961791992
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1619,
+      "phase": 2,
+      "phase_time": 19.7666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            6.51300382614136,
+            -2.00938582420349,
+            -115.18968963623
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1634,
+      "phase": 2,
+      "phase_time": 20.0166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            5.24506568908691,
+            -2.08283448219299,
+            -116.540687561035
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1649,
+      "phase": 2,
+      "phase_time": 20.2666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.97590613365173,
+            -2.16570854187012,
+            -117.943572998047
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1664,
+      "phase": 2,
+      "phase_time": 20.5166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.91355419158936,
+            -2.25597739219666,
+            -119.487106323242
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1679,
+      "phase": 2,
+      "phase_time": 20.7666666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.20365595817566,
+            -2.54987597465515,
+            -121.259086608887
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1694,
+      "phase": 2,
+      "phase_time": 21.0166666666668,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.66450643539429,
+            -3.03823280334473,
+            -123.188179016113
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1709,
+      "phase": 2,
+      "phase_time": 21.2666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.20140218734741,
+            -3.43212842941284,
+            -125.344261169434
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1724,
+      "phase": 2,
+      "phase_time": 21.5166666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.826096892356873,
+            -3.66790890693665,
+            -127.61402130127
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1739,
+      "phase": 2,
+      "phase_time": 21.7666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.546529710292816,
+            -3.77679681777954,
+            -129.910949707031
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1754,
+      "phase": 2,
+      "phase_time": 22.0166666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.350020945072174,
+            -3.83894538879395,
+            -132.213684082031
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1769,
+      "phase": 2,
+      "phase_time": 22.2666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.217926323413849,
+            -3.88383316993713,
+            -134.514953613281
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1784,
+      "phase": 2,
+      "phase_time": 22.5166666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.132299050688744,
+            -3.92230129241943,
+            -136.811508178711
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1799,
+      "phase": 2,
+      "phase_time": 22.7666666666667,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0784728229045868,
+            -3.95833873748779,
+            -139.10188293457
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1814,
+      "phase": 2,
+      "phase_time": 23.0166666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0455348119139671,
+            -3.99341154098511,
+            -141.385437011719
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1829,
+      "phase": 2,
+      "phase_time": 23.2666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0258628353476524,
+            -4.02806091308594,
+            -143.661972045898
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1844,
+      "phase": 2,
+      "phase_time": 23.5166666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0143480226397514,
+            -3.87811326980591,
+            -145.940887451172
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1859,
+      "phase": 2,
+      "phase_time": 23.7666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.044010154902935,
+            -3.72743105888367,
+            -146.386093139648
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1874,
+      "phase": 2,
+      "phase_time": 24.0166666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0123541653156281,
+            -3.70546460151672,
+            -146.518829345703
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1889,
+      "phase": 2,
+      "phase_time": 24.2666666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0120567660778761,
+            -3.68539977073669,
+            -146.652221679688
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1904,
+      "phase": 2,
+      "phase_time": 24.5166666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0117364209145308,
+            -3.66614890098572,
+            -146.811370849609
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1919,
+      "phase": 2,
+      "phase_time": 24.7666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0114094316959381,
+            -3.64924693107605,
+            -146.982315063477
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1934,
+      "phase": 2,
+      "phase_time": 25.0166666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0110864760354161,
+            -3.63373374938965,
+            -147.152282714844
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1949,
+      "phase": 2,
+      "phase_time": 25.2666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0107715511694551,
+            -3.61856746673584,
+            -147.317138671875
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1964,
+      "phase": 2,
+      "phase_time": 25.5166666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.31706809997559,
+            -3.97755312919617,
+            -153.370132446289
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1979,
+      "phase": 2,
+      "phase_time": 25.7666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.20614528656006,
+            -4.13109874725342,
+            -155.780838012695
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 1994,
+      "phase": 2,
+      "phase_time": 26.0166666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.54639458656311,
+            -4.20091533660889,
+            -157.469146728516
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2009,
+      "phase": 2,
+      "phase_time": 26.2666666666665,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.28338623046875,
+            -4.23368978500366,
+            -158.921371459961
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2024,
+      "phase": 2,
+      "phase_time": 26.5166666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.47440624237061,
+            -4.25300693511963,
+            -160.128234863281
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2039,
+      "phase": 2,
+      "phase_time": 26.7666666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.19388425350189,
+            -4.26970386505127,
+            -161.204956054688
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2054,
+      "phase": 2,
+      "phase_time": 27.0166666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.236070990562439,
+            -4.2869668006897,
+            -162.199722290039
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2069,
+      "phase": 2,
+      "phase_time": 27.2666666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.67071402072906,
+            -4.30582189559937,
+            -163.20588684082
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2084,
+      "phase": 2,
+      "phase_time": 27.5166666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.09899282455444,
+            -4.32825469970703,
+            -164.379867553711
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2099,
+      "phase": 2,
+      "phase_time": 27.7666666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.85568165779114,
+            -4.30797386169434,
+            -165.17414855957
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2114,
+      "phase": 2,
+      "phase_time": 28.0166666666664,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.91623759269714,
+            -4.31653451919556,
+            -165.127914428711
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2129,
+      "phase": 2,
+      "phase_time": 28.2666666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.94218301773071,
+            -4.30631160736084,
+            -165.144912719727
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2144,
+      "phase": 2,
+      "phase_time": 28.5166666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.9799952507019,
+            -4.29413080215454,
+            -165.142684936523
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2159,
+      "phase": 2,
+      "phase_time": 28.7666666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.01837968826294,
+            -4.28218364715576,
+            -165.13981628418
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2174,
+      "phase": 2,
+      "phase_time": 29.0166666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.05641460418701,
+            -4.27046489715576,
+            -165.136764526367
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2189,
+      "phase": 2,
+      "phase_time": 29.2666666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.09367990493774,
+            -4.25897121429443,
+            -165.133560180664
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2204,
+      "phase": 2,
+      "phase_time": 29.5166666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.98910355567932,
+            -4.32141017913818,
+            -166.434555053711
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2219,
+      "phase": 2,
+      "phase_time": 29.7666666666663,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.45762395858765,
+            -4.37398958206177,
+            -167.593566894531
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2234,
+      "phase": 2,
+      "phase_time": 30.0166666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.84282541275024,
+            -4.4034366607666,
+            -168.655532836914
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2249,
+      "phase": 2,
+      "phase_time": 30.2666666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            5.00662708282471,
+            -4.42706251144409,
+            -169.947891235352
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2264,
+      "phase": 2,
+      "phase_time": 30.5166666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            5.02575445175171,
+            -4.44889879226685,
+            -171.310363769531
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2279,
+      "phase": 2,
+      "phase_time": 30.7666666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.96652221679688,
+            -4.4700756072998,
+            -172.684585571289
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2294,
+      "phase": 2,
+      "phase_time": 31.0166666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.85090923309326,
+            -4.49262952804565,
+            -174.208572387695
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2309,
+      "phase": 2,
+      "phase_time": 31.2666666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.69670104980469,
+            -4.51761102676392,
+            -175.90788269043
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2324,
+      "phase": 2,
+      "phase_time": 31.5166666666662,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.53477382659912,
+            -4.5434832572937,
+            -177.640777587891
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2339,
+      "phase": 2,
+      "phase_time": 31.7666666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.3745813369751,
+            -4.56984376907349,
+            -179.370422363281
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2354,
+      "phase": 2,
+      "phase_time": 32.0166666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.19394111633301,
+            -4.59902238845825,
+            -181.322189331055
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2369,
+      "phase": 2,
+      "phase_time": 32.2666666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.00822496414185,
+            -4.62992382049561,
+            -183.398681640625
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2384,
+      "phase": 2,
+      "phase_time": 32.5166666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.83171701431274,
+            -4.66140842437744,
+            -185.495986938477
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2399,
+      "phase": 2,
+      "phase_time": 32.7666666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.66420388221741,
+            -4.69305562973022,
+            -187.593475341797
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2414,
+      "phase": 2,
+      "phase_time": 33.0166666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.55880260467529,
+            -4.72450399398804,
+            -189.685501098633
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2429,
+      "phase": 2,
+      "phase_time": 33.2666666666661,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.50163865089417,
+            -4.75377750396729,
+            -191.743835449219
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2444,
+      "phase": 2,
+      "phase_time": 33.516666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.08230352401733,
+            -4.78020763397217,
+            -193.735000610352
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2459,
+      "phase": 2,
+      "phase_time": 33.766666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.22615528106689,
+            -4.80559635162354,
+            -195.594207763672
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2474,
+      "phase": 2,
+      "phase_time": 34.016666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.12222051620483,
+            -4.83155488967896,
+            -197.334182739258
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2489,
+      "phase": 2,
+      "phase_time": 34.266666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -0.0361057966947556,
+            -4.85880088806152,
+            -199.037322998047
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2504,
+      "phase": 2,
+      "phase_time": 34.516666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.12004172801971,
+            -4.69570112228394,
+            -200.781372070312
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2519,
+      "phase": 2,
+      "phase_time": 34.766666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.00899076461792,
+            -4.21292114257812,
+            -202.50114440918
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2534,
+      "phase": 2,
+      "phase_time": 35.016666666666,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.70185613632202,
+            -3.82001161575317,
+            -204.259658813477
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2549,
+      "phase": 2,
+      "phase_time": 35.2666666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.27351069450378,
+            -3.89293837547302,
+            -206.054702758789
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2564,
+      "phase": 2,
+      "phase_time": 35.5166666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.80280065536499,
+            -4.46309566497803,
+            -207.862579345703
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2579,
+      "phase": 2,
+      "phase_time": 35.7666666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.32983255386353,
+            -4.84040451049805,
+            -209.610427856445
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2594,
+      "phase": 2,
+      "phase_time": 36.0166666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.78521060943604,
+            -5.03891277313232,
+            -211.619766235352
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2609,
+      "phase": 2,
+      "phase_time": 36.2666666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.98558139801025,
+            -5.19586706161499,
+            -213.78044128418
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2624,
+      "phase": 2,
+      "phase_time": 36.5166666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.95584535598755,
+            -5.33847141265869,
+            -215.999923706055
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2639,
+      "phase": 2,
+      "phase_time": 36.7666666666659,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.80093097686768,
+            -5.47690486907959,
+            -218.247329711914
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2654,
+      "phase": 2,
+      "phase_time": 37.0166666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.60992527008057,
+            -5.61486387252808,
+            -220.518127441406
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2669,
+      "phase": 2,
+      "phase_time": 37.2666666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.4335036277771,
+            -5.73737287521362,
+            -222.817153930664
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2684,
+      "phase": 2,
+      "phase_time": 37.5166666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.29036951065063,
+            -5.47350740432739,
+            -225.169067382812
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2699,
+      "phase": 2,
+      "phase_time": 37.7666666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.19084167480469,
+            -4.37414312362671,
+            -227.359222412109
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2714,
+      "phase": 2,
+      "phase_time": 38.0166666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.12348699569702,
+            -3.0822274684906,
+            -229.455703735352
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2729,
+      "phase": 2,
+      "phase_time": 38.2666666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.07295513153076,
+            -2.1540584564209,
+            -231.534042358398
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2744,
+      "phase": 2,
+      "phase_time": 38.5166666666658,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.03069067001343,
+            -1.79428732395172,
+            -233.608932495117
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2759,
+      "phase": 2,
+      "phase_time": 38.7666666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.98778963088989,
+            -2.07819986343384,
+            -235.683044433594
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2774,
+      "phase": 2,
+      "phase_time": 39.0166666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.91765809059143,
+            -3.03349590301514,
+            -237.754928588867
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2789,
+      "phase": 2,
+      "phase_time": 39.2666666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.88983058929443,
+            -4.67036151885986,
+            -239.82405090332
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2804,
+      "phase": 2,
+      "phase_time": 39.5166666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.98534655570984,
+            -6.11012506484985,
+            -241.885162353516
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2819,
+      "phase": 2,
+      "phase_time": 39.7666666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.29468679428101,
+            -6.72121524810791,
+            -243.888778686523
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2834,
+      "phase": 2,
+      "phase_time": 40.0166666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.79723310470581,
+            -7.01957845687866,
+            -245.863723754883
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2849,
+      "phase": 2,
+      "phase_time": 40.2666666666657,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.38030290603638,
+            -7.2063946723938,
+            -247.841400146484
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2864,
+      "phase": 2,
+      "phase_time": 40.5166666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.93562126159668,
+            -7.35411405563354,
+            -249.851119995117
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2879,
+      "phase": 2,
+      "phase_time": 40.7666666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.0,
+            11.8075761795044,
+            -165.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.3988938331604,
+            -7.33970642089844,
+            -251.910568237305
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2894,
+      "phase": 2,
+      "phase_time": 41.0166666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.88712739944458,
+            -7.20130348205566,
+            -254.015106201172
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2909,
+      "phase": 2,
+      "phase_time": 41.2666666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.26117420196533,
+            -7.27677440643311,
+            -256.121154785156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2924,
+      "phase": 2,
+      "phase_time": 41.5166666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.44015979766846,
+            -7.38206100463867,
+            -258.198059082031
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2939,
+      "phase": 2,
+      "phase_time": 41.7666666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.52467107772827,
+            -7.49632453918457,
+            -260.213531494141
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2954,
+      "phase": 2,
+      "phase_time": 42.0166666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.56445074081421,
+            -7.61189985275269,
+            -262.165344238281
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2969,
+      "phase": 2,
+      "phase_time": 42.2666666666656,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.5832142829895,
+            -7.72596788406372,
+            -264.062683105469
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2984,
+      "phase": 2,
+      "phase_time": 42.5166666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59207201004028,
+            -7.83749198913574,
+            -265.907165527344
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 2999,
+      "phase": 2,
+      "phase_time": 42.7666666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59625577926636,
+            -7.94608879089355,
+            -267.699096679688
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3014,
+      "phase": 2,
+      "phase_time": 43.0166666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59823131561279,
+            -8.0516185760498,
+            -269.438537597656
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3029,
+      "phase": 2,
+      "phase_time": 43.2666666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59916400909424,
+            -8.15402793884277,
+            -271.12548828125
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3044,
+      "phase": 2,
+      "phase_time": 43.5166666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59960508346558,
+            -8.2533016204834,
+            -272.760009765625
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3059,
+      "phase": 2,
+      "phase_time": 43.7666666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.59981298446655,
+            -8.34943008422852,
+            -274.342010498047
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3074,
+      "phase": 2,
+      "phase_time": 44.0166666666655,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.5999116897583,
+            -8.44241046905518,
+            -275.871520996094
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3089,
+      "phase": 2,
+      "phase_time": 44.2666666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.5999584197998,
+            -8.53224277496338,
+            -277.348571777344
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3104,
+      "phase": 2,
+      "phase_time": 44.5166666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.60101652145386,
+            -8.6145486831665,
+            -278.766967773438
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3119,
+      "phase": 2,
+      "phase_time": 44.7666666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.65462923049927,
+            -8.77338981628418,
+            -280.148284912109
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3134,
+      "phase": 2,
+      "phase_time": 45.0166666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.81047964096069,
+            -9.11687278747559,
+            -281.524139404297
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3149,
+      "phase": 2,
+      "phase_time": 45.2666666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -8.03006553649902,
+            -9.30185031890869,
+            -283.066467285156
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3164,
+      "phase": 2,
+      "phase_time": 45.5166666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.88446664810181,
+            -9.4114408493042,
+            -284.748626708984
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3179,
+      "phase": 2,
+      "phase_time": 45.7666666666654,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -7.16189908981323,
+            -9.48763656616211,
+            -286.295837402344
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3194,
+      "phase": 2,
+      "phase_time": 46.0166666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.02019166946411,
+            -9.55332851409912,
+            -287.588470458984
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3209,
+      "phase": 2,
+      "phase_time": 46.2666666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.02723598480225,
+            -9.54856491088867,
+            -287.597442626953
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3224,
+      "phase": 2,
+      "phase_time": 46.5166666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.01019239425659,
+            -9.52922058105469,
+            -287.599365234375
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3239,
+      "phase": 2,
+      "phase_time": 46.7666666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -6.00472974777222,
+            -9.51751232147217,
+            -287.603668212891
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3254,
+      "phase": 2,
+      "phase_time": 47.0166666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.99927282333374,
+            -9.50602531433105,
+            -287.607757568359
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3269,
+      "phase": 2,
+      "phase_time": 47.2666666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.99390411376953,
+            -9.49476528167725,
+            -287.611419677734
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3284,
+      "phase": 2,
+      "phase_time": 47.5166666666653,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.98866367340088,
+            -9.48372173309326,
+            -287.615081787109
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3299,
+      "phase": 2,
+      "phase_time": 47.7666666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -5.67804002761841,
+            -9.51269245147705,
+            -288.026702880859
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3314,
+      "phase": 2,
+      "phase_time": 48.0166666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -4.26906967163086,
+            -9.64553260803223,
+            -288.910766601562
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3329,
+      "phase": 2,
+      "phase_time": 48.2666666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.5339252948761,
+            -9.72779273986816,
+            -289.766723632812
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3344,
+      "phase": 2,
+      "phase_time": 48.5166666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -3.0750937461853,
+            -9.78742504119873,
+            -290.754760742188
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3359,
+      "phase": 2,
+      "phase_time": 48.7666666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.3955659866333,
+            -9.84392642974854,
+            -291.807769775391
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3374,
+      "phase": 2,
+      "phase_time": 49.0166666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -1.45208978652954,
+            -9.90693950653076,
+            -292.881317138672
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3389,
+      "phase": 2,
+      "phase_time": 49.2666666666652,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -0.401947557926178,
+            -9.97658348083496,
+            -293.934936523438
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3404,
+      "phase": 2,
+      "phase_time": 49.5166666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            0.656189620494843,
+            -9.97495460510254,
+            -295.027191162109
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3419,
+      "phase": 2,
+      "phase_time": 49.7666666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            1.61432290077209,
+            -9.6637487411499,
+            -296.221740722656
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3434,
+      "phase": 2,
+      "phase_time": 50.0166666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            2.67936491966248,
+            -9.7430944442749,
+            -297.472961425781
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3449,
+      "phase": 2,
+      "phase_time": 50.2666666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            3.78818273544312,
+            -10.2236051559448,
+            -298.681671142578
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3464,
+      "phase": 2,
+      "phase_time": 50.5166666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.40151882171631,
+            -10.6838855743408,
+            -300.128051757812
+          ],
+          "id": 2
+        }
+      ]
+    },
+    {
+      "frame": 3479,
+      "phase": 2,
+      "phase_time": 50.7666666666651,
+      "players": [
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            -2.0,
+            1.0,
+            -80.0
+          ],
+          "id": 1
+        },
+        {
+          "body": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "camera": [
+            4.70798683166504,
+            -11.1531085968018,
+            -301.775360107422
+          ],
+          "id": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: menu/main_menu, map=0, players=menu
+Passed: plane/plane_game, map=0, players=1
+Passed: archery/archery_game, map=0, players=1
+Passed: bowling/bowling_game, map=0, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: skate/skate_game, map=0, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: ski/ski_game, map=0, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: ski/ski_game, map=1, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: ski/ski_game, map=2, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: ski/ski_game, map=3, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: basketball/basketball_game, map=0, players=1
+Passed: basketball/basketball_game, map=0, players=2
+Passed: basketball/basketball_game, map=0, players=4
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: basketball/basketball_game, map=1, players=1
+Warning: Godot reported retained resources or objects at forced --quit-after exit; startup check does not verify clean shutdown.
+Passed: basketball/basketball_game, map=1, players=2
+Passed: basketball/basketball_game, map=1, players=4
+Passed: golf/golf_game, map=0, players=1
+Passed: golf/golf_game, map=1, players=1

@@ -1,0 +1,601 @@
+{
+  "all_checks_passed": true,
+  "phases": [
+    {
+      "actual_tlas_instances": 1,
+      "config_passed": true,
+      "drawn_frame_delta": 299,
+      "elapsed_ms": 8756,
+      "expected_mm_path": "expanded",
+      "expected_tlas_instances": 1,
+      "image_save_error": 0,
+      "kind": "strips",
+      "material": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "emission_enabled": false,
+        "vertex_color_is_srgb": false,
+        "vertex_color_use_as_albedo": true
+      },
+      "phase": "00_mesh_green_white_vertex_strips",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "pt": true,
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0
+      },
+      "samples": [
+        {
+          "expected": "dominant_channel_1",
+          "in_bounds": true,
+          "label": "green_strip",
+          "passed": true,
+          "pixel": [
+            261,
+            180
+          ],
+          "rgb": [
+            0.164705887436867,
+            0.545098066329956,
+            0.250980406999588
+          ],
+          "world": [
+            -0.699999988079071,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "lit_neutral_white_strip",
+          "in_bounds": true,
+          "label": "white_strip",
+          "passed": true,
+          "pixel": [
+            378,
+            180
+          ],
+          "rgb": [
+            0.600000023841858,
+            0.600000023841858,
+            0.600000023841858
+          ],
+          "world": [
+            0.699999988079071,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "in_bounds": true,
+          "label": "background",
+          "passed": true,
+          "pixel": [
+            597,
+            263
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            3.29999995231628,
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 300
+    },
+    {
+      "actual_tlas_instances": 3,
+      "config_passed": true,
+      "drawn_frame_delta": 180,
+      "elapsed_ms": 11755,
+      "expected_mm_path": "expanded",
+      "expected_tlas_instances": 3,
+      "image_save_error": 0,
+      "kind": "rgb",
+      "material": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "emission_enabled": false,
+        "vertex_color_is_srgb": false,
+        "vertex_color_use_as_albedo": true
+      },
+      "phase": "01_multimesh_rgb_linear",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "pt": true,
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0
+      },
+      "samples": [
+        {
+          "expected": "dominant_channel_0",
+          "in_bounds": true,
+          "label": "instance_0",
+          "passed": true,
+          "pixel": [
+            152,
+            125
+          ],
+          "rgb": [
+            0.662745118141174,
+            0.0588235296308994,
+            0.0588235296308994
+          ],
+          "world": [
+            -2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_1",
+          "in_bounds": true,
+          "label": "instance_1",
+          "passed": true,
+          "pixel": [
+            320,
+            125
+          ],
+          "rgb": [
+            0.0549019612371922,
+            0.662745118141174,
+            0.0549019612371922
+          ],
+          "world": [
+            0.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "dominant_channel_2",
+          "in_bounds": true,
+          "label": "instance_2",
+          "passed": true,
+          "pixel": [
+            487,
+            125
+          ],
+          "rgb": [
+            0.0588235296308994,
+            0.0588235296308994,
+            0.662745118141174
+          ],
+          "world": [
+            2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "in_bounds": true,
+          "label": "background",
+          "passed": true,
+          "pixel": [
+            597,
+            263
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            3.29999995231628,
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 180
+    },
+    {
+      "actual_tlas_instances": 4,
+      "config_passed": true,
+      "drawn_frame_delta": 180,
+      "elapsed_ms": 14771,
+      "expected_mm_path": "expanded",
+      "expected_tlas_instances": 4,
+      "image_save_error": 0,
+      "kind": "constant",
+      "material": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "emission_enabled": false,
+        "vertex_color_is_srgb": false,
+        "vertex_color_use_as_albedo": true
+      },
+      "phase": "02_multimesh_midgray_linear",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "pt": true,
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0
+      },
+      "samples": [
+        {
+          "expected": "independent_non_vertex_color_reference_is_lit",
+          "in_bounds": true,
+          "label": "independent_hg0_reference",
+          "passed": true,
+          "pixel": [
+            320,
+            263
+          ],
+          "rgb": [
+            0.486274510622025,
+            0.486274510622025,
+            0.486274510622025
+          ],
+          "world": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_0",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            152,
+            125
+          ],
+          "rgb": [
+            0.486274510622025,
+            0.486274510622025,
+            0.486274510622025
+          ],
+          "world": [
+            -2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_1",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            320,
+            125
+          ],
+          "rgb": [
+            0.486274510622025,
+            0.486274510622025,
+            0.486274510622025
+          ],
+          "world": [
+            0.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_2",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            487,
+            125
+          ],
+          "rgb": [
+            0.486274510622025,
+            0.486274510622025,
+            0.486274510622025
+          ],
+          "world": [
+            2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "in_bounds": true,
+          "label": "background",
+          "passed": true,
+          "pixel": [
+            597,
+            263
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            3.29999995231628,
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 180
+    },
+    {
+      "actual_tlas_instances": 4,
+      "config_passed": true,
+      "drawn_frame_delta": 180,
+      "elapsed_ms": 22629,
+      "expected_mm_path": "expanded",
+      "expected_tlas_instances": 4,
+      "image_save_error": 0,
+      "kind": "constant",
+      "material": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "emission_enabled": false,
+        "vertex_color_is_srgb": true,
+        "vertex_color_use_as_albedo": true
+      },
+      "phase": "03_multimesh_midgray_srgb",
+      "phase_passed": true,
+      "pixels_passed": true,
+      "runtime": {
+        "api": "vulkan",
+        "api_version": "1.4.341",
+        "async_shader_compilation": false,
+        "ddgi": false,
+        "driver": [
+          "NVIDIA",
+          "32.0.16.1088"
+        ],
+        "engine": {
+          "build": "custom_build",
+          "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793020156
+        },
+        "fixture_sha256": "32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "pt": true,
+        "resolution": [
+          640,
+          360
+        ],
+        "rr": 0
+      },
+      "samples": [
+        {
+          "expected": "independent_non_vertex_color_reference_is_lit",
+          "in_bounds": true,
+          "label": "independent_hg0_reference",
+          "passed": true,
+          "pixel": [
+            320,
+            263
+          ],
+          "rgb": [
+            0.329411774873734,
+            0.329411774873734,
+            0.329411774873734
+          ],
+          "world": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_0",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            152,
+            125
+          ],
+          "rgb": [
+            0.329411774873734,
+            0.329411774873734,
+            0.329411774873734
+          ],
+          "world": [
+            -2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_1",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            320,
+            125
+          ],
+          "rgb": [
+            0.329411774873734,
+            0.329411774873734,
+            0.329411774873734
+          ],
+          "world": [
+            0.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "matches_independent_hg0_reference_within_0.045_per_channel",
+          "in_bounds": true,
+          "label": "instance_2",
+          "max_rgb_reference_error": 0.0,
+          "passed": true,
+          "pixel": [
+            487,
+            125
+          ],
+          "rgb": [
+            0.329411774873734,
+            0.329411774873734,
+            0.329411774873734
+          ],
+          "world": [
+            2.0,
+            0.649999976158142,
+            0.0
+          ]
+        },
+        {
+          "expected": "background_max_rgb_below_0.25",
+          "in_bounds": true,
+          "label": "background",
+          "passed": true,
+          "pixel": [
+            597,
+            263
+          ],
+          "rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world": [
+            3.29999995231628,
+            -1.0,
+            0.0
+          ]
+        }
+      ],
+      "waited_post_draws": 180
+    }
+  ],
+  "requested_exit_code": 0,
+  "runtime": {
+    "api": "vulkan",
+    "api_version": "1.4.341",
+    "async_shader_compilation": false,
+    "ddgi": false,
+    "driver": [
+      "NVIDIA",
+      "32.0.16.1088"
+    ],
+    "engine": {
+      "build": "custom_build",
+      "hash": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793020156
+    },
+    "fixture_sha256": "32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "pt": true,
+    "resolution": [
+      640,
+      360
+    ],
+    "rr": 0
+  }
+}

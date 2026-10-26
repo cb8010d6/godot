@@ -1,0 +1,53 @@
+{
+  "command": [
+    "<workspace>\\.venv\\Scripts\\python.exe",
+    "-B",
+    "tools/smoke_test.py",
+    "--godot",
+    "<workspace>\\toolchains\\godot472\\Godot_v4.7.2-stable_win64.exe",
+    "--players",
+    "4",
+    "--games",
+    "skate",
+    "ski",
+    "--map",
+    "0",
+    "--screenshots",
+    "--timeout",
+    "240",
+    "--output",
+    "<evidence>\\official472-rendered-p4"
+  ],
+  "cwd": "<game>",
+  "checkout_sha": "a0286a13517761b058cbf53286ad0c723d414fc2",
+  "worktree_status": " M PATHTRACER_TESTING.md\n M kb/log.md\n M kb/tooling/index.md\n M kb/tooling/pt-instance-builtins.md\n M servers/rendering/renderer_rd/forward_clustered/render_raytracing.cpp\n M servers/rendering/renderer_rd/forward_clustered/scene_shader_forward_clustered.cpp\n M servers/rendering/renderer_rd/forward_clustered/scene_shader_forward_clustered.h\n M servers/rendering/renderer_rd/shaders/raytracing/raytracing_custom_globals_inc.glsl\n?? kb/tooling/pt-opaque-standard-vertex-colors.md\n?? misc/pathtracer_test_project/opaque_color_regression/\n",
+  "command_input_binaries": [
+    {
+      "file": "<workspace>\\.venv\\Scripts\\python.exe",
+      "bytes": 274424,
+      "sha256": "0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14"
+    },
+    {
+      "file": "<workspace>\\toolchains\\godot472\\Godot_v4.7.2-stable_win64.exe",
+      "bytes": 180858888,
+      "sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T13:06:38.015138+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-official472-rendered-p4.log",
+  "pid": 25660,
+  "exit_code": 0,
+  "duration_seconds": 216.719,
+  "finished_utc": "2026-10-26T13:10:14.521053+00:00"
+}

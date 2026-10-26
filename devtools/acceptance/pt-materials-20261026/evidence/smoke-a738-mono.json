@@ -1,0 +1,30 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/test/smoke.ps1",
+    "-Mono"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T14:05:11.347186+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-smoke-mono-a738.log",
+  "pid": 29852,
+  "exit_code": 0,
+  "duration_seconds": 27.078,
+  "finished_utc": "2026-10-26T14:05:38.360983+00:00"
+}

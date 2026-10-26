@@ -1,0 +1,563 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.bcc08cc81 (2026-10-26 06:29:22 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.ReginaSports.0'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2241535249888
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Integrated
+Optional Vulkan device extension VK_EXT_fragment_density_map not found
+Optional Vulkan device extension VK_EXT_fragment_density_map2 not found
+Optional Vulkan device extension VK_QCOM_fragment_density_map_offset not found
+Optional Vulkan device extension VK_EXT_astc_decode_mode not found
+Optional Vulkan device extension VK_EXT_texture_compression_astc_hdr not found
+Optional Vulkan device extension VK_KHR_external_memory_fd not found
+Optional Vulkan device extension VK_EXT_debug_marker not found
+- Vulkan Fragment Shading Rate supported:
+  Pipeline fragment shading rate
+  Primitive fragment shading rate
+  Attachment fragment shading rate, min texel size: (16, 16), max texel size: (16, 16), max fragment size: (4, 4)
+- Vulkan Fragment Density Map not supported
+- Vulkan multiview supported:
+  max view count: 32
+  max instances: 134217727
+- Vulkan subgroup:
+  size: 32
+  min size: 32
+  max size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE, STAGE_RAYGEN_KHR, STAGE_ANY_HIT_KHR, STAGE_CLOSEST_HIT_KHR, STAGE_MISS_KHR, STAGE_INTERSECTION_KHR, STAGE_CALLABLE_KHR, STAGE_TASK_NV, STAGE_MESH_NV
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD, FEATURE_PARTITIONED_NV
+  quad operations in all stages
+- Vulkan Acceleration Structure supported
+  min acceleration structure scratch offset alignment: 128
+- Vulkan Raytracing supported
+  shader group handle size: 32
+  shader group handle alignment: 32
+  shader group handle size aligned: 32
+  shader group base alignment: 64
+Streamline Vulkan device features: privateData=1 presentId=1
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+Startup PSO cache (0.0 MiB)
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Creating VMA small objects pool for memory type index 1
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: 598aa4cf86192d866d408ded952b8f835cc39828511fde7f843247ee3d3c65f5
+Shader cache miss for CanvasSdfShaderRD/598aa4cf86192d866d408ded952b8f835cc39828511fde7f843247ee3d3c65f5/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkeletonShaderRD' (group 0) SHA256: f9198f38a39eb09edaa93af23561909dc4c85642cb4c578ba5f1acf3ffc3fbf9
+Shader cache miss for SkeletonShaderRD/f9198f38a39eb09edaa93af23561909dc4c85642cb4c578ba5f1acf3ffc3fbf9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SortShaderRD' (group 0) SHA256: 133924d6169d7ce0b8b21f2f101f52bea1fe9081f740df6fc4694cdeddcc3236
+Shader cache miss for SortShaderRD/133924d6169d7ce0b8b21f2f101f52bea1fe9081f740df6fc4694cdeddcc3236/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ParticlesShaderRD' (group 0) SHA256: ef543d423306833598f7d62a4fabc570fb214ca0501676ad963eb7ea68d0552f
+Shader cache miss for ParticlesShaderRD/ef543d423306833598f7d62a4fabc570fb214ca0501676ad963eb7ea68d0552f/07b5904b662900d90454c39c46885098de79aa4c
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: 02a46801f22d880290c701e54dcbbad47fef0f5ee87db80d69916f0866fe46ba
+Shader cache miss for ParticlesCopyShaderRD/02a46801f22d880290c701e54dcbbad47fef0f5ee87db80d69916f0866fe46ba/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasShaderRD' (group 0) SHA256: fd41380d2bac2e43cc71aeeaee2251e4f2de24f7818998b66cba7e1fbf5cec33
+Shader cache miss for CanvasShaderRD/fd41380d2bac2e43cc71aeeaee2251e4f2de24f7818998b66cba7e1fbf5cec33/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: 0c141e5b0326dc3ebdb9b6487c94e47579c45552f1d36227e45124e3ef6b9a1b
+Shader cache miss for CanvasOcclusionShaderRD/0c141e5b0326dc3ebdb9b6487c94e47579c45552f1d36227e45124e3ef6b9a1b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for CanvasShaderRD/fd41380d2bac2e43cc71aeeaee2251e4f2de24f7818998b66cba7e1fbf5cec33/90b96afad25c311837b639f3c9d81d610d9b7ee9
+Shader cache miss for CanvasShaderRD/fd41380d2bac2e43cc71aeeaee2251e4f2de24f7818998b66cba7e1fbf5cec33/8f9335de72e837eeead40640cc01fddc5baf5a7c
+Shader 'TexBlitShaderRD' (group 0) SHA256: aff6531c84d60df7aeb9852687d8922e9ef9da108314783a72f4ea0cff66428f
+Shader cache miss for TexBlitShaderRD/aff6531c84d60df7aeb9852687d8922e9ef9da108314783a72f4ea0cff66428f/1e8995c9eb0e9b0b053035999de68595c521a33e
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: be4ed233274ceac354a743a0e9404c5fd783a23c54403fc46a291c26d003af2c
+Shader cache miss for ClusterRenderShaderRD/be4ed233274ceac354a743a0e9404c5fd783a23c54403fc46a291c26d003af2c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: b2c4c80a75e90b95bb8d3a0177fd20af9db99a39e9f3d6bf53729aec73d787dc
+Shader cache miss for ClusterStoreShaderRD/b2c4c80a75e90b95bb8d3a0177fd20af9db99a39e9f3d6bf53729aec73d787dc/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: e4d5b3eabfbf5337f4eb1ed0e20fa0f50012fae725cd72945e713f46d96c31f4
+Shader cache miss for ClusterDebugShaderRD/e4d5b3eabfbf5337f4eb1ed0e20fa0f50012fae725cd72945e713f46d96c31f4/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: 633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: 7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: e4b685bcf201cb5b44c1bc834a598daf441306e105d6dd68f2138be76da6eaf6
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: 89e96e922b405bff20fb7fdbf03c9e19cb1531b4b9a930642d8159f330d740f3
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/a784797763b72ce058effad41b273eb697df9814
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: 5a603bd99bb421c123cd2e7fb9844a07826cbe9e840d2b367efc03e00ac9e7da
+Shader cache miss for BestFitNormalShaderRD/5a603bd99bb421c123cd2e7fb9844a07826cbe9e840d2b367efc03e00ac9e7da/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: 95b18042325d4e0c4147cf60ea47cea093215e1e95810b5c5c64b949d4e1833e
+Shader cache miss for IntegrateDfgShaderRD/95b18042325d4e0c4147cf60ea47cea093215e1e95810b5c5c64b949d4e1833e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TaaResolveShaderRD' (group 0) SHA256: f0320be98e2547448112e714004f1cb04986c7a1962729acd2dfba37e89fbf20
+Shader cache miss for TaaResolveShaderRD/f0320be98e2547448112e714004f1cb04986c7a1962729acd2dfba37e89fbf20/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: ac2f1dcc169e66e1533eaf9e918cd2fad8b82f46793bda77b64ab2e8ff157e81
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: a67b8b8a1b079ec2e4e8b7e4be87c4ec35ba8f09ca12b18e4a4fbbf4a8638c65
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: b37631a2c5a0eddaf9a1506d4e2484f6ee092b113842749c2ef27f908313079b
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: e759e76dc38f40e996b791461f8dc46c942d160d321a9776f392754a05c3df03
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: 193becd653629c5e1be325dbca7fd4356404c827dfcf85f50b1ac5bb00c595c7
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: 7fd74cfc670905714f019cb7dcbf9f7c582e46dd9c2c665e5ad94138ceb2f411
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: 9d2a809a3d29320f7416c0a36329047785da47267709d95f5aa4c044962cac63
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: 6b2791329f12ee3623a382a9a6ab45929fc5232dfcedd5d9dcd19aa64463a1a7
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: 4a373aaa3c6d0614ca64d22d0ed00c4e2b9a4144c1dd223c550d956d5dfcd2e9
+Shader cache miss for MotionVectorDecodeShaderRD/4a373aaa3c6d0614ca64d22d0ed00c4e2b9a4144c1dd223c550d956d5dfcd2e9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: 51174c8491e833e2175e869f48a65214395fb7081d057228bf02db2c58751064
+Shader cache miss for SsEffectsDownsampleShaderRD/51174c8491e833e2175e869f48a65214395fb7081d057228bf02db2c58751064/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilShaderRD' (group 0) SHA256: 4dc8b9ce8a7cdfbeef15a890b1effde663d150cf0ddb1b1844577a838c507c7b
+Shader cache miss for SsilShaderRD/4dc8b9ce8a7cdfbeef15a890b1effde663d150cf0ddb1b1844577a838c507c7b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 316a025768597fdf8e43ecb77135e7a6afe99d53b2dc36be7ab51d9c57191cf2
+Shader cache miss for SsilImportanceMapShaderRD/316a025768597fdf8e43ecb77135e7a6afe99d53b2dc36be7ab51d9c57191cf2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 304f411678ea6697787a6a153bace380fb81690108f56fabe805e1520f3bf3e1
+Shader cache miss for SsilBlurShaderRD/304f411678ea6697787a6a153bace380fb81690108f56fabe805e1520f3bf3e1/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: aef06d47d1804f6ea3a46a4272adb5cc3bfa11d9b4ab5a38f209da9fa3fa00a8
+Shader cache miss for SsilInterleaveShaderRD/aef06d47d1804f6ea3a46a4272adb5cc3bfa11d9b4ab5a38f209da9fa3fa00a8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoShaderRD' (group 0) SHA256: 572b2c745eaa2dec99657c9ffdfb595ebeb836e38aa7a70d34a9bab23786c706
+Shader cache miss for SsaoShaderRD/572b2c745eaa2dec99657c9ffdfb595ebeb836e38aa7a70d34a9bab23786c706/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: c9cd08056ae3bca32e03cc1f11b9f7708ab194365188bee6ff778ce06c33f702
+Shader cache miss for SsaoImportanceMapShaderRD/c9cd08056ae3bca32e03cc1f11b9f7708ab194365188bee6ff778ce06c33f702/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: 6004d05ea897392da7ccc1a90578ebf740304d1b11e46b993da64735074854ed
+Shader cache miss for SsaoBlurShaderRD/6004d05ea897392da7ccc1a90578ebf740304d1b11e46b993da64735074854ed/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: 35e826044b5c1e96b65a01b1278f8b45b81b835d3c7efe3078b63cc88a624e77
+Shader cache miss for SsaoInterleaveShaderRD/35e826044b5c1e96b65a01b1278f8b45b81b835d3c7efe3078b63cc88a624e77/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: dea785d9d8c144afb433e864eee508d38cd6b0b9baa7ea9f2d977126ffc4a685
+Shader cache miss for ScreenSpaceReflectionDownsampleShaderRD/dea785d9d8c144afb433e864eee508d38cd6b0b9baa7ea9f2d977126ffc4a685/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: f783237b73b47b784f92aaac1df1193e37b5aa1e781caeeea0289f25d50040d9
+Shader cache miss for ScreenSpaceReflectionHizShaderRD/f783237b73b47b784f92aaac1df1193e37b5aa1e781caeeea0289f25d50040d9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: 2b84dd2a7302536f299ea82b56cba20b2f4b5a42448f717dd0cb231b80500386
+Shader cache miss for ScreenSpaceReflectionShaderRD/2b84dd2a7302536f299ea82b56cba20b2f4b5a42448f717dd0cb231b80500386/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: 2e34529de981bbce7f292bd2ba555ed3fa6fc97dbab4b17e9055c8976d972aa7
+Shader cache miss for ScreenSpaceReflectionFilterShaderRD/2e34529de981bbce7f292bd2ba555ed3fa6fc97dbab4b17e9055c8976d972aa7/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: fbc65d3cffd4a41c44ed50cfde9d471d85c8700536e8bfd445ff9163553a8ce8
+Shader cache miss for ScreenSpaceReflectionResolveShaderRD/fbc65d3cffd4a41c44ed50cfde9d471d85c8700536e8bfd445ff9163553a8ce8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: ac27bdbe130381a5abf60761eb189ac233a34b932daf2123866626d880505217
+Shader cache miss for ScreenSpaceContactShadowsShaderRD/ac27bdbe130381a5abf60761eb189ac233a34b932daf2123866626d880505217/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 1c24e31c9cc53a7aed7f55a9f13f1f643a0377de6efd0ec959c220f8bf0bc361
+Shader cache miss for SubsurfaceScatteringShaderRD/1c24e31c9cc53a7aed7f55a9f13f1f643a0377de6efd0ec959c220f8bf0bc361/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: 38d2f57dd84bf782f39da8a8b608e11f81cd391ecc25a74d5091e6e107250d58
+Shader cache miss for MotionVectorsStoreShaderRD/38d2f57dd84bf782f39da8a8b608e11f81cd391ecc25a74d5091e6e107250d58/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkyShaderRD' (group 0) SHA256: 8b3a92637309041470272ad409148cb4c7935ea6fdf80f7ce0ae599d2d98b0ff
+Shader cache miss for SkyShaderRD/8b3a92637309041470272ad409148cb4c7935ea6fdf80f7ce0ae599d2d98b0ff/0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701
+Shader cache miss for SkyShaderRD/8b3a92637309041470272ad409148cb4c7935ea6fdf80f7ce0ae599d2d98b0ff/ff1961ca0c4c55a79eb12f819a7b6345801bbbaf
+Shader 'VoxelGiShaderRD' (group 0) SHA256: 30a8b95e8953e50fe49ea70d0523908ecc0e038fd21cbe009dffe3d370e7553a
+Shader cache miss for VoxelGiShaderRD/30a8b95e8953e50fe49ea70d0523908ecc0e038fd21cbe009dffe3d370e7553a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: 604fb5d17affa46f366074121763b192292ed0dbc27ab155855561365be20bd8
+Shader cache miss for VoxelGiDebugShaderRD/604fb5d17affa46f366074121763b192292ed0dbc27ab155855561365be20bd8/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: 2fd99e1ce297f45009ba4cd41eda09baea343f885e7b4e856a0fdbcdf3c6715e
+Shader cache miss for SdfgiPreprocessShaderRD/2fd99e1ce297f45009ba4cd41eda09baea343f885e7b4e856a0fdbcdf3c6715e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: cc1012bc8ac5ef297d0ba7c460aefaddc5ade0f1b606b41e167c0056149be65f
+Shader cache miss for SdfgiDirectLightShaderRD/cc1012bc8ac5ef297d0ba7c460aefaddc5ade0f1b606b41e167c0056149be65f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: f55ea76e8b4301ef5be20cbbbb7baa2f2a4102024b267ba68c06e3267bceb897
+Shader cache miss for SdfgiIntegrateShaderRD/f55ea76e8b4301ef5be20cbbbb7baa2f2a4102024b267ba68c06e3267bceb897/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'GiShaderRD' (group 0) SHA256: 1217654dd2da8e2a192d101aee2f1a48917f7b8980b439f62dc3dc2e3bec2728
+Shader 'GiShaderRD' (group 1) SHA256: 8492b403e87189ca129c0fc79208c019a4aee08a8ec321f0d5a55abda39b38af
+Shader cache miss for GiShaderRD/1217654dd2da8e2a192d101aee2f1a48917f7b8980b439f62dc3dc2e3bec2728/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for GiShaderRD/8492b403e87189ca129c0fc79208c019a4aee08a8ec321f0d5a55abda39b38af/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: 3d5a1b6674b0f01ab153db4f05608bf4c74252f2dc3de3c40bd779c33c7ec767
+Shader cache miss for SdfgiDebugShaderRD/3d5a1b6674b0f01ab153db4f05608bf4c74252f2dc3de3c40bd779c33c7ec767/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: d23f4233e5212b0390d81669b1fd777580d57150fbb4f0c0213b15b4ad399ec6
+Shader cache miss for SdfgiDebugProbesShaderRD/d23f4233e5212b0390d81669b1fd777580d57150fbb4f0c0213b15b4ad399ec6/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: ee2a7679c742a74be43a5382eba69ff2935fb93b80ddaab549bea8b23268c6a3
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 500a0fece70079f252136e8b1bfa98436c5ae2adc33125ae5f376643426ce0dc
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: 322f164af5737f52d027c4ee441090dae816d831bd36e0c62f10138cf9a8ad21
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: 62903470ede10fa1f76aedf8600266bb92b65420925247475b830f20f2db8640
+Shader cache miss for VolumetricFogShaderRD/322f164af5737f52d027c4ee441090dae816d831bd36e0c62f10138cf9a8ad21/3377d4ca9d0fc2e16f62596ee37d619e8e7e3f54
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 8256f6be5fc1fa9189e73a94874de6577f3e786698db948aba2cdd8e4f5bed8c
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: 842784e52d7912ef59668064a871f3f7642e69fa8f6b86598a971d1bbf2eb450
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: 7325325511fc3d40ef793e3bb77e415a618d2bf2d3d4a8f7ad02324ae51893fd
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: 85e74271673654235c12751effa3d338c00df4cd9ca04c40eab056198170d58f
+Shader cache miss for VolumetricFogProcessShaderRD/7325325511fc3d40ef793e3bb77e415a618d2bf2d3d4a8f7ad02324ae51893fd/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BokehDofShaderRD' (group 0) SHA256: c8803a4bbd49f602b13f4d71a1ba1954643df829b46ee69cb79435982cd7c3fd
+Shader cache miss for BokehDofShaderRD/c8803a4bbd49f602b13f4d71a1ba1954643df829b46ee69cb79435982cd7c3fd/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyShaderRD' (group 0) SHA256: 1ea7e01fb15962227ec731194a918eee1af5118886f3bf8f03a76badb02fcae2
+Shader cache miss for CopyShaderRD/1ea7e01fb15962227ec731194a918eee1af5118886f3bf8f03a76badb02fcae2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyToFbShaderRD' (group 0) SHA256: 5727899fe61ef6ac6ca895dab025a849ce73fc9674ca6953c79ffe562d2e8906
+Updated PSO cache (3.0 MiB)
+Shader cache miss for CopyToFbShaderRD/5727899fe61ef6ac6ca895dab025a849ce73fc9674ca6953c79ffe562d2e8906/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToDpShaderRD' (group 0) SHA256: 33f48655ac0fc1743dbf9937856c5bdbfc54129faa685e1846f66a7374d93f63
+Shader cache miss for CubeToDpShaderRD/33f48655ac0fc1743dbf9937856c5bdbfc54129faa685e1846f66a7374d93f63/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: e7f2e633dda1aa77d7fca7a545249f589c4e42b451af1eda29f4ddf14bbb100f
+Shader cache miss for CubeToOctmapShaderRD/e7f2e633dda1aa77d7fca7a545249f589c4e42b451af1eda29f4ddf14bbb100f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: ea4e9a8c13f05ba6f0c581f5a158fef0b58180aff3fca00a1040df4b8e817198
+Shader cache miss for OctmapDownsamplerShaderRD/ea4e9a8c13f05ba6f0c581f5a158fef0b58180aff3fca00a1040df4b8e817198/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: d77d6bd07867636a996eb3f48c9f4e2724e33ddb93cefb89c08d9974e1e4a890
+Shader cache miss for OctmapFilterShaderRD/d77d6bd07867636a996eb3f48c9f4e2724e33ddb93cefb89c08d9974e1e4a890/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: 269d20949efd2eab5971c3e1d3cc68a43d3879003c90312701ea4c6fd645971b
+Shader cache miss for OctmapRoughnessShaderRD/269d20949efd2eab5971c3e1d3cc68a43d3879003c90312701ea4c6fd645971b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: 14c1b5c4d718e648abb83f7c7f5fe2a9b0da708c955d99c6120698a47a4c1439
+Shader cache miss for SpecularMergeShaderRD/14c1b5c4d718e648abb83f7c7f5fe2a9b0da708c955d99c6120698a47a4c1439/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: 2a05f2e0e896a956d771fe7dbd68d2e68926213fc94a7f1663eaf77e08b6eb55
+Shader cache miss for DepthReconstructShaderRD/2a05f2e0e896a956d771fe7dbd68d2e68926213fc94a7f1663eaf77e08b6eb55/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: 5f9ee9e916b53c9bbbb66a04e5a259c0c4aa8a4e1c55465898adcd8fac46641e
+Shader cache miss for ShadowFrustumShaderRD/5f9ee9e916b53c9bbbb66a04e5a259c0c4aa8a4e1c55465898adcd8fac46641e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 2f8edaf6521bf407b717d351e69df4f4bb30e16d56566813022f890220800230
+Shader cache miss for MotionVectorsShaderRD/2f8edaf6521bf407b717d351e69df4f4bb30e16d56566813022f890220800230/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: 02d5d1ef197c01c9d8bc40de894ee853260f247f1e8c64f9dffa9a047c4f1e94
+Shader cache miss for LuminanceReduceShaderRD/02d5d1ef197c01c9d8bc40de894ee853260f247f1e8c64f9dffa9a047c4f1e94/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 1e9739bef5e74fecec0fd9191fb8a89be03a92bd099700acfd3050d0cfd7c718
+Shader cache miss for SmaaEdgeDetectionShaderRD/1e9739bef5e74fecec0fd9191fb8a89be03a92bd099700acfd3050d0cfd7c718/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 23683600f5b86e5e5b2cf25de85548a2c22a60ca57a023ba84bb14c739a38216
+Shader cache miss for SmaaWeightCalculationShaderRD/23683600f5b86e5e5b2cf25de85548a2c22a60ca57a023ba84bb14c739a38216/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: e1e55d0970ed67693723cc093509ab984785abface531d656346d6059f86d184
+Shader cache miss for SmaaBlendingShaderRD/e1e55d0970ed67693723cc093509ab984785abface531d656346d6059f86d184/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TonemapShaderRD' (group 0) SHA256: be50662cdf4454bd3193e0158587505269ace02c9ad4c1867f54d35ac6ab42dd
+Shader cache miss for TonemapShaderRD/be50662cdf4454bd3193e0158587505269ace02c9ad4c1867f54d35ac6ab42dd/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VrsShaderRD' (group 0) SHA256: 4b13fe3e1d96047fde12e9b52e9b5add26e685fa9b7b149c42de895360531402
+Shader cache miss for VrsShaderRD/4b13fe3e1d96047fde12e9b52e9b5add26e685fa9b7b149c42de895360531402/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: d64fc1b92e255f0ff444e5fa463d21c0e5075febb24045ef137efe69c6dd7a9c
+Shader cache miss for FsrUpscaleShaderRD/d64fc1b92e255f0ff444e5fa463d21c0e5075febb24045ef137efe69c6dd7a9c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ResolveShaderRD' (group 0) SHA256: 0e5e8c6ca6a84eee119fd41c4ef9831e8cce15ea060576b9293b46010c06e992
+Shader cache miss for ResolveShaderRD/0e5e8c6ca6a84eee119fd41c4ef9831e8cce15ea060576b9293b46010c06e992/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BlitShaderRD' (group 0) SHA256: 1bde6e2f00627a026df0801a4735342380faa420ae2ee82ae5ac6245b7b75dd2
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Shader cache miss for BlitShaderRD/1bde6e2f00627a026df0801a4735342380faa420ae2ee82ae5ac6245b7b75dd2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/60fbb158a5f44670392b2322a8401a535c41dc72
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+Shader cache miss for CanvasShaderRD/fd41380d2bac2e43cc71aeeaee2251e4f2de24f7818998b66cba7e1fbf5cec33/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+CORE API HASH: 984715307
+EDITOR API HASH: 3714769106
+Loading resource: <evidence>/harness/material_play_capture.gd remapped: <evidence>/harness/material_play_capture.gd
+Completed load for: '<evidence>/harness/material_play_capture.gd' remapped '<evidence>/harness/material_play_capture.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://autoload/controller_hub.gd remapped: res://autoload/controller_hub.gd
+Completed load for: 'res://autoload/controller_hub.gd' remapped 'res://autoload/controller_hub.gd' at thread -1
+Loaded system CA certificates
+Loading resource: res://scenes/menu/main_menu.tscn remapped: res://scenes/menu/main_menu.tscn
+Loading resource: res://scenes/menu/main_menu.gd remapped: res://scenes/menu/main_menu.gd
+Loading resource: res://shaders/ramp_paint.gdshader remapped: res://shaders/ramp_paint.gdshader
+Completed load for: 'res://shaders/ramp_paint.gdshader' remapped 'res://shaders/ramp_paint.gdshader' at thread -1
+Loading resource: res://shaders/facade.gdshader remapped: res://shaders/facade.gdshader
+Loading resource: res://shaders/rt_pixel_footprint.gdshaderinc remapped: res://shaders/rt_pixel_footprint.gdshaderinc
+Completed load for: 'res://shaders/rt_pixel_footprint.gdshaderinc' remapped 'res://shaders/rt_pixel_footprint.gdshaderinc' at thread -1
+Completed load for: 'res://shaders/facade.gdshader' remapped 'res://shaders/facade.gdshader' at thread -1
+Loading resource: res://shaders/sea.gdshader remapped: res://shaders/sea.gdshader
+Completed load for: 'res://shaders/sea.gdshader' remapped 'res://shaders/sea.gdshader' at thread -1
+Loading resource: res://shaders/pbr_surface.gdshader remapped: res://shaders/pbr_surface.gdshader
+Completed load for: 'res://shaders/pbr_surface.gdshader' remapped 'res://shaders/pbr_surface.gdshader' at thread -1
+Loading resource: res://shaders/toon.gdshader remapped: res://shaders/toon.gdshader
+Completed load for: 'res://shaders/toon.gdshader' remapped 'res://shaders/toon.gdshader' at thread -1
+Loading resource: res://shaders/crowd.gdshader remapped: res://shaders/crowd.gdshader
+Completed load for: 'res://shaders/crowd.gdshader' remapped 'res://shaders/crowd.gdshader' at thread -1
+Loading resource: res://scenes/archery/archery_module.tres remapped: res://scenes/archery/archery_module.tres
+Completed load for: 'res://scenes/archery/archery_module.tres' remapped 'res://scenes/archery/archery_module.tres' at thread -1
+Loading resource: res://scenes/basketball/basketball_module.tres remapped: res://scenes/basketball/basketball_module.tres
+Completed load for: 'res://scenes/basketball/basketball_module.tres' remapped 'res://scenes/basketball/basketball_module.tres' at thread -1
+Loading resource: res://scenes/bowling/bowling_module.tres remapped: res://scenes/bowling/bowling_module.tres
+Completed load for: 'res://scenes/bowling/bowling_module.tres' remapped 'res://scenes/bowling/bowling_module.tres' at thread -1
+Loading resource: res://scenes/golf/golf_module.tres remapped: res://scenes/golf/golf_module.tres
+Completed load for: 'res://scenes/golf/golf_module.tres' remapped 'res://scenes/golf/golf_module.tres' at thread -1
+Loading resource: res://scenes/plane/plane_module.tres remapped: res://scenes/plane/plane_module.tres
+Completed load for: 'res://scenes/plane/plane_module.tres' remapped 'res://scenes/plane/plane_module.tres' at thread -1
+Loading resource: res://scenes/skate/skate_module.tres remapped: res://scenes/skate/skate_module.tres
+Completed load for: 'res://scenes/skate/skate_module.tres' remapped 'res://scenes/skate/skate_module.tres' at thread -1
+Loading resource: res://scenes/ski/ski_module.tres remapped: res://scenes/ski/ski_module.tres
+Completed load for: 'res://scenes/ski/ski_module.tres' remapped 'res://scenes/ski/ski_module.tres' at thread -1
+Completed load for: 'res://scenes/menu/main_menu.gd' remapped 'res://scenes/menu/main_menu.gd' at thread -1
+Completed load for: 'res://scenes/menu/main_menu.tscn' remapped 'res://scenes/menu/main_menu.tscn' at thread -1
+CLI game: ski
+Loading resource: res://scenes/ski/ski_game.tscn remapped: res://scenes/ski/ski_game.tscn
+Loading resource: res://scenes/ski/ski_game.gd remapped: res://scenes/ski/ski_game.gd
+Loading resource: res://shaders/ski_terrain.gdshader remapped: res://shaders/ski_terrain.gdshader
+Loading resource: res://shaders/rt_pixel_footprint.gdshaderinc remapped: res://shaders/rt_pixel_footprint.gdshaderinc
+Completed load for: 'res://shaders/rt_pixel_footprint.gdshaderinc' remapped 'res://shaders/rt_pixel_footprint.gdshaderinc' at thread -1
+Completed load for: 'res://shaders/ski_terrain.gdshader' remapped 'res://shaders/ski_terrain.gdshader' at thread -1
+Loading resource: res://shaders/snow_fir.gdshader remapped: res://shaders/snow_fir.gdshader
+Completed load for: 'res://shaders/snow_fir.gdshader' remapped 'res://shaders/snow_fir.gdshader' at thread -1
+Completed load for: 'res://scenes/ski/ski_game.gd' remapped 'res://scenes/ski/ski_game.gd' at thread -1
+Completed load for: 'res://scenes/ski/ski_game.tscn' remapped 'res://scenes/ski/ski_game.tscn' at thread -1
+Loading resource: res://assets/fonts/NotoSansSC-RS.ttf remapped: res://assets/fonts/NotoSansSC-RS.ttf
+Loading resource: res://.godot/imported/NotoSansSC-RS.ttf-2ed3b53c9703ff00c021c8aedf23d741.fontdata remapped: res://.godot/imported/NotoSansSC-RS.ttf-2ed3b53c9703ff00c021c8aedf23d741.fontdata
+Completed load for: 'res://assets/fonts/NotoSansSC-RS.ttf' remapped 'res://assets/fonts/NotoSansSC-RS.ttf' at thread -1
+Loading resource: res://assets/fonts/BarlowCondensed-BoldItalic.ttf remapped: res://assets/fonts/BarlowCondensed-BoldItalic.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-BoldItalic.ttf-0e69fd6ad5a5b42952216a4f8001fed3.fontdata remapped: res://.godot/imported/BarlowCondensed-BoldItalic.ttf-0e69fd6ad5a5b42952216a4f8001fed3.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-BoldItalic.ttf' remapped 'res://assets/fonts/BarlowCondensed-BoldItalic.ttf' at thread -1
+Loading resource: res://assets/sfx/carve.wav remapped: res://assets/sfx/carve.wav
+Loading resource: res://.godot/imported/carve.wav-3b0221ded1a68e1ea3fa9348c1f7a9b3.sample remapped: res://.godot/imported/carve.wav-3b0221ded1a68e1ea3fa9348c1f7a9b3.sample
+Completed load for: 'res://assets/sfx/carve.wav' remapped 'res://assets/sfx/carve.wav' at thread -1
+Loading resource: res://assets/sfx/skid.wav remapped: res://assets/sfx/skid.wav
+Loading resource: res://.godot/imported/skid.wav-ea9e22470ab1865f6441f1c917bb80d9.sample remapped: res://.godot/imported/skid.wav-ea9e22470ab1865f6441f1c917bb80d9.sample
+Completed load for: 'res://assets/sfx/skid.wav' remapped 'res://assets/sfx/skid.wav' at thread -1
+Loading resource: res://assets/sfx/wind_amb.wav remapped: res://assets/sfx/wind_amb.wav
+Loading resource: res://.godot/imported/wind_amb.wav-a474f13bad2b01ed2bc3fc2cb80ee32f.sample remapped: res://.godot/imported/wind_amb.wav-a474f13bad2b01ed2bc3fc2cb80ee32f.sample
+Completed load for: 'res://assets/sfx/wind_amb.wav' remapped 'res://assets/sfx/wind_amb.wav' at thread -1
+Loading resource: res://assets/sfx/applause.wav remapped: res://assets/sfx/applause.wav
+Loading resource: res://.godot/imported/applause.wav-6fb3c3b968fa466f3a5d39d4d3f66002.sample remapped: res://.godot/imported/applause.wav-6fb3c3b968fa466f3a5d39d4d3f66002.sample
+Completed load for: 'res://assets/sfx/applause.wav' remapped 'res://assets/sfx/applause.wav' at thread -1
+Loading resource: res://assets/sfx/snowland_0.wav remapped: res://assets/sfx/snowland_0.wav
+Loading resource: res://.godot/imported/snowland_0.wav-80d0620f87c40b5000c4e7f30a460d34.sample remapped: res://.godot/imported/snowland_0.wav-80d0620f87c40b5000c4e7f30a460d34.sample
+Completed load for: 'res://assets/sfx/snowland_0.wav' remapped 'res://assets/sfx/snowland_0.wav' at thread -1
+Loading resource: res://assets/sfx/snowland_1.wav remapped: res://assets/sfx/snowland_1.wav
+Loading resource: res://.godot/imported/snowland_1.wav-81adac12bd678ce1fc1ec695e5ea0efb.sample remapped: res://.godot/imported/snowland_1.wav-81adac12bd678ce1fc1ec695e5ea0efb.sample
+Completed load for: 'res://assets/sfx/snowland_1.wav' remapped 'res://assets/sfx/snowland_1.wav' at thread -1
+Loading resource: res://assets/sfx/snowland_2.wav remapped: res://assets/sfx/snowland_2.wav
+Loading resource: res://.godot/imported/snowland_2.wav-b16f79ee51bc821fd0e00ec86539385f.sample remapped: res://.godot/imported/snowland_2.wav-b16f79ee51bc821fd0e00ec86539385f.sample
+Completed load for: 'res://assets/sfx/snowland_2.wav' remapped 'res://assets/sfx/snowland_2.wav' at thread -1
+Loading resource: res://assets/sfx/pole_0.wav remapped: res://assets/sfx/pole_0.wav
+Loading resource: res://.godot/imported/pole_0.wav-80605b2dcb8e6355fcc933cc884eea06.sample remapped: res://.godot/imported/pole_0.wav-80605b2dcb8e6355fcc933cc884eea06.sample
+Completed load for: 'res://assets/sfx/pole_0.wav' remapped 'res://assets/sfx/pole_0.wav' at thread -1
+Loading resource: res://assets/sfx/pole_1.wav remapped: res://assets/sfx/pole_1.wav
+Loading resource: res://.godot/imported/pole_1.wav-c5760b0c34082382d71991648315aba5.sample remapped: res://.godot/imported/pole_1.wav-c5760b0c34082382d71991648315aba5.sample
+Completed load for: 'res://assets/sfx/pole_1.wav' remapped 'res://assets/sfx/pole_1.wav' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for ParticlesShaderRD/ef543d423306833598f7d62a4fabc570fb214ca0501676ad963eb7ea68d0552f/6ea904af1884255670f0770c19cb712520ddbd20
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/ff88bb14a0faed2fc05aa867ae3b9c5c1069e193
+map 0 ALPINE BLUEBIRD
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/de49df25bb2006ec0cbd79a68b24067e89f63ab7
+--res://shaders/ski_terrain.gdshader--
+    2 | shader_type spatial;
+    3 | 
+E   4-> #include "res://shaders/rt_pixel_footprint.gdshaderinc"
+    5 | 
+    6 | 
+--res://shaders/rt_pixel_footprint.gdshaderinc--
+    3 | 
+    4 | vec2 rs_rt_pixel_footprint(vec3 world_pos, vec3 world_normal, vec3 axis_u, vec3 axis_v) {
+E   5->  vec3 camera_right = normalize(INV_VIEW_MATRIX[0].xyz);
+    6 |  vec3 camera_up = normalize(INV_VIEW_MATRIX[1].xyz);
+    7 |  vec3 camera_back = normalize(INV_VIEW_MATRIX[2].xyz);
+SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.
+   at: (null) (res://shaders/rt_pixel_footprint.gdshaderinc:5)
+   GDScript backtrace (most recent call first):
+       [0] _make_materials (res://scenes/ski/ski_course.gd:257)
+       [1] _ready (res://scenes/ski/ski_course.gd:60)
+       [2] _load_map (res://scenes/ski/ski_game.gd:154)
+       [3] _ready (res://core/party_game.gd:290)
+WARNING: Forward Clustered: RT-variant classification compile failed for shader res://shaders/ski_terrain.gdshader. Falling back to raster-side flags for ray-tracing routing.
+   at: RendererSceneRenderImplementation::SceneShaderForwardClustered::ShaderData::set_code_rt (servers\rendering\renderer_rd\forward_clustered\scene_shader_forward_clustered.cpp:323)
+   GDScript backtrace (most recent call first):
+       [0] _make_materials (res://scenes/ski/ski_course.gd:257)
+       [1] _ready (res://scenes/ski/ski_course.gd:60)
+       [2] _load_map (res://scenes/ski/ski_game.gd:154)
+       [3] _ready (res://core/party_game.gd:290)
+Loading resource: res://assets/polyhaven/textures/snow_02/snow_02_diff_4k.jpg remapped: res://assets/polyhaven/textures/snow_02/snow_02_diff_4k.jpg
+Loading resource: res://.godot/imported/snow_02_diff_4k.jpg-6c05118281c08cb8911b3675bfff7f47.s3tc.ctex remapped: res://.godot/imported/snow_02_diff_4k.jpg-6c05118281c08cb8911b3675bfff7f47.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_02/snow_02_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_02/snow_02_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/snow_02/snow_02_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/snow_02/snow_02_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/snow_02_nor_gl_4k.jpg-100b923ba274c21572b121e24e838b42.s3tc.ctex remapped: res://.godot/imported/snow_02_nor_gl_4k.jpg-100b923ba274c21572b121e24e838b42.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_02/snow_02_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_02/snow_02_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/snow_02/snow_02_arm_4k.jpg remapped: res://assets/polyhaven/textures/snow_02/snow_02_arm_4k.jpg
+Loading resource: res://.godot/imported/snow_02_arm_4k.jpg-dcd33aae11deceb3c6ce3f561cef808d.s3tc.ctex remapped: res://.godot/imported/snow_02_arm_4k.jpg-dcd33aae11deceb3c6ce3f561cef808d.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_02/snow_02_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_02/snow_02_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/snow_01/snow_01_diff_4k.jpg remapped: res://assets/polyhaven/textures/snow_01/snow_01_diff_4k.jpg
+Loading resource: res://.godot/imported/snow_01_diff_4k.jpg-d087ff2586952d179ba7e90393116794.s3tc.ctex remapped: res://.godot/imported/snow_01_diff_4k.jpg-d087ff2586952d179ba7e90393116794.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_01/snow_01_diff_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_01/snow_01_diff_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/snow_01/snow_01_nor_gl_4k.jpg remapped: res://assets/polyhaven/textures/snow_01/snow_01_nor_gl_4k.jpg
+Loading resource: res://.godot/imported/snow_01_nor_gl_4k.jpg-531f38ca8549b3441ee8ab5e32599c24.s3tc.ctex remapped: res://.godot/imported/snow_01_nor_gl_4k.jpg-531f38ca8549b3441ee8ab5e32599c24.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_01/snow_01_nor_gl_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_01/snow_01_nor_gl_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/snow_01/snow_01_arm_4k.jpg remapped: res://assets/polyhaven/textures/snow_01/snow_01_arm_4k.jpg
+Loading resource: res://.godot/imported/snow_01_arm_4k.jpg-e7ba6ecd0282d42ed0eab3a5b779d877.s3tc.ctex remapped: res://.godot/imported/snow_01_arm_4k.jpg-e7ba6ecd0282d42ed0eab3a5b779d877.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/snow_01/snow_01_arm_4k.jpg' remapped 'res://assets/polyhaven/textures/snow_01/snow_01_arm_4k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_diff_2k.jpg remapped: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_diff_2k.jpg
+Loading resource: res://.godot/imported/dark_rock_02_diff_2k.jpg-f4b6673a86ff841b67f2ab62ba557805.s3tc.ctex remapped: res://.godot/imported/dark_rock_02_diff_2k.jpg-f4b6673a86ff841b67f2ab62ba557805.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/dark_rock_02_nor_gl_2k.jpg-73c600134246febc30f9d68817f9bd05.s3tc.ctex remapped: res://.godot/imported/dark_rock_02_nor_gl_2k.jpg-73c600134246febc30f9d68817f9bd05.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_arm_2k.jpg remapped: res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_arm_2k.jpg
+Loading resource: res://.godot/imported/dark_rock_02_arm_2k.jpg-de2aecb1778df2417842c74e6ba61360.s3tc.ctex remapped: res://.godot/imported/dark_rock_02_arm_2k.jpg-de2aecb1778df2417842c74e6ba61360.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/dark_rock_02/dark_rock_02_arm_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/c82e4380b1e2decfc774b7232ed1c29213771d05
+Loading resource: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_diff_2k.jpg remapped: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_diff_2k.jpg
+Loading resource: res://.godot/imported/beam_wall_01_diff_2k.jpg-bfbf7d94090241a45c8ca9054d617d05.s3tc.ctex remapped: res://.godot/imported/beam_wall_01_diff_2k.jpg-bfbf7d94090241a45c8ca9054d617d05.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/beam_wall_01_nor_gl_2k.jpg-8c9178f55f01077b42565865624818d3.s3tc.ctex remapped: res://.godot/imported/beam_wall_01_nor_gl_2k.jpg-8c9178f55f01077b42565865624818d3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_arm_2k.jpg remapped: res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_arm_2k.jpg
+Loading resource: res://.godot/imported/beam_wall_01_arm_2k.jpg-da6af40293a4562ee46a9dbd8d8e9591.s3tc.ctex remapped: res://.godot/imported/beam_wall_01_arm_2k.jpg-da6af40293a4562ee46a9dbd8d8e9591.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/beam_wall_01/beam_wall_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_diff_2k.jpg remapped: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_diff_2k.jpg
+Loading resource: res://.godot/imported/knotted_pine_bark_diff_2k.jpg-349aa0d80b15d35f3649184ed59867a3.s3tc.ctex remapped: res://.godot/imported/knotted_pine_bark_diff_2k.jpg-349aa0d80b15d35f3649184ed59867a3.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_diff_2k.jpg' remapped 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_nor_gl_2k.jpg remapped: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/knotted_pine_bark_nor_gl_2k.jpg-dc8186ada4a55a8f83d67b31fda3dd56.s3tc.ctex remapped: res://.godot/imported/knotted_pine_bark_nor_gl_2k.jpg-dc8186ada4a55a8f83d67b31fda3dd56.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_nor_gl_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_arm_2k.jpg remapped: res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_arm_2k.jpg
+Loading resource: res://.godot/imported/knotted_pine_bark_arm_2k.jpg-d71c2960060006667790db4cb5120613.s3tc.ctex remapped: res://.godot/imported/knotted_pine_bark_arm_2k.jpg-d71c2960060006667790db4cb5120613.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_arm_2k.jpg' remapped 'res://assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_arm_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/56c98e9b0ab64f435a60b9b0e4c972b00314f292
+Loading resource: res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf remapped: res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf
+Loading resource: res://.godot/imported/boulder_01_lod.gltf-c2f550366c6a1d35f34928b070a5b889.scn remapped: res://.godot/imported/boulder_01_lod.gltf-c2f550366c6a1d35f34928b070a5b889.scn
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_diff_2k.jpg-99501accc6248ce8f02e983efaac02f1.s3tc.ctex remapped: res://.godot/imported/boulder_01_diff_2k.jpg-99501accc6248ce8f02e983efaac02f1.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_arm_2k.jpg-24966c8edb82c507b6b2a89f5646eb96.s3tc.ctex remapped: res://.godot/imported/boulder_01_arm_2k.jpg-24966c8edb82c507b6b2a89f5646eb96.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg' at thread -1
+Loading resource: res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg remapped: res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg
+Loading resource: res://.godot/imported/boulder_01_nor_gl_2k.jpg-6fa305bbbc32b205717717f569f9e793.s3tc.ctex remapped: res://.godot/imported/boulder_01_nor_gl_2k.jpg-6fa305bbbc32b205717717f569f9e793.s3tc.ctex
+Completed load for: 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg' remapped 'res://assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Completed load for: 'res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf' remapped 'res://assets/polyhaven/models/boulder_01/boulder_01_lod.gltf' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/5e2b2364b8034b1fb424544d2d8d9978f0d88966
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/b07e1a1cb8fbb2f4e7001c90360e03af72d705f0
+Loading resource: res://assets/polyhaven/hdris/kloofendal_43d_clear_puresky/kloofendal_43d_clear_puresky_4k.hdr remapped: res://assets/polyhaven/hdris/kloofendal_43d_clear_puresky/kloofendal_43d_clear_puresky_4k.hdr
+Loading resource: res://.godot/imported/kloofendal_43d_clear_puresky_4k.hdr-b1c3f8ca641773e9f7011e1af5432a94.bptc.ctex remapped: res://.godot/imported/kloofendal_43d_clear_puresky_4k.hdr-b1c3f8ca641773e9f7011e1af5432a94.bptc.ctex
+Completed load for: 'res://assets/polyhaven/hdris/kloofendal_43d_clear_puresky/kloofendal_43d_clear_puresky_4k.hdr' remapped 'res://assets/polyhaven/hdris/kloofendal_43d_clear_puresky/kloofendal_43d_clear_puresky_4k.hdr' at thread -1
+Shader cache miss for SkyShaderRD/8b3a92637309041470272ad409148cb4c7935ea6fdf80f7ce0ae599d2d98b0ff/723f70cebee6f2532406e527b1568d3412439290
+Loading resource: res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf remapped: res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-ExtraBoldItalic.ttf-77963f1052599542056aff19bae8f946.fontdata remapped: res://.godot/imported/BarlowCondensed-ExtraBoldItalic.ttf-77963f1052599542056aff19bae8f946.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf' remapped 'res://assets/fonts/BarlowCondensed-ExtraBoldItalic.ttf' at thread -1
+Loading resource: res://assets/characters/skier0.glb remapped: res://assets/characters/skier0.glb
+Loading resource: res://.godot/imported/skier0.glb-c5b6110d258171616f81e5858542d2b8.scn remapped: res://.godot/imported/skier0.glb-c5b6110d258171616f81e5858542d2b8.scn
+Loading resource: res://assets/characters/skier0_young_lightskinned_male_diffuse3.png remapped: res://assets/characters/skier0_young_lightskinned_male_diffuse3.png
+Loading resource: res://.godot/imported/skier0_young_lightskinned_male_diffuse3.png-b53ebdc2c06ce176ac1b23e09d6d1d0d.s3tc.ctex remapped: res://.godot/imported/skier0_young_lightskinned_male_diffuse3.png-b53ebdc2c06ce176ac1b23e09d6d1d0d.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_young_lightskinned_male_diffuse3.png' remapped 'res://assets/characters/skier0_young_lightskinned_male_diffuse3.png' at thread -1
+Loading resource: res://assets/characters/skier0_eyebrow004.png remapped: res://assets/characters/skier0_eyebrow004.png
+Loading resource: res://.godot/imported/skier0_eyebrow004.png-1e6691700ff58856e4944ed10042023e.s3tc.ctex remapped: res://.godot/imported/skier0_eyebrow004.png-1e6691700ff58856e4944ed10042023e.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_eyebrow004.png' remapped 'res://assets/characters/skier0_eyebrow004.png' at thread -1
+Loading resource: res://assets/characters/skier0_eyelashes01.png remapped: res://assets/characters/skier0_eyelashes01.png
+Loading resource: res://.godot/imported/skier0_eyelashes01.png-a8739ef558c27f922d97c9d4b653142c.s3tc.ctex remapped: res://.godot/imported/skier0_eyelashes01.png-a8739ef558c27f922d97c9d4b653142c.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_eyelashes01.png' remapped 'res://assets/characters/skier0_eyelashes01.png' at thread -1
+Loading resource: res://assets/characters/skier0_darkbrown_eye.png remapped: res://assets/characters/skier0_darkbrown_eye.png
+Loading resource: res://.godot/imported/skier0_darkbrown_eye.png-9ab243330e86ba5668195b2cd8fa9f46.s3tc.ctex remapped: res://.godot/imported/skier0_darkbrown_eye.png-9ab243330e86ba5668195b2cd8fa9f46.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_darkbrown_eye.png' remapped 'res://assets/characters/skier0_darkbrown_eye.png' at thread -1
+Loading resource: res://assets/characters/skier0_male_casualsuit05_diffuse.png remapped: res://assets/characters/skier0_male_casualsuit05_diffuse.png
+Loading resource: res://.godot/imported/skier0_male_casualsuit05_diffuse.png-83283d0f4a5e8ddcf940572b64c8dd54.s3tc.ctex remapped: res://.godot/imported/skier0_male_casualsuit05_diffuse.png-83283d0f4a5e8ddcf940572b64c8dd54.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_male_casualsuit05_diffuse.png' remapped 'res://assets/characters/skier0_male_casualsuit05_diffuse.png' at thread -1
+Loading resource: res://assets/characters/skier0_male_casualsuit05_normal.png remapped: res://assets/characters/skier0_male_casualsuit05_normal.png
+Loading resource: res://.godot/imported/skier0_male_casualsuit05_normal.png-bc0fda046c20d619ceb1b93086fec86e.s3tc.ctex remapped: res://.godot/imported/skier0_male_casualsuit05_normal.png-bc0fda046c20d619ceb1b93086fec86e.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_male_casualsuit05_normal.png' remapped 'res://assets/characters/skier0_male_casualsuit05_normal.png' at thread -1
+Loading resource: res://assets/characters/skier0_shoes03_diffuse.png remapped: res://assets/characters/skier0_shoes03_diffuse.png
+Loading resource: res://.godot/imported/skier0_shoes03_diffuse.png-5e40bdbb0b8d8778d55fdf04418854c0.s3tc.ctex remapped: res://.godot/imported/skier0_shoes03_diffuse.png-5e40bdbb0b8d8778d55fdf04418854c0.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_shoes03_diffuse.png' remapped 'res://assets/characters/skier0_shoes03_diffuse.png' at thread -1
+Loading resource: res://assets/characters/skier0_short01_diffuse.png remapped: res://assets/characters/skier0_short01_diffuse.png
+Loading resource: res://.godot/imported/skier0_short01_diffuse.png-3eba75dffbf305433550d704009c1036.s3tc.ctex remapped: res://.godot/imported/skier0_short01_diffuse.png-3eba75dffbf305433550d704009c1036.s3tc.ctex
+Completed load for: 'res://assets/characters/skier0_short01_diffuse.png' remapped 'res://assets/characters/skier0_short01_diffuse.png' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/36a830bb8c1017df7767422038a8a68cf8ca3db3
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/b45440c3f456e9d028413e80ede78655eb8c9e53
+Completed load for: 'res://assets/characters/skier0.glb' remapped 'res://assets/characters/skier0.glb' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/627455b2663f93146ca283c7018524c6d90f4c22
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/89a457f1cba35e1dc7f582c75de2d4a941dbde77
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for ParticlesShaderRD/ef543d423306833598f7d62a4fabc570fb214ca0501676ad963eb7ea68d0552f/f58d034e9517dbeaf5d39a37525793e4e9a713b6
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for ParticlesShaderRD/ef543d423306833598f7d62a4fabc570fb214ca0501676ad963eb7ea68d0552f/db609cbc040d6020ca345654b3b71886442a36d7
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/137891017d8cd29cef192f3f7a249d32945f3b12
+Loading resource: res://assets/music/lobby.wav remapped: res://assets/music/lobby.wav
+Loading resource: res://.godot/imported/lobby.wav-57209117bb74e2c026f654c0286bd987.sample remapped: res://.godot/imported/lobby.wav-57209117bb74e2c026f654c0286bd987.sample
+Completed load for: 'res://assets/music/lobby.wav' remapped 'res://assets/music/lobby.wav' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/a108158d1a145ea996cac5b7f02478b69e74c614
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/633e812b66dab126c9911f07a4894b911566e3e04f97bff8b75fc4e5be36cf74/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader 'MultimeshMergeShaderRD' (group 0) SHA256: 391acbc49cd9184f56359e997f950f54a74ff1f66d9eefef886735d68da6d7b3
+Shader cache miss for MultimeshMergeShaderRD/391acbc49cd9184f56359e997f950f54a74ff1f66d9eefef886735d68da6d7b3/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+OpTypeForwardPointer is not supported yet.
+OpTypeForwardPointer is not supported yet.
+Shader 'SceneRaytracingRaygenShaderRD' (group 0) SHA256: 32eab0ea6971d916478b6f66653318f6d8abeb2175e488e7a863a630e8a29f84
+Shader 'RaytracingVertexDisplaceShaderRD' (group 0) SHA256: fc134c4354bb5a00791e5bf5bb04d3cdd0fa3b443d5492c67ce0bbafe63c30fc
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/a784797763b72ce058effad41b273eb697df9814
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/ff88bb14a0faed2fc05aa867ae3b9c5c1069e193
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/de49df25bb2006ec0cbd79a68b24067e89f63ab7
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/c82e4380b1e2decfc774b7232ed1c29213771d05
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/56c98e9b0ab64f435a60b9b0e4c972b00314f292
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/5e2b2364b8034b1fb424544d2d8d9978f0d88966
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/b07e1a1cb8fbb2f4e7001c90360e03af72d705f0
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/627455b2663f93146ca283c7018524c6d90f4c22
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/89a457f1cba35e1dc7f582c75de2d4a941dbde77
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/137891017d8cd29cef192f3f7a249d32945f3b12
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/7427299c70166d5b3035768b1a1054870ee994d145f6045415f723c279dd85d3/a108158d1a145ea996cac5b7f02478b69e74c614
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Updated PSO cache (6.2 MiB)
+Updated PSO cache (12.5 MiB)
+--Main Shader--
+    2 | shader_type spatial;
+    3 | 
+E   4-> #include "res://shaders/rt_pixel_footprint.gdshaderinc"
+    5 | 
+    6 | 
+--res://shaders/rt_pixel_footprint.gdshaderinc--
+    3 | 
+    4 | vec2 rs_rt_pixel_footprint(vec3 world_pos, vec3 world_normal, vec3 axis_u, vec3 axis_v) {
+E   5->  vec3 camera_right = normalize(INV_VIEW_MATRIX[0].xyz);
+    6 |  vec3 camera_up = normalize(INV_VIEW_MATRIX[1].xyz);
+    7 |  vec3 camera_back = normalize(INV_VIEW_MATRIX[2].xyz);
+SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.
+   at: (null) (res://shaders/rt_pixel_footprint.gdshaderinc:5)
+WARNING: RT: Failed to preprocess custom shader; falling back to default material.
+   at: RendererSceneRenderImplementation::SceneShaderRaytracing::_preprocess_shader (servers\rendering\renderer_rd\forward_clustered\scene_shader_raytracing.cpp:677)
+OpTypeForwardPointer is not supported yet.
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Loading resource: res://assets/fonts/BarlowCondensed-SemiBold.ttf remapped: res://assets/fonts/BarlowCondensed-SemiBold.ttf
+Loading resource: res://.godot/imported/BarlowCondensed-SemiBold.ttf-a61dd99857b2d1cd6578199d7509bfaf.fontdata remapped: res://.godot/imported/BarlowCondensed-SemiBold.ttf-a61dd99857b2d1cd6578199d7509bfaf.fontdata
+Completed load for: 'res://assets/fonts/BarlowCondensed-SemiBold.ttf' remapped 'res://assets/fonts/BarlowCondensed-SemiBold.ttf' at thread -1
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+[  14.7] P1 s=  70.0 v=22.6  gate 0 ok
+[  16.4] P1 s= 108.0 v=24.0  gate 1 ok
+[  18.2] P1 s= 147.1 v=24.3  gate 2 ok
+PT_MATERIAL_SHOT {"camera":{"far":3000.0,"forward":[0.603467047214508,-0.33974614739418,-0.721387684345245],"fov":65.0,"near":0.0500000007450581,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134","position":[0.19011378288269,-46.3799476623535,-80.0]},"camera_override":{"before":{"forward":[0.0104299979284406,-0.173445120453835,-0.984788298606873],"fov":62.0006446838379,"position":[0.0338389240205288,-25.7267761230469,4.29140567779541]},"eye":[0.19011378288269,-46.3799476623535,-80.0],"fov":65.0,"player_physics_teleported":false,"process_priority":10000,"selected_tree":null,"settle_post_draw_frames":600,"target":[10.2285499572754,-52.0314903259277,-92.0]},"dlss_available":true,"dlss_mode":6,"driver":"vulkan","engine":{"build":"custom_build","hash":"bcc08cc81cc71e3c02b800b055f21fd11634d448","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792996162},"engine_frames_drawn":1141,"environments":[{"ddgi":false,"denoiser":1,"path":"/root/SkiGame/@Node3D@66/@WorldEnvironment@67","pt":true,"samples_per_pixel":1}],"fg_status":{"available":true,"eligible":false,"reason":"no_request","rendered_3d_views":1,"requested_3d_views":0,"sdk_enabled":false,"supported_generated_frames":1},"game":"ski","gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","map":0,"name":"snow_near","native_mode":0,"paused":false,"phase":2,"phase_time":11.0000000000001,"physics":"Jolt Physics","players":[{"body_position":[0.0,0.0,0.0],"camera_position":[0.19011378288269,-46.3799476623535,-80.0],"fake":true,"id":1}],"png":{"file":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture/snow_near.png","height":900,"sha256":"9e8021c60d907e2b7a7689dc118653439053403e1d7bbaec547e7973ce888f97","width":1600},"post_draw_samples":1142,"process_environment":{"APPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\roaming","GODOT_STREAMLINE_DISABLE_OTA":"1","LOCALAPPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\local","RS_TEST_MODE":"1","TEMP":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp","VK_INSTANCE_LAYERS":""},"rendering_method":"forward_plus","rr_denoiser":1,"scope":"Real PLAY plus controlled player-camera poses; not natural camera/gameplay completion or performance evidence","settings":{"effective_upscale":7,"fg":false,"hdr":false,"lighting":2,"preset":0,"sharpness":0,"upscale":7},"ticks":120,"user_data_dir":"<evidence>/harness/runs/bcc08cc81c-20261026T111614Z-4136ec/cases/ski0-pt_rr/profile/roaming/Godot/app_userdata/Regina Sports","viewports":[{"camera":false,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false},{"camera":true,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false}]}
+[  20.1] P1 s= 185.6 v=24.4  gate 3 ok
+[  21.7] P1 s= 222.0 v=24.0  gate 4 ok
+[  23.7] P1 s= 262.0 v=16.1  gate 5 ok
+[  28.5] P1 s= 334.6 v=19.6  trick 1689 360 + Mute Grab + Big Air
+PT_MATERIAL_SHOT {"camera":{"far":3000.0,"forward":[-0.219314709305763,-0.51494836807251,-0.828691363334656],"fov":65.0,"near":0.0500000007450581,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134","position":[15.3951148986816,-37.371150970459,-150.0]},"camera_override":{"before":{"forward":[0.603467047214508,-0.33974614739418,-0.721387684345245],"fov":65.0,"position":[0.19011378288269,-46.3799476623535,-80.0]},"eye":[15.3951148986816,-37.371150970459,-150.0],"fov":65.0,"player_physics_teleported":false,"process_priority":10000,"selected_tree":null,"settle_post_draw_frames":600,"target":[-8.42355251312256,-93.2971038818359,-240.0]},"dlss_available":true,"dlss_mode":6,"driver":"vulkan","engine":{"build":"custom_build","hash":"bcc08cc81cc71e3c02b800b055f21fd11634d448","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792996162},"engine_frames_drawn":1741,"environments":[{"ddgi":false,"denoiser":1,"path":"/root/SkiGame/@Node3D@66/@WorldEnvironment@67","pt":true,"samples_per_pixel":1}],"fg_status":{"available":true,"eligible":false,"reason":"no_request","rendered_3d_views":1,"requested_3d_views":0,"sdk_enabled":false,"supported_generated_frames":1},"game":"ski","gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","map":0,"name":"snow_far","native_mode":0,"paused":false,"phase":2,"phase_time":21.0000000000001,"physics":"Jolt Physics","players":[{"body_position":[0.0,0.0,0.0],"camera_position":[15.3951148986816,-37.371150970459,-150.0],"fake":true,"id":1}],"png":{"file":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture/snow_far.png","height":900,"sha256":"c4c2388458f6b71595d9aa7918b7f022d102f963ad1d837e748dbbb96a62841d","width":1600},"post_draw_samples":1742,"process_environment":{"APPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\roaming","GODOT_STREAMLINE_DISABLE_OTA":"1","LOCALAPPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\local","RS_TEST_MODE":"1","TEMP":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp","VK_INSTANCE_LAYERS":""},"rendering_method":"forward_plus","rr_denoiser":1,"scope":"Real PLAY plus controlled player-camera poses; not natural camera/gameplay completion or performance evidence","settings":{"effective_upscale":7,"fg":false,"hdr":false,"lighting":2,"preset":0,"sharpness":0,"upscale":7},"ticks":120,"user_data_dir":"<evidence>/harness/runs/bcc08cc81c-20261026T111614Z-4136ec/cases/ski0-pt_rr/profile/roaming/Godot/app_userdata/Regina Sports","viewports":[{"camera":false,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false},{"camera":true,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false}]}
+[  30.2] P1 s= 370.8 v=24.1  gate 6 ok
+[  32.0] P1 s= 412.4 v=24.1  gate 7 ok
+[  33.6] P1 s= 448.2 v=24.7  gate 8 ok
+[  35.6] P1 s= 489.9 v=24.2  gate 9 ok
+[  37.4] P1 s= 529.8 v=24.0  gate 10 ok
+PT_MATERIAL_SHOT {"camera":{"far":3000.0,"forward":[-0.772048652172089,-0.0701862424612045,-0.631676137447357],"fov":65.0,"near":0.0500000007450581,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134","position":[-4.62864208221436,-44.8452568054199,-89.3443832397461]},"camera_override":{"before":{"forward":[-0.219314709305763,-0.51494836807251,-0.828691363334656],"fov":65.0,"position":[15.3951148986816,-37.371150970459,-150.0]},"eye":[-4.62864208221436,-44.8452568054199,-89.3443832397461],"fov":65.0,"player_physics_teleported":false,"process_priority":10000,"selected_tree":{"instance":6,"node":"/root/SkiGame/@Node3D@19/@MultiMeshInstance3D@24","shader":"res://shaders/snow_fir.gdshader","world_base":[-15.6286420822144,-50.8452568054199,-98.3443832397461]},"settle_post_draw_frames":600,"target":[-15.6286420822144,-45.8452568054199,-98.3443832397461]},"dlss_available":true,"dlss_mode":6,"driver":"vulkan","engine":{"build":"custom_build","hash":"bcc08cc81cc71e3c02b800b055f21fd11634d448","hex":264192,"major":4,"minor":8,"patch":0,"status":"beta1","string":"4.8-beta1 (custom_build)","timestamp":1792996162},"engine_frames_drawn":2341,"environments":[{"ddgi":false,"denoiser":1,"path":"/root/SkiGame/@Node3D@66/@WorldEnvironment@67","pt":true,"samples_per_pixel":1}],"fg_status":{"available":true,"eligible":false,"reason":"no_request","rendered_3d_views":1,"requested_3d_views":0,"sdk_enabled":false,"supported_generated_frames":1},"game":"ski","gpu":"NVIDIA GeForce RTX 4060 Laptop GPU","map":0,"name":"tree_band","native_mode":0,"paused":false,"phase":2,"phase_time":30.9999999999995,"physics":"Jolt Physics","players":[{"body_position":[0.0,0.0,0.0],"camera_position":[-4.62864208221436,-44.8452568054199,-89.3443832397461],"fake":true,"id":1}],"png":{"file":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture/tree_band.png","height":900,"sha256":"c51f120ad8530b4baae976b14d63eee900ecb9a964d8bac9421ea1eebb9b1506","width":1600},"post_draw_samples":2342,"process_environment":{"APPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\roaming","GODOT_STREAMLINE_DISABLE_OTA":"1","LOCALAPPDATA":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\local","RS_TEST_MODE":"1","TEMP":"<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp","VK_INSTANCE_LAYERS":""},"rendering_method":"forward_plus","rr_denoiser":1,"scope":"Real PLAY plus controlled player-camera poses; not natural camera/gameplay completion or performance evidence","settings":{"effective_upscale":7,"fg":false,"hdr":false,"lighting":2,"preset":0,"sharpness":0,"upscale":7},"ticks":120,"user_data_dir":"<evidence>/harness/runs/bcc08cc81c-20261026T111614Z-4136ec/cases/ski0-pt_rr/profile/roaming/Godot/app_userdata/Regina Sports","viewports":[{"camera":false,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false},{"camera":true,"disable_3d":false,"frame_generation":false,"msaa":0,"path":"/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133","scale":0.666666686534882,"scaling":6,"sharpness":0.0,"size":[1600.0,900.0],"xr":false}]}
+PT_MATERIAL_CAPTURE_COMPLETE
+PT_MATERIAL_FIXTURE_FINISHED 0
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline terminal Vulkan device wait starting.
+Streamline terminal Vulkan device idle completed (VkResult 0).
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+Updated PSO cache (15.3 MiB)
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.common.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.deepdvc.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.directsr.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.dlss.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.dlss_d.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.dlss_g.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.nis.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.nvperf.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.pcl.dll' is signed by NVIDIA and the signature was verified.
+File '<previous-evidence>\builds\editor-bcc08cc81c-sdk214\/sl.reflex.dll' is signed by NVIDIA and the signature was verified.

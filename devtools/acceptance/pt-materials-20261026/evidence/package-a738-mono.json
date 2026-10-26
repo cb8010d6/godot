@@ -1,0 +1,30 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "<evidence>\\validation-a738\\package_templates_win64.ps1",
+    "-Mono"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "a73826e8c0fd90351a1bae5095ce87bc6210be7f",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T13:44:13.031603+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-package-mono-a738.log",
+  "pid": 13444,
+  "exit_code": 0,
+  "duration_seconds": 9.094,
+  "finished_utc": "2026-10-26T13:44:22.065603+00:00"
+}

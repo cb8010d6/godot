@@ -83,6 +83,8 @@ instances. Any failed assertion or evidence write exits 1. The tested script
 SHA-256 is `99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037`.
 After a repair, also test geometry owner deletion/recreation and instance-count
 shrink/grow; compile success alone does not verify cache lifetime.
+At A738 the unchanged public two-phase test and separate six-phase lifetime
+extension both pass actual pixel/TLAS checks; the earlier BCC failures remain.
 
 ### Opaque StandardMaterial vertex-color regression
 
@@ -104,8 +106,47 @@ and an external 170-second process-tree timeout. The project fixes synchronous
 compilation, 640x360, 4 spp, 2 bounces and no RR/DDGI/DLSS. Preserve full native
 logs, actual exit codes, screenshots and JSON; failed checks exit 1.
 Its SHA-256 is `32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d`.
-This new fixture/candidate still requires actual GPU execution. The original
-nine-phase lifecycle and phase 07 merged-color failure remain unchanged.
+At A028 the baseline exits 1 with zero of four pixel phases passing. At A738
+the same four pixel assertions pass and the process exits 0 in 27.000 seconds.
+Explicit TLAS counts are baseline 1/1/2/2 and repaired route 1/3/4/4. The original
+nine-phase lifecycle and phase 07 merged-color failure remain unchanged; no
+old one-entry merged test is relabeled as a pass for the new expanded route.
+
+### A738 measured acceptance snapshot
+
+Native source commit `a73826e8c0fd90351a1bae5095ce87bc6210be7f` is tested on
+RTX 4060 Laptop GPU / Windows driver 32.0.16.1088 / Vulkan 1.4.341.
+The color and owner fixtures above use 640x360, synchronous compilation and
+RR/DDGI/DLSS off. The independent SDK-enabled game matrices use normal
+asynchronous compilation, bounded first-player camera sweeps during real PLAY
+and 1600x900 captures, rather than full gameplay or performance measurement.
+
+| Check | Measured result and boundary |
+| --- | --- |
+| Standard MSVC editor; six Windows standard/Mono editor/template targets | PASS, exit 0: 145.687 seconds / 454.266 seconds |
+| Opaque-color native red/green | A028 FAIL 0/4; A738 PASS 4/4, identical pixel assertions with explicit merged/expanded TLAS expectations above |
+| Shared-owner native / extended lifetime | A738 PASS 2/2 and 6/6, exit 0 in 11.547 / 14.860 seconds; BCC red and A028 partial records retained |
+| Actual game PT without/with RR | PASS 6/6, including no-RR controls; PT0 uses a snapshot-only Environment override because the normal UI gates that combination |
+| Actual split-screen PT/RR | PASS 4/4, two/four players; short controlled-camera runs |
+| Actual DDGI | PASS 2/2, independent runs rather than relabeled PT results |
+| Standard / Mono repository smoke | PASS, exit 0 in 31.031 / 27.078 seconds |
+| Four installed-template physics fixtures | PASS: standard/Mono x debug/release exports and actual D3D12 startup; no Streamline DLLs in game directories |
+| Application-game export / packed RT include / runtime | PASS 2/2: actual EXE/PCK D3D12 raster request and Vulkan PT/RR request, three 1600x900 PNGs each, natural RSExit/exit 0; packed include payload/source/MD5/SHA match; bounded startup checks only |
+| Strict Vulkan validation | NOT CLEAN: original lifecycle presentation and Streamline diagnostics remain separate failures |
+
+The Mono export tests remove SDK discovery from the runtime process only; the
+host still has an SDK installed, so no clean-computer claim is made. Actual
+DLSS model identity, FG presentation, latency, long-session stability and HDR
+are outside these material checks. Metadata-only engine-pin/document updates
+follow the frozen game GPU input snapshots and do not imply whole-tree byte
+identity afterward. The [A738 validation summary](https://github.com/cb8010d6/sport-games/blob/migration/4.8-beta1-sl214-209897f/docs/validation/rtx-a73826e8c0.json)
+records original receipts, images and input hashes; it is not a publication of
+SDK binaries or private raw evidence. This remains an experimental build.
+The application production runs supply no `--path`, external script or
+`--quit-after` and leave no new owned NGX updater after Job cleanup; they do
+not add PT/RR effective-state readback or establish full gameplay acceptance.
+The original export-preparation runtime-pending marker is retained unchanged;
+later natural-exit receipts record completion separately.
 
 ## What the path tracer supports today
 
@@ -117,7 +158,7 @@ Audited on 2026-10-08 at commit `ca52415e30`. Shader sources are in
 | Feature | Status | Where |
 | --- | --- | --- |
 | StandardMaterial3D albedo, roughness, metallic, specular, ORM texture | Supported | `scene_raytracing_raygen.glsl`, closest hit HG0 |
-| StandardMaterial3D vertex colors | A028 HG0 omits COLOR; ordinary opaque/non-emissive custom-HG candidate added, rebuild/GPU verification pending | `opaque_color_regression`, [finding](kb/tooling/pt-opaque-standard-vertex-colors.md) |
+| StandardMaterial3D vertex colors | A738 ordinary opaque/non-emissive generated-HG route passes native 4/4 and short game captures; alpha/emissive/advanced exclusions and expanded-TLAS cost remain | `opaque_color_regression`, [finding](kb/tooling/pt-opaque-standard-vertex-colors.md) |
 | Normal maps | Supported | `apply_normal_map()` |
 | Emission (color, energy, texture) | Supported. StandardMaterial3D emitters are also sampled as mesh lights (NEE) on rough surfaces. Custom shader emission is counted on hit only | `lights_sample_emissive_mesh()` |
 | Omni, spot, directional lights | Supported, with soft shadows from light size | `raytracing_lights_inc.glsl` |
@@ -151,8 +192,8 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | 9 | Glass (B6): path traced alpha blend, refraction and transmission instead of the raster overlay | Done |
 | 10 | Clean up, document, merge `dev` into `nvidia-pt-dlss` | Done (release 0.3.0) |
 | Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Windows RTX Vulkan PT/RR scenes rendered on a separate regression build; strict validation still fails; see `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
-| Regression | Shared MultiMesh vertex displacement | A028 real GPU two-phase owner test and extended six-phase lifetime test pass; BCC red and first MSVC failure remain retained |
-| Regression | Opaque StandardMaterial vertex colors | A028 actual awning/merged-MM color failures retained; guarded custom-HG candidate and independent fixture await rebuild/GPU regression |
+| Regression | Shared MultiMesh vertex displacement | A738 real GPU owner 2/2 and extended lifetime 6/6 pass; A028 partial successes, BCC red and first MSVC failure remain retained |
+| Regression | Opaque StandardMaterial vertex colors | A738 native 4/4 and independent actual game 6+4+2 pass within the scoped route; A028/merged-07 failures and strict-validation failures retained |
 
 ## Known bugs
 
@@ -164,6 +205,9 @@ real instance colors and displacement in the minimal Vulkan fixture, but a
 separate shared-owner test reproduces aliased deformation buffers. A028 passes
 the two-phase owner test and extended six-phase lifetime regression after its
 owner-isolation correction.
+A738 independently passes the same public two-phase owner regression and the
+six-phase lifetime extension; these are cache/pixel checks rather than a clean
+strict-validation result.
 Derivative-dependent application materials
 need a separate RT path; successful short opening captures did not establish
 full material compatibility during gameplay. The retained C1 results are not
@@ -174,17 +218,20 @@ pixel phases. The remaining StandardMaterial3D merged MultiMesh phase renders
 white instead of instance colors despite `vertex_color_use_as_albedo=true`;
 this inherited gap is outside the custom-shader owner-cache correction.
 Actual A028 PT/RR captures also show white awnings where raster/DDGI preserve
-the ordinary mesh's vertex-color stripes. The [new narrow color candidate](kb/tooling/pt-opaque-standard-vertex-colors.md)
+the ordinary mesh's vertex-color stripes. The [measured narrow color correction](kb/tooling/pt-opaque-standard-vertex-colors.md)
 routes ordinary opaque, non-emissive materials through their generated shader.
 Transparent/clipped, emissive, matrix/position overrides, particle/point-size and
 parallax materials retain existing paths and limitations. Expanded COLOR
 MultiMeshes can cost more TLAS/geometry-data work; no performance claim is made.
-The candidate and new independent source fixture are not yet GPU-verified.
+At A738 the independent four-phase fixture passes its unchanged pixel checks
+with explicit expanded-route expectations; short game captures also restore
+the awning stripes. The old merged phase 07 remains a preserved failure.
 Strict controls still log `PRESENT_AFTER_WRITE` at swapchain presentation. The
 attempted process-only overlay-disable control still loaded the RTSS layer,
 so it does not isolate the overlay's contribution. Pixel checks and native exit codes must remain
-separate from clean Vulkan validation; these results do not establish RR/FG
-acceptance.
+separate from clean Vulkan validation. These no-RR lifecycle controls do not
+establish RR/FG acceptance; the separate short game RR matrix above does not
+broaden them into clean strict validation or FG presentation evidence.
 
 Found in the step 3 baseline (2026-10-08, commit `a6a531899a`, 4 spp, 3
 bounces, no denoiser). Screenshots were taken with `--shot` for every view in
@@ -215,12 +262,29 @@ Other notes:
 
 Newest first. Note the date, the commit, the view and what you saw or changed.
 
+- 2026-10-27: Native A738 editor and six Windows targets build successfully
+  (145.687 / 454.266 seconds). Native opaque-color 4/4, shared-owner 2/2 and
+  extended lifetime 6/6 pass. Independent real-game PT-without/with-RR 6/6,
+  split-screen PT/RR 4/4 and DDGI 2/2 pass bounded 1600x900 PLAY captures.
+  Standard/Mono smoke pass in 31.031/27.078 seconds; four matching installed
+  template physics fixtures export/run through D3D12. A separate actual
+  application EXE/PCK passes two production-entry startup/capture/natural-exit
+  runs, with D3D12 raster and Vulkan PT/RR requests; each has three original PNGs
+  and native exit 0. The packed RT include payload matches source/MD5/SHA.
+  Preparation-time pending evidence remains retained; no full-game, production
+  PT/RR state-readback or independent model claim follows from these runs.
+  Original A028 color red, BCC owner red and merged phase 07 failures remain;
+  cold async grey placeholders, alpha/emissive/advanced exclusions and strict
+  Vulkan diagnostics are not erased. See the scoped matrix above and
+  [color finding](kb/tooling/pt-opaque-standard-vertex-colors.md).
+
 - 2026-10-27: A028 manual PT/RR awning captures fail vertex-color compatibility;
   code inspection confirms an opaque Standard material on colored ArrayMesh
   strips. The ordinary opaque/non-emissive generated-shader candidate preserves
   transparency and NEE paths, excludes advanced geometry/parallax modes, and
-  adds a separate linear/sRGB vertex-color regression. Rebuild and GPU checks
-  are pending. A028 owner isolation separately passes its two-phase and extended
+  adds a separate linear/sRGB vertex-color regression. At this earlier
+  checkpoint rebuild/GPU checks were pending; A738 follow-up is recorded above.
+  A028 owner isolation separately passes its two-phase and extended
   six-phase native tests; see [color finding](kb/tooling/pt-opaque-standard-vertex-colors.md).
 
 - 2026-10-26: At `bcc08cc81cc71e3c02b800b055f21fd11634d448`, a visible

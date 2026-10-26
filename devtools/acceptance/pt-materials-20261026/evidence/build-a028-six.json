@@ -1,0 +1,36 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/build/build.ps1",
+    "-Target",
+    "release",
+    "-KeepGoing",
+    "-Jobs",
+    "2",
+    "-VersionStatus",
+    "beta1"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "a0286a13517761b058cbf53286ad0c723d414fc2",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T11:48:00.459333+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-six-build-a028.log",
+  "pid": 45668,
+  "exit_code": 0,
+  "duration_seconds": 454.313,
+  "finished_utc": "2026-10-26T11:55:34.711292+00:00"
+}

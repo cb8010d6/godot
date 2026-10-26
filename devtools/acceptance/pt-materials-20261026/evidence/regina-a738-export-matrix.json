@@ -1,0 +1,14 @@
+[
+  {
+    "label": "regina-a738-20261026T142935Z-b7656a86-import",
+    "exit_code": 0,
+    "errors": [],
+    "passed": true
+  },
+  {
+    "label": "regina-a738-20261026T142935Z-b7656a86-release",
+    "exit_code": 0,
+    "errors": [],
+    "passed": true
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "devtools/build/build.ps1",
+    "-Jobs",
+    "2",
+    "-VersionStatus",
+    "beta1"
+  ],
+  "cwd": "<source>",
+  "checkout_sha": "858908f21c56ef6e0c63dab84d6139d370a044e1",
+  "worktree_status": "",
+  "command_input_binaries": [],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T11:37:07.886740+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-editor-858.log",
+  "pid": 26008,
+  "exit_code": 1,
+  "duration_seconds": 130.531,
+  "finished_utc": "2026-10-26T11:39:18.339446+00:00"
+}

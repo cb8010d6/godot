@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<evidence>\\builds\\editor-a0286a1351-no-sl\\godot.windows.editor.x86_64.exe",
+    "--rendering-driver",
+    "vulkan",
+    "--rendering-method",
+    "forward_plus",
+    "--path",
+    "<source>\\misc\\pathtracer_test_project\\shared_owner_regression",
+    "--script",
+    "res://shared_owner.gd",
+    "--",
+    "--output=<evidence>/shared-owner/evidence-green-a028-01"
+  ],
+  "cwd": "<source>\\misc\\pathtracer_test_project\\shared_owner_regression",
+  "checkout_sha": "a0286a13517761b058cbf53286ad0c723d414fc2",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<evidence>\\builds\\editor-a0286a1351-no-sl\\godot.windows.editor.x86_64.exe",
+      "bytes": 161805824,
+      "sha256": "e637d45b329edf022e9d08f58e051b6aee76998a01e6194bbd275e788c7edd4d"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<workspace>\\toolchains\\cache\\local",
+    "TEMP": "<workspace>\\toolchains\\cache\\tmp",
+    "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+    "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+    "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+  },
+  "started_utc": "2026-10-26T11:46:11.211882+00:00",
+  "log": "<previous-evidence>\\logs\\pt-materials-owner-green-a028.log",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 44884,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 11.469,
+  "finished_utc": "2026-10-26T11:46:22.464561+00:00"
+}

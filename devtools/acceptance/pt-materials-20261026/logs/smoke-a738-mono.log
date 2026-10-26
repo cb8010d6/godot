@@ -1,0 +1,6 @@
+Editor: 4.8.beta1.mono.custom_build.a73826e8c
+PASS  PhysX, game                        PhysX body fell and settled on the floor
+PASS  PhysX, editor                      PhysX 5.10.0 initialized [GPU].
+PASS  Path tracer, Vulkan                screenshot <source>\devtools\out\smoke\mono\path_tracer.png
+PASS  DDGI, interior                     view=interior gi=ddgi quality=1 anim=0 frames=30  mean_linear=0.0124  flicker_std=0.047  flicker_px=0.00%
+All smoke tests passed.

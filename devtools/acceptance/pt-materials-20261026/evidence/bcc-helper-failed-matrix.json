@@ -1,0 +1,430 @@
+{
+  "status": "FAIL",
+  "expected_sha": "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+  "output": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec",
+  "project_snapshot": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+  "cases": [
+    {
+      "name": "skate0-pt_rr",
+      "game": "skate",
+      "map": 0,
+      "mode": "pt_rr",
+      "status": "FAIL",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+        "--cwd",
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-bcc08cc81c-20261026T111614Z-4136ec-skate0-pt_rr",
+        "--",
+        "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--material-output=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=skate",
+          "--demo=1",
+          "--map=0",
+          "--material-output=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "checkout_sha": "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161802752,
+            "sha256": "158a37b906f3b7449e8914d43175d9669442d18d6c29db57eb34100c434f88fc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T11:17:26.457594+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-bcc08cc81c-20261026T111614Z-4136ec-skate0-pt_rr.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 17464,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          4908,
+          15168,
+          9568,
+          49596,
+          9340,
+          43568,
+          29820,
+          34040,
+          29292,
+          39608,
+          16016,
+          28052,
+          14056,
+          48220,
+          33984,
+          44696,
+          20820,
+          49040,
+          33584,
+          37868
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 45.875,
+        "finished_utc": "2026-10-26T11:18:12.102657+00:00"
+      },
+      "error_lines": [
+        "SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.",
+        "SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.",
+        "WARNING: RT: Failed to preprocess custom shader; falling back to default material."
+      ],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message",
+        "WARNING: Forward Clustered: RT-variant classification compile failed for shader res://shaders/facade.gdshader. Falling back to raster-side flags for ray-tracing routing.",
+        "WARNING: RT: Failed to preprocess custom shader; falling back to default material."
+      ],
+      "failure": "ValueError: Recorder/engine/log failed; original errors retained",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\capture.json": {
+          "bytes": 60341,
+          "sha256": "4f0654b6727c48bf4ae57c38fab7e6124e537a6dc581d6b0e15846561eb0b248"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\left_far.json": {
+          "bytes": 3851,
+          "sha256": "5278115b4a53652bd0897bf309611ba133ace5dd6341a91b95fd6f5e29c66c25"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\left_far.png": {
+          "bytes": 1387813,
+          "sha256": "299ccda0a04dc88ca0952584480e4db21fcae0b5fb1a3936e49822250579965d"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\left_near.json": {
+          "bytes": 3838,
+          "sha256": "60ffc38c120b92af54964f08bf4190920721b67aa88ff4a199b9cd51e8a365cb"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\left_near.png": {
+          "bytes": 1334440,
+          "sha256": "cafc4c6ff6e53fed8512f50f1960daac531aaa0ed702ef51af166e4903b4b32f"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\right_far.json": {
+          "bytes": 3864,
+          "sha256": "ff81ab1230c2db8c9a16e32c1ec7e981630a68d9696281c0f6b46e0302044c25"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\right_far.png": {
+          "bytes": 1344715,
+          "sha256": "f0c092db712b75de400f2cea90c8c5da8c0754b4476d18d60d51cc1dbc11d26a"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\right_near.json": {
+          "bytes": 3826,
+          "sha256": "fd99919c28ce467e985cd5a366096af5b56baa6aab8df53fd2051d2a6b74309d"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\capture\\right_near.png": {
+          "bytes": 1220823,
+          "sha256": "298302dcdef1022718573ad29c6f9d5799d2880c059ff555d7f3222a0b745c9e"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\godot.stdout.log": {
+          "bytes": 162191,
+          "sha256": "439f2f5e6dbcf6eac6ac40e1823ae8d7e6689d3a1fe126b48d8c2b7833bd86ab"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\raw-receipt.json": {
+          "bytes": 2626,
+          "sha256": "5c76dfd3000f90785e7d3d9ad77daa889acb3e08f7beb5bdf4afb807228e0a45"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\skate0-pt_rr\\wrapper.stdout.log": {
+          "bytes": 5260,
+          "sha256": "205a114377d1c0282f417259f05d2606d2629f654a5745eb02b4981784145c3e"
+        }
+      }
+    },
+    {
+      "name": "ski0-pt_rr",
+      "game": "ski",
+      "map": 0,
+      "mode": "pt_rr",
+      "status": "FAIL",
+      "command": [
+        "<workspace>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<previous-evidence>\\run_logged.py",
+        "--expected-sha",
+        "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+        "--cwd",
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "--timeout",
+        "300",
+        "--set-env",
+        "APPDATA=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\roaming",
+        "--set-env",
+        "LOCALAPPDATA=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\local",
+        "--set-env",
+        "TEMP=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp",
+        "--set-env",
+        "TMP=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp",
+        "--set-env",
+        "RS_TEST_MODE=1",
+        "--set-env",
+        "GODOT_STREAMLINE_DISABLE_OTA=1",
+        "ptmat-bcc08cc81c-20261026T111614Z-4136ec-ski0-pt_rr",
+        "--",
+        "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+        "--path",
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "--script",
+        "<evidence>\\harness\\material_play_capture.gd",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--verbose",
+        "--",
+        "--game=ski",
+        "--demo=1",
+        "--map=0",
+        "--material-output=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture",
+        "--material-mode=pt_rr",
+        "--material-settle=600",
+        "--material-warmup=60",
+        "--material-max-wait=3600",
+        "--material-fov=65"
+      ],
+      "hub_port_policy": "RS_TEST_MODE: OS-assigned listen port, no Hub destination",
+      "settings_sha256_before": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "wrapper_exit_code": 0,
+      "receipt": {
+        "command": [
+          "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+          "--path",
+          "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+          "--script",
+          "<evidence>\\harness\\material_play_capture.gd",
+          "--rendering-method",
+          "forward_plus",
+          "--rendering-driver",
+          "vulkan",
+          "--resolution",
+          "1600x900",
+          "--fixed-fps",
+          "60",
+          "--verbose",
+          "--",
+          "--game=ski",
+          "--demo=1",
+          "--map=0",
+          "--material-output=<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture",
+          "--material-mode=pt_rr",
+          "--material-settle=600",
+          "--material-warmup=60",
+          "--material-max-wait=3600",
+          "--material-fov=65"
+        ],
+        "cwd": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\project",
+        "checkout_sha": "bcc08cc81cc71e3c02b800b055f21fd11634d448",
+        "worktree_status": "",
+        "command_input_binaries": [
+          {
+            "file": "<previous-evidence>\\builds\\editor-bcc08cc81c-sdk214\\godot.windows.editor.x86_64.exe",
+            "bytes": 161802752,
+            "sha256": "158a37b906f3b7449e8914d43175d9669442d18d6c29db57eb34100c434f88fc"
+          }
+        ],
+        "environment": {
+          "GODOT_VERSION_STATUS": "beta1",
+          "GODOT_STREAMLINE_DISABLE_OTA": "1",
+          "GODOT_RG_REORDER": null,
+          "GODOT_RG_FULL_BARRIERS": null,
+          "LOCALAPPDATA": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\local",
+          "TEMP": "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\profile\\tmp",
+          "NUGET_PACKAGES": "<workspace>\\toolchains\\cache\\nuget",
+          "DOTNET_ROOT": "<workspace>\\toolchains\\dotnet10",
+          "CUDA_PATH": "<workspace>\\toolchains\\cuda12.8"
+        },
+        "started_utc": "2026-10-26T11:18:38.643944+00:00",
+        "log": "<previous-evidence>\\logs\\ptmat-bcc08cc81c-20261026T111614Z-4136ec-ski0-pt_rr.log",
+        "ngx_updaters_before": [],
+        "test_job_assigned": true,
+        "pid": 6380,
+        "exit_code": 0,
+        "test_job_descendants_closed": [
+          42328,
+          20924,
+          23884,
+          44584,
+          39724,
+          41388,
+          23600,
+          28932,
+          14492,
+          10984,
+          40352,
+          44104,
+          45700,
+          8584,
+          9076,
+          33552,
+          21948,
+          9264,
+          37264,
+          26756
+        ],
+        "ngx_updaters_after": [],
+        "duration_seconds": 37.641,
+        "finished_utc": "2026-10-26T11:19:16.061854+00:00"
+      },
+      "error_lines": [
+        "SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.",
+        "SHADER ERROR: Unknown identifier in expression: 'INV_VIEW_MATRIX'.",
+        "WARNING: RT: Failed to preprocess custom shader; falling back to default material."
+      ],
+      "warning_lines": [
+        "WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message",
+        "WARNING: Forward Clustered: RT-variant classification compile failed for shader res://shaders/ski_terrain.gdshader. Falling back to raster-side flags for ray-tracing routing.",
+        "WARNING: RT: Failed to preprocess custom shader; falling back to default material."
+      ],
+      "failure": "ValueError: Recorder/engine/log failed; original errors retained",
+      "frozen_inputs_unchanged": true,
+      "settings_sha256_after": "9fce30d701df210164a84f8efe680f6c12d758f5aab5b34a6fdd898c00734c3e",
+      "artifact_hashes": {
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\capture.json": {
+          "bytes": 49931,
+          "sha256": "ca29f8b26f204fe4d081b0d19cad49e06a623c1d29a59756fe0dc82027cf84d1"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\snow_far.json": {
+          "bytes": 3916,
+          "sha256": "79f6123e4c7b233785689aca4b8d1b04a09c8b6e5bd34ea200cccee1a9715c48"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\snow_far.png": {
+          "bytes": 1609359,
+          "sha256": "c4c2388458f6b71595d9aa7918b7f022d102f963ad1d837e748dbbb96a62841d"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\snow_near.json": {
+          "bytes": 3942,
+          "sha256": "11ef9ea4135ed799f1b5fd53ed83e0a4948c916147c100145dcf2b7fa5306214"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\snow_near.png": {
+          "bytes": 947809,
+          "sha256": "9e8021c60d907e2b7a7689dc118653439053403e1d7bbaec547e7973ce888f97"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\tree_band.json": {
+          "bytes": 4193,
+          "sha256": "2614fded06d379a6fc0b55f5b3f3fd5657cdbcfffcfc7da2dd9eaeecaeedf84c"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\capture\\tree_band.png": {
+          "bytes": 1671578,
+          "sha256": "c51f120ad8530b4baae976b14d63eee900ecb9a964d8bac9421ea1eebb9b1506"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\godot.stdout.log": {
+          "bytes": 77095,
+          "sha256": "8478dd040775c32432ca087aed932fcee57da19f70e954313a9c66771f43ab30"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\raw-receipt.json": {
+          "bytes": 2615,
+          "sha256": "2689469750f447d11e8b5b5dfb40ebe04a207f0452891d89d822b1a886969edd"
+        },
+        "<evidence>\\harness\\runs\\bcc08cc81c-20261026T111614Z-4136ec\\cases\\ski0-pt_rr\\wrapper.stdout.log": {
+          "bytes": 5249,
+          "sha256": "8d5ea392253f494297a923e67fead67d76769f4a1c2bbc9c9f30e5c7f4465b4a"
+        }
+      }
+    }
+  ],
+  "requested_scenes": [
+    "skate:0",
+    "ski:0"
+  ],
+  "requested_modes": [
+    "pt_rr"
+  ],
+  "planned_case_count": 2,
+  "plan_only": false,
+  "limitations": [
+    "Controlled player-camera sweeps during real PLAY; not full gameplay or natural-camera acceptance.",
+    "No active DLSS model or generated-frame image is verified; fixed timestep is not an FPS benchmark.",
+    "pt0 directly overrides Environment in process memory to isolate PT without DLSS; the normal game UI intentionally gates that combination.",
+    "Raster/native MSAA follows the unchanged game quality tier; actual MSAA is recorded.",
+    "Images require visual review; error-free execution alone does not prove restored material appearance."
+  ],
+  "copy_budget": {
+    "snapshot_file_count": 2195,
+    "snapshot_file_bytes": 3182252545,
+    "destination_free_bytes": 126120296448,
+    "minimum_free_after_copy_bytes": 2147483648,
+    "required_free_bytes": 5329736193
+  },
+  "source_game_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "finished_utc": "2026-10-26T11:19:56.693887+00:00"
+}
