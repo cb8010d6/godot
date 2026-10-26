@@ -1672,6 +1672,7 @@ RTMaterialData *RenderRaytracing::process_material(RID p_material_rid, uint16_t 
 	// BaseMaterial3D stores every parameter, but declares a uniform only when its
 	// feature is on. Read a parameter only if the shader actually uses it.
 	RendererRD::MaterialStorage::ShaderData *shader_data = material_storage->material_get_shader_data(p_material_rid);
+	const SceneShaderForwardClustered::ShaderData *forward_shader = static_cast<const SceneShaderForwardClustered::ShaderData *>(shader_data);
 	auto shader_declares = [&](const StringName &p_param) -> bool {
 		return shader_data && shader_data->uniforms.has(p_param);
 	};
@@ -1693,7 +1694,13 @@ RTMaterialData *RenderRaytracing::process_material(RID p_material_rid, uint16_t 
 	// Colors declared with source_color in Godot shaders are stored in sRGB;
 	// material_get_param returns the raw sRGB value, so we convert to linear here.
 	Variant albedo_var = material_storage->material_get_param(p_material_rid, "albedo");
-	if (albedo_var.get_type() == Variant::COLOR) {
+	// HG0 does not evaluate vertex colors. Preserve the generated material's
+	// COLOR/sRGB code through the custom hit group for ordinary opaque surfaces.
+	// Emissive materials retain HG0's mesh-light sampling; transparent materials
+	// retain its stochastic alpha and refraction paths.
+	const bool use_custom_vertex_color = forward_shader && forward_shader->rt_uses_opaque_vertex_color() &&
+			!emission_enabled && !shader_declares("refraction") && !shader_declares("heightmap_scale");
+	if (albedo_var.get_type() == Variant::COLOR && !use_custom_vertex_color) {
 		Color c = ((Color)albedo_var).srgb_to_linear();
 		mat.albedo_color[0] = c.r;
 		mat.albedo_color[1] = c.g;
@@ -1898,7 +1905,6 @@ RTMaterialData *RenderRaytracing::process_material(RID p_material_rid, uint16_t 
 	// space offset with no IOR, so the scale maps to one: the default 0.05
 	// gives 1.5 (glass), 0 gives no bending.
 	mat.flags &= ~(RT_MAT_FLAG_ALPHA_BLEND | RT_MAT_FLAG_REFRACTION | RT_MAT_IOR_MASK);
-	const SceneShaderForwardClustered::ShaderData *forward_shader = static_cast<const SceneShaderForwardClustered::ShaderData *>(shader_data);
 	if (!mat_data->is_custom_shader && forward_shader && forward_shader->rt_traces_transparency()) {
 		if (shader_declares("refraction")) {
 			float ior = 1.5f;

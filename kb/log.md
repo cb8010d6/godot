@@ -1,5 +1,19 @@
 # Update log
 
+## 2026-10-27 (opaque StandardMaterial vertex-color candidate)
+
+* A028 real PT/RR captures still show white awnings where raster/DDGI show
+  vertex-color stripes. The earlier merged-MultiMesh phase 07 is a separate
+  preserved no-RR red seam for the same HG0 COLOR omission.
+* [Opaque color routing](/tooling/pt-opaque-standard-vertex-colors.md) records
+  the narrow generated-shader candidate and independent four-phase fixture.
+  Transparent, clipped, emissive and advanced geometry/parallax materials keep
+  their old paths; COLOR MultiMeshes trade merged geometry for expanded TLAS.
+  Rebuild, new native fixture results and actual awning regression are pending.
+* A028's unchanged shared-owner two-phase test and extended six-phase lifecycle
+  both exit 0 (11.469 s / 14.859 s). These measured owner-cache results do not
+  convert the remaining material-color or strict-validation failures into passes.
+
 ## 2026-10-26 (owner-cache build correction)
 
 * MSVC rejects the first owner-isolation candidate `858908f21c` with C2664:

@@ -71,6 +71,7 @@ void SceneShaderForwardClustered::ShaderData::set_code(const String &p_code) {
 	writes_tangent = false;
 	uses_normal_map = false;
 	uses_bent_normal_map = false;
+	uses_vertex_color = false;
 	wireframe = false;
 
 	unshaded = false;
@@ -138,6 +139,7 @@ void SceneShaderForwardClustered::ShaderData::set_code(const String &p_code) {
 	actions.usage_flag_pointers["NORMAL"] = &uses_normal;
 	actions.usage_flag_pointers["NORMAL_MAP"] = &uses_normal_map;
 	actions.usage_flag_pointers["BENT_NORMAL_MAP"] = &uses_bent_normal_map;
+	actions.usage_flag_pointers["COLOR"] = &uses_vertex_color;
 
 	actions.usage_flag_pointers["POINT_SIZE"] = &uses_point_size;
 	actions.usage_flag_pointers["POINT_COORD"] = &uses_point_size;
@@ -269,13 +271,14 @@ void SceneShaderForwardClustered::ShaderData::set_code_rt(const String &p_code_r
 	bool local_uses_alpha_clip = false;
 	bool local_uses_alpha_antialiasing = false;
 	bool local_uses_depth_prepass_alpha = false;
+	bool local_uses_vertex_color = false;
 
 	ShaderCompiler::IdentifierActions actions;
 	actions.entry_point_stages["vertex"] = ShaderCompiler::STAGE_VERTEX;
 	actions.entry_point_stages["fragment"] = ShaderCompiler::STAGE_FRAGMENT;
 	actions.entry_point_stages["light"] = ShaderCompiler::STAGE_FRAGMENT;
 
-	// Only the inputs that influence `rt_uses_alpha_pass` / `rt_uses_depth_in_alpha_pass`.
+	// Inputs that influence RT alpha-pass and vertex-color routing.
 	actions.render_mode_values["blend_add"] = Pair<int *, int>(&blend_modei, BLEND_MODE_ADD);
 	actions.render_mode_values["blend_mix"] = Pair<int *, int>(&blend_modei, BLEND_MODE_MIX);
 	actions.render_mode_values["blend_sub"] = Pair<int *, int>(&blend_modei, BLEND_MODE_SUB);
@@ -303,6 +306,7 @@ void SceneShaderForwardClustered::ShaderData::set_code_rt(const String &p_code_r
 	actions.usage_flag_pointers["ALPHA_HASH_SCALE"] = &local_uses_alpha_clip;
 	actions.usage_flag_pointers["ALPHA_ANTIALIASING_EDGE"] = &local_uses_alpha_antialiasing;
 	actions.usage_flag_pointers["ALPHA_TEXTURE_COORDINATE"] = &local_uses_alpha_antialiasing;
+	actions.usage_flag_pointers["COLOR"] = &local_uses_vertex_color;
 
 	HashMap<StringName, ShaderLanguage::ShaderNode::Uniform> rt_uniform_sink;
 	actions.uniforms = &rt_uniform_sink;
@@ -348,6 +352,7 @@ void SceneShaderForwardClustered::ShaderData::set_code_rt(const String &p_code_r
 	rt->uses_alpha_clip = local_uses_alpha_clip;
 	rt->uses_alpha_antialiasing = local_uses_alpha_antialiasing;
 	rt->uses_depth_prepass_alpha = local_uses_depth_prepass_alpha;
+	rt->uses_vertex_color = local_uses_vertex_color;
 	rt->uses_blend_alpha = blend_mode_uses_blend_alpha(BlendMode(rt->blend_mode));
 
 	rt->uses_screen_texture = rt_gen_code.uses_screen_texture;

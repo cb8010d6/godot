@@ -2,6 +2,9 @@
 // Include under #ifdef RT_CUSTOM_HIT_GROUP, outside main().
 // Requires: bindless_textures[], materials[] bindings already declared.
 
+// Material evaluation is linear, matching Forward+ raster shader semantics.
+#define SHADER_IS_SRGB false
+
 layout(buffer_reference, std140) readonly buffer CustomMaterialUniforms{
 	/* RT_CUSTOM_UNIFORM_MEMBERS */
 };

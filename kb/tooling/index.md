@@ -1,5 +1,7 @@
 # Tooling
 
+* [Opaque StandardMaterial vertex colors](/tooling/pt-opaque-standard-vertex-colors.md) - retain generated COLOR/sRGB semantics for ordinary opaque materials while preserving existing transparency and emissive sampling paths
+
 * [Path-traced instance built-ins](/tooling/pt-instance-builtins.md) - preserve real MultiMesh inputs and per-instance displacement instead of dropping failed hit groups
 
 * [Windows RTX acceptance snapshot](/tooling/windows-rtx-acceptance-20261026.md) - C1 functional results and separate d37 strict failures, with original evidence hashes

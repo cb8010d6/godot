@@ -84,6 +84,29 @@ SHA-256 is `99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037`.
 After a repair, also test geometry owner deletion/recreation and instance-count
 shrink/grow; compile success alone does not verify cache lifetime.
 
+### Opaque StandardMaterial vertex-color regression
+
+The independent
+[`opaque_color_regression`](misc/pathtracer_test_project/opaque_color_regression/)
+project checks ordinary ArrayMesh stripes and MultiMesh tint/sRGB behavior:
+
+```powershell
+& $Engine --rendering-driver vulkan --rendering-method forward_plus `
+  --path misc/pathtracer_test_project/opaque_color_regression `
+  --script res://standard_color.gd -- --mm-path=expanded --output=$EvidenceDirectory
+```
+
+Use `--mm-path=merged` for the baseline. The pixel assertions stay identical;
+the candidate explicitly expects expanded TLAS entries (3 rather than 1 for
+the RGB MultiMesh). The constant-color phases add an independent non-vertex-color
+reference and check both linear/sRGB input semantics. Use a new output directory
+and an external 170-second process-tree timeout. The project fixes synchronous
+compilation, 640x360, 4 spp, 2 bounces and no RR/DDGI/DLSS. Preserve full native
+logs, actual exit codes, screenshots and JSON; failed checks exit 1.
+Its SHA-256 is `32c50befae8d888884607f3e52064192f74e7004b4be26f9b63863fc359cd28d`.
+This new fixture/candidate still requires actual GPU execution. The original
+nine-phase lifecycle and phase 07 merged-color failure remain unchanged.
+
 ## What the path tracer supports today
 
 Audited on 2026-10-08 at commit `ca52415e30`. Shader sources are in
@@ -94,6 +117,7 @@ Audited on 2026-10-08 at commit `ca52415e30`. Shader sources are in
 | Feature | Status | Where |
 | --- | --- | --- |
 | StandardMaterial3D albedo, roughness, metallic, specular, ORM texture | Supported | `scene_raytracing_raygen.glsl`, closest hit HG0 |
+| StandardMaterial3D vertex colors | A028 HG0 omits COLOR; ordinary opaque/non-emissive custom-HG candidate added, rebuild/GPU verification pending | `opaque_color_regression`, [finding](kb/tooling/pt-opaque-standard-vertex-colors.md) |
 | Normal maps | Supported | `apply_normal_map()` |
 | Emission (color, energy, texture) | Supported. StandardMaterial3D emitters are also sampled as mesh lights (NEE) on rough surfaces. Custom shader emission is counted on hit only | `lights_sample_emissive_mesh()` |
 | Omni, spot, directional lights | Supported, with soft shadows from light size | `raytracing_lights_inc.glsl` |
@@ -127,7 +151,8 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | 9 | Glass (B6): path traced alpha blend, refraction and transmission instead of the raster overlay | Done |
 | 10 | Clean up, document, merge `dev` into `nvidia-pt-dlss` | Done (release 0.3.0) |
 | Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Windows RTX Vulkan PT/RR scenes rendered on a separate regression build; strict validation still fails; see `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
-| Regression | Shared MultiMesh vertex displacement | BCC real GPU baseline fails both owner-isolation phases; validated owner-cache candidate and repository fixture added, rebuild/GPU regression pending |
+| Regression | Shared MultiMesh vertex displacement | A028 real GPU two-phase owner test and extended six-phase lifetime test pass; BCC red and first MSVC failure remain retained |
+| Regression | Opaque StandardMaterial vertex colors | A028 actual awning/merged-MM color failures retained; guarded custom-HG candidate and independent fixture await rebuild/GPU regression |
 
 ## Known bugs
 
@@ -136,8 +161,9 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 The instance-data candidate and colored/deformed MultiMesh regression are
 tracked in [instance built-ins](kb/tooling/pt-instance-builtins.md). BCC restores
 real instance colors and displacement in the minimal Vulkan fixture, but a
-separate shared-owner test reproduces aliased deformation buffers. Its
-owner-isolation correction is a candidate awaiting rebuild/GPU regression.
+separate shared-owner test reproduces aliased deformation buffers. A028 passes
+the two-phase owner test and extended six-phase lifetime regression after its
+owner-isolation correction.
 Derivative-dependent application materials
 need a separate RT path; successful short opening captures did not establish
 full material compatibility during gameplay. The retained C1 results are not
@@ -147,6 +173,13 @@ Separate BCC synchronous-compilation lifecycle controls pass eight of nine
 pixel phases. The remaining StandardMaterial3D merged MultiMesh phase renders
 white instead of instance colors despite `vertex_color_use_as_albedo=true`;
 this inherited gap is outside the custom-shader owner-cache correction.
+Actual A028 PT/RR captures also show white awnings where raster/DDGI preserve
+the ordinary mesh's vertex-color stripes. The [new narrow color candidate](kb/tooling/pt-opaque-standard-vertex-colors.md)
+routes ordinary opaque, non-emissive materials through their generated shader.
+Transparent/clipped, emissive, matrix/position overrides, particle/point-size and
+parallax materials retain existing paths and limitations. Expanded COLOR
+MultiMeshes can cost more TLAS/geometry-data work; no performance claim is made.
+The candidate and new independent source fixture are not yet GPU-verified.
 Strict controls still log `PRESENT_AFTER_WRITE` at swapchain presentation. The
 attempted process-only overlay-disable control still loaded the RTSS layer,
 so it does not isolate the overlay's contribution. Pixel checks and native exit codes must remain
@@ -181,6 +214,14 @@ Other notes:
 ## Findings log
 
 Newest first. Note the date, the commit, the view and what you saw or changed.
+
+- 2026-10-27: A028 manual PT/RR awning captures fail vertex-color compatibility;
+  code inspection confirms an opaque Standard material on colored ArrayMesh
+  strips. The ordinary opaque/non-emissive generated-shader candidate preserves
+  transparency and NEE paths, excludes advanced geometry/parallax modes, and
+  adds a separate linear/sRGB vertex-color regression. Rebuild and GPU checks
+  are pending. A028 owner isolation separately passes its two-phase and extended
+  six-phase native tests; see [color finding](kb/tooling/pt-opaque-standard-vertex-colors.md).
 
 - 2026-10-26: At `bcc08cc81cc71e3c02b800b055f21fd11634d448`, a visible
   Vulkan run on RTX 4060 / driver 610.88 reproduces both shared-owner displacement

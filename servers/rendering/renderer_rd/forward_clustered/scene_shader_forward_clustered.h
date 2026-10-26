@@ -254,6 +254,7 @@ public:
 		bool uses_particle_trails = false;
 		bool uses_normal_map = false;
 		bool uses_bent_normal_map = false;
+		bool uses_vertex_color = false;
 		bool wireframe = false;
 
 		bool unshaded = false;
@@ -297,6 +298,7 @@ public:
 			bool uses_screen_texture = false;
 			bool uses_depth_texture = false;
 			bool uses_normal_texture = false;
+			bool uses_vertex_color = false;
 		};
 		RTClassification *rt = nullptr;
 
@@ -328,6 +330,15 @@ public:
 			bool no_depth_draw = rt->depth_draw == DEPTH_DRAW_DISABLED;
 			bool no_depth_test = rt->depth_test != DEPTH_TEST_ENABLED;
 			return has_alpha || has_read_screen_alpha || no_depth_draw || no_depth_test;
+		}
+
+		// Keep alpha/clip materials on their existing RT evaluation path.
+		_FORCE_INLINE_ bool rt_uses_opaque_vertex_color() const {
+			const bool has_color = rt ? rt->uses_vertex_color : uses_vertex_color;
+			const bool has_alpha = rt ? rt->uses_alpha : uses_alpha;
+			const bool has_alpha_clip = rt ? rt->uses_alpha_clip : uses_alpha_clip;
+			return has_color && !has_alpha && !has_alpha_clip && !rt_uses_alpha_pass() &&
+					!writes_modelview_or_projection && !uses_position && !uses_particle_trails && !uses_point_size;
 		}
 
 		// The path tracer traces alpha blending and refraction of BaseMaterial3D

@@ -86,14 +86,18 @@ owner's per-surface/per-instance deformed handles. Shrink, material changes and
 mesh replacement resolve the same owner record. The PT renderer releases the
 record before freeing the geometry instance, and renderer shutdown drains any
 remaining records. Existing deformed-pool TTL and stale-RID checks remain.
-This candidate has not yet been rebuilt or GPU-regressed; it is not a passed fix.
+At `a0286a13517761b058cbf53286ad0c723d414fc2`, the unchanged two-phase
+shared-owner regression exits 0 in 11.469 seconds. The separate extended
+six-phase owner deletion/recreation and count shrink/grow test exits 0 in
+14.859 seconds. These verify the tested owner-cache behavior on the actual GPU;
+they do not establish complete material compatibility or clean strict validation.
 
 The first owner-isolation build at `858908f21c` fails MSVC C2664: phase-one
 geometry traversal kept a const pointer but the owner-cache preparation takes
 the renderer-owned RID token by reference. The instance array contains mutable
 geometry pointers; traversal now retains that type while maintaining its cache,
-without casting away const. A new build and the unchanged pixel regression are
-required; the failed build is retained.
+without casting away const. The failed build remains retained alongside the
+subsequent A028 native regression results above.
 
 The repository reproduction is
 `misc/pathtracer_test_project/shared_owner_regression/`. Its shader script SHA-256
@@ -120,6 +124,9 @@ single TLAS instance but white pixels instead of the three instance colors.
 HG0 does not fetch/use COLOR, and the merge compute copies mesh attributes
 without applying MultiMesh colors. This inherited color support gap is separate
 from custom shader instance built-ins and the new owner-isolation correction.
+Actual A028 awning captures now show that the same color omission also affects
+ordinary Standard-material ArrayMeshes. The separately scoped candidate is
+tracked in [opaque Standard vertex colors](pt-opaque-standard-vertex-colors.md).
 
 Both strict synchronous controls still report `vkQueuePresentKHR`
 `PRESENT_AFTER_WRITE` hazards, including the attempted overlay-disable control
