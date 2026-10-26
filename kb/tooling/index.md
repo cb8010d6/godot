@@ -1,5 +1,7 @@
 # Tooling
 
+* [RT startup readiness](/tooling/pt-startup-readiness.md) - actual per-viewport live RT material/recorded trace state for a loading gate; candidate awaiting native/GPU checks
+
 * [Opaque StandardMaterial vertex colors](/tooling/pt-opaque-standard-vertex-colors.md) - retain generated COLOR/sRGB semantics for ordinary opaque materials while preserving existing transparency and emissive sampling paths
 
 * [Path-traced instance built-ins](/tooling/pt-instance-builtins.md) - preserve real MultiMesh inputs and per-instance displacement instead of dropping failed hit groups

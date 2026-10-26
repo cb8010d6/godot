@@ -657,7 +657,19 @@
 		<constant name="RENDER_INFO_RT_TRIANGLES_REFIT" value="7" enum="RenderInfo">
 			Total triangles processed by BLAS refits this frame (ray tracing only).
 		</constant>
-		<constant name="RENDER_INFO_MAX" value="8" enum="RenderInfo">
+		<constant name="RENDER_INFO_RT_SHADER_PENDING" value="8" enum="RenderInfo">
+			Required material surfaces not yet present in the current live RT pipeline variant. This counter is available in export templates.
+		</constant>
+		<constant name="RENDER_INFO_RT_SHADER_FAILED" value="9" enum="RenderInfo">
+			Required RT shader/preprocessing or pipeline publication failures encountered this frame.
+		</constant>
+		<constant name="RENDER_INFO_RT_DISPATCHES" value="10" enum="RenderInfo">
+			RT trace commands recorded with valid bindings and a nonempty TLAS, not a GPU completion or presentation fence.
+		</constant>
+		<constant name="RENDER_INFO_RT_FRAME_SERIAL" value="11" enum="RenderInfo">
+			Per-viewport recorded RT frame serial. See [constant RenderingServer.VIEWPORT_RENDER_INFO_RT_FRAME_SERIAL] for freshness, wrap and coherent snapshot requirements.
+		</constant>
+		<constant name="RENDER_INFO_MAX" value="12" enum="RenderInfo">
 			Represents the size of the [enum RenderInfo] enum.
 		</constant>
 		<constant name="RENDER_INFO_TYPE_VISIBLE" value="0" enum="RenderInfoType">

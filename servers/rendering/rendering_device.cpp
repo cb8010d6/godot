@@ -6790,23 +6790,27 @@ void RenderingDevice::raytracing_list_add_buffer_dependency(RaytracingListID p_l
 }
 
 void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32_t p_raygen_shader_index, RID p_hit_sbt, uint32_t p_width, uint32_t p_height, uint32_t p_depth) {
-	ERR_RENDER_THREAD_GUARD();
+	raytracing_list_trace_rays_checked(p_list, p_raygen_shader_index, p_hit_sbt, p_width, p_height, p_depth);
+}
 
-	ERR_FAIL_COND(p_list != ID_TYPE_RAYTRACING_LIST);
-	ERR_FAIL_COND(!raytracing_list.active);
+bool RenderingDevice::raytracing_list_trace_rays_checked(RaytracingListID p_list, uint32_t p_raygen_shader_index, RID p_hit_sbt, uint32_t p_width, uint32_t p_height, uint32_t p_depth) {
+	ERR_RENDER_THREAD_GUARD_V(false);
+
+	ERR_FAIL_COND_V(p_list != ID_TYPE_RAYTRACING_LIST, false);
+	ERR_FAIL_COND_V(!raytracing_list.active, false);
 
 #ifdef DEBUG_ENABLED
-	ERR_FAIL_NULL_MSG(shader_owner.get_or_null(raytracing_list.state.layout_defining_shader), "No shader was set before attempting to trace rays.");
-	ERR_FAIL_NULL_MSG(raytracing_pipeline_owner.get_or_null(raytracing_list.state.pipeline), "No raytracing pipeline was set before attempting to trace rays.");
+	ERR_FAIL_NULL_V_MSG(shader_owner.get_or_null(raytracing_list.state.layout_defining_shader), false, "No shader was set before attempting to trace rays.");
+	ERR_FAIL_NULL_V_MSG(raytracing_pipeline_owner.get_or_null(raytracing_list.state.pipeline), false, "No raytracing pipeline was set before attempting to trace rays.");
 #endif
 
 #ifdef DEBUG_ENABLED
 
-	ERR_FAIL_COND_MSG(!raytracing_list.validation.pipeline_active, "No raytracing pipeline was set before attempting to draw.");
+	ERR_FAIL_COND_V_MSG(!raytracing_list.validation.pipeline_active, false, "No raytracing pipeline was set before attempting to draw.");
 
 	if (raytracing_list.validation.pipeline_push_constant_size > 0) {
 		// Using push constants, check that they were supplied.
-		ERR_FAIL_COND_MSG(!raytracing_list.validation.pipeline_push_constant_supplied,
+		ERR_FAIL_COND_V_MSG(!raytracing_list.validation.pipeline_push_constant_supplied, false,
 				"The shader in this pipeline requires a push constant to be set before drawing, but it's not present.");
 	}
 
@@ -6821,12 +6825,12 @@ void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32
 
 		if (raytracing_list.state.sets[i].pipeline_expected_format != raytracing_list.state.sets[i].uniform_set_format) {
 			if (raytracing_list.state.sets[i].uniform_set_format == 0) {
-				ERR_FAIL_MSG("Uniforms were never supplied for set (" + itos(i) + ") at the time of drawing, which are required by the pipeline.");
+				ERR_FAIL_V_MSG(false, "Uniforms were never supplied for set (" + itos(i) + ") at the time of drawing, which are required by the pipeline.");
 			} else if (uniform_set_owner.owns(raytracing_list.state.sets[i].uniform_set)) {
 				UniformSet *us = uniform_set_owner.get_or_null(raytracing_list.state.sets[i].uniform_set);
-				ERR_FAIL_MSG("Uniforms supplied for set (" + itos(i) + "):\n" + _shader_uniform_debug(us->shader_id, us->shader_set) + "\nare not the same format as required by the pipeline shader. Pipeline shader requires the following bindings:\n" + _shader_uniform_debug(raytracing_list.state.layout_defining_shader));
+				ERR_FAIL_V_MSG(false, "Uniforms supplied for set (" + itos(i) + "):\n" + _shader_uniform_debug(us->shader_id, us->shader_set) + "\nare not the same format as required by the pipeline shader. Pipeline shader requires the following bindings:\n" + _shader_uniform_debug(raytracing_list.state.layout_defining_shader));
 			} else {
-				ERR_FAIL_MSG("Uniforms supplied for set (" + itos(i) + ", which was just freed) are not the same format as required by the pipeline shader. Pipeline shader requires the following bindings:\n" + _shader_uniform_debug(raytracing_list.state.layout_defining_shader));
+				ERR_FAIL_V_MSG(false, "Uniforms supplied for set (" + itos(i) + ", which was just freed) are not the same format as required by the pipeline shader. Pipeline shader requires the following bindings:\n" + _shader_uniform_debug(raytracing_list.state.layout_defining_shader));
 			}
 		}
 	}
@@ -6854,6 +6858,7 @@ void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32
 			draw_graph.add_raytracing_list_bind_uniform_set(raytracing_list.state.layout_defining_shader_driver_id, raytracing_list.state.sets[i].uniform_set_driver_id, i);
 
 			UniformSet *uniform_set = uniform_set_owner.get_or_null(raytracing_list.state.sets[i].uniform_set);
+			ERR_FAIL_NULL_V(uniform_set, false);
 			_uniform_set_update_shared(uniform_set);
 
 			draw_graph.add_raytracing_list_usages(uniform_set->draw_trackers, uniform_set->draw_trackers_usage);
@@ -6869,7 +6874,7 @@ void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32
 	uint32_t shader_group_stride = STEPIFY(shader_group_handle_size, shader_group_handle_alignment);
 	uint32_t raygen_shader_group_stride = STEPIFY(shader_group_stride, shader_group_base_alignment);
 
-	ERR_FAIL_COND(p_raygen_shader_index >= raytracing_list.state.raygen_shader_count);
+	ERR_FAIL_COND_V(p_raygen_shader_index >= raytracing_list.state.raygen_shader_count, false);
 
 	RDD::ShaderBindingTable raygen_sbt;
 	raygen_sbt.buffer = raytracing_list.state.sbt_buffer;
@@ -6884,12 +6889,12 @@ void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32
 	miss_sbt.size = raytracing_list.state.miss_shader_count * shader_group_stride;
 
 	HitShaderBindingTable *hit_sbt = hit_sbt_owner.get_or_null(p_hit_sbt);
-	ERR_FAIL_NULL(hit_sbt);
-	ERR_FAIL_COND(hit_sbt->raytracing_pipeline != raytracing_list.state.pipeline_driver_id);
+	ERR_FAIL_NULL_V(hit_sbt, false);
+	ERR_FAIL_COND_V(hit_sbt->raytracing_pipeline != raytracing_list.state.pipeline_driver_id, false);
 
 	RDD::ShaderBindingTable rdd_hit_sbt;
 	Error err = _hit_sbt_buffer_update(hit_sbt, p_hit_sbt, rdd_hit_sbt);
-	ERR_FAIL_COND(err != OK);
+	ERR_FAIL_COND_V(err != OK, false);
 
 	if (hit_sbt->draw_tracker != nullptr) {
 		draw_graph.add_raytracing_list_usage(hit_sbt->draw_tracker, RDG::RESOURCE_USAGE_STORAGE_BUFFER_READ);
@@ -6897,6 +6902,7 @@ void RenderingDevice::raytracing_list_trace_rays(RaytracingListID p_list, uint32
 
 	draw_graph.add_raytracing_list_trace_rays(raygen_sbt, miss_sbt, rdd_hit_sbt, p_width, p_height, p_depth);
 	raytracing_list.state.trace_count++;
+	return true;
 }
 
 void RenderingDevice::raytracing_list_end() {

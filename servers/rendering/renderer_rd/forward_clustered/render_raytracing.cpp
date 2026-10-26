@@ -2631,6 +2631,14 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 	// Builds bundle if needed; live_ready_mask drives TLAS inclusion below.
 	SceneShaderRaytracing *rt_shader_singleton = SceneShaderRaytracing::get_singleton();
 	rt_shader_singleton->ensure_pipeline_bundle(p_rt_flags);
+	uint32_t shader_pending = 0;
+	uint32_t shader_failed = 0;
+	LocalVector<uint32_t> required_shader_slots;
+	LocalVector<bool> required_shader_pending;
+	auto count_shader = [&](uint32_t p_slot) {
+		required_shader_slots.push_back(p_slot);
+		required_shader_pending.push_back(!rt_shader_singleton->is_hg_ready_in_bundle(p_slot, p_rt_flags));
+	};
 
 	RendererRD::MeshStorage *mesh_storage = RendererRD::MeshStorage::get_singleton();
 	RendererRD::MaterialStorage *material_storage = RendererRD::MaterialStorage::get_singleton();
@@ -2691,16 +2699,20 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 
 			// Intersection code comes from ShaderMaterial on material_override.
 			if (!inst->data || !inst->data->material_override.is_valid()) {
+				shader_failed++;
 				continue;
 			}
 			RID proc_material_rid = inst->data->material_override;
 			uint32_t shader_id = material_storage->material_get_shader_id(proc_material_rid);
 			if (shader_id == 0) {
+				shader_failed++;
 				continue;
 			}
 
 			uint32_t hg_index = rt_shader->register_procedural_shader(shader_id, proc_material_rid);
+			count_shader(hg_index);
 			if (hg_index == 0) {
+				shader_failed++;
 				continue;
 			}
 			if (!rt_shader->is_hg_ready_in_bundle(hg_index, p_rt_flags)) {
@@ -2799,6 +2811,7 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 
 				uint16_t material_counter = material_storage->material_get_rt_invalidation_counter(material_rid);
 				RTMaterialData *mat_data = process_material(material_rid, material_counter);
+				count_shader(mat_data->rt_sbt_offset);
 				// A custom hit group still compiling is traced with the default one (see _rt_hit_group_pending()).
 
 				uint32_t inst_flags = 0;
@@ -2991,6 +3004,7 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 #endif
 
 			const bool hg_pending = _rt_hit_group_pending(mat_data, rt_shader_singleton, p_rt_flags);
+			count_shader(mat_data->rt_sbt_offset);
 			sbt_offsets.push_back(hg_pending ? 0u : mat_data->rt_sbt_offset);
 			material_data.push_back(hg_pending ? _rt_pending_material(mat_data->data) : mat_data->data);
 
@@ -3237,7 +3251,6 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 	if (collect_render_info) {
 		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_OBJECTS_IN_FRAME] += tlas_instance_count;
 		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_PRIMITIVES_IN_FRAME] += tlas_primitive_count;
-		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_TLAS_INSTANCES] += tlas_instance_count;
 		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_BLAS_BUILDS] += rt_blas_builds;
 		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_BLAS_REFITS] += rt_blas_refits;
 		p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_TRIANGLES_BUILT] += rt_triangles_built;
@@ -3246,11 +3259,40 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 #endif
 
 	SceneShaderRaytracing::get_singleton()->finalize_custom_shaders();
+	// Phase 2 may just have failed a vertex-displacement shader. Re-read failure
+	// state after compute preparation/publication, but retain the pending state
+	// actually used when this frame's fallback material/SBT buffers were built.
+	for (uint32_t i = 0; i < required_shader_slots.size(); i++) {
+		if (rt_shader_singleton->is_hg_failed_in_bundle(required_shader_slots[i], p_rt_flags)) {
+			shader_failed++;
+		} else if (required_shader_pending[i]) {
+			shader_pending++;
+		}
+	}
 
 	build_acceleration_structures(state, dirty_blas_list, dirty_blas_update_list);
 	finalize_buffers(state);
+	state->tlas_instances = blass.size();
+	if (p_render_data->render_info) {
+		int *info = p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE];
+		info[RSE::VIEWPORT_RENDER_INFO_RT_TLAS_INSTANCES] = state->tlas_instances;
+		info[RSE::VIEWPORT_RENDER_INFO_RT_SHADER_PENDING] = shader_pending;
+		info[RSE::VIEWPORT_RENDER_INFO_RT_SHADER_FAILED] = shader_failed;
+	}
 
 	return state;
+}
+
+void RenderRaytracing::record_trace_submission(const RenderDataRD *p_render_data) {
+	RTViewportState *state = _get_viewport_state(p_render_data);
+	if (!state || !state->tlas.is_valid() || state->tlas_instances == 0 || !p_render_data->render_info) {
+		return;
+	}
+	// Zero means no dispatch. Keep the public int counter positive on wrap.
+	state->submission_serial = state->submission_serial >= 0x7FFFFFFFu ? 1 : state->submission_serial + 1;
+	int *info = p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE];
+	info[RSE::VIEWPORT_RENDER_INFO_RT_DISPATCHES]++;
+	info[RSE::VIEWPORT_RENDER_INFO_RT_FRAME_SERIAL] = state->submission_serial;
 }
 
 // ---------------------------------------------------------------------------

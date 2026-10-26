@@ -524,7 +524,19 @@ uint32_t SceneShaderRaytracing::_register_slot(uint32_t /*p_shader_id*/, RID p_m
 	hash.a = material_storage->material_get_shader_code_rt_hash(p_material);
 	hash.b = material_storage->material_get_shader_code_rt_hash_b(p_material);
 	if (hash.is_zero()) {
-		return 0;
+		// Custom materials without valid RT source must not masquerade as HG0.
+		// Keep an explicit failed slot, including failures before preprocessing.
+		if (invalid_hit_group_slot == 0) {
+			HitGroupSlot failed_slot;
+			failed_slot.state = HGState::Failed;
+			invalid_hit_group_slot = hit_group_slots.size();
+			hit_group_slots.push_back(failed_slot);
+			for (KeyValue<uint32_t, PipelineBundle> &kv : pipeline_bundles) {
+				_bundle_resize_for_slots(kv.value);
+				kv.value.per_hg_states[invalid_hit_group_slot] = HGState::Failed;
+			}
+		}
+		return invalid_hit_group_slot;
 	}
 
 	HashMap<SourceHash128, uint32_t, SourceHash128Hasher>::Iterator it = source_hash_to_slot.find(hash);
@@ -547,7 +559,7 @@ uint32_t SceneShaderRaytracing::_register_slot(uint32_t /*p_shader_id*/, RID p_m
 			_bundle_resize_for_slots(kv.value);
 			kv.value.per_hg_states[failed_index] = HGState::Failed;
 		}
-		return 0;
+		return failed_index;
 	}
 	// Empty custom HG source uses slot 0 (default).
 	if (!p_is_procedural && entry.fragment_code.is_empty() && entry.vertex_code.is_empty()) {
@@ -755,6 +767,29 @@ bool SceneShaderRaytracing::is_hg_ready_in_bundle(uint32_t p_slot_index, uint32_
 		return false;
 	}
 	return b.live_ready_mask[p_slot_index];
+}
+
+bool SceneShaderRaytracing::is_hg_failed_in_bundle(uint32_t p_slot_index, uint32_t p_rt_flags) const {
+	if (p_slot_index == 0) {
+		return false;
+	}
+	if (p_slot_index >= hit_group_slots.size() || hit_group_slots[p_slot_index].state == HGState::Failed) {
+		return true;
+	}
+	const VertexDisplaceProgram *displace = vertex_displace_programs.getptr(p_slot_index);
+	if (displace && displace->failed) {
+		return true;
+	}
+	HashMap<uint32_t, PipelineBundle>::ConstIterator it = pipeline_bundles.find(p_rt_flags);
+	if (it == pipeline_bundles.end()) {
+		return false;
+	}
+	const PipelineBundle &bundle = it->value;
+	if (p_slot_index < bundle.per_hg_states.size() && bundle.per_hg_states[p_slot_index] == HGState::Failed) {
+		return true;
+	}
+	// A failed rebuild must not hide valid shaders in the currently live pipeline.
+	return bundle.publication_failed && !is_hg_ready_in_bundle(p_slot_index, p_rt_flags);
 }
 
 uint32_t SceneShaderRaytracing::compute_rt_flags(RID p_environment, bool p_fog_enabled) {
@@ -1361,6 +1396,7 @@ void SceneShaderRaytracing::_finalize_pipeline_build(PipelineBuildTask *p_task) 
 	_bundle_resize_for_slots(bundle);
 
 	if (p_task->failed) {
+		bundle.publication_failed = true;
 		WARN_PRINT(vformat("RT: pipeline rebuild failed for variant 0x%x: %s",
 				p_task->rt_flags, p_task->error));
 		return;
@@ -1389,6 +1425,7 @@ void SceneShaderRaytracing::_finalize_pipeline_build(PipelineBuildTask *p_task) 
 
 	RID new_sbt = RD::get_singleton()->hit_sbt_create(p_task->new_pipeline, sbt_size);
 	if (new_sbt.is_null()) {
+		bundle.publication_failed = true;
 		WARN_PRINT(vformat("RT: hit_sbt_create failed for variant 0x%x.", p_task->rt_flags));
 		RD::get_singleton()->free_rid(p_task->new_pipeline);
 		return;
@@ -1397,6 +1434,7 @@ void SceneShaderRaytracing::_finalize_pipeline_build(PipelineBuildTask *p_task) 
 
 	RD::HitShaderBindingTableRange sbt_range = RD::get_singleton()->hit_sbt_range_alloc(new_sbt, sbt_size);
 	if (!sbt_range) {
+		bundle.publication_failed = true;
 		WARN_PRINT(vformat("RT: hit_sbt_range_alloc failed for variant 0x%x.", p_task->rt_flags));
 		RD::get_singleton()->free_rid(new_sbt);
 		RD::get_singleton()->free_rid(p_task->new_pipeline);
@@ -1422,6 +1460,7 @@ void SceneShaderRaytracing::_finalize_pipeline_build(PipelineBuildTask *p_task) 
 	bundle.hit_sbt = new_sbt;
 	bundle.live_hg_count = n;
 	bundle.live_ready_mask = p_task->new_ready_mask;
+	bundle.publication_failed = false;
 }
 
 void SceneShaderRaytracing::_free_task_owned_outputs(PipelineBuildTask *p_task) {

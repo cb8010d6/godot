@@ -348,7 +348,10 @@ void RenderForwardClusteredPT::_render_scene(RenderDataRD *p_render_data, const 
 		// rt_flags was computed at TLAS-build time above and matches what
 		// update_uniform_set used, so pipeline + uniform set stay in sync.
 		RID rt_pipeline = raytracing->get_shader()->get_raytracing_pipeline(rt_flags);
-		if (!rt_pipeline.is_valid()) {
+		if (!rt_pipeline.is_valid() || !rt_uniform_set.is_valid()) {
+			if (p_render_data->render_info) {
+				p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_SHADER_FAILED]++;
+			}
 			ERR_PRINT_ONCE_ED("Failed to get raytracing pipeline. Aborting render.");
 			return;
 		}
@@ -367,8 +370,13 @@ void RenderForwardClusteredPT::_render_scene(RenderDataRD *p_render_data, const 
 
 		// Raytracing dispatches at internal (pre-upscale) size
 		Size2i rt_size = rb->get_internal_size();
-		RD::get_singleton()->raytracing_list_trace_rays(raytracing_list, 0, raytracing->get_shader()->get_hit_sbt(rt_flags), rt_size.width, rt_size.height, 1);
+		const bool trace_recorded = RD::get_singleton()->raytracing_list_trace_rays_checked(raytracing_list, 0, raytracing->get_shader()->get_hit_sbt(rt_flags), rt_size.width, rt_size.height, 1);
 		RD::get_singleton()->raytracing_list_end();
+		if (trace_recorded) {
+			raytracing->record_trace_submission(p_render_data);
+		} else if (p_render_data->render_info) {
+			p_render_data->render_info->info[RSE::VIEWPORT_RENDER_INFO_TYPE_VISIBLE][RSE::VIEWPORT_RENDER_INFO_RT_SHADER_FAILED]++;
+		}
 
 		RD::get_singleton()->draw_command_end_label();
 

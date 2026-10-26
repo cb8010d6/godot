@@ -1,5 +1,17 @@
 # Update log
 
+## 2026-10-27 (RT startup readiness candidate; unbuilt)
+
+* [RT startup readiness](/tooling/pt-startup-readiness.md) appends release-visible
+  per-viewport pending/failed/recorded-dispatch/serial information without changing
+  old enum values. Only live-published shader groups and actually recorded trace
+  work can satisfy a scene loading gate. Invalid RT source/preprocessing and
+  failed pipeline/SBT publication remain failures, not HG0 success.
+* A two-view/source-reload regression fixture is prepared. Build, cold GPU,
+  failed-shader, stale-view, cancellation and production-template validation are
+  still pending. The A738 measured material record below is not retroactively
+  evidence for this new implementation; no model/FG/presentation claim is added.
+
 ## 2026-10-27 (measured A738 material acceptance)
 
 * Native source `a73826e8c0fd90351a1bae5095ce87bc6210be7f` passes the standard

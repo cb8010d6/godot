@@ -377,6 +377,8 @@ struct RTViewportState {
 	RID scene_uniform_set;
 
 	uint32_t frame_counter = 0;
+	uint32_t submission_serial = 0;
+	uint32_t tlas_instances = 0;
 };
 
 class RenderRaytracing {
@@ -584,6 +586,7 @@ public:
 	void cleanup_caches();
 
 	RTViewportState *build_tlas(const RenderDataRD *p_render_data, uint32_t p_rt_flags);
+	void record_trace_submission(const RenderDataRD *p_render_data);
 	/// Shapes of the objects that keep moving (see ddgi_moving).
 	const LocalVector<float> &get_ddgi_moving() const { return ddgi_moving; }
 	uint32_t gather_lights(const RenderDataRD *p_render_data, RT_LightData *r_light_data, uint32_t p_max_lights);

@@ -5684,7 +5684,19 @@
 		<constant name="VIEWPORT_RENDER_INFO_RT_TRIANGLES_REFIT" value="7" enum="ViewportRenderInfo">
 			Total triangles processed by BLAS refits this frame (ray tracing only).
 		</constant>
-		<constant name="VIEWPORT_RENDER_INFO_MAX" value="8" enum="ViewportRenderInfo">
+		<constant name="VIEWPORT_RENDER_INFO_RT_SHADER_PENDING" value="8" enum="ViewportRenderInfo">
+			Required material surfaces whose hit groups are not yet in this viewport's live RT pipeline variant. Failed shaders are counted separately. Available in export templates.
+		</constant>
+		<constant name="VIEWPORT_RENDER_INFO_RT_SHADER_FAILED" value="9" enum="ViewportRenderInfo">
+			Required RT shader/preprocessing or pipeline publication failures encountered for this viewport. Zero does not prove readiness: a valid nonempty TLAS, recorded dispatch and fresh serial are also required.
+		</constant>
+		<constant name="VIEWPORT_RENDER_INFO_RT_DISPATCHES" value="10" enum="ViewportRenderInfo">
+			Path-tracing trace commands recorded with a valid pipeline, uniform set and nonempty TLAS. This is not a GPU completion fence or a presentation/Frame Generation measurement.
+		</constant>
+		<constant name="VIEWPORT_RENDER_INFO_RT_FRAME_SERIAL" value="11" enum="ViewportRenderInfo">
+			Positive per-viewport serial advanced after a valid RT trace command is recorded. Compare for inequality to detect fresh frames (wraps to 1). Zero means no recorded RT dispatch in the last drawn frame. A viewport which did not draw may retain stale statistics; require fresh serials. Read the serial before and after other counters and discard mixed snapshots. Use [signal frame_post_draw] and check every active viewport separately.
+		</constant>
+		<constant name="VIEWPORT_RENDER_INFO_MAX" value="12" enum="ViewportRenderInfo">
 			Represents the size of the [enum ViewportRenderInfo] enum.
 		</constant>
 		<constant name="VIEWPORT_RENDER_INFO_TYPE_VISIBLE" value="0" enum="ViewportRenderInfoType">
