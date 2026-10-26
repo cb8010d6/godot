@@ -88,6 +88,13 @@ record before freeing the geometry instance, and renderer shutdown drains any
 remaining records. Existing deformed-pool TTL and stale-RID checks remain.
 This candidate has not yet been rebuilt or GPU-regressed; it is not a passed fix.
 
+The first owner-isolation build at `858908f21c` fails MSVC C2664: phase-one
+geometry traversal kept a const pointer but the owner-cache preparation takes
+the renderer-owned RID token by reference. The instance array contains mutable
+geometry pointers; traversal now retains that type while maintaining its cache,
+without casting away const. A new build and the unchanged pixel regression are
+required; the failed build is retained.
+
 The repository reproduction is
 `misc/pathtracer_test_project/shared_owner_regression/`. Its shader script SHA-256
 is `99852e80503094ad2e2da136ea3a536b42e7735b048d40801bf0eeb6332d5037`.

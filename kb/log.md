@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-10-26 (owner-cache build correction)
+
+* MSVC rejects the first owner-isolation candidate `858908f21c` with C2664:
+  phase-one const geometry pointers cannot supply the cache's mutable owner RID.
+  Traversal now uses the existing array's mutable geometry-pointer type, without
+  const casts or public API changes. Rebuild and native pixel regression remain
+  pending; the failed compiler receipt is retained.
+
 ## 2026-10-26 (shared MultiMesh deformation owner isolation)
 
 * BCC's real Vulkan shared-owner regression exits 1: two TLAS entries exist,

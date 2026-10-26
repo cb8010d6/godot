@@ -2665,8 +2665,8 @@ RTViewportState *RenderRaytracing::build_tlas(const RenderDataRD *p_render_data,
 
 	const PagedArray<RenderGeometryInstance *> &rt_instances = *p_render_data->rt_instances;
 	for (uint32_t i = 0; i < (uint32_t)rt_instances.size(); i++) {
-		const RenderForwardClustered::GeometryInstanceForwardClustered *inst =
-				static_cast<const RenderForwardClustered::GeometryInstanceForwardClustered *>(rt_instances[i]);
+		RenderForwardClustered::GeometryInstanceForwardClustered *inst =
+				static_cast<RenderForwardClustered::GeometryInstanceForwardClustered *>(rt_instances[i]);
 		if (!inst || !inst->data) {
 			continue;
 		}
