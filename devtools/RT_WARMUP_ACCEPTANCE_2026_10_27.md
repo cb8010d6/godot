@@ -62,7 +62,7 @@ enabled by toggling FG Off after the swapchain already exists.
 | Four installed-template exports | **PASS**, standard/Mono × Debug/Release; matching installed TPZ, real D3D12 fixture, own natural exit |
 | Managed self-contained games | **PASS** with SDK removed from each child process environment; the test machine still has an SDK installed |
 | Public readiness PCK at d29 | **PASS**: import 6.250 s, export 5.265 s, release GPU run 5.281 s; five phases, real pending observed, four pixel stages, intentional failed shader detected |
-| Game Observer at 8a | **PASS**: skating normal 1/2/4 players, skiing 4 players, first/second-gate cancel, accelerated injected deadline and RT shader failure; clocks/physics checked while paused |
+| Game Observer controls | **PASS**: 5470 skating normal 1 player; 8a skating 2/4 players, skiing 4 players, first/second-gate cancel, accelerated injected deadline and RT shader failure; clocks/physics checked while paused |
 | Actual full-game PCK at d29 | **PASS**: installed-template export, exact RT include and compiled warm-up/remap/class audit; unchanged game code/assets |
 | Actual production entry | **PASS**: Vulkan PT/RR request and D3D12 raster request; three original captures per API, no external script/path/frame guard, own RSExit flow |
 | Missing runtime DLLs | **PASS** for no-SL editor/release readiness and four installed-template games; this is not a new `streamline=no` compilation |
