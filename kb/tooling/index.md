@@ -2,9 +2,9 @@
 
 * [RR resource ownership](/tooling/streamline-rr-resource-ownership.md) - correlate native image handles before changing host or SDK synchronization
 
-* [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md) - measured RTSS-isolated SR pacer-layout failure and a startup-only diagnostic control; candidate A/B still pending
+* [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md) - same-binary SR startup isolation passes when FG is omitted; RR remains a separate strict failure
 
-* [RT startup readiness](/tooling/pt-startup-readiness.md) - actual per-viewport live RT material/recorded trace state for a loading gate; candidate awaiting native/GPU checks
+* [RT startup readiness](/tooling/pt-startup-readiness.md) - editor/private release and bounded game fault/split controls pass; public PCK entry and production game export require their own rerun
 
 * [Opaque StandardMaterial vertex colors](/tooling/pt-opaque-standard-vertex-colors.md) - retain generated COLOR/sRGB semantics for ordinary opaque materials while preserving existing transparency and emissive sampling paths
 

@@ -1,5 +1,27 @@
 # Update log
 
+## 2026-10-27 (minimal RR reproduction and diagnostic cleanup)
+
+* [RR ownership](/tooling/streamline-rr-resource-ownership.md): actual RR calls
+  return eOk in the matched new/old runtime pair. SDK214 keeps strict WAW/layout
+  failures; a public one-view RR motion scene reproduces two of each original
+  message with all 49 captures completed. Preserve SDK210's earlier device-loss
+  counterexample and remove temporary tracing from the final renderer.
+* [FG startup isolation](/tooling/streamline-dlssg-startup-isolation.md): six 8a
+  targets compile and same-binary SR A/B distinguishes the loaded-FG pacer path.
+  SR opt-out CLEAN does not establish RR or ordinary FG validation.
+
+## 2026-10-27 (production readiness PCK entry; exact public-tree rerun pending)
+
+* [RT startup readiness](/tooling/pt-startup-readiness.md): a private 8a release
+  package passes five actual RT/pixel/error phases after adding a bootstrap main
+  scene. Import/export/runtime exit0, original PCK/native identities and failed
+  precursor launches remain distinct. Add the corresponding public fixture
+  registration/bootstrap/Windows PCK workflow; rerun those exact public inputs.
+* [Controller and production-entry lesson](/mistakes/acceptance-controller-vs-game-exit.md):
+  an early main_scene guard runs before custom MainLoop selection; export success
+  alone does not prove the program started. Do not weaken template security.
+
 ## 2026-10-27 (RR evaluation proof and old-SDK counterexample)
 
 * [RR ownership](/tooling/streamline-rr-resource-ownership.md): c326 maps 16

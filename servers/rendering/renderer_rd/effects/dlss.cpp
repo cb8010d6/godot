@@ -35,9 +35,7 @@
 #endif
 
 #ifdef ENABLE_DLSS
-#include "core/os/os.h"
 #include "core/string/print_string.h"
-#include "core/templates/hash_set.h"
 #include "drivers/streamline/streamline_context.h"
 #include "drivers/streamline/streamline_dlss_presets.h"
 #include "servers/rendering/renderer_rd/effects/copy_effects.h"
@@ -418,18 +416,6 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 		}
 		resources[numResources] = sl_texture_resource(textureRID, context->is_d3d12, textureRID == p_params.output);
 
-		// Temporary private diagnostic: correlate host tags with validation images.
-		if (p_params.dlss_rr && OS::get_singleton()->get_environment("GODOT_STREAMLINE_TRACE_RR_RESOURCES") == "1") {
-			thread_local HashSet<String> traced_resources;
-			const sl::Resource &resource = resources[numResources];
-			const uint64_t native_image = reinterpret_cast<uint64_t>(resource.native);
-			const String key = vformat("%d/%d/%d/%d", static_cast<uint32_t>(context->viewport), bufferType, textureRID.get_id(), native_image);
-			if (!traced_resources.has(key)) {
-				traced_resources.insert(key);
-				print_line(vformat("SL_RR_TAG viewport=%d tag=%d rid=%d native=%d state=%d width=%d height=%d", static_cast<uint32_t>(context->viewport), bufferType, textureRID.get_id(), native_image, resource.state, resource.width, resource.height));
-			}
-		}
-
 		resourceTags[numResources] = sl::ResourceTag(resources + numResources, bufferType, lifecycle, nullptr);
 		++numResources;
 	};
@@ -612,14 +598,6 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 		if (use_dlss_rr && StreamlineContext::get().streamline_capabilities.dlss_rr_available) {
 			// Use DLSS Ray Reconstruction
 			result = StreamlineContext::get().slEvaluateFeature(sl::kFeatureDLSS_RR, *StreamlineContext::get().last_token, inputs, 1, nativeCmdlist);
-			if (OS::get_singleton()->get_environment("GODOT_STREAMLINE_TRACE_RR_RESOURCES") == "1") {
-				thread_local HashSet<uint32_t> evaluated_viewports;
-				const uint32_t viewport = static_cast<uint32_t>(context->viewport);
-				if (!evaluated_viewports.has(viewport)) {
-					evaluated_viewports.insert(viewport);
-					print_line(vformat("SL_RR_EVALUATE viewport=%d mode=%d result=%d", viewport, static_cast<uint32_t>(context->currentDlssOptions.mode), static_cast<uint32_t>(result)));
-				}
-			}
 			if (result != sl::Result::eOk) {
 				ERR_FAIL_MSG("Failed to call streamline slEvaluateFeature for DLSS Ray Reconstruction. Result: " + String(StreamlineContext::result_to_string(result)));
 			}

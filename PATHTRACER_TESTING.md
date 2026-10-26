@@ -194,7 +194,7 @@ a build, the smoke tests from CUSTOM_BUILD.md, and an update to this file.
 | Sync | Godot 4.8 beta 1 and Streamline 2.14.16 integration | Windows RTX Vulkan PT/RR scenes rendered on a separate regression build; strict validation still fails; see `devtools/WINDOWS_ACCEPTANCE_2026_10_25.md` |
 | Regression | Shared MultiMesh vertex displacement | A738 real GPU owner 2/2 and extended lifetime 6/6 pass; A028 partial successes, BCC red and first MSVC failure remain retained |
 | Regression | Opaque StandardMaterial vertex colors | A738 native 4/4 and independent actual game 6+4+2 pass within the scoped route; A028/merged-07 failures and strict-validation failures retained |
-| Startup | Per-viewport live RT readiness | Implemented, native build/GPU validation pending; release counters and actual-view fixture described in `kb/tooling/pt-startup-readiness.md` |
+| Startup | Per-viewport live RT readiness | Editor and private packed release fixtures pass; new public PCK entry and complete game fault/split coverage pending; see `kb/tooling/pt-startup-readiness.md` |
 
 ## Known bugs
 
@@ -240,7 +240,7 @@ both modes.
 
 | ID | View | Bug | Cause / lead |
 | --- | --- | --- | --- |
-| Startup | custom materials | A028/A738 cold asynchronous runs can display grey fallback material before the live hit group is published. Startup gate/readiness candidate is not yet built or GPU-verified. | Preload/global pipeline counters/zero pending alone do not prove a rendered viewport is ready; require actual variant live-ready, nonempty TLAS and fresh recorded RT frames. |
+| Startup | custom materials | A028/A738 cold asynchronous runs can display grey fallback material before the live hit group is published. Native editor and private packed-release readiness fixtures pass; complete game fault/split/strict coverage remains separate. | Preload/global pipeline counters/zero pending alone do not prove a rendered viewport is ready; require actual variant live-ready, nonempty TLAS and fresh recorded RT frames. |
 | B1 | emissive | **Fixed in step 4.** StandardMaterial3D emission rendered **black**. Debug mode 21 (Emissive) is 0 on every emitter. Emission from a custom ShaderMaterial works (shaders view, orange stripes). | `scene_raytracing_raygen.glsl` closest hit HG0 only adds emission when `mat.flags & 2` (`RT_MAT_FLAG_HAS_EMISSION_TEX`) is set, which `render_raytracing.cpp` sets only when an emission texture exists. Color and energy alone are ignored. |
 | B2 | glass, pbr | **Fixed in step 4.** Alpha scissor sphere with threshold 0.3 and alpha 0.4 is **missing** (no surface, no shadow). | Any-hit HG0 uses a hard-coded `alpha < 0.5`; the material's `alpha_scissor_threshold` isn't passed. |
 | B3 | lighting, all | **Fixed in step 5.** Pure black pixels scattered over surfaces that the sun or a lamp lights directly. With light sampling, direct light on a flat diffuse floor should be nearly noise-free. | Unknown. Some paths return zero radiance. Debug mode 22 (BRDF rejection) shows rejection noise on every surface. Check NEE shadow rays, `offset_ray_origin`, and BRDF sample rejection. |

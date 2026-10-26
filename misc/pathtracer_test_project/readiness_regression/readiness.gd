@@ -1,3 +1,4 @@
+class_name RTReadinessRegression
 extends SceneTree
 ## Actual release/editor RT statistics. A disabled second view must stay unready;
 ## both views must then record two fresh live-ready frames, including after reload.

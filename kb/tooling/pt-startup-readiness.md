@@ -1,10 +1,10 @@
 ---
 type: Finding
 title: Viewport RT startup readiness uses live shaders and recorded trace commands
-description: Bounded editor and real-GPU checks cover a loading gate; release and full integration validation remain pending.
+description: Editor and private packaged release fixtures pass; the new public packaging entry and complete game integration require rerun.
 tags: [pathtracing, shaders, startup, testing]
 status: draft
-generated: { by: codex, at: 2026-10-26T17:06:08Z }
+generated: { by: codex, at: 2026-10-26T19:02:46Z }
 ---
 
 # RT startup readiness
@@ -54,6 +54,10 @@ failure and timeout must retain an explicit failed state and a recovery action.
 
 Native fixture: `misc/pathtracer_test_project/readiness_regression/readiness.gd`.
 Run it with a new output directory on editor AND installed release template.
+Editor/tools binaries can use --path/--script. Production templates with path
+overrides disabled need the normal exported-PCK entry described in the
+[fixture README](../../misc/pathtracer_test_project/readiness_regression/README.md);
+do not weaken the template build to admit external scripts.
 It covers a disabled second viewport, both real views becoming live-ready,
 new source after a previous live shader and a new samples-per-pixel variant.
 Real center pixels must remain green or change to blue as specified. Finally
@@ -98,3 +102,53 @@ Cancellation, timeout, bad-shader recovery, more layouts/scenes, standard/Mono
 smoke and installed release-template checks remain separate pending work at
 this checkpoint. Existing A738 evidence stays frozen. No new model, FG,
 latency, strict-clean or long-term performance result is claimed.
+
+## Packaged production entry: measured private precursor
+
+The initial release attempt using external path/script overrides was rejected.
+A first private PCK correctly contained the script/global class but omitted a
+main scene. It imported/exported successfully, then failed at Main::setup's
+no-main-scene check before Main::start selected the custom MainLoop. The failed
+launch and bounded timeout remain failures, not statistics-API results. See the
+[production-entry lesson](../mistakes/acceptance-controller-vs-game-exit.md).
+
+A separate private v2 retained the exact assertions, registered the script class,
+and added an empty bootstrap main scene plus application/run/main_loop_type.
+The unmodified release engine at `8a7364bf6c52022eab78ed33298e7539449e8c88`
+then imported/exported/ran with exit0 in 5.187/4.985/21.531 seconds on RTX 4060
+Laptop GPU, Vulkan, 640x360. All five phases passed, a real pending transition
+was observed, four pixel phases passed and the intentional RT-only error reported
+failed>0 instead of ready. Original compiler errors/PNGs remain retained.
+
+The actual PCK is SHA-256
+`2be2f51a61cf4461bac7656cd05c13cf58ebe408535de24ef1008c7026fa36c2`.
+Its script payload exactly matches source, and all payload MD5s, class registration,
+project.binary main-loop/main-scene strings and real bootstrap remap/scene were
+CPU-audited. The release EXE stayed SHA-256
+`d3a592fa9f079a34e6150c54aaab9fc89ccacc5f034e815494e568d27b9486a0`.
+Windows Job ownership/cleanup and no remaining NGX updaters were recorded.
+
+The public fixture now provides this packaging entry and a Windows PCK preset.
+Those public fixture edits still require import/export/runtime regression on
+that exact tree. The private precursor does not certify the later public tree,
+all game fault/split cases, RR strict validation, DLSS/FG, physical present or a
+GPU-completion fence. Working checkout identity must remain distinct from the
+actual version/hash of a previously frozen native binary.
+
+## Bounded actual-game controls at 8a
+
+The frozen `8a7364bf6c52022eab78ed33298e7539449e8c88` editor passes two- and
+four-player skating startup, second-gate cancellation, an accelerated injected
+deadline failure, and an intentional RT-only shader failure in four-player
+layout. A separate four-player skiing scene also reaches PLAY. Each controller
+checks the real gate/viewport serials and verifies paused clocks/physical bodies
+do not advance under the cover, then resume or return to the menu as required.
+Negative cases retain their intentional failures; none becomes timeout-success.
+The earlier single-player normal and first-gate cancellation also pass.
+
+These use the actual catalog game scenes in an Observer, not a full match,
+production CLI/export entry, physical-present/latency measurement or an exhaustive
+cancel/window-close stress test. The diagnostic startup FG opt-out is explicit.
+RR's independent strict validation FAIL remains recorded separately. Tests run
+on frozen native bytes retain their original native SHA even if the working
+checkout later moves to a diagnostic/documentation commit.

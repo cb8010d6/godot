@@ -1,6 +1,8 @@
 config_version=5
 
 [application]
+run/main_loop_type="RTReadinessRegression"
+run/main_scene="res://bootstrap.tscn"
 config/name="RT Readiness Regression"
 config/features=PackedStringArray("4.8", "Forward Plus")
 

@@ -87,3 +87,19 @@ validate ordinary FG, MFG, RR, model identity, latency or long-term reliability.
 [^sdk-features]: Pinned Streamline feature initialization contract.
 [^sdk-pacer]: Pinned DLSS-G initialization and asynchronous presentation guide.
 [^sdk-api]: Pinned SDK feature context and function lookup implementation.
+
+## Measured follow-up
+
+All six Windows native targets at `8a7364bf6c52022eab78ed33298e7539449e8c88`
+build with Jobs 2 in 3923.813 seconds. The same-binary isolated SR A/B pair
+retains the loaded-FG pacer 09600 failure in the default case and is strictly
+CLEAN when the exact startup opt-out is 1. The guarded probe records actual
+FG capability/status unavailable and no sampled `sl.dlss_g.dll` in that case;
+SR/RR/NIS/PCL/Reflex capabilities remain available. This does not assert that
+every NGX FG-related DLL is unmapped. No new FG/model/latency pass follows.
+
+Actual game RR still fails independently with FG omitted; see
+[RR resource ownership](streamline-rr-resource-ownership.md). Its single-view
+public reproducer also fails. The switch is a scoped SR workaround/diagnostic,
+not a complete Vulkan Streamline synchronization repair or a reason to ignore
+the original validation messages. Default startup selection is unchanged.
