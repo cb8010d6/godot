@@ -1,5 +1,9 @@
 # Update log
 
+## 2026-10-27 (raster SR reprojection candidate)
+
+* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md): retain the split-screen results failure and exact binary32 evidence; derive the inverse from camera factors for SR. Real native rebuild and gameplay validation remain pending.
+
 ## 2026-10-27 (bounded RR first-use diagnostics)
 
 * [RR follow-up](../devtools/VULKAN_RR_DIAGNOSTIC_2026_10_27.md): two small

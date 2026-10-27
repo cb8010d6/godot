@@ -1977,6 +1977,12 @@ void RenderForwardClustered::_render_3d_upscaling(const RenderDataRD *p_render_d
 			const Transform3D &prev_transform = p_render_data->scene_data->prev_cam_transform;
 			const Transform3D &cur_transform = p_render_data->scene_data->cam_transform;
 			params.reprojection = (correction * prev_proj) * prev_transform.affine_inverse() * cur_transform * (correction * cur_proj).inverse();
+			// Form the SR inverse from its original factors. Inverting the combined
+			// float matrix can fail after a large camera change even when it is invertible.
+			// An unsupported RR request also falls back to SR in DLSSEffect.
+			if (!params.dlss_rr || !dlss_effect->supports_ray_reconstruction()) {
+				params.inverse_reprojection = (correction * cur_proj) * cur_transform.affine_inverse() * prev_transform * (correction * prev_proj).inverse();
+			}
 			params.cam_projection = cur_proj;
 			params.cam_transform = cur_transform;
 

@@ -407,6 +407,10 @@ static sl::Resource sl_texture_resource(RID textureRID, bool p_is_d3d12, bool p_
 	return destinationResource;
 }
 
+bool DLSSEffect::supports_ray_reconstruction() const {
+	return StreamlineContext::get().slDLSSDSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.dlss_rr_available;
+}
+
 void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params) {
 	DLSSContextInner *context = (DLSSContextInner *)p_params.context;
 	void *nativeCmdlist = RD::get_singleton()->get_device_driver()->command_buffer_get_native_handle(cmdid);
@@ -421,7 +425,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 	};
 
 	// Set DLSS or DLSS-RR options depending on mode
-	bool use_dlss_rr = p_params.dlss_rr && StreamlineContext::get().slDLSSDSetOptions != nullptr && StreamlineContext::get().streamline_capabilities.dlss_rr_available;
+	bool use_dlss_rr = p_params.dlss_rr && supports_ray_reconstruction();
 
 	if (use_dlss_rr) {
 		context->last_logged_sr_mode = sl::DLSSMode::eCount;
@@ -500,7 +504,7 @@ void DLSSEffect::_upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext
 		context->constants.clipToCameraView = sl_convert_matrix(p_params.cam_projection.inverse()); // projection mtx (unjittered, inverted)
 		context->constants.clipToLensClip = mtxIdentity; // keep identity unless some lens distortion is applied
 		context->constants.clipToPrevClip = sl_convert_matrix(p_params.reprojection); // reprojection matrix
-		context->constants.prevClipToClip = sl_convert_matrix(p_params.reprojection.inverse()); // inverted reprojection matrix
+		context->constants.prevClipToClip = sl_convert_matrix(use_dlss_rr ? p_params.reprojection.inverse() : p_params.inverse_reprojection); // inverse reprojection matrix
 
 		context->constants.cameraPos = sl_convert_vector(p_params.cam_transform.get_origin());
 		context->constants.cameraFwd = sl_convert_vector(-p_params.cam_transform.get_basis().get_column(2));
@@ -679,6 +683,9 @@ bool DLSSEffect::is_ready(DLSSContext *p_context) {
 #else
 DLSSEffect::DLSSEffect() {}
 DLSSEffect::~DLSSEffect() {}
+bool DLSSEffect::supports_ray_reconstruction() const {
+	return false;
+}
 DLSSContext *DLSSEffect::create_context(Size2i p_internal_size, Size2i p_target_size) {
 	return nullptr;
 }

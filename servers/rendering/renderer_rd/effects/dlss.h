@@ -56,6 +56,7 @@ public:
 		char preset = '?';
 		bool reset_accumulation = false;
 		Projection reprojection;
+		Projection inverse_reprojection; // Factorized inverse for SR; avoids inverting the combined matrix.
 		Projection cam_projection;
 		Transform3D cam_transform;
 		bool dlss_g = false;
@@ -88,6 +89,7 @@ public:
 	DLSSContext *create_context(Size2i p_internal_size, Size2i p_target_size);
 	void upscale(const DLSSContext::Parameters &p_params);
 	bool is_ready(DLSSContext *context);
+	bool supports_ray_reconstruction() const;
 
 private:
 	void _upscale_internal(RDD::CommandBufferID cmdid, const DLSSContext::Parameters &p_params);

@@ -1,5 +1,7 @@
 # Tooling
 
+* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md) - diagnose a numerically unstable combined inverse; native fix and gameplay validation pending
+
 * [RR resource ownership](/tooling/streamline-rr-resource-ownership.md) - correlate native image handles before changing host or SDK synchronization
 
 * [DLSS-G startup isolation](/tooling/streamline-dlssg-startup-isolation.md) - same-binary SR startup isolation passes when FG is omitted; RR remains a separate strict failure
