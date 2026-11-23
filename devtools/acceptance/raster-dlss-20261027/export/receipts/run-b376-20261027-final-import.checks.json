@@ -1,0 +1,48 @@
+{
+  "label": "run-b376-20261027-final-import",
+  "command": [
+    "<local-path>",
+    "--headless",
+    "--editor",
+    "--rendering-driver",
+    "dummy",
+    "--rendering-method",
+    "dummy",
+    "--path",
+    "<local-path>",
+    "--import"
+  ],
+  "environment_requested": {
+    "APPDATA": "<local-path>",
+    "LOCALAPPDATA": "<local-path>",
+    "TEMP": "<local-path>",
+    "TMP": "<local-path>",
+    "XDG_CACHE_HOME": "<local-path>",
+    "RS_TEST_MODE": "1",
+    "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1"
+  },
+  "receipt": {
+    "file": "<local-path>",
+    "bytes": 1733,
+    "sha256": "ddd681726f71d55f8f5ce22d2b75c0dc8d7b23e1853499ea618de6d63bbf27a8"
+  },
+  "log": {
+    "file": "<local-path>",
+    "bytes": 47477,
+    "sha256": "2cf674bc41a3225357230faa8f5547bdd04d1048130bfc86c63051ade9a05fbe"
+  },
+  "duration_seconds": 21.563,
+  "checks": {
+    "wrapper_exit_zero": true,
+    "exit_zero": true,
+    "expected_checkout": true,
+    "no_timeout_exception": true,
+    "no_errors": true,
+    "job_owned": true,
+    "descendants_closed": true,
+    "no_owned_ngx": true,
+    "no_cleanup_failure": true
+  },
+  "passed": true
+}

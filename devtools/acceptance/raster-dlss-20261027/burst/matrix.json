@@ -1,0 +1,1912 @@
+{
+  "status": "STARTUP_ONLY",
+  "cases": [
+    {
+      "case": {
+        "id": "skate-p1-472-fsr",
+        "game": "skate",
+        "players": 1,
+        "map": 0,
+        "engine": "472",
+        "mode": "fsr"
+      },
+      "status": "STARTUP_ONLY",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>",
+        "--preflight-seconds=15",
+        "--observe-burst"
+      ],
+      "preflight_seconds_after_play": 15,
+      "burst": true,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "f9680998efca5547f26bba62fe43644eed621140f49f67a8c42487d8948fa5d0",
+      "started_unix": 1793081123.0350175,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793081192.7736404,
+      "observer_summary": {
+        "burst_end_seconds": 28.790852,
+        "burst_flush_completed": true,
+        "burst_requested": true,
+        "burst_start_seconds": 26.790427,
+        "captures": [
+          {
+            "at_seconds": 20.350193,
+            "height": 900,
+            "name": "play_start",
+            "resized": false,
+            "sha256": "29219d700aa8a0db4a70c16ad61f0cbf278fb1216917feb54299bc3a11c6490f",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.790487,
+            "format": 4,
+            "hash_ms": 18.615,
+            "height": 900,
+            "name": "burst_000",
+            "png_save_ms": 591.844,
+            "readback_end_seconds": 26.803595,
+            "readback_ms": 13.108,
+            "resized": false,
+            "sha256": "f3df8a1dada99ff93e67607b4c97cb085636f714663ea80ce60117239c0defeb",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.891233,
+            "format": 4,
+            "hash_ms": 16.249,
+            "height": 900,
+            "name": "burst_001",
+            "png_save_ms": 584.928,
+            "readback_end_seconds": 26.903822,
+            "readback_ms": 12.589,
+            "resized": false,
+            "sha256": "77c9471b313e0de0761e47c3afae4cd88185af43bfa11bd102fd0642153bff93",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.006119,
+            "format": 4,
+            "hash_ms": 17.22,
+            "height": 900,
+            "name": "burst_002",
+            "png_save_ms": 597.534,
+            "readback_end_seconds": 27.01972,
+            "readback_ms": 13.601,
+            "resized": false,
+            "sha256": "31bfcb8f8e3051ec44ef6094845f2da7de707c326adb466e5ea419dd0c6db3e5",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.107296,
+            "format": 4,
+            "hash_ms": 19.198,
+            "height": 900,
+            "name": "burst_003",
+            "png_save_ms": 584.751,
+            "readback_end_seconds": 27.119862,
+            "readback_ms": 12.566,
+            "resized": false,
+            "sha256": "838456835ca2d75662f146e5b738865a9db84ca615cb558d5a87c9461dfe62f0",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.221922,
+            "format": 4,
+            "hash_ms": 15.163,
+            "height": 900,
+            "name": "burst_004",
+            "png_save_ms": 561.26,
+            "readback_end_seconds": 27.234204,
+            "readback_ms": 12.282,
+            "resized": false,
+            "sha256": "faf8e65347de9f5d9f8d0cf6ebe1d130f2dade89218ca646fdcaed91bbacf767",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.323294,
+            "format": 4,
+            "hash_ms": 18.218,
+            "height": 900,
+            "name": "burst_005",
+            "png_save_ms": 609.399,
+            "readback_end_seconds": 27.334777,
+            "readback_ms": 11.483,
+            "resized": false,
+            "sha256": "9d485b59a873f7dbe5f2df35478774649d5c1c117fadc0006423b2de9665345c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.423571,
+            "format": 4,
+            "hash_ms": 16.32,
+            "height": 900,
+            "name": "burst_006",
+            "png_save_ms": 609.281,
+            "readback_end_seconds": 27.43577,
+            "readback_ms": 12.199,
+            "resized": false,
+            "sha256": "952c34f4e206383c749677986d02b215304d2903bf2aedff8cd38201127ac150",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.539259,
+            "format": 4,
+            "hash_ms": 22.194,
+            "height": 900,
+            "name": "burst_007",
+            "png_save_ms": 606.389,
+            "readback_end_seconds": 27.551793,
+            "readback_ms": 12.534,
+            "resized": false,
+            "sha256": "cb01a5e621a800791bbe2eb09caaccde6432071d88b635014bd79a9aab92c878",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.640466,
+            "format": 4,
+            "hash_ms": 16.234,
+            "height": 900,
+            "name": "burst_008",
+            "png_save_ms": 598.551,
+            "readback_end_seconds": 27.659325,
+            "readback_ms": 18.859,
+            "resized": false,
+            "sha256": "015267792960d594ade4340f68b9ccf14b1e1331cf31d6343768cf5e7cb081c0",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.741539,
+            "format": 4,
+            "hash_ms": 20.08,
+            "height": 900,
+            "name": "burst_009",
+            "png_save_ms": 617.576,
+            "readback_end_seconds": 27.754882,
+            "readback_ms": 13.343,
+            "resized": false,
+            "sha256": "599cf2d678c0f323e47547d16d1ee624c06a09af2df1a1de80369dddd4386ddd",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.86168,
+            "format": 4,
+            "hash_ms": 18.555,
+            "height": 900,
+            "name": "burst_010",
+            "png_save_ms": 609.039,
+            "readback_end_seconds": 27.874616,
+            "readback_ms": 12.936,
+            "resized": false,
+            "sha256": "b3a12743be502d84446470d602eb0fc2773be1e9884898711d5206f6a649a76e",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.971084,
+            "format": 4,
+            "hash_ms": 16.059,
+            "height": 900,
+            "name": "burst_011",
+            "png_save_ms": 610.667,
+            "readback_end_seconds": 27.98513,
+            "readback_ms": 14.046,
+            "resized": false,
+            "sha256": "8806552e5d409ac6a5543f6861db63faf90777fe276b8f03ccce89ec957d947e",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.072566,
+            "format": 4,
+            "hash_ms": 14.138,
+            "height": 900,
+            "name": "burst_012",
+            "png_save_ms": 578.643,
+            "readback_end_seconds": 28.083663,
+            "readback_ms": 11.097,
+            "resized": false,
+            "sha256": "a26afcbe665631a313f438f7184d09dc618d3ea354cec38aa213e22669787ea8",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.190334,
+            "format": 4,
+            "hash_ms": 20.949,
+            "height": 900,
+            "name": "burst_013",
+            "png_save_ms": 606.231,
+            "readback_end_seconds": 28.203045,
+            "readback_ms": 12.711,
+            "resized": false,
+            "sha256": "038ac3cff20bf82f6d368e5e3a8a0b726c9a768a4ca48b28ee35ab436174ffc9",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.290955,
+            "format": 4,
+            "hash_ms": 16.954,
+            "height": 900,
+            "name": "burst_014",
+            "png_save_ms": 574.549,
+            "readback_end_seconds": 28.304094,
+            "readback_ms": 13.139,
+            "resized": false,
+            "sha256": "63be25ab351ddf369fa64fb0ec8eec9678d9c4e8a6d95ef96d3fff6d4cc73b9b",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.405845,
+            "format": 4,
+            "hash_ms": 16.432,
+            "height": 900,
+            "name": "burst_015",
+            "png_save_ms": 586.387,
+            "readback_end_seconds": 28.417168,
+            "readback_ms": 11.323,
+            "resized": false,
+            "sha256": "b5d592d787919272c17b5cbf2a2fb731ef2cb9f9d90029dc743ce7db17f53aa4",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.523435,
+            "format": 4,
+            "hash_ms": 14.36,
+            "height": 900,
+            "name": "burst_016",
+            "png_save_ms": 605.016,
+            "readback_end_seconds": 28.536141,
+            "readback_ms": 12.706,
+            "resized": false,
+            "sha256": "75206327d11e90d60b95af02735d35140e03798c92bc1ca6dbbed76c4c19bac7",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.638681,
+            "format": 4,
+            "hash_ms": 17.45,
+            "height": 900,
+            "name": "burst_017",
+            "png_save_ms": 601.483,
+            "readback_end_seconds": 28.650063,
+            "readback_ms": 11.382,
+            "resized": false,
+            "sha256": "ed00bb446fc37053ee58f35da4d64bac0c5f35f22b43d8444e237307111496dd",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.756739,
+            "format": 4,
+            "hash_ms": 16.07,
+            "height": 900,
+            "name": "burst_018",
+            "png_save_ms": 652.185,
+            "readback_end_seconds": 28.767527,
+            "readback_ms": 10.788,
+            "resized": false,
+            "sha256": "2bbabbf98dbfb50c9fdcc340361914321e1dc299820b070b3b2777d2d36e8c61",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "errors": [],
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 30.807996,
+          "dlss_available": false,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "sdk_enabled": false
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 2,
+          "phase_time": 13.5452810000002,
+          "players": [
+            {
+              "camera_far": 3000,
+              "camera_forward": [
+                0.791667103767395,
+                -0.165636211633682,
+                -0.588071286678314
+              ],
+              "camera_fov": 66.1878433227539,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -3.97654867172241,
+                0.503717064857483,
+                -67.037841796875
+              ],
+              "camera_projection": 0,
+              "course_progress": 72.8909301757813,
+              "draw_position": [
+                3.90321731567383,
+                -1.64454627037048,
+                -72.8909301757813
+              ],
+              "position": [
+                3.90321731567383,
+                -1.64454627037048,
+                -72.8909301757813
+              ],
+              "score": 770,
+              "slot": 1,
+              "speed": 0,
+              "visual_rig_position": [
+                3.90321731567383,
+                -1.64454627037048,
+                -72.8909301757813
+              ]
+            }
+          ],
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                1600,
+                900
+              ]
+            }
+          ],
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "passive; natural camera and real-time simulation",
+        "phases": [
+          {
+            "at_seconds": 9.646545,
+            "phase": 0
+          },
+          {
+            "at_seconds": 10.438324,
+            "phase": 1
+          },
+          {
+            "at_seconds": 16.779236,
+            "phase": 2
+          }
+        ],
+        "physics": "Jolt Physics",
+        "preflight_seconds_after_play": 15,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": -1,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "STARTUP_ONLY",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 72.54696097043308,
+              "camera_path_length": 68.26175395795771,
+              "visual_rig_path_length": 72.52223848688908,
+              "course_progress_range": 66.97348928451544
+            }
+          },
+          "frame_count": 1285,
+          "eligible_foreground_play_frames": 171,
+          "excluded_frames": 1114,
+          "frame_ms_p50": 16.665,
+          "frame_ms_p95": 18.9835,
+          "frame_ms_p99": 20.126000000000015,
+          "frame_ms_max": 22.908,
+          "eligible_frames_over_33_3ms": 0,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    },
+    {
+      "case": {
+        "id": "skate-p1-48-dlss",
+        "game": "skate",
+        "players": 1,
+        "map": 0,
+        "engine": "48",
+        "mode": "dlss"
+      },
+      "status": "STARTUP_ONLY",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>",
+        "--preflight-seconds=15",
+        "--observe-burst"
+      ],
+      "preflight_seconds_after_play": 15,
+      "burst": true,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106",
+      "started_unix": 1793081192.7908475,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [
+        15268,
+        25316,
+        38836,
+        34892,
+        9392,
+        39632,
+        17484,
+        19704,
+        31964,
+        16304,
+        18104,
+        46808,
+        32028,
+        47928
+      ],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793081273.0593965,
+      "observer_summary": {
+        "burst_end_seconds": 28.009497,
+        "burst_flush_completed": true,
+        "burst_requested": true,
+        "burst_start_seconds": 25.993636,
+        "captures": [
+          {
+            "at_seconds": 19.652519,
+            "height": 900,
+            "name": "play_start",
+            "resized": false,
+            "sha256": "d1c1a075c121d282e92ebd6e03f49989592958a8c85cf3b9bac855ab1809c9ba",
+            "width": 1600
+          },
+          {
+            "at_seconds": 25.993703,
+            "format": 4,
+            "hash_ms": 15.161,
+            "height": 900,
+            "name": "burst_000",
+            "png_save_ms": 590.564,
+            "readback_end_seconds": 26.005803,
+            "readback_ms": 12.1,
+            "resized": false,
+            "sha256": "ad6aaffdcc692f865c41aa5637f406019b30fcaedff52b93aaf023e3958f6c1a",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.108148,
+            "format": 4,
+            "hash_ms": 19.918,
+            "height": 900,
+            "name": "burst_001",
+            "png_save_ms": 642.31,
+            "readback_end_seconds": 26.12024,
+            "readback_ms": 12.092,
+            "resized": false,
+            "sha256": "cba6389ae9513b9267c2c24dffa3fe05a81f077c61810543aaebec9f86f5fd72",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.225135,
+            "format": 4,
+            "hash_ms": 16.592,
+            "height": 900,
+            "name": "burst_002",
+            "png_save_ms": 595.335,
+            "readback_end_seconds": 26.236086,
+            "readback_ms": 10.951,
+            "resized": false,
+            "sha256": "f38efdca8a78d21ab1065f0b7ee8074c3d9639a581d0439c56e9b9fefdf5675d",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.326875,
+            "format": 4,
+            "hash_ms": 17.467,
+            "height": 900,
+            "name": "burst_003",
+            "png_save_ms": 597.958,
+            "readback_end_seconds": 26.339495,
+            "readback_ms": 12.62,
+            "resized": false,
+            "sha256": "512fb6744b497fdf4a03a04eb0235aa9af8fd317cd3e928def6db89d76f6bb32",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.443824,
+            "format": 4,
+            "hash_ms": 21.736,
+            "height": 900,
+            "name": "burst_004",
+            "png_save_ms": 600.335,
+            "readback_end_seconds": 26.456852,
+            "readback_ms": 13.028,
+            "resized": false,
+            "sha256": "abe96f80c785f41b38195b6d650db22add53e4f3277fb094e41331ab6f3b52e8",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.560789,
+            "format": 4,
+            "hash_ms": 18.33,
+            "height": 900,
+            "name": "burst_005",
+            "png_save_ms": 627.05,
+            "readback_end_seconds": 26.573027,
+            "readback_ms": 12.238,
+            "resized": false,
+            "sha256": "1ba11cff6e104b6e2d245e0ae4f6eb2a10c7c6d31189d87e3f1c63769e295f22",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.676345,
+            "format": 4,
+            "hash_ms": 17.8,
+            "height": 900,
+            "name": "burst_006",
+            "png_save_ms": 609.299,
+            "readback_end_seconds": 26.688154,
+            "readback_ms": 11.809,
+            "resized": false,
+            "sha256": "fc6a3781fc2bf6761c65c65f9b703b6a9ee13eb5abc80b6061c588ee73f96329",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.776959,
+            "format": 4,
+            "hash_ms": 17.097,
+            "height": 900,
+            "name": "burst_007",
+            "png_save_ms": 597.969,
+            "readback_end_seconds": 26.787469,
+            "readback_ms": 10.51,
+            "resized": false,
+            "sha256": "738d2aee3a106daed32cee9dddeaf291c4a1ddbd52f1d8052516f9cc33ed963d",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.876951,
+            "format": 4,
+            "hash_ms": 29.572,
+            "height": 900,
+            "name": "burst_008",
+            "png_save_ms": 586.03,
+            "readback_end_seconds": 26.889654,
+            "readback_ms": 12.703,
+            "resized": false,
+            "sha256": "ab980d8075cd2d3d73265dc9592bbe7ccb3afd348772a2661a0236a8ac1abf1c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.981212,
+            "format": 4,
+            "hash_ms": 18.88,
+            "height": 900,
+            "name": "burst_009",
+            "png_save_ms": 597.236,
+            "readback_end_seconds": 26.995138,
+            "readback_ms": 13.926,
+            "resized": false,
+            "sha256": "5af50162617ea078f7366849ae75dc6a26528d07d0e00eaa90916877bae48083",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.093727,
+            "format": 4,
+            "hash_ms": 15.509,
+            "height": 900,
+            "name": "burst_010",
+            "png_save_ms": 595.365,
+            "readback_end_seconds": 27.106187,
+            "readback_ms": 12.46,
+            "resized": false,
+            "sha256": "0866ad0926ccb2267a16281d8f0e6e4dda11213a4a9888ff56274b2d7fb639d6",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.19505,
+            "format": 4,
+            "hash_ms": 22.538,
+            "height": 900,
+            "name": "burst_011",
+            "png_save_ms": 611.227,
+            "readback_end_seconds": 27.206939,
+            "readback_ms": 11.889,
+            "resized": false,
+            "sha256": "e4c8319293aed70300415c997c634b26925726351e6058f2598ff50d3ae2cf5b",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.310057,
+            "format": 4,
+            "hash_ms": 18.794,
+            "height": 900,
+            "name": "burst_012",
+            "png_save_ms": 634.025,
+            "readback_end_seconds": 27.322643,
+            "readback_ms": 12.586,
+            "resized": false,
+            "sha256": "9a9357449236a357d01a3ecc73ded09e34c2c7b670be99668cf00913f6eec5ed",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.427536,
+            "format": 4,
+            "hash_ms": 16.919,
+            "height": 900,
+            "name": "burst_013",
+            "png_save_ms": 613.756,
+            "readback_end_seconds": 27.439454,
+            "readback_ms": 11.918,
+            "resized": false,
+            "sha256": "b99698a809c99ce502811f6cf38b1a61a14df723fd0af3fb017ac13964467137",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.544923,
+            "format": 4,
+            "hash_ms": 16.776,
+            "height": 900,
+            "name": "burst_014",
+            "png_save_ms": 603.735,
+            "readback_end_seconds": 27.557336,
+            "readback_ms": 12.413,
+            "resized": false,
+            "sha256": "18dee6687a986dbeccb71c168924efa0d1eec549618ec7d7ecacb6682e98ca80",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.659276,
+            "format": 4,
+            "hash_ms": 21.66,
+            "height": 900,
+            "name": "burst_015",
+            "png_save_ms": 584.81,
+            "readback_end_seconds": 27.670446,
+            "readback_ms": 11.17,
+            "resized": false,
+            "sha256": "d843df5e32a9b28d414d974b928ee73483f74994d6f0790aca3463cb152df952",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.759295,
+            "format": 4,
+            "hash_ms": 17.738,
+            "height": 900,
+            "name": "burst_016",
+            "png_save_ms": 591.981,
+            "readback_end_seconds": 27.769978,
+            "readback_ms": 10.683,
+            "resized": false,
+            "sha256": "8cbbdc83a8808ad81903b173495e50127f25358b861d8135a6c33e83384df253",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.877684,
+            "format": 4,
+            "hash_ms": 20.252,
+            "height": 900,
+            "name": "burst_017",
+            "png_save_ms": 614.945,
+            "readback_end_seconds": 27.889913,
+            "readback_ms": 12.229,
+            "resized": false,
+            "sha256": "153a4b8ba922686e7c09fd54642197a05e2ecc7d002bd91be624caa494a3d69c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.992383,
+            "format": 4,
+            "hash_ms": 16.652,
+            "height": 900,
+            "name": "burst_018",
+            "png_save_ms": 643.357,
+            "readback_end_seconds": 28.003948,
+            "readback_ms": 11.565,
+            "resized": false,
+            "sha256": "d9111fc544cf1296264d24f000c6fa04cdd5b8d8f2d834ec965b5db1e5ba004e",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "1",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "custom_build",
+          "hash": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793073661
+        },
+        "errors": [],
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 30.026777,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 2,
+          "phase_time": 13.4559730000002,
+          "players": [
+            {
+              "camera_far": 3000,
+              "camera_forward": [
+                0.792698204517365,
+                -0.165781557559967,
+                -0.586639583110809
+              ],
+              "camera_fov": 66.1906356811523,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -4.03115510940552,
+                0.502524673938751,
+                -67.0878677368164
+              ],
+              "camera_projection": 0,
+              "course_progress": 72.9232788085938,
+              "draw_position": [
+                3.85428833961487,
+                -1.64616370201111,
+                -72.9232788085938
+              ],
+              "position": [
+                3.85428833961487,
+                -1.64616370201111,
+                -72.9232788085938
+              ],
+              "score": 1771,
+              "slot": 1,
+              "speed": 0,
+              "visual_rig_position": [
+                3.85428833961487,
+                -1.64616370201111,
+                -72.9232788085938
+              ]
+            }
+          ],
+          "settings": {
+            "effective_upscale": 7,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 7
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.666666686534882,
+              "scaling": 6,
+              "screen_space_aa": 0,
+              "sharpness": 0,
+              "size": [
+                1600,
+                900
+              ]
+            }
+          ],
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "passive; natural camera and real-time simulation",
+        "phases": [
+          {
+            "at_seconds": 8.869419,
+            "phase": 0
+          },
+          {
+            "at_seconds": 9.648438,
+            "phase": 1
+          },
+          {
+            "at_seconds": 15.987848,
+            "phase": 2
+          }
+        ],
+        "physics": "Jolt Physics",
+        "preflight_seconds_after_play": 15,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": 6,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "STARTUP_ONLY",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 72.65365130053449,
+              "camera_path_length": 68.24078647291446,
+              "visual_rig_path_length": 72.64123203531072,
+              "course_progress_range": 67.00583791732794
+            }
+          },
+          "frame_count": 1274,
+          "eligible_foreground_play_frames": 170,
+          "excluded_frames": 1104,
+          "frame_ms_p50": 16.658,
+          "frame_ms_p95": 18.5721,
+          "frame_ms_p99": 20.391530000000003,
+          "frame_ms_max": 33.79,
+          "eligible_frames_over_33_3ms": 1,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    },
+    {
+      "case": {
+        "id": "ski-p1-472-fsr",
+        "game": "ski",
+        "players": 1,
+        "map": 0,
+        "engine": "472",
+        "mode": "fsr"
+      },
+      "status": "STARTUP_ONLY",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=ski",
+        "--demo=1",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>",
+        "--preflight-seconds=15",
+        "--observe-burst"
+      ],
+      "preflight_seconds_after_play": 15,
+      "burst": true,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "f9680998efca5547f26bba62fe43644eed621140f49f67a8c42487d8948fa5d0",
+      "started_unix": 1793081273.0727072,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793081341.3541663,
+      "observer_summary": {
+        "burst_end_seconds": 28.420894,
+        "burst_flush_completed": true,
+        "burst_requested": true,
+        "burst_start_seconds": 26.404029,
+        "captures": [
+          {
+            "at_seconds": 19.966277,
+            "height": 900,
+            "name": "play_start",
+            "resized": false,
+            "sha256": "7a4031922b0edd24912518ca50212c145153b92112a8424bd11834f890857757",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.40407,
+            "format": 4,
+            "hash_ms": 15.818,
+            "height": 900,
+            "name": "burst_000",
+            "png_save_ms": 529.08,
+            "readback_end_seconds": 26.416408,
+            "readback_ms": 12.338,
+            "resized": false,
+            "sha256": "ad84d4bdced8728fe4f0160b300d37022a2343a3bdd0fa31e4157583c4e066df",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.504392,
+            "format": 4,
+            "hash_ms": 16.585,
+            "height": 900,
+            "name": "burst_001",
+            "png_save_ms": 506.375,
+            "readback_end_seconds": 26.5161,
+            "readback_ms": 11.708,
+            "resized": false,
+            "sha256": "8f310885656c7429fd2620d3c21542b85ea807dc541da451a8b7a3370e98eb19",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.62157,
+            "format": 4,
+            "hash_ms": 12.736,
+            "height": 900,
+            "name": "burst_002",
+            "png_save_ms": 523.181,
+            "readback_end_seconds": 26.634759,
+            "readback_ms": 13.189,
+            "resized": false,
+            "sha256": "ed718114a3112a050790dae7dcd8abaa7c39996cdabad833db82b36156b24fe7",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.736821,
+            "format": 4,
+            "hash_ms": 17.324,
+            "height": 900,
+            "name": "burst_003",
+            "png_save_ms": 514.664,
+            "readback_end_seconds": 26.74846,
+            "readback_ms": 11.639,
+            "resized": false,
+            "sha256": "a5ad4b9c0876d58dfa168f7e58cbe1d04ea2d8185e52a227d83318edef841009",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.83707,
+            "format": 4,
+            "hash_ms": 18.164,
+            "height": 900,
+            "name": "burst_004",
+            "png_save_ms": 520.757,
+            "readback_end_seconds": 26.848281,
+            "readback_ms": 11.211,
+            "resized": false,
+            "sha256": "2ebeef960196e4c9203ca2060e73764e4ea102133af22ff41d1012fff4cee0ef",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.938949,
+            "format": 4,
+            "hash_ms": 13.486,
+            "height": 900,
+            "name": "burst_005",
+            "png_save_ms": 546.982,
+            "readback_end_seconds": 26.950724,
+            "readback_ms": 11.775,
+            "resized": false,
+            "sha256": "db3425e749055c1ad19d18d706b8282a31af50ecf3c195219d4554332bf27787",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.049697,
+            "format": 4,
+            "hash_ms": 16.004,
+            "height": 900,
+            "name": "burst_006",
+            "png_save_ms": 548.299,
+            "readback_end_seconds": 27.063057,
+            "readback_ms": 13.36,
+            "resized": false,
+            "sha256": "a4ef3fbe6147046d1f0c64bafd35ca095ae1abd71fdd75fd53015321bd3f2cb6",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.155024,
+            "format": 4,
+            "hash_ms": 15.139,
+            "height": 900,
+            "name": "burst_007",
+            "png_save_ms": 539.409,
+            "readback_end_seconds": 27.167023,
+            "readback_ms": 11.999,
+            "resized": false,
+            "sha256": "c7e14b3578c42e2d81e4164c610c3727a1371e0c3d701298492d810b2369d74a",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.270693,
+            "format": 4,
+            "hash_ms": 17.842,
+            "height": 900,
+            "name": "burst_008",
+            "png_save_ms": 454.593,
+            "readback_end_seconds": 27.283113,
+            "readback_ms": 12.42,
+            "resized": false,
+            "sha256": "2905df488c0b31b557868674f7e75a2f4ccce857d191af729ef0d17d8d447b05",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.371198,
+            "format": 4,
+            "hash_ms": 17.929,
+            "height": 900,
+            "name": "burst_009",
+            "png_save_ms": 535.391,
+            "readback_end_seconds": 27.384463,
+            "readback_ms": 13.265,
+            "resized": false,
+            "sha256": "5171cc7090a7dae5430e3367978412a1817f77386c04440f43e85f9cdc97ce44",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.47207,
+            "format": 4,
+            "hash_ms": 13.144,
+            "height": 900,
+            "name": "burst_010",
+            "png_save_ms": 539.519,
+            "readback_end_seconds": 27.484966,
+            "readback_ms": 12.896,
+            "resized": false,
+            "sha256": "03f4600f7fb0ec8bfd35b0e725c46062b8e747ba416dbedbdde37f32782cdb17",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.588029,
+            "format": 4,
+            "hash_ms": 19.382,
+            "height": 900,
+            "name": "burst_011",
+            "png_save_ms": 529.363,
+            "readback_end_seconds": 27.599511,
+            "readback_ms": 11.482,
+            "resized": false,
+            "sha256": "ba2bdf4ce38e1e30f627eb6a57cefb98788fdc41c52bdec55711f928dcbf76c3",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.703291,
+            "format": 4,
+            "hash_ms": 13.82,
+            "height": 900,
+            "name": "burst_012",
+            "png_save_ms": 519.126,
+            "readback_end_seconds": 27.714454,
+            "readback_ms": 11.163,
+            "resized": false,
+            "sha256": "bf8b76348b9d9d58e9291e75b9eff7ce7862b5aeabec781dbfa43f83fb2c1f3c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.80346,
+            "format": 4,
+            "hash_ms": 12.454,
+            "height": 900,
+            "name": "burst_013",
+            "png_save_ms": 509.829,
+            "readback_end_seconds": 27.81512,
+            "readback_ms": 11.66,
+            "resized": false,
+            "sha256": "6b598f59872643ec83a2a7e96aaa86e3862fb64b1a3784040f0e339263a7911f",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.903701,
+            "format": 4,
+            "hash_ms": 15.95,
+            "height": 900,
+            "name": "burst_014",
+            "png_save_ms": 526.517,
+            "readback_end_seconds": 27.915667,
+            "readback_ms": 11.966,
+            "resized": false,
+            "sha256": "ddb55e1a628eb4cb04a1630826e05ba567bad206fb2bf5ddcaef7c1a60e09ee1",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.004806,
+            "format": 4,
+            "hash_ms": 17.504,
+            "height": 900,
+            "name": "burst_015",
+            "png_save_ms": 555.316,
+            "readback_end_seconds": 28.018237,
+            "readback_ms": 13.431,
+            "resized": false,
+            "sha256": "82fd64cce8dbbbf21bf22630917647f71f746b920b0bf64d22a887f792da8b74",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.11957,
+            "format": 4,
+            "hash_ms": 14.883,
+            "height": 900,
+            "name": "burst_016",
+            "png_save_ms": 541.976,
+            "readback_end_seconds": 28.133532,
+            "readback_ms": 13.962,
+            "resized": false,
+            "sha256": "0daa62bf29bbc2c7f415b754c649b3ab9e81fc0a74303e477579cd7b9dab7a24",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.220156,
+            "format": 4,
+            "hash_ms": 16.865,
+            "height": 900,
+            "name": "burst_017",
+            "png_save_ms": 526.02,
+            "readback_end_seconds": 28.232673,
+            "readback_ms": 12.517,
+            "resized": false,
+            "sha256": "f52c2f669a235ae1500e99d0852664cda5958b8707961e9b285b82eefa6a48bf",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.337146,
+            "format": 4,
+            "hash_ms": 14.33,
+            "height": 900,
+            "name": "burst_018",
+            "png_save_ms": 549.372,
+            "readback_end_seconds": 28.349874,
+            "readback_ms": 12.728,
+            "resized": false,
+            "sha256": "ffed61b4465238bff52ef30ad04f95e57ebaa8b38df635304bde130bb2d346b5",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "errors": [],
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 30.654414,
+          "dlss_available": false,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "sdk_enabled": false
+          },
+          "game": "ski",
+          "map": 0,
+          "phase": 2,
+          "phase_time": 12.1619790000001,
+          "players": [
+            {
+              "camera_far": 3000,
+              "camera_forward": [
+                -0.453957706689835,
+                -0.189362391829491,
+                -0.870668888092041
+              ],
+              "camera_fov": 71.7050933837891,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -2.32618594169617,
+                -75.3462066650391,
+                -180.385131835938
+              ],
+              "camera_projection": 0,
+              "course_progress": 185.78108215332,
+              "draw_position": [
+                -5.22699880599976,
+                -78.2172241210938,
+                -185.890151977539
+              ],
+              "position": [
+                -5.18844890594482,
+                -78.185417175293,
+                -185.78108215332
+              ],
+              "score": 460,
+              "slot": 1,
+              "speed": 24.4162521362305,
+              "visual_rig_position": [
+                -5.22699880599976,
+                -78.2172241210938,
+                -185.890151977539
+              ]
+            }
+          ],
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                1600,
+                900
+              ]
+            }
+          ],
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "passive; natural camera and real-time simulation",
+        "phases": [
+          {
+            "at_seconds": 8.484363,
+            "phase": 0
+          },
+          {
+            "at_seconds": 9.249409,
+            "phase": 1
+          },
+          {
+            "at_seconds": 16.390257,
+            "phase": 2
+          }
+        ],
+        "physics": "Jolt Physics",
+        "preflight_seconds_after_play": 15,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": -1,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "STARTUP_ONLY",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 201.69991486362616,
+              "camera_path_length": 199.55499224314912,
+              "visual_rig_path_length": 201.82750797346765,
+              "course_progress_range": 189.13977169990508
+            }
+          },
+          "frame_count": 1233,
+          "eligible_foreground_play_frames": 77,
+          "excluded_frames": 1156,
+          "frame_ms_p50": 16.704,
+          "frame_ms_p95": 18.6624,
+          "frame_ms_p99": 411.22015999999167,
+          "frame_ms_max": 1648.659,
+          "eligible_frames_over_33_3ms": 1,
+          "eligible_frames_over_50ms": 1,
+          "eligible_frames_over_100ms": 1,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    },
+    {
+      "case": {
+        "id": "ski-p1-48-dlss",
+        "game": "ski",
+        "players": 1,
+        "map": 0,
+        "engine": "48",
+        "mode": "dlss"
+      },
+      "status": "STARTUP_ONLY",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=ski",
+        "--demo=1",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>",
+        "--preflight-seconds=15",
+        "--observe-burst"
+      ],
+      "preflight_seconds_after_play": 15,
+      "burst": true,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106",
+      "started_unix": 1793081341.3698983,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [
+        21320,
+        17812,
+        10440,
+        34136,
+        6888,
+        22612,
+        40236,
+        43284,
+        34156,
+        18400,
+        44508,
+        47792,
+        2908,
+        45960
+      ],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793081417.9798703,
+      "observer_summary": {
+        "burst_end_seconds": 28.156419,
+        "burst_flush_completed": true,
+        "burst_requested": true,
+        "burst_start_seconds": 26.155663,
+        "captures": [
+          {
+            "at_seconds": 19.684068,
+            "height": 900,
+            "name": "play_start",
+            "resized": false,
+            "sha256": "d7f112bd00ed91917aae662ff1b32244ce8c456650784719848904419075fd87",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.155724,
+            "format": 4,
+            "hash_ms": 19.053,
+            "height": 900,
+            "name": "burst_000",
+            "png_save_ms": 461.964,
+            "readback_end_seconds": 26.168274,
+            "readback_ms": 12.55,
+            "resized": false,
+            "sha256": "e6564cec9eeee87d8f2174abe03af4ec45801f9cb6b8ea67ebfdaa9cc3e0276f",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.257236,
+            "format": 4,
+            "hash_ms": 15.24,
+            "height": 900,
+            "name": "burst_001",
+            "png_save_ms": 463.571,
+            "readback_end_seconds": 26.270028,
+            "readback_ms": 12.792,
+            "resized": false,
+            "sha256": "11ab96386f1a466277cbd5007a73f774e6f32944f5ab387e652d2de0dc2634e8",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.357278,
+            "format": 4,
+            "hash_ms": 17.484,
+            "height": 900,
+            "name": "burst_002",
+            "png_save_ms": 443.825,
+            "readback_end_seconds": 26.369812,
+            "readback_ms": 12.534,
+            "resized": false,
+            "sha256": "0371b4d65f0907d194ee2fc720ec5108c86c85ce0408d3fdba85b615e56546cb",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.473261,
+            "format": 4,
+            "hash_ms": 14.566,
+            "height": 900,
+            "name": "burst_003",
+            "png_save_ms": 468.622,
+            "readback_end_seconds": 26.485996,
+            "readback_ms": 12.735,
+            "resized": false,
+            "sha256": "15e7955e750c05ffed172e567a61f4b9bac56c5cca388c780dafc26cff16fd8b",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.589966,
+            "format": 4,
+            "hash_ms": 15.928,
+            "height": 900,
+            "name": "burst_004",
+            "png_save_ms": 460.861,
+            "readback_end_seconds": 26.602274,
+            "readback_ms": 12.308,
+            "resized": false,
+            "sha256": "c4ba8e27c027014316d2d323f6af2443af85f129da3b02ac3fc5e93843645ef7",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.690127,
+            "format": 4,
+            "hash_ms": 20.216,
+            "height": 900,
+            "name": "burst_005",
+            "png_save_ms": 465.305,
+            "readback_end_seconds": 26.702499,
+            "readback_ms": 12.372,
+            "resized": false,
+            "sha256": "15414b8d8d9d5f589f63a32c83cb574b93af2bf7d4da0910e0db6fb9410ee87f",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.794969,
+            "format": 4,
+            "hash_ms": 15.348,
+            "height": 900,
+            "name": "burst_006",
+            "png_save_ms": 469.123,
+            "readback_end_seconds": 26.807965,
+            "readback_ms": 12.996,
+            "resized": false,
+            "sha256": "590bad84aca7d8960707561de68ab7fa59e2635644748d3c8992d366340ae114",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.907336,
+            "format": 4,
+            "hash_ms": 17.236,
+            "height": 900,
+            "name": "burst_007",
+            "png_save_ms": 460.66,
+            "readback_end_seconds": 26.919906,
+            "readback_ms": 12.57,
+            "resized": false,
+            "sha256": "724894b3167e62c8ed213833533b73d8b76315d0cecdf18c07cce048f3be429c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.022318,
+            "format": 4,
+            "hash_ms": 16.471,
+            "height": 900,
+            "name": "burst_008",
+            "png_save_ms": 322.456,
+            "readback_end_seconds": 27.035801,
+            "readback_ms": 13.483,
+            "resized": false,
+            "sha256": "e09cd34f9154af7d1be5cf0fd3d2c74e6c5b4a91b625e629b33b3497790efb6f",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.123148,
+            "format": 4,
+            "hash_ms": 19.126,
+            "height": 900,
+            "name": "burst_009",
+            "png_save_ms": 461.869,
+            "readback_end_seconds": 27.136309,
+            "readback_ms": 13.161,
+            "resized": false,
+            "sha256": "f980a8f6062b9097e88d827049e77e1ba45fdb3c323b5fe4ab7ef00f691dcc64",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.224074,
+            "format": 4,
+            "hash_ms": 22.462,
+            "height": 900,
+            "name": "burst_010",
+            "png_save_ms": 442.274,
+            "readback_end_seconds": 27.236788,
+            "readback_ms": 12.714,
+            "resized": false,
+            "sha256": "84829ca78f98410e16a8937e4b0a7f03f4720d51c0b8869bbf46b95845e0cb43",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.32454,
+            "format": 4,
+            "hash_ms": 14.626,
+            "height": 900,
+            "name": "burst_011",
+            "png_save_ms": 459.149,
+            "readback_end_seconds": 27.336905,
+            "readback_ms": 12.365,
+            "resized": false,
+            "sha256": "279c27456663421ec2eafef5c357d8eb42f3d3919232f20f97900758f2a3eb86",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.439568,
+            "format": 4,
+            "hash_ms": 20.36,
+            "height": 900,
+            "name": "burst_012",
+            "png_save_ms": 461.512,
+            "readback_end_seconds": 27.451713,
+            "readback_ms": 12.145,
+            "resized": false,
+            "sha256": "fe459ee8ab8ff33f4a8db4e0f2ef2c936e516b94e228eec2a0fdebceefa087bb",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.556861,
+            "format": 4,
+            "hash_ms": 14.685,
+            "height": 900,
+            "name": "burst_013",
+            "png_save_ms": 454.162,
+            "readback_end_seconds": 27.568991,
+            "readback_ms": 12.13,
+            "resized": false,
+            "sha256": "fc94f01f5b2b26690ff75ff6128f14255ae8156d198a7d2e5e10566b73294a63",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.657837,
+            "format": 4,
+            "hash_ms": 18.518,
+            "height": 900,
+            "name": "burst_014",
+            "png_save_ms": 440.404,
+            "readback_end_seconds": 27.66979,
+            "readback_ms": 11.953,
+            "resized": false,
+            "sha256": "26e6f62ca1a1e2afcf1c131fb417dd2c7c40350ca8b0a607496d9696f15db2b7",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.773033,
+            "format": 4,
+            "hash_ms": 16.562,
+            "height": 900,
+            "name": "burst_015",
+            "png_save_ms": 471.331,
+            "readback_end_seconds": 27.786211,
+            "readback_ms": 13.178,
+            "resized": false,
+            "sha256": "ef6ceb4fe84e6da964f15154dbe8752fcafe6ed44f9dd12f577a66c72d388e85",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.873317,
+            "format": 4,
+            "hash_ms": 18.102,
+            "height": 900,
+            "name": "burst_016",
+            "png_save_ms": 455.873,
+            "readback_end_seconds": 27.886116,
+            "readback_ms": 12.799,
+            "resized": false,
+            "sha256": "bd702decbcb392f9167996f3aab5fbc1e7bb5c6509ac0bbd3c9fb84a237cbc52",
+            "width": 1600
+          },
+          {
+            "at_seconds": 27.973568,
+            "format": 4,
+            "hash_ms": 15.416,
+            "height": 900,
+            "name": "burst_017",
+            "png_save_ms": 447.527,
+            "readback_end_seconds": 27.986321,
+            "readback_ms": 12.753,
+            "resized": false,
+            "sha256": "f84e199270f93a949a2b5617568a1c40b8a2e3d5b88232181fd9fcd0794058af",
+            "width": 1600
+          },
+          {
+            "at_seconds": 28.089605,
+            "format": 4,
+            "hash_ms": 29.102,
+            "height": 900,
+            "name": "burst_018",
+            "png_save_ms": 437.657,
+            "readback_end_seconds": 28.101037,
+            "readback_ms": 11.432,
+            "resized": false,
+            "sha256": "14fb0677f7faa09c170ba39eae691df13d3b9988715134b66d8a5642dfb0af4f",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "1",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "custom_build",
+          "hash": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793073661
+        },
+        "errors": [],
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 30.189299,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "ski",
+          "map": 0,
+          "phase": 2,
+          "phase_time": 13.6035906666669,
+          "players": [
+            {
+              "camera_far": 3000,
+              "camera_forward": [
+                -0.126866728067398,
+                -0.187854290008545,
+                -0.973969042301178
+              ],
+              "camera_fov": 71.6184539794922,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -6.87503814697266,
+                -84.8170852661133,
+                -212.854400634766
+              ],
+              "camera_projection": 0,
+              "course_progress": 218.921142578125,
+              "draw_position": [
+                -7.62023258209229,
+                -87.6787338256836,
+                -219.008071899414
+              ],
+              "position": [
+                -7.61922359466553,
+                -87.6547622680664,
+                -218.921142578125
+              ],
+              "score": 460,
+              "slot": 1,
+              "speed": 24.1636486053467,
+              "visual_rig_position": [
+                -7.62023258209229,
+                -87.6787338256836,
+                -219.008071899414
+              ]
+            }
+          ],
+          "settings": {
+            "effective_upscale": 7,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 7
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133",
+              "scale": 0.666666686534882,
+              "scaling": 6,
+              "screen_space_aa": 0,
+              "sharpness": 0,
+              "size": [
+                1600,
+                900
+              ]
+            }
+          ],
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "passive; natural camera and real-time simulation",
+        "phases": [
+          {
+            "at_seconds": 8.257196,
+            "phase": 0
+          },
+          {
+            "at_seconds": 9.003475,
+            "phase": 1
+          },
+          {
+            "at_seconds": 16.153824,
+            "phase": 2
+          }
+        ],
+        "physics": "Jolt Physics",
+        "preflight_seconds_after_play": 15,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": 6,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "STARTUP_ONLY",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 236.00720295257207,
+              "camera_path_length": 233.6120122854373,
+              "visual_rig_path_length": 236.10455082660502,
+              "course_progress_range": 222.3499035835266
+            }
+          },
+          "frame_count": 1331,
+          "eligible_foreground_play_frames": 172,
+          "excluded_frames": 1159,
+          "frame_ms_p50": 16.691000000000003,
+          "frame_ms_p95": 18.25185,
+          "frame_ms_p99": 24.312829999999927,
+          "frame_ms_max": 33.691,
+          "eligible_frames_over_33_3ms": 1,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    }
+  ],
+  "preflight_seconds_after_play": 15,
+  "burst": true,
+  "note": "Functional checks do not assess actual human controls, image quality, or imply performance improvement."
+}

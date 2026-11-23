@@ -1,0 +1,396 @@
+{
+  "burst_end_seconds": 28.420894,
+  "burst_flush_completed": true,
+  "burst_requested": true,
+  "burst_start_seconds": 26.404029,
+  "captures": [
+    {
+      "at_seconds": 19.966277,
+      "height": 900,
+      "name": "play_start",
+      "resized": false,
+      "sha256": "7a4031922b0edd24912518ca50212c145153b92112a8424bd11834f890857757",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.40407,
+      "format": 4,
+      "hash_ms": 15.818,
+      "height": 900,
+      "name": "burst_000",
+      "png_save_ms": 529.08,
+      "readback_end_seconds": 26.416408,
+      "readback_ms": 12.338,
+      "resized": false,
+      "sha256": "ad84d4bdced8728fe4f0160b300d37022a2343a3bdd0fa31e4157583c4e066df",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.504392,
+      "format": 4,
+      "hash_ms": 16.585,
+      "height": 900,
+      "name": "burst_001",
+      "png_save_ms": 506.375,
+      "readback_end_seconds": 26.5161,
+      "readback_ms": 11.708,
+      "resized": false,
+      "sha256": "8f310885656c7429fd2620d3c21542b85ea807dc541da451a8b7a3370e98eb19",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.62157,
+      "format": 4,
+      "hash_ms": 12.736,
+      "height": 900,
+      "name": "burst_002",
+      "png_save_ms": 523.181,
+      "readback_end_seconds": 26.634759,
+      "readback_ms": 13.189,
+      "resized": false,
+      "sha256": "ed718114a3112a050790dae7dcd8abaa7c39996cdabad833db82b36156b24fe7",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.736821,
+      "format": 4,
+      "hash_ms": 17.324,
+      "height": 900,
+      "name": "burst_003",
+      "png_save_ms": 514.664,
+      "readback_end_seconds": 26.74846,
+      "readback_ms": 11.639,
+      "resized": false,
+      "sha256": "a5ad4b9c0876d58dfa168f7e58cbe1d04ea2d8185e52a227d83318edef841009",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.83707,
+      "format": 4,
+      "hash_ms": 18.164,
+      "height": 900,
+      "name": "burst_004",
+      "png_save_ms": 520.757,
+      "readback_end_seconds": 26.848281,
+      "readback_ms": 11.211,
+      "resized": false,
+      "sha256": "2ebeef960196e4c9203ca2060e73764e4ea102133af22ff41d1012fff4cee0ef",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.938949,
+      "format": 4,
+      "hash_ms": 13.486,
+      "height": 900,
+      "name": "burst_005",
+      "png_save_ms": 546.982,
+      "readback_end_seconds": 26.950724,
+      "readback_ms": 11.775,
+      "resized": false,
+      "sha256": "db3425e749055c1ad19d18d706b8282a31af50ecf3c195219d4554332bf27787",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.049697,
+      "format": 4,
+      "hash_ms": 16.004,
+      "height": 900,
+      "name": "burst_006",
+      "png_save_ms": 548.299,
+      "readback_end_seconds": 27.063057,
+      "readback_ms": 13.36,
+      "resized": false,
+      "sha256": "a4ef3fbe6147046d1f0c64bafd35ca095ae1abd71fdd75fd53015321bd3f2cb6",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.155024,
+      "format": 4,
+      "hash_ms": 15.139,
+      "height": 900,
+      "name": "burst_007",
+      "png_save_ms": 539.409,
+      "readback_end_seconds": 27.167023,
+      "readback_ms": 11.999,
+      "resized": false,
+      "sha256": "c7e14b3578c42e2d81e4164c610c3727a1371e0c3d701298492d810b2369d74a",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.270693,
+      "format": 4,
+      "hash_ms": 17.842,
+      "height": 900,
+      "name": "burst_008",
+      "png_save_ms": 454.593,
+      "readback_end_seconds": 27.283113,
+      "readback_ms": 12.42,
+      "resized": false,
+      "sha256": "2905df488c0b31b557868674f7e75a2f4ccce857d191af729ef0d17d8d447b05",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.371198,
+      "format": 4,
+      "hash_ms": 17.929,
+      "height": 900,
+      "name": "burst_009",
+      "png_save_ms": 535.391,
+      "readback_end_seconds": 27.384463,
+      "readback_ms": 13.265,
+      "resized": false,
+      "sha256": "5171cc7090a7dae5430e3367978412a1817f77386c04440f43e85f9cdc97ce44",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.47207,
+      "format": 4,
+      "hash_ms": 13.144,
+      "height": 900,
+      "name": "burst_010",
+      "png_save_ms": 539.519,
+      "readback_end_seconds": 27.484966,
+      "readback_ms": 12.896,
+      "resized": false,
+      "sha256": "03f4600f7fb0ec8bfd35b0e725c46062b8e747ba416dbedbdde37f32782cdb17",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.588029,
+      "format": 4,
+      "hash_ms": 19.382,
+      "height": 900,
+      "name": "burst_011",
+      "png_save_ms": 529.363,
+      "readback_end_seconds": 27.599511,
+      "readback_ms": 11.482,
+      "resized": false,
+      "sha256": "ba2bdf4ce38e1e30f627eb6a57cefb98788fdc41c52bdec55711f928dcbf76c3",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.703291,
+      "format": 4,
+      "hash_ms": 13.82,
+      "height": 900,
+      "name": "burst_012",
+      "png_save_ms": 519.126,
+      "readback_end_seconds": 27.714454,
+      "readback_ms": 11.163,
+      "resized": false,
+      "sha256": "bf8b76348b9d9d58e9291e75b9eff7ce7862b5aeabec781dbfa43f83fb2c1f3c",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.80346,
+      "format": 4,
+      "hash_ms": 12.454,
+      "height": 900,
+      "name": "burst_013",
+      "png_save_ms": 509.829,
+      "readback_end_seconds": 27.81512,
+      "readback_ms": 11.66,
+      "resized": false,
+      "sha256": "6b598f59872643ec83a2a7e96aaa86e3862fb64b1a3784040f0e339263a7911f",
+      "width": 1600
+    },
+    {
+      "at_seconds": 27.903701,
+      "format": 4,
+      "hash_ms": 15.95,
+      "height": 900,
+      "name": "burst_014",
+      "png_save_ms": 526.517,
+      "readback_end_seconds": 27.915667,
+      "readback_ms": 11.966,
+      "resized": false,
+      "sha256": "ddb55e1a628eb4cb04a1630826e05ba567bad206fb2bf5ddcaef7c1a60e09ee1",
+      "width": 1600
+    },
+    {
+      "at_seconds": 28.004806,
+      "format": 4,
+      "hash_ms": 17.504,
+      "height": 900,
+      "name": "burst_015",
+      "png_save_ms": 555.316,
+      "readback_end_seconds": 28.018237,
+      "readback_ms": 13.431,
+      "resized": false,
+      "sha256": "82fd64cce8dbbbf21bf22630917647f71f746b920b0bf64d22a887f792da8b74",
+      "width": 1600
+    },
+    {
+      "at_seconds": 28.11957,
+      "format": 4,
+      "hash_ms": 14.883,
+      "height": 900,
+      "name": "burst_016",
+      "png_save_ms": 541.976,
+      "readback_end_seconds": 28.133532,
+      "readback_ms": 13.962,
+      "resized": false,
+      "sha256": "0daa62bf29bbc2c7f415b754c649b3ab9e81fc0a74303e477579cd7b9dab7a24",
+      "width": 1600
+    },
+    {
+      "at_seconds": 28.220156,
+      "format": 4,
+      "hash_ms": 16.865,
+      "height": 900,
+      "name": "burst_017",
+      "png_save_ms": 526.02,
+      "readback_end_seconds": 28.232673,
+      "readback_ms": 12.517,
+      "resized": false,
+      "sha256": "f52c2f669a235ae1500e99d0852664cda5958b8707961e9b285b82eefa6a48bf",
+      "width": 1600
+    },
+    {
+      "at_seconds": 28.337146,
+      "format": 4,
+      "hash_ms": 14.33,
+      "height": 900,
+      "name": "burst_018",
+      "png_save_ms": 549.372,
+      "readback_end_seconds": 28.349874,
+      "readback_ms": 12.728,
+      "resized": false,
+      "sha256": "ffed61b4465238bff52ef30ad04f95e57ebaa8b38df635304bde130bb2d346b5",
+      "width": 1600
+    }
+  ],
+  "disable_fg_plugin": "",
+  "disable_ota": "1",
+  "driver": "vulkan",
+  "engine": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "errors": [],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "latest": {
+    "at_seconds": 30.654414,
+    "dlss_available": false,
+    "fg_status": {
+      "available": false,
+      "eligible": false,
+      "reason": "unavailable",
+      "sdk_enabled": false
+    },
+    "game": "ski",
+    "map": 0,
+    "phase": 2,
+    "phase_time": 12.1619790000001,
+    "players": [
+      {
+        "camera_far": 3000,
+        "camera_forward": [
+          -0.453957706689835,
+          -0.189362391829491,
+          -0.870668888092041
+        ],
+        "camera_fov": 71.7050933837891,
+        "camera_keep_aspect": 1,
+        "camera_near": 0.0500000007450581,
+        "camera_position": [
+          -2.32618594169617,
+          -75.3462066650391,
+          -180.385131835938
+        ],
+        "camera_projection": 0,
+        "course_progress": 185.78108215332,
+        "draw_position": [
+          -5.22699880599976,
+          -78.2172241210938,
+          -185.890151977539
+        ],
+        "position": [
+          -5.18844890594482,
+          -78.185417175293,
+          -185.78108215332
+        ],
+        "score": 460,
+        "slot": 1,
+        "speed": 24.4162521362305,
+        "visual_rig_position": [
+          -5.22699880599976,
+          -78.2172241210938,
+          -185.890151977539
+        ]
+      }
+    ],
+    "settings": {
+      "effective_upscale": 2,
+      "fg": false,
+      "hdr": false,
+      "lighting": 0,
+      "nis": 0,
+      "preset": 0,
+      "quality": 2,
+      "upscale": 2
+    },
+    "viewports": [
+      {
+        "camera": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134",
+        "environment": {
+          "ddgi": null,
+          "pt": null
+        },
+        "fg": null,
+        "msaa": 0,
+        "path": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133",
+        "scale": 0.670000016689301,
+        "scaling": 2,
+        "screen_space_aa": 0,
+        "sharpness": 0.200000002980232,
+        "size": [
+          1600,
+          900
+        ]
+      }
+    ],
+    "window": {
+      "focused": true,
+      "max_fps": 60,
+      "mode": 0,
+      "vsync": 1
+    }
+  },
+  "observer": "passive; natural camera and real-time simulation",
+  "phases": [
+    {
+      "at_seconds": 8.484363,
+      "phase": 0
+    },
+    {
+      "at_seconds": 9.249409,
+      "phase": 1
+    },
+    {
+      "at_seconds": 16.390257,
+      "phase": 2
+    }
+  ],
+  "physics": "Jolt Physics",
+  "preflight_seconds_after_play": 15,
+  "rendering_method": "forward_plus",
+  "resolution": [
+    1600,
+    900
+  ],
+  "scaling_enums": {
+    "dlss": -1,
+    "fsr": 2,
+    "native": 0
+  },
+  "status": "STARTUP_ONLY",
+  "ticks": 120
+}

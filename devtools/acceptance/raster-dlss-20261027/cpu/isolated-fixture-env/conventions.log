@@ -1,0 +1,5 @@
+game/core/party_game.gd:1: warning SIZE: 1089 lines
+game/scenes/skate/skate_course.gd:1: warning SIZE: 1562 lines
+game/scenes/skate/skater.gd:1: warning SIZE: 1059 lines
+game/scenes/ski/ski_course.gd:1: warning SIZE: 1177 lines
+conventions: 0 error(s), 4 warning(s) — rules in docs/CODING_STANDARDS.md

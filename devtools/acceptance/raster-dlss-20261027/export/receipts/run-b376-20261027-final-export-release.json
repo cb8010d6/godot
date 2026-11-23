@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<local-path>",
+    "--headless",
+    "--rendering-driver",
+    "dummy",
+    "--rendering-method",
+    "dummy",
+    "--path",
+    "<local-path>",
+    "--export-release",
+    "Windows Desktop",
+    "<local-path>"
+  ],
+  "cwd": "<local-path>",
+  "checkout_sha": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+  "worktree_status": "",
+  "command_input_binaries": [
+    {
+      "file": "<local-path>",
+      "bytes": 161809408,
+      "sha256": "c6c7af301169c21df68b9cce0a419b660bbe445df0719b911cc6a1cc64602c62"
+    }
+  ],
+  "environment": {
+    "GODOT_VERSION_STATUS": "beta1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1",
+    "GODOT_RG_REORDER": null,
+    "GODOT_RG_FULL_BARRIERS": null,
+    "LOCALAPPDATA": "<local-path>",
+    "TEMP": "<local-path>",
+    "NUGET_PACKAGES": "<local-path>",
+    "DOTNET_ROOT": "<local-path>",
+    "CUDA_PATH": "<local-path>"
+  },
+  "started_utc": "2026-10-27T06:02:36.181853+00:00",
+  "log": "<local-path>",
+  "ngx_updaters_before": [],
+  "test_job_assigned": true,
+  "pid": 25676,
+  "exit_code": 0,
+  "test_job_descendants_closed": [],
+  "ngx_updaters_after": [],
+  "duration_seconds": 18.422,
+  "finished_utc": "2026-10-27T06:02:54.344717+00:00"
+}

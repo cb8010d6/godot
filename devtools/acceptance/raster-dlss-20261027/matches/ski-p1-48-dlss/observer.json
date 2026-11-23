@@ -1,0 +1,172 @@
+{
+  "captures": [
+    {
+      "at_seconds": 19.070249,
+      "height": 900,
+      "name": "play_start",
+      "sha256": "dd441cec919debb1a1b418c0a7301fa51755486a6c7ed1dff2d50fa171403b79",
+      "width": 1600
+    },
+    {
+      "at_seconds": 26.019425,
+      "height": 900,
+      "name": "play_10s",
+      "sha256": "0e4c720c6eb4db9545406d95810d462d5790133b8ba6148b825d0703a1e8c4e1",
+      "width": 1600
+    },
+    {
+      "at_seconds": 36.074408,
+      "height": 900,
+      "name": "play_20s",
+      "sha256": "50a8036db4335208e65ae3990207317ed4f413222890a7a347f822aac5fbba86",
+      "width": 1600
+    },
+    {
+      "at_seconds": 76.56723,
+      "height": 900,
+      "name": "results",
+      "sha256": "bd26dac279754dd7927251bddab8e9cf3d07b40d6e1a046f8b973dd1e650a4b2",
+      "width": 1600
+    }
+  ],
+  "disable_fg_plugin": "1",
+  "disable_ota": "1",
+  "driver": "vulkan",
+  "engine": {
+    "build": "custom_build",
+    "hash": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+    "hex": 264192,
+    "major": 4,
+    "minor": 8,
+    "patch": 0,
+    "status": "beta1",
+    "string": "4.8-beta1 (custom_build)",
+    "timestamp": 1793073661
+  },
+  "errors": [],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "latest": {
+    "at_seconds": 88.753488,
+    "dlss_available": true,
+    "fg_status": {
+      "available": false,
+      "eligible": false,
+      "reason": "unavailable",
+      "rendered_3d_views": 1,
+      "requested_3d_views": 0,
+      "sdk_enabled": false,
+      "supported_generated_frames": 0
+    },
+    "game": "ski",
+    "map": 0,
+    "phase": 3,
+    "phase_time": 11.9001903333335,
+    "players": [
+      {
+        "camera_far": 3000.0,
+        "camera_forward": [
+          0.988904476165771,
+          -0.147670596837997,
+          0.0161693934351206
+        ],
+        "camera_fov": 52.0000381469727,
+        "camera_keep_aspect": 1,
+        "camera_near": 0.0500000007450581,
+        "camera_position": [
+          -4.05782842636108,
+          -255.143936157227,
+          -792.185119628906
+        ],
+        "camera_projection": 0,
+        "course_progress": 1028.55932617188,
+        "draw_position": [
+          0.0352664515376091,
+          -301.976470947266,
+          -1028.55932617188
+        ],
+        "position": [
+          0.0352664515376091,
+          -301.976470947266,
+          -1028.55932617188
+        ],
+        "score": 5538,
+        "slot": 1,
+        "speed": 5.82076609134674e-11,
+        "visual_rig_position": [
+          0.0,
+          -301.363616943359,
+          -1032.0
+        ]
+      }
+    ],
+    "settings": {
+      "effective_upscale": 7,
+      "fg": false,
+      "hdr": false,
+      "lighting": 0,
+      "nis": 0,
+      "preset": 0,
+      "quality": 2,
+      "upscale": 7
+    },
+    "viewports": [
+      {
+        "camera": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133/@Camera3D@134",
+        "environment": {
+          "ddgi": false,
+          "pt": false
+        },
+        "fg": false,
+        "msaa": 0,
+        "path": "/root/SkiGame/@CanvasLayer@69/@Control@70/@Control@71/@Control@131/@SubViewportContainer@132/@SubViewport@133",
+        "scale": 0.666666686534882,
+        "scaling": 6,
+        "screen_space_aa": 0,
+        "sharpness": 0.0,
+        "size": [
+          1600,
+          900
+        ]
+      }
+    ],
+    "window": {
+      "focused": true,
+      "max_fps": 60,
+      "mode": 0,
+      "vsync": 1
+    }
+  },
+  "observer": "passive; natural camera and real-time simulation",
+  "phases": [
+    {
+      "at_seconds": 7.644338,
+      "phase": 0
+    },
+    {
+      "at_seconds": 8.412405,
+      "phase": 1
+    },
+    {
+      "at_seconds": 15.556797,
+      "phase": 2
+    },
+    {
+      "at_seconds": 76.133672,
+      "phase": 3
+    }
+  ],
+  "physics": "Jolt Physics",
+  "preflight_seconds_after_play": 0.0,
+  "rendering_method": "forward_plus",
+  "resolution": [
+    1600,
+    900
+  ],
+  "scaling_enums": {
+    "dlss": 6,
+    "fsr": 2,
+    "native": 0
+  },
+  "status": "RESULTS_OBSERVED",
+  "ticks": 120
+}

@@ -1,6 +1,6 @@
 # Tooling
 
-* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md) - diagnose a numerically unstable combined inverse; native fix and gameplay validation pending
+* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md) - repair a numerically unstable combined inverse; bounded raster SR regression and bot matches pass, human play and temporal acceptance pending
 
 * [RR resource ownership](/tooling/streamline-rr-resource-ownership.md) - correlate native image handles before changing host or SDK synchronization
 

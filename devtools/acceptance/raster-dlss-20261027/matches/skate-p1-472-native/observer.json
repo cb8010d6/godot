@@ -1,0 +1,169 @@
+{
+  "captures": [
+    {
+      "at_seconds": 18.543177,
+      "height": 900,
+      "name": "play_start",
+      "sha256": "33dbd342045879ee2d78070d2ae07b45588218aa6677ae5ab3b030bfab2eeaf2",
+      "width": 1600
+    },
+    {
+      "at_seconds": 25.593458,
+      "height": 900,
+      "name": "play_10s",
+      "sha256": "5294f1cd8af7e6ad9c1a77810b7cd043f66835d3420665686cc93d15e3d6f2f3",
+      "width": 1600
+    },
+    {
+      "at_seconds": 35.608358,
+      "height": 900,
+      "name": "play_20s",
+      "sha256": "91445a12d3c3e94aa466000b86cb7e1462b5316c4f290fa61f339a87b304ad14",
+      "width": 1600
+    },
+    {
+      "at_seconds": 100.21314,
+      "height": 900,
+      "name": "results",
+      "sha256": "4b7ffda1955d2da46767dca710b8416301a7db424f5ffcb8693238ed8cd5c5d6",
+      "width": 1600
+    }
+  ],
+  "disable_fg_plugin": "",
+  "disable_ota": "1",
+  "driver": "vulkan",
+  "engine": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "errors": [],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "latest": {
+    "at_seconds": 111.483891,
+    "dlss_available": false,
+    "fg_status": {
+      "available": false,
+      "eligible": false,
+      "reason": "unavailable",
+      "sdk_enabled": false
+    },
+    "game": "skate",
+    "map": 0,
+    "phase": 3,
+    "phase_time": 11.3578640000001,
+    "players": [
+      {
+        "camera_far": 3000.0,
+        "camera_forward": [
+          -0.925399959087372,
+          -0.0329110808670521,
+          0.377560347318649
+        ],
+        "camera_fov": 52.0000381469727,
+        "camera_keep_aspect": 1,
+        "camera_near": 0.0500000007450581,
+        "camera_position": [
+          -3.83007764816284,
+          -5.48105096817017,
+          -179.540542602539
+        ],
+        "camera_projection": 0,
+        "course_progress": 535.683044433594,
+        "draw_position": [
+          -1.81662249565125,
+          -20.6000003814697,
+          -535.686401367188
+        ],
+        "position": [
+          -1.81687438488007,
+          -20.6000003814697,
+          -535.683044433594
+        ],
+        "score": 14677,
+        "slot": 1,
+        "speed": 1.73372963325408,
+        "visual_rig_position": [
+          0.0,
+          -19.9050006866455,
+          -566.0
+        ]
+      }
+    ],
+    "settings": {
+      "effective_upscale": 0,
+      "fg": false,
+      "hdr": false,
+      "lighting": 0,
+      "nis": 0,
+      "preset": 0,
+      "quality": 2,
+      "upscale": 0
+    },
+    "viewports": [
+      {
+        "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+        "environment": {
+          "ddgi": null,
+          "pt": null
+        },
+        "fg": null,
+        "msaa": 1,
+        "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+        "scale": 1.0,
+        "scaling": 0,
+        "screen_space_aa": 1,
+        "sharpness": 0.200000002980232,
+        "size": [
+          1600,
+          900
+        ]
+      }
+    ],
+    "window": {
+      "focused": true,
+      "max_fps": 60,
+      "mode": 0,
+      "vsync": 1
+    }
+  },
+  "observer": "passive; natural camera and real-time simulation",
+  "phases": [
+    {
+      "at_seconds": 7.838976,
+      "phase": 0
+    },
+    {
+      "at_seconds": 8.630422,
+      "phase": 1
+    },
+    {
+      "at_seconds": 14.971893,
+      "phase": 2
+    },
+    {
+      "at_seconds": 99.767031,
+      "phase": 3
+    }
+  ],
+  "physics": "Jolt Physics",
+  "preflight_seconds_after_play": 0.0,
+  "rendering_method": "forward_plus",
+  "resolution": [
+    1600,
+    900
+  ],
+  "scaling_enums": {
+    "dlss": -1,
+    "fsr": 2,
+    "native": 0
+  },
+  "status": "RESULTS_OBSERVED",
+  "ticks": 120
+}

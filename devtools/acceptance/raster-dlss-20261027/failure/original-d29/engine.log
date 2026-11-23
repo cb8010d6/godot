@@ -1,0 +1,93 @@
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+Godot Engine v4.8.beta1.custom_build.d29e70653 (2026-10-26 19:09:02 UTC) - https://godotengine.org
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+[  13.0] P1 s= 35.2  banked 520 50-50 Grind
+[  13.0] P4 s= 35.2  banked 520 50-50 Grind
+[  13.6] P2 s= 34.0  banked 520 50-50 Grind
+[  13.6] P3 s= 34.0  banked 520 50-50 Grind
+[  17.6] P1 s= 70.3  banked 1202 Heelflip + Big Air
+[  17.6] P4 s= 70.6  banked 1202 Heelflip + Big Air
+[  18.2] P1 s= 73.2  BAIL Tripped on a rail
+[  18.8] P2 s= 69.4  banked 1190 Heelflip + Big Air
+[  18.8] P3 s= 69.4  banked 1190 Kickflip + Big Air
+[  19.5] P2 s= 72.7  BAIL Tripped on a rail
+[  19.5] P3 s= 72.7  BAIL Tripped on a rail
+[  20.7] P4 s= 97.4  lost 149
+[  20.7] P4 s= 97.4  BAIL Didn't finish the flip
+[  26.8] P4 s=132.1  banked 7625 Double Kickflip + Indy + FS 180 + Stair Set + Big Air
+[  27.8] P2 s=115.0  banked 798 Lipslide
+[  27.8] P3 s=115.0  banked 2196 Heelflip + Lipslide
+[  29.2] P1 s=120.5  banked 10822 Kickflip + 5-0 Grind + Curb 5-0 Grind + Curb 5-0 Grind + Heelflip + Curb 5-0 Grind + Curb 5-0 Grind
+[  29.3] P4 s=152.9  BAIL Didn't finish the flip
+[  32.6] P2 s=152.6  BAIL Didn't finish the flip
+[  32.7] P3 s=154.1  letter K
+[  34.4] P1 s=154.1  letter K
+[  34.5] P3 s=168.1  banked 2205 50-50 Grind + Kickflip + Big Air
+[  34.8] P4 s=179.4  banked 216 Smith Grind
+[  36.2] P1 s=166.5  banked 2196 50-50 Grind + Kickflip + Big Air
+[  36.6] P2 s=170.0  BAIL Hit an obstacle
+[  37.1] P4 s=192.2  banked 1258 Heelflip + Lipslide
+[  37.6] P1 s=173.8  banked 300 Heelflip
+[  38.1] P3 s=193.6  banked 1090 Kickflip + 5-0 Grind
+[  40.3] P1 s=193.8  banked 1088 Kickflip + 5-0 Grind
+[  41.0] P4 s=216.3  banked 200 BS 180
+[  43.1] P1 s=215.3  banked 200 BS 180
+[  43.6] P4 s=234.4  letter A
+[  44.1] P3 s=234.3  letter A
+[  44.2] P4 s=238.9  lost 700
+[  44.2] P4 s=238.9  BAIL Hit an obstacle
+[  44.7] P3 s=239.0  lost 300
+[  44.7] P3 s=239.0  BAIL Hit an obstacle
+[  45.5] P2 s=220.2  banked 1230 Heelflip + Big Air
+[  47.1] P2 s=234.4  letter A
+[  47.6] P2 s=239.0  lost 700
+[  47.6] P2 s=239.0  BAIL Hit an obstacle
+[  48.1] P1 s=260.8  lost 155
+[  48.1] P1 s=260.8  BAIL Didn't finish the flip
+[  53.7] P3 s=287.3  banked 745 5-0 Grind
+[  54.8] P1 s=297.8  banked 1090 Kickflip + Big Air
+[  55.6] P3 s=299.3  BAIL Didn't finish the flip
+[  56.0] P4 s=290.9  banked 8136 Curb 5-0 Grind + 5-0 Grind + Curb 5-0 Grind + Curb 5-0 Grind + Kickflip + Curb 5-0 Grind
+[  56.4] P1 s=309.8  banked 1422 Big Stairs + Big Air
+[  56.7] P2 s=287.3  banked 2092 Kickflip + 5-0 Grind
+[  57.6] P2 s=290.5  BAIL Hit an obstacle
+[  58.3] P1 s=321.7  lost 1638
+[  58.3] P1 s=321.7  BAIL Didn't finish the flip
+[  60.0] P4 s=311.4  banked 1916 Double Kickflip + 50-50 Grind
+[  62.6] P2 s=311.5  banked 1062 Indy + Boardslide
+[  66.0] P1 s=370.9  letter T
+[  67.4] P3 s=375.6  banked 443 5-0 Grind
+[  67.9] P4 s=369.1  banked 1402 BS 360 + Big Air
+[  69.7] P2 s=346.5  banked 3363 Heelflip + 5-0 Grind + Curb 5-0 Grind
+[  71.1] P3 s=400.3  banked 4924 Kickflip + Indy + Pyramid Gap + Big Air
+[  72.4] P4 s=401.1  banked 3030 Indy + Pyramid Gap + Big Air
+[  76.0] P1 s=451.5  letter E
+[  76.0] P2 s=370.8  letter T
+[  77.1] P1 s=459.1  banked 5628 Kickflip + Indy + Huge Air + Big Air
+[  77.9] P3 s=455.0  banked 856 BS 180 + Big Air
+[  78.6] P4 s=452.2  letter E
+[  79.7] P4 s=460.1  banked 8120 Heelflip + Indy + BS 180 + Huge Air + Big Air
+[  80.2] P1 s=483.1  banked 2382 Heelflip + FS 180 + Big Air
+[  80.6] P1 s=485.4  BAIL Tripped on a rail
+[  80.8] P3 s=478.9  banked 200 FS 180
+[  80.9] P3 s=479.5  BAIL Tripped on a rail
+[  86.4] P1 s=520.0  finished 79.2 s, score 27600
+[  87.2] P4 s=520.0  finished 80.0 s, score 34125
+[  87.6] P3 s=520.0  finished 80.4 s, score 14869
+[  91.1] P2 s=455.6  banked 4812 Heelflip + BS 180 + Huge Air + Big Air
+[  94.7] P2 s=481.4  banked 2352 Kickflip + FS 180 + Big Air
+[  99.5] P2 s=520.0  finished 92.3 s, score 17919
+ERROR: Condition "0.0 == r3[3]" is true.
+   at: Projection::invert (core\math\projection.cpp:823)
+RS_SMOKE_DONE: skate
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.

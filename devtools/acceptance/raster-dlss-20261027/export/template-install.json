@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "archive": {
+    "file": "<local-path>",
+    "bytes": 66913976,
+    "sha256": "4ffd4017681e3b2a7ea0cb96a93646ab7f40ab27f9af1d9c6fe89781e3b265b6"
+  },
+  "version": "4.8.beta1",
+  "install_directory": "<local-path>",
+  "installed_files": [
+    {
+      "relative_file": "D3D12Core.x86_64.dll",
+      "file": "<local-path>",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "relative_file": "d3d12SDKLayers.x86_64.dll",
+      "file": "<local-path>",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    },
+    {
+      "relative_file": "version.txt",
+      "file": "<local-path>",
+      "bytes": 9,
+      "sha256": "d6da91c16889ae943f94f1af5368a7bd8edb073a4e909ae90a48d38f5a415f84"
+    },
+    {
+      "relative_file": "windows_debug_x86_64.exe",
+      "file": "<local-path>",
+      "bytes": 95634944,
+      "sha256": "04603fb55271a9b6e4982793beaf4857d46761646ef67d3695010b79e7245241"
+    },
+    {
+      "relative_file": "windows_debug_x86_64_console.exe",
+      "file": "<local-path>",
+      "bytes": 300544,
+      "sha256": "4fe3afbceae16ae6a9f433c2007b783f94736fceacfe71756fed343c46d11330"
+    },
+    {
+      "relative_file": "windows_release_x86_64.exe",
+      "file": "<local-path>",
+      "bytes": 80790016,
+      "sha256": "523ee894b09ed747e8733fda707a1a10807cd05b3d71f5246f1a260e087e8fa1"
+    },
+    {
+      "relative_file": "windows_release_x86_64_console.exe",
+      "file": "<local-path>",
+      "bytes": 292864,
+      "sha256": "7a3e3b68caf25f0b6779099cda0702279161cf798f73cb3027f694a77ba36fc7"
+    },
+    {
+      "relative_file": "licenses/BOOST-LICENSE-BLAST.md",
+      "file": "<local-path>",
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "relative_file": "licenses/GODOT-COPYRIGHT.txt",
+      "file": "<local-path>",
+      "bytes": 100327,
+      "sha256": "d5aeff0741d5cb7a566befd8867667549c8bb46399a0e93091273b632bbefd96"
+    },
+    {
+      "relative_file": "licenses/GODOT-LICENSE.txt",
+      "file": "<local-path>",
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+    },
+    {
+      "relative_file": "licenses/MICROSOFT-DIRECTX-AGILITY-SDK-DISTRIBUTABLE-FILES.txt",
+      "file": "<local-path>",
+      "bytes": 88,
+      "sha256": "133ca866af6b6d1d549e3ec48dbe1d36fa3c40ccbb971c4d3b52480817c935e2"
+    },
+    {
+      "relative_file": "licenses/MICROSOFT-DIRECTX-AGILITY-SDK-LICENSE.txt",
+      "file": "<local-path>",
+      "bytes": 12989,
+      "sha256": "95598665ca96fc6a9355e57be75fe3afcdf2501bb39f3b40ac6b91d0ed85915c"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-BLAST-LICENSE.md",
+      "file": "<local-path>",
+      "bytes": 1562,
+      "sha256": "3f9ab13f4b26908285c8b86ae264d98916afaeeaf5bb0108190305cad7679273"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-FLOW-LICENSE.md",
+      "file": "<local-path>",
+      "bytes": 1517,
+      "sha256": "eb3e67b17b48c56ef26d8bf6634c0837503fefc28a916f98d4f02272eda50011"
+    },
+    {
+      "relative_file": "licenses/NVIDIA-STREAMLINE-SDK-HEADERS-LICENSE.txt",
+      "file": "<local-path>",
+      "bytes": 1559,
+      "sha256": "c7782fdc4dfc64f7e6b09f37a694dcfa64034b712903986d252b13a08d5849cd"
+    },
+    {
+      "relative_file": "licenses/PHYSX-LICENSE.md",
+      "file": "<local-path>",
+      "bytes": 1876,
+      "sha256": "fa50dbc177f13614eae256384c1c129d59a9d674178cd73b181e80c94c09e6fb"
+    },
+    {
+      "relative_file": "licenses/THIRD_PARTY_LICENSES.md",
+      "file": "<local-path>",
+      "bytes": 6658,
+      "sha256": "e4b42b407b967fdedb6ce06c02b59c874003c74371b4673cd1ea0428fc6dac82"
+    },
+    {
+      "relative_file": "licenses/VHACD-LICENSE-BLAST.md",
+      "file": "<local-path>",
+      "bytes": 1468,
+      "sha256": "88ba67796d63e1e7f8fc54293d7bf8277e390e219cfd203d1718676a57285bd9"
+    }
+  ]
+}

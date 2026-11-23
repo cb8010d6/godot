@@ -1,0 +1,54 @@
+{
+  "label": "natural-20261027T060304Z-ba5d2e97-vulkan-skate1",
+  "command": [
+    "<local-path>",
+    "--verbose",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1600x900",
+    "--fixed-fps",
+    "60",
+    "--",
+    "--game=skate",
+    "--demo=1",
+    "--map=0",
+    "--at=1,4,8",
+    "--shots=<local-path>"
+  ],
+  "environment_requested": {
+    "APPDATA": "<local-path>",
+    "LOCALAPPDATA": "<local-path>",
+    "TEMP": "<local-path>",
+    "TMP": "<local-path>",
+    "XDG_CACHE_HOME": "<local-path>",
+    "RS_TEST_MODE": "1",
+    "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1"
+  },
+  "receipt": {
+    "file": "<local-path>",
+    "bytes": 2344,
+    "sha256": "fda4d36f3a2e27f42d5b4f877d158f3b56c0e6fe5ba885850e6b4c27ec305025"
+  },
+  "log": {
+    "file": "<local-path>",
+    "bytes": 147758,
+    "sha256": "0fbc42b4025933bb0a54de511fb0661f0410757c86fc4153f9d109a57cca268e"
+  },
+  "duration_seconds": 34.422,
+  "checks": {
+    "wrapper_exit_zero": true,
+    "exit_zero": true,
+    "expected_checkout": true,
+    "no_timeout_exception": true,
+    "no_errors": true,
+    "job_owned": true,
+    "descendants_closed": true,
+    "no_owned_ngx": true,
+    "no_cleanup_failure": true
+  },
+  "passed": true
+}

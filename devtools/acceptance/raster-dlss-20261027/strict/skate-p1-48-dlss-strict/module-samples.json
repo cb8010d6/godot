@@ -1,0 +1,1003 @@
+{
+  "successful_samples": 46,
+  "errors": [
+    {
+      "at": "2026-10-27T04:19:04.876470+00:00",
+      "error": "OSError(22, 'Only part of a ReadProcessMemory or WriteProcessMemory request was completed.', None, 299)"
+    },
+    {
+      "at": "2026-10-27T04:19:17.111410+00:00",
+      "error": "PermissionError(13, 'The program issued a command but the command length is incorrect.', None, 24)"
+    }
+  ],
+  "modules": [
+    {
+      "name": "SiFocusHook.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 188416,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NvTelemetryAPI64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 4894720,
+      "first_seen_utc": "2026-10-27T04:19:11.988910+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "NvTelemetryBridge64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 438272,
+      "first_seen_utc": "2026-10-27T04:19:13.009643+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "ADVAPI32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 733184,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "apphelp.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 606208,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "AppXDeploymentClient.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1064960,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "atidxx64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 143360,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "AUDIOSES.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 1576960,
+      "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "AVRT.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 40960,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "bcrypt.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 159744,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "bcryptPrimitives.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 532480,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "cfgmgr32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 319488,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "clbcatq.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 724992,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "combase.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 3493888,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "CoreMessaging.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 991232,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "CoreUIComponents.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 3518464,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "CRYPT32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1429504,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "cryptbase.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 49152,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "cryptnet.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 200704,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "CRYPTSP.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 98304,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "d3d11.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 2506752,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "d3d12.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 151552,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "D3D12Core.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1888256,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "D3DSCache.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 176128,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "dataexchange.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 253952,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dbgcore.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 217088,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dbghelp.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 2142208,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dcomp.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1986560,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "devobj.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 208896,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dinput8.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 282624,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "amdvlk64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 104321024,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "_nvngx.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1519616,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvapi64_impl.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 5730304,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvcuda64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 32370688,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvdxgdmal64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 716800,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvgpucomp64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 98623488,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvldumdx.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 827392,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "NvMemMapStoragex.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1290240,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "nvobjectloader64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 14688256,
+      "first_seen_utc": "2026-10-27T04:19:11.988910+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvoglv64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 48779264,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvppex.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 7499776,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvrtum64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 54935552,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvwgf2umx.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 89804800,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "amdenc64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1392640,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "amdihk64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 253952,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "amdxx64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 47005696,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "drvstore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1347584,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dwmapi.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 188416,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "DWrite.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 2625536,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dxcore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 241664,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "dxgi.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1007616,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "GDI32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 176128,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "gdi32full.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1163264,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "GLU32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 180224,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "gpapi.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 143360,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "HID.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 53248,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "imagehlp.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 118784,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "IMM32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 192512,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "inputhost.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1388544,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "IPHLPAPI.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 241664,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "kernel.appcore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 73728,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "KERNEL32.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 794624,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "KERNELBASE.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 3108864,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "MMDevApi.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 561152,
+      "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "msasn1.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 73728,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "MSCTF.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1138688,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "MSVCP140.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 557056,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "msvcp_win.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 643072,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "msvcrt.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 647168,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "mswsock.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 434176,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NSI.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 32768,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "ntdll.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 2068480,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "ntmarta.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 208896,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvapi64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 561152,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvspcap64.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1495040,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "ole32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1228800,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "Oleacc.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 417792,
+      "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "OLEAUT32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 880640,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "OneCoreUAPCommonProxyStub.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 8208384,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "opengl32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1216512,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "powrprof.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 307200,
+      "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "profapi.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 151552,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "PROPSYS.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1024000,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "resourcepolicyclient.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 81920,
+      "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "RMCLIENT.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 172032,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "RPCRT4.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1204224,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "rsaenh.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 229376,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "sechost.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 675840,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "SETUPAPI.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 4657152,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "shcore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 708608,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "SHELL32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 7802880,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "SHLWAPI.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 372736,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "sxs.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 663552,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "textinputframework.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1019904,
+      "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "twinapi.appcore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 2109440,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "ucrtbase.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1048576,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "uiautomationcore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 3096576,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "UMPDC.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 73728,
+      "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "USER32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1708032,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "USERENV.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 188416,
+      "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "usermgrcli.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 90112,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "uxtheme.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 647168,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "VCRUNTIME140.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 122880,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "VCRUNTIME140_1.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 45056,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "VERSION.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 40960,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "vulkan-1.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1744896,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "win32u.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 139264,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "Windows.Graphics.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 577536,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "windows.staterepositorycore.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 69632,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "windows.storage.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 8044544,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "WINMM.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 159744,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "WINNSI.DLL",
+      "path": "<local-path>",
+      "bytes_in_memory": 45056,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "wintrust.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 475136,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "wintypes.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1404928,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "Wldp.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 176128,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "wpnapps.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1458176,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "WS2_32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 471040,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "WSOCK32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 36864,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "WTSAPI32.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 81920,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "XInput1_4.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 69632,
+      "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "XmlLite.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 221184,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "godot.windows.editor.x86_64.exe",
+      "path": "<local-path>",
+      "bytes_in_memory": 164470784,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NvBlast.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 77824,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NvBlastExtAuthoring.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 839680,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NvBlastExtShaders.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 57344,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "NvBlastGlobals.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 45056,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvngx_deepdvc.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 3211264,
+      "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvngx_dlss.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 59068416,
+      "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvngx_dlssd.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 48455680,
+      "first_seen_utc": "2026-10-27T04:19:09.948125+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "nvngx_dlssg.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 7618560,
+      "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "sl.common.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 925696,
+      "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    },
+    {
+      "name": "sl.dlss.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 430080,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+    },
+    {
+      "name": "sl.dlss_d.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 446464,
+      "first_seen_utc": "2026-10-27T04:19:09.948125+00:00",
+      "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+    },
+    {
+      "name": "sl.interposer.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 663552,
+      "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+      "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+    },
+    {
+      "name": "sl.nis.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 1159168,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+    },
+    {
+      "name": "sl.pcl.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 360448,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+    },
+    {
+      "name": "sl.reflex.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 389120,
+      "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+      "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+    },
+    {
+      "name": "VkLayer_khronos_validation.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 21041152,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    }
+  ],
+  "rtss_module_names": [],
+  "known_overlay_module_names": [
+    "nvspcap64.dll"
+  ],
+  "streamline_module_names": [
+    "sl.common.dll",
+    "sl.dlss.dll",
+    "sl.dlss_d.dll",
+    "sl.interposer.dll",
+    "sl.nis.dll",
+    "sl.pcl.dll",
+    "sl.reflex.dll"
+  ],
+  "vvl_modules": [
+    {
+      "name": "VkLayer_khronos_validation.dll",
+      "path": "<local-path>",
+      "bytes_in_memory": 21041152,
+      "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+      "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "case": {
+    "id": "skate-p1-48-dlss",
+    "game": "skate",
+    "players": 1,
+    "map": 0,
+    "engine": "48",
+    "mode": "dlss"
+  },
+  "status": "STARTUP_ONLY",
+  "command": [
+    "<local-path>",
+    "--path",
+    "<local-path>",
+    "--script",
+    "<local-path>",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1600x900",
+    "--",
+    "--game=skate",
+    "--demo=1",
+    "--map=0",
+    "--smoke-report=<local-path>",
+    "--observe-output=<local-path>",
+    "--preflight-seconds=15",
+    "--observe-burst"
+  ],
+  "preflight_seconds_after_play": 15,
+  "burst": true,
+  "validation_layer_dir": null,
+  "validation_manifest_sha256": null,
+  "validation_settings_sha256": null,
+  "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+  "implicit_layers_filter": "~implicit~",
+  "settings_sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106",
+  "started_unix": 1793081192.7908475,
+  "exit_code": 0,
+  "timeout": false,
+  "owned_members_at_close": [
+    15268,
+    25316,
+    38836,
+    34892,
+    9392,
+    39632,
+    17484,
+    19704,
+    31964,
+    16304,
+    18104,
+    46808,
+    32028,
+    47928
+  ],
+  "owned_survivors_after_close": [],
+  "ngx_before": [],
+  "ngx_after": [],
+  "errors": [],
+  "finished_unix": 1793081273.0593965,
+  "observer_summary": {
+    "burst_end_seconds": 28.009497,
+    "burst_flush_completed": true,
+    "burst_requested": true,
+    "burst_start_seconds": 25.993636,
+    "captures": [
+      {
+        "at_seconds": 19.652519,
+        "height": 900,
+        "name": "play_start",
+        "resized": false,
+        "sha256": "d1c1a075c121d282e92ebd6e03f49989592958a8c85cf3b9bac855ab1809c9ba",
+        "width": 1600
+      },
+      {
+        "at_seconds": 25.993703,
+        "format": 4,
+        "hash_ms": 15.161,
+        "height": 900,
+        "name": "burst_000",
+        "png_save_ms": 590.564,
+        "readback_end_seconds": 26.005803,
+        "readback_ms": 12.1,
+        "resized": false,
+        "sha256": "ad6aaffdcc692f865c41aa5637f406019b30fcaedff52b93aaf023e3958f6c1a",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.108148,
+        "format": 4,
+        "hash_ms": 19.918,
+        "height": 900,
+        "name": "burst_001",
+        "png_save_ms": 642.31,
+        "readback_end_seconds": 26.12024,
+        "readback_ms": 12.092,
+        "resized": false,
+        "sha256": "cba6389ae9513b9267c2c24dffa3fe05a81f077c61810543aaebec9f86f5fd72",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.225135,
+        "format": 4,
+        "hash_ms": 16.592,
+        "height": 900,
+        "name": "burst_002",
+        "png_save_ms": 595.335,
+        "readback_end_seconds": 26.236086,
+        "readback_ms": 10.951,
+        "resized": false,
+        "sha256": "f38efdca8a78d21ab1065f0b7ee8074c3d9639a581d0439c56e9b9fefdf5675d",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.326875,
+        "format": 4,
+        "hash_ms": 17.467,
+        "height": 900,
+        "name": "burst_003",
+        "png_save_ms": 597.958,
+        "readback_end_seconds": 26.339495,
+        "readback_ms": 12.62,
+        "resized": false,
+        "sha256": "512fb6744b497fdf4a03a04eb0235aa9af8fd317cd3e928def6db89d76f6bb32",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.443824,
+        "format": 4,
+        "hash_ms": 21.736,
+        "height": 900,
+        "name": "burst_004",
+        "png_save_ms": 600.335,
+        "readback_end_seconds": 26.456852,
+        "readback_ms": 13.028,
+        "resized": false,
+        "sha256": "abe96f80c785f41b38195b6d650db22add53e4f3277fb094e41331ab6f3b52e8",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.560789,
+        "format": 4,
+        "hash_ms": 18.33,
+        "height": 900,
+        "name": "burst_005",
+        "png_save_ms": 627.05,
+        "readback_end_seconds": 26.573027,
+        "readback_ms": 12.238,
+        "resized": false,
+        "sha256": "1ba11cff6e104b6e2d245e0ae4f6eb2a10c7c6d31189d87e3f1c63769e295f22",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.676345,
+        "format": 4,
+        "hash_ms": 17.8,
+        "height": 900,
+        "name": "burst_006",
+        "png_save_ms": 609.299,
+        "readback_end_seconds": 26.688154,
+        "readback_ms": 11.809,
+        "resized": false,
+        "sha256": "fc6a3781fc2bf6761c65c65f9b703b6a9ee13eb5abc80b6061c588ee73f96329",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.776959,
+        "format": 4,
+        "hash_ms": 17.097,
+        "height": 900,
+        "name": "burst_007",
+        "png_save_ms": 597.969,
+        "readback_end_seconds": 26.787469,
+        "readback_ms": 10.51,
+        "resized": false,
+        "sha256": "738d2aee3a106daed32cee9dddeaf291c4a1ddbd52f1d8052516f9cc33ed963d",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.876951,
+        "format": 4,
+        "hash_ms": 29.572,
+        "height": 900,
+        "name": "burst_008",
+        "png_save_ms": 586.03,
+        "readback_end_seconds": 26.889654,
+        "readback_ms": 12.703,
+        "resized": false,
+        "sha256": "ab980d8075cd2d3d73265dc9592bbe7ccb3afd348772a2661a0236a8ac1abf1c",
+        "width": 1600
+      },
+      {
+        "at_seconds": 26.981212,
+        "format": 4,
+        "hash_ms": 18.88,
+        "height": 900,
+        "name": "burst_009",
+        "png_save_ms": 597.236,
+        "readback_end_seconds": 26.995138,
+        "readback_ms": 13.926,
+        "resized": false,
+        "sha256": "5af50162617ea078f7366849ae75dc6a26528d07d0e00eaa90916877bae48083",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.093727,
+        "format": 4,
+        "hash_ms": 15.509,
+        "height": 900,
+        "name": "burst_010",
+        "png_save_ms": 595.365,
+        "readback_end_seconds": 27.106187,
+        "readback_ms": 12.46,
+        "resized": false,
+        "sha256": "0866ad0926ccb2267a16281d8f0e6e4dda11213a4a9888ff56274b2d7fb639d6",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.19505,
+        "format": 4,
+        "hash_ms": 22.538,
+        "height": 900,
+        "name": "burst_011",
+        "png_save_ms": 611.227,
+        "readback_end_seconds": 27.206939,
+        "readback_ms": 11.889,
+        "resized": false,
+        "sha256": "e4c8319293aed70300415c997c634b26925726351e6058f2598ff50d3ae2cf5b",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.310057,
+        "format": 4,
+        "hash_ms": 18.794,
+        "height": 900,
+        "name": "burst_012",
+        "png_save_ms": 634.025,
+        "readback_end_seconds": 27.322643,
+        "readback_ms": 12.586,
+        "resized": false,
+        "sha256": "9a9357449236a357d01a3ecc73ded09e34c2c7b670be99668cf00913f6eec5ed",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.427536,
+        "format": 4,
+        "hash_ms": 16.919,
+        "height": 900,
+        "name": "burst_013",
+        "png_save_ms": 613.756,
+        "readback_end_seconds": 27.439454,
+        "readback_ms": 11.918,
+        "resized": false,
+        "sha256": "b99698a809c99ce502811f6cf38b1a61a14df723fd0af3fb017ac13964467137",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.544923,
+        "format": 4,
+        "hash_ms": 16.776,
+        "height": 900,
+        "name": "burst_014",
+        "png_save_ms": 603.735,
+        "readback_end_seconds": 27.557336,
+        "readback_ms": 12.413,
+        "resized": false,
+        "sha256": "18dee6687a986dbeccb71c168924efa0d1eec549618ec7d7ecacb6682e98ca80",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.659276,
+        "format": 4,
+        "hash_ms": 21.66,
+        "height": 900,
+        "name": "burst_015",
+        "png_save_ms": 584.81,
+        "readback_end_seconds": 27.670446,
+        "readback_ms": 11.17,
+        "resized": false,
+        "sha256": "d843df5e32a9b28d414d974b928ee73483f74994d6f0790aca3463cb152df952",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.759295,
+        "format": 4,
+        "hash_ms": 17.738,
+        "height": 900,
+        "name": "burst_016",
+        "png_save_ms": 591.981,
+        "readback_end_seconds": 27.769978,
+        "readback_ms": 10.683,
+        "resized": false,
+        "sha256": "8cbbdc83a8808ad81903b173495e50127f25358b861d8135a6c33e83384df253",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.877684,
+        "format": 4,
+        "hash_ms": 20.252,
+        "height": 900,
+        "name": "burst_017",
+        "png_save_ms": 614.945,
+        "readback_end_seconds": 27.889913,
+        "readback_ms": 12.229,
+        "resized": false,
+        "sha256": "153a4b8ba922686e7c09fd54642197a05e2ecc7d002bd91be624caa494a3d69c",
+        "width": 1600
+      },
+      {
+        "at_seconds": 27.992383,
+        "format": 4,
+        "hash_ms": 16.652,
+        "height": 900,
+        "name": "burst_018",
+        "png_save_ms": 643.357,
+        "readback_end_seconds": 28.003948,
+        "readback_ms": 11.565,
+        "resized": false,
+        "sha256": "d9111fc544cf1296264d24f000c6fa04cdd5b8d8f2d834ec965b5db1e5ba004e",
+        "width": 1600
+      }
+    ],
+    "disable_fg_plugin": "1",
+    "disable_ota": "1",
+    "driver": "vulkan",
+    "engine": {
+      "build": "custom_build",
+      "hash": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793073661
+    },
+    "errors": [],
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "latest": {
+      "at_seconds": 30.026777,
+      "dlss_available": true,
+      "fg_status": {
+        "available": false,
+        "eligible": false,
+        "reason": "unavailable",
+        "rendered_3d_views": 1,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 0
+      },
+      "game": "skate",
+      "map": 0,
+      "phase": 2,
+      "phase_time": 13.4559730000002,
+      "players": [
+        {
+          "camera_far": 3000,
+          "camera_forward": [
+            0.792698204517365,
+            -0.165781557559967,
+            -0.586639583110809
+          ],
+          "camera_fov": 66.1906356811523,
+          "camera_keep_aspect": 1,
+          "camera_near": 0.0500000007450581,
+          "camera_position": [
+            -4.03115510940552,
+            0.502524673938751,
+            -67.0878677368164
+          ],
+          "camera_projection": 0,
+          "course_progress": 72.9232788085938,
+          "draw_position": [
+            3.85428833961487,
+            -1.64616370201111,
+            -72.9232788085938
+          ],
+          "position": [
+            3.85428833961487,
+            -1.64616370201111,
+            -72.9232788085938
+          ],
+          "score": 1771,
+          "slot": 1,
+          "speed": 0,
+          "visual_rig_position": [
+            3.85428833961487,
+            -1.64616370201111,
+            -72.9232788085938
+          ]
+        }
+      ],
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 0,
+        "nis": 0,
+        "preset": 0,
+        "quality": 2,
+        "upscale": 7
+      },
+      "viewports": [
+        {
+          "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "environment": {
+            "ddgi": false,
+            "pt": false
+          },
+          "fg": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "screen_space_aa": 0,
+          "sharpness": 0,
+          "size": [
+            1600,
+            900
+          ]
+        }
+      ],
+      "window": {
+        "focused": true,
+        "max_fps": 60,
+        "mode": 0,
+        "vsync": 1
+      }
+    },
+    "observer": "passive; natural camera and real-time simulation",
+    "phases": [
+      {
+        "at_seconds": 8.869419,
+        "phase": 0
+      },
+      {
+        "at_seconds": 9.648438,
+        "phase": 1
+      },
+      {
+        "at_seconds": 15.987848,
+        "phase": 2
+      }
+    ],
+    "physics": "Jolt Physics",
+    "preflight_seconds_after_play": 15,
+    "rendering_method": "forward_plus",
+    "resolution": [
+      1600,
+      900
+    ],
+    "scaling_enums": {
+      "dlss": 6,
+      "fsr": 2,
+      "native": 0
+    },
+    "status": "STARTUP_ONLY",
+    "ticks": 120,
+    "analysis": {
+      "movement_sampled_path_units": {
+        "1": {
+          "body_path_length": 72.65365130053449,
+          "camera_path_length": 68.24078647291446,
+          "visual_rig_path_length": 72.64123203531072,
+          "course_progress_range": 67.00583791732794
+        }
+      },
+      "frame_count": 1274,
+      "eligible_foreground_play_frames": 170,
+      "excluded_frames": 1104,
+      "frame_ms_p50": 16.658,
+      "frame_ms_p95": 18.5721,
+      "frame_ms_p99": 20.391530000000003,
+      "frame_ms_max": 33.79,
+      "eligible_frames_over_33_3ms": 1,
+      "eligible_frames_over_50ms": 0,
+      "eligible_frames_over_100ms": 0,
+      "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+    }
+  },
+  "frozen_inputs_unchanged": true
+}

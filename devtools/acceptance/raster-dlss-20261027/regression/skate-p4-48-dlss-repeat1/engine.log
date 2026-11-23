@@ -1,0 +1,31 @@
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+Godot Engine v4.8.beta1.custom_build.b3763e7c7 (2026-10-27 04:01:01 UTC) - https://godotengine.org
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+[  13.0] P1 s= 35.2  banked 521 Crooked Grind
+[  13.0] P4 s= 35.2  banked 521 50-50 Grind
+[  13.6] P2 s= 33.9  banked 520 Crooked Grind
+[  13.6] P3 s= 33.9  banked 520 50-50 Grind
+[  16.3] P1 s= 60.1  letter S
+[  16.3] P4 s= 60.1  letter S
+[  16.5] P4 s= 62.4  BAIL Didn't finish the flip
+[  16.9] P1 s= 65.3  banked 200 FS 180
+[  17.6] P2 s= 60.1  letter S
+[  17.6] P3 s= 60.1  letter S
+[  17.9] P1 s= 70.6  BAIL Tripped on a rail
+[  18.3] P2 s= 65.7  banked 1000 Kickflip + FS 180
+[  18.3] P3 s= 65.7  banked 700 Double Heelflip
+[  19.2] P2 s= 70.7  BAIL Tripped on a rail
+[  19.2] P3 s= 70.7  BAIL Tripped on a rail
+DIAGNOSTIC_FORCED_RESULTS
+RS_SMOKE_DONE: skate
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.

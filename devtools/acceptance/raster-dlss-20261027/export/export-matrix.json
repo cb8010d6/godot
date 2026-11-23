@@ -1,0 +1,640 @@
+{
+  "status": "PASS",
+  "native_sha": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+  "checkout_sha": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+  "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+  "project": "<local-path>",
+  "project_copied": false,
+  "steps": [
+    {
+      "label": "run-b376-20261027-final-import",
+      "command": [
+        "<local-path>",
+        "--headless",
+        "--editor",
+        "--rendering-driver",
+        "dummy",
+        "--rendering-method",
+        "dummy",
+        "--path",
+        "<local-path>",
+        "--import"
+      ],
+      "environment_requested": {
+        "APPDATA": "<local-path>",
+        "LOCALAPPDATA": "<local-path>",
+        "TEMP": "<local-path>",
+        "TMP": "<local-path>",
+        "XDG_CACHE_HOME": "<local-path>",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<local-path>",
+        "bytes": 1733,
+        "sha256": "ddd681726f71d55f8f5ce22d2b75c0dc8d7b23e1853499ea618de6d63bbf27a8"
+      },
+      "log": {
+        "file": "<local-path>",
+        "bytes": 47477,
+        "sha256": "2cf674bc41a3225357230faa8f5547bdd04d1048130bfc86c63051ade9a05fbe"
+      },
+      "duration_seconds": 21.563,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true
+      },
+      "passed": true
+    },
+    {
+      "label": "run-b376-20261027-final-export-release",
+      "command": [
+        "<local-path>",
+        "--headless",
+        "--rendering-driver",
+        "dummy",
+        "--rendering-method",
+        "dummy",
+        "--path",
+        "<local-path>",
+        "--export-release",
+        "Windows Desktop",
+        "<local-path>"
+      ],
+      "environment_requested": {
+        "APPDATA": "<local-path>",
+        "LOCALAPPDATA": "<local-path>",
+        "TEMP": "<local-path>",
+        "TMP": "<local-path>",
+        "XDG_CACHE_HOME": "<local-path>",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<local-path>",
+        "bytes": 1854,
+        "sha256": "18d0ee390204ab0713b08d3b174ae031a91f201416c7c0f35e5dd27a6c64a0aa"
+      },
+      "log": {
+        "file": "<local-path>",
+        "bytes": 149811,
+        "sha256": "a994ccd2baa5b39eeb642a77de4a8944248efa801c7f8f415c98291b7084f87b"
+      },
+      "duration_seconds": 18.422,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true
+      },
+      "passed": true
+    }
+  ],
+  "runtime_pending": true,
+  "frozen_inputs": {
+    "standard_templates": {
+      "file": "<local-path>",
+      "bytes": 3127,
+      "sha256": "cfb63fe0c4469416c9888def6a406d9994bd6b08e0d301e063acf969abfc8855"
+    },
+    "sdk": {
+      "file": "<local-path>",
+      "bytes": 4734,
+      "sha256": "0ed7fb4db7d895d5f6a030fbc63ebbff814bc33880524d27a69b1c7dc0c870fd"
+    }
+  },
+  "game_frozen_inputs": {
+    "inventory_sha256": "9248aa645054aa49f58199c630ae4502544ce012673c58fee65c5a2a48822308",
+    "non_cache_files": 1313
+  },
+  "critical_game_commit_matches": [
+    {
+      "file": "shaders/rt_pixel_footprint.gdshaderinc",
+      "bytes": 1654,
+      "committed_sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1",
+      "snapshot": {
+        "file": "<local-path>",
+        "bytes": 1654,
+        "sha256": "93d533e430c52ff222eb18ac96953855797c22b42de09298004d3037c17e63a1"
+      }
+    },
+    {
+      "file": "core/render_warmup.gd",
+      "bytes": 5771,
+      "committed_sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c",
+      "snapshot": {
+        "file": "<local-path>",
+        "bytes": 5771,
+        "sha256": "38645951794553f678c62005789d4323b5cd22948a5450771be7d9fe84763f7c"
+      }
+    },
+    {
+      "file": "core/nvidia.gd",
+      "bytes": 6969,
+      "committed_sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126",
+      "snapshot": {
+        "file": "<local-path>",
+        "bytes": 6969,
+        "sha256": "a6b00fb1902b07598b736ae4372381e174fb86bec91765a409f177f7fed48126"
+      }
+    },
+    {
+      "file": "core/party_game.gd",
+      "bytes": 37752,
+      "committed_sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864",
+      "snapshot": {
+        "file": "<local-path>",
+        "bytes": 37752,
+        "sha256": "4a81a46b05b30e1bc10cc46db0d89a3c8cb9d83a7bc67631f72723fcf7eae864"
+      }
+    }
+  ],
+  "harnesses": [
+    {
+      "file": "<local-path>",
+      "bytes": 10581,
+      "sha256": "0c3af7e17dfa11627051c5056a5fdfa3dfe189ed30eccadfd689b66a25ae56cc"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 5301,
+      "sha256": "906e99d000a1c3cae0562acead925c3fa8dc0941183bb58df37e6cda4fd47244"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 5610,
+      "sha256": "f93ec163c61e055343a838469b349d416866dc4c18ddae6ae96e88fb050a9b1f"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 31978,
+      "sha256": "e5604ff1a258c2400382b3bd1489bd9e1fd1be6492d60f0a63fe54a6bcbc7659"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 6438,
+      "sha256": "627f170621790f0f1366b8990bde36110cb642cc5151d964d981c5a6c2097af8"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 3753,
+      "sha256": "ac341a13e9f6aceea8ac1fee41d30f2a443dcd8bb37ab073e671409ac74b0020"
+    }
+  ],
+  "space_budget": {
+    "estimated_output_and_install_bytes": 2477632337,
+    "free_bytes_before": 32310607872,
+    "project_copy_bytes": 0,
+    "basis": "Conservative source bytes + installed TPZ + SDK DLLs + 256 MiB margin"
+  },
+  "archive": {
+    "file": "<local-path>",
+    "bytes": 66913976,
+    "sha256": "4ffd4017681e3b2a7ea0cb96a93646ab7f40ab27f9af1d9c6fe89781e3b265b6"
+  },
+  "sdk_dll_copies": [
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 60416,
+        "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 823296,
+        "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 37376,
+        "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 24064,
+        "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 2066944,
+        "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 10371072,
+        "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 3104880,
+        "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 58956912,
+        "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 48343664,
+        "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 7506544,
+        "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 346725888,
+        "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 843904,
+        "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 376448,
+        "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 376448,
+        "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 369792,
+        "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 369792,
+        "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 422016,
+        "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 437376,
+        "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 637056,
+        "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 637056,
+        "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 652928,
+        "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 1155712,
+        "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 761472,
+        "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 761472,
+        "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 360064,
+        "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 388736,
+        "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 4821064,
+        "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+      }
+    },
+    {
+      "source": {
+        "file": "<local-path>",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      },
+      "target": {
+        "file": "<local-path>",
+        "bytes": 4932640,
+        "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+      }
+    }
+  ],
+  "pck_include_and_warmup_passed": true,
+  "runtime_inventory": [
+    {
+      "file": "NvBlast.dll",
+      "bytes": 60416,
+      "sha256": "9cd3125ea559142f9e9bd3e0070d00f5dcc30bbc9ead1cb73b647dd8c10cfa25"
+    },
+    {
+      "file": "NvBlastExtAuthoring.dll",
+      "bytes": 823296,
+      "sha256": "74173eea4418fd892ccb355ef06c1815274cf10dfa6c537b0ea7145865c419f9"
+    },
+    {
+      "file": "NvBlastExtShaders.dll",
+      "bytes": 37376,
+      "sha256": "23c7914e8e1bdb83750b9d97ce46a00c29929a3e11ecbd30feca234ef96356ce"
+    },
+    {
+      "file": "NvBlastGlobals.dll",
+      "bytes": 24064,
+      "sha256": "ccc76747b54da55c6b3999f1fadbd09ffe406fccbc61e46ac123ba2010daa70d"
+    },
+    {
+      "file": "nvflow.dll",
+      "bytes": 2066944,
+      "sha256": "0a148893d6fd9ea0dfc7992cc22c3655b5c12d340000f5bcdb11d1c4db93972d"
+    },
+    {
+      "file": "nvflowext.dll",
+      "bytes": 10371072,
+      "sha256": "65e24c7a163c1a95a6155be95600c6dc581c06fae0d6ba58b26d0f6a4d01219d"
+    },
+    {
+      "file": "nvngx_deepdvc.dll",
+      "bytes": 3104880,
+      "sha256": "306556a9e64b90e9f94a6645c9425980a74a6ee47ae895bc10e3937edfa77419"
+    },
+    {
+      "file": "nvngx_dlss.dll",
+      "bytes": 58956912,
+      "sha256": "d00b5b0ab29c3ca101b70c3a5ecb3a01b7ef33766a3383a28a18623083e6123e"
+    },
+    {
+      "file": "nvngx_dlss.license.txt",
+      "bytes": 26727,
+      "sha256": "3027f23ca5a46dd9cb8183fbd522983a86f64d7daac5982912bf9f214671f294"
+    },
+    {
+      "file": "nvngx_dlssd.dll",
+      "bytes": 48343664,
+      "sha256": "b49435ae346f227feafe7bbe937d88277ea0ee7323975ec06488f377fdb46cee"
+    },
+    {
+      "file": "nvngx_dlssg.dll",
+      "bytes": 7506544,
+      "sha256": "8d59d49b36410dd6b62fef2503a5871d347415bd85d943fa0848563a95dd50c7"
+    },
+    {
+      "file": "PhysXGpu_64.dll",
+      "bytes": 346725888,
+      "sha256": "9fa2af6477c4b03e89f3aa1b962b1d012befce18a4b6897e1b7c63e92179707b"
+    },
+    {
+      "file": "RTXAcceptance.exe",
+      "bytes": 80688128,
+      "sha256": "5f08eba2d489fcee166cb27676cc5bd6c80b9147ab4ca1b40a360df5df4846fc"
+    },
+    {
+      "file": "RTXAcceptance.pck",
+      "bytes": 1660185676,
+      "sha256": "88ecb8ef444e10ef2e55d0de5dce86ae9930ed6683ac4b1bf99b7642081f446b"
+    },
+    {
+      "file": "sl.common.dll",
+      "bytes": 843904,
+      "sha256": "38eea3b4209afc455636ea372b5933d65fcc13becec6c84d101dcfc4d8648f75"
+    },
+    {
+      "file": "sl.deepdvc.dll",
+      "bytes": 376448,
+      "sha256": "2d493dccfefdc0580deb85afc65e70ae36adf77c6dd3c745c60623d9b8ac54f9"
+    },
+    {
+      "file": "sl.directsr.dll",
+      "bytes": 369792,
+      "sha256": "e3bbaf3e5eb906a63b3f00413c2d1c4c585ab3a2ee1946fcfa9ee2d804001c8e"
+    },
+    {
+      "file": "sl.dlss.dll",
+      "bytes": 422016,
+      "sha256": "18871eea87c90345da97d8109faa81ea7d5840e8d99b51b55b0e46cfa177f84e"
+    },
+    {
+      "file": "sl.dlss_d.dll",
+      "bytes": 437376,
+      "sha256": "8dff36fd063094eb1f659e8d4dcd52c7423859a9c4a3df3796084c48412d60ac"
+    },
+    {
+      "file": "sl.dlss_g.dll",
+      "bytes": 637056,
+      "sha256": "3ed9538df724993bea8a050195a6a78b9c8c8a566d5b05ade477aab3c390e90f"
+    },
+    {
+      "file": "sl.interposer.dll",
+      "bytes": 652928,
+      "sha256": "b1d7395aebd7b9722841d64dcf7433680020b6a8e421f851c16d5ba0c2182edf"
+    },
+    {
+      "file": "sl.nis.dll",
+      "bytes": 1155712,
+      "sha256": "f9f3873c00e2737b22df1bf7605d4fdc7978dbf2955df4e152c5b52aada13b79"
+    },
+    {
+      "file": "sl.nvperf.dll",
+      "bytes": 761472,
+      "sha256": "dc5a820b97943c4d697a9ddec59b0dcde86ecadc093b401cf55980f7f89be43b"
+    },
+    {
+      "file": "sl.pcl.dll",
+      "bytes": 360064,
+      "sha256": "5698c38e722318681f215c9fe68e45b9bedd51378acc699d8eee26e961e57770"
+    },
+    {
+      "file": "sl.reflex.dll",
+      "bytes": 388736,
+      "sha256": "443577e869352436ff7ec8f4d9c90418d3e95368436ce219261e0f4f07a38122"
+    },
+    {
+      "file": "x86_64/D3D12Core.dll",
+      "bytes": 4821064,
+      "sha256": "560f9574372a52ab66ad95ee1222f1eb4c9f6161d8f6b7b025d89f684b07246c"
+    },
+    {
+      "file": "x86_64/d3d12SDKLayers.dll",
+      "bytes": 4932640,
+      "sha256": "bcec9e1315fb4dbc767371926fb5eb8281de1b3ab1fb530a636b3c193a9a2bbd"
+    }
+  ],
+  "source_changes": [],
+  "generated_import_metadata_changes": [],
+  "code_assets_unchanged": true
+}

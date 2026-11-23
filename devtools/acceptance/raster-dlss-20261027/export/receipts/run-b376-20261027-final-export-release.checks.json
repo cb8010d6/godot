@@ -1,0 +1,49 @@
+{
+  "label": "run-b376-20261027-final-export-release",
+  "command": [
+    "<local-path>",
+    "--headless",
+    "--rendering-driver",
+    "dummy",
+    "--rendering-method",
+    "dummy",
+    "--path",
+    "<local-path>",
+    "--export-release",
+    "Windows Desktop",
+    "<local-path>"
+  ],
+  "environment_requested": {
+    "APPDATA": "<local-path>",
+    "LOCALAPPDATA": "<local-path>",
+    "TEMP": "<local-path>",
+    "TMP": "<local-path>",
+    "XDG_CACHE_HOME": "<local-path>",
+    "RS_TEST_MODE": "1",
+    "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+    "GODOT_STREAMLINE_DISABLE_OTA": "1"
+  },
+  "receipt": {
+    "file": "<local-path>",
+    "bytes": 1854,
+    "sha256": "18d0ee390204ab0713b08d3b174ae031a91f201416c7c0f35e5dd27a6c64a0aa"
+  },
+  "log": {
+    "file": "<local-path>",
+    "bytes": 149811,
+    "sha256": "a994ccd2baa5b39eeb642a77de4a8944248efa801c7f8f415c98291b7084f87b"
+  },
+  "duration_seconds": 18.422,
+  "checks": {
+    "wrapper_exit_zero": true,
+    "exit_zero": true,
+    "expected_checkout": true,
+    "no_timeout_exception": true,
+    "no_errors": true,
+    "job_owned": true,
+    "descendants_closed": true,
+    "no_owned_ngx": true,
+    "no_cleanup_failure": true
+  },
+  "passed": true
+}

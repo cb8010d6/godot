@@ -3,7 +3,7 @@ type: Finding
 title: Factorized inverse for DLSS SR reprojection
 description: A real split-screen results transition exposed precision loss when inverting a combined float reprojection matrix.
 tags: [streamline, dlss, reprojection, numerical-precision]
-status: draft
+status: active
 generated: { by: codex, at: 2026-10-27T00:00:00Z }
 ---
 
@@ -24,7 +24,7 @@ number is about 1.22e8. The float determinant calculation yielded 2.0 and the
 float elimination reached a zero pivot. This is a concrete precision failure for
 one observed matrix, not evidence that every other inverse failure has that cause.
 
-# Candidate change and boundary
+# Implemented change and boundary
 
 For SR, form the inverse mapping from the original camera factors in reverse
 order, rather than inverting their already-combined float product. Forward
@@ -36,7 +36,15 @@ singular camera projection, or change feature selection.
 An independent Decimal geometric oracle and a binary32 product model covered
 stationary and moving perspective cameras, a large perspective camera jump, and
 an orthographic jump. The model computes factor inverses in Decimal then rounds
-them to binary32, so it does not exercise Godot's native inverse implementation. The candidate has not yet been built or run in the original full match;
-forced reproduction, matching full rounds, normal temporal image quality and
-physical input all require separate evidence. A history discontinuity may need
-separate handling; this change alone does not establish correct temporal history.
+them to binary32, so it does not exercise Godot's native inverse implementation.
+
+Native `b3763e7c7ef8e621e2e19018589e5a022aba1f82` has since rebuilt the standard
+editor and debug/release templates. The target error was absent in three forced
+results trials and the original four-player natural match. Ten complete bot
+matches pass across official 4.7.2 FSR2, b376 DLSS, and native controls; two short
+actual-game strict SR checks and an installed-template production export also
+pass. See the [measured acceptance report](../../devtools/RASTER_DLSS_ACCEPTANCE_2026_10_27.md)
+for exact scope, timings, hashes and retained failures. These results support
+the measured raster SR configuration; human input, normal temporal image quality
+and history discontinuities still need separate acceptance. This change alone
+does not establish correct temporal history or certify the unchanged RR path.

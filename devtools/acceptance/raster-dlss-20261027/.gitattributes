@@ -1,0 +1,4 @@
+# Keep published evidence hashes stable on every checkout.
+* -text whitespace=cr-at-eol
+# Preserve recorded log whitespace; source formatting checks do not apply.
+*.log -whitespace

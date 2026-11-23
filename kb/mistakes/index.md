@@ -1,5 +1,7 @@
 # Mistakes
 
+* [Empty Git configuration in tests](/mistakes/empty-git-config-in-test-environment.md) - capture hidden subprocess errors and isolate injected command configuration in fixture tests
+
 * [Controller verdict versus game exit](/mistakes/acceptance-controller-vs-game-exit.md) - require production capture/exit evidence and freeze matrix inputs
 
 * [VUID names without message context](/mistakes/vuid-name-without-message-context.md) - classify actual resources and commands before implementing an adapter

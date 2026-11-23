@@ -1,0 +1,1305 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <local-path>
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<local-path>
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <local-path>
+[Vulkan Loader] LAYER:                     Library:  <local-path>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1f73d5ed160
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <local-path>
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <local-path>
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<local-path>
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <local-path>
+[Vulkan Loader] LAYER:                     Library:  <local-path>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1f73d5ed160
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <local-path>
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <local-path>
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<local-path>
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <local-path>
+[Vulkan Loader] LAYER:                     Library:  <local-path>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+Validation Information: [ CURRENT-VALIDATION-ENABLED ] | MessageID = 0xfd7b2292
+vkCreateInstance(): Current Validation Enabled:
+  - Core Checks
+  - Synchronization
+  - Stateless Parameter
+  - Object lifetime
+  - Thread Safety
+  - Handle Wrapping
+
+Objects: 1
+    [0] VkInstance 0x1f73ed826a0
+
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <local-path>
+Accessibility: AccessKit driver loaded.
+Godot Engine v4.8.beta1.custom_build.b3763e7c7 (2026-10-27 04:01:01 UTC) - https://godotengine.org
+TextServer: Added interface "Dummy" (dummy)
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)" (advanced)
+Windows.UI.Notifications.ToastNotificationManager initialized for AppID 'Godot.<private-project>Sports.0'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] WARNING | LAYER: Implicit layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+[Vulkan Loader] LAYER:          Checking for Layer Manifest files in Registry at HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] INFO | LAYER:   Located json file "<local-path>" from registry "HKEY_LOCAL_MACHINE\SOFTWARE\Khronos\Vulkan\ImplicitLayers"
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                <local-path>
+[Vulkan Loader] LAYER:             Found the following files:
+[Vulkan Loader] LAYER:                <local-path>
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_optimus" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_NV_present" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_AMD_switchable_graphics" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_EOS_Overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_overlay" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_VALVE_steam_fossilize" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: Layer "VK_LAYER_RTSS" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+WARNING: GENERAL - Message Id Number: 0 | Message Id Name: Loader Message
+	env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+	Objects - 1
+		Object[0] - VK_OBJECT_TYPE_INSTANCE, Handle 2161421353616
+[Vulkan Loader] WARNING | LAYER: env var 'VK_INSTANCE_LAYERS' defined and adding layers "VK_LAYER_KHRONOS_validation"
+[Vulkan Loader] DEBUG | LAYER:  Loading layer library <local-path>
+[Vulkan Loader] INFO | LAYER:   Insert instance layer "VK_LAYER_KHRONOS_validation" (<local-path>
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <local-path>
+[Vulkan Loader] LAYER:                     Library:  <local-path>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+Accessibility: window 0 adapter created.
+RoGetActivationFactory(Windows.Graphics.Display.DisplayInformation) not supported.
+Devices:
+  #0: NVIDIA NVIDIA GeForce RTX 4060 Laptop GPU - Supported, Discrete
+  #1: AMD AMD Radeon 780M Graphics - Supported, Integrated
+Optional Vulkan device extension VK_EXT_fragment_density_map not found
+Optional Vulkan device extension VK_EXT_fragment_density_map2 not found
+Optional Vulkan device extension VK_QCOM_fragment_density_map_offset not found
+Optional Vulkan device extension VK_EXT_astc_decode_mode not found
+Optional Vulkan device extension VK_EXT_texture_compression_astc_hdr not found
+Optional Vulkan device extension VK_KHR_external_memory_fd not found
+Optional Vulkan device extension VK_EXT_debug_marker not found
+- Vulkan Fragment Shading Rate supported:
+  Pipeline fragment shading rate
+  Primitive fragment shading rate
+  Attachment fragment shading rate, min texel size: (16, 16), max texel size: (16, 16), max fragment size: (4, 4)
+- Vulkan Fragment Density Map not supported
+- Vulkan multiview supported:
+  max view count: 32
+  max instances: 134217727
+- Vulkan subgroup:
+  size: 32
+  min size: 32
+  max size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE, STAGE_RAYGEN_KHR, STAGE_ANY_HIT_KHR, STAGE_CLOSEST_HIT_KHR, STAGE_MISS_KHR, STAGE_INTERSECTION_KHR, STAGE_CALLABLE_KHR, STAGE_TASK_NV, STAGE_MESH_NV
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD, FEATURE_PARTITIONED_NV
+  quad operations in all stages
+- Vulkan Acceleration Structure supported
+  min acceleration structure scratch offset alignment: 128
+- Vulkan Raytracing supported
+  shader group handle size: 32
+  shader group handle alignment: 32
+  shader group handle size aligned: 32
+  shader group base alignment: 64
+Streamline Vulkan device features: privateData=1 presentId=1
+[Vulkan Loader] INFO | LAYER:   Inserted device layer "VK_LAYER_KHRONOS_validation" (<local-path>
+[Vulkan Loader] DRIVER:         vkCreateDevice layer callstack setup to:
+[Vulkan Loader] DRIVER:            <Application>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Loader>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] LAYER:             VK_LAYER_KHRONOS_validation
+[Vulkan Loader] LAYER:                     Type: Explicit
+[Vulkan Loader] LAYER:                     Enabled By: Environment Variable VK_INSTANCE_LAYERS
+[Vulkan Loader] LAYER:                     Manifest: <local-path>
+[Vulkan Loader] LAYER:                     Library:  <local-path>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] DRIVER:            <Device>
+[Vulkan Loader] DRIVER:                Using "NVIDIA GeForce RTX 4060 Laptop GPU" with driver: "<local-path>"
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+Startup PSO cache (0.0 MiB)
+SDL: Joystick 0xbeef/0x046d connected
+SDL: Init OK!
+Accessibility: window 0 adapter activated.
+Using "winink" pen tablet driver...
+Creating VMA small objects pool for memory type index 1
+Shader 'CanvasSdfShaderRD' (group 0) SHA256: a1b692570f1af9adb93c73fd05f2ffbf812f3d98297bb749554b168894b59d55
+Shader cache miss for CanvasSdfShaderRD/a1b692570f1af9adb93c73fd05f2ffbf812f3d98297bb749554b168894b59d55/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkeletonShaderRD' (group 0) SHA256: fecf7cc21ffb8043dd7458e14f91f514f0958fb33c9be63c8673926189bb2778
+Shader cache miss for SkeletonShaderRD/fecf7cc21ffb8043dd7458e14f91f514f0958fb33c9be63c8673926189bb2778/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SortShaderRD' (group 0) SHA256: 782ff1ae5d080027c1ad918b5744166a93355b59dc1eb105ed92d6f73afdf6be
+Shader cache miss for SortShaderRD/782ff1ae5d080027c1ad918b5744166a93355b59dc1eb105ed92d6f73afdf6be/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ParticlesShaderRD' (group 0) SHA256: e7181177bd3e0f4d03c197faa69b53160454fcced772105d0093c7277aff8b87
+Shader cache miss for ParticlesShaderRD/e7181177bd3e0f4d03c197faa69b53160454fcced772105d0093c7277aff8b87/07b5904b662900d90454c39c46885098de79aa4c
+Shader 'ParticlesCopyShaderRD' (group 0) SHA256: a4370a9720407e889089b53afc05744ef547a64209f11ba1a8d3dfc98a4d4573
+Shader cache miss for ParticlesCopyShaderRD/a4370a9720407e889089b53afc05744ef547a64209f11ba1a8d3dfc98a4d4573/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasShaderRD' (group 0) SHA256: b5234135881f7d612893783cae7b43628252ccabe7b0aa980ebe95e2f8e5ab3f
+Shader cache miss for CanvasShaderRD/b5234135881f7d612893783cae7b43628252ccabe7b0aa980ebe95e2f8e5ab3f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CanvasOcclusionShaderRD' (group 0) SHA256: 836bdabefab24c7295106a18b81f7c171d99386fb79830ef244d3e8d13505697
+Shader cache miss for CanvasOcclusionShaderRD/836bdabefab24c7295106a18b81f7c171d99386fb79830ef244d3e8d13505697/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for CanvasShaderRD/b5234135881f7d612893783cae7b43628252ccabe7b0aa980ebe95e2f8e5ab3f/90b96afad25c311837b639f3c9d81d610d9b7ee9
+Shader cache miss for CanvasShaderRD/b5234135881f7d612893783cae7b43628252ccabe7b0aa980ebe95e2f8e5ab3f/8f9335de72e837eeead40640cc01fddc5baf5a7c
+Shader 'TexBlitShaderRD' (group 0) SHA256: fdf6c769ee6e44ccfe681997cb68bb992e5300b8f398941ba206a6402680d682
+Shader cache miss for TexBlitShaderRD/fdf6c769ee6e44ccfe681997cb68bb992e5300b8f398941ba206a6402680d682/1e8995c9eb0e9b0b053035999de68595c521a33e
+Shader 'ClusterRenderShaderRD' (group 0) SHA256: 2cc0f0ba5d1c06ea05a1faa4298f1d8039ff878cfc267512ac05e2df5363726f
+Shader cache miss for ClusterRenderShaderRD/2cc0f0ba5d1c06ea05a1faa4298f1d8039ff878cfc267512ac05e2df5363726f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterStoreShaderRD' (group 0) SHA256: e3464e4e6bef752d1980483c64b7ede35da8a0ad580f4600e03b1665bed8e46a
+Shader cache miss for ClusterStoreShaderRD/e3464e4e6bef752d1980483c64b7ede35da8a0ad580f4600e03b1665bed8e46a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ClusterDebugShaderRD' (group 0) SHA256: cfd42901913510611cd0ddf2eee84a557346be91d155c2736d4e3a6e6efa10ec
+Shader cache miss for ClusterDebugShaderRD/cfd42901913510611cd0ddf2eee84a557346be91d155c2736d4e3a6e6efa10ec/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SceneForwardClusteredShaderRD' (group 0) SHA256: 8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0
+Shader 'SceneForwardClusteredShaderRD' (group 1) SHA256: fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce
+Shader 'SceneForwardClusteredShaderRD' (group 2) SHA256: 66845a0a43600241204c95898ab1fc6f6fb51c10e76083ae2ff0c7efbc4c5e90
+Shader 'SceneForwardClusteredShaderRD' (group 3) SHA256: 61fb0e17dcf6caae379868ec4049026ad6a974996a316660c3a9f95dc447bb53
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/a784797763b72ce058effad41b273eb697df9814
+Shader 'BestFitNormalShaderRD' (group 0) SHA256: e412ee4f9290c3ed123413663241333f0d740a9f3f8bd8563d7bf419c617e6a1
+Shader cache miss for BestFitNormalShaderRD/e412ee4f9290c3ed123413663241333f0d740a9f3f8bd8563d7bf419c617e6a1/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'IntegrateDfgShaderRD' (group 0) SHA256: 731688a6f2864a5b93c109ac4a6c7eab3fd791072317554653fa7312894ca206
+Shader cache miss for IntegrateDfgShaderRD/731688a6f2864a5b93c109ac4a6c7eab3fd791072317554653fa7312894ca206/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TaaResolveShaderRD' (group 0) SHA256: 72614b95952fe5303e94134e893ea16600b36ae4f1e6bc60eaabb4f0d650e48b
+Shader cache miss for TaaResolveShaderRD/72614b95952fe5303e94134e893ea16600b36ae4f1e6bc60eaabb4f0d650e48b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'Fsr2DepthClipPassShaderRD' (group 0) SHA256: 9f8998a5ef97bc9611988fbafecd0f74e5c5a2e605b107050686967d83e1e4a6
+Shader 'Fsr2ReconstructPreviousDepthPassShaderRD' (group 0) SHA256: 559fdccc50314fff52761fe2e69f8e10132b1e9ed530ddf1c21adb91796e8494
+Shader 'Fsr2LockPassShaderRD' (group 0) SHA256: 468a6539d8888194da1330e617eacbf1c67e6edc0871244e19818c4074dc4e98
+Shader 'Fsr2AccumulatePassShaderRD' (group 0) SHA256: 970e957606d2d11face2ca9112d2bb2af88b9644fac724461570ba89d4bff2c2
+Shader 'Fsr2RcasPassShaderRD' (group 0) SHA256: 76f50461ac3979dd05d4a954c73298597132c68654775b96ec1ed4439ba89885
+Shader 'Fsr2ComputeLuminancePyramidPassShaderRD' (group 0) SHA256: b37e0f226f87145f3ccd9bbb5a554219f2ca6bf965ff2bd7bd679112003633a0
+Shader 'Fsr2AutogenReactivePassShaderRD' (group 0) SHA256: e5b18aea159c8eb9e465f0a5d03eeea89d09efcd620eca513b1b1be31863eaff
+Shader 'Fsr2TcrAutogenPassShaderRD' (group 0) SHA256: a7c8ffdc51aea67b86afa9caf79382adb69a9cc18b1c08f978d085098e743628
+Shader 'MotionVectorDecodeShaderRD' (group 0) SHA256: 6d5ba4125b1570c4af30a8bc539b8667edd2f66d9eb9397f9962b781e7ad25f9
+Shader cache miss for MotionVectorDecodeShaderRD/6d5ba4125b1570c4af30a8bc539b8667edd2f66d9eb9397f9962b781e7ad25f9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsEffectsDownsampleShaderRD' (group 0) SHA256: 792e8dc0609cc68954f0b78e48c640114ea5a1b5fd1768fc377ebdc91bc1437c
+Shader cache miss for SsEffectsDownsampleShaderRD/792e8dc0609cc68954f0b78e48c640114ea5a1b5fd1768fc377ebdc91bc1437c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilShaderRD' (group 0) SHA256: 1d75ab838c99f25aefad7bed23feb38e4cb3fc6f9ea0c99936ec0ef116c7536c
+Shader cache miss for SsilShaderRD/1d75ab838c99f25aefad7bed23feb38e4cb3fc6f9ea0c99936ec0ef116c7536c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilImportanceMapShaderRD' (group 0) SHA256: 5eefc1c8df7603020ad95756e0b9bc0eddfe12e87f7672b373df0d4f9528af3c
+Shader cache miss for SsilImportanceMapShaderRD/5eefc1c8df7603020ad95756e0b9bc0eddfe12e87f7672b373df0d4f9528af3c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilBlurShaderRD' (group 0) SHA256: 9fa21d77b4c8b964107edd6711357289eb6e013db3575edddb67befb23ec073d
+Shader cache miss for SsilBlurShaderRD/9fa21d77b4c8b964107edd6711357289eb6e013db3575edddb67befb23ec073d/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsilInterleaveShaderRD' (group 0) SHA256: 0bd099e4b1f9c94060d4f11a1dce7e69bf9355ce57b15d5f43f11ef66723a6db
+Shader cache miss for SsilInterleaveShaderRD/0bd099e4b1f9c94060d4f11a1dce7e69bf9355ce57b15d5f43f11ef66723a6db/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoShaderRD' (group 0) SHA256: 75096daf8431628450634e79f067e40b455aa6bc442c1fad9ea0a5cf66bc2a8c
+Shader cache miss for SsaoShaderRD/75096daf8431628450634e79f067e40b455aa6bc442c1fad9ea0a5cf66bc2a8c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoImportanceMapShaderRD' (group 0) SHA256: 175203a8edf65dc33ad92226b0535bcda764ccd7e4f4400f917d3e1031c825e2
+Shader cache miss for SsaoImportanceMapShaderRD/175203a8edf65dc33ad92226b0535bcda764ccd7e4f4400f917d3e1031c825e2/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoBlurShaderRD' (group 0) SHA256: d1fc6cbb1a71c507e3110629c296c6cbee995c3a0426f1c7a2a8143882ece488
+Shader cache miss for SsaoBlurShaderRD/d1fc6cbb1a71c507e3110629c296c6cbee995c3a0426f1c7a2a8143882ece488/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SsaoInterleaveShaderRD' (group 0) SHA256: 6b801884c0a0510bca0686477f6cb586255ba224de977912c90e918f7ea7c99c
+Shader cache miss for SsaoInterleaveShaderRD/6b801884c0a0510bca0686477f6cb586255ba224de977912c90e918f7ea7c99c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionDownsampleShaderRD' (group 0) SHA256: 134fcfee4119819dee0a6cf845a467f36d7237289c0ccb371f1bb90738e63661
+Shader cache miss for ScreenSpaceReflectionDownsampleShaderRD/134fcfee4119819dee0a6cf845a467f36d7237289c0ccb371f1bb90738e63661/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionHizShaderRD' (group 0) SHA256: 917c3fe0e8c8e99e27875b2361b0cba596c1fff9396eb0c8b30bd18b5df963eb
+Shader cache miss for ScreenSpaceReflectionHizShaderRD/917c3fe0e8c8e99e27875b2361b0cba596c1fff9396eb0c8b30bd18b5df963eb/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionShaderRD' (group 0) SHA256: 56a8d478d3ba2a047a0f6c6448823bb8a0df7e38ead2e4099e682dc623c10285
+Shader cache miss for ScreenSpaceReflectionShaderRD/56a8d478d3ba2a047a0f6c6448823bb8a0df7e38ead2e4099e682dc623c10285/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionFilterShaderRD' (group 0) SHA256: 37c2c2a553cb5f39d5461313dcdb449561707842d7d44eb4303dddc99e6e0149
+Shader cache miss for ScreenSpaceReflectionFilterShaderRD/37c2c2a553cb5f39d5461313dcdb449561707842d7d44eb4303dddc99e6e0149/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceReflectionResolveShaderRD' (group 0) SHA256: 96817d18a6809d3826efe1cad69e195688663e47b44986758c952e66d11242d9
+Shader cache miss for ScreenSpaceReflectionResolveShaderRD/96817d18a6809d3826efe1cad69e195688663e47b44986758c952e66d11242d9/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ScreenSpaceContactShadowsShaderRD' (group 0) SHA256: 7a34dcc6bfbbef35734dc9270c7d3e7dcbcf0ceda7cd0f815fa1eb46027b9b12
+Shader cache miss for ScreenSpaceContactShadowsShaderRD/7a34dcc6bfbbef35734dc9270c7d3e7dcbcf0ceda7cd0f815fa1eb46027b9b12/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SubsurfaceScatteringShaderRD' (group 0) SHA256: 7916827b553e8c62021c0320e7de0c708c1d0d1a837c4d5411b4c48f65dee813
+Shader cache miss for SubsurfaceScatteringShaderRD/7916827b553e8c62021c0320e7de0c708c1d0d1a837c4d5411b4c48f65dee813/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsStoreShaderRD' (group 0) SHA256: c2cbd5d7629608ab36b36439e4d8a7767b29ac9688bb9ba8afeef182b87f2abd
+Shader cache miss for MotionVectorsStoreShaderRD/c2cbd5d7629608ab36b36439e4d8a7767b29ac9688bb9ba8afeef182b87f2abd/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SkyShaderRD' (group 0) SHA256: 5e1b21cde02949342e2f87337d79da4aba2c1124e8d7a1bffde5e051e2c139fa
+Shader cache miss for SkyShaderRD/5e1b21cde02949342e2f87337d79da4aba2c1124e8d7a1bffde5e051e2c139fa/0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701
+Shader cache miss for SkyShaderRD/5e1b21cde02949342e2f87337d79da4aba2c1124e8d7a1bffde5e051e2c139fa/ff1961ca0c4c55a79eb12f819a7b6345801bbbaf
+Shader 'VoxelGiShaderRD' (group 0) SHA256: 447a8b7a8640b17ce28b0824b2b198519c11098e59b4f8491162122cc7b8f28e
+Shader cache miss for VoxelGiShaderRD/447a8b7a8640b17ce28b0824b2b198519c11098e59b4f8491162122cc7b8f28e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VoxelGiDebugShaderRD' (group 0) SHA256: fbe80781f8f305b29258e418afd586a8cfe3853cfa4e7fb3f4b3bf7769d9df22
+Shader cache miss for VoxelGiDebugShaderRD/fbe80781f8f305b29258e418afd586a8cfe3853cfa4e7fb3f4b3bf7769d9df22/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiPreprocessShaderRD' (group 0) SHA256: 6a9b508c363ec4ea63dea39ef907ac1cf321255de59fac7026ee1e9c7ee72a6a
+Shader cache miss for SdfgiPreprocessShaderRD/6a9b508c363ec4ea63dea39ef907ac1cf321255de59fac7026ee1e9c7ee72a6a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDirectLightShaderRD' (group 0) SHA256: 87736fb26e5a21688614cbb6bd4f7d4094c8e4ffacc851c537b05065a44ec4af
+Shader cache miss for SdfgiDirectLightShaderRD/87736fb26e5a21688614cbb6bd4f7d4094c8e4ffacc851c537b05065a44ec4af/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiIntegrateShaderRD' (group 0) SHA256: c10a053dc0f348514eb3bf64c5a6605fb7eb28c1cc24f64ec9fd24ecd1227d3e
+Shader cache miss for SdfgiIntegrateShaderRD/c10a053dc0f348514eb3bf64c5a6605fb7eb28c1cc24f64ec9fd24ecd1227d3e/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'GiShaderRD' (group 0) SHA256: 6b7ec9b9050af94a4f05bd7d1440ac8f55d42b40f7ba83a70bc5f2f8408d7305
+Shader 'GiShaderRD' (group 1) SHA256: fe257dc8b84b0d4c10105026d4cc9ae4b5fa3487995bc78f3ff67113774e4c95
+Shader cache miss for GiShaderRD/6b7ec9b9050af94a4f05bd7d1440ac8f55d42b40f7ba83a70bc5f2f8408d7305/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader cache miss for GiShaderRD/fe257dc8b84b0d4c10105026d4cc9ae4b5fa3487995bc78f3ff67113774e4c95/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugShaderRD' (group 0) SHA256: e254da6592d13521e1f67ed6c5be906002ac3d2100398c55cf6927d0d282d1ae
+Shader cache miss for SdfgiDebugShaderRD/e254da6592d13521e1f67ed6c5be906002ac3d2100398c55cf6927d0d282d1ae/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SdfgiDebugProbesShaderRD' (group 0) SHA256: fd9398ad86c3d1e651e74d80b4fdc4197c57eff9e343259e0cd2f13922943caa
+Shader cache miss for SdfgiDebugProbesShaderRD/fd9398ad86c3d1e651e74d80b4fdc4197c57eff9e343259e0cd2f13922943caa/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VolumetricFogShaderRD' (group 0) SHA256: 9edfc43de1063d843ef4953415604634591db69a5d63853541b1cdb9f279d3fd
+Shader 'VolumetricFogShaderRD' (group 1) SHA256: 421e5fc2987e66ae57074baa4aacfc167f73c451bc4b3f8d43c3227d2989f2c8
+Shader 'VolumetricFogShaderRD' (group 2) SHA256: 2d335fdb1465090ce58aff127c595a4420932982a5aa6271239eff91f7c950b5
+Shader 'VolumetricFogShaderRD' (group 3) SHA256: e98ab1625e6a3faaded6638b8b5e37e6a6c035a5a693f2305d8ef4f24bb94db2
+Shader cache miss for VolumetricFogShaderRD/2d335fdb1465090ce58aff127c595a4420932982a5aa6271239eff91f7c950b5/3377d4ca9d0fc2e16f62596ee37d619e8e7e3f54
+Shader 'VolumetricFogProcessShaderRD' (group 0) SHA256: 1702a0dd84e44038330cd0cc8b4e5ecf70b21974a6a13d551ae0298584460aa3
+Shader 'VolumetricFogProcessShaderRD' (group 1) SHA256: 3799e5ea2e3fb9b1514a67aa4e2d8e66dc0479acfffd1fd27270e8a8e2c24453
+Shader 'VolumetricFogProcessShaderRD' (group 2) SHA256: 18b2e6ff43a29f43a434ec58be14a0f2d89c0f4d8f31a9831f9e3691d6aa7075
+Shader 'VolumetricFogProcessShaderRD' (group 3) SHA256: 8d99d7a551ac10e8758e5effdb550c9675ea7647a60434d0008306af15704b96
+Shader cache miss for VolumetricFogProcessShaderRD/18b2e6ff43a29f43a434ec58be14a0f2d89c0f4d8f31a9831f9e3691d6aa7075/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BokehDofShaderRD' (group 0) SHA256: 30f9c80932e4055ae74c98fbd858b758d1d6957401eefd35eccdb2168b29b74f
+Shader cache miss for BokehDofShaderRD/30f9c80932e4055ae74c98fbd858b758d1d6957401eefd35eccdb2168b29b74f/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyShaderRD' (group 0) SHA256: 628fc4c98a3f8e85e4bc01024b8a4b4b1bc49e96ed13707578a358b11b7dac70
+Shader cache miss for CopyShaderRD/628fc4c98a3f8e85e4bc01024b8a4b4b1bc49e96ed13707578a358b11b7dac70/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CopyToFbShaderRD' (group 0) SHA256: 36880c99f215df22e0a89c04834189c1b6653d8b052a55ff01e0f2e48d178257
+Updated PSO cache (3.0 MiB)
+Shader cache miss for CopyToFbShaderRD/36880c99f215df22e0a89c04834189c1b6653d8b052a55ff01e0f2e48d178257/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToDpShaderRD' (group 0) SHA256: f83b3b5ffd3fc0624f93126bace57d412e0b4037eeeaa97d478b8f7e10c7ba34
+Shader cache miss for CubeToDpShaderRD/f83b3b5ffd3fc0624f93126bace57d412e0b4037eeeaa97d478b8f7e10c7ba34/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'CubeToOctmapShaderRD' (group 0) SHA256: d1afd9d245e4994f04a0dc67ab7708e0c48c455955011479f265a1f35da82e21
+Shader cache miss for CubeToOctmapShaderRD/d1afd9d245e4994f04a0dc67ab7708e0c48c455955011479f265a1f35da82e21/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapDownsamplerShaderRD' (group 0) SHA256: 937e4576fc4480e221f77f200bcf3b375f8656c306563de7b37b04167a551a8b
+Shader cache miss for OctmapDownsamplerShaderRD/937e4576fc4480e221f77f200bcf3b375f8656c306563de7b37b04167a551a8b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapFilterShaderRD' (group 0) SHA256: 1a689254bc724cace01d55761cab064390ce9389d8ed0d86e6d23e900dad614b
+Shader cache miss for OctmapFilterShaderRD/1a689254bc724cace01d55761cab064390ce9389d8ed0d86e6d23e900dad614b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'OctmapRoughnessShaderRD' (group 0) SHA256: 06d5e7a7099b08439b69e63540833bf74baecdd1bb70c88657973fe4cedbe05a
+Shader cache miss for OctmapRoughnessShaderRD/06d5e7a7099b08439b69e63540833bf74baecdd1bb70c88657973fe4cedbe05a/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SpecularMergeShaderRD' (group 0) SHA256: 6d311b085c49bf05947982f8ceff63e0945586bf34a7674958e5c87132ea0a7b
+Shader cache miss for SpecularMergeShaderRD/6d311b085c49bf05947982f8ceff63e0945586bf34a7674958e5c87132ea0a7b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'DepthReconstructShaderRD' (group 0) SHA256: 906adc72e1cea68e9b94177079729c64b2df09e2cbc9c5ac70cbd44a552654ae
+Shader cache miss for DepthReconstructShaderRD/906adc72e1cea68e9b94177079729c64b2df09e2cbc9c5ac70cbd44a552654ae/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ShadowFrustumShaderRD' (group 0) SHA256: e16b971c4e37c848a1769cb99a0ff236f6bb44965a06c0075b9b555fade50562
+Shader cache miss for ShadowFrustumShaderRD/e16b971c4e37c848a1769cb99a0ff236f6bb44965a06c0075b9b555fade50562/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'MotionVectorsShaderRD' (group 0) SHA256: 9ee66064d489bc7962a65c70c3e7aa233d7105ee245bc3fe90efe06fb5db2a9b
+Shader cache miss for MotionVectorsShaderRD/9ee66064d489bc7962a65c70c3e7aa233d7105ee245bc3fe90efe06fb5db2a9b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'LuminanceReduceShaderRD' (group 0) SHA256: 373ca2f552996d54e0777f1d46ea738afef380103f2a048a41dcbce402b88c19
+Shader cache miss for LuminanceReduceShaderRD/373ca2f552996d54e0777f1d46ea738afef380103f2a048a41dcbce402b88c19/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaEdgeDetectionShaderRD' (group 0) SHA256: 3bb3711d233c6e9674cd8cfdc1832b918bef5f198dfac44b9b9360881086b57b
+Shader cache miss for SmaaEdgeDetectionShaderRD/3bb3711d233c6e9674cd8cfdc1832b918bef5f198dfac44b9b9360881086b57b/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaWeightCalculationShaderRD' (group 0) SHA256: 0c521011cb8f72896d1884186f3c33cbc421e6afb7e40ace3fc8d9435495d42c
+Shader cache miss for SmaaWeightCalculationShaderRD/0c521011cb8f72896d1884186f3c33cbc421e6afb7e40ace3fc8d9435495d42c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'SmaaBlendingShaderRD' (group 0) SHA256: 2c420fbf6918e36d0e98d49f6bb26f943cd3dfad8060d5f56b8de2dec73b789c
+Shader cache miss for SmaaBlendingShaderRD/2c420fbf6918e36d0e98d49f6bb26f943cd3dfad8060d5f56b8de2dec73b789c/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'TonemapShaderRD' (group 0) SHA256: 8e14a505a523bbb39f9c79694e56466f3decdaa3d5595f37458cbd20cc82b027
+Shader cache miss for TonemapShaderRD/8e14a505a523bbb39f9c79694e56466f3decdaa3d5595f37458cbd20cc82b027/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'VrsShaderRD' (group 0) SHA256: cd3242154fd9cb54f1baa976a800c41153073933b335bac92781eefa1d317353
+Shader cache miss for VrsShaderRD/cd3242154fd9cb54f1baa976a800c41153073933b335bac92781eefa1d317353/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'FsrUpscaleShaderRD' (group 0) SHA256: 2b77977662705b0051988c1b7a914a9ce102d10f264df8279a3519af5cf80b53
+Shader cache miss for FsrUpscaleShaderRD/2b77977662705b0051988c1b7a914a9ce102d10f264df8279a3519af5cf80b53/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'ResolveShaderRD' (group 0) SHA256: 6767b9029a6d77fb43d15b63321c9620d2a5653db0e1ecba77cff0b921366add
+Shader cache miss for ResolveShaderRD/6767b9029a6d77fb43d15b63321c9620d2a5653db0e1ecba77cff0b921366add/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+Shader 'BlitShaderRD' (group 0) SHA256: f3c56f9b77a8f8ef10e891daf4bc80d7016ceb26cb8d2212b144637420a3c990
+WASAPI: Activated output_device using IAudioClient3 interface
+WASAPI: wFormatTag = 65534
+WASAPI: nChannels = 2
+WASAPI: nSamplesPerSec = 48000
+WASAPI: nAvgBytesPerSec = 384000
+WASAPI: nBlockAlign = 8
+WASAPI: wBitsPerSample = 32
+WASAPI: cbSize = 22
+WASAPI: mix_rate = 48000
+WASAPI: fundamental_period_frames = 480
+WASAPI: min_period_frames = 480
+WASAPI: max_period_frames = 480
+WASAPI: selected a period frame size of 480
+WASAPI: detected 2 channels
+WASAPI: audio buffer frames: 480 calculated latency: 10ms
+
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Shader cache miss for BlitShaderRD/f3c56f9b77a8f8ef10e891daf4bc80d7016ceb26cb8d2212b144637420a3c990/8305c75c1294a9f00656f0f14344bb8bedcfe4e7
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)" (advanced).
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/60fbb158a5f44670392b2322a8401a535c41dc72
+TextureStreaming settings: enabled=0, budget_mb=512, min_lod=0, max_lod=3
+Shader cache miss for CanvasShaderRD/b5234135881f7d612893783cae7b43628252ccabe7b0aa980ebe95e2f8e5ab3f/c2f7efc3419efdd79fabd056897820a83f2ac2c9
+CORE API HASH: 3336730360
+EDITOR API HASH: 3714769106
+Loading resource: <local-path>
+Completed load for: '<local-path>' remapped '<local-path>' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://<private-resource-d647714f5975> remapped: res://<private-resource-d647714f5975>
+Completed load for: 'res://<private-resource-d647714f5975>' remapped 'res://<private-resource-d647714f5975>' at thread -1
+Loaded system CA certificates
+Loading resource: res://<private-resource-232b151a7b97> remapped: res://<private-resource-232b151a7b97>
+Loading resource: res://<private-resource-e3fcac4cc110> remapped: res://<private-resource-e3fcac4cc110>
+Loading resource: res://<private-resource-5bb69ccd4d32> remapped: res://<private-resource-5bb69ccd4d32>
+Completed load for: 'res://<private-resource-5bb69ccd4d32>' remapped 'res://<private-resource-5bb69ccd4d32>' at thread -1
+Loading resource: res://<private-resource-961500a1fd15> remapped: res://<private-resource-961500a1fd15>
+Loading resource: res://<private-resource-77bb6733cc8c> remapped: res://<private-resource-77bb6733cc8c>
+Completed load for: 'res://<private-resource-77bb6733cc8c>' remapped 'res://<private-resource-77bb6733cc8c>' at thread -1
+Completed load for: 'res://<private-resource-961500a1fd15>' remapped 'res://<private-resource-961500a1fd15>' at thread -1
+Loading resource: res://<private-resource-df60fcdc6749> remapped: res://<private-resource-df60fcdc6749>
+Completed load for: 'res://<private-resource-df60fcdc6749>' remapped 'res://<private-resource-df60fcdc6749>' at thread -1
+Loading resource: res://<private-resource-497f77b99b08> remapped: res://<private-resource-497f77b99b08>
+Completed load for: 'res://<private-resource-497f77b99b08>' remapped 'res://<private-resource-497f77b99b08>' at thread -1
+Loading resource: res://<private-resource-3cd992e72ab8> remapped: res://<private-resource-3cd992e72ab8>
+Completed load for: 'res://<private-resource-3cd992e72ab8>' remapped 'res://<private-resource-3cd992e72ab8>' at thread -1
+Loading resource: res://<private-resource-4dc98467bb4e> remapped: res://<private-resource-4dc98467bb4e>
+Completed load for: 'res://<private-resource-4dc98467bb4e>' remapped 'res://<private-resource-4dc98467bb4e>' at thread -1
+Completed load for: 'res://<private-resource-e3fcac4cc110>' remapped 'res://<private-resource-e3fcac4cc110>' at thread -1
+Completed load for: 'res://<private-resource-232b151a7b97>' remapped 'res://<private-resource-232b151a7b97>' at thread -1
+Loading resource: res://<private-resource-afe869d64539> remapped: res://<private-resource-afe869d64539>
+Loading resource: res://<private-resource-24849a627ec3> remapped: res://<private-resource-24849a627ec3>
+Completed load for: 'res://<private-resource-afe869d64539>' remapped 'res://<private-resource-afe869d64539>' at thread -1
+Loading resource: res://<private-resource-3cc3518f290c> remapped: res://<private-resource-3cc3518f290c>
+Loading resource: res://<private-resource-73d3ad0f7f35> remapped: res://<private-resource-73d3ad0f7f35>
+Completed load for: 'res://<private-resource-3cc3518f290c>' remapped 'res://<private-resource-3cc3518f290c>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/b0298f277662c8dffe04cf40a1815022876f8b93
+Loading resource: res://<private-resource-dc13308ee373> remapped: res://<private-resource-dc13308ee373>
+Loading resource: res://<private-resource-35acff6085f4> remapped: res://<private-resource-35acff6085f4>
+Completed load for: 'res://<private-resource-dc13308ee373>' remapped 'res://<private-resource-dc13308ee373>' at thread -1
+Loading resource: res://<private-resource-ce5c0ed58796> remapped: res://<private-resource-ce5c0ed58796>
+Loading resource: res://<private-resource-310a448eda8b> remapped: res://<private-resource-310a448eda8b>
+Completed load for: 'res://<private-resource-ce5c0ed58796>' remapped 'res://<private-resource-ce5c0ed58796>' at thread -1
+Loading resource: res://<private-resource-ea7c105c3460> remapped: res://<private-resource-ea7c105c3460>
+Loading resource: res://<private-resource-e9470fcd164b> remapped: res://<private-resource-e9470fcd164b>
+Completed load for: 'res://<private-resource-ea7c105c3460>' remapped 'res://<private-resource-ea7c105c3460>' at thread -1
+Loading resource: res://<private-resource-6858230a3359> remapped: res://<private-resource-6858230a3359>
+Loading resource: res://<private-resource-8bc45541a4be> remapped: res://<private-resource-8bc45541a4be>
+Completed load for: 'res://<private-resource-6858230a3359>' remapped 'res://<private-resource-6858230a3359>' at thread -1
+Loading resource: res://<private-resource-0e5c9134b757> remapped: res://<private-resource-0e5c9134b757>
+Loading resource: res://<private-resource-92bec894dbbd> remapped: res://<private-resource-92bec894dbbd>
+Completed load for: 'res://<private-resource-0e5c9134b757>' remapped 'res://<private-resource-0e5c9134b757>' at thread -1
+Loading resource: res://<private-resource-0fd4b81240a1> remapped: res://<private-resource-0fd4b81240a1>
+Loading resource: res://<private-resource-63a8191f1c6a> remapped: res://<private-resource-63a8191f1c6a>
+Completed load for: 'res://<private-resource-0fd4b81240a1>' remapped 'res://<private-resource-0fd4b81240a1>' at thread -1
+Loading resource: res://<private-resource-73683e25a60f> remapped: res://<private-resource-73683e25a60f>
+Loading resource: res://<private-resource-3c2b917722bb> remapped: res://<private-resource-3c2b917722bb>
+Completed load for: 'res://<private-resource-73683e25a60f>' remapped 'res://<private-resource-73683e25a60f>' at thread -1
+Loading resource: res://<private-resource-d696f4fb1634> remapped: res://<private-resource-d696f4fb1634>
+Loading resource: res://<private-resource-22ae373151e5> remapped: res://<private-resource-22ae373151e5>
+Completed load for: 'res://<private-resource-d696f4fb1634>' remapped 'res://<private-resource-d696f4fb1634>' at thread -1
+Loading resource: res://<private-resource-bda397e664ad> remapped: res://<private-resource-bda397e664ad>
+Loading resource: res://<private-resource-8f67e52159cd> remapped: res://<private-resource-8f67e52159cd>
+Completed load for: 'res://<private-resource-bda397e664ad>' remapped 'res://<private-resource-bda397e664ad>' at thread -1
+Loading resource: res://<private-resource-1db2fbdb4393> remapped: res://<private-resource-1db2fbdb4393>
+Loading resource: res://<private-resource-6615f92b1856> remapped: res://<private-resource-6615f92b1856>
+Completed load for: 'res://<private-resource-1db2fbdb4393>' remapped 'res://<private-resource-1db2fbdb4393>' at thread -1
+Loading resource: res://<private-resource-53a4552b678d> remapped: res://<private-resource-53a4552b678d>
+Loading resource: res://<private-resource-941dc50e8387> remapped: res://<private-resource-941dc50e8387>
+Completed load for: 'res://<private-resource-53a4552b678d>' remapped 'res://<private-resource-53a4552b678d>' at thread -1
+Loading resource: res://<private-resource-0655ed9e6c51> remapped: res://<private-resource-0655ed9e6c51>
+Loading resource: res://<private-resource-0b89e5bad4cd> remapped: res://<private-resource-0b89e5bad4cd>
+Completed load for: 'res://<private-resource-0655ed9e6c51>' remapped 'res://<private-resource-0655ed9e6c51>' at thread -1
+Loading resource: res://<private-resource-bf8c41ce7279> remapped: res://<private-resource-bf8c41ce7279>
+Loading resource: res://<private-resource-863ceb11d485> remapped: res://<private-resource-863ceb11d485>
+Completed load for: 'res://<private-resource-bf8c41ce7279>' remapped 'res://<private-resource-bf8c41ce7279>' at thread -1
+Loading resource: res://<private-resource-2930f8911817> remapped: res://<private-resource-2930f8911817>
+Loading resource: res://<private-resource-4d5000465446> remapped: res://<private-resource-4d5000465446>
+Completed load for: 'res://<private-resource-2930f8911817>' remapped 'res://<private-resource-2930f8911817>' at thread -1
+Loading resource: res://<private-resource-382ad34577b3> remapped: res://<private-resource-382ad34577b3>
+Loading resource: res://<private-resource-3951727b7a03> remapped: res://<private-resource-3951727b7a03>
+Completed load for: 'res://<private-resource-382ad34577b3>' remapped 'res://<private-resource-382ad34577b3>' at thread -1
+Loading resource: res://<private-resource-3f893a1edad6> remapped: res://<private-resource-3f893a1edad6>
+Loading resource: res://<private-resource-f54443383287> remapped: res://<private-resource-f54443383287>
+Completed load for: 'res://<private-resource-3f893a1edad6>' remapped 'res://<private-resource-3f893a1edad6>' at thread -1
+Loading resource: res://<private-resource-dfcd02fef25a> remapped: res://<private-resource-dfcd02fef25a>
+Loading resource: res://<private-resource-378ecaafd360> remapped: res://<private-resource-378ecaafd360>
+Completed load for: 'res://<private-resource-dfcd02fef25a>' remapped 'res://<private-resource-dfcd02fef25a>' at thread -1
+Loading resource: res://<private-resource-1e4d723d56d1> remapped: res://<private-resource-1e4d723d56d1>
+Loading resource: res://<private-resource-716f3e8ea5bd> remapped: res://<private-resource-716f3e8ea5bd>
+Completed load for: 'res://<private-resource-1e4d723d56d1>' remapped 'res://<private-resource-1e4d723d56d1>' at thread -1
+Loading resource: res://<private-resource-ef8c21817603> remapped: res://<private-resource-ef8c21817603>
+Loading resource: res://<private-resource-2442fbeb9bbe> remapped: res://<private-resource-2442fbeb9bbe>
+Completed load for: 'res://<private-resource-ef8c21817603>' remapped 'res://<private-resource-ef8c21817603>' at thread -1
+Loading resource: res://<private-resource-9c8362e1e15f> remapped: res://<private-resource-9c8362e1e15f>
+Loading resource: res://<private-resource-ee9bd3fe78dd> remapped: res://<private-resource-ee9bd3fe78dd>
+Completed load for: 'res://<private-resource-9c8362e1e15f>' remapped 'res://<private-resource-9c8362e1e15f>' at thread -1
+Loading resource: res://<private-resource-bf62ee4b97ef> remapped: res://<private-resource-bf62ee4b97ef>
+Loading resource: res://<private-resource-025cb8c5fe29> remapped: res://<private-resource-025cb8c5fe29>
+Completed load for: 'res://<private-resource-bf62ee4b97ef>' remapped 'res://<private-resource-bf62ee4b97ef>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/079eb971646952e8d475707a6ee7855338ba6a56
+Loading resource: res://<private-resource-8af8286262fe> remapped: res://<private-resource-8af8286262fe>
+Loading resource: res://<private-resource-847daa57792b> remapped: res://<private-resource-847daa57792b>
+Completed load for: 'res://<private-resource-8af8286262fe>' remapped 'res://<private-resource-8af8286262fe>' at thread -1
+Loading resource: res://<private-resource-67e2c0c15d6d> remapped: res://<private-resource-67e2c0c15d6d>
+Loading resource: res://<private-resource-473315831fac> remapped: res://<private-resource-473315831fac>
+Completed load for: 'res://<private-resource-67e2c0c15d6d>' remapped 'res://<private-resource-67e2c0c15d6d>' at thread -1
+Loading resource: res://<private-resource-92b00f04cb4a> remapped: res://<private-resource-92b00f04cb4a>
+Loading resource: res://<private-resource-867e4529d02a> remapped: res://<private-resource-867e4529d02a>
+Completed load for: 'res://<private-resource-92b00f04cb4a>' remapped 'res://<private-resource-92b00f04cb4a>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/cef02ec37b748f0d020f8237ec98162b35913362
+Loading resource: res://<private-resource-9c01efe9b664> remapped: res://<private-resource-9c01efe9b664>
+Loading resource: res://<private-resource-97fadb645542> remapped: res://<private-resource-97fadb645542>
+Completed load for: 'res://<private-resource-9c01efe9b664>' remapped 'res://<private-resource-9c01efe9b664>' at thread -1
+Loading resource: res://<private-resource-92f1e819b3b3> remapped: res://<private-resource-92f1e819b3b3>
+Loading resource: res://<private-resource-ac59059c4d01> remapped: res://<private-resource-ac59059c4d01>
+Completed load for: 'res://<private-resource-92f1e819b3b3>' remapped 'res://<private-resource-92f1e819b3b3>' at thread -1
+Loading resource: res://<private-resource-f38731feb464> remapped: res://<private-resource-f38731feb464>
+Loading resource: res://<private-resource-ba8e02cda7a4> remapped: res://<private-resource-ba8e02cda7a4>
+Completed load for: 'res://<private-resource-f38731feb464>' remapped 'res://<private-resource-f38731feb464>' at thread -1
+Loading resource: res://<private-resource-1a29a6fc41e9> remapped: res://<private-resource-1a29a6fc41e9>
+Loading resource: res://<private-resource-ff46365429d0> remapped: res://<private-resource-ff46365429d0>
+Completed load for: 'res://<private-resource-1a29a6fc41e9>' remapped 'res://<private-resource-1a29a6fc41e9>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/0b36e8cefbbe1f57d8f4fc5b273e03980a22109a
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/0b5b7b02d4bde6a0f04a93d218bef7916602b76c
+Loading resource: res://<private-resource-4b1db246ba36> remapped: res://<private-resource-4b1db246ba36>
+Loading resource: res://<private-resource-f14cfce85d3f> remapped: res://<private-resource-f14cfce85d3f>
+Completed load for: 'res://<private-resource-4b1db246ba36>' remapped 'res://<private-resource-4b1db246ba36>' at thread -1
+Loading resource: res://<private-resource-73f21bd84e89> remapped: res://<private-resource-73f21bd84e89>
+Loading resource: res://<private-resource-2456164d4fd3> remapped: res://<private-resource-2456164d4fd3>
+Completed load for: 'res://<private-resource-73f21bd84e89>' remapped 'res://<private-resource-73f21bd84e89>' at thread -1
+Loading resource: res://<private-resource-306f876b53bc> remapped: res://<private-resource-306f876b53bc>
+Loading resource: res://<private-resource-f40a418d8bd4> remapped: res://<private-resource-f40a418d8bd4>
+Completed load for: 'res://<private-resource-306f876b53bc>' remapped 'res://<private-resource-306f876b53bc>' at thread -1
+Loading resource: res://<private-resource-a1b5b62e1f73> remapped: res://<private-resource-a1b5b62e1f73>
+Loading resource: res://<private-resource-e5635ebeb8de> remapped: res://<private-resource-e5635ebeb8de>
+Loading resource: res://<private-resource-d9269f40fff6> remapped: res://<private-resource-d9269f40fff6>
+Loading resource: res://<private-resource-deaaedd72a98> remapped: res://<private-resource-deaaedd72a98>
+Completed load for: 'res://<private-resource-d9269f40fff6>' remapped 'res://<private-resource-d9269f40fff6>' at thread -1
+Loading resource: res://<private-resource-a1facc247729> remapped: res://<private-resource-a1facc247729>
+Loading resource: res://<private-resource-bead7f1cab35> remapped: res://<private-resource-bead7f1cab35>
+Completed load for: 'res://<private-resource-a1facc247729>' remapped 'res://<private-resource-a1facc247729>' at thread -1
+Loading resource: res://<private-resource-32799b09cba2> remapped: res://<private-resource-32799b09cba2>
+Loading resource: res://<private-resource-4310d9406bbf> remapped: res://<private-resource-4310d9406bbf>
+Completed load for: 'res://<private-resource-32799b09cba2>' remapped 'res://<private-resource-32799b09cba2>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Completed load for: 'res://<private-resource-a1b5b62e1f73>' remapped 'res://<private-resource-a1b5b62e1f73>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/9dae05ba29ceac5894495a49a33f944fdfe75839
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/29ad28b0fddea5d1747b05dfafb4ebdc7345d976
+Loading resource: res://<private-resource-612534be0c40> remapped: res://<private-resource-612534be0c40>
+Loading resource: res://<private-resource-1ec4b7609326> remapped: res://<private-resource-1ec4b7609326>
+Loading resource: res://<private-resource-fbeb6ae7f73f> remapped: res://<private-resource-fbeb6ae7f73f>
+Loading resource: res://<private-resource-0a705b6d767b> remapped: res://<private-resource-0a705b6d767b>
+Completed load for: 'res://<private-resource-fbeb6ae7f73f>' remapped 'res://<private-resource-fbeb6ae7f73f>' at thread -1
+Loading resource: res://<private-resource-15149c488719> remapped: res://<private-resource-15149c488719>
+Loading resource: res://<private-resource-2150881af711> remapped: res://<private-resource-2150881af711>
+Completed load for: 'res://<private-resource-15149c488719>' remapped 'res://<private-resource-15149c488719>' at thread -1
+Loading resource: res://<private-resource-e6c4280513fa> remapped: res://<private-resource-e6c4280513fa>
+Loading resource: res://<private-resource-8e1c92691e8c> remapped: res://<private-resource-8e1c92691e8c>
+Completed load for: 'res://<private-resource-e6c4280513fa>' remapped 'res://<private-resource-e6c4280513fa>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/a496140de1a54a7fd99443fd4b03919305b2f8ae
+Completed load for: 'res://<private-resource-612534be0c40>' remapped 'res://<private-resource-612534be0c40>' at thread -1
+Loading resource: res://<private-resource-9788bfcfdc03> remapped: res://<private-resource-9788bfcfdc03>
+Loading resource: res://<private-resource-6e3b58cb25c0> remapped: res://<private-resource-6e3b58cb25c0>
+Loading resource: res://<private-resource-3191052c7864> remapped: res://<private-resource-3191052c7864>
+Loading resource: res://<private-resource-3841ff7b4c04> remapped: res://<private-resource-3841ff7b4c04>
+Completed load for: 'res://<private-resource-3191052c7864>' remapped 'res://<private-resource-3191052c7864>' at thread -1
+Loading resource: res://<private-resource-2e721271fff5> remapped: res://<private-resource-2e721271fff5>
+Loading resource: res://<private-resource-918f2cb4438f> remapped: res://<private-resource-918f2cb4438f>
+Completed load for: 'res://<private-resource-2e721271fff5>' remapped 'res://<private-resource-2e721271fff5>' at thread -1
+Loading resource: res://<private-resource-3f29570097ae> remapped: res://<private-resource-3f29570097ae>
+Loading resource: res://<private-resource-64c6a374ec44> remapped: res://<private-resource-64c6a374ec44>
+Completed load for: 'res://<private-resource-3f29570097ae>' remapped 'res://<private-resource-3f29570097ae>' at thread -1
+Loading resource: res://<private-resource-e6bf6b651705> remapped: res://<private-resource-e6bf6b651705>
+Loading resource: res://<private-resource-a89cdbbf70d4> remapped: res://<private-resource-a89cdbbf70d4>
+Completed load for: 'res://<private-resource-e6bf6b651705>' remapped 'res://<private-resource-e6bf6b651705>' at thread -1
+Loading resource: res://<private-resource-8fe5d4a8f409> remapped: res://<private-resource-8fe5d4a8f409>
+Loading resource: res://<private-resource-54868b45ae93> remapped: res://<private-resource-54868b45ae93>
+Completed load for: 'res://<private-resource-8fe5d4a8f409>' remapped 'res://<private-resource-8fe5d4a8f409>' at thread -1
+Loading resource: res://<private-resource-3ee5bd704e7f> remapped: res://<private-resource-3ee5bd704e7f>
+Loading resource: res://<private-resource-e253434172be> remapped: res://<private-resource-e253434172be>
+Completed load for: 'res://<private-resource-3ee5bd704e7f>' remapped 'res://<private-resource-3ee5bd704e7f>' at thread -1
+Completed load for: 'res://<private-resource-9788bfcfdc03>' remapped 'res://<private-resource-9788bfcfdc03>' at thread -1
+Loading resource: res://<private-resource-ded56ca0e4d4> remapped: res://<private-resource-ded56ca0e4d4>
+Loading resource: res://<private-resource-200d0fa52606> remapped: res://<private-resource-200d0fa52606>
+Loading resource: res://<private-resource-c12105015a19> remapped: res://<private-resource-c12105015a19>
+Loading resource: res://<private-resource-cd2475976b66> remapped: res://<private-resource-cd2475976b66>
+Completed load for: 'res://<private-resource-c12105015a19>' remapped 'res://<private-resource-c12105015a19>' at thread -1
+Loading resource: res://<private-resource-6d3d42d7aad3> remapped: res://<private-resource-6d3d42d7aad3>
+Loading resource: res://<private-resource-1856ff808309> remapped: res://<private-resource-1856ff808309>
+Completed load for: 'res://<private-resource-6d3d42d7aad3>' remapped 'res://<private-resource-6d3d42d7aad3>' at thread -1
+Loading resource: res://<private-resource-03164f71a87f> remapped: res://<private-resource-03164f71a87f>
+Loading resource: res://<private-resource-6e190193321a> remapped: res://<private-resource-6e190193321a>
+Completed load for: 'res://<private-resource-03164f71a87f>' remapped 'res://<private-resource-03164f71a87f>' at thread -1
+Loading resource: res://<private-resource-039cf3b682dd> remapped: res://<private-resource-039cf3b682dd>
+Loading resource: res://<private-resource-ea3aa8dd26c4> remapped: res://<private-resource-ea3aa8dd26c4>
+Completed load for: 'res://<private-resource-039cf3b682dd>' remapped 'res://<private-resource-039cf3b682dd>' at thread -1
+Loading resource: res://<private-resource-22e47e4c70dc> remapped: res://<private-resource-22e47e4c70dc>
+Loading resource: res://<private-resource-eb055317bd6a> remapped: res://<private-resource-eb055317bd6a>
+Completed load for: 'res://<private-resource-22e47e4c70dc>' remapped 'res://<private-resource-22e47e4c70dc>' at thread -1
+Loading resource: res://<private-resource-8fa73fbd621b> remapped: res://<private-resource-8fa73fbd621b>
+Loading resource: res://<private-resource-4f97e2bb62de> remapped: res://<private-resource-4f97e2bb62de>
+Completed load for: 'res://<private-resource-8fa73fbd621b>' remapped 'res://<private-resource-8fa73fbd621b>' at thread -1
+Loading resource: res://<private-resource-e2ee56c7276b> remapped: res://<private-resource-e2ee56c7276b>
+Loading resource: res://<private-resource-beb1f6feb983> remapped: res://<private-resource-beb1f6feb983>
+Completed load for: 'res://<private-resource-e2ee56c7276b>' remapped 'res://<private-resource-e2ee56c7276b>' at thread -1
+Loading resource: res://<private-resource-0d9aa562b271> remapped: res://<private-resource-0d9aa562b271>
+Loading resource: res://<private-resource-5aeacf5348a2> remapped: res://<private-resource-5aeacf5348a2>
+Completed load for: 'res://<private-resource-0d9aa562b271>' remapped 'res://<private-resource-0d9aa562b271>' at thread -1
+Loading resource: res://<private-resource-a569d1d38b18> remapped: res://<private-resource-a569d1d38b18>
+Loading resource: res://<private-resource-76fb5f5e2111> remapped: res://<private-resource-76fb5f5e2111>
+Completed load for: 'res://<private-resource-a569d1d38b18>' remapped 'res://<private-resource-a569d1d38b18>' at thread -1
+Loading resource: res://<private-resource-8a634f9582b9> remapped: res://<private-resource-8a634f9582b9>
+Loading resource: res://<private-resource-84d9cd04253f> remapped: res://<private-resource-84d9cd04253f>
+Completed load for: 'res://<private-resource-8a634f9582b9>' remapped 'res://<private-resource-8a634f9582b9>' at thread -1
+Loading resource: res://<private-resource-2dbafe0c27cf> remapped: res://<private-resource-2dbafe0c27cf>
+Loading resource: res://<private-resource-17f781f950a3> remapped: res://<private-resource-17f781f950a3>
+Completed load for: 'res://<private-resource-2dbafe0c27cf>' remapped 'res://<private-resource-2dbafe0c27cf>' at thread -1
+Loading resource: res://<private-resource-df3b6f912290> remapped: res://<private-resource-df3b6f912290>
+Loading resource: res://<private-resource-3579ecc02beb> remapped: res://<private-resource-3579ecc02beb>
+Completed load for: 'res://<private-resource-df3b6f912290>' remapped 'res://<private-resource-df3b6f912290>' at thread -1
+Completed load for: 'res://<private-resource-ded56ca0e4d4>' remapped 'res://<private-resource-ded56ca0e4d4>' at thread -1
+Loading resource: res://<private-resource-ded56ca0e4d4> remapped: res://<private-resource-ded56ca0e4d4>
+Loading resource: res://<private-resource-200d0fa52606> remapped: res://<private-resource-200d0fa52606>
+Loading resource: res://<private-resource-e2ee56c7276b> remapped: res://<private-resource-e2ee56c7276b>
+Loading resource: res://<private-resource-beb1f6feb983> remapped: res://<private-resource-beb1f6feb983>
+Completed load for: 'res://<private-resource-e2ee56c7276b>' remapped 'res://<private-resource-e2ee56c7276b>' at thread -1
+Loading resource: res://<private-resource-0d9aa562b271> remapped: res://<private-resource-0d9aa562b271>
+Loading resource: res://<private-resource-5aeacf5348a2> remapped: res://<private-resource-5aeacf5348a2>
+Completed load for: 'res://<private-resource-0d9aa562b271>' remapped 'res://<private-resource-0d9aa562b271>' at thread -1
+Loading resource: res://<private-resource-a569d1d38b18> remapped: res://<private-resource-a569d1d38b18>
+Loading resource: res://<private-resource-76fb5f5e2111> remapped: res://<private-resource-76fb5f5e2111>
+Completed load for: 'res://<private-resource-a569d1d38b18>' remapped 'res://<private-resource-a569d1d38b18>' at thread -1
+Loading resource: res://<private-resource-8a634f9582b9> remapped: res://<private-resource-8a634f9582b9>
+Loading resource: res://<private-resource-84d9cd04253f> remapped: res://<private-resource-84d9cd04253f>
+Completed load for: 'res://<private-resource-8a634f9582b9>' remapped 'res://<private-resource-8a634f9582b9>' at thread -1
+Loading resource: res://<private-resource-2dbafe0c27cf> remapped: res://<private-resource-2dbafe0c27cf>
+Loading resource: res://<private-resource-17f781f950a3> remapped: res://<private-resource-17f781f950a3>
+Completed load for: 'res://<private-resource-2dbafe0c27cf>' remapped 'res://<private-resource-2dbafe0c27cf>' at thread -1
+Loading resource: res://<private-resource-df3b6f912290> remapped: res://<private-resource-df3b6f912290>
+Loading resource: res://<private-resource-3579ecc02beb> remapped: res://<private-resource-3579ecc02beb>
+Completed load for: 'res://<private-resource-df3b6f912290>' remapped 'res://<private-resource-df3b6f912290>' at thread -1
+Completed load for: 'res://<private-resource-ded56ca0e4d4>' remapped 'res://<private-resource-ded56ca0e4d4>' at thread -1
+Loading resource: res://<private-resource-7ef2c7d9e908> remapped: res://<private-resource-7ef2c7d9e908>
+Loading resource: res://<private-resource-ba1135e6ef42> remapped: res://<private-resource-ba1135e6ef42>
+Loading resource: res://<private-resource-bf8fecb96d6c> remapped: res://<private-resource-bf8fecb96d6c>
+Loading resource: res://<private-resource-62e59c1d3242> remapped: res://<private-resource-62e59c1d3242>
+Completed load for: 'res://<private-resource-bf8fecb96d6c>' remapped 'res://<private-resource-bf8fecb96d6c>' at thread -1
+Loading resource: res://<private-resource-045ff573fd08> remapped: res://<private-resource-045ff573fd08>
+Loading resource: res://<private-resource-22fb959e7a18> remapped: res://<private-resource-22fb959e7a18>
+Completed load for: 'res://<private-resource-045ff573fd08>' remapped 'res://<private-resource-045ff573fd08>' at thread -1
+Loading resource: res://<private-resource-73ad4fbdad8c> remapped: res://<private-resource-73ad4fbdad8c>
+Loading resource: res://<private-resource-d23945c3fa40> remapped: res://<private-resource-d23945c3fa40>
+Completed load for: 'res://<private-resource-73ad4fbdad8c>' remapped 'res://<private-resource-73ad4fbdad8c>' at thread -1
+Loading resource: res://<private-resource-5dccb082713b> remapped: res://<private-resource-5dccb082713b>
+Loading resource: res://<private-resource-ed91bbed3115> remapped: res://<private-resource-ed91bbed3115>
+Completed load for: 'res://<private-resource-5dccb082713b>' remapped 'res://<private-resource-5dccb082713b>' at thread -1
+Loading resource: res://<private-resource-3604410b0842> remapped: res://<private-resource-3604410b0842>
+Loading resource: res://<private-resource-e94d3577def5> remapped: res://<private-resource-e94d3577def5>
+Completed load for: 'res://<private-resource-3604410b0842>' remapped 'res://<private-resource-3604410b0842>' at thread -1
+Loading resource: res://<private-resource-14e77abb06f0> remapped: res://<private-resource-14e77abb06f0>
+Loading resource: res://<private-resource-4b6bcc2f1338> remapped: res://<private-resource-4b6bcc2f1338>
+Completed load for: 'res://<private-resource-14e77abb06f0>' remapped 'res://<private-resource-14e77abb06f0>' at thread -1
+Completed load for: 'res://<private-resource-7ef2c7d9e908>' remapped 'res://<private-resource-7ef2c7d9e908>' at thread -1
+Loading resource: res://<private-resource-478a8b342f79> remapped: res://<private-resource-478a8b342f79>
+Loading resource: res://<private-resource-470e4787e102> remapped: res://<private-resource-470e4787e102>
+Loading resource: res://<private-resource-68dd9139d8ce> remapped: res://<private-resource-68dd9139d8ce>
+Loading resource: res://<private-resource-5c8e242ac149> remapped: res://<private-resource-5c8e242ac149>
+Completed load for: 'res://<private-resource-68dd9139d8ce>' remapped 'res://<private-resource-68dd9139d8ce>' at thread -1
+Loading resource: res://<private-resource-5205e8e36187> remapped: res://<private-resource-5205e8e36187>
+Loading resource: res://<private-resource-c17566fbdb27> remapped: res://<private-resource-c17566fbdb27>
+Completed load for: 'res://<private-resource-5205e8e36187>' remapped 'res://<private-resource-5205e8e36187>' at thread -1
+Loading resource: res://<private-resource-eb281b1ab740> remapped: res://<private-resource-eb281b1ab740>
+Loading resource: res://<private-resource-dbd6ebdd55cb> remapped: res://<private-resource-dbd6ebdd55cb>
+Completed load for: 'res://<private-resource-eb281b1ab740>' remapped 'res://<private-resource-eb281b1ab740>' at thread -1
+Loading resource: res://<private-resource-83aca73721a6> remapped: res://<private-resource-83aca73721a6>
+Loading resource: res://<private-resource-099c9c4c94d3> remapped: res://<private-resource-099c9c4c94d3>
+Completed load for: 'res://<private-resource-83aca73721a6>' remapped 'res://<private-resource-83aca73721a6>' at thread -1
+Loading resource: res://<private-resource-77d6efd5d346> remapped: res://<private-resource-77d6efd5d346>
+Loading resource: res://<private-resource-1d6bfb845658> remapped: res://<private-resource-1d6bfb845658>
+Completed load for: 'res://<private-resource-77d6efd5d346>' remapped 'res://<private-resource-77d6efd5d346>' at thread -1
+Loading resource: res://<private-resource-5b8eda3eeebe> remapped: res://<private-resource-5b8eda3eeebe>
+Loading resource: res://<private-resource-68321e3e0a81> remapped: res://<private-resource-68321e3e0a81>
+Completed load for: 'res://<private-resource-5b8eda3eeebe>' remapped 'res://<private-resource-5b8eda3eeebe>' at thread -1
+Loading resource: res://<private-resource-5b44a8f6a279> remapped: res://<private-resource-5b44a8f6a279>
+Loading resource: res://<private-resource-ee5c59413357> remapped: res://<private-resource-ee5c59413357>
+Completed load for: 'res://<private-resource-5b44a8f6a279>' remapped 'res://<private-resource-5b44a8f6a279>' at thread -1
+Loading resource: res://<private-resource-3e35123c33ff> remapped: res://<private-resource-3e35123c33ff>
+Loading resource: res://<private-resource-11175ae3910b> remapped: res://<private-resource-11175ae3910b>
+Completed load for: 'res://<private-resource-3e35123c33ff>' remapped 'res://<private-resource-3e35123c33ff>' at thread -1
+Loading resource: res://<private-resource-659a5d7369cd> remapped: res://<private-resource-659a5d7369cd>
+Loading resource: res://<private-resource-732d8068abfa> remapped: res://<private-resource-732d8068abfa>
+Completed load for: 'res://<private-resource-659a5d7369cd>' remapped 'res://<private-resource-659a5d7369cd>' at thread -1
+Loading resource: res://<private-resource-eeb4f103403b> remapped: res://<private-resource-eeb4f103403b>
+Loading resource: res://<private-resource-f377f2d755d4> remapped: res://<private-resource-f377f2d755d4>
+Completed load for: 'res://<private-resource-eeb4f103403b>' remapped 'res://<private-resource-eeb4f103403b>' at thread -1
+Loading resource: res://<private-resource-d4f408b67c56> remapped: res://<private-resource-d4f408b67c56>
+Loading resource: res://<private-resource-d3a136a917de> remapped: res://<private-resource-d3a136a917de>
+Completed load for: 'res://<private-resource-d4f408b67c56>' remapped 'res://<private-resource-d4f408b67c56>' at thread -1
+Loading resource: res://<private-resource-f7c889793462> remapped: res://<private-resource-f7c889793462>
+Loading resource: res://<private-resource-786647ddd388> remapped: res://<private-resource-786647ddd388>
+Completed load for: 'res://<private-resource-f7c889793462>' remapped 'res://<private-resource-f7c889793462>' at thread -1
+Completed load for: 'res://<private-resource-478a8b342f79>' remapped 'res://<private-resource-478a8b342f79>' at thread -1
+Loading resource: res://<private-resource-9140c7af12ad> remapped: res://<private-resource-9140c7af12ad>
+Loading resource: res://<private-resource-384446f7a01d> remapped: res://<private-resource-384446f7a01d>
+Loading resource: res://<private-resource-c3ab02f81097> remapped: res://<private-resource-c3ab02f81097>
+Loading resource: res://<private-resource-6483b59ea392> remapped: res://<private-resource-6483b59ea392>
+Completed load for: 'res://<private-resource-c3ab02f81097>' remapped 'res://<private-resource-c3ab02f81097>' at thread -1
+Loading resource: res://<private-resource-e807c9779336> remapped: res://<private-resource-e807c9779336>
+Loading resource: res://<private-resource-0b576499487f> remapped: res://<private-resource-0b576499487f>
+Completed load for: 'res://<private-resource-e807c9779336>' remapped 'res://<private-resource-e807c9779336>' at thread -1
+Loading resource: res://<private-resource-50cd680d7200> remapped: res://<private-resource-50cd680d7200>
+Loading resource: res://<private-resource-bebc6a2c3dcc> remapped: res://<private-resource-bebc6a2c3dcc>
+Completed load for: 'res://<private-resource-50cd680d7200>' remapped 'res://<private-resource-50cd680d7200>' at thread -1
+Completed load for: 'res://<private-resource-9140c7af12ad>' remapped 'res://<private-resource-9140c7af12ad>' at thread -1
+Loading resource: res://<private-resource-dfa52b8dff2c> remapped: res://<private-resource-dfa52b8dff2c>
+Loading resource: res://<private-resource-8645c306d37e> remapped: res://<private-resource-8645c306d37e>
+Loading resource: res://<private-resource-41863ad01aaa> remapped: res://<private-resource-41863ad01aaa>
+Loading resource: res://<private-resource-7cb8cd47cb99> remapped: res://<private-resource-7cb8cd47cb99>
+Completed load for: 'res://<private-resource-41863ad01aaa>' remapped 'res://<private-resource-41863ad01aaa>' at thread -1
+Loading resource: res://<private-resource-5bf31eac9d5b> remapped: res://<private-resource-5bf31eac9d5b>
+Loading resource: res://<private-resource-003cff080084> remapped: res://<private-resource-003cff080084>
+Completed load for: 'res://<private-resource-5bf31eac9d5b>' remapped 'res://<private-resource-5bf31eac9d5b>' at thread -1
+Loading resource: res://<private-resource-5b3b1bb87b88> remapped: res://<private-resource-5b3b1bb87b88>
+Loading resource: res://<private-resource-e9dc88a3d4c3> remapped: res://<private-resource-e9dc88a3d4c3>
+Completed load for: 'res://<private-resource-5b3b1bb87b88>' remapped 'res://<private-resource-5b3b1bb87b88>' at thread -1
+Completed load for: 'res://<private-resource-dfa52b8dff2c>' remapped 'res://<private-resource-dfa52b8dff2c>' at thread -1
+Loading resource: res://<private-resource-184076a9ca24> remapped: res://<private-resource-184076a9ca24>
+Loading resource: res://<private-resource-333a55144e49> remapped: res://<private-resource-333a55144e49>
+Loading resource: res://<private-resource-df94c7faee84> remapped: res://<private-resource-df94c7faee84>
+Loading resource: res://<private-resource-92ee1564a24d> remapped: res://<private-resource-92ee1564a24d>
+Completed load for: 'res://<private-resource-df94c7faee84>' remapped 'res://<private-resource-df94c7faee84>' at thread -1
+Loading resource: res://<private-resource-e932b48fdd13> remapped: res://<private-resource-e932b48fdd13>
+Loading resource: res://<private-resource-7ffebfbae87c> remapped: res://<private-resource-7ffebfbae87c>
+Completed load for: 'res://<private-resource-e932b48fdd13>' remapped 'res://<private-resource-e932b48fdd13>' at thread -1
+Loading resource: res://<private-resource-a4ce2acd274a> remapped: res://<private-resource-a4ce2acd274a>
+Loading resource: res://<private-resource-39764d19cf67> remapped: res://<private-resource-39764d19cf67>
+Completed load for: 'res://<private-resource-a4ce2acd274a>' remapped 'res://<private-resource-a4ce2acd274a>' at thread -1
+Completed load for: 'res://<private-resource-184076a9ca24>' remapped 'res://<private-resource-184076a9ca24>' at thread -1
+Loading resource: res://<private-resource-75d61a693fe6> remapped: res://<private-resource-75d61a693fe6>
+Loading resource: res://<private-resource-efbda92a568c> remapped: res://<private-resource-efbda92a568c>
+Loading resource: res://<private-resource-fde423dcabce> remapped: res://<private-resource-fde423dcabce>
+Loading resource: res://<private-resource-5ff6ae429fe2> remapped: res://<private-resource-5ff6ae429fe2>
+Completed load for: 'res://<private-resource-fde423dcabce>' remapped 'res://<private-resource-fde423dcabce>' at thread -1
+Loading resource: res://<private-resource-5dd372ed3a7d> remapped: res://<private-resource-5dd372ed3a7d>
+Loading resource: res://<private-resource-743402273855> remapped: res://<private-resource-743402273855>
+Completed load for: 'res://<private-resource-5dd372ed3a7d>' remapped 'res://<private-resource-5dd372ed3a7d>' at thread -1
+Loading resource: res://<private-resource-19fbe95997c1> remapped: res://<private-resource-19fbe95997c1>
+Loading resource: res://<private-resource-bd812607eaa3> remapped: res://<private-resource-bd812607eaa3>
+Completed load for: 'res://<private-resource-19fbe95997c1>' remapped 'res://<private-resource-19fbe95997c1>' at thread -1
+Completed load for: 'res://<private-resource-75d61a693fe6>' remapped 'res://<private-resource-75d61a693fe6>' at thread -1
+Loading resource: res://<private-resource-97353d36ad65> remapped: res://<private-resource-97353d36ad65>
+Loading resource: res://<private-resource-5be78fc52cfc> remapped: res://<private-resource-5be78fc52cfc>
+Loading resource: res://<private-resource-f5eede59c06b> remapped: res://<private-resource-f5eede59c06b>
+Loading resource: res://<private-resource-e0c9f8cbbd2f> remapped: res://<private-resource-e0c9f8cbbd2f>
+Completed load for: 'res://<private-resource-f5eede59c06b>' remapped 'res://<private-resource-f5eede59c06b>' at thread -1
+Loading resource: res://<private-resource-013d83b7b0b5> remapped: res://<private-resource-013d83b7b0b5>
+Loading resource: res://<private-resource-0cdeefb357c7> remapped: res://<private-resource-0cdeefb357c7>
+Completed load for: 'res://<private-resource-013d83b7b0b5>' remapped 'res://<private-resource-013d83b7b0b5>' at thread -1
+Loading resource: res://<private-resource-eb79af8602a4> remapped: res://<private-resource-eb79af8602a4>
+Loading resource: res://<private-resource-b600abd1f567> remapped: res://<private-resource-b600abd1f567>
+Completed load for: 'res://<private-resource-eb79af8602a4>' remapped 'res://<private-resource-eb79af8602a4>' at thread -1
+Completed load for: 'res://<private-resource-97353d36ad65>' remapped 'res://<private-resource-97353d36ad65>' at thread -1
+Loading resource: res://<private-resource-0eb4253c36a5> remapped: res://<private-resource-0eb4253c36a5>
+Loading resource: res://<private-resource-e6b3f20f482b> remapped: res://<private-resource-e6b3f20f482b>
+Loading resource: res://<private-resource-9d0386959c1f> remapped: res://<private-resource-9d0386959c1f>
+Loading resource: res://<private-resource-6f67561c20fb> remapped: res://<private-resource-6f67561c20fb>
+Completed load for: 'res://<private-resource-9d0386959c1f>' remapped 'res://<private-resource-9d0386959c1f>' at thread -1
+Loading resource: res://<private-resource-3bd1da3eaef5> remapped: res://<private-resource-3bd1da3eaef5>
+Loading resource: res://<private-resource-cf9bd45e10f8> remapped: res://<private-resource-cf9bd45e10f8>
+Completed load for: 'res://<private-resource-3bd1da3eaef5>' remapped 'res://<private-resource-3bd1da3eaef5>' at thread -1
+Loading resource: res://<private-resource-09d06414edc0> remapped: res://<private-resource-09d06414edc0>
+Loading resource: res://<private-resource-f939ea753a3a> remapped: res://<private-resource-f939ea753a3a>
+Completed load for: 'res://<private-resource-09d06414edc0>' remapped 'res://<private-resource-09d06414edc0>' at thread -1
+Loading resource: res://<private-resource-1d1e531f0b80> remapped: res://<private-resource-1d1e531f0b80>
+Loading resource: res://<private-resource-7393eb706f6a> remapped: res://<private-resource-7393eb706f6a>
+Completed load for: 'res://<private-resource-1d1e531f0b80>' remapped 'res://<private-resource-1d1e531f0b80>' at thread -1
+Loading resource: res://<private-resource-c059fae5c8f6> remapped: res://<private-resource-c059fae5c8f6>
+Loading resource: res://<private-resource-eca74a8761b4> remapped: res://<private-resource-eca74a8761b4>
+Completed load for: 'res://<private-resource-c059fae5c8f6>' remapped 'res://<private-resource-c059fae5c8f6>' at thread -1
+Loading resource: res://<private-resource-1529998b5d06> remapped: res://<private-resource-1529998b5d06>
+Loading resource: res://<private-resource-73d19edfca58> remapped: res://<private-resource-73d19edfca58>
+Completed load for: 'res://<private-resource-1529998b5d06>' remapped 'res://<private-resource-1529998b5d06>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/8f345455b2d2399241aff72abe7ac971e5c808f0
+Completed load for: 'res://<private-resource-0eb4253c36a5>' remapped 'res://<private-resource-0eb4253c36a5>' at thread -1
+Loading resource: res://<private-resource-e4395c670194> remapped: res://<private-resource-e4395c670194>
+Loading resource: res://<private-resource-f66a6ca1b335> remapped: res://<private-resource-f66a6ca1b335>
+Loading resource: res://<private-resource-ffee2c2668c5> remapped: res://<private-resource-ffee2c2668c5>
+Loading resource: res://<private-resource-5b7c21b80bc4> remapped: res://<private-resource-5b7c21b80bc4>
+Completed load for: 'res://<private-resource-ffee2c2668c5>' remapped 'res://<private-resource-ffee2c2668c5>' at thread -1
+Loading resource: res://<private-resource-2dda6339db5e> remapped: res://<private-resource-2dda6339db5e>
+Loading resource: res://<private-resource-ba87b196671d> remapped: res://<private-resource-ba87b196671d>
+Completed load for: 'res://<private-resource-2dda6339db5e>' remapped 'res://<private-resource-2dda6339db5e>' at thread -1
+Loading resource: res://<private-resource-0645590f4c84> remapped: res://<private-resource-0645590f4c84>
+Loading resource: res://<private-resource-94430d639e49> remapped: res://<private-resource-94430d639e49>
+Completed load for: 'res://<private-resource-0645590f4c84>' remapped 'res://<private-resource-0645590f4c84>' at thread -1
+Loading resource: res://<private-resource-e235d8b6b4e0> remapped: res://<private-resource-e235d8b6b4e0>
+Loading resource: res://<private-resource-94d0947b3efd> remapped: res://<private-resource-94d0947b3efd>
+Completed load for: 'res://<private-resource-e235d8b6b4e0>' remapped 'res://<private-resource-e235d8b6b4e0>' at thread -1
+Loading resource: res://<private-resource-6e964d595161> remapped: res://<private-resource-6e964d595161>
+Loading resource: res://<private-resource-6ec28f47bdcd> remapped: res://<private-resource-6ec28f47bdcd>
+Completed load for: 'res://<private-resource-6e964d595161>' remapped 'res://<private-resource-6e964d595161>' at thread -1
+Loading resource: res://<private-resource-5d6e704fa687> remapped: res://<private-resource-5d6e704fa687>
+Loading resource: res://<private-resource-8132c3de7b13> remapped: res://<private-resource-8132c3de7b13>
+Completed load for: 'res://<private-resource-5d6e704fa687>' remapped 'res://<private-resource-5d6e704fa687>' at thread -1
+Completed load for: 'res://<private-resource-e4395c670194>' remapped 'res://<private-resource-e4395c670194>' at thread -1
+Loading resource: res://<private-resource-9b6b21bbdbe1> remapped: res://<private-resource-9b6b21bbdbe1>
+Loading resource: res://<private-resource-7b614d359a1a> remapped: res://<private-resource-7b614d359a1a>
+Loading resource: res://<private-resource-1c8acfe7ca8e> remapped: res://<private-resource-1c8acfe7ca8e>
+Loading resource: res://<private-resource-3234850aea36> remapped: res://<private-resource-3234850aea36>
+Completed load for: 'res://<private-resource-1c8acfe7ca8e>' remapped 'res://<private-resource-1c8acfe7ca8e>' at thread -1
+Loading resource: res://<private-resource-10035c4e6458> remapped: res://<private-resource-10035c4e6458>
+Loading resource: res://<private-resource-975dc4af8f8d> remapped: res://<private-resource-975dc4af8f8d>
+Completed load for: 'res://<private-resource-10035c4e6458>' remapped 'res://<private-resource-10035c4e6458>' at thread -1
+Loading resource: res://<private-resource-097062028bb3> remapped: res://<private-resource-097062028bb3>
+Loading resource: res://<private-resource-0baf115f4438> remapped: res://<private-resource-0baf115f4438>
+Completed load for: 'res://<private-resource-097062028bb3>' remapped 'res://<private-resource-097062028bb3>' at thread -1
+Completed load for: 'res://<private-resource-9b6b21bbdbe1>' remapped 'res://<private-resource-9b6b21bbdbe1>' at thread -1
+Loading resource: res://<private-resource-e4395c670194> remapped: res://<private-resource-e4395c670194>
+Loading resource: res://<private-resource-f66a6ca1b335> remapped: res://<private-resource-f66a6ca1b335>
+Loading resource: res://<private-resource-e235d8b6b4e0> remapped: res://<private-resource-e235d8b6b4e0>
+Loading resource: res://<private-resource-94d0947b3efd> remapped: res://<private-resource-94d0947b3efd>
+Completed load for: 'res://<private-resource-e235d8b6b4e0>' remapped 'res://<private-resource-e235d8b6b4e0>' at thread -1
+Loading resource: res://<private-resource-6e964d595161> remapped: res://<private-resource-6e964d595161>
+Loading resource: res://<private-resource-6ec28f47bdcd> remapped: res://<private-resource-6ec28f47bdcd>
+Completed load for: 'res://<private-resource-6e964d595161>' remapped 'res://<private-resource-6e964d595161>' at thread -1
+Loading resource: res://<private-resource-5d6e704fa687> remapped: res://<private-resource-5d6e704fa687>
+Loading resource: res://<private-resource-8132c3de7b13> remapped: res://<private-resource-8132c3de7b13>
+Completed load for: 'res://<private-resource-5d6e704fa687>' remapped 'res://<private-resource-5d6e704fa687>' at thread -1
+Completed load for: 'res://<private-resource-e4395c670194>' remapped 'res://<private-resource-e4395c670194>' at thread -1
+Loading resource: res://<private-resource-d4f412826051> remapped: res://<private-resource-d4f412826051>
+Loading resource: res://<private-resource-b43c37748f88> remapped: res://<private-resource-b43c37748f88>
+Loading resource: res://<private-resource-64cd874eceab> remapped: res://<private-resource-64cd874eceab>
+Loading resource: res://<private-resource-725595249255> remapped: res://<private-resource-725595249255>
+Completed load for: 'res://<private-resource-64cd874eceab>' remapped 'res://<private-resource-64cd874eceab>' at thread -1
+Loading resource: res://<private-resource-254c238f4f17> remapped: res://<private-resource-254c238f4f17>
+Loading resource: res://<private-resource-9f9c368d7d3e> remapped: res://<private-resource-9f9c368d7d3e>
+Completed load for: 'res://<private-resource-254c238f4f17>' remapped 'res://<private-resource-254c238f4f17>' at thread -1
+Loading resource: res://<private-resource-5c59ed9a5c59> remapped: res://<private-resource-5c59ed9a5c59>
+Loading resource: res://<private-resource-c1d75288b064> remapped: res://<private-resource-c1d75288b064>
+Completed load for: 'res://<private-resource-5c59ed9a5c59>' remapped 'res://<private-resource-5c59ed9a5c59>' at thread -1
+Completed load for: 'res://<private-resource-d4f412826051>' remapped 'res://<private-resource-d4f412826051>' at thread -1
+Loading resource: res://<private-resource-4215ea1859dd> remapped: res://<private-resource-4215ea1859dd>
+Loading resource: res://<private-resource-cfb743dfba9c> remapped: res://<private-resource-cfb743dfba9c>
+Loading resource: res://<private-resource-c0555f331f08> remapped: res://<private-resource-c0555f331f08>
+Loading resource: res://<private-resource-73f47aba4497> remapped: res://<private-resource-73f47aba4497>
+Completed load for: 'res://<private-resource-c0555f331f08>' remapped 'res://<private-resource-c0555f331f08>' at thread -1
+Loading resource: res://<private-resource-903ca0b2853a> remapped: res://<private-resource-903ca0b2853a>
+Loading resource: res://<private-resource-6dac4d864102> remapped: res://<private-resource-6dac4d864102>
+Completed load for: 'res://<private-resource-903ca0b2853a>' remapped 'res://<private-resource-903ca0b2853a>' at thread -1
+Loading resource: res://<private-resource-e62f99f701d8> remapped: res://<private-resource-e62f99f701d8>
+Loading resource: res://<private-resource-aadc2ec188eb> remapped: res://<private-resource-aadc2ec188eb>
+Completed load for: 'res://<private-resource-e62f99f701d8>' remapped 'res://<private-resource-e62f99f701d8>' at thread -1
+Completed load for: 'res://<private-resource-4215ea1859dd>' remapped 'res://<private-resource-4215ea1859dd>' at thread -1
+Loading resource: res://<private-resource-90607295a8f4> remapped: res://<private-resource-90607295a8f4>
+Loading resource: res://<private-resource-f7644d8b25ca> remapped: res://<private-resource-f7644d8b25ca>
+Loading resource: res://<private-resource-f751f3be2188> remapped: res://<private-resource-f751f3be2188>
+Loading resource: res://<private-resource-4af2ae93572c> remapped: res://<private-resource-4af2ae93572c>
+Completed load for: 'res://<private-resource-f751f3be2188>' remapped 'res://<private-resource-f751f3be2188>' at thread -1
+Loading resource: res://<private-resource-db66dd15b721> remapped: res://<private-resource-db66dd15b721>
+Loading resource: res://<private-resource-784788507b56> remapped: res://<private-resource-784788507b56>
+Completed load for: 'res://<private-resource-db66dd15b721>' remapped 'res://<private-resource-db66dd15b721>' at thread -1
+Loading resource: res://<private-resource-e3eb39802baa> remapped: res://<private-resource-e3eb39802baa>
+Loading resource: res://<private-resource-d3ded9a9f671> remapped: res://<private-resource-d3ded9a9f671>
+Completed load for: 'res://<private-resource-e3eb39802baa>' remapped 'res://<private-resource-e3eb39802baa>' at thread -1
+Completed load for: 'res://<private-resource-90607295a8f4>' remapped 'res://<private-resource-90607295a8f4>' at thread -1
+Loading resource: res://<private-resource-58d5f8c84b85> remapped: res://<private-resource-58d5f8c84b85>
+Loading resource: res://<private-resource-fed10e421c6b> remapped: res://<private-resource-fed10e421c6b>
+Loading resource: res://<private-resource-1786afcde7e1> remapped: res://<private-resource-1786afcde7e1>
+Loading resource: res://<private-resource-eac80c22ef48> remapped: res://<private-resource-eac80c22ef48>
+Completed load for: 'res://<private-resource-1786afcde7e1>' remapped 'res://<private-resource-1786afcde7e1>' at thread -1
+Loading resource: res://<private-resource-acdd5a2f4fb4> remapped: res://<private-resource-acdd5a2f4fb4>
+Loading resource: res://<private-resource-679d374763c5> remapped: res://<private-resource-679d374763c5>
+Completed load for: 'res://<private-resource-acdd5a2f4fb4>' remapped 'res://<private-resource-acdd5a2f4fb4>' at thread -1
+Loading resource: res://<private-resource-88ffa22a868a> remapped: res://<private-resource-88ffa22a868a>
+Loading resource: res://<private-resource-a28371df96f7> remapped: res://<private-resource-a28371df96f7>
+Completed load for: 'res://<private-resource-88ffa22a868a>' remapped 'res://<private-resource-88ffa22a868a>' at thread -1
+Completed load for: 'res://<private-resource-58d5f8c84b85>' remapped 'res://<private-resource-58d5f8c84b85>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SkyShaderRD/5e1b21cde02949342e2f87337d79da4aba2c1124e8d7a1bffde5e051e2c139fa/723f70cebee6f2532406e527b1568d3412439290
+Loading resource: res://<private-resource-9fdb23b40b47> remapped: res://<private-resource-9fdb23b40b47>
+Loading resource: res://<private-resource-9e5558bec47e> remapped: res://<private-resource-9e5558bec47e>
+Completed load for: 'res://<private-resource-9fdb23b40b47>' remapped 'res://<private-resource-9fdb23b40b47>' at thread -1
+Loading resource: res://<private-resource-9f21a9ae8eaa> remapped: res://<private-resource-9f21a9ae8eaa>
+Loading resource: res://<private-resource-ebc54dfa06af> remapped: res://<private-resource-ebc54dfa06af>
+Completed load for: 'res://<private-resource-9f21a9ae8eaa>' remapped 'res://<private-resource-9f21a9ae8eaa>' at thread -1
+Loading resource: res://<private-resource-b8e0a46983b5> remapped: res://<private-resource-b8e0a46983b5>
+Loading resource: res://<private-resource-0b8f25037bde> remapped: res://<private-resource-0b8f25037bde>
+Completed load for: 'res://<private-resource-b8e0a46983b5>' remapped 'res://<private-resource-b8e0a46983b5>' at thread -1
+Loading resource: res://<private-resource-14253f3ee6d4> remapped: res://<private-resource-14253f3ee6d4>
+Loading resource: res://<private-resource-9058d08b2754> remapped: res://<private-resource-9058d08b2754>
+Completed load for: 'res://<private-resource-14253f3ee6d4>' remapped 'res://<private-resource-14253f3ee6d4>' at thread -1
+Loading resource: res://<private-resource-c0312c91f746> remapped: res://<private-resource-c0312c91f746>
+Loading resource: res://<private-resource-f42f06f71885> remapped: res://<private-resource-f42f06f71885>
+Completed load for: 'res://<private-resource-c0312c91f746>' remapped 'res://<private-resource-c0312c91f746>' at thread -1
+Loading resource: res://<private-resource-16fe6c989624> remapped: res://<private-resource-16fe6c989624>
+Loading resource: res://<private-resource-ed468f77a321> remapped: res://<private-resource-ed468f77a321>
+Completed load for: 'res://<private-resource-16fe6c989624>' remapped 'res://<private-resource-16fe6c989624>' at thread -1
+Loading resource: res://<private-resource-911b1c53d59d> remapped: res://<private-resource-911b1c53d59d>
+Loading resource: res://<private-resource-c0b93ebc14a1> remapped: res://<private-resource-c0b93ebc14a1>
+Completed load for: 'res://<private-resource-911b1c53d59d>' remapped 'res://<private-resource-911b1c53d59d>' at thread -1
+Loading resource: res://<private-resource-c85aaf531d0d> remapped: res://<private-resource-c85aaf531d0d>
+Loading resource: res://<private-resource-06600effede6> remapped: res://<private-resource-06600effede6>
+Completed load for: 'res://<private-resource-c85aaf531d0d>' remapped 'res://<private-resource-c85aaf531d0d>' at thread -1
+Loading resource: res://<private-resource-86cc8c87b26b> remapped: res://<private-resource-86cc8c87b26b>
+Loading resource: res://<private-resource-26f64ed15f8c> remapped: res://<private-resource-26f64ed15f8c>
+Completed load for: 'res://<private-resource-86cc8c87b26b>' remapped 'res://<private-resource-86cc8c87b26b>' at thread -1
+Loading resource: res://<private-resource-970ddb631855> remapped: res://<private-resource-970ddb631855>
+Loading resource: res://<private-resource-8403ec2a6af2> remapped: res://<private-resource-8403ec2a6af2>
+Completed load for: 'res://<private-resource-970ddb631855>' remapped 'res://<private-resource-970ddb631855>' at thread -1
+Loading resource: res://<private-resource-be4ed4864a61> remapped: res://<private-resource-be4ed4864a61>
+Loading resource: res://<private-resource-86e85ee4fe03> remapped: res://<private-resource-86e85ee4fe03>
+Completed load for: 'res://<private-resource-be4ed4864a61>' remapped 'res://<private-resource-be4ed4864a61>' at thread -1
+Loading resource: res://<private-resource-f31e08dfb3c1> remapped: res://<private-resource-f31e08dfb3c1>
+Loading resource: res://<private-resource-183f5a23429a> remapped: res://<private-resource-183f5a23429a>
+Completed load for: 'res://<private-resource-f31e08dfb3c1>' remapped 'res://<private-resource-f31e08dfb3c1>' at thread -1
+Loading resource: res://<private-resource-09722b52287c> remapped: res://<private-resource-09722b52287c>
+Loading resource: res://<private-resource-5331ae79f6aa> remapped: res://<private-resource-5331ae79f6aa>
+Completed load for: 'res://<private-resource-09722b52287c>' remapped 'res://<private-resource-09722b52287c>' at thread -1
+Loading resource: res://<private-resource-7ecf119cd400> remapped: res://<private-resource-7ecf119cd400>
+Loading resource: res://<private-resource-266e7e3f3b9a> remapped: res://<private-resource-266e7e3f3b9a>
+Completed load for: 'res://<private-resource-7ecf119cd400>' remapped 'res://<private-resource-7ecf119cd400>' at thread -1
+Loading resource: res://<private-resource-c19446f93516> remapped: res://<private-resource-c19446f93516>
+Loading resource: res://<private-resource-9e2dad09e921> remapped: res://<private-resource-9e2dad09e921>
+Completed load for: 'res://<private-resource-c19446f93516>' remapped 'res://<private-resource-c19446f93516>' at thread -1
+Loading resource: res://<private-resource-6ea36fa91ae6> remapped: res://<private-resource-6ea36fa91ae6>
+Loading resource: res://<private-resource-5ef06b3e04ab> remapped: res://<private-resource-5ef06b3e04ab>
+Loading resource: res://<private-resource-2522727f94b5> remapped: res://<private-resource-2522727f94b5>
+Loading resource: res://<private-resource-2383fc985547> remapped: res://<private-resource-2383fc985547>
+Completed load for: 'res://<private-resource-2522727f94b5>' remapped 'res://<private-resource-2522727f94b5>' at thread -1
+Loading resource: res://<private-resource-89d651f3909c> remapped: res://<private-resource-89d651f3909c>
+Loading resource: res://<private-resource-0c885c2303aa> remapped: res://<private-resource-0c885c2303aa>
+Completed load for: 'res://<private-resource-89d651f3909c>' remapped 'res://<private-resource-89d651f3909c>' at thread -1
+Loading resource: res://<private-resource-220bd5e7138c> remapped: res://<private-resource-220bd5e7138c>
+Loading resource: res://<private-resource-5492a2540ac3> remapped: res://<private-resource-5492a2540ac3>
+Completed load for: 'res://<private-resource-220bd5e7138c>' remapped 'res://<private-resource-220bd5e7138c>' at thread -1
+Loading resource: res://<private-resource-ddd278c8d67f> remapped: res://<private-resource-ddd278c8d67f>
+Loading resource: res://<private-resource-c282ff59b60a> remapped: res://<private-resource-c282ff59b60a>
+Completed load for: 'res://<private-resource-ddd278c8d67f>' remapped 'res://<private-resource-ddd278c8d67f>' at thread -1
+Loading resource: res://<private-resource-66c96e4de684> remapped: res://<private-resource-66c96e4de684>
+Loading resource: res://<private-resource-ac2c5cc3bd9e> remapped: res://<private-resource-ac2c5cc3bd9e>
+Completed load for: 'res://<private-resource-66c96e4de684>' remapped 'res://<private-resource-66c96e4de684>' at thread -1
+Loading resource: res://<private-resource-20aa75870dd1> remapped: res://<private-resource-20aa75870dd1>
+Loading resource: res://<private-resource-d3700389fba9> remapped: res://<private-resource-d3700389fba9>
+Completed load for: 'res://<private-resource-20aa75870dd1>' remapped 'res://<private-resource-20aa75870dd1>' at thread -1
+Loading resource: res://<private-resource-67ca4cbf13f0> remapped: res://<private-resource-67ca4cbf13f0>
+Loading resource: res://<private-resource-f2d5bb3c89d5> remapped: res://<private-resource-f2d5bb3c89d5>
+Completed load for: 'res://<private-resource-67ca4cbf13f0>' remapped 'res://<private-resource-67ca4cbf13f0>' at thread -1
+Loading resource: res://<private-resource-c9218d77a87c> remapped: res://<private-resource-c9218d77a87c>
+Loading resource: res://<private-resource-ac6f66e5c745> remapped: res://<private-resource-ac6f66e5c745>
+Completed load for: 'res://<private-resource-c9218d77a87c>' remapped 'res://<private-resource-c9218d77a87c>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/36a830bb8c1017df7767422038a8a68cf8ca3db3
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/b45440c3f456e9d028413e80ede78655eb8c9e53
+Completed load for: 'res://<private-resource-6ea36fa91ae6>' remapped 'res://<private-resource-6ea36fa91ae6>' at thread -1
+Shader cache miss for ParticlesShaderRD/e7181177bd3e0f4d03c197faa69b53160454fcced772105d0093c7277aff8b87/db609cbc040d6020ca345654b3b71886442a36d7
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/137891017d8cd29cef192f3f7a249d32945f3b12
+Loading resource: res://<private-resource-b65328747e36> remapped: res://<private-resource-b65328747e36>
+Loading resource: res://<private-resource-f0d35e0c6b7d> remapped: res://<private-resource-f0d35e0c6b7d>
+Loading resource: res://<private-resource-0cb8721448f9> remapped: res://<private-resource-0cb8721448f9>
+Loading resource: res://<private-resource-d6cbc673bb04> remapped: res://<private-resource-d6cbc673bb04>
+Completed load for: 'res://<private-resource-0cb8721448f9>' remapped 'res://<private-resource-0cb8721448f9>' at thread -1
+Loading resource: res://<private-resource-92f5e73e729b> remapped: res://<private-resource-92f5e73e729b>
+Loading resource: res://<private-resource-795f6ebb2079> remapped: res://<private-resource-795f6ebb2079>
+Completed load for: 'res://<private-resource-92f5e73e729b>' remapped 'res://<private-resource-92f5e73e729b>' at thread -1
+Loading resource: res://<private-resource-44ea3f85a053> remapped: res://<private-resource-44ea3f85a053>
+Loading resource: res://<private-resource-8bbc5dc94655> remapped: res://<private-resource-8bbc5dc94655>
+Completed load for: 'res://<private-resource-44ea3f85a053>' remapped 'res://<private-resource-44ea3f85a053>' at thread -1
+Loading resource: res://<private-resource-988473582251> remapped: res://<private-resource-988473582251>
+Loading resource: res://<private-resource-79e447f3e0a2> remapped: res://<private-resource-79e447f3e0a2>
+Completed load for: 'res://<private-resource-988473582251>' remapped 'res://<private-resource-988473582251>' at thread -1
+Loading resource: res://<private-resource-12dc055d5683> remapped: res://<private-resource-12dc055d5683>
+Loading resource: res://<private-resource-8fdc9dc227d1> remapped: res://<private-resource-8fdc9dc227d1>
+Completed load for: 'res://<private-resource-12dc055d5683>' remapped 'res://<private-resource-12dc055d5683>' at thread -1
+Loading resource: res://<private-resource-249c9c5dce38> remapped: res://<private-resource-249c9c5dce38>
+Loading resource: res://<private-resource-e880bb07ac9a> remapped: res://<private-resource-e880bb07ac9a>
+Completed load for: 'res://<private-resource-249c9c5dce38>' remapped 'res://<private-resource-249c9c5dce38>' at thread -1
+Loading resource: res://<private-resource-6895bbae05cb> remapped: res://<private-resource-6895bbae05cb>
+Loading resource: res://<private-resource-f490e9bb7bda> remapped: res://<private-resource-f490e9bb7bda>
+Completed load for: 'res://<private-resource-6895bbae05cb>' remapped 'res://<private-resource-6895bbae05cb>' at thread -1
+Loading resource: res://<private-resource-478a0eab7015> remapped: res://<private-resource-478a0eab7015>
+Loading resource: res://<private-resource-508f2091da77> remapped: res://<private-resource-508f2091da77>
+Completed load for: 'res://<private-resource-478a0eab7015>' remapped 'res://<private-resource-478a0eab7015>' at thread -1
+Completed load for: 'res://<private-resource-b65328747e36>' remapped 'res://<private-resource-b65328747e36>' at thread -1
+Loading resource: res://<private-resource-1643775df5e1> remapped: res://<private-resource-1643775df5e1>
+Loading resource: res://<private-resource-af6940886122> remapped: res://<private-resource-af6940886122>
+Loading resource: res://<private-resource-e99823a4e4d5> remapped: res://<private-resource-e99823a4e4d5>
+Loading resource: res://<private-resource-2fe5610f972e> remapped: res://<private-resource-2fe5610f972e>
+Completed load for: 'res://<private-resource-e99823a4e4d5>' remapped 'res://<private-resource-e99823a4e4d5>' at thread -1
+Loading resource: res://<private-resource-b97832c28ebf> remapped: res://<private-resource-b97832c28ebf>
+Loading resource: res://<private-resource-cd2752147a3a> remapped: res://<private-resource-cd2752147a3a>
+Completed load for: 'res://<private-resource-b97832c28ebf>' remapped 'res://<private-resource-b97832c28ebf>' at thread -1
+Loading resource: res://<private-resource-e87e0a60fe44> remapped: res://<private-resource-e87e0a60fe44>
+Loading resource: res://<private-resource-78a0e188e52b> remapped: res://<private-resource-78a0e188e52b>
+Completed load for: 'res://<private-resource-e87e0a60fe44>' remapped 'res://<private-resource-e87e0a60fe44>' at thread -1
+Loading resource: res://<private-resource-36f3c57941e4> remapped: res://<private-resource-36f3c57941e4>
+Loading resource: res://<private-resource-3f629ec349d8> remapped: res://<private-resource-3f629ec349d8>
+Completed load for: 'res://<private-resource-36f3c57941e4>' remapped 'res://<private-resource-36f3c57941e4>' at thread -1
+Loading resource: res://<private-resource-c23fde89e7f0> remapped: res://<private-resource-c23fde89e7f0>
+Loading resource: res://<private-resource-f21135c149a6> remapped: res://<private-resource-f21135c149a6>
+Completed load for: 'res://<private-resource-c23fde89e7f0>' remapped 'res://<private-resource-c23fde89e7f0>' at thread -1
+Loading resource: res://<private-resource-4316fc26656c> remapped: res://<private-resource-4316fc26656c>
+Loading resource: res://<private-resource-99953357fa72> remapped: res://<private-resource-99953357fa72>
+Completed load for: 'res://<private-resource-4316fc26656c>' remapped 'res://<private-resource-4316fc26656c>' at thread -1
+Loading resource: res://<private-resource-93938c96360e> remapped: res://<private-resource-93938c96360e>
+Loading resource: res://<private-resource-437212f78a0e> remapped: res://<private-resource-437212f78a0e>
+Completed load for: 'res://<private-resource-93938c96360e>' remapped 'res://<private-resource-93938c96360e>' at thread -1
+Loading resource: res://<private-resource-be593b4a135b> remapped: res://<private-resource-be593b4a135b>
+Loading resource: res://<private-resource-81e685bfa5f9> remapped: res://<private-resource-81e685bfa5f9>
+Completed load for: 'res://<private-resource-be593b4a135b>' remapped 'res://<private-resource-be593b4a135b>' at thread -1
+Completed load for: 'res://<private-resource-1643775df5e1>' remapped 'res://<private-resource-1643775df5e1>' at thread -1
+Loading resource: res://<private-resource-1ecd9056e3ad> remapped: res://<private-resource-1ecd9056e3ad>
+Loading resource: res://<private-resource-5c5d2b437453> remapped: res://<private-resource-5c5d2b437453>
+Loading resource: res://<private-resource-04da20d2a1c9> remapped: res://<private-resource-04da20d2a1c9>
+Loading resource: res://<private-resource-c93bc771ac64> remapped: res://<private-resource-c93bc771ac64>
+Completed load for: 'res://<private-resource-04da20d2a1c9>' remapped 'res://<private-resource-04da20d2a1c9>' at thread -1
+Loading resource: res://<private-resource-1d96efc24f19> remapped: res://<private-resource-1d96efc24f19>
+Loading resource: res://<private-resource-ec6b9806f52a> remapped: res://<private-resource-ec6b9806f52a>
+Completed load for: 'res://<private-resource-1d96efc24f19>' remapped 'res://<private-resource-1d96efc24f19>' at thread -1
+Loading resource: res://<private-resource-3881822475d1> remapped: res://<private-resource-3881822475d1>
+Loading resource: res://<private-resource-9fd93a72236d> remapped: res://<private-resource-9fd93a72236d>
+Completed load for: 'res://<private-resource-3881822475d1>' remapped 'res://<private-resource-3881822475d1>' at thread -1
+Loading resource: res://<private-resource-734e6fd35fe5> remapped: res://<private-resource-734e6fd35fe5>
+Loading resource: res://<private-resource-9670e5cc9b2d> remapped: res://<private-resource-9670e5cc9b2d>
+Completed load for: 'res://<private-resource-734e6fd35fe5>' remapped 'res://<private-resource-734e6fd35fe5>' at thread -1
+Loading resource: res://<private-resource-6d4a55ff9024> remapped: res://<private-resource-6d4a55ff9024>
+Loading resource: res://<private-resource-ed4c59fd8162> remapped: res://<private-resource-ed4c59fd8162>
+Completed load for: 'res://<private-resource-6d4a55ff9024>' remapped 'res://<private-resource-6d4a55ff9024>' at thread -1
+Loading resource: res://<private-resource-2932ab0ca839> remapped: res://<private-resource-2932ab0ca839>
+Loading resource: res://<private-resource-de409e0d0ef7> remapped: res://<private-resource-de409e0d0ef7>
+Completed load for: 'res://<private-resource-2932ab0ca839>' remapped 'res://<private-resource-2932ab0ca839>' at thread -1
+Loading resource: res://<private-resource-e0f63b430aa7> remapped: res://<private-resource-e0f63b430aa7>
+Loading resource: res://<private-resource-1857fd1155ad> remapped: res://<private-resource-1857fd1155ad>
+Completed load for: 'res://<private-resource-e0f63b430aa7>' remapped 'res://<private-resource-e0f63b430aa7>' at thread -1
+Loading resource: res://<private-resource-04816805adb8> remapped: res://<private-resource-04816805adb8>
+Loading resource: res://<private-resource-ba818ac3f05c> remapped: res://<private-resource-ba818ac3f05c>
+Completed load for: 'res://<private-resource-04816805adb8>' remapped 'res://<private-resource-04816805adb8>' at thread -1
+Completed load for: 'res://<private-resource-1ecd9056e3ad>' remapped 'res://<private-resource-1ecd9056e3ad>' at thread -1
+Loading resource: res://<private-resource-5b557abe34fb> remapped: res://<private-resource-5b557abe34fb>
+Loading resource: res://<private-resource-02cb5951a37d> remapped: res://<private-resource-02cb5951a37d>
+Completed load for: 'res://<private-resource-5b557abe34fb>' remapped 'res://<private-resource-5b557abe34fb>' at thread -1
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/7ad492364f5a1def59dede61e9545182f3efd4c0
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for SceneForwardClusteredShaderRD/8fe325945692dbce30375fb64cfdd29786a064d3b8fd3fc62b8b8d148abe1bb0/a108158d1a145ea996cac5b7f02478b69e74c614
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/188dbcfbda6d0e9c5ff65997ed836295ddd8b63b
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/d405ec8e1b0a93aaa83ff5c0c8a469c932974132
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/a784797763b72ce058effad41b273eb697df9814
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/c0a9bee3317ff3837eea4cef5e88fc1dfd00dc4b
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/60fbb158a5f44670392b2322a8401a535c41dc72
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/b0298f277662c8dffe04cf40a1815022876f8b93
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/079eb971646952e8d475707a6ee7855338ba6a56
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/9ae935cd107ff04dc4904f4d9a48208144d11fe5
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/cef02ec37b748f0d020f8237ec98162b35913362
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/0b36e8cefbbe1f57d8f4fc5b273e03980a22109a
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/63f61b4e446b4503278aac4c800bab48386602ef
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/0b5b7b02d4bde6a0f04a93d218bef7916602b76c
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/a01bc778a4e2de9eecc0ae2b0dc7cf17d657cfb5
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/9dae05ba29ceac5894495a49a33f944fdfe75839
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/29ad28b0fddea5d1747b05dfafb4ebdc7345d976
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/a496140de1a54a7fd99443fd4b03919305b2f8ae
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/8f345455b2d2399241aff72abe7ac971e5c808f0
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/40bc703aca64bf0f43e8ea9b95e46d8c9cd3ece0
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/478a5631a1273ff3ba0b35a62912315674ef191e
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/137891017d8cd29cef192f3f7a249d32945f3b12
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/200602538b9fe4777548fa5051f1554fbcbd9eed
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/b3d43e4686eb22b6f26f9808ec034efa91566251
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/7ad492364f5a1def59dede61e9545182f3efd4c0
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/fac57ae93096370331adc7c14fa1d765965feac9
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/d8687736eaf681b9eaa2ba12ea9ea525cb397890
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/a51da970b675d828928ad427d0278427aa448a58
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/77e28fea868f1d640cf581ded2e966295b75d2d8
+Shader cache miss for SceneForwardClusteredShaderRD/fc830d676d718d165e985651b690e4abfb8be7bf30ec2df026e2c5af629134ce/a108158d1a145ea996cac5b7f02478b69e74c614
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Updated PSO cache (7.7 MiB)
+Updated PSO cache (25.0 MiB)
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 0 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline Vulkan swapchain usage: requested=0x13 supported=0x9f
+Updated PSO cache (28.0 MiB)
+DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+Loading resource: res://<private-resource-e82d1856b1b7> remapped: res://<private-resource-e82d1856b1b7>
+Loading resource: res://<private-resource-bf82ca6eaf92> remapped: res://<private-resource-bf82ca6eaf92>
+Completed load for: 'res://<private-resource-e82d1856b1b7>' remapped 'res://<private-resource-e82d1856b1b7>' at thread -1
+Updated PSO cache (31.0 MiB)
+DLSS SR requested options: viewport=2 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS SR requested options: viewport=3 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS SR requested options: viewport=4 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+DLSS SR requested options: viewport=5 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)
+OBSERVER_STARTUP_ONLY
+[Vulkan Loader] DEBUG | LAYER:  Unloading layer library <local-path>
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Freeing Default Tex_Blit Shader
+MultiUmaBuffer 'RENDER_LIST_OPAQUE' used a total of 4 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_MOTION' used a total of 4 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_ALPHA' used a total of 4 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'RENDER_LIST_SECONDARY' used a total of 4 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+MultiUmaBuffer 'CANVAS_INSTANCE_DATA' used a total of 1 buffers. A large number may indicate a waste of VRAM and can be brought down by tweaking MAX_EXTRA_BUFFERS for this buffer.
+Streamline terminal Vulkan device wait starting.
+Streamline terminal Vulkan device idle completed (VkResult 0).
+Streamline SDK shutdown starting after terminal GPU wait.
+Streamline SDK shutdown completed before native graphics teardown.
+Accessibility: window 0 adapter destroyed.
+Updated PSO cache (33.1 MiB)
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.

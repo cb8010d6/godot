@@ -1,0 +1,2093 @@
+{
+  "status": "FORCED_RESULTS_DIAGNOSTIC_COMPLETE",
+  "cases": [
+    {
+      "case": {
+        "id": "skate-p4-472-fsr",
+        "game": "skate",
+        "players": 4,
+        "map": 0,
+        "engine": "472",
+        "mode": "fsr"
+      },
+      "status": "FORCED_RESULTS_TARGET_NOT_OBSERVED",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=skate",
+        "--demo=4",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>"
+      ],
+      "preflight_seconds_after_play": 0,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "f9680998efca5547f26bba62fe43644eed621140f49f67a8c42487d8948fa5d0",
+      "started_unix": 1793071061.7423773,
+      "target_projection_invert_count": 0,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793071128.8683176,
+      "observer_summary": {
+        "captures": [
+          {
+            "at_seconds": 18.992845,
+            "height": 900,
+            "name": "play_start",
+            "sha256": "f27ee8cb4a5e9995436c1a0b3b862b3956dd5e96c293c95da6499d083147e241",
+            "width": 1600
+          },
+          {
+            "at_seconds": 26.020065,
+            "height": 900,
+            "name": "play_10s",
+            "sha256": "58944ab522fe9c9ddaf4e0b4c675fde7e800ed35bed85605c47a0d49bbf4eecb",
+            "width": 1600
+          },
+          {
+            "at_seconds": 30.865802,
+            "height": 900,
+            "name": "results",
+            "sha256": "f672b50fa8c0ff43a480475400db97307a505fabd62b2cd7e8713204f06ec664",
+            "width": 1600
+          },
+          {
+            "at_seconds": 40.089987,
+            "height": 900,
+            "name": "podium",
+            "sha256": "4d6608efdc1abcffb2fe7debf977afaa12337754ef00dd690c45a6d7554ac4f3",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "official",
+          "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+          "hex": 263938,
+          "major": 4,
+          "minor": 7,
+          "patch": 2,
+          "status": "stable",
+          "string": "4.7.2-stable (official)",
+          "timestamp": 0
+        },
+        "errors": [],
+        "forced_results_at_seconds": 30.404393,
+        "forced_results_phase_time": 13.9360123333336,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 42.596966,
+          "dlss_available": false,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "sdk_enabled": false
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 11.3923566666668,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.949558019638062,
+                -0.0333577357232571,
+                0.311812222003937
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.10155630111694,
+                0.902056753635406,
+                -37.6462478637695
+              ],
+              "camera_projection": 0,
+              "course_progress": 79.6447601318359,
+              "draw_position": [
+                -0.0579294487833977,
+                -1.98287296295166,
+                -79.6574554443359
+              ],
+              "position": [
+                -0.0410030484199524,
+                -1.98223805427551,
+                -79.6447601318359
+              ],
+              "score": 770,
+              "slot": 1,
+              "speed": 3.67698842478764,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.3449993133545,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.990200757980347,
+                -0.132514014840126,
+                0.0440749824047089
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.6835765838623,
+                -0.389744520187378,
+                -73.7591705322266
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5262145996094,
+              "draw_position": [
+                3.64842700958252,
+                -1.77631044387817,
+                -75.5262145996094
+              ],
+              "position": [
+                3.64842700958252,
+                -1.77631044387817,
+                -75.5262145996094
+              ],
+              "score": 1712,
+              "slot": 2,
+              "speed": 0.0,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.990200757980347,
+                -0.132513970136642,
+                0.0440749824047089
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.68373250961304,
+                -0.389737725257874,
+                -73.759033203125
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5262908935547,
+              "draw_position": [
+                3.64874172210693,
+                -1.77631425857544,
+                -75.5262908935547
+              ],
+              "position": [
+                3.64874172210693,
+                -1.77631425857544,
+                -75.5262908935547
+              ],
+              "score": 1712,
+              "slot": 3,
+              "speed": 0.0,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.930733323097229,
+                -0.0329737812280655,
+                0.364208996295929
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.07712268829346,
+                0.902056753635406,
+                -37.8195152282715
+              ],
+              "camera_projection": 0,
+              "course_progress": 88.2443466186523,
+              "draw_position": [
+                -8.81187343597412,
+                -2.41362357139587,
+                -88.2724761962891
+              ],
+              "position": [
+                -8.81177616119385,
+                -2.41221714019775,
+                -88.2443466186523
+              ],
+              "score": 770,
+              "slot": 4,
+              "speed": 7.97674880371712,
+              "visual_rig_position": [
+                2.75,
+                -20.3449993133545,
+                -565.400024414063
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 0.670000016689301,
+          "root_scaling": 2,
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "forced results after 15 seconds; natural camera and real-time simulation; diagnostic only",
+        "phases": [
+          {
+            "at_seconds": 8.208499,
+            "phase": 0
+          },
+          {
+            "at_seconds": 9.046122,
+            "phase": 1
+          },
+          {
+            "at_seconds": 15.395818,
+            "phase": 2
+          },
+          {
+            "at_seconds": 30.445233,
+            "phase": 3
+          }
+        ],
+        "physics": "Jolt Physics",
+        "podium_observed": {
+          "at_seconds": 39.598185,
+          "dlss_available": false,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "sdk_enabled": false
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 8.80980066666668,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.949558019638062,
+                -0.0333577357232571,
+                0.311812222003937
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.10155630111694,
+                0.902056753635406,
+                -37.6462478637695
+              ],
+              "camera_projection": 0,
+              "course_progress": 79.6447601318359,
+              "draw_position": [
+                -0.0579294487833977,
+                -1.98287296295166,
+                -79.6574554443359
+              ],
+              "position": [
+                -0.0410030484199524,
+                -1.98223805427551,
+                -79.6447601318359
+              ],
+              "score": 770,
+              "slot": 1,
+              "speed": 3.67698842478764,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.3449993133545,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.990200757980347,
+                -0.132514014840126,
+                0.0440749824047089
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.6835765838623,
+                -0.389744520187378,
+                -73.7591705322266
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5262145996094,
+              "draw_position": [
+                3.64842700958252,
+                -1.77631044387817,
+                -75.5262145996094
+              ],
+              "position": [
+                3.64842700958252,
+                -1.77631044387817,
+                -75.5262145996094
+              ],
+              "score": 1712,
+              "slot": 2,
+              "speed": 0.0,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.990200757980347,
+                -0.132513970136642,
+                0.0440749824047089
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.68373250961304,
+                -0.389737725257874,
+                -73.759033203125
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5262908935547,
+              "draw_position": [
+                3.64874172210693,
+                -1.77631425857544,
+                -75.5262908935547
+              ],
+              "position": [
+                3.64874172210693,
+                -1.77631425857544,
+                -75.5262908935547
+              ],
+              "score": 1712,
+              "slot": 3,
+              "speed": 0.0,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.930733323097229,
+                -0.0329737812280655,
+                0.364208996295929
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.07712268829346,
+                0.902056753635406,
+                -37.8195152282715
+              ],
+              "camera_projection": 0,
+              "course_progress": 88.2443466186523,
+              "draw_position": [
+                -8.81187343597412,
+                -2.41362357139587,
+                -88.2724761962891
+              ],
+              "position": [
+                -8.81177616119385,
+                -2.41221714019775,
+                -88.2443466186523
+              ],
+              "score": 770,
+              "slot": 4,
+              "speed": 7.97674880371712,
+              "visual_rig_position": [
+                2.75,
+                -20.3449993133545,
+                -565.400024414063
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 0.670000016689301,
+          "root_scaling": 2,
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": null,
+                "pt": null
+              },
+              "fg": null,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "preflight_seconds_after_play": 0.0,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": -1,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "RESULTS_OBSERVED",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 74.05319951794625,
+              "camera_path_length": 75.05610638966715,
+              "visual_rig_path_length": 74.07741255096951,
+              "course_progress_range": 70.18686628341675
+            },
+            "2": {
+              "body_path_length": 75.25900012354026,
+              "camera_path_length": 71.08800211669904,
+              "visual_rig_path_length": 75.27228385412049,
+              "course_progress_range": 69.3411960601807
+            },
+            "3": {
+              "body_path_length": 75.25914472503513,
+              "camera_path_length": 71.08752164774683,
+              "visual_rig_path_length": 75.27242828849367,
+              "course_progress_range": 69.3411884307861
+            },
+            "4": {
+              "body_path_length": 76.95497540733157,
+              "camera_path_length": 76.36956848431838,
+              "visual_rig_path_length": 76.9940877958928,
+              "course_progress_range": 74.79729413986205
+            }
+          },
+          "frame_count": 1930,
+          "eligible_foreground_play_frames": 248,
+          "excluded_frames": 1682,
+          "frame_ms_p50": 16.298000000000002,
+          "frame_ms_p95": 23.2166,
+          "frame_ms_p99": 24.98816,
+          "frame_ms_max": 27.187,
+          "eligible_frames_over_33_3ms": 0,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    },
+    {
+      "case": {
+        "id": "skate-p4-48-native",
+        "game": "skate",
+        "players": 4,
+        "map": 0,
+        "engine": "48",
+        "mode": "native"
+      },
+      "status": "FORCED_RESULTS_TARGET_NOT_OBSERVED",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=skate",
+        "--demo=4",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>"
+      ],
+      "preflight_seconds_after_play": 0,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "09b42dfd6dfbde55075d35362c036a852ebf7ec43f65a5181d0b4689a1540dd7",
+      "started_unix": 1793071128.8853338,
+      "target_projection_invert_count": 0,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [
+        13908,
+        27848,
+        15804,
+        45424,
+        46108,
+        41956,
+        17776,
+        39964,
+        25464,
+        18784,
+        38736,
+        42564
+      ],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793071205.8591425,
+      "observer_summary": {
+        "captures": [
+          {
+            "at_seconds": 18.166009,
+            "height": 900,
+            "name": "play_start",
+            "sha256": "1b70b7b998b1f8045162f51cd0a6b7ff4b7b25a4ff1a3d27a0db4cbb447c8a1b",
+            "width": 1600
+          },
+          {
+            "at_seconds": 25.183622,
+            "height": 900,
+            "name": "play_10s",
+            "sha256": "231aa231a0ba5e7788df53e09224434bc84afb5350a5eb0fa8124dee9884eb4c",
+            "width": 1600
+          },
+          {
+            "at_seconds": 30.138307,
+            "height": 900,
+            "name": "results",
+            "sha256": "846fefa21f9e41b8bd6ce85d9db02d6f52cdb1fe5d26c2a6c54cf4057ed03ec3",
+            "width": 1600
+          },
+          {
+            "at_seconds": 39.38751,
+            "height": 900,
+            "name": "podium",
+            "sha256": "bcf5806a2b84be9405360d3281598383e5859a4af98d46c075d75395ddaa9a8f",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "1",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "custom_build",
+          "hash": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793041742
+        },
+        "errors": [],
+        "forced_results_at_seconds": 29.600493,
+        "forced_results_phase_time": 13.9981706666668,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 41.429203,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 10.9369836666667,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.998910784721375,
+                -0.0289970003068447,
+                0.0365564748644829
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                5.21917486190796,
+                -0.804564595222473,
+                -74.4704818725586
+              ],
+              "camera_projection": 0,
+              "course_progress": 84.0061569213867,
+              "draw_position": [
+                7.64376401901245,
+                -2.20153856277466,
+                -84.0307769775391
+              ],
+              "position": [
+                7.63595390319824,
+                -2.20030784606934,
+                -84.0061569213867
+              ],
+              "score": 1723,
+              "slot": 1,
+              "speed": 7.42468042285657,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.997565746307373,
+                -0.0277280379086733,
+                0.0639826878905296
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                3.28639650344849,
+                -0.621709287166595,
+                -70.6651306152344
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.7332534790039,
+              "draw_position": [
+                4.07449769973755,
+                -1.78754866123199,
+                -75.7509765625
+              ],
+              "position": [
+                4.0663423538208,
+                -1.78666257858276,
+                -75.7332534790039
+              ],
+              "score": 2571,
+              "slot": 2,
+              "speed": 5.60841962655144,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.923397481441498,
+                -0.0337855257093906,
+                0.38235542178154
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.53473174571991,
+                0.90200412273407,
+                -36.0983543395996
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.7332534790039,
+              "draw_position": [
+                4.07444429397583,
+                -1.78754866123199,
+                -75.7509765625
+              ],
+              "position": [
+                4.06628894805908,
+                -1.78666257858276,
+                -75.7332534790039
+              ],
+              "score": 1071,
+              "slot": 3,
+              "speed": 5.60841956262927,
+              "visual_rig_position": [
+                2.40000009536743,
+                -20.7049999237061,
+                -565.400024414062
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.90935617685318,
+                -0.0279986765235662,
+                0.415075272321701
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -5.22575092315674,
+                -1.00369095802307,
+                -79.5853958129883
+              ],
+              "camera_projection": 0,
+              "course_progress": 101.15926361084,
+              "draw_position": [
+                -9.01031589508057,
+                -2.89962363243103,
+                -101.173439025879
+              ],
+              "position": [
+                -9.01028251647949,
+                -2.89886403083801,
+                -101.15926361084
+              ],
+              "score": 1723,
+              "slot": 4,
+              "speed": 4.07566045125324,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 1.0,
+          "root_scaling": 0,
+          "settings": {
+            "effective_upscale": 0,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 0
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "forced results after 15 seconds; natural camera and real-time simulation; diagnostic only",
+        "phases": [
+          {
+            "at_seconds": 7.428977,
+            "phase": 0
+          },
+          {
+            "at_seconds": 8.241117,
+            "phase": 1
+          },
+          {
+            "at_seconds": 14.595048,
+            "phase": 2
+          },
+          {
+            "at_seconds": 29.621249,
+            "phase": 3
+          }
+        ],
+        "physics": "Jolt Physics",
+        "podium_observed": {
+          "at_seconds": 38.854801,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 8.81209499999998,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.998910784721375,
+                -0.0289970003068447,
+                0.0365564748644829
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                5.21917486190796,
+                -0.804564595222473,
+                -74.4704818725586
+              ],
+              "camera_projection": 0,
+              "course_progress": 84.0061569213867,
+              "draw_position": [
+                7.64376401901245,
+                -2.20153856277466,
+                -84.0307769775391
+              ],
+              "position": [
+                7.63595390319824,
+                -2.20030784606934,
+                -84.0061569213867
+              ],
+              "score": 1723,
+              "slot": 1,
+              "speed": 7.42468042285657,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.997565746307373,
+                -0.0277280379086733,
+                0.0639826878905296
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                3.28639650344849,
+                -0.621709287166595,
+                -70.6651306152344
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.7332534790039,
+              "draw_position": [
+                4.07449769973755,
+                -1.78754866123199,
+                -75.7509765625
+              ],
+              "position": [
+                4.0663423538208,
+                -1.78666257858276,
+                -75.7332534790039
+              ],
+              "score": 2571,
+              "slot": 2,
+              "speed": 5.60841962655144,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.923397481441498,
+                -0.0337855257093906,
+                0.38235542178154
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.53473174571991,
+                0.90200412273407,
+                -36.0983543395996
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.7332534790039,
+              "draw_position": [
+                4.07444429397583,
+                -1.78754866123199,
+                -75.7509765625
+              ],
+              "position": [
+                4.06628894805908,
+                -1.78666257858276,
+                -75.7332534790039
+              ],
+              "score": 1071,
+              "slot": 3,
+              "speed": 5.60841956262927,
+              "visual_rig_position": [
+                2.40000009536743,
+                -20.7049999237061,
+                -565.400024414062
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.90935617685318,
+                -0.0279986765235662,
+                0.415075272321701
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                -5.22575092315674,
+                -1.00369095802307,
+                -79.5853958129883
+              ],
+              "camera_projection": 0,
+              "course_progress": 101.15926361084,
+              "draw_position": [
+                -9.01031589508057,
+                -2.89962363243103,
+                -101.173439025879
+              ],
+              "position": [
+                -9.01028251647949,
+                -2.89886403083801,
+                -101.15926361084
+              ],
+              "score": 1723,
+              "slot": 4,
+              "speed": 4.07566045125324,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 1.0,
+          "root_scaling": 0,
+          "settings": {
+            "effective_upscale": 0,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 0
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 1,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 1.0,
+              "scaling": 0,
+              "screen_space_aa": 1,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "preflight_seconds_after_play": 0.0,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": 6,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "RESULTS_OBSERVED",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 83.23630473526737,
+              "camera_path_length": 82.85597801318521,
+              "visual_rig_path_length": 83.28152887957619,
+              "course_progress_range": 76.06030225753788
+            },
+            "2": {
+              "body_path_length": 73.1049681797161,
+              "camera_path_length": 68.85225381349183,
+              "visual_rig_path_length": 73.10159762885037,
+              "course_progress_range": 67.56565856933598
+            },
+            "3": {
+              "body_path_length": 73.10486369281,
+              "camera_path_length": 68.85227255797422,
+              "visual_rig_path_length": 73.10149398403942,
+              "course_progress_range": 67.56565856933598
+            },
+            "4": {
+              "body_path_length": 96.24190289639945,
+              "camera_path_length": 93.62271666403413,
+              "visual_rig_path_length": 96.2663346674751,
+              "course_progress_range": 93.61757612228398
+            }
+          },
+          "frame_count": 1946,
+          "eligible_foreground_play_frames": 248,
+          "excluded_frames": 1698,
+          "frame_ms_p50": 16.3575,
+          "frame_ms_p95": 21.8789,
+          "frame_ms_p99": 25.447850000000003,
+          "frame_ms_max": 34.579,
+          "eligible_frames_over_33_3ms": 1,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    },
+    {
+      "case": {
+        "id": "skate-p4-48-fsr",
+        "game": "skate",
+        "players": 4,
+        "map": 0,
+        "engine": "48",
+        "mode": "fsr"
+      },
+      "status": "FORCED_RESULTS_TARGET_NOT_OBSERVED",
+      "command": [
+        "<local-path>",
+        "--path",
+        "<local-path>",
+        "--script",
+        "<local-path>",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--",
+        "--game=skate",
+        "--demo=4",
+        "--map=0",
+        "--smoke-report=<local-path>",
+        "--observe-output=<local-path>"
+      ],
+      "preflight_seconds_after_play": 0,
+      "validation_layer_dir": null,
+      "validation_manifest_sha256": null,
+      "validation_settings_sha256": null,
+      "validation_module_readback": "not measured; loader messages do not prove exact loaded module or full sync validation",
+      "implicit_layers_filter": "~implicit~",
+      "settings_sha256": "f9680998efca5547f26bba62fe43644eed621140f49f67a8c42487d8948fa5d0",
+      "started_unix": 1793071205.8708193,
+      "target_projection_invert_count": 0,
+      "exit_code": 0,
+      "timeout": false,
+      "owned_members_at_close": [
+        45692,
+        49736,
+        37296,
+        5328,
+        24896,
+        43256,
+        46640,
+        3912,
+        48016,
+        9504,
+        8040,
+        36848,
+        8160,
+        36736
+      ],
+      "owned_survivors_after_close": [],
+      "ngx_before": [],
+      "ngx_after": [],
+      "errors": [],
+      "finished_unix": 1793071281.696292,
+      "observer_summary": {
+        "captures": [
+          {
+            "at_seconds": 18.50215,
+            "height": 900,
+            "name": "play_start",
+            "sha256": "799dcba70ee9b1be136b5ba7745e8649c4d8da52ecb37191aaf27549a49f3837",
+            "width": 1600
+          },
+          {
+            "at_seconds": 25.493953,
+            "height": 900,
+            "name": "play_10s",
+            "sha256": "478501e416b40a739694ec60eb3957bcf698789298f549d6e835b35ded1ffcab",
+            "width": 1600
+          },
+          {
+            "at_seconds": 30.364607,
+            "height": 900,
+            "name": "results",
+            "sha256": "fdc27853fe83eb3ab718ca7841621af731a320dfad564c766b7f0ddc79a4cef2",
+            "width": 1600
+          },
+          {
+            "at_seconds": 39.619237,
+            "height": 900,
+            "name": "podium",
+            "sha256": "2a395bc2f7a5a712a36f0646348e4d9a17bf4401eb55effe07e71d507f2d5e8d",
+            "width": 1600
+          }
+        ],
+        "disable_fg_plugin": "1",
+        "disable_ota": "1",
+        "driver": "vulkan",
+        "engine": {
+          "build": "custom_build",
+          "hash": "d29e7065306d670a643ca0ea7a362c4b38cea3c5",
+          "hex": 264192,
+          "major": 4,
+          "minor": 8,
+          "patch": 0,
+          "status": "beta1",
+          "string": "4.8-beta1 (custom_build)",
+          "timestamp": 1793041742
+        },
+        "errors": [],
+        "forced_results_at_seconds": 29.881567,
+        "forced_results_phase_time": 13.9057065555558,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "latest": {
+          "at_seconds": 41.927527,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 11.1955720000001,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.996435225009918,
+                -0.0277285501360893,
+                0.0796744003891945
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                2.48125958442688,
+                -0.563367605209351,
+                -69.5549011230469
+              ],
+              "camera_projection": 0,
+              "course_progress": 79.1606750488281,
+              "draw_position": [
+                7.07772922515869,
+                -1.95832788944244,
+                -79.1665573120117
+              ],
+              "position": [
+                7.07502603530884,
+                -1.95803368091583,
+                -79.1606750488281
+              ],
+              "score": 1435,
+              "slot": 1,
+              "speed": 5.8705944512786,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.926231563091278,
+                -0.0338585264980793,
+                0.375431388616562
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.54278445243835,
+                0.90204781293869,
+                -36.068042755127
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.1931686401367,
+              "draw_position": [
+                3.83756065368652,
+                -1.75987148284912,
+                -75.1974334716797
+              ],
+              "position": [
+                3.83613729476929,
+                -1.7596583366394,
+                -75.1931686401367
+              ],
+              "score": 970,
+              "slot": 2,
+              "speed": 4.07389076862935,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.3449993133545,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.99035918712616,
+                -0.132797822356224,
+                0.0394149795174599
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.82059001922607,
+                -0.394017368555069,
+                -73.8444290161133
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5071716308594,
+              "draw_position": [
+                3.62804174423218,
+                -1.77535820007324,
+                -75.5071716308594
+              ],
+              "position": [
+                3.62804174423218,
+                -1.77535820007324,
+                -75.5071716308594
+              ],
+              "score": 1712,
+              "slot": 3,
+              "speed": 0.0,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.931687414646149,
+                -0.0324664115905762,
+                0.361807405948639
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                0.533326327800751,
+                0.900797128677368,
+                -38.6035232543945
+              ],
+              "camera_projection": 0,
+              "course_progress": 81.3747329711914,
+              "draw_position": [
+                -8.77417850494385,
+                -2.06917238235474,
+                -81.3834533691406
+              ],
+              "position": [
+                -8.77402687072754,
+                -2.06873655319214,
+                -81.3747329711914
+              ],
+              "score": 735,
+              "slot": 4,
+              "speed": 7.90367570614746,
+              "visual_rig_position": [
+                2.40000009536743,
+                -20.7049999237061,
+                -565.400024414062
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 0.670000016689301,
+          "root_scaling": 2,
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "observer": "forced results after 15 seconds; natural camera and real-time simulation; diagnostic only",
+        "phases": [
+          {
+            "at_seconds": 7.692989,
+            "phase": 0
+          },
+          {
+            "at_seconds": 8.519352,
+            "phase": 1
+          },
+          {
+            "at_seconds": 14.869852,
+            "phase": 2
+          },
+          {
+            "at_seconds": 29.905266,
+            "phase": 3
+          }
+        ],
+        "physics": "Jolt Physics",
+        "podium_observed": {
+          "at_seconds": 39.075906,
+          "dlss_available": true,
+          "fg_status": {
+            "available": false,
+            "eligible": false,
+            "reason": "unavailable",
+            "rendered_3d_views": 1,
+            "requested_3d_views": 0,
+            "sdk_enabled": false,
+            "supported_generated_frames": 0
+          },
+          "game": "skate",
+          "map": 0,
+          "phase": 3,
+          "phase_time": 8.80402866666668,
+          "players": [
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.996435225009918,
+                -0.0277285501360893,
+                0.0796744003891945
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                2.48125958442688,
+                -0.563367605209351,
+                -69.5549011230469
+              ],
+              "camera_projection": 0,
+              "course_progress": 79.1606750488281,
+              "draw_position": [
+                7.07772922515869,
+                -1.95832788944244,
+                -79.1665573120117
+              ],
+              "position": [
+                7.07502603530884,
+                -1.95803368091583,
+                -79.1606750488281
+              ],
+              "score": 1435,
+              "slot": 1,
+              "speed": 5.8705944512786,
+              "visual_rig_position": [
+                -1.35000002384186,
+                -20.1550006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.926231563091278,
+                -0.0338585264980793,
+                0.375431388616562
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                1.54278445243835,
+                0.90204781293869,
+                -36.068042755127
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.1931686401367,
+              "draw_position": [
+                3.83756065368652,
+                -1.75987148284912,
+                -75.1974334716797
+              ],
+              "position": [
+                3.83613729476929,
+                -1.7596583366394,
+                -75.1931686401367
+              ],
+              "score": 970,
+              "slot": 2,
+              "speed": 4.07389076862935,
+              "visual_rig_position": [
+                1.35000002384186,
+                -20.3449993133545,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.99035918712616,
+                -0.132797822356224,
+                0.0394149795174599
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                4.82059001922607,
+                -0.394017368555069,
+                -73.8444290161133
+              ],
+              "camera_projection": 0,
+              "course_progress": 75.5071716308594,
+              "draw_position": [
+                3.62804174423218,
+                -1.77535820007324,
+                -75.5071716308594
+              ],
+              "position": [
+                3.62804174423218,
+                -1.77535820007324,
+                -75.5071716308594
+              ],
+              "score": 1712,
+              "slot": 3,
+              "speed": 0.0,
+              "visual_rig_position": [
+                0.0,
+                -19.9050006866455,
+                -566.0
+              ]
+            },
+            {
+              "camera_far": 3000.0,
+              "camera_forward": [
+                -0.931687414646149,
+                -0.0324664115905762,
+                0.361807405948639
+              ],
+              "camera_fov": 52.0000381469727,
+              "camera_keep_aspect": 1,
+              "camera_near": 0.0500000007450581,
+              "camera_position": [
+                0.533326327800751,
+                0.900797128677368,
+                -38.6035232543945
+              ],
+              "camera_projection": 0,
+              "course_progress": 81.3747329711914,
+              "draw_position": [
+                -8.77417850494385,
+                -2.06917238235474,
+                -81.3834533691406
+              ],
+              "position": [
+                -8.77402687072754,
+                -2.06873655319214,
+                -81.3747329711914
+              ],
+              "score": 735,
+              "slot": 4,
+              "speed": 7.90367570614746,
+              "visual_rig_position": [
+                2.40000009536743,
+                -20.7049999237061,
+                -565.400024414062
+              ]
+            }
+          ],
+          "podium_at": 8.8,
+          "podium_on": true,
+          "root_camera": "/root/SkateGame/@Camera3D@2",
+          "root_scale": 0.670000016689301,
+          "root_scaling": 2,
+          "settings": {
+            "effective_upscale": 2,
+            "fg": false,
+            "hdr": false,
+            "lighting": 0,
+            "nis": 0,
+            "preset": 0,
+            "quality": 2,
+            "upscale": 2
+          },
+          "viewports": [
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437/@Camera3D@438",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@435/@SubViewportContainer@436/@SubViewport@437",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482/@Camera3D@483",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@480/@SubViewportContainer@481/@SubViewport@482",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            },
+            {
+              "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527/@Camera3D@528",
+              "environment": {
+                "ddgi": false,
+                "pt": false
+              },
+              "fg": false,
+              "msaa": 0,
+              "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@525/@SubViewportContainer@526/@SubViewport@527",
+              "scale": 0.670000016689301,
+              "scaling": 2,
+              "screen_space_aa": 0,
+              "sharpness": 0.200000002980232,
+              "size": [
+                796,
+                446
+              ]
+            }
+          ],
+          "views_visible": false,
+          "window": {
+            "focused": true,
+            "max_fps": 60,
+            "mode": 0,
+            "vsync": 1
+          }
+        },
+        "preflight_seconds_after_play": 0.0,
+        "rendering_method": "forward_plus",
+        "resolution": [
+          1600,
+          900
+        ],
+        "scaling_enums": {
+          "dlss": 6,
+          "fsr": 2,
+          "native": 0
+        },
+        "status": "RESULTS_OBSERVED",
+        "ticks": 120,
+        "analysis": {
+          "movement_sampled_path_units": {
+            "1": {
+              "body_path_length": 80.58447277544784,
+              "camera_path_length": 80.08315359340449,
+              "visual_rig_path_length": 80.57721528324143,
+              "course_progress_range": 73.38187551498415
+            },
+            "2": {
+              "body_path_length": 75.10087329344711,
+              "camera_path_length": 72.3440392410731,
+              "visual_rig_path_length": 75.09081936362695,
+              "course_progress_range": 69.3132724761963
+            },
+            "3": {
+              "body_path_length": 76.15415029789267,
+              "camera_path_length": 71.76639879428275,
+              "visual_rig_path_length": 76.13402941453492,
+              "course_progress_range": 69.8877811431885
+            },
+            "4": {
+              "body_path_length": 77.80383313161813,
+              "camera_path_length": 77.14854700535842,
+              "visual_rig_path_length": 77.79230162094785,
+              "course_progress_range": 75.42273092269895
+            }
+          },
+          "frame_count": 1930,
+          "eligible_foreground_play_frames": 243,
+          "excluded_frames": 1687,
+          "frame_ms_p50": 16.736,
+          "frame_ms_p95": 22.540299999999995,
+          "frame_ms_p99": 29.235479999999992,
+          "frame_ms_max": 37.647,
+          "eligible_frames_over_33_3ms": 1,
+          "eligible_frames_over_50ms": 0,
+          "eligible_frames_over_100ms": 0,
+          "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+        }
+      },
+      "frozen_inputs_unchanged": true
+    }
+  ],
+  "preflight_seconds_after_play": 0,
+  "note": "Forced results after 15 seconds is a diagnostic only, never a full-round or gameplay acceptance."
+}

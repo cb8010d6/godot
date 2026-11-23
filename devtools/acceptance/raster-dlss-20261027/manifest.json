@@ -1,0 +1,1257 @@
+{
+  "schema_version": 1,
+  "scope": "Redacted selected text and byte-identical selected PNGs; original local records retained separately.",
+  "files": [
+    {
+      "file": "matches/matrix.json",
+      "kind": "json",
+      "raw_bytes": 106196,
+      "raw_sha256": "722de328d36aa429359a312a3c99589f0d7b85a8894f0d2522c5d8aa271c8194",
+      "published_bytes": 99115,
+      "published_sha256": "d159515189f6feba9aa5982830a2ae143975a201cabea947ff3339a9dda2f985",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 6983,
+      "raw_sha256": "365ac7ffed0743d1cdc1103ea4c2caa5e08e01f34ec8cee8ee53960f7be6937e",
+      "published_bytes": 6366,
+      "published_sha256": "1745fadd1c7a3dd43ac8cec32e304d7fd8a4ae62dda979c17ad593ee1592f63b",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-fsr/engine.log",
+      "kind": "log",
+      "raw_bytes": 1097,
+      "raw_sha256": "15baefaee12872028141b0a5be25033db6a6ece578695408a2344ae2666407c4",
+      "published_bytes": 1097,
+      "published_sha256": "15baefaee12872028141b0a5be25033db6a6ece578695408a2344ae2666407c4",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p1-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 3468,
+      "raw_sha256": "ea9411ead9055c10e2d96393675cb4bb2f6a46a969ae648a2d033b72bc1fac18",
+      "published_bytes": 3946,
+      "published_sha256": "486db02554b98cb57d023a3607426cae007d98d2555fec6983bbc9b91bc0ce17",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-fsr/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 151161,
+      "raw_sha256": "5260b58c51f2024638b505d73eb4627fc2baff2d17e927aa46cf28a8b36c27f0",
+      "published_bytes": 151129,
+      "published_sha256": "e6913ceed708b337efd2e256f06dc12da736d8f18ebd36faeb4a24630ebe2ad1",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-fsr/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 237175,
+      "raw_sha256": "231ffd397611fdf5a4f675347b67a8db7d2838fcb915c9ae2a63a524991dc051",
+      "published_bytes": 237175,
+      "published_sha256": "231ffd397611fdf5a4f675347b67a8db7d2838fcb915c9ae2a63a524991dc051",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/skate-p1-472-fsr-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1923322,
+      "raw_sha256": "719994fa195f80ab1b4717ed2e42e7cf38e60132ed078721366ad6b1a389e039",
+      "published_bytes": 1923322,
+      "published_sha256": "719994fa195f80ab1b4717ed2e42e7cf38e60132ed078721366ad6b1a389e039",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/skate-p1-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 7125,
+      "raw_sha256": "860c86f0f6f9fd26ec35c6e028e25c0a8ba4d7ab2c59e95a9e03764c86f8d195",
+      "published_bytes": 6470,
+      "published_sha256": "cf55a09ba9c991866e276b05a2b24821d3d2fac642bb3a6d14c62622b2f3f6a4",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-dlss/engine.log",
+      "kind": "log",
+      "raw_bytes": 2610,
+      "raw_sha256": "81d49d7bbf0c8d6659e2f89015fd557537c899bec2c16cb5fa5d3dafede736f2",
+      "published_bytes": 1975,
+      "published_sha256": "9d8eb5168dd6defbedcdb2b061a83ab2eec15e4f5d3cc4e25b8235117cbabdae",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p1-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 3556,
+      "raw_sha256": "a46cc8dc5b279acf127aa2ece4b9d97e50b64aed7b23398f19968ab4bc98adfc",
+      "published_bytes": 4043,
+      "published_sha256": "78c72e960a86661c9a8b29c014ea3dafeb74c12e939d2715192b36c1ee3e4738",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-dlss/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 149201,
+      "raw_sha256": "bee7e2b86ed060e36216ea3ca402a839b406072518f43e69056f7bb38628d988",
+      "published_bytes": 149175,
+      "published_sha256": "f6f46d8823db95e5f69b93237d4d8284af6b15313599c28365e9fa15bf1bfec6",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-dlss/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 224778,
+      "raw_sha256": "47483fc3af476dda99b0335ba0efc7c8803d2876eed3fb18f4ce176e870a081d",
+      "published_bytes": 224778,
+      "published_sha256": "47483fc3af476dda99b0335ba0efc7c8803d2876eed3fb18f4ce176e870a081d",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/skate-p1-48-dlss-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1594130,
+      "raw_sha256": "6d6e4f30b73bbeb88a5ab5f5e4372e3ed9f18b73e5631e6a3de0f485aac6a4a9",
+      "published_bytes": 1594130,
+      "published_sha256": "6d6e4f30b73bbeb88a5ab5f5e4372e3ed9f18b73e5631e6a3de0f485aac6a4a9",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/skate-p4-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 12785,
+      "raw_sha256": "130afc90fe9514d7d1348c98f3dd0562f876b02bf3355e2c1d79842f9f0a140f",
+      "published_bytes": 11988,
+      "published_sha256": "e88cd9688c0fdb609bb7dc7c228e5ef5d22335bbcdc2ab9f5fb68f609a20ca54",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-472-fsr/engine.log",
+      "kind": "log",
+      "raw_bytes": 4170,
+      "raw_sha256": "abb1aba4c0fdfebfa5013b191b84bb544caba581064e0a85d65be15a3d1099ff",
+      "published_bytes": 4170,
+      "published_sha256": "abb1aba4c0fdfebfa5013b191b84bb544caba581064e0a85d65be15a3d1099ff",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p4-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 7360,
+      "raw_sha256": "7fa6736ef1e98001265fbc51ba0988d7e491465091ebfe0cf184a9440883530b",
+      "published_bytes": 8531,
+      "published_sha256": "ed1578f07f997a27ea74e0689d8d2f50b734567d5d3e27aa0cf9c57ea57fdb51",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-472-fsr/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 493162,
+      "raw_sha256": "86e46f0832a725d44b681b3e765e5e93f605a1a33c4b8111747e2e76778631d9",
+      "published_bytes": 493040,
+      "published_sha256": "aeb3f0069a4cdf5bda4276fa296a17df0e047926b204b965246dede6857b6b53",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-472-fsr/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 247593,
+      "raw_sha256": "1ca07273bca5bda51ac55ca6d79588a71c464035523890b4a9383c188fd1ca7d",
+      "published_bytes": 247593,
+      "published_sha256": "1ca07273bca5bda51ac55ca6d79588a71c464035523890b4a9383c188fd1ca7d",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/skate-p4-472-fsr-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1985668,
+      "raw_sha256": "a5f8218b85e55168e10f3ba0749882d56821d1b2ef259894da0614d97426917f",
+      "published_bytes": 1985668,
+      "published_sha256": "a5f8218b85e55168e10f3ba0749882d56821d1b2ef259894da0614d97426917f",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/skate-p4-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 12889,
+      "raw_sha256": "3e1bb0c13e7d40077b6ffaad27a9a16bb34c196911f153a1b66f2aba00cff3cd",
+      "published_bytes": 12054,
+      "published_sha256": "51947263a520181d43896fa9353d4063738e18bb22e3d08b6ec249d3fdb4e9aa",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-48-dlss/engine.log",
+      "kind": "log",
+      "raw_bytes": 5553,
+      "raw_sha256": "7d6f02f84c716692941774aee9b920eb56f0a98742232d0978b267ba1a24f1e6",
+      "published_bytes": 4918,
+      "published_sha256": "b20137a947d10b908b2cbcf82525e1caaa2ed06d696cc17ae48ae6acafb5ef13",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p4-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 7415,
+      "raw_sha256": "509350a1d95d0d8d3e289b11975c53364be34b0cc5bcbbcc42bc3cc18637a6ef",
+      "published_bytes": 8595,
+      "published_sha256": "aef09f1799bdc9caa87c4e4fef0954f48702ab831bfaca1ba95305c0d51acc86",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-48-dlss/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 509877,
+      "raw_sha256": "6d7bfc75a71e86307f5b517b7e64836f359b7bbd7e58b98f95dbe64d7b9f0f7c",
+      "published_bytes": 509750,
+      "published_sha256": "3d225e459bed3769a43e5e42f021229ae12062e8cc5740390495642c6043e8f4",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p4-48-dlss/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 251149,
+      "raw_sha256": "c9ea4dab2a607e1eec83d79a593ed2ee3d9e0ae5f066f1bcc9f0f123f8f633de",
+      "published_bytes": 251149,
+      "published_sha256": "c9ea4dab2a607e1eec83d79a593ed2ee3d9e0ae5f066f1bcc9f0f123f8f633de",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/skate-p4-48-dlss-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1686963,
+      "raw_sha256": "4990ba0873a9271937fcb342b49e5e4f17d4be6c6d8b58773549f01aabb4c429",
+      "published_bytes": 1686963,
+      "published_sha256": "4990ba0873a9271937fcb342b49e5e4f17d4be6c6d8b58773549f01aabb4c429",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/ski-p1-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 6964,
+      "raw_sha256": "fe51d497d3e5d4c4ee09cc54bbb98325ab8aff346697f236a19f8c041c829c46",
+      "published_bytes": 6351,
+      "published_sha256": "fcce0b96298595f569ff0a80f76018c30e1e299adacbbd81402ffbbdf0959646",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-472-fsr/engine.log",
+      "kind": "log",
+      "raw_bytes": 1105,
+      "raw_sha256": "ee30db39b75783f1a90606af4781e88ae21dbc923783604369e5f64f6f423f2b",
+      "published_bytes": 1105,
+      "published_sha256": "ee30db39b75783f1a90606af4781e88ae21dbc923783604369e5f64f6f423f2b",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/ski-p1-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 3464,
+      "raw_sha256": "2efaa966fcd031c00eeee49d6ce43e03fc683655e9d3251cd5ba3b58e716d764",
+      "published_bytes": 3935,
+      "published_sha256": "8207794db525c3b1e58ba304c6c60afdd5182e640b1aad86e191dc5b19a4cc9f",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-472-fsr/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 106709,
+      "raw_sha256": "97e23836c5005c2e961318e7634ee9c5ef99d9062fcb9b29285eac53ea3adc64",
+      "published_bytes": 106610,
+      "published_sha256": "2b7307d30448864f81e687fa40d2f18465d03926126a638b1481986f710bf217",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-472-fsr/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 164821,
+      "raw_sha256": "ca3dff0814dc07cdc43c7ff831287caec853246ffce162e26cf433d59ebb585f",
+      "published_bytes": 164821,
+      "published_sha256": "ca3dff0814dc07cdc43c7ff831287caec853246ffce162e26cf433d59ebb585f",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/ski-p1-472-fsr-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1557498,
+      "raw_sha256": "ddc9dd32034fa253429eccef986976ab3136e09ff05e8d11f69a760f112b2967",
+      "published_bytes": 1557498,
+      "published_sha256": "ddc9dd32034fa253429eccef986976ab3136e09ff05e8d11f69a760f112b2967",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/ski-p1-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 7103,
+      "raw_sha256": "31fc68d2b14330cca804674aadf43af77f21aae7672a4c1e7fdb8feb370b3956",
+      "published_bytes": 6452,
+      "published_sha256": "b3d1de5db9418dcc7aa2bb21fe263109faa8d7a7a825ed1789276ece61468170",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-48-dlss/engine.log",
+      "kind": "log",
+      "raw_bytes": 2643,
+      "raw_sha256": "f64b7f80351ee801de491cede867b7ce2b33a2836f7fc84bc68f18f700ea641a",
+      "published_bytes": 2008,
+      "published_sha256": "5efedc1c6a73190d4abf86e0d16445869e81f2f6778d4205424c97503ab3ec0a",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/ski-p1-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 3557,
+      "raw_sha256": "3e732b2e1557e9b5b0f18b6bf21c12280f3398d550b77165da2c008eff04e512",
+      "published_bytes": 4037,
+      "published_sha256": "8fed512e64953e27c0dadc811cf3b8c1e536c5a00fa5c2ca03aec84650c92e97",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-48-dlss/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 117431,
+      "raw_sha256": "cec98ce9a4a98192c4c005f7833b8734feae781027138a79b422231cfc3f0045",
+      "published_bytes": 117333,
+      "published_sha256": "2dc9ecb4853770b2588e3e4086a09cbed9a9ecabe15d3517da2862d30415d8b1",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p1-48-dlss/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 173737,
+      "raw_sha256": "cb6d3cf918ee039fc9d624874de751d858291f48447057eb28ba9ee4c1a679e8",
+      "published_bytes": 173737,
+      "published_sha256": "cb6d3cf918ee039fc9d624874de751d858291f48447057eb28ba9ee4c1a679e8",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/ski-p1-48-dlss-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1434057,
+      "raw_sha256": "50a8036db4335208e65ae3990207317ed4f413222890a7a347f822aac5fbba86",
+      "published_bytes": 1434057,
+      "published_sha256": "50a8036db4335208e65ae3990207317ed4f413222890a7a347f822aac5fbba86",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/ski-p4-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 12723,
+      "raw_sha256": "dceeb154cc6c01c2a5383b6aedf3f48c205a804f931464207a0b00fae8934b81",
+      "published_bytes": 11930,
+      "published_sha256": "961487e4fb2df01d3b8111bccf0bb8677f409ce5a47e30f37046df2512d800dc",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-472-fsr/engine.log",
+      "kind": "log",
+      "raw_bytes": 3845,
+      "raw_sha256": "5dffc8bfc80557574c3f32923e466276f72ea2d9a8f0a08ace7600150e413a17",
+      "published_bytes": 3845,
+      "published_sha256": "5dffc8bfc80557574c3f32923e466276f72ea2d9a8f0a08ace7600150e413a17",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/ski-p4-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 7314,
+      "raw_sha256": "fac3332cb0f9f44d4c4bfa24a384f1bed14162af80d78f90160dc5e426bed1f0",
+      "published_bytes": 8485,
+      "published_sha256": "60bce927e84bd48645c06a94b10994832d39160d20324d474f4fc6a996aeeafb",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-472-fsr/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 328968,
+      "raw_sha256": "4e278d910d5c3b6bc85a22267a34a9cb3257167e2970442899577929efee6e57",
+      "published_bytes": 328968,
+      "published_sha256": "4e278d910d5c3b6bc85a22267a34a9cb3257167e2970442899577929efee6e57",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-472-fsr/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 165018,
+      "raw_sha256": "dfaa088ee0fe7c935f2f4d87463c8375ff65ff17931286074d86d092e5184e53",
+      "published_bytes": 165018,
+      "published_sha256": "dfaa088ee0fe7c935f2f4d87463c8375ff65ff17931286074d86d092e5184e53",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/ski-p4-472-fsr-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1540726,
+      "raw_sha256": "3cb48449b0c6f7569e54bb86f14b3f2d62c4c75c3745df54437545c10c1a6e64",
+      "published_bytes": 1540726,
+      "published_sha256": "3cb48449b0c6f7569e54bb86f14b3f2d62c4c75c3745df54437545c10c1a6e64",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/ski-p4-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 12867,
+      "raw_sha256": "d177e79e46d730acfe7212768597da8a1515b2fa64175173b43e35973473333a",
+      "published_bytes": 12036,
+      "published_sha256": "136574c88ec24509f92eaf3dca8b0965d4eefdabbb808284c25ccb067c3b6927",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-48-dlss/engine.log",
+      "kind": "log",
+      "raw_bytes": 5375,
+      "raw_sha256": "3bc8c8a91a9873701640028b84f3dfe0fe271fd25e1f4571be28d43c144a301a",
+      "published_bytes": 4740,
+      "published_sha256": "3062293ff38cd83f8c2152600464b4f06c3a35ae5445b45e0c4a6a3efbfd8077",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/ski-p4-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 7385,
+      "raw_sha256": "33acc4a19521c2b2bd9f43b2206ca4dae3882ffc546998d02539d03ef5990590",
+      "published_bytes": 8565,
+      "published_sha256": "5bbeb17db66ecc6a504d033203806fdb71645517d981e2664106a5db812e6b8f",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-48-dlss/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 331596,
+      "raw_sha256": "83f0f12926a56f3b8d54101ad8ac98f55c6f423df39288e747bc6cc8b8163052",
+      "published_bytes": 331596,
+      "published_sha256": "83f0f12926a56f3b8d54101ad8ac98f55c6f423df39288e747bc6cc8b8163052",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/ski-p4-48-dlss/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 159025,
+      "raw_sha256": "a3f29d7d342ee9c3926efcb6953a5e6ef6c917bfcf54c21f93688db1b07340fb",
+      "published_bytes": 159025,
+      "published_sha256": "a3f29d7d342ee9c3926efcb6953a5e6ef6c917bfcf54c21f93688db1b07340fb",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/ski-p4-48-dlss-play_20s.png",
+      "kind": "image",
+      "raw_bytes": 1418865,
+      "raw_sha256": "44450036a000fc0a6bc597a902fa79a34e718ae2ef4e6013204862f1fd3d9d44",
+      "published_bytes": 1418865,
+      "published_sha256": "44450036a000fc0a6bc597a902fa79a34e718ae2ef4e6013204862f1fd3d9d44",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "matches/skate-p1-472-native/result.json",
+      "kind": "json",
+      "raw_bytes": 6981,
+      "raw_sha256": "8e5cba25522b8b91ce40d12c48edff68a52f3171f9d32093bea365b3487cf0e1",
+      "published_bytes": 6358,
+      "published_sha256": "7a773b336efe13fea559ba913a649212fa052c67ad0853def747d239f8ab2289",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-native/engine.log",
+      "kind": "log",
+      "raw_bytes": 1028,
+      "raw_sha256": "5c704698bc8d16214e08491bdd1a811d40f020b5f1647df391b4f23833b0af79",
+      "published_bytes": 1028,
+      "published_sha256": "5c704698bc8d16214e08491bdd1a811d40f020b5f1647df391b4f23833b0af79",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p1-472-native/observer.json",
+      "kind": "json",
+      "raw_bytes": 3453,
+      "raw_sha256": "8922281f58052368a4330a413c73e47e9d5f13c80b1874c02258984801913cba",
+      "published_bytes": 3931,
+      "published_sha256": "816038d03471de05b40fc8233a0e87db3a54d599732f3edcb579c1904859a0f7",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-native/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 141372,
+      "raw_sha256": "0540545b9e57398f653c731251e05422d811a945a515cc58014398c01759f029",
+      "published_bytes": 141347,
+      "published_sha256": "bec95046f212b3be9d05b27fbda3c46ac9548b1afce3823fc16cbea077c4d1d7",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-472-native/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 224925,
+      "raw_sha256": "5201af9788cc6e69b6dd28c44d7f2858f675b3f759bd3d7c1275256e8759075d",
+      "published_bytes": 224925,
+      "published_sha256": "5201af9788cc6e69b6dd28c44d7f2858f675b3f759bd3d7c1275256e8759075d",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p1-48-native/result.json",
+      "kind": "json",
+      "raw_bytes": 7134,
+      "raw_sha256": "93f5e72696e02e3c25599b4709b04cdfae61bf1f6b39abed29cbe4f30a42d692",
+      "published_bytes": 6475,
+      "published_sha256": "c84862613f0ee9330c17a0acad7e4187788c46253d22b8b2d0979d54ebb7f46b",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-native/engine.log",
+      "kind": "log",
+      "raw_bytes": 2560,
+      "raw_sha256": "32006c492bb559f58bcd203fc2cb6ad35584abc6fdb39d1117527c442f29ebff",
+      "published_bytes": 1925,
+      "published_sha256": "6073ffe1ea56e62bd0cc36a2f81c721f58ddaec33cdad7f466cc8a7e00055d72",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "matches/skate-p1-48-native/observer.json",
+      "kind": "json",
+      "raw_bytes": 3558,
+      "raw_sha256": "65415714914243c394c7d70358607e6d538d9c6b9a78f950c9f1d26d2822321e",
+      "published_bytes": 4045,
+      "published_sha256": "b8d73e66ea5749cb691e03e7842284913af00167aa2fb8d34ee5760775f26f34",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-native/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 149447,
+      "raw_sha256": "5a3247f2d0736eb87583d6d5e824cf035e0646d999688aaa388f513c6e6be501",
+      "published_bytes": 149421,
+      "published_sha256": "3072e32e34a773d7dc20bd6f47fca7f5ec4e437e048e91be2c558af2aed326a2",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "matches/skate-p1-48-native/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 224820,
+      "raw_sha256": "9aa5db10325d70173af6e879e9ef8fa0886c206c88a8767b77f2f7ea04c5dbdf",
+      "published_bytes": 224820,
+      "published_sha256": "9aa5db10325d70173af6e879e9ef8fa0886c206c88a8767b77f2f7ea04c5dbdf",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/result.json",
+      "kind": "json",
+      "raw_bytes": 63829,
+      "raw_sha256": "4ad4e735c1d53786a0fd86eb4479c33c14a36266664d7eb2e149f8fb7c821f40",
+      "published_bytes": 56726,
+      "published_sha256": "3a6d23d624acaa04c027cd3062fc2554d9d4bb57a929343cf5bf1e664927e308",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/engine.log",
+      "kind": "log",
+      "raw_bytes": 187181,
+      "raw_sha256": "d99340c56c630c3d56e545b88d8d8deac5ff6d0fd6fff7108ca47eb3a334eba1",
+      "published_bytes": 133068,
+      "published_sha256": "7fa6b9b52acc8669b63e05b328081e07896f0d78da1624c14a0916c2fe84bfbb",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/module-samples.json",
+      "kind": "json",
+      "raw_bytes": 38360,
+      "raw_sha256": "c5872328332dc5102abfa27fb9c17034be88ee7a3ff49eed47cde435eade0016",
+      "published_bytes": 32079,
+      "published_sha256": "3832f56c7a4bc829d4c509f2608b8aa201227f6c5879750886c54a8a92125e12",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/observer.json",
+      "kind": "json",
+      "raw_bytes": 3355,
+      "raw_sha256": "d65c84a1d151764c07c1953df906b280032c42d3bc313fe0c8fb350dc003eb87",
+      "published_bytes": 3802,
+      "published_sha256": "dd0bac083ab2297e41ebb9846650ea12a805e0222c2d5c5b052c2dd5543f697d",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 30559,
+      "raw_sha256": "f3374a773917a42cd0ead44fa919305d4150f3461c853d37dd1af781a53b0a60",
+      "published_bytes": 30559,
+      "published_sha256": "f3374a773917a42cd0ead44fa919305d4150f3461c853d37dd1af781a53b0a60",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 13370,
+      "raw_sha256": "5205279cd108c290563660b9abdfc33f77559bd111c1758db05e37a7c3879fc4",
+      "published_bytes": 13370,
+      "published_sha256": "5205279cd108c290563660b9abdfc33f77559bd111c1758db05e37a7c3879fc4",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p1-48-dlss-strict/vk_layer_settings.txt",
+      "kind": "txt",
+      "raw_bytes": 201,
+      "raw_sha256": "f30389c1f3ea1115d5e74ef28c58f97596549c49f19522a9ee9ad410c0c7182a",
+      "published_bytes": 201,
+      "published_sha256": "f30389c1f3ea1115d5e74ef28c58f97596549c49f19522a9ee9ad410c0c7182a",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/result.json",
+      "kind": "json",
+      "raw_bytes": 70400,
+      "raw_sha256": "9268ffed3b70cec2958ddd3b08189fd2ce970f1f0c3f0c473ec158b8a933a40b",
+      "published_bytes": 63118,
+      "published_sha256": "8b7097ea7d5f18ea47ea5ef629e2355354ccb8c2deefcf404245290ec21827aa",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/engine.log",
+      "kind": "log",
+      "raw_bytes": 201173,
+      "raw_sha256": "a1c42c7891b7694ca479b0d93ad8c818e7b47321cbf042b84df9bd1c64098e3c",
+      "published_bytes": 142560,
+      "published_sha256": "fc58f7dafa6c64d22fcb63cab6ebc882e8e0d350a6a7fe72d60c731debafdd1d",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/module-samples.json",
+      "kind": "json",
+      "raw_bytes": 38179,
+      "raw_sha256": "ee44d5c5fe2f7667ec369f5c3ef7848f82910ec024dfb83fca7ec6198c2d2cbb",
+      "published_bytes": 31902,
+      "published_sha256": "7a5c853d11f6c27852e70ecb6d2d0326872673dc85f1c6edb48a8fc621df6b6f",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/observer.json",
+      "kind": "json",
+      "raw_bytes": 7626,
+      "raw_sha256": "14f22170b4ba47022aafaf055611ed4829115595574a55c41a6116cdcf7eb863",
+      "published_bytes": 8790,
+      "published_sha256": "609b43ee25a8126ecf01dfa8fc34a231cda19e328ce2003e0a3b82166ccf5b84",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/samples.jsonl",
+      "kind": "jsonl",
+      "raw_bytes": 123069,
+      "raw_sha256": "d58add41149f15019dd706ec6394ab045e61cc817e76438a13692b734d23fb60",
+      "published_bytes": 123069,
+      "published_sha256": "d58add41149f15019dd706ec6394ab045e61cc817e76438a13692b734d23fb60",
+      "transformation": "JSONL values redacted; formatting normalized"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/frames.csv",
+      "kind": "csv",
+      "raw_bytes": 6435,
+      "raw_sha256": "aeac5adf2f7d0d18268f4f48d08c51d655e4ef9ea0b9acafadec74d1e72153cd",
+      "published_bytes": 6435,
+      "published_sha256": "aeac5adf2f7d0d18268f4f48d08c51d655e4ef9ea0b9acafadec74d1e72153cd",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "strict/skate-p4-48-dlss-strict/vk_layer_settings.txt",
+      "kind": "txt",
+      "raw_bytes": 201,
+      "raw_sha256": "f30389c1f3ea1115d5e74ef28c58f97596549c49f19522a9ee9ad410c0c7182a",
+      "published_bytes": 201,
+      "published_sha256": "f30389c1f3ea1115d5e74ef28c58f97596549c49f19522a9ee9ad410c0c7182a",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "regression/matrix.json",
+      "kind": "json",
+      "raw_bytes": 72461,
+      "raw_sha256": "84a8a1adba4472af274a18df4234da337ff1bbe675e2abbb81667d6092f85375",
+      "published_bytes": 69052,
+      "published_sha256": "c1016382cd3543475987e590b0eab98526a9b13caf5a5f6667cca49d5c508d19",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat1/result.json",
+      "kind": "json",
+      "raw_bytes": 21309,
+      "raw_sha256": "8ab5afdd0a4ed655adb669e04b621b73fc7c506b69ad48cf2f7013a0272319f5",
+      "published_bytes": 20175,
+      "published_sha256": "d4a9a7a7c849416aeb8b38975c98c455f68e1ebac6df44a2c7cb378b491657b6",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat1/engine.log",
+      "kind": "log",
+      "raw_bytes": 2380,
+      "raw_sha256": "9a4989f3d65a90b382deb4101c6c203452eb1cc01e8fd5e33353c1b7e60a41b3",
+      "published_bytes": 1745,
+      "published_sha256": "98fe7e129ca17eddb98fe46518734060036d5db62302f38938b780344c9e7fb7",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat1/observer.json",
+      "kind": "json",
+      "raw_bytes": 13727,
+      "raw_sha256": "ecb5512f2cddb1792aef08a4e3e6589e5cf98fbdc46a6643bd4039ca3350ddc5",
+      "published_bytes": 15948,
+      "published_sha256": "4f782f6299cab8229089a6e765afee26cd29dbf0dea250ace6ca731a67b510a0",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat2/result.json",
+      "kind": "json",
+      "raw_bytes": 21212,
+      "raw_sha256": "f193f99917a73a7a16a1692e0dde4c9f36cfaa5b00bc2eab2e4fb4521481e57c",
+      "published_bytes": 20080,
+      "published_sha256": "d840478c99add5c05816489bb9275a603387dcdb6e49684671833db3d3cb4572",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat2/engine.log",
+      "kind": "log",
+      "raw_bytes": 2302,
+      "raw_sha256": "ad38f6dbb1335924768dcd3c7657fd80c53f06689d6722899bf86c7c140f5d7c",
+      "published_bytes": 1667,
+      "published_sha256": "9279bcc3cf03b0a9defc98f2b63d8c2e13e38b8d04783f77f9c2f530b89b56d6",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat2/observer.json",
+      "kind": "json",
+      "raw_bytes": 13676,
+      "raw_sha256": "51757fdd2a57865ebda5159c5cdee982fa3e7f01381b206736d8d1351aaa4b5e",
+      "published_bytes": 15897,
+      "published_sha256": "f0748b263c6a771547bbb30eac38bbdb0a90650f43a0a759166a752f45ec252e",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat3/result.json",
+      "kind": "json",
+      "raw_bytes": 21277,
+      "raw_sha256": "5b971d4cb692522dd2ed3eb240d960ece8f5ce61c1c0580a64263fcf023526a1",
+      "published_bytes": 20141,
+      "published_sha256": "85c7ae90b601157d464b9c0972c0d37da9544afcd6b759a8b19aac365c024a51",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat3/engine.log",
+      "kind": "log",
+      "raw_bytes": 2375,
+      "raw_sha256": "540b36877e8659d28dbccc02072753e8d7eb2cbe757a513d060eb01d13cbe70c",
+      "published_bytes": 1740,
+      "published_sha256": "68515da57c068be95868a27df4cad15d2ecdfcc8f133e7ef60d460b6c913f7a0",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "regression/skate-p4-48-dlss-repeat3/observer.json",
+      "kind": "json",
+      "raw_bytes": 13710,
+      "raw_sha256": "f8f1282a8b19e3f524aa9e43d135646cb7773338ad821221eebe57a7904d9674",
+      "published_bytes": 15931,
+      "published_sha256": "f930841ff654ac130ea045d20fdda2e243c894963b625e83524e24d81c244ef4",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/original-d29/result.json",
+      "kind": "json",
+      "raw_bytes": 12850,
+      "raw_sha256": "6d32c6e3944c985a9b9aeea38afa182fa41094f8d4fe3de0ab38f3136f4da8ad",
+      "published_bytes": 12068,
+      "published_sha256": "d3c7766e95a0f67c79bd9282fc414e02e4f17b02cebb3707b574c2d51604aa5f",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/original-d29/engine.log",
+      "kind": "log",
+      "raw_bytes": 5664,
+      "raw_sha256": "b8841121dc81396e7931200d3fec970eb72f20d139e1417a89133fcf3ab6daff",
+      "published_bytes": 5009,
+      "published_sha256": "6ba5a09d51355226d37aa92ae80921c5363b592d66b015eef73128a9c9432e7f",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "failure/original-d29/observer.json",
+      "kind": "json",
+      "raw_bytes": 7414,
+      "raw_sha256": "2c380757697edb41251f39b63fc8e0e1574b33ecb30cf525513b8b920efa952d",
+      "published_bytes": 8594,
+      "published_sha256": "c4d239bc98e3ed52e46eadb674e4fd7cc5f5def9a529e4ce269a93efee4c75f7",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/trace-matrix.json",
+      "kind": "json",
+      "raw_bytes": 52018,
+      "raw_sha256": "bf89175210174ab3d7f0a85920cdbaec617fe9bebdaf71f55526036729eeee42",
+      "published_bytes": 49660,
+      "published_sha256": "0b703bab15606bcfd118db86968b531d760e5adf6a3357ee9fe47a96c9f0359a",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/skate-p4-48-dlss-trace0/result.json",
+      "kind": "json",
+      "raw_bytes": 22530,
+      "raw_sha256": "866c6e6ca1dee8886e8922d604232167bf0fc0dacbaa38afb90af5a5bcc0c58c",
+      "published_bytes": 21371,
+      "published_sha256": "fe872cf2a2c0b22d8dbc4d32d72c0904cb40e7bc5394d11db7a6aa6b492fb509",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/skate-p4-48-dlss-trace0/engine.log",
+      "kind": "log",
+      "raw_bytes": 161851,
+      "raw_sha256": "c16107a34328cef81c857fe84afbf3319249930b26ecb9d792cbc47b8245bc1c",
+      "published_bytes": 110106,
+      "published_sha256": "ce18014b8291629c9a2b534058632973875a121cf9f94a78b1975340bf65ffa5",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "failure/skate-p4-48-dlss-trace1/result.json",
+      "kind": "json",
+      "raw_bytes": 23368,
+      "raw_sha256": "814b0036e2fa09c374825f8eb23af0de2b00164a53aa176d64a4aef91b776aeb",
+      "published_bytes": 22176,
+      "published_sha256": "103042ea09876f8dda4b2adbded7dff23b6df33a77719cfd81db1274b7a45c1c",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "failure/skate-p4-48-dlss-trace1/engine.log",
+      "kind": "log",
+      "raw_bytes": 162403,
+      "raw_sha256": "f092b99993042afdfb35f79a8e07b4c1773b5a8bfaefbc50abd379e6d156c1e9",
+      "published_bytes": 110658,
+      "published_sha256": "d905a9d52493aeef547b1ccbf3f8cd1b08c5911446bc7f332448ae3ef604a5c9",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "failure/negative-controls.json",
+      "kind": "json",
+      "raw_bytes": 71986,
+      "raw_sha256": "2990920c8b4e0017beabdc8301f64b312d1ed90aa52fdb87c0ee398e1c92e060",
+      "published_bytes": 68686,
+      "published_sha256": "2bedafd4e86044b942b02fbbfd91f9b52269eedafaef77495e7f3da088e5afce",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/export-matrix.json",
+      "kind": "json",
+      "raw_bytes": 25453,
+      "raw_sha256": "2c1bf855ca4a8355fdbb70cb0ff2e8bcd7256ec0872e27f2b5237ec2ccb1cebc",
+      "published_bytes": 18999,
+      "published_sha256": "6241ff1f4b29a4d0edf744702342e1750cc87d30a5883c9e9b0863a156761f2d",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/pck-inventory.json",
+      "kind": "json",
+      "raw_bytes": 275252,
+      "raw_sha256": "3cfdea801dbdfa9602c539d7e8d0a19cf2186e46e83fa465d4f08da5551db02a",
+      "published_bytes": 229085,
+      "published_sha256": "598df87d1cbf7474ad3405887eed58756cef4687c731fadcfb04f14b4a03af66",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/template-install.json",
+      "kind": "json",
+      "raw_bytes": 6961,
+      "raw_sha256": "ab83b1842e91846d17169634ed20a2cbb4df069ea2cfa0d1797031e53aee01dc",
+      "published_bytes": 3985,
+      "published_sha256": "4b6b96cda5f9d276486ce8695a67b5cd9b909dfcfdb69cf62031a88a92cba172",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-export-release.checks.json",
+      "kind": "json",
+      "raw_bytes": 2048,
+      "raw_sha256": "a2903ff84affb6d0b6f4264eb7518e4c7777c0da6520abfed31c2c88d201ed91",
+      "published_bytes": 1210,
+      "published_sha256": "7b2a9002f81141b55debb50d08bb49b90f68a1948baa4b4c3006f504d02f5bf4",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-export-release.driver.log",
+      "kind": "log",
+      "raw_bytes": 3807,
+      "raw_sha256": "40f2c9d5a63ae6821a2e1a3fd48eea3d889129ab5218b4c544fce1088a96feb4",
+      "published_bytes": 3095,
+      "published_sha256": "b04858e7c2a5fc7ced05b3a2155c13d4d11836b732d47bcf62b8644e14dd079e",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-export-release.json",
+      "kind": "json",
+      "raw_bytes": 1854,
+      "raw_sha256": "18d0ee390204ab0713b08d3b174ae031a91f201416c7c0f35e5dd27a6c64a0aa",
+      "published_bytes": 1193,
+      "published_sha256": "b5c4dde3fdc735efa2d76bd141f85d58e1af4b4439595bb2e5cbccf73368695a",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-export-release.log",
+      "kind": "log",
+      "raw_bytes": 149811,
+      "raw_sha256": "a994ccd2baa5b39eeb642a77de4a8944248efa801c7f8f415c98291b7084f87b",
+      "published_bytes": 101392,
+      "published_sha256": "cd45e845e77cd385e6e0ea73cce66869c079cf10ed4e562d0eb8ec6f4460128f",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-import.checks.json",
+      "kind": "json",
+      "raw_bytes": 1910,
+      "raw_sha256": "b59bfe08ab9e617d2f9933023c302db0526b4ef8c942d7b0bb73bbdb18e5685f",
+      "published_bytes": 1166,
+      "published_sha256": "7b1d08a2f42cb1762b1828e5558f6989305e47034e9f67ac1faf0afbf14b5c7f",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-import.driver.log",
+      "kind": "log",
+      "raw_bytes": 3104,
+      "raw_sha256": "f518e3fba24f96706d5796d94e1153321efe20ad3ee6a683c80a85865c1131a8",
+      "published_bytes": 2572,
+      "published_sha256": "58fa6dd44a3ac95c077c0404fdb70f7c484f510467de8860cbe8808f082b9428",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-import.json",
+      "kind": "json",
+      "raw_bytes": 1733,
+      "raw_sha256": "ddd681726f71d55f8f5ce22d2b75c0dc8d7b23e1853499ea618de6d63bbf27a8",
+      "published_bytes": 1158,
+      "published_sha256": "41b00f51bfa48b4d689754f067fcfaf2be122064e0cd900f3878454b85eddbda",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/receipts/run-b376-20261027-final-import.log",
+      "kind": "log",
+      "raw_bytes": 47477,
+      "raw_sha256": "2cf674bc41a3225357230faa8f5547bdd04d1048130bfc86c63051ade9a05fbe",
+      "published_bytes": 47488,
+      "published_sha256": "afdb914ec530712256b4ece6a12f0e89587d2cb46062de181629185492590ea1",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "export/natural-exit-matrix.json",
+      "kind": "json",
+      "raw_bytes": 5994,
+      "raw_sha256": "ba2d6389ff5377b69662074c5b9831a66bdcf63336313f76c730939ed5178cb2",
+      "published_bytes": 4049,
+      "published_sha256": "3d1e7ac666a605552687e700f243fd777dfe110e2c97ad5cd5138100985bc275",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/natural-receipts/natural-20261027T060304Z-ba5d2e97-vulkan-skate1.checks.json",
+      "kind": "json",
+      "raw_bytes": 2348,
+      "raw_sha256": "0cf58c421159f1df0b715be83bee475c54771918f16548f0d43928dfed4a66d4",
+      "published_bytes": 1297,
+      "published_sha256": "836661aa110f25c7acbc46f9d640b553e6561852f0365d8e73c68653019731e1",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/natural-receipts/natural-20261027T060304Z-ba5d2e97-vulkan-skate1.driver.log",
+      "kind": "log",
+      "raw_bytes": 5039,
+      "raw_sha256": "bd5b2d4f6bc8bcaa16f02aeb7d043b4c3516dffa0a1e9cf5c260c3d9a467c921",
+      "published_bytes": 3698,
+      "published_sha256": "abaea5edf8c53816ee71aac8852c3a017f883d1c26d542cee205cc98b573d6d3",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "export/natural-receipts/natural-20261027T060304Z-ba5d2e97-vulkan-skate1.json",
+      "kind": "json",
+      "raw_bytes": 2344,
+      "raw_sha256": "fda4d36f3a2e27f42d5b4f877d158f3b56c0e6fe5ba885850e6b4c27ec305025",
+      "published_bytes": 1598,
+      "published_sha256": "fc154f087e4a005b6a06416df35f36ff8b62aa8e3b1a0525fde32543074dd904",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "export/natural-receipts/natural-20261027T060304Z-ba5d2e97-vulkan-skate1.log",
+      "kind": "log",
+      "raw_bytes": 147758,
+      "raw_sha256": "0fbc42b4025933bb0a54de511fb0661f0410757c86fc4153f9d109a57cca268e",
+      "published_bytes": 99426,
+      "published_sha256": "25f435ad157ff1f2b8462ecdc48dbd6600512115ec43d6259f80e705e40be0e7",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "images/export-startup-frame-0.png",
+      "kind": "image",
+      "raw_bytes": 1721565,
+      "raw_sha256": "bea620993b3eb08fde6aec8b1cdb02dec9b3ce38c6f2b8d36cca9fecb1c96e07",
+      "published_bytes": 1721565,
+      "published_sha256": "bea620993b3eb08fde6aec8b1cdb02dec9b3ce38c6f2b8d36cca9fecb1c96e07",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/export-startup-frame-1.png",
+      "kind": "image",
+      "raw_bytes": 1700124,
+      "raw_sha256": "084f0b78a07d7beebb57ac73ffacf2d72e62558e1d1a8d1d34b8cc0fda6548bd",
+      "published_bytes": 1700124,
+      "published_sha256": "084f0b78a07d7beebb57ac73ffacf2d72e62558e1d1a8d1d34b8cc0fda6548bd",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/export-startup-frame-2.png",
+      "kind": "image",
+      "raw_bytes": 1715053,
+      "raw_sha256": "b271b595504bab62c8f876c419425ac79a4db4228e7b808a8e4df5dc74ae9afd",
+      "published_bytes": 1715053,
+      "published_sha256": "b271b595504bab62c8f876c419425ac79a4db4228e7b808a8e4df5dc74ae9afd",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "burst/matrix.json",
+      "kind": "json",
+      "raw_bytes": 65050,
+      "raw_sha256": "ebf53c1d2f76e7afc5710a322fd35ef7d84397e7768f68023bbfd455384a40f2",
+      "published_bytes": 61556,
+      "published_sha256": "d43a12c0e9b825a5270fab4fe793e07c63a7a68487640d48a53e5f0c967370c7",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "burst/skate-p1-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 14144,
+      "raw_sha256": "947f986869f3e6dd1728162c8ddce78a5cdd97a98e647eef9a446e6761f4c272",
+      "published_bytes": 13297,
+      "published_sha256": "25f56c271ba05c8661665a7cce25c221bf3bea84d6a0ee771e1ec072670059f5",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "burst/skate-p1-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 9240,
+      "raw_sha256": "0ed2cd8390bc11a1f0691c03830ca8ecef03989e81de8b436368eeb97c51da1e",
+      "published_bytes": 10355,
+      "published_sha256": "e68ad82d77aea30ed8bdda4e10d1a9a10a844bbaa086ac6e295e4f61493f6eff",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "images/burst-skate-p1-472-fsr-burst_000.png",
+      "kind": "image",
+      "raw_bytes": 1932061,
+      "raw_sha256": "f3df8a1dada99ff93e67607b4c97cb085636f714663ea80ce60117239c0defeb",
+      "published_bytes": 1932061,
+      "published_sha256": "f3df8a1dada99ff93e67607b4c97cb085636f714663ea80ce60117239c0defeb",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/burst-skate-p1-472-fsr-burst_018.png",
+      "kind": "image",
+      "raw_bytes": 1897101,
+      "raw_sha256": "2bbabbf98dbfb50c9fdcc340361914321e1dc299820b070b3b2777d2d36e8c61",
+      "published_bytes": 1897101,
+      "published_sha256": "2bbabbf98dbfb50c9fdcc340361914321e1dc299820b070b3b2777d2d36e8c61",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "burst/skate-p1-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 14453,
+      "raw_sha256": "328a41b9f9f116360cc307a27156843b58a301ea229089523923624c2b6fad50",
+      "published_bytes": 13551,
+      "published_sha256": "b764e9baea9204b7bada3f6c2b2e9fb9f95aab0e5ec796906e4b490724cb02f9",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "burst/skate-p1-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 9327,
+      "raw_sha256": "c6e3bca280a84186e78e67f1122a0e7a47ff5cd3ff73e0512b04ef33b3c421f4",
+      "published_bytes": 10449,
+      "published_sha256": "a9b9bced2447150a4eef8dbab7276246ff7f46fe9583c87c6a6b5082adeceb51",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "images/burst-skate-p1-48-dlss-burst_000.png",
+      "kind": "image",
+      "raw_bytes": 1524362,
+      "raw_sha256": "ad6aaffdcc692f865c41aa5637f406019b30fcaedff52b93aaf023e3958f6c1a",
+      "published_bytes": 1524362,
+      "published_sha256": "ad6aaffdcc692f865c41aa5637f406019b30fcaedff52b93aaf023e3958f6c1a",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/burst-skate-p1-48-dlss-burst_018.png",
+      "kind": "image",
+      "raw_bytes": 1465559,
+      "raw_sha256": "d9111fc544cf1296264d24f000c6fa04cdd5b8d8f2d834ec965b5db1e5ba004e",
+      "published_bytes": 1465559,
+      "published_sha256": "d9111fc544cf1296264d24f000c6fa04cdd5b8d8f2d834ec965b5db1e5ba004e",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "burst/ski-p1-472-fsr/result.json",
+      "kind": "json",
+      "raw_bytes": 14134,
+      "raw_sha256": "d2b5c0e0691c8bae77b4476bfbb1a92cb2b1055b0e8e25d377dd6cb144af4d49",
+      "published_bytes": 13293,
+      "published_sha256": "1d63479f893cc7fb23cd55e95f0461d541e2099e7fb6b99ba7b30c3e278c829b",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "burst/ski-p1-472-fsr/observer.json",
+      "kind": "json",
+      "raw_bytes": 9235,
+      "raw_sha256": "9ba810943fd4e2629ccc6bee33d1afc9a5319e454f30caef083c117341cd17d7",
+      "published_bytes": 10352,
+      "published_sha256": "ac4b01b6bded8ba6965722184e8b7e8eee6c25e41e27d088b930f2aee4674878",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "images/burst-ski-p1-472-fsr-burst_000.png",
+      "kind": "image",
+      "raw_bytes": 1443339,
+      "raw_sha256": "ad84d4bdced8728fe4f0160b300d37022a2343a3bdd0fa31e4157583c4e066df",
+      "published_bytes": 1443339,
+      "published_sha256": "ad84d4bdced8728fe4f0160b300d37022a2343a3bdd0fa31e4157583c4e066df",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/burst-ski-p1-472-fsr-burst_018.png",
+      "kind": "image",
+      "raw_bytes": 1489662,
+      "raw_sha256": "ffed61b4465238bff52ef30ad04f95e57ebaa8b38df635304bde130bb2d346b5",
+      "published_bytes": 1489662,
+      "published_sha256": "ffed61b4465238bff52ef30ad04f95e57ebaa8b38df635304bde130bb2d346b5",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "burst/ski-p1-48-dlss/result.json",
+      "kind": "json",
+      "raw_bytes": 14471,
+      "raw_sha256": "3310938f0298e520640a213c4fd43a7b57967bb09ae49736d85179d3408cd287",
+      "published_bytes": 13575,
+      "published_sha256": "d08d00af8ca580cdcbcb928487342173248bbb1a537edd20b8a89457158c2342",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "burst/ski-p1-48-dlss/observer.json",
+      "kind": "json",
+      "raw_bytes": 9340,
+      "raw_sha256": "bf92e045f93dc4d087e278c0f5d909c96a1d0b047a2ef92b29235d8892f5730b",
+      "published_bytes": 10464,
+      "published_sha256": "a0d67741adecc169847864bfae5fd2c60ed5dd602fce9b10e2373d5d97291bed",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "images/burst-ski-p1-48-dlss-burst_000.png",
+      "kind": "image",
+      "raw_bytes": 1204201,
+      "raw_sha256": "e6564cec9eeee87d8f2174abe03af4ec45801f9cb6b8ea67ebfdaa9cc3e0276f",
+      "published_bytes": 1204201,
+      "published_sha256": "e6564cec9eeee87d8f2174abe03af4ec45801f9cb6b8ea67ebfdaa9cc3e0276f",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "images/burst-ski-p1-48-dlss-burst_018.png",
+      "kind": "image",
+      "raw_bytes": 1212789,
+      "raw_sha256": "14fb0677f7faa09c170ba39eae691df13d3b9988715134b66d8a5642dfb0af4f",
+      "published_bytes": 1212789,
+      "published_sha256": "14fb0677f7faa09c170ba39eae691df13d3b9988715134b66d8a5642dfb0af4f",
+      "transformation": "raw image, byte-identical"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/receipt.json",
+      "kind": "json",
+      "raw_bytes": 4855,
+      "raw_sha256": "b0353b5bc30a6d4ed7846409f5a6f666762632db9d97812ba81a6368323a247b",
+      "published_bytes": 4261,
+      "published_sha256": "85f96b48fb5b49902fb65cc52446ddc6cd722a8ff1396dd63fadaf66b7ae1b72",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/conventions.log",
+      "kind": "log",
+      "raw_bytes": 309,
+      "raw_sha256": "ab7a77b78e6a990f599d01d7db41881bde5694b87621cd69e511e7bdc9e06a7b",
+      "published_bytes": 309,
+      "published_sha256": "ab7a77b78e6a990f599d01d7db41881bde5694b87621cd69e511e7bdc9e06a7b",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/i18n.log",
+      "kind": "log",
+      "raw_bytes": 32,
+      "raw_sha256": "e96866a89da241ab2f223f8b8f628d75648661871486e1c2289abd99495b8aa1",
+      "published_bytes": 32,
+      "published_sha256": "e96866a89da241ab2f223f8b8f628d75648661871486e1c2289abd99495b8aa1",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/tools-pytest.log",
+      "kind": "log",
+      "raw_bytes": 210,
+      "raw_sha256": "e9a2e7ab3260f42acb1507bd72796d0551cb84d784e36c308c539119e1f66da1",
+      "published_bytes": 210,
+      "published_sha256": "e9a2e7ab3260f42acb1507bd72796d0551cb84d784e36c308c539119e1f66da1",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/ruff.log",
+      "kind": "log",
+      "raw_bytes": 19,
+      "raw_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "published_bytes": 19,
+      "published_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/hub-pytest.log",
+      "kind": "log",
+      "raw_bytes": 345,
+      "raw_sha256": "14d1089d2bfbc817e66c755904749f4411dbfdda45c2e701ab539ed50a2e6c77",
+      "published_bytes": 345,
+      "published_sha256": "14d1089d2bfbc817e66c755904749f4411dbfdda45c2e701ab539ed50a2e6c77",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/isolated-fixture-env/asset-sync.log",
+      "kind": "log",
+      "raw_bytes": 1031,
+      "raw_sha256": "cd2392149659e1d894101ed193e0eea84512bd57b2d5e7471e4fd5e068429f8b",
+      "published_bytes": 1031,
+      "published_sha256": "cd2392149659e1d894101ed193e0eea84512bd57b2d5e7471e4fd5e068429f8b",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "cpu/original-environment-failure/receipt.json",
+      "kind": "json",
+      "raw_bytes": 4107,
+      "raw_sha256": "46902d32dfef96a379c3c12fd06f56b30ba5791ca48d647da6babb73dbad76a2",
+      "published_bytes": 3539,
+      "published_sha256": "47431bddf73d5afc5cdaa2f36b35ed702179f48405dbcdd8c4f26a83713f47ea",
+      "transformation": "JSON values redacted; formatting normalized"
+    },
+    {
+      "file": "cpu/original-environment-failure/tools-pytest.log",
+      "kind": "log",
+      "raw_bytes": 22355,
+      "raw_sha256": "a0f06a8f485e5cacbdc9762eb310b04159d3d9445b8ba13454022af15ea62ac4",
+      "published_bytes": 21139,
+      "published_sha256": "54a69f896a7b39c794a9d522cd19113b6309f60f02fbb3571b9d64a6432b2453",
+      "transformation": "text redacted"
+    },
+    {
+      "file": "tools/observer.gd",
+      "kind": "gd",
+      "raw_bytes": 8241,
+      "raw_sha256": "6f15514144af533cffcf12e33bf0c5dd37c479107cca1f81c04875d6cdc75914",
+      "published_bytes": 8241,
+      "published_sha256": "6f15514144af533cffcf12e33bf0c5dd37c479107cca1f81c04875d6cdc75914",
+      "transformation": "original tested source, byte-identical"
+    },
+    {
+      "file": "tools/reprojection_math_reference.py",
+      "kind": "py",
+      "raw_bytes": 5492,
+      "raw_sha256": "fd171f7dbf61863ad6e4a65dc4452e716bd5754913375f459f4efca91e0b0430",
+      "published_bytes": 5445,
+      "published_sha256": "a503d9c5b9c242118342699ca47c50e2ca4a12496e78c183597c6b1ad95de862",
+      "transformation": "reference source: only local trace-input path replaced with bundled relative path"
+    }
+  ]
+}

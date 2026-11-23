@@ -1,8 +1,12 @@
 # Update log
 
+## 2026-11-24 (raster delivery review)
+
+* [Test environment finding](/mistakes/empty-git-config-in-test-environment.md): preserve a new CPU-suite failure caused by an empty injected Git config value lost during Windows environment restoration; isolate the fixture subprocess rather than changing the product or assertions. October GPU results retain their original date and native identity.
+
 ## 2026-10-27 (raster SR reprojection candidate)
 
-* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md): retain the split-screen results failure and exact binary32 evidence; derive the inverse from camera factors for SR. Real native rebuild and gameplay validation remain pending.
+* [DLSS SR factorized reprojection](/tooling/dlss-sr-factorized-reprojection.md): retain the split-screen results failure and exact binary32 evidence; derive the inverse from camera factors for SR. Native b376 standard builds, three forced transitions, ten natural bot matches, short strict SR and a production export pass. [Measured scope](../devtools/RASTER_DLSS_ACCEPTANCE_2026_10_27.md) keeps human play feel and temporal quality pending.
 
 ## 2026-10-27 (bounded RR first-use diagnostics)
 

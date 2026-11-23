@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "label": "natural-20261027T060304Z-ba5d2e97-vulkan-skate1",
+      "command": [
+        "<local-path>",
+        "--verbose",
+        "--rendering-method",
+        "forward_plus",
+        "--rendering-driver",
+        "vulkan",
+        "--resolution",
+        "1600x900",
+        "--fixed-fps",
+        "60",
+        "--",
+        "--game=skate",
+        "--demo=1",
+        "--map=0",
+        "--at=1,4,8",
+        "--shots=<local-path>"
+      ],
+      "environment_requested": {
+        "APPDATA": "<local-path>",
+        "LOCALAPPDATA": "<local-path>",
+        "TEMP": "<local-path>",
+        "TMP": "<local-path>",
+        "XDG_CACHE_HOME": "<local-path>",
+        "RS_TEST_MODE": "1",
+        "GODOT_STREAMLINE_DISABLE_DLSS_G": "1",
+        "GODOT_STREAMLINE_DISABLE_OTA": "1"
+      },
+      "receipt": {
+        "file": "<local-path>",
+        "bytes": 2344,
+        "sha256": "fda4d36f3a2e27f42d5b4f877d158f3b56c0e6fe5ba885850e6b4c27ec305025"
+      },
+      "log": {
+        "file": "<local-path>",
+        "bytes": 147758,
+        "sha256": "0fbc42b4025933bb0a54de511fb0661f0410757c86fc4153f9d109a57cca268e"
+      },
+      "duration_seconds": 34.422,
+      "checks": {
+        "wrapper_exit_zero": true,
+        "exit_zero": true,
+        "expected_checkout": true,
+        "no_timeout_exception": true,
+        "no_errors": true,
+        "job_owned": true,
+        "descendants_closed": true,
+        "no_owned_ngx": true,
+        "no_cleanup_failure": true,
+        "correct_version": true,
+        "correct_api": true,
+        "gpu_4060": true,
+        "actual_cli_game": true,
+        "dlss_quality_requested_ok": true,
+        "three_real_screenshots": true,
+        "disable_g_startup_marker": true,
+        "no_forced_frame_guard": true
+      },
+      "passed": true,
+      "images": [
+        {
+          "file": "<local-path>",
+          "bytes": 1721565,
+          "sha256": "bea620993b3eb08fde6aec8b1cdb02dec9b3ce38c6f2b8d36cca9fecb1c96e07",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<local-path>",
+          "bytes": 1700124,
+          "sha256": "084f0b78a07d7beebb57ac73ffacf2d72e62558e1d1a8d1d34b8cc0fda6548bd",
+          "size": [
+            1600,
+            900
+          ]
+        },
+        {
+          "file": "<local-path>",
+          "bytes": 1715053,
+          "sha256": "b271b595504bab62c8f876c419425ac79a4db4228e7b808a8e4df5dc74ae9afd",
+          "size": [
+            1600,
+            900
+          ]
+        }
+      ],
+      "native_sha": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+      "game_commit": "3d51851c6eec09ff4cb8a2b0f818e837d06ca4e8",
+      "requested_settings": {
+        "lighting": 0,
+        "upscaling": 7,
+        "quality": 2,
+        "nis_sharpness": 0,
+        "fg": false,
+        "hdr": false,
+        "players": 1,
+        "map": 0,
+        "at": [
+          1,
+          4,
+          8
+        ]
+      },
+      "settings_before": {
+        "file": "<local-path>",
+        "bytes": 167,
+        "sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106"
+      },
+      "settings_after": {
+        "file": "<local-path>",
+        "bytes": 167,
+        "sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106"
+      },
+      "scope": "Production --shots captures at simulation times and exits through RSExit after final shot; no independent RR-state/model, FG, strict-validation, image-quality or wall-clock performance claim."
+    }
+  ],
+  "requested_apis": [
+    "vulkan"
+  ],
+  "harnesses": [
+    {
+      "file": "<local-path>",
+      "bytes": 6197,
+      "sha256": "3ed572fe8557dfb3f2f4b3da99a620b5f30006fa4fbea389549163c4f929512c"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 5301,
+      "sha256": "906e99d000a1c3cae0562acead925c3fa8dc0941183bb58df37e6cda4fd47244"
+    },
+    {
+      "file": "<local-path>",
+      "bytes": 5610,
+      "sha256": "f93ec163c61e055343a838469b349d416866dc4c18ddae6ae96e88fb050a9b1f"
+    }
+  ]
+}

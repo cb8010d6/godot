@@ -1,0 +1,136 @@
+{
+  "scope": "CPU required game checks; no native/GPU acceptance",
+  "before": {
+    "head": "9da6148a8a68ee45ae017452b63a4be302e7e01a",
+    "status": "M docs/RTX_EXPERIMENT.md\n M tools/rtx_engine.json\n?? docs/validation/rtx-b3763e7c7e.json",
+    "diff_sha256": "ca7d5906bd7d6c7df681b3934a4951ffe3a79f930065926394b17b48524a4621",
+    "files": {
+      "docs/RTX_EXPERIMENT.md": "d48d93c59b74be1a63d0515abab8d6ae9eb20a64a247e3ccda78d0286f014fe0",
+      "docs/validation/rtx-b3763e7c7e.json": "f72edd1402e7cd936a372fec52cd62c52b7c1e6a7c64464ce9df00902d8be3bf",
+      "tools/rtx_engine.json": "6da20fdbc74ac2974092351dc691300fae0ea977090568db915d60eec1ba4ad2"
+    }
+  },
+  "steps": [
+    {
+      "label": "conventions",
+      "command": [
+        "<local-path>",
+        "tools/check_conventions.py"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:14:27.644139+00:00",
+      "exit_code": 0,
+      "seconds": 0.563,
+      "log_sha256": "ab7a77b78e6a990f599d01d7db41881bde5694b87621cd69e511e7bdc9e06a7b"
+    },
+    {
+      "label": "i18n",
+      "command": [
+        "<local-path>",
+        "tools/i18n_check.py"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:14:28.218955+00:00",
+      "exit_code": 0,
+      "seconds": 0.328,
+      "log_sha256": "e96866a89da241ab2f223f8b8f628d75648661871486e1c2289abd99495b8aa1"
+    },
+    {
+      "label": "tools-pytest",
+      "command": [
+        "<local-path>",
+        "-m",
+        "pytest",
+        "-q",
+        "tools/tests"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:14:28.553306+00:00",
+      "exit_code": 0,
+      "seconds": 95.188,
+      "log_sha256": "e9a2e7ab3260f42acb1507bd72796d0551cb84d784e36c308c539119e1f66da1"
+    },
+    {
+      "label": "ruff",
+      "command": [
+        "<local-path>",
+        "-m",
+        "ruff",
+        "check",
+        "--config",
+        "hub/pyproject.toml",
+        "hub",
+        "tools"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:16:03.751397+00:00",
+      "exit_code": 0,
+      "seconds": 0.125,
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "label": "hub-pytest",
+      "command": [
+        "<local-path>",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:16:03.890367+00:00",
+      "exit_code": 0,
+      "seconds": 4.031,
+      "log_sha256": "14d1089d2bfbc817e66c755904749f4411dbfdda45c2e701ab539ed50a2e6c77"
+    },
+    {
+      "label": "asset-sync",
+      "command": [
+        "node",
+        "--test",
+        "tools/tests/asset_sync.test.mjs"
+      ],
+      "cwd": "<local-path>",
+      "started_utc": "2026-11-23T14:16:07.931066+00:00",
+      "exit_code": 0,
+      "seconds": 0.235,
+      "log_sha256": "cd2392149659e1d894101ed193e0eea84512bd57b2d5e7471e4fd5e068429f8b"
+    }
+  ],
+  "environment_adjustment": {
+    "removed_names": [
+      "GIT_CONFIG_COUNT",
+      "GIT_CONFIG_KEY_0",
+      "GIT_CONFIG_KEY_1",
+      "GIT_CONFIG_KEY_2",
+      "GIT_CONFIG_KEY_3",
+      "GIT_CONFIG_KEY_4",
+      "GIT_CONFIG_KEY_5",
+      "GIT_CONFIG_KEY_6",
+      "GIT_CONFIG_KEY_7",
+      "GIT_CONFIG_KEY_8",
+      "GIT_CONFIG_KEY_9",
+      "GIT_CONFIG_VALUE_0",
+      "GIT_CONFIG_VALUE_1",
+      "GIT_CONFIG_VALUE_2",
+      "GIT_CONFIG_VALUE_3",
+      "GIT_CONFIG_VALUE_4",
+      "GIT_CONFIG_VALUE_5",
+      "GIT_CONFIG_VALUE_6",
+      "GIT_CONFIG_VALUE_7",
+      "GIT_CONFIG_VALUE_8",
+      "GIT_CONFIG_VALUE_9"
+    ],
+    "scope": "Test subprocess only; parent, user/global Git config and repository unchanged"
+  },
+  "after": {
+    "head": "9da6148a8a68ee45ae017452b63a4be302e7e01a",
+    "status": "M docs/RTX_EXPERIMENT.md\n M tools/rtx_engine.json\n?? docs/validation/rtx-b3763e7c7e.json",
+    "diff_sha256": "ca7d5906bd7d6c7df681b3934a4951ffe3a79f930065926394b17b48524a4621",
+    "files": {
+      "docs/RTX_EXPERIMENT.md": "d48d93c59b74be1a63d0515abab8d6ae9eb20a64a247e3ccda78d0286f014fe0",
+      "docs/validation/rtx-b3763e7c7e.json": "f72edd1402e7cd936a372fec52cd62c52b7c1e6a7c64464ce9df00902d8be3bf",
+      "tools/rtx_engine.json": "6da20fdbc74ac2974092351dc691300fae0ea977090568db915d60eec1ba4ad2"
+    }
+  },
+  "status": "PASS"
+}

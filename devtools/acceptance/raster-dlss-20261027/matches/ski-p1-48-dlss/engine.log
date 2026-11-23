@@ -1,0 +1,37 @@
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+Godot Engine v4.8.beta1.custom_build.b3763e7c7 (2026-10-27 04:01:01 UTC) - https://godotengine.org
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+map 0 ALPINE BLUEBIRD
+[  14.7] P1 s=  70.0 v=22.6  gate 0 ok
+[  16.4] P1 s= 108.0 v=24.1  gate 1 ok
+[  18.2] P1 s= 147.1 v=24.4  gate 2 ok
+[  20.2] P1 s= 185.5 v=24.3  gate 3 ok
+[  21.7] P1 s= 221.9 v=24.1  gate 4 ok
+[  23.8] P1 s= 261.9 v=16.0  gate 5 ok
+[  28.5] P1 s= 333.8 v=22.7  CRASH Couldn't hold the landing
+[  33.7] P1 s= 370.8 v=15.1  gate 6 ok
+[  36.1] P1 s= 412.4 v=22.0  gate 7 ok
+[  37.7] P1 s= 448.3 v=24.6  gate 8 ok
+[  39.7] P1 s= 490.0 v=24.2  gate 9 ok
+[  41.5] P1 s= 529.8 v=24.2  gate 10 ok
+[  43.1] P1 s= 566.7 v=24.7  gate 11 ok
+[  44.8] P1 s= 602.1 v=24.5  gate 12 ok
+[  46.4] P1 s= 637.8 v=24.7  gate 13 ok
+[  48.1] P1 s= 674.7 v=24.3  gate 14 ok
+[  54.0] P1 s= 777.8 v=20.8  trick 1488 720 + Big Air
+[  56.2] P1 s= 824.2 v=24.2  gate 15 ok
+[  57.8] P1 s= 860.3 v=24.0  gate 16 ok
+[  59.4] P1 s= 897.5 v=24.3  gate 17 ok
+[  63.9] P1 s=1000.0 v=21.8  finished 55.8 s, score 4538
+RS_SMOKE_DONE: ski
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.

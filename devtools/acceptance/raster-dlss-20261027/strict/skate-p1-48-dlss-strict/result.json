@@ -1,0 +1,1363 @@
+{
+  "case": {
+    "id": "skate-p1-48-dlss-strict",
+    "game": "skate",
+    "players": 1,
+    "map": 0,
+    "engine": "48",
+    "mode": "dlss"
+  },
+  "status": "STRICT_STARTUP_CLEAN",
+  "command": [
+    "<local-path>",
+    "--path",
+    "<local-path>",
+    "--script",
+    "<local-path>",
+    "--rendering-method",
+    "forward_plus",
+    "--rendering-driver",
+    "vulkan",
+    "--resolution",
+    "1600x900",
+    "--verbose",
+    "--gpu-validation",
+    "--",
+    "--game=skate",
+    "--demo=1",
+    "--map=0",
+    "--smoke-report=<local-path>",
+    "--observe-output=<local-path>",
+    "--preflight-seconds=12"
+  ],
+  "preflight_seconds_after_play": 12,
+  "validation_layer_dir": "<local-path>",
+  "validation_manifest_sha256": "9bdb274c944957ad454968c567d2d2b1883436a88de476200e688be1a36e23da",
+  "validation_settings_sha256": "f30389c1f3ea1115d5e74ef28c58f97596549c49f19522a9ee9ad410c0c7182a",
+  "validation_module_readback": "periodic owned-process module snapshots plus loader insertion/sync readback",
+  "implicit_layers_filter": "~implicit~",
+  "settings_sha256": "2bb5355956c921ac937357bbfd62595eeaaeebc413ab0aac601898c9d018d106",
+  "started_unix": 1793074736.1620731,
+  "exit_code": 0,
+  "timeout": false,
+  "owned_members_at_close": [
+    17712,
+    8476,
+    23688,
+    14312,
+    34612,
+    10792,
+    18984,
+    14836,
+    40136,
+    47116,
+    9392,
+    27888,
+    30244,
+    8080,
+    5204,
+    3332
+  ],
+  "owned_survivors_after_close": [],
+  "ngx_before": [],
+  "ngx_after": [],
+  "errors": [],
+  "log_analysis": {
+    "inserted_layer_names": [
+      "VK_LAYER_KHRONOS_validation"
+    ],
+    "forced_disabled_lines": [
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Implicit layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_optimus\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_NV_present\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_AMD_switchable_graphics\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_EOS_Overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_overlay\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_VALVE_steam_fossilize\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "\tLayer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'.",
+      "[Vulkan Loader] WARNING | LAYER: Layer \"VK_LAYER_RTSS\" forced disabled because name matches filter of env var 'VK_LOADER_LAYERS_DISABLE'."
+    ],
+    "explicit_vvl_inserted": true,
+    "rtss_layer_inserted": false,
+    "synchronization_validation_reported_enabled": true,
+    "diagnostic_token_occurrences": {},
+    "engine_error_line_count": 0,
+    "api_header": "Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "modules": {
+    "successful_samples": 46,
+    "errors": [
+      {
+        "at": "2026-10-27T04:19:04.876470+00:00",
+        "error": "OSError(22, 'Only part of a ReadProcessMemory or WriteProcessMemory request was completed.', None, 299)"
+      },
+      {
+        "at": "2026-10-27T04:19:17.111410+00:00",
+        "error": "PermissionError(13, 'The program issued a command but the command length is incorrect.', None, 24)"
+      }
+    ],
+    "modules": [
+      {
+        "name": "SiFocusHook.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 188416,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NvTelemetryAPI64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 4894720,
+        "first_seen_utc": "2026-10-27T04:19:11.988910+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "NvTelemetryBridge64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 438272,
+        "first_seen_utc": "2026-10-27T04:19:13.009643+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "ADVAPI32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 733184,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "apphelp.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 606208,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "AppXDeploymentClient.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1064960,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "atidxx64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 143360,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "AUDIOSES.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 1576960,
+        "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "AVRT.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 40960,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "bcrypt.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 159744,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "bcryptPrimitives.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 532480,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "cfgmgr32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 319488,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "clbcatq.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 724992,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "combase.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 3493888,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "CoreMessaging.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 991232,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "CoreUIComponents.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 3518464,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "CRYPT32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1429504,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "cryptbase.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 49152,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "cryptnet.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 200704,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "CRYPTSP.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 98304,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "d3d11.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 2506752,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "d3d12.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 151552,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "D3D12Core.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1888256,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "D3DSCache.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 176128,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "dataexchange.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 253952,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dbgcore.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 217088,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dbghelp.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 2142208,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dcomp.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1986560,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "devobj.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 208896,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dinput8.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 282624,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "amdvlk64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 104321024,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "_nvngx.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1519616,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvapi64_impl.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 5730304,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvcuda64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 32370688,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvdxgdmal64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 716800,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvgpucomp64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 98623488,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvldumdx.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 827392,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "NvMemMapStoragex.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1290240,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "nvobjectloader64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 14688256,
+        "first_seen_utc": "2026-10-27T04:19:11.988910+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvoglv64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 48779264,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvppex.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 7499776,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvrtum64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 54935552,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvwgf2umx.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 89804800,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "amdenc64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1392640,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "amdihk64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 253952,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "amdxx64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 47005696,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "drvstore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1347584,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dwmapi.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 188416,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "DWrite.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 2625536,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dxcore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 241664,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "dxgi.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1007616,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "GDI32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 176128,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "gdi32full.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1163264,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "GLU32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 180224,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "gpapi.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 143360,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "HID.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 53248,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "imagehlp.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 118784,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "IMM32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 192512,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "inputhost.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1388544,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "IPHLPAPI.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 241664,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "kernel.appcore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 73728,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "KERNEL32.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 794624,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "KERNELBASE.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 3108864,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "MMDevApi.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 561152,
+        "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "msasn1.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 73728,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "MSCTF.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1138688,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "MSVCP140.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 557056,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "msvcp_win.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 643072,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "msvcrt.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 647168,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "mswsock.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 434176,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NSI.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 32768,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "ntdll.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 2068480,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "ntmarta.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 208896,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvapi64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 561152,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvspcap64.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1495040,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "ole32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1228800,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "Oleacc.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 417792,
+        "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "OLEAUT32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 880640,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "OneCoreUAPCommonProxyStub.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 8208384,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "opengl32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1216512,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "powrprof.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 307200,
+        "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "profapi.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 151552,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "PROPSYS.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1024000,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "resourcepolicyclient.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 81920,
+        "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "RMCLIENT.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 172032,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "RPCRT4.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1204224,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "rsaenh.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 229376,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "sechost.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 675840,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "SETUPAPI.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 4657152,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "shcore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 708608,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "SHELL32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 7802880,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "SHLWAPI.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 372736,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "sxs.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 663552,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "textinputframework.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1019904,
+        "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "twinapi.appcore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 2109440,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "ucrtbase.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1048576,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "uiautomationcore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 3096576,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "UMPDC.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 73728,
+        "first_seen_utc": "2026-10-27T04:19:16.074407+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "USER32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1708032,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "USERENV.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 188416,
+        "first_seen_utc": "2026-10-27T04:19:18.118149+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "usermgrcli.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 90112,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "uxtheme.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 647168,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "VCRUNTIME140.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 122880,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "VCRUNTIME140_1.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 45056,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "VERSION.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 40960,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "vulkan-1.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1744896,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "win32u.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 139264,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "Windows.Graphics.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 577536,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "windows.staterepositorycore.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 69632,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "windows.storage.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 8044544,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "WINMM.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 159744,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "WINNSI.DLL",
+        "path": "<local-path>",
+        "bytes_in_memory": 45056,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "wintrust.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 475136,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "wintypes.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1404928,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "Wldp.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 176128,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "wpnapps.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1458176,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "WS2_32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 471040,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "WSOCK32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 36864,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "WTSAPI32.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 81920,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "XInput1_4.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 69632,
+        "first_seen_utc": "2026-10-27T04:19:14.031967+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "XmlLite.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 221184,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "godot.windows.editor.x86_64.exe",
+        "path": "<local-path>",
+        "bytes_in_memory": 164470784,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NvBlast.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 77824,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NvBlastExtAuthoring.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 839680,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NvBlastExtShaders.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 57344,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "NvBlastGlobals.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 45056,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvngx_deepdvc.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 3211264,
+        "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvngx_dlss.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 59068416,
+        "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvngx_dlssd.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 48455680,
+        "first_seen_utc": "2026-10-27T04:19:09.948125+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "nvngx_dlssg.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 7618560,
+        "first_seen_utc": "2026-10-27T04:19:08.926124+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "sl.common.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 925696,
+        "first_seen_utc": "2026-10-27T04:19:06.884657+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      },
+      {
+        "name": "sl.dlss.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 430080,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+      },
+      {
+        "name": "sl.dlss_d.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 446464,
+        "first_seen_utc": "2026-10-27T04:19:09.948125+00:00",
+        "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+      },
+      {
+        "name": "sl.interposer.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 663552,
+        "first_seen_utc": "2026-10-27T04:19:05.878065+00:00",
+        "last_seen_utc": "2026-10-27T04:19:52.981849+00:00"
+      },
+      {
+        "name": "sl.nis.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 1159168,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+      },
+      {
+        "name": "sl.pcl.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 360448,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+      },
+      {
+        "name": "sl.reflex.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 389120,
+        "first_seen_utc": "2026-10-27T04:19:10.968409+00:00",
+        "last_seen_utc": "2026-10-27T04:19:50.939572+00:00"
+      },
+      {
+        "name": "VkLayer_khronos_validation.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 21041152,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      }
+    ],
+    "rtss_module_names": [],
+    "known_overlay_module_names": [
+      "nvspcap64.dll"
+    ],
+    "streamline_module_names": [
+      "sl.common.dll",
+      "sl.dlss.dll",
+      "sl.dlss_d.dll",
+      "sl.interposer.dll",
+      "sl.nis.dll",
+      "sl.pcl.dll",
+      "sl.reflex.dll"
+    ],
+    "vvl_modules": [
+      {
+        "name": "VkLayer_khronos_validation.dll",
+        "path": "<local-path>",
+        "bytes_in_memory": 21041152,
+        "first_seen_utc": "2026-10-27T04:19:07.905684+00:00",
+        "last_seen_utc": "2026-10-27T04:19:51.961072+00:00"
+      }
+    ]
+  },
+  "sr_options": [
+    "DLSS SR requested options: viewport=1 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)",
+    "DLSS SR requested options: viewport=2 mode=3 selection=Recommended DLAA=11 Quality=11 Balanced=11 Performance=13 UltraPerformance=12 UltraQuality=11 result=sl::eOk (active model not queried)"
+  ],
+  "vvl": {
+    "manifest_sha256": "9bdb274c944957ad454968c567d2d2b1883436a88de476200e688be1a36e23da",
+    "dll_sha256": "f0353be5c5339433f5616a242919c724aeba046eca5b08531573818223b9e45a",
+    "manifest_api_version": "1.4.366"
+  },
+  "module_sampling_scope": "periodic snapshots; absence between samples is not guaranteed",
+  "finished_unix": 1793074806.9618676,
+  "observer_summary": {
+    "captures": [
+      {
+        "at_seconds": 24.914133,
+        "height": 900,
+        "name": "play_start",
+        "sha256": "0985a407ca0aa1a500d5d7c99f26024b8f99b5a8d340c34d94a21aa5602e26ac",
+        "width": 1600
+      },
+      {
+        "at_seconds": 31.882359,
+        "height": 900,
+        "name": "play_10s",
+        "sha256": "caa50fad1896abc20d59719c6d0285b19ef50f695c21b9045c885b5d1034a131",
+        "width": 1600
+      }
+    ],
+    "disable_fg_plugin": "1",
+    "disable_ota": "1",
+    "driver": "vulkan",
+    "engine": {
+      "build": "custom_build",
+      "hash": "b3763e7c7ef8e621e2e19018589e5a022aba1f82",
+      "hex": 264192,
+      "major": 4,
+      "minor": 8,
+      "patch": 0,
+      "status": "beta1",
+      "string": "4.8-beta1 (custom_build)",
+      "timestamp": 1793073661
+    },
+    "errors": [],
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "latest": {
+      "at_seconds": 33.187108,
+      "dlss_available": true,
+      "fg_status": {
+        "available": false,
+        "eligible": false,
+        "reason": "unavailable",
+        "rendered_3d_views": 1,
+        "requested_3d_views": 0,
+        "sdk_enabled": false,
+        "supported_generated_frames": 0
+      },
+      "game": "skate",
+      "map": 0,
+      "phase": 2,
+      "phase_time": 10.3456353333333,
+      "players": [
+        {
+          "camera_far": 3000.0,
+          "camera_forward": [
+            -0.00875425804406404,
+            -0.0594704076647758,
+            -0.998191714286804
+          ],
+          "camera_fov": 68.9137268066406,
+          "camera_keep_aspect": 1,
+          "camera_near": 0.0500000007450581,
+          "camera_position": [
+            -5.95756864547729,
+            3.30678343772888,
+            -53.5898056030273
+          ],
+          "camera_projection": 0,
+          "course_progress": 59.2707290649414,
+          "draw_position": [
+            -6.00598812103271,
+            2.12055087089539,
+            -59.2707290649414
+          ],
+          "position": [
+            -6.00598812103271,
+            2.12055087089539,
+            -59.2707290649414
+          ],
+          "score": 521,
+          "slot": 1,
+          "speed": 8.13194370269775,
+          "visual_rig_position": [
+            -6.00598812103271,
+            2.12055087089539,
+            -59.2707290649414
+          ]
+        }
+      ],
+      "settings": {
+        "effective_upscale": 7,
+        "fg": false,
+        "hdr": false,
+        "lighting": 0,
+        "nis": 0,
+        "preset": 0,
+        "quality": 2,
+        "upscale": 7
+      },
+      "viewports": [
+        {
+          "active_camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "camera": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392/@Camera3D@393",
+          "disable_3d": false,
+          "environment": {
+            "ddgi": false,
+            "pt": false
+          },
+          "fg": false,
+          "msaa": 0,
+          "path": "/root/SkateGame/@CanvasLayer@334/@Control@335/@Control@336/@Control@390/@SubViewportContainer@391/@SubViewport@392",
+          "scale": 0.666666686534882,
+          "scaling": 6,
+          "screen_space_aa": 0,
+          "sharpness": 0.0,
+          "size": [
+            1600,
+            900
+          ]
+        }
+      ],
+      "window": {
+        "focused": true,
+        "max_fps": 60,
+        "mode": 0,
+        "vsync": 1
+      }
+    },
+    "observer": "passive; natural camera and real-time simulation",
+    "phases": [
+      {
+        "at_seconds": 12.875346,
+        "phase": 0
+      },
+      {
+        "at_seconds": 14.278495,
+        "phase": 1
+      },
+      {
+        "at_seconds": 21.207355,
+        "phase": 2
+      }
+    ],
+    "physics": "Jolt Physics",
+    "preflight_seconds_after_play": 12.0,
+    "rendering_method": "forward_plus",
+    "resolution": [
+      1600,
+      900
+    ],
+    "scaling_enums": {
+      "dlss": 6,
+      "fsr": 2,
+      "native": 0
+    },
+    "status": "STARTUP_ONLY",
+    "ticks": 120,
+    "analysis": {
+      "movement_sampled_path_units": {
+        "1": {
+          "body_path_length": 56.88594546653169,
+          "camera_path_length": 56.13264879958829,
+          "visual_rig_path_length": 56.88594546653169,
+          "course_progress_range": 55.08101081848144
+        }
+      },
+      "frame_count": 368,
+      "eligible_foreground_play_frames": 23,
+      "excluded_frames": 345,
+      "frame_ms_p50": 43.089,
+      "frame_ms_p95": 55.6208,
+      "frame_ms_p99": 56.51058,
+      "frame_ms_max": 56.733,
+      "eligible_frames_over_33_3ms": 23,
+      "eligible_frames_over_50ms": 5,
+      "eligible_frames_over_100ms": 0,
+      "interpretation": "Real frame intervals, warmup/background/observer readbacks excluded; fixed 60 cap and vsync; not input latency. Sampling writes also exclude three subsequent frames."
+    }
+  },
+  "frozen_inputs_unchanged": true
+}

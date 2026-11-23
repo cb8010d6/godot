@@ -1,0 +1,100 @@
+Streamline diagnostic: DLSS-G plugin disabled by GODOT_STREAMLINE_DISABLE_DLSS_G=1; SR/RR and Reflex/PCL selection unchanged.
+Godot Engine v4.8.beta1.custom_build.b3763e7c7 (2026-10-27 04:01:01 UTC) - https://godotengine.org
+Vulkan 1.4.341 - Forward+ - Streamline - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+map 0 ALPINE BLUEBIRD
+[  14.6] P4 s=  70.1 v=23.2  gate 0 ok
+[  14.7] P2 s=  70.0 v=22.9  gate 0 ok
+[  14.7] P3 s=  70.1 v=23.0  gate 0 ok
+[  14.7] P1 s=  70.0 v=22.8  gate 0 ok
+[  16.2] P4 s= 107.9 v=25.3  gate 1 ok
+[  16.3] P3 s= 107.9 v=25.8  gate 1 ok
+[  16.4] P2 s= 107.9 v=25.9  gate 1 ok
+[  16.4] P1 s= 108.0 v=24.1  gate 1 ok
+[  17.8] P2 s= 147.2 v=29.7  gate 2 ok
+[  17.8] P4 s= 147.1 v=27.1  gate 2 ok
+[  17.9] P3 s= 147.2 v=27.7  gate 2 ok
+[  18.1] P1 s= 147.1 v=24.4  gate 2 ok
+[  19.5] P2 s= 185.5 v=28.7  gate 3 ok
+[  19.6] P3 s= 185.6 v=27.6  gate 3 ok
+[  19.6] P4 s= 185.5 v=26.6  gate 3 ok
+[  20.1] P1 s= 185.6 v=24.2  gate 3 ok
+[  20.8] P2 s= 222.0 v=28.6  gate 4 ok
+[  21.0] P3 s= 222.0 v=27.2  gate 4 ok
+[  21.0] P4 s= 222.0 v=26.6  gate 4 ok
+[  21.7] P1 s= 221.9 v=24.1  gate 4 ok
+[  22.5] P2 s= 262.0 v=21.0  gate 5 ok
+[  22.7] P3 s= 261.9 v=19.4  gate 5 ok
+[  22.9] P4 s= 261.9 v=18.7  gate 5 ok
+[  23.8] P1 s= 261.9 v=15.9  gate 5 ok
+[  26.9] P2 s= 334.3 v=19.5  trick 1703 360 + Mute Grab + Big Air
+[  27.4] P3 s= 334.0 v=19.6  trick 1267 Safety Grab + Big Air
+[  27.5] P4 s= 333.7 v=19.5  trick 1154 540 + Big Air
+[  28.4] P1 s= 333.5 v=19.5  trick 2209 720 + Safety Grab + Big Air
+[  28.5] P2 s= 370.7 v=28.4  gate 6 ok
+[  28.9] P3 s= 370.9 v=27.3  gate 6 ok
+[  29.2] P4 s= 370.8 v=26.3  gate 6 ok
+[  30.0] P2 s= 412.4 v=28.5  gate 7 ok
+[  30.2] P1 s= 370.8 v=24.1  gate 6 ok
+[  30.5] P3 s= 412.4 v=27.2  gate 7 ok
+[  30.8] P4 s= 412.5 v=26.5  gate 7 ok
+[  31.4] P2 s= 448.2 v=28.6  gate 8 ok
+[  32.0] P1 s= 412.5 v=24.2  gate 7 ok
+[  32.0] P3 s= 448.3 v=27.5  gate 8 ok
+[  32.3] P4 s= 448.3 v=26.6  gate 8 ok
+[  33.2] P2 s= 490.1 v=28.4  gate 9 ok
+[  33.6] P1 s= 448.2 v=24.7  gate 8 ok
+[  33.8] P3 s= 490.1 v=27.4  gate 9 ok
+[  34.2] P4 s= 490.0 v=26.4  gate 9 ok
+[  34.7] P2 s= 529.8 v=28.3  gate 10 ok
+[  35.4] P3 s= 529.8 v=27.3  gate 10 ok
+[  35.6] P1 s= 490.0 v=24.1  gate 9 ok
+[  35.8] P4 s= 529.8 v=26.4  gate 10 ok
+[  36.0] P2 s= 566.6 v=29.0  gate 11 ok
+[  36.8] P3 s= 566.7 v=27.7  gate 11 ok
+[  37.3] P4 s= 566.7 v=27.1  gate 11 ok
+[  37.4] P1 s= 529.9 v=24.1  gate 10 ok
+[  37.5] P2 s= 602.0 v=29.1  gate 12 ok
+[  38.3] P3 s= 602.0 v=28.0  gate 12 ok
+[  38.8] P2 s= 637.7 v=28.7  gate 13 ok
+[  38.9] P4 s= 602.0 v=27.0  gate 12 ok
+[  39.0] P1 s= 566.6 v=24.7  gate 11 ok
+[  39.7] P3 s= 637.7 v=27.5  gate 13 ok
+[  40.2] P2 s= 674.9 v=28.4  gate 14 ok
+[  40.3] P4 s= 637.8 v=27.0  gate 13 ok
+[  40.7] P1 s= 602.0 v=24.7  gate 12 ok
+[  41.2] P3 s= 674.9 v=27.4  gate 14 ok
+[  41.9] P4 s= 674.8 v=26.6  gate 14 ok
+[  42.3] P1 s= 637.7 v=24.5  gate 13 ok
+[  44.0] P1 s= 674.8 v=24.4  gate 14 ok
+[  45.7] P2 s= 778.2 v=20.7  trick 2016 540 + Tail Grab + Big Air
+[  46.8] P3 s= 777.9 v=20.8  trick 1490 720 + Big Air
+[  47.6] P2 s= 824.1 v=28.7  gate 15 ok
+[  47.6] P4 s= 778.9 v=20.6  trick 1395 Tail Grab + Big Air
+[  48.8] P3 s= 824.2 v=27.3  gate 15 ok
+[  48.9] P2 s= 860.4 v=28.4  gate 16 ok
+[  49.6] P4 s= 824.1 v=27.0  gate 15 ok
+[  49.9] P1 s= 777.7 v=20.8  trick 938 360 + Big Air
+[  50.2] P3 s= 860.2 v=27.2  gate 16 ok
+[  50.3] P2 s= 897.6 v=28.6  gate 17 ok
+[  51.0] P4 s= 860.3 v=26.3  gate 16 ok
+[  51.6] P3 s= 897.5 v=27.1  gate 17 ok
+[  52.1] P1 s= 824.1 v=24.1  gate 15 ok
+[  52.5] P4 s= 897.6 v=26.4  gate 17 ok
+[  53.6] P1 s= 860.2 v=24.1  gate 16 ok
+[  54.1] P2 s=1000.0 v=25.6  finished 46.1 s, score 6769
+[  55.2] P1 s= 897.6 v=24.2  gate 17 ok
+[  55.6] P3 s=1000.1 v=24.5  finished 47.6 s, score 5807
+[  56.6] P4 s=1000.1 v=23.7  finished 48.6 s, score 5599
+[  59.7] P1 s=1000.1 v=21.8  finished 51.7 s, score 6197
+RS_SMOKE_DONE: ski
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
+File '<local-path>' is signed by NVIDIA and the signature was verified.
